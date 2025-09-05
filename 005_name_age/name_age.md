@@ -7,17 +7,24 @@ Write a program that asks for both the user's name and age, then displays both p
 - Ask the user for their age
 - Display a message with both name and age
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter your name: Sarah
 Enter your age: 22
 Hello Sarah, you are 22 years old.
 ```
 
-## Expected Output Format
-The program should output exactly: `Hello [name], you are [age] years old.`
+**Example 2:**
+```
+Enter your name: Mike
+Enter your age: 35
+Hello Mike, you are 35 years old.
+```
 
-## Success Criteria
-- ✅ Program asks for both name and age
-- ✅ Program displays both pieces of information correctly
-- ✅ Output format matches the example exactly
+**Example 3:**
+```
+Enter your name: Emma
+Enter your age: 18
+Hello Emma, you are 18 years old.
+```

@@ -6,7 +6,8 @@ Write a program that performs basic arithmetic operations on two numbers.
 - Ask the user for two numbers
 - Calculate and display addition and subtraction
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter first number: 12
 Enter second number: 8
@@ -14,14 +15,18 @@ Enter second number: 8
 12 - 8 = 4
 ```
 
-## Expected Output Format
-The program should output exactly:
+**Example 2:**
 ```
-[num1] + [num2] = [result]
-[num1] - [num2] = [result]
+Enter first number: 25
+Enter second number: 15
+25 + 15 = 40
+25 - 15 = 10
 ```
 
-## Success Criteria
-- ✅ Program asks for two numbers
-- ✅ Program calculates addition and subtraction correctly
-- ✅ Output format matches the example exactly
+**Example 3:**
+```
+Enter first number: 7
+Enter second number: 3
+7 + 3 = 10
+7 - 3 = 4
+```

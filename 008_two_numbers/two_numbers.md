@@ -6,17 +6,24 @@ Write a program that reads two integers and displays their sum.
 - Read two integers from the user
 - Calculate and display their sum
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter first number: 15
 Enter second number: 27
 The sum is: 42
 ```
 
-## Expected Output Format
-The program should output exactly: `The sum is: [result]`
+**Example 2:**
+```
+Enter first number: 8
+Enter second number: 12
+The sum is: 20
+```
 
-## Success Criteria
-- ✅ Program reads two integers
-- ✅ Program calculates the sum correctly
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter first number: 100
+Enter second number: 50
+The sum is: 150
+```

@@ -7,17 +7,24 @@ Write a program that calculates the power of a number (base raised to an exponen
 - Read an exponent
 - Calculate and display the result
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter base number: 3
 Enter exponent: 4
 3 to the power of 4 is: 81
 ```
 
-## Expected Output Format
-The program should output exactly: `[base] to the power of [exponent] is: [result]`
+**Example 2:**
+```
+Enter base number: 2
+Enter exponent: 8
+2 to the power of 8 is: 256
+```
 
-## Success Criteria
-- ✅ Program reads base and exponent
-- ✅ Program calculates power correctly (base ** exponent)
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter base number: 5
+Enter exponent: 3
+5 to the power of 3 is: 125
+```

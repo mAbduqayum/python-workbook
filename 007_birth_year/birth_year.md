@@ -7,16 +7,24 @@ Write a program that calculates what year someone was born based on their curren
 - Calculate their birth year
 - Display the birth year
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter your age: 25
-You were born in: 1999
+You were born in: 2000
 ```
 
-## Expected Output Format
-The program should output exactly: `You were born in: [year]`
+**Example 2:**
+```
+Enter your age: 30
+You were born in: 1995
+```
 
-## Success Criteria
-- ✅ Program asks for current age
-- ✅ Program calculates birth year correctly
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter your age: 18
+You were born in: 2007
+```
+
+## Note
+Calculate birth year as: 2025 - age

@@ -6,7 +6,8 @@ Write a program that performs advanced arithmetic operations on two numbers.
 - Ask the user for two numbers
 - Calculate and display all six arithmetic operations: addition, subtraction, multiplication, division, modulo, and power
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter first number: 15
 Enter second number: 4
@@ -18,16 +19,32 @@ Enter second number: 4
 15 ^ 4 = 50625
 ```
 
-## Expected Output Format
-The program should output exactly:
+**Example 2:**
 ```
-[num1] + [num2] = [result]
-[num1] - [num2] = [result]
-[num1] × [num2] = [result]
-[num1] ÷ [num2] = [result]
-[num1] % [num2] = [result]
-[num1] ^ [num2] = [result]
+Enter first number: 20
+Enter second number: 6
+20 + 6 = 26
+20 - 6 = 14
+20 × 6 = 120
+20 ÷ 6 = 3.33
+20 % 6 = 2
+20 ^ 6 = 64000000
 ```
+
+**Example 3:**
+```
+Enter first number: 8
+Enter second number: 3
+8 + 3 = 11
+8 - 3 = 5
+8 × 3 = 24
+8 ÷ 3 = 2.67
+8 % 3 = 2
+8 ^ 3 = 512
+```
+
+## Note
+For division results, use `.2f` formatting to display 2 decimal places.
 
 ## Operations Explained
 - **Addition (+)**: num1 + num2
@@ -37,8 +54,3 @@ The program should output exactly:
 - **Modulo (%)**: num1 % num2 (remainder after division)
 - **Power (^)**: num1 ** num2 (num1 raised to the power of num2)
 
-## Success Criteria
-- ✅ Program asks for two numbers
-- ✅ Program calculates all six operations correctly
-- ✅ Output format matches the example exactly
-- ✅ Uses correct mathematical symbols

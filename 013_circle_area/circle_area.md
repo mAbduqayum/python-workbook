@@ -6,19 +6,27 @@ Write a program that calculates the area of a circle.
 - Read the radius of a circle
 - Calculate and display the area (use π = 3.14159)
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter radius: 5
-The area is: 78.53975
+The area is: 78.54
 ```
 
-## Expected Output Format
-The program should output exactly: `The area is: [result]`
+**Example 2:**
+```
+Enter radius: 3
+The area is: 28.27
+```
+
+**Example 3:**
+```
+Enter radius: 10
+The area is: 314.16
+```
 
 ## Formula
 `Area = π × radius²`
 
-## Success Criteria
-- ✅ Program reads the radius
-- ✅ Program calculates the area correctly using π = 3.14159
-- ✅ Output format matches the example
+## Note
+Use `.2f` formatting to display 2 decimal places. Use π = 3.14159

@@ -6,18 +6,30 @@ Write a program that calculates the average of three numbers.
 - Read three numbers from the user
 - Calculate and display their average
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter first number: 10
 Enter second number: 20
 Enter third number: 30
-The average is: 20.0
+The average is: 20.00
 ```
 
-## Expected Output Format
-The program should output exactly: `The average is: [result]`
+**Example 2:**
+```
+Enter first number: 5
+Enter second number: 15
+Enter third number: 25
+The average is: 15.00
+```
 
-## Success Criteria
-- ✅ Program reads three numbers
-- ✅ Program calculates average correctly (sum ÷ 3)
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter first number: 8
+Enter second number: 12
+Enter third number: 16
+The average is: 12.00
+```
+
+## Note
+Use `.2f` formatting to display 2 decimal places.

@@ -6,19 +6,27 @@ Write a program that converts the temperature from Celsius to Fahrenheit.
 - Read a temperature in Celsius
 - Convert it to Fahrenheit and display the result
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter temperature in Celsius: 25
-Temperature in Fahrenheit: 77.0
+Temperature in Fahrenheit: 77.00
 ```
 
-## Expected Output Format
-The program should output exactly: `Temperature in Fahrenheit: [result]`
+**Example 2:**
+```
+Enter temperature in Celsius: 0
+Temperature in Fahrenheit: 32.00
+```
+
+**Example 3:**
+```
+Enter temperature in Celsius: 100
+Temperature in Fahrenheit: 212.00
+```
 
 ## Formula
 `Fahrenheit = (Celsius × 9/5) + 32`
 
-## Success Criteria
-- ✅ Program reads temperature in Celsius
-- ✅ Program converts to Fahrenheit correctly
-- ✅ Output format matches the example
+## Note
+Use `.2f` formatting to display 2 decimal places.

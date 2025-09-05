@@ -7,16 +7,21 @@ Write a program that converts total seconds into minutes and remaining seconds.
 - Convert to minutes and the remaining seconds
 - Display the result
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter seconds: 125
 125 seconds = 2 minutes and 5 seconds
 ```
 
-## Expected Output Format
-The program should output exactly: `[total] seconds = [minutes] minutes and [remaining] seconds`
+**Example 2:**
+```
+Enter seconds: 90
+90 seconds = 1 minutes and 30 seconds
+```
 
-## Success Criteria
-- ✅ Program reads total seconds
-- ✅ Program calculates minutes (seconds // 60) and remaining seconds (seconds % 60)
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter seconds: 200
+200 seconds = 3 minutes and 20 seconds
+```

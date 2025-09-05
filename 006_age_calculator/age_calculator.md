@@ -6,16 +6,24 @@ Write a program that calculates a person's age based on their birth year.
 - Prompt the user to enter their birth year
 - Calculate and display their current age
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter your birth year: 1995
-You are 29 years old.
+You are 30 years old.
 ```
 
-## Expected Output Format
-The program should output exactly: `You are [age] years old.`
+**Example 2:**
+```
+Enter your birth year: 1988
+You are 37 years old.
+```
 
-## Success Criteria
-- ✅ Program asks for birth year
-- ✅ Program calculates age correctly
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter your birth year: 2000
+You are 25 years old.
+```
+
+## Note
+Calculate age as: 2025 - birth_year

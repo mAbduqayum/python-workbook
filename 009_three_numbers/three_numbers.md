@@ -6,7 +6,8 @@ Write a program that reads three integers and displays their sum.
 - Read three integers from the user
 - Calculate and display their sum
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter first number: 10
 Enter second number: 25
@@ -14,10 +15,18 @@ Enter third number: 15
 The sum is: 50
 ```
 
-## Expected Output Format
-The program should output exactly: `The sum is: [result]`
+**Example 2:**
+```
+Enter first number: 5
+Enter second number: 12
+Enter third number: 8
+The sum is: 25
+```
 
-## Success Criteria
-- ✅ Program reads three integers
-- ✅ Program calculates the sum correctly
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter first number: 20
+Enter second number: 30
+Enter third number: 40
+The sum is: 90
+```

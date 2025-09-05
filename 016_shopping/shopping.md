@@ -7,17 +7,27 @@ Write a program that calculates the total cost of items.
 - Read the quantity
 - Calculate and display the total cost
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter price: 12.50
 Enter quantity: 3
-Total cost: 37.5
+Total cost: 37.50
 ```
 
-## Expected Output Format
-The program should output exactly: `Total cost: [result]`
+**Example 2:**
+```
+Enter price: 8.99
+Enter quantity: 2
+Total cost: 17.98
+```
 
-## Success Criteria
-- ✅ Program reads price and quantity
-- ✅ Program calculates total correctly (price × quantity)
-- ✅ Output format matches the example
+**Example 3:**
+```
+Enter price: 15.00
+Enter quantity: 4
+Total cost: 60.00
+```
+
+## Note
+Use `.2f` formatting to display 2 decimal places.

@@ -6,19 +6,27 @@ Write a program that converts distance from meters to feet.
 - Read a distance in meters
 - Convert it to feet and display the result
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter distance in meters: 10
-Distance in feet: 32.808
+Distance in feet: 32.81
 ```
 
-## Expected Output Format
-The program should output exactly: `Distance in feet: [result]`
+**Example 2:**
+```
+Enter distance in meters: 5
+Distance in feet: 16.40
+```
+
+**Example 3:**
+```
+Enter distance in meters: 15
+Distance in feet: 49.21
+```
 
 ## Formula
 `Feet = Meters × 3.28084`
 
-## Success Criteria
-- ✅ Program reads distance in meters
-- ✅ Program converts to feet correctly
-- ✅ Output format matches the example
+## Note
+Use `.2f` formatting to display 2 decimal places.

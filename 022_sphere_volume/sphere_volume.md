@@ -6,19 +6,27 @@ Write a program that calculates the volume of a sphere.
 - Read the radius of a sphere
 - Calculate and display the volume (use π = 3.14159)
 
-## Example
+## Examples
+**Example 1:**
 ```
 Enter radius: 3
-The volume is: 113.09724
+The volume is: 113.10
 ```
 
-## Expected Output Format
-The program should output exactly: `The volume is: [result]`
+**Example 2:**
+```
+Enter radius: 5
+The volume is: 523.60
+```
+
+**Example 3:**
+```
+Enter radius: 2
+The volume is: 33.51
+```
 
 ## Formula
-Volume = (4/3) × π × radius³
+`Volume = (4/3) × π × radius³`
 
-## Success Criteria
-- ✅ Program reads the radius
-- ✅ Program calculates volume correctly using π = 3.14159
-- ✅ Output format matches the example
+## Note
+Use `.2f` formatting to display 2 decimal places. Use π = 3.14159
