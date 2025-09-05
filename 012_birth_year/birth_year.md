@@ -27,4 +27,4 @@ You were born in: 2007
 ```
 
 ## Note
-Calculate birth year as: 2025 - age
+Calculate birth year as: `2025 - age`

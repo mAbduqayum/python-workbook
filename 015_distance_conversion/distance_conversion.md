@@ -3,7 +3,7 @@
 Write a program that converts distance from meters to feet.
 
 ## Task
-- Read a distance in meters
+- Read a distance in meters (as `float`)
 - Convert it to feet and display the result
 
 ## Examples

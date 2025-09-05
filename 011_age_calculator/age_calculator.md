@@ -26,4 +26,4 @@ You are 25 years old.
 ```
 
 ## Note
-Calculate age as: 2025 - birth_year
+Calculate age as: `2025 - birth_year`

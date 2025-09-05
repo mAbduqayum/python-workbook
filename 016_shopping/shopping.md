@@ -3,8 +3,8 @@
 Write a program that calculates the total cost of items.
 
 ## Task
-- Read the price of an item
-- Read the quantity
+- Read the price of an item (as `float`)
+- Read the quantity (as `int`)
 - Calculate and display the total cost
 
 ## Examples

@@ -3,8 +3,8 @@
 Write a program that calculates the area of a circle.
 
 ## Task
-- Read the radius of a circle
-- Calculate and display the area (use π = 3.14159)
+- Read the radius of a circle (as `float`)
+- Calculate and display the area (use `π = 3.14159`)
 
 ## Examples
 **Example 1:**
@@ -29,4 +29,4 @@ The area is: 314.16
 `Area = π × radius²`
 
 ## Note
-Use `.2f` formatting to display 2 decimal places. Use π = 3.14159
+Use `.2f` formatting to display 2 decimal places. Use `π = 3.14159`

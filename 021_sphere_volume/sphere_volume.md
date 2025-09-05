@@ -3,8 +3,8 @@
 Write a program that calculates the volume of a sphere.
 
 ## Task
-- Read the radius of a sphere
-- Calculate and display the volume (use π = 3.14159)
+- Read the radius of a sphere (as `float`)
+- Calculate and display the volume (use `π = 3.14159`)
 
 ## Examples
 **Example 1:**
@@ -29,4 +29,4 @@ The volume is: 33.51
 `Volume = (4/3) × π × radius³`
 
 ## Note
-Use `.2f` formatting to display 2 decimal places. Use π = 3.14159
+Use `.2f` formatting to display 2 decimal places. Use `π = 3.14159`

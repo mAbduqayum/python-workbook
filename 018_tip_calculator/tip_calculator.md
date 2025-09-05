@@ -3,8 +3,8 @@
 Write a program that calculates the tip and total amount for a restaurant bill.
 
 ## Task
-- Read the bill amount
-- Read the tip percentage
+- Read the bill amount (as `float`)
+- Read the tip percentage (as `int`)
 - Calculate and display the tip amount and total amount
 
 ## Examples

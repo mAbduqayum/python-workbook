@@ -3,7 +3,7 @@
 Write a program that converts total hours into days, hours, and minutes.
 
 ## Task
-- Read a number of hours (can include decimals)
+- Read a number of hours (as `float`, can include decimals)
 - Convert to days, remaining hours, and remaining minutes
 - Display the result
 
