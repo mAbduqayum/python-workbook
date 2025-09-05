@@ -1,4 +1,4 @@
-# Exercise 3: Advanced Calculator
+# Exercise: Advanced Calculator
 
 Write a program that performs advanced arithmetic operations on two numbers.
 

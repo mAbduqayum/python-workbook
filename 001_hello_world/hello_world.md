@@ -1,4 +1,4 @@
-# Exercise 1: Hello World
+# Exercise: Hello World
 
 Write your first Python program that displays a simple message.
 

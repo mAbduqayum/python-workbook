@@ -1,4 +1,4 @@
-# Exercise 8: Three Numbers
+# Exercise: Three Numbers
 
 Write a program that reads three integers and displays their sum.
 

@@ -1,4 +1,4 @@
-# Exercise 10: Rectangle Perimeter
+# Exercise: Rectangle Perimeter
 
 Write a program that calculates the perimeter of a rectangle.
 

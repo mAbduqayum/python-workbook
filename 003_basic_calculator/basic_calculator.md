@@ -1,4 +1,4 @@
-# Exercise 2: Basic Calculator
+# Exercise: Basic Calculator
 
 Write a program that performs basic arithmetic operations on two numbers.
 

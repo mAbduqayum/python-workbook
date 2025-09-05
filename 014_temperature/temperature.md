@@ -1,4 +1,4 @@
-# Exercise 6: Temperature Converter
+# Exercise: Temperature Converter
 
 Write a program that converts the temperature from Celsius to Fahrenheit.
 

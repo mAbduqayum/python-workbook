@@ -1,4 +1,4 @@
-# Exercise 4: Name and Age
+# Exercise: Name and Age
 
 Write a program that asks for both the user's name and age, then displays both pieces of information.
 

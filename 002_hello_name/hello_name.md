@@ -1,4 +1,4 @@
-# Exercise 1: Hello Name
+# Exercise: Hello Name
 
 Write a program that asks for the user's name and then displays a greeting message.
 

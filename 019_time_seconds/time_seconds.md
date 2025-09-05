@@ -1,4 +1,4 @@
-# Exercise 8: Time Converter
+# Exercise: Time Converter
 
 Write a program that converts total seconds into minutes and remaining seconds.
 

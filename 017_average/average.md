@@ -1,4 +1,4 @@
-# Exercise 9: Average Calculator
+# Exercise: Average Calculator
 
 Write a program that calculates the average of three numbers.
 

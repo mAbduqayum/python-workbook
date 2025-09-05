@@ -1,4 +1,4 @@
-# Exercise 5: Circle Area
+# Exercise: Circle Area
 
 Write a program that calculates the area of a circle.
 

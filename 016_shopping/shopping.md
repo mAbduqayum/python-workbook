@@ -1,4 +1,4 @@
-# Exercise 7: Shopping Calculator
+# Exercise: Shopping Calculator
 
 Write a program that calculates the total cost of items.
 

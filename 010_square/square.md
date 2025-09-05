@@ -1,4 +1,4 @@
-# Exercise 10: Square Calculator
+# Exercise: Square Calculator
 
 Write a program that calculates the square of a number.
 

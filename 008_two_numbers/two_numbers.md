@@ -1,4 +1,4 @@
-# Exercise 3: Two Numbers
+# Exercise: Two Numbers
 
 Write a program that reads two integers and displays their sum.
 

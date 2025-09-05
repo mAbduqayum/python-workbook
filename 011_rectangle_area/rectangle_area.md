@@ -1,4 +1,4 @@
-# Exercise 4: Rectangle Area
+# Exercise: Rectangle Area
 
 Write a program that calculates the area of a rectangle.
 

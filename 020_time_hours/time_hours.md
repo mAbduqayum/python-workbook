@@ -1,4 +1,4 @@
-# Exercise 18: Time Hours Converter
+# Exercise: Time Hours Converter
 
 Write a program that converts total hours into days, hours, and minutes.
 

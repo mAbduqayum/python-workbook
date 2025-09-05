@@ -1,4 +1,4 @@
-# Exercise 14: Distance Conversion
+# Exercise: Distance Conversion
 
 Write a program that converts distance from meters to feet.
 

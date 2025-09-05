@@ -1,4 +1,4 @@
-# Exercise 16: Tip Calculator
+# Exercise: Tip Calculator
 
 Write a program that calculates the tip and total amount for a restaurant bill.
 

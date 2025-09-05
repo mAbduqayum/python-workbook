@@ -1,4 +1,4 @@
-# Exercise 20: Power Calculator
+# Exercise: Power Calculator
 
 Write a program that calculates the power of a number (base raised to an exponent).
 

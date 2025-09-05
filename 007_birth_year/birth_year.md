@@ -1,4 +1,4 @@
-# Exercise 6: Birth Year Calculator
+# Exercise: Birth Year Calculator
 
 Write a program that calculates what year someone was born based on their current age.
 

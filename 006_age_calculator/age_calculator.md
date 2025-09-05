@@ -1,4 +1,4 @@
-# Exercise 2: Age Calculator
+# Exercise: Age Calculator
 
 Write a program that calculates a person's age based on their birth year.
 

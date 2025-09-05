@@ -1,4 +1,4 @@
-# Exercise 12: Sphere Volume
+# Exercise: Sphere Volume
 
 Write a program that calculates the volume of a sphere.
 
