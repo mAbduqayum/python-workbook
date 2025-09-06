@@ -9,18 +9,18 @@ Write a program that asks for the user's name and then displays a greeting messa
 ## Examples
 **Example 1:**
 ```
-Enter your name: Alice
-Hello Alice!
+Enter your name: Farid
+Hello Farid!
 ```
 
 **Example 2:**
 ```
-Enter your name: Bob
-Hello Bob!
+Enter your name: Gulnora
+Hello Gulnora!
 ```
 
 **Example 3:**
 ```
-Enter your name: Charlie
-Hello Charlie!
+Enter your name: Davron
+Hello Davron!
 ```

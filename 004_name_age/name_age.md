@@ -10,21 +10,21 @@ Write a program that asks for both the user's name and age, then displays both p
 ## Examples
 **Example 1:**
 ```
-Enter your name: Sarah
+Enter your name: Farid
 Enter your age: 22
-Hello Sarah, you are 22 years old.
+Hello Farid, you are 22 years old.
 ```
 
 **Example 2:**
 ```
-Enter your name: Mike
+Enter your name: Gulnora
 Enter your age: 35
-Hello Mike, you are 35 years old.
+Hello Gulnora, you are 35 years old.
 ```
 
 **Example 3:**
 ```
-Enter your name: Emma
+Enter your name: Davron
 Enter your age: 18
-Hello Emma, you are 18 years old.
+Hello Davron, you are 18 years old.
 ```

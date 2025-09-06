@@ -5,6 +5,7 @@ Write a program that calculates the area of a triangle using Heron's formula whe
 ## Task
 - Read the lengths of all three sides (as `float`)
 - Calculate and display the area using Heron's formula
+- Triangle sides are guaranteed to form a valid triangle
 
 ## Examples
 **Example 1:**

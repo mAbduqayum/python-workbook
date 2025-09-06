@@ -10,24 +10,24 @@ Create a program that displays your name and complete mailing address formatted 
 ## Examples
 **Example 1:**
 ```
-John Smith
-123 Main Street
-Toronto, ON M5V 3A1
-Canada
+Farid Rahimov
+123 Rudaki Avenue
+Dushanbe 734025
+Tajikistan
 ```
 
 **Example 2:**
 ```
-Sarah Johnson
-456 Oak Avenue
-Vancouver, BC V6B 2K5
-Canada
+Gulnora Nazarova
+456 Ismoili Somoni Street
+Khujand 735700
+Tajikistan
 ```
 
 **Example 3:**
 ```
-Ahmed Ali
-789 Pine Road
-Montreal, QC H3A 1B2
-Canada
+Davron Mahmudov
+789 Ayni Street
+Kulob 735360
+Tajikistan
 ```
