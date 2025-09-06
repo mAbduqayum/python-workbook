@@ -8,31 +8,31 @@ Write a program that calculates the distance between two points on Earth's surfa
 - Calculate and display the distance in kilometers
 
 ## Examples
-**Example 1:**
+**Example 1: Dushanbe to Khujand (Tajikistan)**
 ```
-Enter latitude of first point: 49.2827
-Enter longitude of first point: -123.1207
-Enter latitude of second point: 45.5152
-Enter longitude of second point: -122.6784
-Distance: 312.46 km
-```
-
-**Example 2:**
-```
-Enter latitude of first point: 40.7128
-Enter longitude of first point: -74.0060
-Enter latitude of second point: 51.5074
-Enter longitude of second point: -0.1278
-Distance: 5570.85 km
+Enter latitude of first point: 38.5598
+Enter longitude of first point: 68.7870
+Enter latitude of second point: 40.2789
+Enter longitude of second point: 69.6210
+Distance: 196.85 km
 ```
 
-**Example 3:**
+**Example 2: Dushanbe to Moscow (Russia)**
 ```
-Enter latitude of first point: 35.6762
-Enter longitude of first point: 139.6503
-Enter latitude of second point: 37.7749
-Enter longitude of second point: -122.4194
-Distance: 8267.25 km
+Enter latitude of first point: 38.5598
+Enter longitude of first point: 68.7870
+Enter latitude of second point: 55.7558
+Enter longitude of second point: 37.6176
+Distance: 2674.91 km
+```
+
+**Example 3: Moscow to New York (USA)**
+```
+Enter latitude of first point: 55.7558
+Enter longitude of first point: 37.6176
+Enter latitude of second point: 40.7128
+Enter longitude of second point: -74.0060
+Distance: 7510.56 km
 ```
 
 ## Formula
