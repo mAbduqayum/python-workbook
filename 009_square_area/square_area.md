@@ -3,7 +3,7 @@
 Write a program that calculates the area of a square.
 
 ## Task
-- Read the side length of a square
+- Read the side length of a square (as `int`)
 - Calculate and display the area of the square
 
 ## Examples
