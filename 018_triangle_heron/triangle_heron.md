@@ -29,7 +29,7 @@ Area of triangle: 14.70
 Enter length of side 1: 10
 Enter length of side 2: 10
 Enter length of side 3: 12
-Area of triangle: 48.99
+Area of triangle: 48.00
 ```
 
 ## Formula

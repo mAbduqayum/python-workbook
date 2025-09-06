@@ -30,7 +30,7 @@ These functions are available without importing any module:
 |----------|-------------|---------|--------|
 | `math.sqrt(x)` | Square root | `math.sqrt(16)` | `4.0` |
 | `math.pow(x, y)` | Power (returns float) | `math.pow(2, 3)` | `8.0` |
-| `math.exp(x)` | e^x | `math.exp(1)` | `2.718281...` |
+| `math.exp(x)` | e^x | `math.exp(1)` | `2.71828` |
 | `math.log(x)` | Natural logarithm | `math.log(math.e)` | `1.0` |
 | `math.log(x, base)` | Logarithm with base | `math.log(8, 2)` | `3.0` |
 | `math.log10(x)` | Base-10 logarithm | `math.log10(100)` | `2.0` |
@@ -74,7 +74,7 @@ import math
 angle_deg = 45
 angle_rad = math.radians(angle_deg)
 sine_value = math.sin(angle_rad)
-print(f"sin({angle_deg}�) = {sine_value:.3f}")  # sin(45�) = 0.707
+print(f"sin({angle_deg}°) = {sine_value:.3f}")  # sin(45°) = 0.707
 ```
 
 ## Rounding and Ceiling Functions
@@ -110,7 +110,7 @@ for val in values:
 
 | Function | Description | Example | Result |
 |----------|-------------|---------|--------|
-| `math.hypot(x, y)` | Euclidean distance (x�+y�) | `math.hypot(3, 4)` | `5.0` |
+| `math.hypot(x, y)` | Euclidean distance √(x²+y²) | `math.hypot(3, 4)` | `5.0` |
 | `math.dist(p, q)` | Distance between points (Python 3.8+) | `math.dist([1,2], [4,6])` | `5.0` |
 | `math.fabs(x)` | Floating-point absolute value | `math.fabs(-3.5)` | `3.5` |
 

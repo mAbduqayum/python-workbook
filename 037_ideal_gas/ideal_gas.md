@@ -14,7 +14,7 @@ Write a program that calculates the amount of gas in moles using the ideal gas l
 Enter pressure (Pascals): 20000000
 Enter volume (liters): 12
 Enter temperature (°C): 20
-Amount of gas: 98.51 moles
+Amount of gas: 98.47 moles
 ```
 
 **Example 2:**

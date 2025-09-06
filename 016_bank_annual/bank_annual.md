@@ -13,7 +13,7 @@ Write a program that calculates the balance of a savings account after earning a
 Enter initial deposit: 1000.00
 Enter annual interest rate (%): 4.5
 Balance after 1 year: 1045.00
-Balance after 2 years: 1092.03
+Balance after 2 years: 1092.02
 Balance after 3 years: 1141.17
 ```
 
@@ -23,7 +23,7 @@ Enter initial deposit: 2500.00
 Enter annual interest rate (%): 3.25
 Balance after 1 year: 2581.25
 Balance after 2 years: 2665.14
-Balance after 3 years: 2751.75
+Balance after 3 years: 2751.76
 ```
 
 **Example 3:**
@@ -32,7 +32,7 @@ Enter initial deposit: 500.00
 Enter annual interest rate (%): 2.8
 Balance after 1 year: 514.00
 Balance after 2 years: 528.39
-Balance after 3 years: 543.20
+Balance after 3 years: 543.19
 ```
 
 ## Formula

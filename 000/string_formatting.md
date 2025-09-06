@@ -72,7 +72,7 @@ value = 42
 print(f"{value:*<5}")   # 42***
 print(f"{value:*>5}")   # ***42  
 print(f"{value:*^5}")   # *42**
-print(f"{value:*=5}")   # **42 (numbers only)
+print(f"{value:*=5}")   # ***42 (numbers only)
 ```
 
 ## Sign Handling
@@ -241,11 +241,11 @@ for item, qty, price in items:
     print(f"{item:<10} {qty:>5} ${price:>7.2f}")
 
 # Output:
-# Item          Qty    Price
+# Item         Qty    Price
 # -------------------------
-# Apples          5 $   1.25
-# Bananas        12 $   0.75  
-# Oranges         8 $   1.50
+# Apples         5 $   1.25
+# Bananas       12 $   0.75
+# Oranges        8 $   1.50
 ```
 
 ### Scientific Data

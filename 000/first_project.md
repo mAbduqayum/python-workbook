@@ -98,7 +98,7 @@ print("I'm learning Python!")
 
 ## Step 8: Run Your Program
 
-1. In VS Code, open the terminal (Terminal � New Terminal)
+1. In VS Code, open the terminal (Terminal → New Terminal)
 2. Run your program with:
    ```
     python main.py

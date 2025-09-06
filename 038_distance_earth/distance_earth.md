@@ -14,7 +14,7 @@ Enter latitude of first point: 38.5598
 Enter longitude of first point: 68.7870
 Enter latitude of second point: 40.2789
 Enter longitude of second point: 69.6210
-Distance: 196.85 km
+Distance: 204.14 km
 ```
 
 **Example 2: Dushanbe to Moscow (Russia)**
@@ -23,7 +23,7 @@ Enter latitude of first point: 38.5598
 Enter longitude of first point: 68.7870
 Enter latitude of second point: 55.7558
 Enter longitude of second point: 37.6176
-Distance: 2674.91 km
+Distance: 2991.43 km
 ```
 
 **Example 3: Moscow to New York (USA)**
@@ -32,7 +32,7 @@ Enter latitude of first point: 55.7558
 Enter longitude of first point: 37.6176
 Enter latitude of second point: 40.7128
 Enter longitude of second point: -74.0060
-Distance: 7510.56 km
+Distance: 7510.29 km
 ```
 
 ## Formula
