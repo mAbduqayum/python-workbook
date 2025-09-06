@@ -132,189 +132,36 @@ remaining_seconds = total_seconds % 60  # 5
 
 ## 7. String Formatting and Operations
 
-### Method 1: String concatenation with +
+**For detailed string formatting patterns and examples, see: `000/string_formatting.md`**
+
+### Basic string operations
 ```python
+# Simple concatenation
 first_name = "John"
 last_name = "Doe"
 full_name = first_name + " " + last_name
 
-name = "Alice"
-age = 25
-message = "Hello " + name + ", you are " + str(age) + " years old"
-```
-
-**Note:** You must convert numbers to strings using `str()` when concatenating.
-
-### Method 2: Using commas in print()
-```python
+# Using print() with multiple values
 name = "Alice"
 age = 25
 print("Hello", name, "you are", age, "years old")
-# Output: Hello Alice you are 25 years old
 ```
 
-### Method 3: f-strings (Formatted String Literals) - RECOMMENDED
-f-strings are the most modern and readable way to format strings in Python.
-
+### f-strings (RECOMMENDED)
 ```python
 name = "Alice"
 age = 25
-score = 85.67
-
-# Basic f-string usage
-greeting = f"Hello {name}!"
-message = f"You are {age} years old"
-
-# With calculations inside
-radius = 5
-area = f"Area is: {3.14159 * radius ** 2}"
-
-# Multiple variables
-result = f"Hello {name}, your score is {score}"
-```
-
-### Method 4: .format() method
-```python
-name = "Alice"
-age = 25
-message = "Hello {}, you are {} years old".format(name, age)
-
-# With named placeholders
-message = "Hello {name}, you are {age} years old".format(name=name, age=age)
-```
-
-### Method 5: % formatting (older style)
-```python
-name = "Alice"
-age = 25
-message = "Hello %s, you are %d years old" % (name, age)
-```
-
-### String formatting for numbers
-
-#### Controlling decimal places
-```python
-pi = 3.14159265
-price = 19.99
-
-# 2 decimal places
-print(f"Pi is approximately: {pi:.2f}")        # Pi is approximately: 3.14
-print(f"Price: ${price:.2f}")                  # Price: $19.99
-
-# No decimal places (rounded)
-print(f"Pi rounded: {pi:.0f}")                 # Pi rounded: 3
-```
-
-#### Formatting integers
-```python
-number = 42
-large_number = 1234567
-
-# Basic integer
-print(f"The answer is: {number}")              # The answer is: 42
-
-# With width (padding)
-print(f"Number: {number:5d}")                  # Number:    42 (5 characters wide)
-print(f"Number: {number:05d}")                 # Number: 00042 (padded with zeros)
-
-# With thousands separator
-print(f"Large number: {large_number:,}")       # Large number: 1,234,567
-```
-
-#### Common formatting patterns for exercises
-```python
-# Exercise output patterns
-name = "John"
-result = 42.5
-num1 = 15
-num2 = 27
-
-# Pattern 1: "Hello [name]!"
-print(f"Hello {name}!")
-
-# Pattern 2: "The result is: [number]"
-print(f"The result is: {result}")
-
-# Pattern 3: "The sum is: [number]"
-total = num1 + num2
-print(f"The sum is: {total}")
-
-# Pattern 4: Multiple values
-total_seconds = 125
-minutes = 2
-seconds = 5
-print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
+print(f"Hello {name}, you are {age} years old")
+print(f"The area is: {area:.2f}")  # 2 decimal places
 ```
 
 ### String methods (useful to know)
 ```python
 text = "Hello World"
-
-# Case methods
 print(text.upper())         # HELLO WORLD
 print(text.lower())         # hello world
-print(text.title())         # Hello World
-
-# Length
 print(len(text))            # 11
-
-# Replace
-print(text.replace("World", "Python"))  # Hello Python
 ```
-
-### Escape characters
-```python
-# Special characters in strings
-quote = "She said \"Hello\" to me"        # Using \" for quotes inside string
-path = "C:\\Users\\Documents"             # Using \\ for backslash
-newline = "Line 1\nLine 2"                # Using \n for new line
-tab = "Column1\tColumn2"                  # Using \t for tab
-```
-
-### Best practices for string formatting
-
-1. **Use f-strings for most cases (Python 3.6+):**
-   ```python
-   # Good
-   print(f"Hello {name}, your age is {age}")
-   
-   # Avoid (harder to read)
-   print("Hello " + name + ", your age is " + str(age))
-   ```
-
-2. **Match exact output format required:**
-   ```python
-   # If exercise asks for: "The area is: 15"
-   area = 15
-   print(f"The area is: {area}")  # Exact spacing and punctuation
-   ```
-
-3. **Use appropriate number formatting:**
-   ```python
-   # For money
-   price = 19.99
-   print(f"Price: ${price:.2f}")
-   
-   # For percentages
-   rate = 0.15
-   print(f"Rate: {rate:.1%}")      # Rate: 15.0%
-   ```
-
-4. **Common formatting mistakes to avoid:**
-   ```python
-   # Wrong - extra spaces
-   print(f"Result : {result}")
-   
-   # Right - match the required format exactly  
-   print(f"Result: {result}")
-   
-   # Wrong - converting when not needed
-   age = 25
-   print("Age: " + str(age))
-   
-   # Right - use f-string
-   print(f"Age: {age}")
-   ```
 
 ## 8. Comments
 
