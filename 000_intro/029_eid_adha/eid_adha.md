@@ -33,6 +33,6 @@ Estimated Eid al-Adha: May 26, 2026
 
 ## Note
 - This is a simplified calculation for educational purposes
-- Real Islamic calendar calculations are more complex
+- Real Hijri calendar calculations are more complex
 - Actual dates may vary by 1-2 days due to moon sighting
 - Eid al-Adha occurs ~70 days after Eid al-Fitr
