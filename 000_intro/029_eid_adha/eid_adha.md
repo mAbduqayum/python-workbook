@@ -1,3 +1,7 @@
+# Skip this question
+
+---
+
 # Exercise: When is Eid al-Adha
 
 Write a program that estimates Eid al-Adha date (simplified lunar calendar calculation).
