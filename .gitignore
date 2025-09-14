@@ -180,3 +180,6 @@ cython_debug/
 
 # remove lock for educational repos
 uv.lock
+
+# typst generated pdf files
+slides/**/*.pdf
