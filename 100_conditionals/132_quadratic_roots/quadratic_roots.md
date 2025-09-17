@@ -5,7 +5,7 @@ Write a program that computes the real roots of a quadratic function using the q
 ## Task
 - Read coefficients `a`, `b`, and `c` from the user
 - Calculate the discriminant and determine the number of real roots
-- Display the number of roots and their values (if any)
+- Display the number of roots and their values in ascending order (if any)
 
 ## Quadratic Formula
 For equation `ax² + bx + c = 0`:
