@@ -11,6 +11,8 @@ Write a program that performs advanced arithmetic operations on two numbers.
 ```
 Enter first number: 15
 Enter second number: 4
+```
+```
 15 + 4 = 19
 15 - 4 = 11
 15 * 4 = 60
@@ -24,6 +26,8 @@ Enter second number: 4
 ```
 Enter first number: 20
 Enter second number: 6
+```
+```
 20 + 6 = 26
 20 - 6 = 14
 20 * 6 = 120
@@ -37,6 +41,8 @@ Enter second number: 6
 ```
 Enter first number: 8
 Enter second number: 3
+```
+```
 8 + 3 = 11
 8 - 3 = 5
 8 * 3 = 24

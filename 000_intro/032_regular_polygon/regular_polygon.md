@@ -12,6 +12,8 @@ Write a program that calculates the area of a regular polygon given the number o
 ```
 Enter number of sides: 6
 Enter side length: 4
+```
+```
 Area of regular polygon: 41.57
 ```
 
@@ -19,6 +21,8 @@ Area of regular polygon: 41.57
 ```
 Enter number of sides: 8
 Enter side length: 3
+```
+```
 Area of regular polygon: 43.46
 ```
 
@@ -26,6 +30,8 @@ Area of regular polygon: 43.46
 ```
 Enter number of sides: 5
 Enter side length: 5
+```
+```
 Area of regular polygon: 43.01
 ```
 

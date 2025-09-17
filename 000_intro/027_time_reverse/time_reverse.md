@@ -11,18 +11,24 @@ Write a program that converts total seconds into days, hours, minutes, and secon
 **Example 1:**
 ```
 Enter total seconds: 186330
+```
+```
 Time format: 2:03:45:30
 ```
 
 **Example 2:**
 ```
 Enter total seconds: 88200
+```
+```
 Time format: 1:00:30:00
 ```
 
 **Example 3:**
 ```
 Enter total seconds: 8145
+```
+```
 Time format: 0:02:15:45
 ```
 

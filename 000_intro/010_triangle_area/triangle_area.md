@@ -12,6 +12,8 @@ Write a program that calculates the area of a triangle using base and height.
 ```
 Enter base length: 10.5
 Enter height: 5.2
+```
+```
 Area of triangle: 27.30
 ```
 
@@ -19,6 +21,8 @@ Area of triangle: 27.30
 ```
 Enter base length: 8.3
 Enter height: 12.1
+```
+```
 Area of triangle: 50.22
 ```
 
@@ -26,6 +30,8 @@ Area of triangle: 50.22
 ```
 Enter base length: 15.0
 Enter height: 7.8
+```
+```
 Area of triangle: 58.50
 ```
 

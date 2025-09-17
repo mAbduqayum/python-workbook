@@ -11,6 +11,8 @@ Write a program that calculates the perimeter of a rectangle.
 ```
 Enter length: 8.5
 Enter width: 5.2
+```
+```
 The perimeter is: 27.40
 ```
 
@@ -18,6 +20,8 @@ The perimeter is: 27.40
 ```
 Enter length: 12.3
 Enter width: 4.7
+```
+```
 The perimeter is: 34.00
 ```
 
@@ -25,6 +29,8 @@ The perimeter is: 34.00
 ```
 Enter length: 6.0
 Enter width: 6.0
+```
+```
 The perimeter is: 24.00
 ```
 

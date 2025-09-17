@@ -11,6 +11,8 @@ Write a program that performs basic arithmetic operations on two numbers.
 ```
 Enter first number: 12
 Enter second number: 8
+```
+```
 12 + 8 = 20
 12 - 8 = 4
 ```
@@ -19,6 +21,8 @@ Enter second number: 8
 ```
 Enter first number: 25
 Enter second number: 15
+```
+```
 25 + 15 = 40
 25 - 15 = 10
 ```
@@ -27,6 +31,8 @@ Enter second number: 15
 ```
 Enter first number: 7
 Enter second number: 3
+```
+```
 7 + 3 = 10
 7 - 3 = 4
 ```

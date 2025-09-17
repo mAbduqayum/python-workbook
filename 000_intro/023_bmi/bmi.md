@@ -12,6 +12,8 @@ Write a program that calculates the Body Mass Index (BMI) using metric units.
 ```
 Enter height in meters: 1.75
 Enter weight in kilograms: 70.0
+```
+```
 Your BMI is: 22.86
 ```
 
@@ -19,6 +21,8 @@ Your BMI is: 22.86
 ```
 Enter height in meters: 1.80
 Enter weight in kilograms: 85.0
+```
+```
 Your BMI is: 26.23
 ```
 
@@ -26,6 +30,8 @@ Your BMI is: 26.23
 ```
 Enter height in meters: 1.65
 Enter weight in kilograms: 55.0
+```
+```
 Your BMI is: 20.20
 ```
 

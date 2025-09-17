@@ -13,6 +13,8 @@ Write a program that calculates the energy required to heat water and the cost o
 ```
 Enter mass of water (grams): 250
 Enter temperature change (°C): 75
+```
+```
 Energy required: 78487.50 Joules
 Cost to heat water: 0.00 euros
 ```
@@ -21,6 +23,8 @@ Cost to heat water: 0.00 euros
 ```
 Enter mass of water (grams): 1000
 Enter temperature change (°C): 80
+```
+```
 Energy required: 334880.00 Joules
 Cost to heat water: 0.01 euros
 ```
@@ -29,6 +33,8 @@ Cost to heat water: 0.01 euros
 ```
 Enter mass of water (grams): 500
 Enter temperature change (°C): 95
+```
+```
 Energy required: 198835.00 Joules
 Cost to heat water: 0.00 euros
 ```

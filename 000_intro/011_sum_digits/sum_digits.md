@@ -11,18 +11,24 @@ Write a program that calculates the sum of digits in a two-digit integer.
 **Example 1:**
 ```
 Enter a two-digit integer: 47
+```
+```
 4 + 7 = 11
 ```
 
 **Example 2:**
 ```
 Enter a two-digit integer: 82
+```
+```
 8 + 2 = 10
 ```
 
 **Example 3:**
 ```
 Enter a two-digit integer: 95
+```
+```
 9 + 5 = 14
 ```
 

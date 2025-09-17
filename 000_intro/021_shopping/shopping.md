@@ -12,6 +12,8 @@ Write a program that calculates the total cost of items.
 ```
 Enter price: 12.50
 Enter quantity: 3
+```
+```
 Total cost: 37.50
 ```
 
@@ -19,6 +21,8 @@ Total cost: 37.50
 ```
 Enter price: 8.99
 Enter quantity: 2
+```
+```
 Total cost: 17.98
 ```
 
@@ -26,6 +30,8 @@ Total cost: 17.98
 ```
 Enter price: 15.00
 Enter quantity: 4
+```
+```
 Total cost: 60.00
 ```
 

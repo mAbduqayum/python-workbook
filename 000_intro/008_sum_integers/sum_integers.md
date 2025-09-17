@@ -11,18 +11,24 @@ Write a program that calculates the sum of all positive integers from 1 to n usi
 **Example 1:**
 ```
 Enter a positive integer: 5
+```
+```
 The sum of integers from 1 to 5 is: 15
 ```
 
 **Example 2:**
 ```
 Enter a positive integer: 10
+```
+```
 The sum of integers from 1 to 10 is: 55
 ```
 
 **Example 3:**
 ```
 Enter a positive integer: 100
+```
+```
 The sum of integers from 1 to 100 is: 5050
 ```
 

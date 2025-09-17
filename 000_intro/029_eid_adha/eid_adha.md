@@ -15,18 +15,24 @@ Write a program that estimates Eid al-Adha date (simplified lunar calendar calcu
 **Example 1:**
 ```
 Enter Gregorian year: 2024
+```
+```
 Estimated Eid al-Adha: June 16, 2024
 ```
 
 **Example 2:**
 ```
 Enter Gregorian year: 2025
+```
+```
 Estimated Eid al-Adha: June 6, 2025
 ```
 
 **Example 3:**
 ```
 Enter Gregorian year: 2026
+```
+```
 Estimated Eid al-Adha: May 26, 2026
 ```
 

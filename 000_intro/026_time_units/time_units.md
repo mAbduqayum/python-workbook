@@ -16,6 +16,8 @@ Enter days: 2
 Enter hours: 3
 Enter minutes: 45
 Enter seconds: 30
+```
+```
 Total seconds: 186330
 ```
 
@@ -25,6 +27,8 @@ Enter days: 1
 Enter hours: 0
 Enter minutes: 30
 Enter seconds: 0
+```
+```
 Total seconds: 88200
 ```
 
@@ -34,6 +38,8 @@ Enter days: 0
 Enter hours: 2
 Enter minutes: 15
 Enter seconds: 45
+```
+```
 Total seconds: 8145
 ```
 

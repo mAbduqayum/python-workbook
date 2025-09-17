@@ -13,6 +13,8 @@ Write a program that calculates the area of a triangle using Heron's formula whe
 Enter length of side 1: 3
 Enter length of side 2: 4
 Enter length of side 3: 5
+```
+```
 Area of triangle: 6.00
 ```
 
@@ -21,6 +23,8 @@ Area of triangle: 6.00
 Enter length of side 1: 5
 Enter length of side 2: 6
 Enter length of side 3: 7
+```
+```
 Area of triangle: 14.70
 ```
 
@@ -29,6 +33,8 @@ Area of triangle: 14.70
 Enter length of side 1: 10
 Enter length of side 2: 10
 Enter length of side 3: 12
+```
+```
 Area of triangle: 48.00
 ```
 

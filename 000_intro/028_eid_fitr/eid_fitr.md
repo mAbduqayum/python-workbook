@@ -15,18 +15,24 @@ Write a program that estimates Eid al-Fitr date (simplified lunar calendar calcu
 **Example 1:**
 ```
 Enter Gregorian year: 2024
+```
+```
 Estimated Eid al-Fitr: 2024/04/10
 ```
 
 **Example 2:**
 ```
 Enter Gregorian year: 2025
+```
+```
 Estimated Eid al-Fitr: 2025/03/30
 ```
 
 **Example 3:**
 ```
 Enter Gregorian year: 2026
+```
+```
 Estimated Eid al-Fitr: 2026/03/20
 ```
 
