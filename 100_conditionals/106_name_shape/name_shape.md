@@ -1,11 +1,11 @@
 # Exercise: Name That Shape
 
-Write a program that determines the name of a shape from its number of sides. The program should support shapes with 3 to 10 sides and display an appropriate error message for numbers outside this range.
+Write a program that determines the name of a shape from its number of sides. The program should support shapes with `3` to `10` sides and display an appropriate error message for numbers outside this range.
 
 ## Task
 - Read the number of sides from the user
 - Report the appropriate shape name as part of a meaningful message
-- Support shapes with 3 to 10 sides
+- Support shapes with `3` to `10` sides
 - Display an error message for numbers outside the valid range
 
 ## Shape Names

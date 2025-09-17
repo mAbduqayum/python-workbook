@@ -1,19 +1,19 @@
 # BMI Categories
 
-Write a program that calculates BMI and determines the weight category.
+Write a program that calculates `BMI` and determines the weight category.
 
 ## Task
 - Read weight (kg) and height (m) from the user
-- Calculate BMI using the formula: BMI = weight / (height²)
-- Determine and display the BMI category
+- Calculate `BMI` using the formula: `BMI = weight / (height²)`
+- Determine and display the `BMI` category
 
 ## BMI Categories
 | BMI Range         | Category      |
 |-------------------|---------------|
-| BMI < 18.5        | Underweight   |
-| 18.5 ≤ BMI < 25.0 | Normal weight |
-| 25.0 ≤ BMI < 30.0 | Overweight    |
-| BMI ≥ 30.0        | Obese         |
+| `BMI < 18.5`        | Underweight   |
+| `18.5 ≤ BMI < 25.0` | Normal weight |
+| `25.0 ≤ BMI < 30.0` | Overweight    |
+| `BMI ≥ 30.0`        | Obese         |
 
 ## Examples
 **Example 1:**
@@ -62,10 +62,10 @@ Normal weight
 ```
 
 ## Formula
-BMI = weight (kg) / height² (m²)
+`BMI = weight (kg) / height² (m²)`
 
 ## Note
-- Calculate BMI first, then categorize
+- Calculate `BMI` first, then categorize
 - Use appropriate comparison operators for ranges
 - Weight in kilograms, height in meters
-- Standard WHO BMI categories
+- Standard WHO `BMI` categories

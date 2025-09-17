@@ -6,15 +6,15 @@ Write a program that determines if three side lengths can form a valid triangle.
 
 - Read three side lengths from the user
 - Determine if they can form a valid triangle
-- Display "valid triangle" or "invalid triangle"
+- Display `"valid triangle"` or `"invalid triangle"`
 
 ## Triangle Inequality Theorem
 
-For sides a, b, and c to form a valid triangle:
+For sides `a`, `b`, and `c` to form a valid triangle:
 
-- a + b > c
-- a + c > b
-- b + c > a
+- `a + b > c`
+- `a + c > b`
+- `b + c > a`
 
 All three conditions must be true.
 
@@ -61,5 +61,5 @@ invalid triangle
 - All sides must be positive
 - The sum of any two sides must be greater than the third side
 - Check all three combinations of the triangle inequality
-- Use logical AND to combine all conditions
+- Use logical `AND` to combine all conditions
 - Alternatively you can do `abs(a-c) < b < a+c`

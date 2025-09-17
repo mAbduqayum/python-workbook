@@ -3,7 +3,7 @@
 Write a program that determines if an integer is positive, negative, or zero.
 
 ## Task
-- Read an integer n from the user
+- Read an integer `n` from the user
 - Determine if the number is positive, negative, or zero
 - Display the appropriate classification
 
@@ -33,9 +33,9 @@ zero
 ```
 
 ## Logic
-- If n > 0: positive
-- If n < 0: negative
-- If n == 0: zero
+- If `n > 0`: positive
+- If `n < 0`: negative
+- If `n == 0`: zero
 
 ## Note
 - Handle integer input

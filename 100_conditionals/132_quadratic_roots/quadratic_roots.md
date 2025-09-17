@@ -13,9 +13,9 @@ For equation `ax² + bx + c = 0`:
 - **Roots**: `x = (-b ± √Δ) / (2a)`
 
 ## Root Cases
-- **Δ < 0**: No real roots
-- **Δ = 0**: One real root
-- **Δ > 0**: Two real roots
+- **`Δ < 0`**: No real roots
+- **`Δ = 0`**: One real root
+- **`Δ > 0`**: Two real roots
 
 ## Examples
 **Example 1:** (Two roots)

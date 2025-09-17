@@ -3,9 +3,9 @@
 Write a program that reads an integer from the user and displays the corresponding month name.
 
 ## Task
-- Read an integer from the user (1-12)
+- Read an integer from the user (`1-12`)
 - Display the corresponding month name
-- Display an appropriate error message if the number is not between 1 and 12
+- Display an appropriate error message if the number is not between `1` and `12`
 
 ## Month Reference Table
 | Number | Month     |

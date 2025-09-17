@@ -10,12 +10,12 @@ Write a program that reads a wavelength and reports the corresponding color of v
 ## Visible Light Spectrum
 | Color  | Wavelength Range (nm) |
 |--------|-----------------------|
-| Violet | 380 to less than 450  |
-| Blue   | 450 to less than 495  |
-| Green  | 495 to less than 570  |
-| Yellow | 570 to less than 590  |
-| Orange | 590 to less than 620  |
-| Red    | 620 to 750            |
+| Violet | `380` to less than `450`  |
+| Blue   | `450` to less than `495`  |
+| Green  | `495` to less than `570`  |
+| Yellow | `570` to less than `590`  |
+| Orange | `590` to less than `620`  |
+| Red    | `620` to `750`            |
 
 ## Examples
 **Example 1:**

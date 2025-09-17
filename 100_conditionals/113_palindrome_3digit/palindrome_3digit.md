@@ -1,11 +1,11 @@
 # 3-Digit Palindrome
 
-Write a program that determines if a 3-digit integer is a palindrome.
+Write a program that determines if a `3-digit` integer is a palindrome.
 
 ## Task
-- Read a 3-digit integer from the user
+- Read a `3-digit` integer from the user
 - Determine if it's a palindrome (reads the same forwards and backwards)
-- Display "palindrome" or "not palindrome"
+- Display `palindrome` or `not palindrome`
 
 ## Examples
 **Example 1:**
@@ -34,12 +34,12 @@ palindrome
 
 
 ## Algorithm
-For a 3-digit number ABC:
-- Extract digits: A = n // 100, B = (n // 10) % 10, C = n % 10
-- Check if A == C
+For a `3-digit` number `ABC`:
+- Extract digits: `A = n // 100`, `B = (n // 10) % 10`, `C = n % 10`
+- Check if `A == C`
 - If first digit equals last digit, it's a palindrome
 
 ## Note
-- Assume input is always a 3-digit number (100-999)
+- Assume input is always a `3-digit` number (`100-999`)
 - A palindrome reads the same forwards and backwards
-- Use integer division and modulus to extract digits
+- Use integer division (`//`) and modulus (`%`) to extract digits
