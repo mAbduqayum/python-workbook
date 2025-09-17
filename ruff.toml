@@ -1,0 +1,35 @@
+target-version = "py313"
+
+[lint]
+select = [
+    # "ALL",
+    "ANN204",
+    "B",
+    "COM",
+    "I",
+    "FAST",
+    "S104",
+    "UP007",
+]
+
+ignore = [
+    "ANN401",
+    "ANN201",
+    "D",
+    "E",
+    "EM",
+    "TRY",
+    "SIM",
+    "PLC0414",
+    "RET504",
+    "PGH003",
+    "COM812",
+]
+
+[lint.isort]
+split-on-trailing-comma = false
+
+
+[format]
+skip-magic-trailing-comma = false
+line-ending = "lf"
