@@ -12,8 +12,8 @@ Write a program that reads a date (month and day) from the user and determines i
 |------------|--------------------------------|
 | January 1  | New Year's Day                 |
 | March 8    | International Women's Day      |
-| March 20   | Nowruz (Persian New Year)      |
-| May 1      | International Workers' Day     |
+| March 20   | Navruz (Persian New Year)      |
+| May 1      | Labour Day                     |
 | May 9      | Victory Day                    |
 | June 27    | National Unity Day             |
 | September 9| Independence Day               |
@@ -38,7 +38,7 @@ Independence Day
 ```
 3
 20
-Nowruz (Persian New Year)
+Navruz (Persian New Year)
 ```
 
 **Example 4:**
