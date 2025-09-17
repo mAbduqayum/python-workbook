@@ -6,18 +6,25 @@ Write a program that reads a date (month and day) from the user and determines i
 - Read the month (1-12) and day from the user
 - Display the name of the holiday if the date is a national holiday
 - Display "Not a national holiday" if the date is not a holiday
+- Note: Only check fixed-date holidays
 
 ## Tajikistan National Holidays Reference Table
-| Date       | Holiday Name                    |
-|------------|--------------------------------|
-| January 1  | New Year's Day                 |
-| March 8    | International Women's Day      |
-| March 20   | Navruz (Persian New Year)      |
-| May 1      | Labour Day                     |
-| May 9      | Victory Day                    |
-| June 27    | National Unity Day             |
-| September 9| Independence Day               |
-| November 6 | Constitution Day               |
+| Date        | Holiday Name              |
+|-------------|---------------------------|
+| January 1   | New Year's Day            |
+| March 8     | International Women's Day |
+| March 21-24 | Navruz (Persian New Year) |
+| May 1       | Labour Day                |
+| May 9       | Victory Day               |
+| June 27     | National Unity Day        |
+| September 9 | Independence Day          |
+| November 6  | Constitution Day          |
+
+## Variable Date Holidays (Islamic Calendar)
+| Holiday Name | Description                      |
+|--------------|----------------------------------|
+| Idi Ramazon  | End of Ramadan (Eid al-Fitr)     |
+| Idi Qurbon   | Feast of Sacrifice (Eid al-Adha) |
 
 ## Examples
 **Example 1:**
