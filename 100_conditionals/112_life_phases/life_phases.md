@@ -12,9 +12,9 @@ Write a program that reads a person's age and determines their life phase.
 |-----------|-------------|
 | 0-2       | Infant      |
 | 2-5       | Toddler     |
-| 6-11      | Child       |
-| 12-18     | Adolescent  |
-| 19-39     | Young Adult |
+| 5-11      | Child       |
+| 11-18     | Adolescent  |
+| 18-40     | Young Adult |
 | 40-64     | Middle-aged |
 | 65+       | Senior      |
 
