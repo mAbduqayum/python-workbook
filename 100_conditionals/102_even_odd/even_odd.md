@@ -2,6 +2,11 @@
 
 Write a program that reads an integer from the user and determines whether the integer is `even` or `odd`.
 
+## Task
+- Read an integer from the user
+- Determine if the number is even or odd
+- Display "even" or "odd"
+
 ## Examples
 **Example 1:**
 ```
@@ -9,6 +14,14 @@ Write a program that reads an integer from the user and determines whether the i
 ```
 ```
 odd
+```
+
+**Example 2:**
+```
+4
+```
+```
+even
 ```
 
 **Example 3:**
@@ -26,3 +39,12 @@ even
 ```
 odd
 ```
+
+## Logic
+- If `number % 2 == 0`: even
+- If `number % 2 != 0`: odd
+
+## Note
+- Zero is considered even
+- The modulo operator `%` returns the remainder of division
+- Handle negative numbers (they follow the same rule)
