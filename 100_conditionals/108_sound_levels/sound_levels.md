@@ -1,4 +1,4 @@
-# Exercise 106: Sound Levels
+# Sound Levels
 
 Write a program that reads a sound level in decibels from the user and reports information about the sound based on common noise levels.
 
@@ -53,8 +53,3 @@ Louder than Jackhammer
 Gas Lawnmower
 ```
 
-## Note
-- Handle exact matches first, then ranges between sounds
-- Use appropriate conditional statements to categorize the input
-- Consider edge cases for values below 40 dB and above 130 dB
-- Format output messages appropriately

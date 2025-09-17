@@ -1,4 +1,4 @@
-# Exercise 108: Note to Frequency
+# Note to Frequency
 
 Write a program that reads the name of a musical note from the user and displays the note's frequency. This exercise starts with basic notes and can be extended to support multiple octaves.
 
@@ -58,8 +58,3 @@ Invalid note
 - To calculate: frequency = base_frequency / (2^(4-octave_number))
 - Where base_frequency is the frequency of the note in the 4th octave
 
-## Note
-- Start with the basic version supporting only C4-B4
-- For the extended version, separate the letter from the octave number
-- Use appropriate conditional statements for note validation
-- Format frequency output to 2 decimal places

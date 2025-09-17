@@ -51,7 +51,3 @@ Invalid number of sides
 Invalid number of sides
 ```
 
-## Note
-- Handle edge cases for numbers less than 3 and greater than 10
-- Use appropriate conditional statements (if-elif-else) to check for each shape
-- Provide meaningful error messages for invalid input

@@ -55,8 +55,3 @@ Invalid denomination
 Invalid denomination
 ```
 
-## Note
-- Accept input as integer values (1, 2, 5, 10, 20, 50, 100)
-- While $2 bills are rarely seen, they are legal tender
-- High denomination bills ($500, $1000, etc.) were discontinued in 1969
-- Display appropriate error messages for invalid denominations

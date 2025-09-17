@@ -1,4 +1,4 @@
-# Exercise 107: Classifying Triangles
+# Classifying Triangles
 
 A triangle can be classified based on the lengths of its sides as equilateral, isosceles, or scalene. Write a program that reads the lengths of three sides and determines the triangle's type.
 
@@ -45,7 +45,3 @@ scalene
 isosceles
 ```
 
-## Note
-- Consider all possible arrangements for isosceles triangles (sides 1&2, 1&3, or 2&3 could be equal)
-- Check for equilateral first (all sides equal), then isosceles (any two sides equal), then scalene (all different)
-- This exercise focuses on classification only, not triangle validity

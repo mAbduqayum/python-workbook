@@ -46,8 +46,3 @@ Y
 sometimes vowel, sometimes consonant
 ```
 
-## Note
-- Handle both uppercase and lowercase letters
-- Use the `lower()` method to standardize input for comparison
-- The vowels are: a, e, i, o, u
-- The letter 'y' has a special message indicating it can be both a vowel and consonant

@@ -54,8 +54,3 @@ xyz
 Invalid month
 ```
 
-## Note
-- Handle input case-insensitively (accept "January", "january", "JANUARY", etc.)
-- Use the `capitalize()` method to format the month name in the output
-- Display an appropriate error message for invalid month names
-- February should display "28 or 29 days" to address leap years

@@ -1,4 +1,4 @@
-# Exercise 109: Frequency to Note
+# Frequency to Note
 
 Write a program that reverses the process of the previous exercise. Read a frequency from the user and determine if it corresponds to a known musical note.
 
@@ -55,8 +55,3 @@ G4
 - For example, A4 (440 Hz) matches frequencies from 439.0 to 441.0
 - Check each note systematically to find a match
 
-## Note
-- Use `abs()` function to calculate the absolute difference
-- Format the frequency display to 1 decimal place
-- Only one note should match for any given frequency
-- Handle the case where no note matches the input frequency
