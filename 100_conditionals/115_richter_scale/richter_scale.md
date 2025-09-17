@@ -1,4 +1,4 @@
-# Exercise 115: Richter Scale
+# Exercise: Richter Scale
 
 Write a program that reads an earthquake magnitude and displays the appropriate descriptor according to the Richter scale.
 

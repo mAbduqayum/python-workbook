@@ -1,4 +1,4 @@
-# Exercise 126: Tajikistan National Holidays
+# Exercise: Tajikistan National Holidays
 
 Write a program that reads a date (month and day) from the user and determines if it corresponds to a national holiday in Tajikistan.
 

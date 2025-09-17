@@ -1,4 +1,4 @@
-# Exercise 103: Vowel or Consonant
+# Exercise: Vowel or Consonant
 
 Create a program that reads a letter of the alphabet from the user and determines whether it is a vowel, consonant, or the special case of 'y'.
 

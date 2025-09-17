@@ -1,4 +1,4 @@
-# Exercise 116: Roots of a Quadratic Function
+# Exercise: Roots of a Quadratic Function
 
 Write a program that computes the real roots of a quadratic function using the quadratic formula.
 

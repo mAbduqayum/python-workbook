@@ -1,4 +1,4 @@
-# Exercise 121: Next Day
+# Exercise: Next Day
 
 Write a program that reads a date and computes its immediate successor (next day).
 

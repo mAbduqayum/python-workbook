@@ -1,4 +1,4 @@
-# Exercise 105: Month Name to Number of Days
+# Exercise: Month Name to Number of Days
 
 The length of a month varies from 28 to 31 days. Create a program that reads the name of a month from the user as a string and displays the number of days in that month.
 

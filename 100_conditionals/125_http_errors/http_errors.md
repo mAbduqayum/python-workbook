@@ -1,4 +1,4 @@
-# Exercise 125: HTTP Status Codes
+# Exercise: HTTP Status Codes
 
 Write a program that reads an HTTP status code from the user and displays the corresponding error message and description.
 

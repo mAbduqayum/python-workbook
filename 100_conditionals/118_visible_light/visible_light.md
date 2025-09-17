@@ -1,4 +1,4 @@
-# Exercise 118: Wavelengths of Visible Light
+# Exercise: Wavelengths of Visible Light
 
 Write a program that reads a wavelength and reports the corresponding color of visible light.
 

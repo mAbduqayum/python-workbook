@@ -1,4 +1,4 @@
-# Exercise 117: Letter Grade to Grade Points
+# Exercise: Letter Grade to Grade Points
 
 Write a program that converts letter grades to their equivalent grade points.
 

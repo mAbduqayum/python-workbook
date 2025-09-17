@@ -1,4 +1,4 @@
-# Exercise 120: Is It a Leap Year?
+# Exercise: Is It a Leap Year?
 
 Write a program that determines whether a given year is a leap year.
 

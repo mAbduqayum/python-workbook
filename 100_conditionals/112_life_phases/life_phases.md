@@ -1,4 +1,4 @@
-# Exercise 112: Life Phases
+# Exercise: Life Phases
 
 Write a program that reads a person's age and determines their life phase.
 

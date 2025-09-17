@@ -1,4 +1,4 @@
-# Exercise 104: Name That Shape
+# Exercise: Name That Shape
 
 Write a program that determines the name of a shape from its number of sides. The program should support shapes with 3 to 10 sides and display an appropriate error message for numbers outside this range.
 

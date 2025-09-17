@@ -1,4 +1,4 @@
-# Exercise 114: Season from Date
+# Exercise: Season from Date
 
 Write a program that determines the season based on a given month and day.
 

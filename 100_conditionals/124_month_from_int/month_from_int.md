@@ -1,4 +1,4 @@
-# Exercise 124: Month from Integer
+# Exercise: Month from Integer
 
 Write a program that reads an integer from the user and displays the corresponding month name.
 

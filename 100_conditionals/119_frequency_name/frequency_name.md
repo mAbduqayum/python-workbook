@@ -1,4 +1,4 @@
-# Exercise 119: Frequency to Name
+# Exercise: Frequency to Name
 
 Write a program that classifies electromagnetic radiation based on its frequency.
 

@@ -1,4 +1,4 @@
-# Exercise 113: Chess Square Color
+# Exercise: Chess Square Color
 
 Write a program that determines the color of a chess square based on its position.
 

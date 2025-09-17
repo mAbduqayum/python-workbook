@@ -1,4 +1,4 @@
-# Exercise 122: What Day of the Week Is January 1?
+# Exercise: What Day of the Week Is January 1?
 
 Write a program that determines the day of the week for January 1st of a given year using a mathematical formula.
 
