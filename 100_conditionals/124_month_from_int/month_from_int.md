@@ -27,29 +27,39 @@ Write a program that reads an integer from the user and displays the correspondi
 **Example 1:**
 ```
 1
+```
+```
 January
 ```
 
 **Example 2:**
 ```
 6
+```
+```
 June
 ```
 
 **Example 3:**
 ```
 12
+```
+```
 December
 ```
 
 **Example 4:**
 ```
 0
+```
+```
 Invalid month number
 ```
 
 **Example 5:**
 ```
 13
+```
+```
 Invalid month number
 ```

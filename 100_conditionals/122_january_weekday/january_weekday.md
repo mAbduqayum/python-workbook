@@ -27,30 +27,40 @@ day_of_week = (year + floor((year - 1) / 4) - floor((year - 1) / 100) + floor((y
 **Example 1:**
 ```
 2020
+```
+```
 Wednesday
 ```
 
 **Example 2:**
 ```
 2021
+```
+```
 Friday
 ```
 
 **Example 3:**
 ```
 2022
+```
+```
 Saturday
 ```
 
 **Example 4:**
 ```
 2000
+```
+```
 Saturday
 ```
 
 **Example 5:**
 ```
 1900
+```
+```
 Monday
 ```
 

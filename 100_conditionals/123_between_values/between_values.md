@@ -13,6 +13,8 @@ Write a program that determines if a value b is between two other values a and c
 5
 7
 10
+```
+```
 between
 ```
 
@@ -21,6 +23,8 @@ between
 10
 7
 5
+```
+```
 between
 ```
 
@@ -29,6 +33,8 @@ between
 5
 12
 10
+```
+```
 not between
 ```
 
@@ -37,6 +43,8 @@ not between
 5
 5
 10
+```
+```
 between
 ```
 
@@ -45,6 +53,8 @@ between
 10
 5
 5
+```
+```
 between
 ```
 

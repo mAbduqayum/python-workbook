@@ -25,30 +25,40 @@ Write a program that determines the color of a chess square based on its positio
 **Example 1:**
 ```
 a1
+```
+```
 black
 ```
 
 **Example 2:**
 ```
 d5
+```
+```
 white
 ```
 
 **Example 3:**
 ```
 h8
+```
+```
 black
 ```
 
 **Example 4:**
 ```
 e4
+```
+```
 white
 ```
 
 **Example 5:**
 ```
 c3
+```
+```
 black
 ```
 

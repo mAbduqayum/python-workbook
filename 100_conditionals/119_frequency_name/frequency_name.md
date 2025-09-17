@@ -22,30 +22,40 @@ Write a program that classifies electromagnetic radiation based on its frequency
 **Example 1:**
 ```
 1000000000
+```
+```
 Radio Waves
 ```
 
 **Example 2:**
 ```
 10000000000
+```
+```
 Microwaves
 ```
 
 **Example 3:**
 ```
 500000000000000
+```
+```
 Visible Light
 ```
 
 **Example 4:**
 ```
 1000000000000000000
+```
+```
 Ultraviolet Light
 ```
 
 **Example 5:**
 ```
 100000000000000000000
+```
+```
 Gamma Rays
 ```
 

@@ -14,6 +14,8 @@ Write a program that reads a date and computes its immediate successor (next day
 2019
 11
 18
+```
+```
 2019-11-19
 ```
 
@@ -22,6 +24,8 @@ Write a program that reads a date and computes its immediate successor (next day
 2019
 11
 30
+```
+```
 2019-12-01
 ```
 
@@ -30,6 +34,8 @@ Write a program that reads a date and computes its immediate successor (next day
 2019
 12
 31
+```
+```
 2020-01-01
 ```
 
@@ -38,6 +44,8 @@ Write a program that reads a date and computes its immediate successor (next day
 2020
 2
 28
+```
+```
 2020-02-29
 ```
 
@@ -46,6 +54,8 @@ Write a program that reads a date and computes its immediate successor (next day
 2021
 2
 28
+```
+```
 2021-03-01
 ```
 

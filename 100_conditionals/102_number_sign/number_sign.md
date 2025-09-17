@@ -11,30 +11,40 @@ Write a program that determines if an integer is positive, negative, or zero.
 **Example 1:**
 ```
 5
+```
+```
 positive
 ```
 
 **Example 2:**
 ```
 -3
+```
+```
 negative
 ```
 
 **Example 3:**
 ```
 0
+```
+```
 zero
 ```
 
 **Example 4:**
 ```
 42
+```
+```
 positive
 ```
 
 **Example 5:**
 ```
 -100
+```
+```
 negative
 ```
 

@@ -24,30 +24,40 @@ Write a program that determines the name of a shape from its number of sides. Th
 **Example 1:**
 ```
 3
+```
+```
 Triangle
 ```
 
 **Example 2:**
 ```
 6
+```
+```
 Hexagon
 ```
 
 **Example 3:**
 ```
 10
+```
+```
 Decagon
 ```
 
 **Example 4:**
 ```
 2
+```
+```
 Invalid number of sides
 ```
 
 **Example 5:**
 ```
 15
+```
+```
 Invalid number of sides
 ```
 

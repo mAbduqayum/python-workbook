@@ -13,6 +13,8 @@ Write a program that determines if three numbers are sorted in ascending order, 
 1
 5
 9
+```
+```
 ascending
 ```
 
@@ -21,6 +23,8 @@ ascending
 9
 5
 1
+```
+```
 descending
 ```
 
@@ -29,6 +33,8 @@ descending
 5
 1
 9
+```
+```
 random
 ```
 
@@ -37,6 +43,8 @@ random
 3
 3
 7
+```
+```
 ascending
 ```
 
@@ -45,6 +53,8 @@ ascending
 8
 4
 4
+```
+```
 descending
 ```
 
@@ -53,6 +63,8 @@ descending
 2
 2
 2
+```
+```
 ascending
 ```
 

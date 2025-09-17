@@ -26,30 +26,40 @@ Write a program that reads the name of a musical note from the user and displays
 **Example 1 (Basic):**
 ```
 C4
+```
+```
 261.63
 ```
 
 **Example 2 (Basic):**
 ```
 A4
+```
+```
 440.00
 ```
 
 **Example 3 (Extended):**
 ```
 C3
+```
+```
 130.82
 ```
 
 **Example 4 (Extended):**
 ```
 A5
+```
+```
 880.00
 ```
 
 **Example 5 (Invalid):**
 ```
 X4
+```
+```
 Invalid note
 ```
 

@@ -13,36 +13,48 @@ Create a program that reads a letter of the alphabet from the user and determine
 **Example 1:**
 ```
 a
+```
+```
 vowel
 ```
 
 **Example 2:**
 ```
 B
+```
+```
 consonant
 ```
 
 **Example 3:**
 ```
 y
+```
+```
 sometimes vowel, sometimes consonant
 ```
 
 **Example 4:**
 ```
 E
+```
+```
 vowel
 ```
 
 **Example 5:**
 ```
 z
+```
+```
 consonant
 ```
 
 **Example 6:**
 ```
 Y
+```
+```
 sometimes vowel, sometimes consonant
 ```
 

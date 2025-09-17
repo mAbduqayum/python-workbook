@@ -24,36 +24,48 @@ It is common for images of a country's previous leaders, or other individuals of
 **Example 1:**
 ```
 1
+```
+```
 Mirzo Tursunzoda
 ```
 
 **Example 2:**
 ```
 20
-Abuali ibn Sino (Avicenna)
+```
+```
+Abuali ibni Sino
 ```
 
 **Example 3:**
 ```
 100
-Ismoil Somoni
+```
+```
+Ismoili Somoni
 ```
 
 **Example 4:**
 ```
 3
+```
+```
 Shirinsho Shotemur
 ```
 
 **Example 5:**
 ```
 25
+```
+```
 Invalid denomination
 ```
 
 **Example 6:**
 ```
 1000
+```
+```
 Invalid denomination
 ```
 

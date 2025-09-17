@@ -21,6 +21,8 @@ All three conditions must be true.
 3
 4
 5
+```
+```
 valid triangle
 ```
 
@@ -29,6 +31,8 @@ valid triangle
 1
 2
 5
+```
+```
 invalid triangle
 ```
 
@@ -37,6 +41,8 @@ invalid triangle
 6
 8
 10
+```
+```
 valid triangle
 ```
 
@@ -45,6 +51,8 @@ valid triangle
 1
 1
 3
+```
+```
 invalid triangle
 ```
 
@@ -53,6 +61,8 @@ invalid triangle
 5
 5
 5
+```
+```
 valid triangle
 ```
 

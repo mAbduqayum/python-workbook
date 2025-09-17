@@ -13,6 +13,8 @@ Write a program that determines if at least two of three integers are equal.
 5
 5
 3
+```
+```
 yes
 ```
 
@@ -21,6 +23,8 @@ yes
 1
 2
 3
+```
+```
 no
 ```
 
@@ -29,6 +33,8 @@ no
 7
 3
 7
+```
+```
 yes
 ```
 
@@ -37,6 +43,8 @@ yes
 4
 4
 4
+```
+```
 yes
 ```
 
@@ -45,6 +53,8 @@ yes
 9
 2
 9
+```
+```
 yes
 ```
 

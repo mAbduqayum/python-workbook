@@ -20,6 +20,8 @@ Write a program that determines the season based on a given month and day.
 ```
 March
 25
+```
+```
 Spring
 ```
 
@@ -27,6 +29,8 @@ Spring
 ```
 june
 15
+```
+```
 Spring
 ```
 
@@ -34,6 +38,8 @@ Spring
 ```
 July
 4
+```
+```
 Summer
 ```
 
@@ -41,6 +47,8 @@ Summer
 ```
 October
 31
+```
+```
 Fall
 ```
 
@@ -48,6 +56,8 @@ Fall
 ```
 December
 25
+```
+```
 Winter
 ```
 
@@ -55,6 +65,8 @@ Winter
 ```
 January
 15
+```
+```
 Winter
 ```
 

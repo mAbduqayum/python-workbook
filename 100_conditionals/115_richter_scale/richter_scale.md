@@ -24,36 +24,48 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 **Example 1:**
 ```
 1.5
+```
+```
 Micro
 ```
 
 **Example 2:**
 ```
 2.5
+```
+```
 Very Minor
 ```
 
 **Example 3:**
 ```
 5.5
+```
+```
 Moderate
 ```
 
 **Example 4:**
 ```
 7.2
+```
+```
 Major
 ```
 
 **Example 5:**
 ```
 8.9
+```
+```
 Great
 ```
 
 **Example 6:**
 ```
 10.5
+```
+```
 Meteoric
 ```
 

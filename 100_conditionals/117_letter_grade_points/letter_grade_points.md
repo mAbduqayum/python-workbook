@@ -27,30 +27,40 @@ Write a program that converts letter grades to their equivalent grade points.
 **Example 1:**
 ```
 A
+```
+```
 4.0
 ```
 
 **Example 2:**
 ```
 B+
+```
+```
 3.3
 ```
 
 **Example 3:**
 ```
 C-
+```
+```
 1.7
 ```
 
 **Example 4:**
 ```
 F
+```
+```
 0.0
 ```
 
 **Example 5:**
 ```
 Z
+```
+```
 Invalid grade
 ```
 

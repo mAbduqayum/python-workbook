@@ -11,30 +11,40 @@ Write a program that determines if a person can vote based on their age.
 **Example 1:**
 ```
 18
+```
+```
 can vote
 ```
 
 **Example 2:**
 ```
 17
+```
+```
 cannot vote
 ```
 
 **Example 3:**
 ```
 25
+```
+```
 can vote
 ```
 
 **Example 4:**
 ```
 16
+```
+```
 cannot vote
 ```
 
 **Example 5:**
 ```
 65
+```
+```
 can vote
 ```
 

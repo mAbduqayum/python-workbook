@@ -11,30 +11,40 @@ Write a program that determines if a 3-digit integer is a palindrome.
 **Example 1:**
 ```
 121
+```
+```
 palindrome
 ```
 
 **Example 2:**
 ```
 123
+```
+```
 not palindrome
 ```
 
 **Example 3:**
 ```
 505
+```
+```
 palindrome
 ```
 
 **Example 4:**
 ```
 777
+```
+```
 palindrome
 ```
 
 **Example 5:**
 ```
 456
+```
+```
 not palindrome
 ```
 

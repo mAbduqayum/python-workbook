@@ -18,6 +18,8 @@ A triangle can be classified based on the lengths of its sides as equilateral, i
 3
 3
 3
+```
+```
 equilateral
 ```
 
@@ -26,6 +28,8 @@ equilateral
 5
 5
 8
+```
+```
 isosceles
 ```
 
@@ -34,6 +38,8 @@ isosceles
 3
 4
 5
+```
+```
 scalene
 ```
 
@@ -42,6 +48,8 @@ scalene
 7
 9
 7
+```
+```
 isosceles
 ```
 

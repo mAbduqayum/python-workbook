@@ -18,30 +18,40 @@ Write a program that reads an angle in degrees and determines which quadrant it 
 **Example 1:**
 ```
 45
+```
+```
 Quadrant I
 ```
 
 **Example 2:**
 ```
 120
+```
+```
 Quadrant II
 ```
 
 **Example 3:**
 ```
 90
+```
+```
 On axis
 ```
 
 **Example 4:**
 ```
 405
+```
+```
 Quadrant I
 ```
 
-**Example 4:**
+**Example 5:**
 ```
 -30
+```
+```
 Quadrant IV
 ```
 

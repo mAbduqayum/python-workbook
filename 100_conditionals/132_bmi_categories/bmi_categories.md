@@ -20,6 +20,8 @@ Write a program that calculates BMI and determines the weight category.
 ```
 70
 1.75
+```
+```
 Normal weight
 ```
 
@@ -27,6 +29,8 @@ Normal weight
 ```
 50
 1.70
+```
+```
 Underweight
 ```
 
@@ -34,6 +38,8 @@ Underweight
 ```
 85
 1.75
+```
+```
 Overweight
 ```
 
@@ -41,6 +47,8 @@ Overweight
 ```
 100
 1.75
+```
+```
 Obese
 ```
 
@@ -48,6 +56,8 @@ Obese
 ```
 60
 1.60
+```
+```
 Normal weight
 ```
 

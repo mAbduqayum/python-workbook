@@ -24,29 +24,39 @@ Write a program that reads an HTTP status code from the user and displays the co
 **Example 1:**
 ```
 200
+```
+```
 200 OK: The request was successful
 ```
 
 **Example 2:**
 ```
 404
+```
+```
 404 Not Found: The requested resource was not found
 ```
 
 **Example 3:**
 ```
 500
+```
+```
 500 Internal Server Error: The server encountered an error
 ```
 
 **Example 4:**
 ```
 401
+```
+```
 401 Unauthorized: Authentication is required
 ```
 
 **Example 5:**
 ```
 999
+```
+```
 Unknown status code
 ```

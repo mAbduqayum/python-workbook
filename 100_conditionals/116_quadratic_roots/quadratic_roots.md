@@ -23,6 +23,8 @@ For equation ax² + bx + c = 0:
 1
 -5
 6
+```
+```
 2 roots: 2.00 and 3.00
 ```
 
@@ -31,6 +33,8 @@ For equation ax² + bx + c = 0:
 1
 -4
 4
+```
+```
 1 root: 2.00
 ```
 
@@ -39,6 +43,8 @@ For equation ax² + bx + c = 0:
 1
 2
 5
+```
+```
 No real roots
 ```
 
@@ -47,6 +53,8 @@ No real roots
 2
 -7
 3
+```
+```
 2 roots: 0.50 and 3.00
 ```
 

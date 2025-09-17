@@ -18,30 +18,40 @@ A year is a leap year if:
 **Example 1:**
 ```
 2000
+```
+```
 Leap year
 ```
 
 **Example 2:**
 ```
 1900
+```
+```
 Not leap year
 ```
 
 **Example 3:**
 ```
 2004
+```
+```
 Leap year
 ```
 
 **Example 4:**
 ```
 2021
+```
+```
 Not leap year
 ```
 
 **Example 5:**
 ```
 2024
+```
+```
 Leap year
 ```
 
