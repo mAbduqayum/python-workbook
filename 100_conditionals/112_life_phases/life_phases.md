@@ -15,7 +15,7 @@ Write a program that reads a person's age and determines their life phase.
 | 5-11      | Child       |
 | 11-18     | Adolescent  |
 | 18-40     | Young Adult |
-| 40-64     | Middle-aged |
+| 40-65     | Middle-aged |
 | 65+       | Senior      |
 
 ## Examples
