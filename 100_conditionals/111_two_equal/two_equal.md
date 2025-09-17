@@ -60,7 +60,7 @@ yes
 
 ## Logic
 Check if any of the three pairs are equal:
-- a == b OR a == c OR b == c
+- `a == b` OR `a == c` OR `b == c`
 
 ## Note
 - At least two must be equal (can be all three)

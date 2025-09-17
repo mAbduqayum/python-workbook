@@ -42,22 +42,6 @@ June
 
 **Example 3:**
 ```
-12
-```
-```
-December
-```
-
-**Example 4:**
-```
-0
-```
-```
-Invalid month number
-```
-
-**Example 5:**
-```
 13
 ```
 ```

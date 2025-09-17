@@ -8,17 +8,17 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 - Handle all magnitude ranges appropriately
 
 ## Richter Scale Classifications
-| Magnitude | Descriptor |
-|-----------|------------|
-| Less than 2.0 | Micro |
-| 2.0 to less than 3.0 | Very Minor |
-| 3.0 to less than 4.0 | Minor |
-| 4.0 to less than 5.0 | Light |
-| 5.0 to less than 6.0 | Moderate |
-| 6.0 to less than 7.0 | Strong |
-| 7.0 to less than 8.0 | Major |
-| 8.0 to less than 10.0 | Great |
-| 10.0 or more | Meteoric |
+| Magnitude             | Descriptor |
+|-----------------------|------------|
+| Less than 2.0         | Micro      |
+| 2.0 to less than 3.0  | Very Minor |
+| 3.0 to less than 4.0  | Minor      |
+| 4.0 to less than 5.0  | Light      |
+| 5.0 to less than 6.0  | Moderate   |
+| 6.0 to less than 7.0  | Strong     |
+| 7.0 to less than 8.0  | Major      |
+| 8.0 to less than 10.0 | Great      |
+| 10.0 or more          | Meteoric   |
 
 ## Examples
 **Example 1:**

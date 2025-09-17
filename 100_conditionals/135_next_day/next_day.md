@@ -60,9 +60,9 @@ Write a program that reads a date and computes its immediate successor (next day
 ```
 
 ## Days in Each Month
-| Month | Days | Notes |
-|-------|------|-------|
-| 1, 3, 5, 7, 8, 10, 12 | 31 | |
-| 4, 6, 9, 11 | 30 | |
-| 2 | 28 or 29 | Depends on leap year |
+| Month                 | Days     | Notes                |
+|-----------------------|----------|----------------------|
+| 1, 3, 5, 7, 8, 10, 12 | 31       |                      |
+| 4, 6, 9, 11           | 30       |                      |
+| 2                     | 28 or 29 | Depends on leap year |
 

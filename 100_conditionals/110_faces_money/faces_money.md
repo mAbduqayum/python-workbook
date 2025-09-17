@@ -5,7 +5,7 @@ It is common for images of a country's previous leaders, or other individuals of
 ## Task
 - Read the denomination of a Tajikistan banknote from the user
 - Display the name of the individual that appears on that banknote
-- Display an appropriate error message if no such note exists
+- Display `Invalid denomination` message if no such note exists
 
 ## Tajikistan Banknote Reference Table
 | Amount  | Individual            |
@@ -23,21 +23,13 @@ It is common for images of a country's previous leaders, or other individuals of
 ## Examples
 **Example 1:**
 ```
-1
-```
-```
-Mirzo Tursunzoda
-```
-
-**Example 2:**
-```
 20
 ```
 ```
 Abuali ibni Sino
 ```
 
-**Example 3:**
+**Example 2:**
 ```
 100
 ```
@@ -45,23 +37,8 @@ Abuali ibni Sino
 Ismoili Somoni
 ```
 
-**Example 4:**
-```
-3
-```
-```
-Shirinsho Shotemur
-```
+**Example 3:**
 
-**Example 5:**
-```
-25
-```
-```
-Invalid denomination
-```
-
-**Example 6:**
 ```
 1000
 ```

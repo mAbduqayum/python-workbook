@@ -12,7 +12,7 @@ Write a program that reads an angle in degrees and determines which quadrant it 
 - **Quadrant II**: 90° < angle < 180°
 - **Quadrant III**: 180° < angle < 270°
 - **Quadrant IV**: 270° < angle < 360°
-- **Axes**: 0°, 90°, 180°, 270°, 360°
+- **Axes**: 0°, 90°, 180°, 270°
 
 ## Examples
 **Example 1:**

@@ -32,21 +32,6 @@ not palindrome
 palindrome
 ```
 
-**Example 4:**
-```
-777
-```
-```
-palindrome
-```
-
-**Example 5:**
-```
-456
-```
-```
-not palindrome
-```
 
 ## Algorithm
 For a 3-digit number ABC:

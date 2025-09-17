@@ -71,9 +71,9 @@ Cannot transition directly
 - Valid phases are: solid, liquid, gas, plasma
 - If the initial and final phases are the same, display `No transition`
 - If either phase is invalid, display `Invalid phase`
+- If the transition is not physically possible (e.g., solid to plasma), display `Cannot transition directly`
 - Only the following transitions are possible:
     - Solid ↔ Liquid (melting/freezing)
     - Liquid ↔ Gas (vaporization/condensation)
     - Solid ↔ Gas (sublimation/deposition)
     - Gas ↔ Plasma (ionization/recombination)
-- If the transition is not physically possible (e.g., solid to plasma), display `Cannot transition directly`

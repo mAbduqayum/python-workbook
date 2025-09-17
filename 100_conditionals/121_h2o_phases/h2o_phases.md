@@ -9,9 +9,11 @@ Write a program that determines the phase of water based on temperature.
 
 ## Temperature Ranges
 
-- Below 0: solid
-- 0 to 100: liquid
-- Above 100: gas
+| Temperature (°C) | Phase           |
+|------------------|-----------------|
+| Below 0          | solid           |
+| 0 to 100         | liquid          |
+| Above 100        | gas             |
 
 ## Examples
 

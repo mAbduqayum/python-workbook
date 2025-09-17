@@ -32,22 +32,6 @@ cannot vote
 can vote
 ```
 
-**Example 4:**
-```
-16
-```
-```
-cannot vote
-```
-
-**Example 5:**
-```
-65
-```
-```
-can vote
-```
-
 ## Logic
 - If age >= 18: can vote
 - If age < 18: cannot vote

@@ -5,15 +5,7 @@ Write a program that reads an integer from the user and determines whether the i
 ## Examples
 **Example 1:**
 ```
-4
-```
-```
-even
-```
-
-**Example 2:**
-```
-3
+7
 ```
 ```
 odd

@@ -15,13 +15,13 @@ day_of_week = (year + floor((year - 1) / 4) - floor((year - 1) / 100) + floor((y
 ## Day Mapping
 | Result | Day of Week |
 |--------|-------------|
-| 0 | Sunday |
-| 1 | Monday |
-| 2 | Tuesday |
-| 3 | Wednesday |
-| 4 | Thursday |
-| 5 | Friday |
-| 6 | Saturday |
+| 0      | Sunday      |
+| 1      | Monday      |
+| 2      | Tuesday     |
+| 3      | Wednesday   |
+| 4      | Thursday    |
+| 5      | Friday      |
+| 6      | Saturday    |
 
 ## Examples
 **Example 1:**

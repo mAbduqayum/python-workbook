@@ -32,22 +32,6 @@ negative
 zero
 ```
 
-**Example 4:**
-```
-42
-```
-```
-positive
-```
-
-**Example 5:**
-```
--100
-```
-```
-negative
-```
-
 ## Logic
 - If n > 0: positive
 - If n < 0: negative

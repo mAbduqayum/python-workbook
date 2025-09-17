@@ -20,7 +20,7 @@ vowel
 
 **Example 2:**
 ```
-B
+b
 ```
 ```
 consonant
@@ -36,25 +36,8 @@ sometimes vowel, sometimes consonant
 
 **Example 4:**
 ```
-E
+A
 ```
 ```
 vowel
 ```
-
-**Example 5:**
-```
-z
-```
-```
-consonant
-```
-
-**Example 6:**
-```
-Y
-```
-```
-sometimes vowel, sometimes consonant
-```
-

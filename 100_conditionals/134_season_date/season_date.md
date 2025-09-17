@@ -8,12 +8,12 @@ Write a program that determines the season based on a given month and day.
 - Use the standard season dates for the Northern Hemisphere
 
 ## Season Dates
-| Season | Start Date |
-|--------|------------|
-| Spring | March 20 |
-| Summer | June 21 |
-| Fall | September 22 |
-| Winter | December 21 |
+| Season | Start Date   |
+|--------|--------------|
+| Spring | March 20     |
+| Summer | June 21      |
+| Fall   | September 22 |
+| Winter | December 21  |
 
 ## Examples
 **Example 1:**
