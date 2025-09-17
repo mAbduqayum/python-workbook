@@ -54,5 +54,5 @@ can vote
 
 ## Note
 - Voting age is 18 in most countries
-- Use simple comparison operator
+- Use the simple comparison operator
 - Handle integer ages
