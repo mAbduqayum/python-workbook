@@ -15,10 +15,10 @@ graph TD
     subgraph "Phase Transitions"
     %% Transitions involving Solid, Liquid, and Gas
         Solid -- Melting --> Liquid
+        Solid -- Sublimation --> Gas
         Liquid -- Freezing --> Solid
         Liquid -- Vaporization --> Gas
         Gas -- Condensation --> Liquid
-        Solid -- Sublimation --> Gas
         Gas -- Deposition --> Solid
     %% Transitions involving Plasma
         Gas -- Ionization --> Plasma
