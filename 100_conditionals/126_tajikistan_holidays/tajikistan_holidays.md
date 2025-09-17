@@ -27,42 +27,22 @@ Write a program that reads a date (month and day) from the user and determines i
 | Idi Qurbon   | Feast of Sacrifice (Eid al-Adha) |
 
 ## Examples
-**Example 1:**
-```
-1
-1
-New Year's Day
-```
 
-**Example 2:**
+**Example 1:**
 ```
 9
 9
 Independence Day
 ```
 
-**Example 3:**
+**Example 2:**
 ```
 3
 20
 Navruz (Persian New Year)
 ```
 
-**Example 4:**
-```
-6
-27
-National Unity Day
-```
-
-**Example 5:**
-```
-7
-15
-Not a national holiday
-```
-
-**Example 6:**
+**Example 3:**
 ```
 12
 25
