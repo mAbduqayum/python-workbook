@@ -49,15 +49,6 @@ No transition
 
 **Example 3:**
 ```
-rock
-water
-```
-```
-Invalid phase
-```
-
-**Example 4:**
-```
 solid
 plasma
 ```
@@ -70,7 +61,6 @@ Cannot transition directly
 - Input should be case-insensitive (handle "SOLID", "Liquid", "GAS", etc.)
 - Valid phases are: solid, liquid, gas, plasma
 - If the initial and final phases are the same, display `No transition`
-- If either phase is invalid, display `Invalid phase`
 - If the transition is not physically possible (e.g., solid to plasma), display `Cannot transition directly`
 - Only the following transitions are possible:
     - Solid ↔ Liquid (melting/freezing)
