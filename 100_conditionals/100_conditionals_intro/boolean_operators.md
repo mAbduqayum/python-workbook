@@ -1,8 +1,10 @@
-# Boolean Operators in Python
+# Booleans and Boolean Operators
 
+## Boolean Type
+The boolean type (`bool`) has only two values: `True` and `False`. These are used in conditional statements to make decisions.
+
+## Boolean Operators
 Boolean operators `and`, `or`, `not` allow you to combine and manipulate boolean values `True`, `False` to create more complex conditions.
-
-## The Three Boolean Operators
 
 ### 1. `and` Operator
 
