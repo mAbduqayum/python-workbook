@@ -3,12 +3,15 @@
 Create a program that displays your name and complete mailing address formatted properly.
 
 ## Task
+
 - Display your name and complete mailing address
 - Use the proper format for your region
 - No input from the user is required
 
 ## Examples
+
 **Example 1:**
+
 ```
 Farid Rahimov
 123 Rudaki Avenue
@@ -17,6 +20,7 @@ Tajikistan
 ```
 
 **Example 2:**
+
 ```
 Gulnora Nazarova
 456 Ismoili Somoni Street
@@ -25,6 +29,7 @@ Tajikistan
 ```
 
 **Example 3:**
+
 ```
 Davron Mahmudov
 789 Ayni Street

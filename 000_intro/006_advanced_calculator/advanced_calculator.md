@@ -3,15 +3,20 @@
 Write a program that performs advanced arithmetic operations on two numbers.
 
 ## Task
+
 - Ask the user for two numbers (as `int`)
-- Calculate and display all seven arithmetic operations: addition, subtraction, multiplication, division, integer division, modulo, and power
+- Calculate and display all seven arithmetic operations: addition, subtraction, multiplication, division, integer
+  division, modulo, and power
 
 ## Examples
+
 **Example 1:**
+
 ```
 Enter first number: 15
 Enter second number: 4
 ```
+
 ```
 15 + 4 = 19
 15 - 4 = 11
@@ -23,10 +28,12 @@ Enter second number: 4
 ```
 
 **Example 2:**
+
 ```
 Enter first number: 20
 Enter second number: 6
 ```
+
 ```
 20 + 6 = 26
 20 - 6 = 14
@@ -38,10 +45,12 @@ Enter second number: 6
 ```
 
 **Example 3:**
+
 ```
 Enter first number: 8
 Enter second number: 3
 ```
+
 ```
 8 + 3 = 11
 8 - 3 = 5
@@ -53,9 +62,11 @@ Enter second number: 3
 ```
 
 ## Note
+
 For division results, use `.2f` formatting to display 2 decimal places.
 
 ## Operations Explained
+
 - **Addition (`+`)**: `num1 + num2`
 - **Subtraction (`-`)**: `num1 - num2`
 - **Multiplication (`*`)**: `num1 * num2`
