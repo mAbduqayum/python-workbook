@@ -23,6 +23,7 @@ match expression:
 
 **Problem**: Display the number of days in a month based on the month name.
 
+**Using match statement:**
 ```python
 # Read the month name
 month = input().lower()
@@ -37,6 +38,22 @@ match month:
         print("30")
     case _:
         print("Invalid month")
+```
+
+**Using if-elif for comparison:**
+```python
+# Read the month name
+month = input().lower()
+
+# Determine the number of days
+if month == "february":
+    print("28 or 29")
+elif month == "january" or month == "march" or month == "may" or month == "july" or month == "august" or month == "october" or month == "december":
+    print("31")
+elif month == "april" or month == "june" or month == "september" or month == "november":
+    print("30")
+else:
+    print("Invalid month")
 ```
 
 ### Example 2: Faces on Money
@@ -89,32 +106,31 @@ match letter:
         print("consonant")
 ```
 
+### Example 4: Temperature Classification
+
+**Problem**: Classify temperature ranges using guard conditions.
+
+```python
+# Read temperature
+temperature = int(input())
+
+# Classify temperature with guard conditions
+match temperature:
+    case temp if temp < 0:
+        print("freezing")
+    case temp if 0 <= temp < 20:
+        print("cold")
+    case temp if 20 <= temp < 30:
+        print("warm")
+    case temp if temp >= 30:
+        print("hot")
+```
+
 ## Common Match Patterns
 
-**Multiple values with OR (`|`)**:
-
-```python
-case
-'a' | 'e' | 'i' | 'o' | 'u':
-print("vowel")
-```
-
-**Guard conditions with `if`**:
-
-```python
-case
-temp
-if temp < 0:
-    print("below freezing")
-```
-
-**Wildcard pattern (`_`)**:
-
-```python
-case
-_:
-print("default case")
-```
+- Multiple values with OR (`|`)
+- Guard conditions with `if`
+- Wildcard pattern (`_`):
 
 ## When to Use Match vs If-Elif
 
