@@ -1,31 +1,38 @@
 note = input()
 
 if len(note) == 2:
-    note = note.upper()
-    note_name, octave_char = note
+    note_name = note[0]
+    octave_char = note[1]
 
-    base_freq = None
-
-    if not octave_char.isdigit():
-        print("Invalid note")
-    elif note_name == 'C':
+    if note_name == 'C' and octave_char in "012345678":
         base_freq = 261.63
-    elif note_name == 'D':
+    elif note_name == 'D' and octave_char in "012345678":
         base_freq = 293.66
-    elif note_name == 'E':
+    elif note_name == 'E' and octave_char in "012345678":
         base_freq = 329.63
-    elif note_name == 'F':
+    elif note_name == 'F' and octave_char in "012345678":
         base_freq = 349.23
-    elif note_name == 'G':
+    elif note_name == 'G' and octave_char in "012345678":
         base_freq = 392.00
-    elif note_name == 'A':
+    elif note_name == 'A' and octave_char in "012345678":
         base_freq = 440.00
-    elif note_name == 'B':
+    elif note_name == 'B' and octave_char in "012345678":
         base_freq = 493.88
+    else:
+        print("Invalid note")
+        base_freq = None
 
     if base_freq is not None:
         octave = int(octave_char)
-        frequency = base_freq * (2 ** (octave - 4))
-        print(f"{frequency:.2f}")
+        octave_diff = 4 - octave
+        if octave_diff == 0:
+            frequency = base_freq
+        elif octave_diff > 0:
+            frequency = base_freq / (2 ** octave_diff)
+        else:
+            frequency = base_freq * (2 ** (-octave_diff))
+
+        frequency_str = f"{frequency:.2f}"
+        print(frequency_str)
 else:
     print("Invalid note")

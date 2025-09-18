@@ -1,13 +1,13 @@
 position = input()
 
-column_char, row_char = position
+column = position[0]
+row = int(position[1])
 
 # Convert column letter to number (a=1, b=2, ..., h=8)
-column_num = ord(column_char) - ord('a') + 1
-row_num = int(row_char)
+column_num = ord(column) - ord('a') + 1
 
-# Calculate if the sum is even or odd
-if (column_num + row_num) % 2 == 0:
+# Calculate if sum is even or odd
+if (column_num + row) % 2 == 0:
     print("black")
 else:
     print("white")

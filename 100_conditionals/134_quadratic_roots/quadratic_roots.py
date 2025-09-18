@@ -14,7 +14,7 @@ elif discriminant == 0:
 else:
     root1 = (-b + math.sqrt(discriminant)) / (2*a)
     root2 = (-b - math.sqrt(discriminant)) / (2*a)
-    # Sort roots to ensure the smaller root comes first
+    # Sort roots to ensure smaller root comes first
     if root1 > root2:
         root1, root2 = root2, root1
     print(f"2 roots: {root1:.2f} and {root2:.2f}")

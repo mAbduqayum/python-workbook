@@ -2,17 +2,17 @@ age = int(input())
 
 if age < 0:
     print("Invalid age")
-elif age <= 1:
+elif age <= 2:
     print("Infant")
-elif age <= 4:
+elif age <= 5:
     print("Toddler")
-elif age <= 10:
+elif age <= 11:
     print("Child")
-elif age <= 17:
+elif age <= 18:
     print("Adolescent")
-elif age <= 39:
+elif age <= 40:
     print("Young Adult")
-elif age <= 64:
+elif age <= 65:
     print("Middle-aged")
 else:
     print("Senior")

@@ -2,7 +2,13 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-if (a <= b <= c) or (c <= b <= a):
-    print("between")
+if a <= c:
+    if a <= b <= c:
+        print("between")
+    else:
+        print("not between")
 else:
-    print("not between")
+    if c <= b <= a:
+        print("between")
+    else:
+        print("not between")

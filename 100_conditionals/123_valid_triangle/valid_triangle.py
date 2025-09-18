@@ -2,7 +2,7 @@ a = int(input())
 b = int(input())
 c = int(input())
 
-if abs(a - b) < c < (a + b):
+if a + b > c and a + c > b and b + c > a:
     print("valid triangle")
 else:
     print("invalid triangle")

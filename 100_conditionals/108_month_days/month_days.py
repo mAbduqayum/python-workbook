@@ -2,12 +2,9 @@ month = input().lower()
 
 if month == "february":
     print("28 or 29")
-elif (month == "january" or month == "march" or month == "may" or
-      month == "july" or month == "august" or month == "october" or
-      month == "december"):
+elif month in ["january", "march", "may", "july", "august", "october", "december"]:
     print("31")
-elif (month == "april" or month == "june" or month == "september" or
-      month == "november"):
+elif month in ["april", "june", "september", "november"]:
     print("30")
 else:
     print("Invalid month")
