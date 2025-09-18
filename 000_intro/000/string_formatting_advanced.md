@@ -125,4 +125,5 @@ Complete reference for advanced Python f-string formatting features.
 | Scientific data  | `f"Standard: {val:,.2f}\nScientific: {val:.2e}"`          | `Standard: 1,234.57<br>Scientific: 1.23e+03` |
 | Financial report | `f"${amount:>10,.2f}"`                                    | `$  1,234.56`                                |
 
-This reference covers advanced f-string formatting for complex layouts, scientific notation, custom alignment, and specialized formatting needs.
+This reference covers advanced f-string formatting for complex layouts, scientific notation, custom alignment, and
+specialized formatting needs.

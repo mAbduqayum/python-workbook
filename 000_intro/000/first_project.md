@@ -20,6 +20,7 @@ Welcome to Python! This guide will help you set up everything you need to start 
 uv is a fast Python package manager that will help you install Python and manage your projects.
 
 ### On Windows:
+
 1. Press `Windows key + R`
 2. Type `cmd` and press Enter
 3. Copy and paste this command, then press Enter:
@@ -28,6 +29,7 @@ uv is a fast Python package manager that will help you install Python and manage
    ```
 
 ### On Mac:
+
 1. Press `Cmd + Space`
 2. Type "Terminal" and press Enter
 3. Copy and paste this command, then press Enter:
@@ -36,6 +38,7 @@ uv is a fast Python package manager that will help you install Python and manage
    ```
 
 ### On Linux:
+
 1. Open Terminal (usually Ctrl+Alt+T)
 2. Copy and paste this command, then press Enter:
    ```
@@ -69,19 +72,20 @@ After installation, close and reopen your terminal/command prompt.
    (This opens the current folder in VS Code)
 
 2. If VS Code doesn't open, you can:
-   - Open VS Code manually
-   - Go to File the Open Folder
-   - Select your `first-project` folder
+    - Open VS Code manually
+    - Go to File the Open Folder
+    - Select your `first-project` folder
 
 ## Step 5: Install Python Extension
 
 1. In VS Code, click on the Extensions icon on the left side (it looks like building blocks)
-2. Search for "Python" 
+2. Search for "Python"
 3. Install the official Python extension by Microsoft (it should be the first result)
 
 ## Step 6: Understanding Your Project
 
 When you used `uv init`, it created several files:
+
 - `pyproject.toml` - Contains project settings
 - `.python-version` - Contains the python version
 - `README.md` - Information about your project
@@ -91,6 +95,7 @@ When you used `uv init`, it created several files:
 
 1. Open the `main.py` file (it should already exist)
 2. Replace its contents with:
+
 ```python
 print("Hello, World!")
 print("I'm learning Python!")

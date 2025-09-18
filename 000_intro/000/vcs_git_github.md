@@ -1,6 +1,7 @@
 # Version Control Systems, Git, and GitHub
 
 ## Table of Contents
+
 1. [Introduction to Version Control Systems](#introduction-to-version-control-systems)
 2. [What is Git?](#what-is-git)
 3. [Git Fundamentals](#git-fundamentals)
@@ -15,6 +16,7 @@
 ## Introduction to Version Control Systems
 
 A **Version Control System (VCS)** is a tool that helps you manage changes to files over time. It allows you to:
+
 - Track changes to your code
 - Collaborate with other developers
 - Revert to previous versions
@@ -41,22 +43,24 @@ graph TD
 ### Types of Version Control Systems
 
 1. **Local Version Control Systems**
-   - Store changes in a local database
-   - Example: RCS (Revision Control System)
+    - Store changes in a local database
+    - Example: RCS (Revision Control System)
 
 2. **Centralized Version Control Systems**
-   - Single server contains all versioned files
-   - Examples: CVS, Subversion (SVN)
+    - Single server contains all versioned files
+    - Examples: CVS, Subversion (SVN)
 
 3. **Distributed Version Control Systems**
-   - Every user has a complete copy of the project history
-   - Examples: Git, Mercurial, Bazaar
+    - Every user has a complete copy of the project history
+    - Examples: Git, Mercurial, Bazaar
 
 ## What is Git?
 
-**Git** is a distributed version control system created by Linus Torvalds in 2005. It's designed to handle everything from small to very large projects with speed and efficiency.
+**Git** is a distributed version control system created by Linus Torvalds in 2005. It's designed to handle everything
+from small to very large projects with speed and efficiency.
 
 ### Key Features of Git:
+
 - **Distributed**: Every clone is a full backup
 - **Fast**: Local operations are lightning fast
 - **Data Integrity**: Everything is checksummed
@@ -84,6 +88,7 @@ graph LR
 ## Git Fundamentals
 
 ### The Three States
+
 Git has three main states that your files can reside in:
 
 1. **Modified**: Changed but not committed to database
@@ -91,6 +96,7 @@ Git has three main states that your files can reside in:
 3. **Committed**: Safely stored in local database
 
 ### Git Areas
+
 ```mermaid
 graph TB
     subgraph "Git Project"
@@ -232,6 +238,7 @@ gitGraph
 ### What is GitHub?
 
 **GitHub** is a web-based hosting service for Git repositories. It provides:
+
 - Repository hosting
 - Collaboration tools
 - Issue tracking
@@ -287,6 +294,7 @@ flowchart LR
 ## Common Git Commands
 
 ### Repository Setup
+
 ```bash
 # Initialize a new repository
 git init
@@ -299,6 +307,7 @@ git remote add origin <repository-url>
 ```
 
 ### Basic Operations
+
 ```bash
 # Check status
 git status
@@ -318,6 +327,7 @@ git pull origin main
 ```
 
 ### Branching Commands
+
 ```bash
 # List branches
 git branch
@@ -339,6 +349,7 @@ git branch -d <branch-name>
 ```
 
 ### History and Logs
+
 ```bash
 # View commit history
 git log
@@ -356,6 +367,7 @@ git diff --staged
 ## Best Practices
 
 ### Commit Messages
+
 - Use present tense ("Add feature" not "Added feature")
 - Keep first line under 50 characters
 - Use imperative mood
@@ -399,6 +411,7 @@ graph TD
 ```
 
 ### Repository Structure
+
 ```
 project/
 ├── .gitignore          # Files to ignore
@@ -414,6 +427,7 @@ project/
 ## GitHub Features
 
 ### Pull Requests
+
 A pull request is a way to propose changes to a repository.
 
 ```mermaid
@@ -432,12 +446,14 @@ sequenceDiagram
 ```
 
 ### Issues and Project Management
+
 - **Issues**: Track bugs and feature requests
 - **Milestones**: Group issues by goals
 - **Projects**: Kanban-style project boards
 - **Labels**: Categorize issues and PRs
 
 ### GitHub Actions (CI/CD)
+
 Automate workflows with GitHub Actions:
 
 ```yaml
@@ -506,6 +522,7 @@ graph TD
 ## Troubleshooting Common Issues
 
 ### Merge Conflicts
+
 When Git can't automatically merge changes:
 
 ```bash
@@ -523,6 +540,7 @@ git commit
 ```
 
 ### Undoing Changes
+
 ```bash
 # Unstage files
 git reset HEAD <file>
@@ -538,6 +556,7 @@ git reset --hard HEAD^
 ```
 
 ### Working with Remotes
+
 ```bash
 # View remote repositories
 git remote -v
@@ -564,9 +583,11 @@ Version Control Systems, particularly Git and GitHub, are essential tools for mo
 - **Backup**: Distributed copies of your code
 - **Integration**: CI/CD and project management tools
 
-Understanding these tools is crucial for any developer, whether working alone or in a team. Start with basic commands and gradually learn more advanced features as needed.
+Understanding these tools is crucial for any developer, whether working alone or in a team. Start with basic commands
+and gradually learn more advanced features as needed.
 
 ### Key Takeaways
+
 1. Always commit frequently with meaningful messages
 2. Use branches for features and experiments
 3. Keep your main branch stable
