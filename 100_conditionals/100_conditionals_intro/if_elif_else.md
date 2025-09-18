@@ -5,7 +5,7 @@
 The programs you worked with in the introduction chapter were strictly sequential. Each program's statements were
 executed in sequence, starting from the beginning of the program and continuing, without interruption, to its end. While
 sequential execution of every statement in a program can be used to solve some small exercises, it is not sufficient to
-solve most interesting problems.
+solve the most interesting problems.
 
 Decision making constructs allow programs to contain statements that may or may not be executed when the program runs.
 Execution still begins at the top of the program and progresses toward the bottom, but some statements that are present
