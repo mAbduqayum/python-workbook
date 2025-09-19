@@ -1,6 +1,6 @@
 frequency = float(input())
 
-# Check if frequency is within ±1 Hz of any note
+# Check if the frequency is within ±1 Hz of any note
 if abs(frequency - 261.63) <= 1.0:
     print("C4")
 elif abs(frequency - 293.66) <= 1.0:
