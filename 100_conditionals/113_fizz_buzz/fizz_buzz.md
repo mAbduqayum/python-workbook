@@ -66,7 +66,7 @@ FizzBuzz
 1. Check if divisible by both `3` AND `5` first
 2. Then check if divisible by `3` only
 3. Then check if divisible by `5` only
-4. Otherwise return the number
+4. Otherwise, return the number
 
 ## Note
 - Use modulus operator (`%`) to check divisibility

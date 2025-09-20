@@ -9,8 +9,8 @@ Write a program that determines the type of triangle based on its three angles.
 
 ## Triangle Types
 
-| Type             | Condition            |
-|------------------|----------------------|
+| Type             | Condition              |
+|------------------|------------------------|
 | Acute Triangle   | All angles `< 90°`     |
 | Right Triangle   | One angle `= 90°`      |
 | Obtuse Triangle  | One angle `> 90°`      |

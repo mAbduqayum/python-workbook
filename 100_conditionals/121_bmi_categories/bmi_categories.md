@@ -8,8 +8,8 @@ Write a program that calculates `BMI` and determines the weight category.
 - Determine and display the `BMI` category
 
 ## BMI Categories
-| BMI Range         | Category      |
-|-------------------|---------------|
+| BMI Range           | Category      |
+|---------------------|---------------|
 | `BMI < 18.5`        | Underweight   |
 | `18.5 ≤ BMI < 25.0` | Normal weight |
 | `25.0 ≤ BMI < 30.0` | Overweight    |

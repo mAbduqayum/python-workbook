@@ -63,7 +63,7 @@ from small to very large projects with speed and efficiency.
 
 - **Distributed**: Every clone is a full backup
 - **Fast**: Local operations are lightning fast
-- **Data Integrity**: Everything is checksummed
+- **Data Integrity**: Everything has checksum
 - **Branching**: Lightweight branching and merging
 - **Staging Area**: Intermediate area for preparing commits
 

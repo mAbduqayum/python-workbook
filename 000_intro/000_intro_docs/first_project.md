@@ -136,4 +136,4 @@ print("I'm learning Python!")
 - The terminal shows error messages if something goes wrong
 - Google error messages if you get stuck - other people have had the same problems!
 
-Congratulations! You now have a proper Python development setup and you're ready to start programming.
+Congratulations! You now have a proper Python development setup, and you're ready to start programming.
