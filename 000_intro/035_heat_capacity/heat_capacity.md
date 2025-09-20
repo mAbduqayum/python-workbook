@@ -49,7 +49,7 @@ Cost to heat water: 0.00 euros
 
 ## Formula
 
-- Energy: `q = m × C × ΔT` where `C = 4.186 J/(g·°C)`
+- Energy: `q = m × C × 𝚫T` where `C = 4.186 J/(g·°C)`
 - Cost: `cost = energy_in_joules / 3600000 × 0.089`
 
 ## Note

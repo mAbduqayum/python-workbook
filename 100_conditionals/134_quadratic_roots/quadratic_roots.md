@@ -9,13 +9,13 @@ Write a program that computes the real roots of a quadratic function using the q
 
 ## Quadratic Formula
 For equation `ax² + bx + c = 0`:
-- **Discriminant**: `Δ = b² - 4ac`
-- **Roots**: `x = (-b ± √Δ) / (2a)`
+- **Discriminant**: `𝚫 = b² - 4ac`
+- **Roots**: `x = (-b ± √𝚫) / (2a)`
 
 ## Root Cases
-- **`Δ < 0`**: No real roots
-- **`Δ = 0`**: One real root
-- **`Δ > 0`**: Two real roots
+- **`𝚫 < 0`**: No real roots
+- **`𝚫 = 0`**: One real root
+- **`𝚫 > 0`**: Two real roots
 
 ## Examples
 **Example 1:** (Two roots)
