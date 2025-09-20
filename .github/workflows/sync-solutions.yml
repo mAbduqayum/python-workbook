@@ -45,14 +45,8 @@ jobs:
           # Switch to solutions branch
           git checkout solutions
 
-          # Try fast-forward merge first (clean like rebase)
-          if git merge --ff-only origin/main; then
-            echo "✅ Fast-forward merge successful"
-          else
-            # Fall back to regular merge if needed
-            echo "⚠️ Fast-forward not possible, using regular merge"
-            git merge origin/main
-          fi
+          # Merge latest questions from main
+          git merge origin/main
 
           # Push changes (no force needed!)
           git push origin solutions
