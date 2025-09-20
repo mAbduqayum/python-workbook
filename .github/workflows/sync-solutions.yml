@@ -5,6 +5,11 @@ on:
     branches: [main]
   workflow_dispatch:
 
+# Prevent concurrent runs for the same branch, canceling older runs.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   sync-solutions:
     runs-on: ubuntu-latest
@@ -17,47 +22,31 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0 # Fetch full history for rebase
+          fetch-depth: 0 # Fetch full history for git operations
 
       - name: Configure Git
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Check if solutions branch exists
-        id: check-branch
+      - name: Sync main branch to solutions branch
         run: |
-          echo "🔍 Checking if solutions branch exists on remote..."
+          set -ex # Exit on error, print commands
+
+          # Check if the solutions branch exists on the remote
           if git show-ref --verify --quiet refs/remotes/origin/solutions; then
-            echo "✅ Solutions branch found on remote"
-            echo "exists=true" >> $GITHUB_OUTPUT
+            echo "✅ Solutions branch found on remote, syncing..."
+            git checkout solutions
+            git merge origin/main
+            echo "✅ Merged latest changes from main"
           else
-            echo "❌ Solutions branch not found on remote"
-            echo "exists=false" >> $GITHUB_OUTPUT
+            echo "🆕 Solutions branch not found on remote, creating..."
+            # Create the solutions branch from the current state of main
+            git checkout -b solutions
+            echo "✅ Created new solutions branch"
           fi
 
-      - name: Create solutions branch if it doesn't exist
-        if: steps.check-branch.outputs.exists == 'false'
-        run: |
-          echo "🆕 Creating new solutions branch..."
-          git checkout -b solutions
-          git push -u origin solutions
-          echo "✅ Solutions branch created and pushed to remote"
-
-      - name: Sync questions to solutions branch
-        if: steps.check-branch.outputs.exists == 'true'
-        run: |
-          echo "📋 Syncing existing solutions branch with latest questions..."
-
-          # Switch to solutions branch (creates local copy of existing remote branch)
-          git checkout solutions
-          echo "✅ Checked out existing solutions branch"
-
-          # Merge latest questions from main
-          echo "🔄 Merging latest changes from main..."
-          git merge origin/main
-
-          # Push changes (no force needed!)
+          # Push the changes to the solutions branch
           echo "📤 Pushing updates to solutions branch..."
           git push origin solutions
           echo "✅ Solutions branch successfully updated"
@@ -65,5 +54,5 @@ jobs:
       - name: Report sync status
         run: |
           echo "✅ Questions successfully synced to solutions branch"
-          echo "📋 Latest commits:"
+          echo "📋 Latest commits on solutions branch:"
           git log --oneline -5
