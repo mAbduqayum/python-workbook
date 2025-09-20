@@ -1,0 +1,58 @@
+name: Sync Questions to Solutions Branch
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '**/*.md'
+  workflow_dispatch:
+
+jobs:
+  sync-solutions:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Fetch full history for rebase
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Check if solutions branch exists
+        id: check-branch
+        run: |
+          if git show-ref --verify --quiet refs/remotes/origin/solutions; then
+            echo "exists=true" >> $GITHUB_OUTPUT
+          else
+            echo "exists=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Create solutions branch if it doesn't exist
+        if: steps.check-branch.outputs.exists == 'false'
+        run: |
+          git checkout -b solutions
+          git push -u origin solutions
+
+      - name: Sync questions to solutions branch
+        if: steps.check-branch.outputs.exists == 'true'
+        run: |
+          # Switch to solutions branch
+          git checkout solutions
+
+          # Rebase onto main to get latest questions
+          git rebase origin/main
+
+          # Push changes using force-with-lease for safety
+          git push --force-with-lease origin solutions
+
+      - name: Report sync status
+        run: |
+          echo "✅ Questions successfully synced to solutions branch"
+          echo "📋 Latest commits:"
+          git log --oneline -5
