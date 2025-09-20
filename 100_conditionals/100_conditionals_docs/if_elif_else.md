@@ -106,9 +106,9 @@ flowchart TD
 
 ## Nested If Statements
 
-The body of any if part, elif part or else part of any type of if statement can contain (almost) any Python statement,
+The body of any `if` part, elif part or else part of any type of if statement can contain (almost) any Python statement,
 including another if, if-else, if-elif or if-elif-else statement. When one if statement (of any type) appears in the
-body of another if statement (of any type) the if statements are said to be nested.
+body of another `if` statement (of any type) the if statements are said to be nested.
 
 ### Example: Nested If Statement
 
