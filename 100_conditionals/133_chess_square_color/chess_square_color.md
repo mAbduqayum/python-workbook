@@ -9,17 +9,17 @@ Write a program that determines the color of a chess square based on its positio
 
 ## Chess Board Layout
 ```
-8 ■ □ ■ □ ■ □ ■ □
-7 □ ■ □ ■ □ ■ □ ■
-6 ■ □ ■ □ ■ □ ■ □
-5 □ ■ □ ■ □ ■ □ ■
-4 ■ □ ■ □ ■ □ ■ □
-3 □ ■ □ ■ □ ■ □ ■
-2 ■ □ ■ □ ■ □ ■ □
-1 □ ■ □ ■ □ ■ □ ■
-  a b c d e f g h
+8 ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️
+7 ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️
+6 ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️
+5 ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️
+4 ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️
+3 ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️
+2 ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️
+1 ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️
+   a  b  c  d  e  f  g  h
 ```
-(□ = black, ■ = white)
+(⬛️ = black, ⬜️ = white)
 
 ## Examples
 **Example 1:**
