@@ -27,29 +27,40 @@ jobs:
       - name: Check if solutions branch exists
         id: check-branch
         run: |
+          echo "🔍 Checking if solutions branch exists on remote..."
           if git show-ref --verify --quiet refs/remotes/origin/solutions; then
+            echo "✅ Solutions branch found on remote"
             echo "exists=true" >> $GITHUB_OUTPUT
           else
+            echo "❌ Solutions branch not found on remote"
             echo "exists=false" >> $GITHUB_OUTPUT
           fi
 
       - name: Create solutions branch if it doesn't exist
         if: steps.check-branch.outputs.exists == 'false'
         run: |
+          echo "🆕 Creating new solutions branch..."
           git checkout -b solutions
           git push -u origin solutions
+          echo "✅ Solutions branch created and pushed to remote"
 
       - name: Sync questions to solutions branch
         if: steps.check-branch.outputs.exists == 'true'
         run: |
-          # Switch to solutions branch
+          echo "📋 Syncing existing solutions branch with latest questions..."
+
+          # Switch to solutions branch (creates local copy of existing remote branch)
           git checkout solutions
+          echo "✅ Checked out existing solutions branch"
 
           # Merge latest questions from main
+          echo "🔄 Merging latest changes from main..."
           git merge origin/main
 
           # Push changes (no force needed!)
+          echo "📤 Pushing updates to solutions branch..."
           git push origin solutions
+          echo "✅ Solutions branch successfully updated"
 
       - name: Report sync status
         run: |
