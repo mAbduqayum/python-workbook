@@ -3,8 +3,6 @@ name: Sync Questions to Solutions Branch
 on:
   push:
     branches: [main]
-    paths:
-      - '**/*.md'
   workflow_dispatch:
 
 jobs:
@@ -47,11 +45,17 @@ jobs:
           # Switch to solutions branch
           git checkout solutions
 
-          # Rebase onto main to get latest questions
-          git rebase origin/main
+          # Try fast-forward merge first (clean like rebase)
+          if git merge --ff-only origin/main; then
+            echo "✅ Fast-forward merge successful"
+          else
+            # Fall back to regular merge if needed
+            echo "⚠️ Fast-forward not possible, using regular merge"
+            git merge origin/main
+          fi
 
-          # Push changes using force-with-lease for safety
-          git push --force-with-lease origin solutions
+          # Push changes (no force needed!)
+          git push origin solutions
 
       - name: Report sync status
         run: |
