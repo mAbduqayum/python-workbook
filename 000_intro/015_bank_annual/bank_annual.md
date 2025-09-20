@@ -6,7 +6,8 @@ Write a program that calculates the balance of a savings account after earning a
 
 - Read the initial deposit amount (as `float`)
 - Read the annual interest rate percentage (as `float`)
-- Calculate and display the balance after 1, 2, and 3 years
+- Read the number of years (as `int`)
+- Calculate and display the balance after the specified number of years
 
 ## Examples
 
@@ -15,11 +16,10 @@ Write a program that calculates the balance of a savings account after earning a
 ```
 Enter initial deposit: 1000.00
 Enter annual interest rate (%): 4.5
+Enter number of years: 3
 ```
 
 ```
-Balance after 1 year: 1045.00
-Balance after 2 years: 1092.02
 Balance after 3 years: 1141.17
 ```
 
@@ -28,12 +28,11 @@ Balance after 3 years: 1141.17
 ```
 Enter initial deposit: 2500.00
 Enter annual interest rate (%): 3.25
+Enter number of years: 5
 ```
 
 ```
-Balance after 1 year: 2581.25
-Balance after 2 years: 2665.14
-Balance after 3 years: 2751.76
+Balance after 5 years: 2933.53
 ```
 
 **Example 3:**
@@ -41,19 +40,16 @@ Balance after 3 years: 2751.76
 ```
 Enter initial deposit: 500.00
 Enter annual interest rate (%): 2.8
+Enter number of years: 1
 ```
 
 ```
 Balance after 1 year: 514.00
-Balance after 2 years: 528.39
-Balance after 3 years: 543.19
 ```
 
 ## Formula
 
-- Year 1: `balance = deposit × (1 + rate/100)`
-- Year 2: `balance = year1_balance × (1 + rate/100)`
-- Year 3: `balance = year2_balance × (1 + rate/100)`
+`balance = deposit × (1 + rate/100)^years`
 
 ## Note
 
