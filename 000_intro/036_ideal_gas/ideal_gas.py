@@ -1,0 +1,6 @@
+pressure = float(input("Enter pressure (Pascals): "))
+volume = float(input("Enter volume (liters): "))
+temp_celsius = float(input("Enter temperature (°C): "))
+temp_kelvin = temp_celsius + 273.15
+n = (pressure * volume) / (8.314 * temp_kelvin)
+print(f"Amount of gas: {n:.2f} moles")
