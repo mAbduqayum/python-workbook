@@ -8,7 +8,7 @@ on:
 # Prevent concurrent runs for the same branch, canceling older runs.
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
-  cancel-in-progress: true
+  cancel-in-progress: false # default
 
 jobs:
   sync-solutions:
