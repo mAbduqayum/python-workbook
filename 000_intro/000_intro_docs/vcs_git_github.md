@@ -57,7 +57,7 @@ graph TD
 ## What is Git?
 
 **Git** is a distributed version control system created by Linus Torvalds in 2005. It's designed to handle everything
-from small to very large projects with speed and efficiency.
+from small to huge projects with speed and efficiency.
 
 ### Key Features of Git:
 
@@ -91,9 +91,9 @@ graph LR
 
 Git has three main states that your files can reside in:
 
-1. **Modified**: Changed but not committed to database
-2. **Staged**: Marked to go into next commit snapshot
-3. **Committed**: Safely stored in local database
+1. **Modified**: Changed but not committed to the database
+2. **Staged**: Marked to go into the next commit snapshot
+3. **Committed**: Safely stored in the local database
 
 ### Git Areas
 
@@ -173,9 +173,9 @@ flowchart TD
 
 1. **Initialize**: Create a new Git repository
 2. **Add**: Stage changes for commit
-3. **Commit**: Save changes to local repository
-4. **Push**: Upload changes to remote repository
-5. **Pull**: Download changes from remote repository
+3. **Commit**: Save changes to a local repository
+4. **Push**: Upload changes to a remote repository
+5. **Pull**: Download changes from a remote repository
 6. **Merge**: Combine different branches
 
 ## Branching and Merging
@@ -369,7 +369,7 @@ git diff --staged
 ### Commit Messages
 
 - Use present tense ("Add feature" not "Added feature")
-- Keep first line under 50 characters
+- Keep the first line under 50 characters
 - Use imperative mood
 - Be descriptive but concise
 
@@ -595,4 +595,4 @@ and gradually learn more advanced features as needed.
 5. Use `.gitignore` to exclude unnecessary files
 6. Document your project with good README files
 7. Follow consistent naming conventions
-8. Backup important work by pushing to remote repositories
+8. Back up important work by pushing to remote repositories
