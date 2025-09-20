@@ -11,13 +11,15 @@ jobs:
   sync-solutions:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/main'
+    permissions:
+      contents: write
+      actions: read
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
           fetch-depth: 0 # Fetch full history for rebase
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Configure Git
         run: |
