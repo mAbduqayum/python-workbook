@@ -1,0 +1,46 @@
+pre-commit:
+  parallel: true
+  commands:
+    uv-sort:
+      glob: "pyproject.toml"
+      run: uvx uv-sort
+      stage_fixed: true
+    lint:
+      glob: "*.py"
+      run: ruff check --fix {staged_files}
+      stage_fixed: true
+    format:
+      glob: "*.py"
+      run: ruff format {staged_files}
+      stage_fixed: true
+  exclude_tags:
+    - merge
+    - rebase
+
+pre-push:
+  piped: true # stop if one fails
+  commands:
+    lint:
+      run: ruff check .
+    #test:
+    #  run: uv run pytest tests/
+    #security-check:
+    #  run: ruff check . --select S
+    #  skip:
+    #    - merge
+    #    - rebase
+    #git-leaks:
+    #  run: gitleaks git
+
+commit-msg:
+  commands:
+    conventional-commits:
+      run: |
+        CONVENTIONAL_COMMIT_PATTERN="^(new|fix|docs|style|ref|perf|test|chore|build|ci|revert)(\(.+\))?:"
+        commit_message=$(cat {1})
+        if ! echo "$commit_message" | grep -qE "$CONVENTIONAL_COMMIT_PATTERN"; then
+          echo "Commit message must follow conventional commits format:"
+          echo "type(scope): description"
+          echo "Types: new, fix, docs, style, ref, perf, test, chore, build, ci, revert"
+          exit 1
+        fi
