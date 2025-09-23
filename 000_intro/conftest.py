@@ -19,7 +19,7 @@ class ScriptRunner:
                 input=input_text,
                 text=True,
                 capture_output=True,
-                timeout=3
+                timeout=3,
             )
             return result.stdout.strip(), result.stderr.strip(), result.returncode
         except subprocess.TimeoutExpired:
@@ -37,6 +37,29 @@ class ScriptRunner:
         expected = expected_output.strip()
 
         assert actual == expected, f"Expected: {expected!r}, Got: {actual!r}"
+        return stdout
+
+    def run_and_check_output_only(self, input_text="", expected_output=""):
+        """Run script and assert expected output, filtering out input prompts."""
+        stdout, stderr, return_code = self.run(input_text)
+
+        if return_code != 0:
+            pytest.fail(f"Script failed with error: {stderr}")
+
+        # Extract only the output lines (filter out input prompts)
+        import re
+
+        # Remove all "Enter [something]: " prompts
+        cleaned_output = re.sub(r"Enter [^:]+:\s*", "", stdout.strip())
+
+        # Clean up any extra whitespace
+        actual_output = "\n".join(
+            line.strip() for line in cleaned_output.split("\n") if line.strip()
+        )
+
+        assert actual_output == expected_output, (
+            f"Expected: {expected_output!r}, Got: {actual_output!r}"
+        )
         return stdout
 
 
