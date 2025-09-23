@@ -3,7 +3,14 @@ from pathlib import Path
 import pytest
 
 
-@pytest.mark.parametrize("name", ["Farid", "Gulnora", "Davron"])
+@pytest.mark.parametrize(
+    "name",
+    [
+        "Farid",
+        "Gulnora",
+        "Davron",
+    ],
+)
 def test_hello_name(script_runner, name):
     script_path = Path(__file__).parent / "hello_name.py"
 
@@ -12,6 +19,5 @@ def test_hello_name(script_runner, name):
 
     runner = script_runner(script_path)
     runner.run_and_check(
-        input_text=f"{name}\n",
-        expected_output=f"Enter your name: Hello {name}!"
+        input_text=f"{name}\n", expected_output=f"Enter your name: Hello {name}!"
     )
