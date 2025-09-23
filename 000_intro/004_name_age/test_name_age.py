@@ -4,7 +4,12 @@ import pytest
 
 
 @pytest.mark.parametrize(
-    "name,age", [("Farid", "22"), ("Gulnora", "35"), ("Davron", "18")]
+    "name,age",
+    [
+        ("Farid", "22"),
+        ("Gulnora", "35"),
+        ("Davron", "18"),
+    ],
 )
 def test_name_age(script_runner, name, age):
     script_path = Path(__file__).parent / "name_age.py"
