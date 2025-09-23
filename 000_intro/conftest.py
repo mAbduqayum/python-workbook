@@ -19,7 +19,7 @@ class ScriptRunner:
                 input=input_text,
                 text=True,
                 capture_output=True,
-                timeout=10
+                timeout=3
             )
             return result.stdout.strip(), result.stderr.strip(), result.returncode
         except subprocess.TimeoutExpired:
@@ -27,9 +27,9 @@ class ScriptRunner:
 
     def run_and_check(self, input_text="", expected_output=""):
         """Run script and assert expected output."""
-        stdout, stderr, returncode = self.run(input_text)
+        stdout, stderr, return_code = self.run(input_text)
 
-        if returncode != 0:
+        if return_code != 0:
             pytest.fail(f"Script failed with error: {stderr}")
 
         # Normalize whitespace for comparison
