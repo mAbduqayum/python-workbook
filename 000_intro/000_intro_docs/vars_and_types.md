@@ -22,11 +22,11 @@ price = 12.99
 
 ## 2. Data Types
 
-| Data Type | Name | Description | Examples |
-|-----------|------|-------------|----------|
-| `str` | String | Text data enclosed in quotes | `"Hello"`, `'John'`, `"123"` |
-| `int` | Integer | Whole numbers without decimal points | `25`, `0`, `2024`, `-5` |
-| `float` | Float | Numbers with decimal points | `19.99`, `25.5`, `3.14159`, `0.0` |
+| Data Type | Name    | Description                          | Examples                          |
+|-----------|---------|--------------------------------------|-----------------------------------|
+| `str`     | String  | Text data enclosed in quotes         | `"Hello"`, `'John'`, `"123"`      |
+| `int`     | Integer | Whole numbers without decimal points | `25`, `0`, `2024`, `-5`           |
+| `float`   | Float   | Numbers with decimal points          | `19.99`, `25.5`, `3.14159`, `0.0` |
 
 ### Examples in code
 
@@ -201,7 +201,7 @@ print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
 
 4. **Test with the example data:**
     - Run your program with the exact input from the exercise
-    - Check that output matches exactly
+    - Check that the output matches exactly
 
 5. **Common mistakes to avoid:**
     - Forgetting to convert strings to numbers
