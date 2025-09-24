@@ -10,3 +10,6 @@ dependencies = []
 dev = [
     "pytest>=8.4.2",
 ]
+
+[tool.pytest.ini_options]
+addopts = "--tb=no"
