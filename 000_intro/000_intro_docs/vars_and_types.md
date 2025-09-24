@@ -22,30 +22,26 @@ price = 12.99
 
 ## 2. Data Types
 
-### Strings (str)
+| Data Type | Name | Description | Examples |
+|-----------|------|-------------|----------|
+| `str` | String | Text data enclosed in quotes | `"Hello"`, `'John'`, `"123"` |
+| `int` | Integer | Whole numbers without decimal points | `25`, `0`, `2024`, `-5` |
+| `float` | Float | Numbers with decimal points | `19.99`, `25.5`, `3.14159`, `0.0` |
 
-Text data enclosed in quotes.
+### Examples in code
 
 ```python
+# String examples
 message = "Hello, World!"
 name = 'John'
-```
+text_number = "123"  # This is text, not a number
 
-### Integers (int)
-
-Whole numbers without decimal points.
-
-```python
+# Integer examples
 age = 25
 count = 0
 year = 2024
-```
 
-### Floating-point numbers (float)
-
-Numbers with decimal points.
-
-```python
+# Float examples
 price = 19.99
 temperature = 25.5
 pi = 3.14159
@@ -87,64 +83,10 @@ price = float(input("Enter price: "))
 
 ## 5. Arithmetic Operations
 
-### Basic operators
+**For detailed arithmetic operators and examples, see: `000_intro_docs/math_operators.md`**
 
-```python
-a = 10
-b = 3
 
-addition = a + b        # 13
-subtraction = a - b     # 7
-multiplication = a * b  # 30
-division = a / b        # 3.333...
-```
-
-### Advanced operators
-
-```python
-floor_division = a // b # 3 (integer division)
-modulo = a % b          # 1 (remainder)
-exponentiation = a ** b # 1000 (10 to the power of 3)
-```
-
-## 6. Working with Numbers
-
-### Common calculations
-
-```python
-# Rectangle area
-length = 5
-width = 3
-area = length * width
-
-# Circle area
-radius = 4
-pi = 3.14159
-area = pi * radius ** 2
-
-# Average of three numbers
-num1 = 10
-num2 = 20  
-num3 = 30
-average = (num1 + num2 + num3) / 3
-```
-
-### Temperature conversion
-
-```python
-celsius = 25
-fahrenheit = (celsius * 9/5) + 32
-```
-
-### Time conversion
-
-```python
-total_seconds = 125
-minutes = total_seconds // 60    # 2
-remaining_seconds = total_seconds % 60  # 5
-```
-
-## 7. String Formatting and Operations
+## 6. String Formatting and Operations
 
 **For detailed string formatting patterns and examples, see: `000/string_formatting.md`**
 
