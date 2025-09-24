@@ -5,6 +5,7 @@ from pathlib import Path
 from typing import Tuple
 
 import pytest
+from grading import GradeReporter
 
 
 class ScriptRunner:
@@ -29,7 +30,8 @@ class ScriptRunner:
         except subprocess.TimeoutExpired:
             return "", "Script timed out", 1
 
-    def _validate_execution(self, stderr: str, return_code: int) -> None:
+    @staticmethod
+    def _validate_execution(stderr: str, return_code: int) -> None:
         """Validate that script execution was successful."""
         if return_code != 0:
             pytest.fail(f"Script failed with error: {stderr}")
@@ -45,7 +47,8 @@ class ScriptRunner:
         assert actual == expected, f"Expected: {expected!r}, Got: {actual!r}"
         return stdout
 
-    def _clean_output(self, stdout: str) -> str:
+    @staticmethod
+    def _clean_output(stdout: str) -> str:
         """Remove input prompts and clean up whitespace from output."""
         cleaned_output = re.sub(r"Enter [^:]+:\s*", "", stdout.strip())
         return "\n".join(
@@ -71,85 +74,6 @@ class ScriptRunner:
 def script_runner():
     """Fixture to provide ScriptRunner functionality."""
     return ScriptRunner
-
-
-class GradeReporter:
-    """Handles grade calculation and reporting for test results."""
-
-    GRADE_THRESHOLDS = [
-        (97, "A+"),
-        (93, "A"),
-        (90, "A-"),
-        (87, "B+"),
-        (83, "B"),
-        (80, "B-"),
-        (77, "C+"),
-        (73, "C"),
-        (70, "C-"),
-        (67, "D+"),
-        (65, "D"),
-    ]
-
-    GRADE_MESSAGES = {
-        90: "🎉 Excellent work!",
-        80: "👍 Good job!",
-        70: "📚 Keep studying!",
-        0: "💪 More practice needed!",
-    }
-
-    def __init__(self, stats: dict) -> None:
-        self.passed = len(stats.get("passed", []))
-        self.failed = len(stats.get("failed", []))
-        self.skipped = len(stats.get("skipped", []))
-        self.error = len(stats.get("error", []))
-
-    @property
-    def total_tests(self) -> int:
-        return self.passed + self.failed + self.skipped + self.error
-
-    @property
-    def possible_tests(self) -> int:
-        return self.passed + self.failed + self.error
-
-    def calculate_grade(self) -> Tuple[float, str]:
-        """Calculate grade percentage and letter grade."""
-        if self.possible_tests == 0:
-            return 0.0, "N/A"
-
-        percentage = (self.passed / self.possible_tests) * 100
-
-        for threshold, letter in self.GRADE_THRESHOLDS:
-            if percentage >= threshold:
-                return percentage, letter
-
-        return percentage, "F"
-
-    def get_grade_message(self, percentage: float) -> str:
-        """Get motivational message based on grade percentage."""
-        for threshold in sorted(self.GRADE_MESSAGES.keys(), reverse=True):
-            if percentage >= threshold:
-                return self.GRADE_MESSAGES[threshold]
-        return self.GRADE_MESSAGES[0]
-
-    def print_report(self) -> None:
-        """Print a comprehensive grade report."""
-        grade_percentage, letter_grade = self.calculate_grade()
-
-        print("\n" + "=" * 50)
-        print("📊 FINAL GRADE REPORT")
-        print("=" * 50)
-
-        print(f"Total Tests: {self.total_tests}")
-        print(f"Passed: {self.passed}")
-        print(f"Failed: {self.failed}")
-        print(f"Skipped: {self.skipped}")
-        if self.error > 0:
-            print(f"Errors: {self.error}")
-
-        print()
-        print(f"Grade: {grade_percentage:.1f}% ({letter_grade})")
-        print(self.get_grade_message(grade_percentage))
-        print("=" * 50)
 
 
 def pytest_addoption(parser):
