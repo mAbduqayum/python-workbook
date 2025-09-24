@@ -4,6 +4,9 @@
     "*.md": "vscode.markdown.preview.editor" // Which editor to use for markdown files
   },
 
+  // === PYTHON INTERPRETER ===
+  "python.defaultInterpreterPath": "./.venv/bin/python", // Path to Python interpreter in .venv
+
   // === PYTHON TESTING ===
   "python.testing.pytestArgs": [
     "." // Arguments passed to pytest command
