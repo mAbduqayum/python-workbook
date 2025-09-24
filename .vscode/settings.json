@@ -1,5 +1,60 @@
 {
+  // === FILE ASSOCIATIONS ===
   "workbench.editorAssociations": {
-    "*.md": "vscode.markdown.preview.editor"
-  }
+    "*.md": "vscode.markdown.preview.editor" // Which editor to use for markdown files
+  },
+
+  // === PYTHON TESTING ===
+  "python.testing.pytestArgs": [
+    "." // Arguments passed to pytest command
+  ],
+  "python.testing.unittestEnabled": false, // Whether unittest framework is enabled
+  "python.testing.pytestEnabled": true,    // Whether pytest framework is enabled
+
+  // === PYTHON FORMATTING & LINTING ===
+  "ruff.enable": true, // Whether Ruff linter/formatter is enabled
+  "[python]": {
+    "editor.defaultFormatter": "charliermarsh.ruff", // Which formatter to use for Python files
+    "editor.formatOnSave": true, // Whether to format Python files on save
+    "editor.codeActionsOnSave": {
+      "source.organizeImports": "explicit" // Whether to organize imports on save
+    }
+  },
+
+  // === AUTOSAVE & FILE HANDLING ===
+  "files.autoSave": "afterDelay",           // When to auto-save files
+  "files.autoSaveDelay": 1000,              // How long to wait before auto-saving (milliseconds)
+  "files.trimTrailingWhitespace": true,     // Whether to remove trailing spaces on save
+  "files.trimFinalNewlines": true,          // Whether to remove extra blank lines at file end
+  "files.insertFinalNewline": true,         // Whether to ensure file ends with newline
+
+  // === EDITOR BEHAVIOR ===
+  "editor.formatOnPaste": true,    // Whether to format when pasting code
+  "editor.wordWrap": "on",         // How to handle long lines
+  "editor.tabSize": 4,             // Number of spaces for tab indentation
+  "editor.insertSpaces": true,     // Whether to convert tabs to spaces
+  "editor.detectIndentation": false, // Whether to auto-detect indentation settings
+
+  // === HIDE CLUTTER FROM EXPLORER ===
+  "files.exclude": {
+    "**/__pycache__": true,    // Whether to hide Python bytecode cache folders
+    "**/*.pyc": true,          // Whether to hide compiled Python files
+    "**/.pytest_cache": true,  // Whether to hide pytest cache folder
+    "**/.ruff_cache": true     // Whether to hide Ruff cache folder
+  },
+
+  // === TERMINAL CONVENIENCE ===
+  "terminal.integrated.copyOnSelection": true,        // Whether to auto-copy selected text
+//   "terminal.integrated.rightClickBehavior": "copyPaste", // What right-click does in terminal
+
+  // === GIT AUTOMATION ===
+  "git.autofetch": true,           // Whether to automatically fetch from remote
+  "git.enableSmartCommit": true,   // Whether to auto-stage all changes when committing
+  "git.confirmSync": false,        // Whether to ask for confirmation when syncing
+
+  // === UI IMPROVEMENTS ===
+  "workbench.startupEditor": "none",   // What to show on startup
+  "explorer.confirmDelete": false,     // Whether to ask confirmation when deleting files
+  "breadcrumbs.enabled": false,        // Whether to show file path breadcrumbs
+//   "editor.minimap.enabled": true       // Whether to show code minimap
 }

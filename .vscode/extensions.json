@@ -1,0 +1,8 @@
+{
+  "recommendations": [
+    "bierner.markdown-mermaid",
+    "ms-python.python",
+    "charliermarsh.ruff",
+    "pamaron.pytest-runner"
+  ]
+}
