@@ -13,7 +13,7 @@ concurrency:
 jobs:
   sync-solutions:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'
+    if: github.ref == 'refs/heads/main' && github.event.repository.fork == false
     permissions:
       contents: write
       actions: read
