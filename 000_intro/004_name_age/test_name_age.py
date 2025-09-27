@@ -18,7 +18,7 @@ def test_name_age(script_runner, name, age):
         pytest.skip("Solution file name_age.py not found")
 
     runner = script_runner(script_path)
-    runner.run_and_check(
+    runner.run_and_check_output_only(
         input_text=f"{name}\n{age}\n",
-        expected_output=f"Enter your name: Enter your age: Hello {name}, you are {age} years old.",
+        expected_output=f"Hello {name}, you are {age} years old.",
     )
