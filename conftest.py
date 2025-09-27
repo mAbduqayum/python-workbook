@@ -6,6 +6,8 @@ from typing import Tuple
 
 import pytest
 
+from tests.grading import GradeReporter
+
 
 class ScriptRunner:
     """Helper class to run Python scripts and capture output."""
@@ -73,3 +75,20 @@ class ScriptRunner:
 def script_runner():
     """Fixture to provide ScriptRunner functionality."""
     return ScriptRunner
+
+
+def pytest_addoption(parser):
+    """Add custom command line options."""
+    parser.addoption(
+        "--no-grade",
+        action="store_true",
+        default=False,
+        help="Disable grade report after running tests",
+    )
+
+
+def pytest_terminal_summary(terminalreporter, exitstatus, config):
+    """Add grade report to terminal summary unless disabled."""
+    if not config.getoption("no_grade"):
+        reporter = GradeReporter(terminalreporter.stats)
+        reporter.print_report()
