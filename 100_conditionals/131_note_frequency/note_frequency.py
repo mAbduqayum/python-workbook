@@ -1,8 +1,7 @@
 note = input()
 
 if len(note) == 2:
-    note_name = note[0]
-    octave_char = note[1]
+    note_name, octave_char = note
 
     if note_name == 'C' and octave_char in "012345678":
         base_freq = 261.63
