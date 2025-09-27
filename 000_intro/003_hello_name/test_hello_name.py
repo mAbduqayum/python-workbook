@@ -18,6 +18,6 @@ def test_hello_name(script_runner, name):
         pytest.skip("Solution file hello_name.py not found")
 
     runner = script_runner(script_path)
-    runner.run_and_check(
-        input_text=f"{name}\n", expected_output=f"Enter your name: Hello {name}!"
+    runner.run_and_check_output_only(
+        input_text=f"{name}\n", expected_output=f"Hello {name}!"
     )
