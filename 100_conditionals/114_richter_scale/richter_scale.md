@@ -18,7 +18,7 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 | 6.0 <= magnitude < 7.0  | Strong     |
 | 7.0 <= magnitude < 8.0  | Major      |
 | 8.0 <= magnitude < 10.0 | Great      |
-| magnitude > 10.0        | Meteoric   |
+| magnitude >= 10.0       | Meteoric   |
 
 ## Examples
 **Example 1:**
