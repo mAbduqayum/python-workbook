@@ -10,6 +10,9 @@ if discriminant < 0:
     print("No real roots")
 elif discriminant == 0:
     root = -b / (2*a)
+    # Handle -0 case
+    if root == 0:
+        root = 0
     print(f"1 root: {root:.2f}")
 else:
     root1 = (-b + math.sqrt(discriminant)) / (2*a)

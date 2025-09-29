@@ -1,6 +1,6 @@
-angle1 = int(input())
-angle2 = int(input())
-angle3 = int(input())
+angle1 = float(input())
+angle2 = float(input())
+angle3 = float(input())
 
 # Check if angles form a valid triangle
 if angle1 + angle2 + angle3 != 180:
