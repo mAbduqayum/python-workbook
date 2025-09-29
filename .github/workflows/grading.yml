@@ -1,0 +1,90 @@
+name: Grade Calculator
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+    inputs:
+      test_path:
+        description: 'Specific test path to run (optional)'
+        required: false
+        default: ''
+      category:
+        description: 'Test category to run (e.g., 000_intro, 100_conditionals)'
+        required: false
+        default: ''
+
+jobs:
+  calculate-grade:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.13'
+
+    - name: Install uv
+      uses: astral-sh/setup-uv@v3
+      with:
+        version: "latest"
+
+    - name: Install dependencies
+      run: |
+        uv sync --dev
+
+    - name: Determine test path
+      id: test-path
+      run: |
+        if [ -n "${{ github.event.inputs.test_path }}" ]; then
+          echo "path=${{ github.event.inputs.test_path }}" >> $GITHUB_OUTPUT
+        elif [ -n "${{ github.event.inputs.category }}" ]; then
+          echo "path=${{ github.event.inputs.category }}/" >> $GITHUB_OUTPUT
+        else
+          echo "path=." >> $GITHUB_OUTPUT
+        fi
+
+    - name: Run tests and calculate grade
+      id: grade
+      run: |
+        echo "🔍 Running tests for path: ${{ steps.test-path.outputs.path }}"
+        echo ""
+
+        # Run pytest with grading output (allow failure to continue)
+        set +e
+        uv run pytest ${{ steps.test-path.outputs.path }} -v --tb=short
+        exit_code=$?
+        set -e
+
+        echo ""
+        echo "📋 Test execution completed with exit code: $exit_code"
+
+        # Set output for summary
+        echo "exit_code=$exit_code" >> $GITHUB_OUTPUT
+
+    - name: Summary
+      run: |
+        echo "## Grade Calculation Complete 📊" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "**Test Path:** \`${{ steps.test-path.outputs.path }}\`" >> $GITHUB_STEP_SUMMARY
+        echo "**Exit Code:** ${{ steps.grade.outputs.exit_code }}" >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+
+        if [ "${{ steps.grade.outputs.exit_code }}" = "0" ]; then
+          echo "✅ **Status:** All tests passed successfully!" >> $GITHUB_STEP_SUMMARY
+        else
+          echo "⚠️ **Status:** Some tests failed or were skipped" >> $GITHUB_STEP_SUMMARY
+        fi
+
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "📋 **Detailed Results:** Check the job logs above for the complete grading table and individual test results." >> $GITHUB_STEP_SUMMARY
+        echo "" >> $GITHUB_STEP_SUMMARY
+        echo "### Usage" >> $GITHUB_STEP_SUMMARY
+        echo "- **Run all tests:** Trigger workflow without inputs" >> $GITHUB_STEP_SUMMARY
+        echo "- **Run specific category:** Use \`category\` input (e.g., \`000_intro\`)" >> $GITHUB_STEP_SUMMARY
+        echo "- **Run specific test:** Use \`test_path\` input (e.g., \`000_intro/001_hello_world/test_hello_world.py\`)" >> $GITHUB_STEP_SUMMARY

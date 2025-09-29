@@ -5,7 +5,8 @@ from pathlib import Path
 from typing import Tuple
 
 import pytest
-from grading import GradeReporter
+
+from tests.grading import GradeReporter
 
 
 class ScriptRunner:
