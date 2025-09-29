@@ -1,10 +1,4 @@
 class GradeReporter:
-    GRADE_MESSAGES = {
-        90: "🎉 Excellent work!",
-        80: "👍 Good job!",
-        70: "📚 Keep studying!",
-        0: "💪 More practice needed!",
-    }
 
     def __init__(self, stats: dict) -> None:
         # Group test results by test file
@@ -72,11 +66,6 @@ class GradeReporter:
             return 0.0
         return (self.passed / self.possible_tests) * 100
 
-    def get_grade_message(self, percentage: float) -> str:
-        for threshold in sorted(self.GRADE_MESSAGES.keys(), reverse=True):
-            if percentage >= threshold:
-                return self.GRADE_MESSAGES[threshold]
-        return self.GRADE_MESSAGES[0]
 
     def print_report(self) -> None:
         grade_percentage = self.calculate_grade()
@@ -100,5 +89,4 @@ class GradeReporter:
 
         print()
         print(f"Grade: {grade_percentage:.1f}%")
-        print(self.get_grade_message(grade_percentage))
         print("=" * 50)
