@@ -22,7 +22,7 @@ import pytest
         (7.2, "Major"),
         (8.0, "Great"),
         (8.9, "Great"),
-        (10.0, "Great"),
+        (10.0, "Meteoric"),
         (10.5, "Meteoric"),
         (15.0, "Meteoric"),
     ],
