@@ -6,37 +6,29 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
-    inputs:
-      test_path:
-        description: 'Specific test path to run (optional)'
-        required: false
-        default: ''
-      category:
-        description: 'Test category to run (e.g., 000_intro, 100_conditionals)'
-        required: false
-        default: ''
+
 
 jobs:
   calculate-grade:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-    - name: Install uv
-      uses: astral-sh/setup-uv@v6
-      with:
-        version: "0.8.22"
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.8.22"
 
-    - name: Install dependencies
-      run: |
-        uv sync
+      - name: Install dependencies
+        run: |
+          uv sync
 
-    - name: Run tests for 000_intro
-      run: |
-        uv run pytest 000_intro
+      - name: Run tests for 000_intro
+        run: |
+          uv run pytest 000_intro
 
-    - name: Run tests for 100_conditionals
-      run: |
-        uv run pytest 100_conditionals
+      - name: Run tests for 100_conditionals
+        run: |
+          uv run pytest 100_conditionals
