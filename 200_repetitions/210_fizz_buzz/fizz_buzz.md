@@ -32,17 +32,3 @@ fizz
 fizzbuzz
 ...
 ```
-
-## Logic
-- Use a for loop from 1 to 100
-- For each number:
-  - Check if divisible by both 3 and 5 (divisible by 15)
-  - Else check if divisible by 3
-  - Else check if divisible by 5
-  - Else print the number
-
-## Hints
-- Use range(1, 101) for numbers 1-100
-- Check divisibility with modulo operator: n % 3 == 0
-- Order matters: check 15 first, then 3, then 5
-- Or use string concatenation for fizz and buzz

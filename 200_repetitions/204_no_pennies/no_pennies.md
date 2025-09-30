@@ -48,13 +48,7 @@ Cash payment: $10.75
 - Use a while loop to read prices until blank line
 - Sum all prices for total
 - For cash payment:
-  - Convert total to pennies (total × 100)
+  - Convert total to pennies `total × 100`
   - Find remainder when divided by 5
   - If remainder < 2.5: round down
   - Otherwise: round up
-
-## Hints
-- Read input as string, check if empty
-- Convert to float only if not empty
-- Round to 2 decimal places for display
-- Cash payment rounds to nearest 0.05

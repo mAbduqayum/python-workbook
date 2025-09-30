@@ -21,7 +21,7 @@ A guess is good enough when:
 ## Examples
 **Example 1:**
 ```
-Enter a number: 16
+16
 ```
 ```
 4.0
@@ -29,7 +29,7 @@ Enter a number: 16
 
 **Example 2:**
 ```
-Enter a number: 2
+2
 ```
 ```
 1.414213562373095
@@ -37,20 +37,20 @@ Enter a number: 2
 
 **Example 3:**
 ```
-Enter a number: 100
+100
 ```
 ```
 10.0
 ```
 
 ## Logic
-- Initialize guess = x / 2
-- Loop while abs(guess * guess - x) > 1e-12:
-  - guess = (guess + x/guess) / 2
+- Initialize `guess = x / 2`
+- Loop while `abs(guess * guess - x) > 1e-12`:
+  - `guess = (guess + x/guess) / 2`
 - Display the final guess
 
 ## Hints
 - Use a while loop for iteration
-- abs() function computes absolute value
-- 1e-12 represents 10⁻¹²
-- Newton's formula: new_guess = (guess + x/guess) / 2
+- `abs()` function computes absolute value
+- `1e-12` represents 10⁻¹²
+- Newton's formula: `new_guess = (guess + x/guess) / 2`

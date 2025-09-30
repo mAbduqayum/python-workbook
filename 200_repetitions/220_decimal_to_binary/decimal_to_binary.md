@@ -20,7 +20,7 @@ Convert a decimal (base 10) number to binary (base 2).
 ## Examples
 **Example 1:**
 ```
-Enter a decimal number: 10
+10
 ```
 ```
 The binary equivalent is 1010
@@ -28,7 +28,7 @@ The binary equivalent is 1010
 
 **Example 2:**
 ```
-Enter a decimal number: 15
+15
 ```
 ```
 The binary equivalent is 1111
@@ -36,20 +36,25 @@ The binary equivalent is 1111
 
 **Example 3:**
 ```
-Enter a decimal number: 42
+42
 ```
 ```
 The binary equivalent is 101010
 ```
 
 ## Logic
-- Decimal to binary uses repeated division by 2
-- The remainders (0 or 1) form the binary digits
-- Read remainders in reverse order (bottom to top)
-- Example: 10 ÷ 2 = 5 R 0, 5 ÷ 2 = 2 R 1, 2 ÷ 2 = 1 R 0, 1 ÷ 2 = 0 R 1
-- Reading bottom to top: 1010
+- Read decimal number `q`
+- Initialize empty result string
+- While `q > 0`:
+  - `r = q % 2` (remainder)
+  - Prepend `r` to result string
+  - `q = q // 2` (integer division)
+- Display the result
 
 ## Hints
+- Build result string from right to left
+- Use `result = str(r) + result` to prepend
+- Handle special case where `q = 0`
 - Use q % 2 to get remainder
 - Use q // 2 for floor division
 - Add to beginning of string: result = str(r) + result

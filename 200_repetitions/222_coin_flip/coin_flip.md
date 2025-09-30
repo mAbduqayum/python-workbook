@@ -27,21 +27,21 @@ On average, 7.9 flips were needed.
 
 ## Logic
 1. For 10 simulations:
-   - Initialize consecutive count = 1
+   - Initialize `consecutive count` = 1
    - Flip coin and store result
    - Display flip
    - Keep flipping until 3 consecutive same outcomes:
      - Generate new flip
      - Display flip
-     - If same as previous: increment consecutive count
-     - If different: reset consecutive count to 1
+     - If same as previous: increment `consecutive count`
+     - If different: reset `consecutive count` to 1
      - Update previous flip
    - Display flip count
 2. Calculate and display average
 
 ## Hints
 - Use `import random` and `random.randint(0, 1)` or `random.choice(['H', 'T'])`
-- Track previous flip result
-- Track consecutive count
-- Use print(letter, end="") to print on same line
+- Track `previous flip result`
+- Track `consecutive count`
+- Use `print(letter, end="")` to print on same line
 - Keep running total of flips for average calculation

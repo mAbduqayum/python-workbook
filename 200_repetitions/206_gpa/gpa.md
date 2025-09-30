@@ -45,7 +45,7 @@ A-
 - Convert each grade to points using if/elif statements or dictionary
 - Keep running sum of grade points
 - Count number of grades
-- GPA = total grade points / number of grades
+- GPA = `total grade points / number of grades`
 
 ## Hints
 - Read input as string to detect blank line

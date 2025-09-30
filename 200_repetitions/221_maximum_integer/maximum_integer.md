@@ -47,6 +47,6 @@ The maximum value was updated 5 times
 ## Hints
 - Use `import random` and `random.randint(1, 100)`
 - First number is automatically the max initially
-- Use print(value, end="") to print without newline
-- Use print(" <== Update") to add the marker
+- Use `print(value, end="")` to print without newline
+- Use `print(" <== Update")` to add the marker
 - Loop 99 more times after the first number

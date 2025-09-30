@@ -16,8 +16,8 @@ Find the greatest common divisor (GCD) of two positive integers.
 ## Examples
 **Example 1:**
 ```
-Enter first number: 12
-Enter second number: 8
+12
+8
 ```
 ```
 The GCD is 4
@@ -25,8 +25,8 @@ The GCD is 4
 
 **Example 2:**
 ```
-Enter first number: 48
-Enter second number: 18
+48
+18
 ```
 ```
 The GCD is 6
@@ -34,20 +34,16 @@ The GCD is 6
 
 **Example 3:**
 ```
-Enter first number: 17
-Enter second number: 19
+17
+19
 ```
 ```
 The GCD is 1
 ```
 
 ## Logic
-- The GCD is the largest number that divides both n and m evenly
-- Start from the smaller number and work down
-- First number that divides both evenly is the GCD
-
-## Hints
-- Use min(m, n) to find the smaller number
-- Check divisibility: m % d == 0 and n % d == 0
-- Loop while d does NOT divide both: while m % d != 0 or n % d != 0
-- Decrease d by 1 in each iteration
+- Read two numbers `m` and `n`
+- Initialize `d` to the smaller of `m` and `n`
+- Loop while `d` doesn't divide both `m` and `n`:
+  - Decrease `d` by 1
+- `d` is the GCD

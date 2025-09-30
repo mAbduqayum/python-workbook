@@ -42,12 +42,6 @@ Error: No values provided
 
 ## Logic
 - Use a while loop to read values until 0 is entered
-- Keep track of the sum and count of values
+- Keep track of the `sum` and `count` of values
 - The 0 should not be included in the average
-- Average = sum / count
-
-## Hints
-- Initialize sum to 0 and count to 0
-- Read the first value before the loop
-- If it's 0, display error and exit
-- Otherwise, add to sum and increment count in the loop
+- Average = `sum / count`

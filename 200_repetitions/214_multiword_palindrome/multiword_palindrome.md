@@ -17,26 +17,26 @@ Determine if a phrase is a palindrome when spacing (and optionally punctuation) 
 ## Examples
 **Example 1:**
 ```
-Enter a string: go dog
+`go dog`
 ```
 ```
-go dog is a palindrome
+`go dog` is a palindrome
 ```
 
 **Example 2:**
 ```
-Enter a string: flee to me remote elf
+`flee to me remote elf`
 ```
 ```
-flee to me remote elf is a palindrome
+`flee to me remote elf` is a palindrome
 ```
 
 **Example 3:**
 ```
-Enter a string: hello world
+`hello world`
 ```
 ```
-hello world is not a palindrome
+`hello world` is not a palindrome
 ```
 
 ## Logic

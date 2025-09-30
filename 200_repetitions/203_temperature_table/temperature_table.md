@@ -25,11 +25,6 @@ Celsius    Fahrenheit
 ```
 
 ## Logic
-- Use a for loop with range(0, 101, 10) for multiples of 10
-- Convert Celsius to Fahrenheit using: F = C × 9/5 + 32
+- Use a for loop with `range(0, 101, 10)` for multiples of 10
+- Convert Celsius to Fahrenheit using: `F = C × 9/5 + 32`
 - Display each row with formatted output
-
-## Hints
-- The formula is: fahrenheit = (celsius * 9/5) + 32
-- Use a for loop with step value of 10
-- Format output for better readability

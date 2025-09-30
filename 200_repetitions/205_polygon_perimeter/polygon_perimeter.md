@@ -22,16 +22,16 @@ The perimeter of that polygon is 3.414213562373095
 ```
 
 ## Logic
-- Store first point coordinates (x1, y1)
+- Store first point coordinates `x1`, `y1`
 - Use while loop to read additional points
 - For each new point:
-  - Calculate distance from previous point: √((x2-x1)² + (y2-y1)²)
+  - Calculate distance from previous point: `√((x2-x1)² + (y2-y1)²)`
   - Add to perimeter
   - Update previous point
 - After loop, add distance from last point to first point
 
 ## Hints
-- Use math.sqrt() for square root
-- Distance formula: sqrt((x2-x1)**2 + (y2-y1)**2)
+- Use `math.sqrt()` for square root
+- Distance formula: `sqrt((x2-x1)**2 + (y2-y1)**2)`
 - Keep track of first point to close the polygon
 - Check for blank input using empty string

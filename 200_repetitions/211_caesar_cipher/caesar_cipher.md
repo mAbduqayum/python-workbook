@@ -14,8 +14,8 @@ Implement a Caesar cipher to encode/decode messages by shifting letters.
 ## Examples
 **Example 1:**
 ```
-Enter message: HELLO
-Enter shift: 3
+HELLO
+3
 ```
 ```
 KHOOR
@@ -23,8 +23,8 @@ KHOOR
 
 **Example 2:**
 ```
-Enter message: xyz
-Enter shift: 3
+xyz
+3
 ```
 ```
 abc
@@ -32,8 +32,8 @@ abc
 
 **Example 3:**
 ```
-Enter message: Hello, World!
-Enter shift: -3
+Hello, World!
+-3
 ```
 ```
 Ebiil, Tloia!
@@ -42,16 +42,17 @@ Ebiil, Tloia!
 ## Logic
 - For each character in the message:
   - If it's a letter:
-    - Determine if uppercase or lowercase
     - Convert to position (A=0, B=1, ..., Z=25)
-    - Add shift amount
-    - Wrap around using modulo 26
+    - Add `shift` value
+    - Use modulo 26 to wrap around
     - Convert back to letter
-  - If not a letter, keep as is
+  - If not a letter, keep it unchanged
+- Maintain case (uppercase stays uppercase, lowercase stays lowercase)
 
 ## Hints
-- Use ord() to get ASCII value of character
-- Use chr() to convert ASCII value to character
-- ord('A') = 65, ord('a') = 97
-- Use % 26 to wrap around the alphabet
-- Check if character is letter with isalpha()
+- Use `ord()` to get ASCII value, `chr()` to convert back
+- For uppercase: position = `ord(char) - ord('A')`
+- For lowercase: position = `ord(char) - ord('a')`
+- New position = `(position + shift) % 26`
+- Use `% 26` to wrap around the alphabet
+- Check if character is letter with `isalpha()`

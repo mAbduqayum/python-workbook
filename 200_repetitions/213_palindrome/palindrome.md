@@ -17,38 +17,37 @@ Determine whether a string is a palindrome (identical forward and backward).
 ## Examples
 **Example 1:**
 ```
-Enter a string: anna
+anna
 ```
 ```
-anna is a palindrome
+`anna` is a palindrome
 ```
 
 **Example 2:**
 ```
-Enter a string: hello
+hello
 ```
 ```
-hello is not a palindrome
+`hello` is not a palindrome
 ```
 
 **Example 3:**
 ```
-Enter a string: racecar
+racecar
 ```
 ```
-racecar is a palindrome
+`racecar` is a palindrome
 ```
 
 ## Logic
-- Compare characters from start and end moving inward
-- Use a loop to check if string[i] == string[-(i+1)]
-- Or reverse the string and compare with original
+- Compare first character with last, second with second-to-last, etc.
+- Use a loop to iterate through half the string
+- If any pair doesn't match, it's not a palindrome
+- For index `i`, compare `string[i]` with `string[-(i+1)]`
 
 ## Hints
-- Method 1: Use loop to compare first/last, second/second-last, etc.
-- Method 2: Reverse string and compare: string == string[::-1]
-- For loop approach, check up to len(string) // 2
-- If any pair doesn't match, it's not a palindrome
+- Use `range(len(string) // 2)` to iterate through first half
+- Negative indexing: `string[-1]` is last character, `string[-2]` is second-to-last
 
 ## Fun Facts
 - Aibohphobia: fear of palindromes (itself a palindrome!)
