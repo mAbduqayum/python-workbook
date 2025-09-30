@@ -45,10 +45,6 @@ racecar
 - If any pair doesn't match, it's not a palindrome
 - For index `i`, compare `string[i]` with `string[-(i+1)]`
 
-## Hints
-- Use `range(len(string) // 2)` to iterate through first half
-- Negative indexing: `string[-1]` is last character, `string[-2]` is second-to-last
-
 ## Fun Facts
 - Aibohphobia: fear of palindromes (itself a palindrome!)
 - Ailihphilia: love of palindromes

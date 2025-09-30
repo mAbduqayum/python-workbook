@@ -30,9 +30,3 @@ Approximation 4: 3.1452380952380955
 - Term 2: `3 + 4/(2×3×4)`
 - Term 3: `3 + 4/(2×3×4) - 4/(4×5×6)`
 - Term 4: `3 + 4/(2×3×4) - 4/(4×5×6) + 4/(6×7×8)`
-
-## Hints
-- Use a for loop for 15 iterations
-- Keep running sum of approximation
-- Alternate sign: use `(-1)^(i+1)` or toggle variable
-- Denominator pattern: `n` starts at 2, increases by 2

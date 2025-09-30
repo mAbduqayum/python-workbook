@@ -53,8 +53,3 @@ Parity bit: 1
 - Check if string length is 8
 - Count number of '1' characters using count() method
 - If count is odd, parity bit is 1; otherwise 0
-
-## Hints
-- Use string.count('1') to count ones
-- Check len(string) == 8 for validation
-- Even parity means total 1s must be even

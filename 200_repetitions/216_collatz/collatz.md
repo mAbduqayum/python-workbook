@@ -47,11 +47,5 @@ Generate and display Collatz sequences for integers entered by the user.
     - If `n` is even: `n` = `n` // 2
     - If `n` is odd: `n` = `n` * 3 + 1
     - Display `n`
+  - Read next number
 - Stop when user enters `n` ≤ 0
-
-## Hints
-- Use while loop for reading multiple numbers
-- Use nested while loop for generating sequence
-- Check if even: `n` % 2 == 0
-- Floor division: `n` // 2
-- The conjecture states this always reaches 1 (unproven!)

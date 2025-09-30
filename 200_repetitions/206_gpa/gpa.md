@@ -46,9 +46,3 @@ A-
 - Keep running sum of grade points
 - Count number of grades
 - GPA = `total grade points / number of grades`
-
-## Hints
-- Read input as string to detect blank line
-- Strip whitespace from input
-- Use a dictionary for grade-to-point mapping
-- No error checking needed (assume valid input)

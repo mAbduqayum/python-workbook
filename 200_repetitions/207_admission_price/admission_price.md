@@ -54,9 +54,3 @@ $14.00
 - For each age, determine price based on age category
 - Add to running total
 - Display total with 2 decimal places
-
-## Hints
-- Read input as string to detect blank line
-- Convert to int only if not blank
-- Use if/elif/else for age categories
-- Format output: f"${total:.2f}"

@@ -48,9 +48,3 @@ A guess is good enough when:
 - Loop while `abs(guess * guess - x) > 1e-12`:
   - `guess = (guess + x/guess) / 2`
 - Display the final guess
-
-## Hints
-- Use a while loop for iteration
-- `abs()` function computes absolute value
-- `1e-12` represents 10⁻¹²
-- Newton's formula: `new_guess = (guess + x/guess) / 2`

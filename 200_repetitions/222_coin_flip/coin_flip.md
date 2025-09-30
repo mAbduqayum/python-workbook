@@ -38,10 +38,3 @@ On average, 7.9 flips were needed.
      - Update previous flip
    - Display flip count
 2. Calculate and display average
-
-## Hints
-- Use `import random` and `random.randint(0, 1)` or `random.choice(['H', 'T'])`
-- Track `previous flip result`
-- Track `consecutive count`
-- Use `print(letter, end="")` to print on same line
-- Keep running total of flips for average calculation

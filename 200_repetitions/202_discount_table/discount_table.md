@@ -25,8 +25,3 @@ $24.95           $14.97             $9.98
   - Calculate new_price = price - discount
   - Round to 2 decimal places
   - Display in formatted output
-
-## Hints
-- Use f-strings or format() for formatted output
-- round(value, 2) rounds to 2 decimal places
-- Consider column alignment for better presentation

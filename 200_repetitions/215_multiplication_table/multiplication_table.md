@@ -32,9 +32,3 @@ Display a multiplication table showing products from 1×1 to 10×10.
   - Print the row number
   - Print each product (`row × column`)
   - Use `end=""` to stay on same line
-
-## Hints
-- `print(value, end="")` prevents moving to next line
-- `print(value, end=" ")` adds space between values
-- Use nested loops: outer for rows, inner for columns
-- Format numbers with proper spacing for alignment

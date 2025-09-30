@@ -44,9 +44,6 @@ Determine if a phrase is a palindrome when spacing (and optionally punctuation) 
 - Convert to same case (for advanced version)
 - Remove punctuation (for advanced version)
 - Check if modified string is a palindrome
-
-## Hints
-- Use string.replace(" ", "") to remove spaces
-- Use string.lower() to convert to lowercase
-- Use string.isalnum() to check if character is alphanumeric
-- Build a new string with only letters/numbers for comparison
+{{ ... }}
+- If any pair doesn't match, it's not a palindrome
+- For index `i`, compare `cleaned[i]` with `cleaned[-(i+1)]`

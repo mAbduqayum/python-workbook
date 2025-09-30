@@ -29,9 +29,3 @@ The perimeter of that polygon is 3.414213562373095
   - Add to perimeter
   - Update previous point
 - After loop, add distance from last point to first point
-
-## Hints
-- Use `math.sqrt()` for square root
-- Distance formula: `sqrt((x2-x1)**2 + (y2-y1)**2)`
-- Keep track of first point to close the polygon
-- Check for blank input using empty string

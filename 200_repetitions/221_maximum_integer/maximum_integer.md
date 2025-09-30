@@ -43,10 +43,3 @@ The maximum value was updated 5 times
      - Increment update count
      - Display " <== Update" on same line
 4. Display final maximum and update count
-
-## Hints
-- Use `import random` and `random.randint(1, 100)`
-- First number is automatically the max initially
-- Use `print(value, end="")` to print without newline
-- Use `print(" <== Update")` to add the marker
-- Loop 99 more times after the first number
