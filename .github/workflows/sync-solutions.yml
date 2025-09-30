@@ -1,4 +1,4 @@
-name: Sync Questions to Solutions Branch
+name: Sync to Solutions
 
 on:
   push:

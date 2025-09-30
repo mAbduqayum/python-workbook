@@ -2,15 +2,26 @@ name: Grade Calculator
 
 on:
   push:
-    branches: [ main, solutions ]
-  pull_request:
-    branches: [ main ]
+    branches-ignore:
+      - "main"
   workflow_dispatch:
+  workflow_run:
+    workflows: ["Sync to Solutions"]
+    types:
+      - completed
+    branches: [solutions]
 
 
 jobs:
   calculate-grade:
     runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      max-parallel: 1
+      matrix:
+        test-module:
+          - 000_intro
+          - 100_conditionals
 
     steps:
       - name: Checkout repository
@@ -25,10 +36,6 @@ jobs:
         run: |
           uv sync
 
-      - name: Run tests for 000_intro
+      - name: Run tests for ${{ matrix.test-module }}
         run: |
-          uv run pytest 000_intro
-
-      - name: Run tests for 100_conditionals
-        run: |
-          uv run pytest 100_conditionals
+          uv run pytest ${{ matrix.test-module }}
