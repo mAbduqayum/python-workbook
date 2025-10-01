@@ -1,7 +1,7 @@
+import math
 from pathlib import Path
 
 import pytest
-import math
 
 
 @pytest.mark.parametrize(
@@ -22,11 +22,12 @@ def test_square_root(script_runner, input_value, expected_sqrt):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{input_value}\n")
-    
+
     # Extract numeric value from output
     import re
-    numbers = re.findall(r'\d+\.\d+', result.stdout)
-    
+
+    numbers = re.findall(r"\d+\.\d+", result.stdout)
+
     if numbers:
         actual = float(numbers[0])
         assert abs(actual - expected_sqrt) < 1e-6

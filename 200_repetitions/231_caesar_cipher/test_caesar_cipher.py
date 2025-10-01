@@ -22,5 +22,5 @@ def test_caesar_cipher(script_runner, message, shift, expected_output):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{message}\n{shift}\n")
-    
+
     assert expected_output in result.stdout

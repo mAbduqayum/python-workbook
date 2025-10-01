@@ -21,7 +21,7 @@ def test_prime_factors(script_runner, input_value, expected_factors):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{input_value}\n")
-    
+
     # Check that all expected factors appear in output
     for factor in expected_factors:
         assert factor in result.stdout
@@ -35,5 +35,5 @@ def test_prime_factors_error(script_runner):
 
     runner = script_runner(script_path)
     result = runner.run(input_text="1\n")
-    
+
     assert "error" in result.stdout.lower()

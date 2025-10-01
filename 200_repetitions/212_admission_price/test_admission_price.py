@@ -21,5 +21,5 @@ def test_admission_price(script_runner, input_values, expected_cost):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
-    
+
     assert expected_cost in result.stdout

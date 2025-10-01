@@ -11,12 +11,12 @@ def test_fizz_buzz(script_runner):
 
     runner = script_runner(script_path)
     result = runner.run(input_text="")
-    
-    lines = result.stdout.strip().split('\n')
-    
+
+    lines = result.stdout.strip().split("\n")
+
     # Should have 100 lines
     assert len(lines) == 100
-    
+
     # Check specific values
     assert lines[0] == "1"
     assert lines[1] == "2"

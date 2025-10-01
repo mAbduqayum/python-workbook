@@ -20,7 +20,7 @@ def test_collatz(script_runner, input_value, expected_sequence):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_value)
-    
+
     # Check that all numbers in sequence appear in output
     for num in expected_sequence:
         assert num in result.stdout

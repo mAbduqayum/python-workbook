@@ -21,6 +21,9 @@ def test_gpa(script_runner, input_values, expected_gpa):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
-    
+
     # Check if expected GPA appears in output
-    assert expected_gpa in result.stdout or str(round(float(expected_gpa), 1)) in result.stdout
+    assert (
+        expected_gpa in result.stdout
+        or str(round(float(expected_gpa), 1)) in result.stdout
+    )

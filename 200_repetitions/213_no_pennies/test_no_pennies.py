@@ -21,6 +21,6 @@ def test_no_pennies(script_runner, input_values, expected_total, expected_cash):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
-    
+
     assert expected_total in result.stdout
     assert expected_cash in result.stdout

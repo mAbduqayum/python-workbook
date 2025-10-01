@@ -22,7 +22,7 @@ def test_parity_bits(script_runner, input_values, expected_outputs):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
-    
+
     for expected in expected_outputs:
         assert expected in result.stdout
 
@@ -35,5 +35,5 @@ def test_parity_bits_error(script_runner):
 
     runner = script_runner(script_path)
     result = runner.run(input_text="1010\n\n")
-    
+
     assert "error" in result.stdout.lower()

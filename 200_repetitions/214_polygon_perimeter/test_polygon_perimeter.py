@@ -22,11 +22,12 @@ def test_polygon_perimeter(script_runner, input_values, expected_perimeter):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
-    
+
     # Extract the numeric value from output
     import re
-    numbers = re.findall(r'\d+\.\d+', result.stdout)
-    
+
+    numbers = re.findall(r"\d+\.\d+", result.stdout)
+
     if numbers:
         actual = float(numbers[0])
         assert abs(actual - expected_perimeter) < 0.01

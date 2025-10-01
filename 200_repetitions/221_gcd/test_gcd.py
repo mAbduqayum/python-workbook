@@ -22,5 +22,5 @@ def test_gcd(script_runner, num1, num2, expected_gcd):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{num1}\n{num2}\n")
-    
+
     assert expected_gcd in result.stdout

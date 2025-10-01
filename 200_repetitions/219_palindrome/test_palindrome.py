@@ -27,8 +27,11 @@ def test_palindrome(script_runner, input_string, is_palindrome):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{input_string}\n")
-    
+
     if is_palindrome:
-        assert "is a palindrome" in result.stdout.lower() or "palindrome" in result.stdout.lower()
+        assert (
+            "is a palindrome" in result.stdout.lower()
+            or "palindrome" in result.stdout.lower()
+        )
     else:
         assert "not" in result.stdout.lower() or "isn't" in result.stdout.lower()

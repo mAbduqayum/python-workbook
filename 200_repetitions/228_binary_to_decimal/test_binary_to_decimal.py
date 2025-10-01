@@ -23,5 +23,5 @@ def test_binary_to_decimal(script_runner, binary_input, expected_decimal):
 
     runner = script_runner(script_path)
     result = runner.run(input_text=f"{binary_input}\n")
-    
+
     assert expected_decimal in result.stdout
