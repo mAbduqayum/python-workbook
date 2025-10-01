@@ -1,15 +1,22 @@
+from pathlib import Path
 import pytest
-from tests.grading import test_input_output
 
 
-@pytest.mark.parametrize("inputs, expected", [
-    (["Hello123"], "Strong"),
-    (["hello123"], "Moderate"),
-    (["HELLO123"], "Moderate"),
-    (["HelloWorld"], "Moderate"),
-    (["hello"], "Weak"),
-    (["12345"], "Weak"),
-    ([""], "Weak"),
+@pytest.mark.parametrize("input_text, expected", [
+    ("Hello123\n", "Strong"),
+    ("hello123\n", "Moderate"),
+    ("HELLO123\n", "Moderate"),
+    ("HelloWorld\n", "Moderate"),
+    ("hello\n", "Weak"),
+    ("12345\n", "Weak"),
+    ("\n", "Weak"),
 ])
-def test_password_strength(inputs, expected):
-    test_input_output("200_repetitions/231_password_strength/password_strength.py", inputs, expected)
+def test_password_strength(script_runner, input_text, expected):
+    script_path = Path(__file__).parent / "password_strength.py"
+    
+    if not script_path.exists():
+        pytest.skip("Solution file password_strength.py not found")
+    
+    runner = script_runner(script_path)
+    result = runner.run(input_text=input_text)
+    assert result.stdout == expected

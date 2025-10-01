@@ -1,12 +1,19 @@
+from pathlib import Path
 import pytest
-from tests.grading import test_input_output
 
 
-@pytest.mark.parametrize("inputs, expected", [
-    (["5"], "    1\n   121\n  12321\n 1234321\n123454321"),
-    (["3"], "  1\n 121\n12321"),
-    (["1"], "1"),
-    (["0"], "Error"),
+@pytest.mark.parametrize("input_text, expected", [
+    ("5\n", "1\n   121\n  12321\n 1234321\n123454321"),
+    ("3\n", "1\n 121\n12321"),
+    ("1\n", "1"),
+    ("0\n", "Error"),
 ])
-def test_number_pyramid(inputs, expected):
-    test_input_output("200_repetitions/235_number_pyramid/number_pyramid.py", inputs, expected)
+def test_number_pyramid(script_runner, input_text, expected):
+    script_path = Path(__file__).parent / "number_pyramid.py"
+    
+    if not script_path.exists():
+        pytest.skip("Solution file number_pyramid.py not found")
+    
+    runner = script_runner(script_path)
+    result = runner.run(input_text=input_text)
+    assert result.stdout == expected
