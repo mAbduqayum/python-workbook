@@ -9,7 +9,6 @@ import pytest
         ("5\n20\n3\n", "5\n8\n11\n14\n17\n20"),
         ("10\n1\n-2\n", "10\n8\n6\n4\n2"),
         ("1\n1\n1\n", "1"),
-        ("1\n10\n0\n", "Error"),
     ],
 )
 def test_arithmetic_sequence(script_runner, input_text, expected):

@@ -9,7 +9,7 @@ Generate and display an arithmetic sequence.
   - `diff`: common difference between consecutive terms
 - Display all terms of the arithmetic sequence from start to end
 - Each term on its own line
-- If `diff` is 0 or has wrong sign, display an error message
+- **Note:** You can assume that the inputs are always valid (diff is non-zero and has the correct sign)
 
 ## Examples
 **Example 1:**
@@ -41,15 +41,7 @@ Generate and display an arithmetic sequence.
 2
 ```
 
-**Example 3:**
-```
-1
-10
-0
-```
-```
-Error: diff must be non-zero
-```
+**Note:** Since inputs are guaranteed to be valid, there are no error cases to consider.
 
 ## Logic
 - Start with the first term

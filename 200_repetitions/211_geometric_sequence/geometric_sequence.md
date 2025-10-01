@@ -9,7 +9,7 @@ Generate and display a geometric sequence.
   - `ratio`: common ratio between consecutive terms (float)
 - Display the first `count` terms of the geometric sequence
 - Each term on its own line
-- If `count` is less than 1, display an error message
+- **Note:** You can assume that count is always at least 1
 
 ## Examples
 **Example 1:**
@@ -19,11 +19,11 @@ Generate and display a geometric sequence.
 3
 ```
 ```
-2.0
-6.0
-18.0
-54.0
-162.0
+2
+6
+18
+54
+162
 ```
 
 **Example 2:**
@@ -37,16 +37,6 @@ Generate and display a geometric sequence.
 50.0
 25.0
 12.5
-```
-
-**Example 3:**
-```
-5
-0
-2
-```
-```
-Error: count must be at least 1
 ```
 
 ## Logic
