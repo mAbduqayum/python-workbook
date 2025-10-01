@@ -9,6 +9,7 @@ Generate and display a geometric sequence.
   - `ratio`: common ratio between consecutive terms (float)
 - Display the first `count` terms of the geometric sequence
 - Each term on its own line
+- **Formatting:** Display whole numbers without decimal points (e.g., `100` instead of `100.0`), but show decimals when necessary (e.g., `12.5`)
 - **Note:** You can assume that count is always at least 1
 
 ## Examples
@@ -44,4 +45,4 @@ Generate and display a geometric sequence.
 - Start with the first term
 - Use a for loop to generate `count` terms
 - Multiply by `ratio` to get the next term
-- Display each term
+- Display each term using f-string with `:g` format specifier (removes trailing zeros and decimal point for whole numbers)
