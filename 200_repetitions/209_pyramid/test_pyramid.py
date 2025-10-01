@@ -9,7 +9,7 @@ import pytest
         ("5\n", "*\n   ***\n  *****\n *******\n*********"),
         ("3\n", "*\n ***\n*****"),
         ("1\n", "*"),
-        ("0\n", "Error"),
+        ("0\n", "Error: n must be at least 1"),
     ],
 )
 def test_pyramid(script_runner, input_text, expected):

@@ -31,4 +31,4 @@ Display a multiplication table showing products from 1×1 to 10×10.
 - Then for each row:
   - Print the row number
   - Print each product (`row × column`)
-  - Use `end=""` to stay on same line
+  - Use `end=""` as in `print("*", end="")` to stay on same line
