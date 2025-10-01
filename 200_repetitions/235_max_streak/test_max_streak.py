@@ -6,10 +6,10 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("1\n1\n1\n2\n2\n3\n3\n3\n3\n\n", "4"),
-        ("5\n5\n5\n5\n5\n\n", "5"),
-        ("1\n2\n3\n4\n\n", "1"),
-        ("\n", "Error"),
+        ("1\n1\n1\n0\n1\n1\n\n", "Maximum streak: 3"),
+        ("1\n1\n1\n1\n1\n\n", "Maximum streak: 5"),
+        ("0\n1\n0\n1\n1\n1\n0\n\n", "Maximum streak: 3"),
+        ("0\n0\n0\n\n", "Maximum streak: 0"),
     ],
 )
 def test_max_streak(script_runner, input_text, expected):
