@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("2\n5\n3\n", "2.0\n6.0\n18.0\n54.0\n162.0"),
-        ("100\n4\n0.5\n", "100.0\n50.0\n25.0\n12.5"),
-        ("5\n1\n2\n", "5.0"),
+        ("2\n5\n3\n", "2\n6\n18\n54\n162"),
+        ("100\n5\n0.5\n", "100\n50\n25\n12.5\n6.25"),
+        ("5\n1\n2\n", "5"),
     ],
 )
 def test_geometric_sequence(script_runner, input_text, expected):

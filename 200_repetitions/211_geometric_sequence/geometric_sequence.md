@@ -29,14 +29,15 @@ Generate and display a geometric sequence.
 **Example 2:**
 ```
 100
-4
+5
 0.5
 ```
 ```
-100.0
-50.0
-25.0
+100
+50
+25
 12.5
+6.25
 ```
 
 ## Logic
