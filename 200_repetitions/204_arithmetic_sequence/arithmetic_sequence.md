@@ -5,18 +5,18 @@ Generate and display an arithmetic sequence.
 ## Task
 - Read three integers from the user:
   - `start`: first term of the sequence
-  - `end`: upper limit (inclusive)
   - `diff`: common difference between consecutive terms
-- Display all terms of the arithmetic sequence from start to end
+  - `count`: number of terms to generate
+- Display all terms of the arithmetic sequence
 - Each term on its own line
-- **Note:** You can assume that the inputs are always valid (diff is non-zero and has the correct sign)
+- **Note:** You can assume that the inputs are always valid (count is positive)
 
 ## Examples
 **Example 1:**
 ```
 5
-20
 3
+6
 ```
 ```
 5
@@ -30,8 +30,8 @@ Generate and display an arithmetic sequence.
 **Example 2:**
 ```
 10
-1
 -2
+5
 ```
 ```
 10
@@ -45,6 +45,5 @@ Generate and display an arithmetic sequence.
 
 ## Logic
 - Start with the first term
-- Use a while loop to generate terms
-- Add `diff` to get the next term
-- Continue while the term is within bounds (≤ end if diff > 0, ≥ end if diff < 0)
+- Use a loop to generate exactly `count` terms
+- Add `diff` to get the next term after each iteration

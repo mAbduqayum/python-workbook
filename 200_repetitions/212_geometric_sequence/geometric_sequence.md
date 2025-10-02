@@ -5,8 +5,8 @@ Generate and display a geometric sequence.
 ## Task
 - Read three values from the user:
   - `start`: first term of the sequence (float)
-  - `count`: number of terms to generate (integer)
   - `ratio`: common ratio between consecutive terms (float)
+  - `count`: number of terms to generate (integer)
 - Display the first `count` terms of the geometric sequence
 - Each term on its own line
 - **Formatting:** Display whole numbers without decimal points (e.g., `100` instead of `100.0`), but show decimals when necessary (e.g., `12.5`)
@@ -16,8 +16,8 @@ Generate and display a geometric sequence.
 **Example 1:**
 ```
 2
-5
 3
+5
 ```
 ```
 2
@@ -30,8 +30,8 @@ Generate and display a geometric sequence.
 **Example 2:**
 ```
 100
-5
 0.5
+5
 ```
 ```
 100
