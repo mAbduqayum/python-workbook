@@ -6,7 +6,6 @@ Create a pyramid pattern using numbers instead of asterisks.
 - Read a positive integer `n` from the user (height of pyramid)
 - Display a centered pyramid where each row shows consecutive numbers
 - Row `i` should have numbers from 1 to i, centered
-- If `n` is less than 1, display an error message
 
 ## Examples
 **Example 1:**
@@ -29,14 +28,6 @@ Create a pyramid pattern using numbers instead of asterisks.
   1
  121
 12321
-```
-
-**Example 3:**
-```
-0
-```
-```
-Error: n must be at least 1
 ```
 
 ## Logic
