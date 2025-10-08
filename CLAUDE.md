@@ -14,10 +14,7 @@ This is a structured collection of Python programming exercises designed for lea
   - `6**` files and exceptions
   - `7**` recursion
 - Exercise directories contain:
-  - `*.md` file with problem description, examples, and formulas.
-  - `*_hint.md` file with the hint to the question, but is given when is really necessary!
-  - `*.py` file with the solution implementation. Don't solve the questions unless asked!
-- Reference materials are in `x00_*/` directories
+- Reference materials are in `*docs` directories
 
 ## Exercise Categories
 
@@ -45,15 +42,15 @@ This is a structured collection of Python programming exercises designed for lea
 - Verify trigonometric calculations use correct units (radians vs degrees)
 - Test complex formulas (Heron's formula, great circle distance, etc.) thoroughly
 
-## Exercise Workflow
-
-1. Read the `.md` file to understand requirements
-2. Never create `.py` files unless told
-3. Verify outputs match examples exactly
-4. Test mathematical formulas independently
-5. Fix any calculation or formatting errors
-6. Ensure all examples produce correct results
-
 ## Commands
 - `uv run`
 - `git mv` to reorder files. don't use temp dirs, the dirs are unique even without enumeration
+
+## Quality Checklist
+
+Before finalizing slides:
+- [ ] Each dir contains a question, test, and solution
+- [ ] Table-driven tests have logic order for subcases (logically from small to big or alphabetically based on the question logic)
+- [ ] All code examples are tested and working
+
+

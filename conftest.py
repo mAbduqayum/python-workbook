@@ -2,11 +2,18 @@ import re
 import subprocess
 import sys
 from pathlib import Path
-from typing import Tuple
+from typing import NamedTuple
 
 import pytest
 
 from tests.grading import GradeReporter
+
+
+class RunResult(NamedTuple):
+    """Result of running a script."""
+    stdout: str
+    stderr: str
+    returncode: int
 
 
 class ScriptRunner:
@@ -17,8 +24,8 @@ class ScriptRunner:
     def __init__(self, script_path: str | Path) -> None:
         self.script_path = Path(script_path)
 
-    def run(self, input_text: str = "") -> Tuple[str, str, int]:
-        """Run the script with optional input and return (stdout, stderr, returncode)."""
+    def run(self, input_text: str = "") -> RunResult:
+        """Run the script with optional input and return RunResult with stdout, stderr, returncode."""
         try:
             result = subprocess.run(
                 [sys.executable, str(self.script_path)],
@@ -27,9 +34,9 @@ class ScriptRunner:
                 capture_output=True,
                 timeout=self.DEFAULT_TIMEOUT,
             )
-            return result.stdout.strip(), result.stderr.strip(), result.returncode
+            return RunResult(result.stdout.strip(), result.stderr.strip(), result.returncode)
         except subprocess.TimeoutExpired:
-            return "", "Script timed out", 1
+            return RunResult("", "Script timed out", 1)
 
     @staticmethod
     def _validate_execution(stderr: str, return_code: int) -> None:
@@ -39,14 +46,14 @@ class ScriptRunner:
 
     def run_and_check(self, input_text: str = "", expected_output: str = "") -> str:
         """Run script and assert expected output."""
-        stdout, stderr, return_code = self.run(input_text)
-        self._validate_execution(stderr, return_code)
+        result = self.run(input_text)
+        self._validate_execution(result.stderr, result.returncode)
 
-        actual = stdout.strip()
+        actual = result.stdout.strip()
         expected = expected_output.strip()
 
         assert actual == expected, f"Expected: {expected!r}, Got: {actual!r}"
-        return stdout
+        return result.stdout
 
     @staticmethod
     def _clean_output(stdout: str) -> str:
@@ -60,15 +67,15 @@ class ScriptRunner:
         self, input_text: str = "", expected_output: str = ""
     ) -> str:
         """Run script and assert expected output, filtering out input prompts."""
-        stdout, stderr, return_code = self.run(input_text)
-        self._validate_execution(stderr, return_code)
+        result = self.run(input_text)
+        self._validate_execution(result.stderr, result.returncode)
 
-        actual_output = self._clean_output(stdout)
+        actual_output = self._clean_output(result.stdout)
 
         assert actual_output == expected_output, (
             f"Expected: {expected_output!r}, Got: {actual_output!r}"
         )
-        return stdout
+        return result.stdout
 
 
 @pytest.fixture

@@ -8,9 +8,9 @@ dependencies = []
 
 [dependency-groups]
 dev = [
-    "pytest>=8.4.2",
     "pytest-xdist>=3.8.0",
+    "pytest>=8.4.2",
 ]
 
 [tool.pytest.ini_options]
-addopts = "--tb=no -n auto"
+addopts = "--tb=no"
