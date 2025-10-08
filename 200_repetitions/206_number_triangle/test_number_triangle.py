@@ -9,7 +9,6 @@ import pytest
         ("5\n", "1\n12\n123\n1234\n12345"),
         ("3\n", "1\n12\n123"),
         ("1\n", "1"),
-        ("0\n", "Error: n must be at least 1"),
     ],
 )
 def test_number_triangle(script_runner, input_text, expected):

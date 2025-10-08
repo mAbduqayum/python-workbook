@@ -6,7 +6,6 @@ Create a right triangle pattern using consecutive numbers.
 - Read a positive integer `n` from the user
 - Display a right triangle with `n` rows
 - Each row `i` should contain numbers from 1 to i
-- If `n` is less than 1, display an error message
 
 ## Examples
 **Example 1:**
@@ -43,14 +42,6 @@ Create a right triangle pattern using consecutive numbers.
 12345
 123456
 1234567
-```
-
-**Example 4:**
-```
-0
-```
-```
-Error: n must be at least 1
 ```
 
 ## Logic

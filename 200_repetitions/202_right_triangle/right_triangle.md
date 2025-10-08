@@ -6,7 +6,6 @@ Create a right triangle pattern using asterisks.
 - Read a positive integer `n` from the user
 - Display a right triangle with `n` rows
 - Each row `i` should contain `i` asterisks
-- If `n` is less than 1, display an error message
 
 ## Examples
 **Example 1:**
@@ -29,14 +28,6 @@ Create a right triangle pattern using asterisks.
 *
 **
 ***
-```
-
-**Example 3:**
-```
-0
-```
-```
-Error: n must be at least 1
 ```
 
 ## Logic

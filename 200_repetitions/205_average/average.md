@@ -6,7 +6,6 @@ Write a program that computes the average of a collection of values entered by t
 - Read values from the user until 0 is entered (sentinel value)
 - Compute the average of all values (excluding the 0)
 - Display the average
-- Display an error message if the first value is 0
 
 ## Examples
 **Example 1:**
@@ -30,14 +29,6 @@ The average is 20.0
 ```
 ```
 The average is 20.0
-```
-
-**Example 3:**
-```
-0
-```
-```
-Error: No values provided
 ```
 
 ## Logic

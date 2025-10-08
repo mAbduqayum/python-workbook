@@ -12,7 +12,6 @@ import pytest
         ),
         ("3\n", "2  3  4\n 3  4  5\n 4  5  6"),
         ("1\n", "2"),
-        ("0\n", "Error: n must be at least 1"),
     ],
 )
 def test_sum_table(script_runner, input_text, expected):

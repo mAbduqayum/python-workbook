@@ -6,7 +6,6 @@ Find the minimum and maximum values from user input without using lists.
 - Read integers from the user until a blank line is entered
 - Track the minimum and maximum values as you read them
 - Display both the minimum and maximum values
-- Display an error message if no values were entered
 - Do NOT use lists or built-in min/max functions
 
 ## Examples
@@ -35,14 +34,6 @@ Maximum: 15
 ```
 Minimum: -10
 Maximum: -1
-```
-
-**Example 3:**
-```
-
-```
-```
-Error: No values provided
 ```
 
 ## Logic

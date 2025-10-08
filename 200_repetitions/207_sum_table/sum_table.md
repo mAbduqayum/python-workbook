@@ -7,7 +7,6 @@ Create a table showing the sum of row and column numbers.
 - Display an `n x n` table where each cell contains the sum of its row and column indices
 - Row and column indices start from 1
 - Format the table with proper spacing
-- If `n` is less than 1, display an error message
 
 ## Examples
 **Example 1:**
@@ -30,14 +29,6 @@ Create a table showing the sum of row and column numbers.
  2  3  4
  3  4  5
  4  5  6
-```
-
-**Example 3:**
-```
-0
-```
-```
-Error: n must be at least 1
 ```
 
 ## Logic

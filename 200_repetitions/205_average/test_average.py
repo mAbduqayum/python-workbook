@@ -21,14 +21,3 @@ def test_average(script_runner, input_values, expected_output):
     runner = script_runner(script_path)
     result = runner.run(input_text=input_values)
     assert expected_output in result.stdout
-
-
-def test_average_error_first_zero(script_runner):
-    script_path = Path(__file__).parent / "average.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file average.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="0\n")
-    assert "error" in result.stdout.lower() or "no" in result.stdout.lower()
