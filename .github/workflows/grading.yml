@@ -22,6 +22,7 @@ jobs:
         test-module:
           - 000_intro
           - 100_conditionals
+          - 200_repetitions
 
     steps:
       - name: Checkout repository
