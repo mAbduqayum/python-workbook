@@ -39,24 +39,5 @@ jobs:
 
       - name: Run tests for ${{ matrix.test-module }}
         run: |
-          uv run pytest ${{ matrix.test-module }} --junit-xml=results-${{ matrix.test-module }}.xml -v
-        continue-on-error: true
-
-      - name: Calculate Grade
-        if: always()
-        run: |
-          PASSED=$(grep -o 'tests="[0-9]*"' results-${{ matrix.test-module }}.xml | grep -o '[0-9]*' || echo "0")
-          FAILED=$(grep -o 'failures="[0-9]*"' results-${{ matrix.test-module }}.xml | grep -o '[0-9]*' || echo "0")
-          TOTAL=$((PASSED))
-          GRADE=$((PASSED * 100 / (PASSED + FAILED)))
-
           echo "## ${{ matrix.test-module }}" >> $GITHUB_STEP_SUMMARY
-          echo "**Grade: ${GRADE}%** (${PASSED}/${TOTAL} passed)" >> $GITHUB_STEP_SUMMARY
-          echo "" >> $GITHUB_STEP_SUMMARY
-
-      - name: Test Report
-        uses: mikepenz/action-junit-report@v4
-        if: always()
-        with:
-          report_paths: 'results-${{ matrix.test-module }}.xml'
-          check_name: 'Test Results: ${{ matrix.test-module }}'
+          uv run pytest ${{ matrix.test-module }}
