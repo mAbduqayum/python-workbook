@@ -1,9 +1,7 @@
-n = int(input())
-
-for row in range(n + 1):
-    for col in range(n + 1):
+for row in range(10):
+    for col in range(10):
         value = row + col
         print(f"{value:2}", end="")
-        if col < n:
+        if col < 9:
             print(" ", end="")
     print()
