@@ -39,4 +39,5 @@ jobs:
 
       - name: Run tests for ${{ matrix.test-module }}
         run: |
+          echo "## ${{ matrix.test-module }}" >> $GITHUB_STEP_SUMMARY
           uv run pytest ${{ matrix.test-module }}

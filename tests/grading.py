@@ -68,6 +68,8 @@ class GradeReporter:
 
 
     def print_report(self) -> None:
+        import os
+
         grade_percentage = self.calculate_grade()
 
         print("\n" + "=" * 50)
@@ -90,3 +92,8 @@ class GradeReporter:
         print()
         print(f"Grade: {grade_percentage:.1f}%")
         print("=" * 50)
+
+        # Write to GitHub Actions summary if in CI
+        if summary_file := os.getenv('GITHUB_STEP_SUMMARY'):
+            with open(summary_file, 'a') as f:
+                f.write(f"**Grade: {grade_percentage:.1f}%** ({self.passed}/{self.possible_tests} passed)\n\n")
