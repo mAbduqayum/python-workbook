@@ -2,7 +2,5 @@
 for row in range(1, 10):
     for col in range(1, 10):
         product = row * col
-        print(f"{product:2}", end="")
-        if col < 9:
-            print(" ", end="")
+        print(f"{product:2}", end=" ")
     print()
