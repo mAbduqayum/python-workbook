@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("20000000\n12\n20\n", "Amount of gas: 98471.67 moles"),
-        ("101325\n22.4\n0\n", "Amount of gas: 999.43 moles"),
-        ("500000\n5\n25\n", "Amount of gas: 1008.54 moles"),
+        ("20000000\n12\n20\n", "Amount of gas: 98.47 moles"),
+        ("101325\n22.4\n0\n", "Amount of gas: 1.00 moles"),
+        ("500000\n5\n25\n", "Amount of gas: 1.01 moles"),
     ],
 )
 def test_ideal_gas(script_runner, input_params, expected_output):

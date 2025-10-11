@@ -52,7 +52,7 @@ Amount of gas: 1.01 moles
 `PV = nRT` → `n = PV / (RT)` where:
 
 - `P` = pressure in Pascals
-- `V` = volume in liters
+- `V` = volume in cubic meters (convert from liters: `1 liter = 0.001 m³`)
 - `n` = amount in moles
 - `R = 8.314 J/(mol·K)` (ideal gas constant)
 - `T` = temperature in Kelvin = `°C + 273.15`
