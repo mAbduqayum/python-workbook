@@ -31,14 +31,29 @@ jobs:
 
       - name: Sync main branch to solutions branch
         run: |
-          set -ex # Exit on error, print commands
+          set -e # Exit on error
+          set -x # Print commands
 
           # Check if the solutions branch exists on the remote
           if git show-ref --verify --quiet refs/remotes/origin/solutions; then
             echo "✅ Solutions branch found on remote, syncing..."
             git checkout solutions
-            git merge origin/main
-            echo "✅ Merged latest changes from main"
+
+            # Try merge first
+            if git merge origin/main; then
+              echo "✅ Merged latest changes from main"
+            else
+              echo "⚠️ Merge conflict detected, trying rebase..."
+              git merge --abort
+
+              if git rebase origin/main; then
+                echo "✅ Rebased on main successfully"
+              else
+                echo "❌ Rebase failed, manual intervention required"
+                git rebase --abort
+                exit 1
+              fi
+            fi
           else
             echo "🆕 Solutions branch not found on remote, creating..."
             # Create the solutions branch from the current state of main
@@ -48,7 +63,7 @@ jobs:
 
           # Push the changes to the solutions branch
           echo "📤 Pushing updates to solutions branch..."
-          git push origin solutions
+          git push origin solutions --force-with-lease
           echo "✅ Solutions branch successfully updated"
 
       - name: Report sync status
