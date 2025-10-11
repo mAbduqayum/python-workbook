@@ -1,13 +1,8 @@
-# Print header row
-print("   ", end="")
-for i in range(1, 11):
-    print(f"{i:4}", end="")
-print()
-
-# Print each row
-for row in range(1, 11):
-    print(f"{row:2} ", end="")
-    for col in range(1, 11):
+# Print each row of the multiplication table
+for row in range(1, 10):
+    for col in range(1, 10):
         product = row * col
-        print(f"{product:4}", end="")
+        print(f"{product:2}", end="")
+        if col < 9:
+            print(" ", end="")
     print()
