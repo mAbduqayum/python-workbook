@@ -13,4 +13,4 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--tb=no"
+addopts = "--tb=no --continue-on-collection-errors"
