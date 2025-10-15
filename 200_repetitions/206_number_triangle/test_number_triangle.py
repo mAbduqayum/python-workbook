@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("5\n", "1\n12\n123\n1234\n12345"),
-        ("3\n", "1\n12\n123"),
         ("1\n", "1"),
+        ("3\n", "1\n12\n123"),
+        ("5\n", "1\n12\n123\n1234\n12345"),
     ],
 )
 def test_number_triangle(script_runner, input_text, expected):

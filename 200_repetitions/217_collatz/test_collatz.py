@@ -6,10 +6,10 @@ import pytest
 @pytest.mark.parametrize(
     "input_value, expected_sequence",
     [
-        ("5\n0\n", ["5", "16", "8", "4", "2", "1"]),
-        ("10\n0\n", ["10", "5", "16", "8", "4", "2", "1"]),
         ("1\n0\n", ["1"]),
         ("3\n0\n", ["3", "10", "5", "16", "8", "4", "2", "1"]),
+        ("5\n0\n", ["5", "16", "8", "4", "2", "1"]),
+        ("10\n0\n", ["10", "5", "16", "8", "4", "2", "1"]),
     ],
 )
 def test_collatz(script_runner, input_value, expected_sequence):

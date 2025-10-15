@@ -6,11 +6,11 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("12345\n", "15"),
-        ("-987\n", "24"),
         ("0\n", "0"),
         ("99\n", "18"),
+        ("-987\n", "24"),
         ("1000\n", "1"),
+        ("12345\n", "15"),
     ],
 )
 def test_digit_sum(script_runner, input_text, expected):
