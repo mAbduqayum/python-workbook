@@ -14,7 +14,7 @@ Count the number of digits in an integer using loops.
 12345
 ```
 ```
-Number of digits: 5
+5
 ```
 
 **Example 2:**
@@ -22,7 +22,7 @@ Number of digits: 5
 -987
 ```
 ```
-Number of digits: 3
+3
 ```
 
 **Example 3:**
@@ -30,7 +30,7 @@ Number of digits: 3
 0
 ```
 ```
-Number of digits: 1
+1
 ```
 
 ## Logic
