@@ -1,4 +1,4 @@
-# 200_repetitions
+## 200_repetitions
 - n numbers
 - n even numbers
 - n odd numbers
@@ -12,3 +12,6 @@ skip (continue) or quit (break)
 .
 .
 91 ...                             100
+
+### Todos
+-[ ] collatz question: output in multiple lines to make it easier
