@@ -14,7 +14,7 @@ Calculate the sum of all digits in an integer using loops.
 12345
 ```
 ```
-Sum of digits: 15
+15
 ```
 
 **Example 2:**
@@ -22,7 +22,7 @@ Sum of digits: 15
 -987
 ```
 ```
-Sum of digits: 24
+24
 ```
 
 **Example 3:**
@@ -30,7 +30,7 @@ Sum of digits: 24
 0
 ```
 ```
-Sum of digits: 0
+0
 ```
 
 ## Logic
