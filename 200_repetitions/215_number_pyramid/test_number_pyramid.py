@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("5\n", "1\n   121\n  12321\n 1234321\n123454321"),
-        ("3\n", "1\n 121\n12321"),
         ("1\n", "1"),
+        ("3\n", "1\n 121\n12321"),
+        ("5\n", "1\n   121\n  12321\n 1234321\n123454321"),
     ],
 )
 def test_number_pyramid(script_runner, input_text, expected):

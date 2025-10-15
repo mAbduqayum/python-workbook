@@ -7,10 +7,10 @@ import pytest
 @pytest.mark.parametrize(
     "input_value, expected_sqrt",
     [
-        ("16", 4.0),
         ("2", math.sqrt(2)),
-        ("100", 10.0),
+        ("16", 4.0),
         ("25", 5.0),
+        ("100", 10.0),
         ("144", 12.0),
     ],
 )

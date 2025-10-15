@@ -6,10 +6,10 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("12345\n", "5"),
-        ("-987\n", "3"),
         ("0\n", "1"),
         ("7\n", "1"),
+        ("-987\n", "3"),
+        ("12345\n", "5"),
         ("1000000\n", "7"),
     ],
 )
