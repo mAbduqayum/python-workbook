@@ -14,7 +14,7 @@ This is a structured collection of Python programming exercises designed for lea
   - `6**` files and exceptions
   - `7**` recursion
 - Exercise directories contain:
-- Reference materials are in `*docs` directories
+- Reference materials are in `*_docs` directories
 
 ## Exercise Categories
 
@@ -52,5 +52,4 @@ Before finalizing slides:
 - [ ] Each dir contains a question, test, and solution
 - [ ] Table-driven tests have logic order for subcases (logically from small to big or alphabetically based on the question logic)
 - [ ] All code examples are tested and working
-
-
+- [ ] Do not add docs. Try to use self commented code
