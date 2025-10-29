@@ -1,0 +1,32 @@
+# Distance on Earth
+
+Write a function that calculates the great-circle distance between two points on Earth.
+
+## Task
+- Create a function `distance_earth(lat1, lon1, lat2, lon2)` 
+- Takes latitude and longitude of two points in degrees
+- Return the distance in kilometers
+
+## Function Signature
+```python
+def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
+    pass
+```
+
+## Examples
+```python
+distance_earth(0, 0, 0, 0)           # 0.0
+distance_earth(40.7128, -74.0060,    # ~5574 km
+               34.0522, -118.2437)    # (NYC to LA)
+```
+
+## Formula (Haversine)
+- Convert degrees to radians
+- a = sin²(Δlat/2) + cos(lat1) × cos(lat2) × sin²(Δlon/2)
+- c = 2 × atan2(√a, √(1-a))
+- distance = R × c (where R = 6371 km, Earth's radius)
+
+## Note
+- Use `math.radians()`, `math.sin()`, `math.cos()`, `math.sqrt()`, `math.atan2()`
+- Earth's radius is approximately 6371 km
+- Result is approximate (Earth isn't a perfect sphere)
