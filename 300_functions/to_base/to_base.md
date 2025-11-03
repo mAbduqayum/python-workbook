@@ -6,19 +6,19 @@ Write a function that converts a decimal number to any base (2-36).
 - Create a function `to_base(n, base)` that takes a decimal integer and target base
 - Return the representation in the target base as a string
 
-## Function Signature
+## Template:
 ```python
 def to_base(n: int, base: int) -> str:
     pass
-```
 
-## Examples
-```python
-to_base(10, 2)       # "1010" (binary)
-to_base(255, 16)     # "FF" (hexadecimal)
-to_base(8, 8)        # "10" (octal)
-to_base(100, 5)      # "400" (base 5)
-to_base(0, 10)       # "0"
+
+if __name__ == "__main__":
+    # Test your function
+    to_base(10, 2)       # "1010"
+    to_base(255, 16)     # "FF"
+    to_base(8, 8)        # "10"
+    to_base(100, 5)      # "400"
+    to_base(0, 10)       # "0"
 ```
 
 ## Logic

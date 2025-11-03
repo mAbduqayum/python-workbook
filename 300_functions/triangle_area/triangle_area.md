@@ -6,18 +6,18 @@ Write a function that calculates the area of a triangle.
 - Create a function `triangle_area(base, height)` 
 - Return the area of the triangle
 
-## Function Signature
+## Template:
 ```python
 def triangle_area(base: float, height: float) -> float:
     pass
-```
 
-## Examples
-```python
-triangle_area(10, 5)      # 25.0
-triangle_area(6, 8)       # 24.0
-triangle_area(7.5, 4)     # 15.0
-triangle_area(1, 1)       # 0.5
+
+if __name__ == "__main__":
+    # Test your function
+    triangle_area(10, 5)      # 25.0
+    triangle_area(6, 8)       # 24.0
+    triangle_area(7.5, 4)     # 15.0
+    triangle_area(1, 1)       # 0.5
 ```
 
 ## Formula

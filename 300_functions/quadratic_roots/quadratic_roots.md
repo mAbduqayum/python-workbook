@@ -7,18 +7,18 @@ Write a function that calculates the roots of a quadratic equation.
 - Return a tuple of roots (root1, root2)
 - If there are no real roots, return None
 
-## Function Signature
+## Template:
 ```python
 def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | None:
     pass
-```
 
-## Examples
-```python
-quadratic_roots(1, -3, 2)     # (2.0, 1.0)
-quadratic_roots(1, 0, -4)     # (2.0, -2.0)
-quadratic_roots(1, -2, 1)     # (1.0, 1.0)
-quadratic_roots(1, 0, 1)      # None (no real roots)
+
+if __name__ == "__main__":
+    # Test your function
+    quadratic_roots(1, -3, 2)     # (2.0, 1.0)
+    quadratic_roots(1, 0, -4)     # (2.0, -2.0)
+    quadratic_roots(1, -2, 1)     # (1.0, 1.0)
+    quadratic_roots(1, 0, 1)      # None
 ```
 
 ## Formula

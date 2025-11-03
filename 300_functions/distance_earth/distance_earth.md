@@ -7,17 +7,16 @@ Write a function that calculates the great-circle distance between two points on
 - Takes latitude and longitude of two points in degrees
 - Return the distance in kilometers
 
-## Function Signature
+## Template:
 ```python
 def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     pass
-```
 
-## Examples
-```python
-distance_earth(0, 0, 0, 0)           # 0.0
-distance_earth(40.7128, -74.0060,    # ~5574 km
-               34.0522, -118.2437)    # (NYC to LA)
+
+if __name__ == "__main__":
+    # Test your function
+    distance_earth(0, 0, 0, 0)                               # 0.0
+    distance_earth(40.7128, -74.0060, 34.0522, -118.2437)    # ~5574 km
 ```
 
 ## Formula (Haversine)

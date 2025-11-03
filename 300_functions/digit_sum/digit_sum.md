@@ -6,19 +6,19 @@ Write a function that calculates the sum of digits in an integer.
 - Create a function `digit_sum(n)` that takes an integer
 - Return the sum of all digits
 
-## Function Signature
+## Template:
 ```python
 def digit_sum(n: int) -> int:
     pass
-```
 
-## Examples
-```python
-digit_sum(123)       # 6 (1 + 2 + 3)
-digit_sum(0)         # 0
-digit_sum(-456)      # 15 (4 + 5 + 6)
-digit_sum(1000)      # 1 (1 + 0 + 0 + 0)
-digit_sum(99)        # 18 (9 + 9)
+
+if __name__ == "__main__":
+    # Test your function
+    digit_sum(123)       # 6
+    digit_sum(0)         # 0
+    digit_sum(-456)      # 15
+    digit_sum(1000)      # 1
+    digit_sum(99)        # 18
 ```
 
 ## Logic

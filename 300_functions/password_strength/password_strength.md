@@ -6,19 +6,19 @@ Write a function that evaluates password strength.
 - Create a function `password_strength(pwd)` that evaluates a password
 - Return a strength rating: "weak", "medium", or "strong"
 
-## Function Signature
+## Template:
 ```python
 def password_strength(pwd: str) -> str:
     pass
-```
 
-## Examples
-```python
-password_strength("abc")           # "weak"
-password_strength("Password1")     # "medium"
-password_strength("P@ssw0rd!")     # "strong"
-password_strength("hello")         # "weak"
-password_strength("Hello123")      # "medium"
+
+if __name__ == "__main__":
+    # Test your function
+    password_strength("abc")           # "weak"
+    password_strength("Password1")     # "medium"
+    password_strength("P@ssw0rd!")     # "strong"
+    password_strength("hello")         # "weak"
+    password_strength("Hello123")      # "medium"
 ```
 
 ## Criteria

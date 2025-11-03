@@ -6,18 +6,18 @@ Write a function that calculates the area of a circle.
 - Create a function `circle_area(radius)` that takes a circle's radius
 - Return the area of the circle
 
-## Function Signature
+## Template:
 ```python
 def circle_area(radius: float) -> float:
     pass
-```
 
-## Examples
-```python
-circle_area(1)     # 3.141592653589793
-circle_area(2)     # 12.566370614359172
-circle_area(5)     # 78.53981633974483
-circle_area(10)    # 314.1592653589793
+
+if __name__ == "__main__":
+    # Test your function
+    circle_area(1)     # 3.141592653589793
+    circle_area(2)     # 12.566370614359172
+    circle_area(5)     # 78.53981633974483
+    circle_area(10)    # 314.1592653589793
 ```
 
 ## Formula

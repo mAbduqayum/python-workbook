@@ -6,19 +6,19 @@ Write a function that converts Fahrenheit to Celsius.
 - Create a function `fahrenheit_to_celsius(fahrenheit)` 
 - Return the temperature in Celsius
 
-## Function Signature
+## Template:
 ```python
 def fahrenheit_to_celsius(fahrenheit: float) -> float:
     pass
-```
 
-## Examples
-```python
-fahrenheit_to_celsius(32)     # 0.0
-fahrenheit_to_celsius(212)    # 100.0
-fahrenheit_to_celsius(98.6)   # 37.0
-fahrenheit_to_celsius(-40)    # -40.0
-fahrenheit_to_celsius(0)      # -17.77777777777778
+
+if __name__ == "__main__":
+    # Test your function
+    fahrenheit_to_celsius(32)     # 0.0
+    fahrenheit_to_celsius(212)    # 100.0
+    fahrenheit_to_celsius(98.6)   # 37.0
+    fahrenheit_to_celsius(-40)    # -40.0
+    fahrenheit_to_celsius(0)      # -17.77777777777778
 ```
 
 ## Formula
