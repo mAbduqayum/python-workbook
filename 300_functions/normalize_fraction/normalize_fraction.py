@@ -1,16 +1,6 @@
 def normalize_fraction(numerator: int, denominator: int) -> tuple[int, int]:
-    """
-    Normalize (simplify) a fraction to its lowest terms.
-    
-    Args:
-        numerator: The numerator
-        denominator: The denominator
-        
-    Returns:
-        Tuple of (simplified_numerator, simplified_denominator)
-    """
     if numerator == 0:
-        return (0, 1)
+        return 0, 1
     
     # Find GCD using Euclidean algorithm
     a, b = abs(numerator), abs(denominator)
@@ -18,4 +8,13 @@ def normalize_fraction(numerator: int, denominator: int) -> tuple[int, int]:
         a, b = b, a % b
     gcd = a
     
-    return (numerator // gcd, denominator // gcd)
+    return numerator // gcd, denominator // gcd
+
+
+if __name__ == "__main__":
+    # Test your function
+    normalize_fraction(4, 8)       # (1, 2)
+    normalize_fraction(6, 9)       # (2, 3)
+    normalize_fraction(5, 10)      # (1, 2)
+    normalize_fraction(7, 3)       # (7, 3)
+    normalize_fraction(0, 5)       # (0, 1)

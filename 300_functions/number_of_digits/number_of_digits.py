@@ -1,13 +1,4 @@
 def number_of_digits(n: int) -> int:
-    """
-    Count the number of digits in an integer.
-    
-    Args:
-        n: An integer
-        
-    Returns:
-        Number of digits in n
-    """
     if n == 0:
         return 1
     
@@ -19,3 +10,12 @@ def number_of_digits(n: int) -> int:
         n //= 10
     
     return count
+
+
+if __name__ == "__main__":
+    # Test your function
+    number_of_digits(123)       # 3
+    number_of_digits(0)         # 1
+    number_of_digits(-456)      # 3
+    number_of_digits(1000000)   # 7
+    number_of_digits(7)         # 1

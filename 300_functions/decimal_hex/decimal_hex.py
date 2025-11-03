@@ -1,13 +1,4 @@
 def decimal_hex(n: int) -> str:
-    """
-    Convert a decimal number to hexadecimal string.
-    
-    Args:
-        n: A decimal integer
-        
-    Returns:
-        The hexadecimal representation as a string
-    """
     if n == 0:
         return "0"
     
@@ -19,3 +10,12 @@ def decimal_hex(n: int) -> str:
         n //= 16
     
     return hex_str
+
+
+if __name__ == "__main__":
+    # Test your function
+    decimal_hex(10)       # "A"
+    decimal_hex(255)      # "FF"
+    decimal_hex(16)       # "10"
+    decimal_hex(26)       # "1A"
+    decimal_hex(0)        # "0"

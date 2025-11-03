@@ -1,13 +1,4 @@
 def is_prime(n: int) -> bool:
-    """
-    Determine if a number is prime.
-    
-    Args:
-        n: An integer to check
-        
-    Returns:
-        True if n is prime, False otherwise
-    """
     if n < 2:
         return False
     
@@ -25,3 +16,14 @@ def is_prime(n: int) -> bool:
         i += 2
     
     return True
+
+
+if __name__ == "__main__":
+    # Test your function
+    is_prime(2)       # True
+    is_prime(17)      # True
+    is_prime(1)       # False
+    is_prime(4)       # False
+    is_prime(29)      # True
+    is_prime(0)       # False
+    is_prime(-5)      # False

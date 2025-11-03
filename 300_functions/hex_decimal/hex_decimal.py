@@ -1,13 +1,4 @@
 def hex_decimal(hex_str: str) -> int:
-    """
-    Convert a hexadecimal string to decimal.
-    
-    Args:
-        hex_str: A hexadecimal string (e.g., "1A")
-        
-    Returns:
-        The decimal equivalent
-    """
     decimal = 0
     power = 0
     
@@ -22,3 +13,12 @@ def hex_decimal(hex_str: str) -> int:
         power += 1
     
     return decimal
+
+
+if __name__ == "__main__":
+    # Test your function
+    hex_decimal("A")       # 10
+    hex_decimal("FF")      # 255
+    hex_decimal("10")      # 16
+    hex_decimal("1A")      # 26
+    hex_decimal("ABC")     # 2748

@@ -1,14 +1,4 @@
 def caesar_cipher(text: str, shift: int) -> str:
-    """
-    Encrypt text using the Caesar cipher.
-    
-    Args:
-        text: The text to encrypt
-        shift: The shift amount
-        
-    Returns:
-        The encrypted text
-    """
     result = ""
     
     for char in text:
@@ -22,3 +12,11 @@ def caesar_cipher(text: str, shift: int) -> str:
             result += char
     
     return result
+
+
+if __name__ == "__main__":
+    # Test your function
+    caesar_cipher("abc", 1)        # "bcd"
+    caesar_cipher("xyz", 3)        # "abc"
+    caesar_cipher("Hello", 5)      # "Mjqqt"
+    caesar_cipher("ABC", -1)       # "ZAB"

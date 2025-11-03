@@ -1,13 +1,4 @@
 def is_int(s: str) -> bool:
-    """
-    Determine if a string represents a valid integer.
-    
-    Args:
-        s: A string to check
-        
-    Returns:
-        True if string represents a valid integer, False otherwise
-    """
     if not s:
         return False
     
@@ -22,3 +13,15 @@ def is_int(s: str) -> bool:
             return False
     
     return True
+
+
+if __name__ == "__main__":
+    # Test your function
+    is_int("123")       # True
+    is_int("-456")      # True
+    is_int("0")         # True
+    is_int("12.5")      # False
+    is_int("abc")       # False
+    is_int("")          # False
+    is_int("+789")      # True
+    is_int("12a")       # False

@@ -1,15 +1,4 @@
 def gregorian_to_ordinal(year: int, month: int, day: int) -> int:
-    """
-    Convert a Gregorian date to ordinal date (day of year).
-    
-    Args:
-        year: The year
-        month: The month (1-12)
-        day: The day of month
-        
-    Returns:
-        Day of the year (1-366)
-    """
     # Check if leap year
     is_leap = (year % 400 == 0) or (year % 4 == 0 and year % 100 != 0)
     
@@ -20,3 +9,12 @@ def gregorian_to_ordinal(year: int, month: int, day: int) -> int:
     day_of_year = sum(days_in_month[:month - 1]) + day
     
     return day_of_year
+
+
+if __name__ == "__main__":
+    # Test your function
+    gregorian_to_ordinal(2024, 1, 1)      # 1
+    gregorian_to_ordinal(2024, 2, 1)      # 32
+    gregorian_to_ordinal(2024, 2, 29)     # 60
+    gregorian_to_ordinal(2023, 3, 1)      # 60
+    gregorian_to_ordinal(2024, 12, 31)    # 366

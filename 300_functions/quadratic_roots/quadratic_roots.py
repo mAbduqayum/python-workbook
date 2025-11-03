@@ -2,17 +2,6 @@ import math
 
 
 def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | None:
-    """
-    Calculate the roots of a quadratic equation ax² + bx + c = 0.
-    
-    Args:
-        a: Coefficient of x²
-        b: Coefficient of x
-        c: Constant term
-        
-    Returns:
-        Tuple of (root1, root2) or None if no real roots exist
-    """
     discriminant = b ** 2 - 4 * a * c
     
     if discriminant < 0:
@@ -22,4 +11,12 @@ def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | None:
     root1 = (-b + sqrt_discriminant) / (2 * a)
     root2 = (-b - sqrt_discriminant) / (2 * a)
     
-    return (root1, root2)
+    return root1, root2
+
+
+if __name__ == "__main__":
+    # Test your function
+    quadratic_roots(1, -3, 2)     # (2.0, 1.0)
+    quadratic_roots(1, 0, -4)     # (2.0, -2.0)
+    quadratic_roots(1, -2, 1)     # (1.0, 1.0)
+    quadratic_roots(1, 0, 1)      # None

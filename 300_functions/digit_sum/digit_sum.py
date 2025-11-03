@@ -1,13 +1,4 @@
 def digit_sum(n: int) -> int:
-    """
-    Calculate the sum of digits in an integer.
-    
-    Args:
-        n: An integer
-        
-    Returns:
-        Sum of all digits in n
-    """
     n = abs(n)
     total = 0
     
@@ -16,3 +7,12 @@ def digit_sum(n: int) -> int:
         n //= 10
     
     return total
+
+
+if __name__ == "__main__":
+    # Test your function
+    digit_sum(123)       # 6
+    digit_sum(0)         # 0
+    digit_sum(-456)      # 15
+    digit_sum(1000)      # 1
+    digit_sum(99)        # 18

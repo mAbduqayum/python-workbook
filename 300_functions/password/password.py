@@ -2,15 +2,6 @@ import random
 
 
 def password(length: int) -> str:
-    """
-    Generate a random password.
-    
-    Args:
-        length: The desired password length
-        
-    Returns:
-        A random password string
-    """
     lowercase = "abcdefghijklmnopqrstuvwxyz"
     uppercase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
     digits = "0123456789"
@@ -34,3 +25,10 @@ def password(length: int) -> str:
     random.shuffle(pwd)
     
     return ''.join(pwd)
+
+
+if __name__ == "__main__":
+    # Test your function
+    password(8)      # Random 8-character password
+    password(12)     # Random 12-character password
+    password(16)     # Random 16-character password

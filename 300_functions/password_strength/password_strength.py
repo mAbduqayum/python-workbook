@@ -1,13 +1,4 @@
 def password_strength(pwd: str) -> str:
-    """
-    Evaluate password strength.
-    
-    Args:
-        pwd: The password to evaluate
-        
-    Returns:
-        Strength rating: "weak", "medium", or "strong"
-    """
     length = len(pwd)
     
     # Count character types
@@ -25,3 +16,12 @@ def password_strength(pwd: str) -> str:
         return "medium"
     else:
         return "weak"
+
+
+if __name__ == "__main__":
+    # Test your function
+    password_strength("abc")           # "weak"
+    password_strength("Password1")     # "medium"
+    password_strength("P@ssw0rd!")     # "strong"
+    password_strength("hello")         # "weak"
+    password_strength("Hello123")      # "medium"

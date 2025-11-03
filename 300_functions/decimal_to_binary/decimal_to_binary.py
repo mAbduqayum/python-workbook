@@ -1,13 +1,4 @@
 def decimal_to_binary(n: int) -> str:
-    """
-    Convert a decimal number to binary string.
-    
-    Args:
-        n: A decimal integer
-        
-    Returns:
-        The binary representation as a string
-    """
     if n == 0:
         return "0"
     
@@ -17,3 +8,12 @@ def decimal_to_binary(n: int) -> str:
         n //= 2
     
     return binary
+
+
+if __name__ == "__main__":
+    # Test your function
+    decimal_to_binary(10)      # "1010"
+    decimal_to_binary(15)      # "1111"
+    decimal_to_binary(0)       # "0"
+    decimal_to_binary(1)       # "1"
+    decimal_to_binary(16)      # "10000"

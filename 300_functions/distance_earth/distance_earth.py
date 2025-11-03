@@ -2,18 +2,6 @@ import math
 
 
 def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    """
-    Calculate the great-circle distance between two points on Earth.
-    
-    Args:
-        lat1: Latitude of point 1 in degrees
-        lon1: Longitude of point 1 in degrees
-        lat2: Latitude of point 2 in degrees
-        lon2: Longitude of point 2 in degrees
-        
-    Returns:
-        Distance in kilometers
-    """
     # Convert to radians
     lat1_rad = math.radians(lat1)
     lon1_rad = math.radians(lon1)
@@ -32,3 +20,9 @@ def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     distance = R * c
     
     return distance
+
+
+if __name__ == "__main__":
+    # Test your function
+    distance_earth(0, 0, 0, 0)                               # 0.0
+    distance_earth(40.7128, -74.0060, 34.0522, -118.2437)    # ~5574 km

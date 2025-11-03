@@ -1,13 +1,4 @@
 def binary_to_decimal(binary: str) -> int:
-    """
-    Convert a binary string to decimal.
-    
-    Args:
-        binary: A binary string (e.g., "1010")
-        
-    Returns:
-        The decimal equivalent
-    """
     decimal = 0
     power = 0
     
@@ -17,3 +8,12 @@ def binary_to_decimal(binary: str) -> int:
         power += 1
     
     return decimal
+
+
+if __name__ == "__main__":
+    # Test your function
+    binary_to_decimal("1010")      # 10
+    binary_to_decimal("1111")      # 15
+    binary_to_decimal("0")         # 0
+    binary_to_decimal("1")         # 1
+    binary_to_decimal("10000")     # 16
