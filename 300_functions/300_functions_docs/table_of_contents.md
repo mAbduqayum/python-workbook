@@ -3,6 +3,8 @@
 ## Recommended Reading Order
 
 1. [`function.md`](function.md)
+1. [`import.md`](import.md)
+1. [`modules.md`](modules.md)
 
 ## Practice Questions
 
