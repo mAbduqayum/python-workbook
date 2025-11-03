@@ -7,17 +7,17 @@ Write a function that generates a random password.
 - Include lowercase letters, uppercase letters, digits, and special characters
 - Return the generated password string
 
-## Function Signature
+## Template:
 ```python
 def password(length: int) -> str:
     pass
-```
 
-## Examples
-```python
-password(8)      # e.g., "aB3$xY9z"
-password(12)     # e.g., "P@ssw0rd!123"
-password(16)     # e.g., "aB3$xY9z!pQ7&mN2"
+
+if __name__ == "__main__":
+    # Test your function
+    password(8)      # Random 8-character password
+    password(12)     # Random 12-character password
+    password(16)     # Random 16-character password
 ```
 
 ## Logic

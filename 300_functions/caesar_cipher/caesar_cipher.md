@@ -6,18 +6,18 @@ Write a function that encrypts text using the Caesar cipher.
 - Create a function `caesar_cipher(text, shift)` that takes text and shift amount
 - Return the encrypted text
 
-## Function Signature
+## Template:
 ```python
 def caesar_cipher(text: str, shift: int) -> str:
     pass
-```
 
-## Examples
-```python
-caesar_cipher("abc", 1)        # "bcd"
-caesar_cipher("xyz", 3)        # "abc"
-caesar_cipher("Hello", 5)      # "Mjqqt"
-caesar_cipher("ABC", -1)       # "ZAB"
+
+if __name__ == "__main__":
+    # Test your function
+    caesar_cipher("abc", 1)        # "bcd"
+    caesar_cipher("xyz", 3)        # "abc"
+    caesar_cipher("Hello", 5)      # "Mjqqt"
+    caesar_cipher("ABC", -1)       # "ZAB"
 ```
 
 ## Logic

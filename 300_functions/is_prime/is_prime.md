@@ -6,21 +6,21 @@ Write a function that determines if a number is prime.
 - Create a function `is_prime(n)` that takes an integer
 - Return `True` if the number is prime, `False` otherwise
 
-## Function Signature
+## Template:
 ```python
 def is_prime(n: int) -> bool:
     pass
-```
 
-## Examples
-```python
-is_prime(2)       # True
-is_prime(17)      # True
-is_prime(1)       # False
-is_prime(4)       # False
-is_prime(29)      # True
-is_prime(0)       # False
-is_prime(-5)      # False
+
+if __name__ == "__main__":
+    # Test your function
+    is_prime(2)       # True
+    is_prime(17)      # True
+    is_prime(1)       # False
+    is_prime(4)       # False
+    is_prime(29)      # True
+    is_prime(0)       # False
+    is_prime(-5)      # False
 ```
 
 ## Logic

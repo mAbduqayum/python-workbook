@@ -6,19 +6,19 @@ Write a function that converts a decimal number to hexadecimal string.
 - Create a function `decimal_hex(n)` that takes a decimal integer
 - Return the hexadecimal representation as a string
 
-## Function Signature
+## Template:
 ```python
 def decimal_hex(n: int) -> str:
     pass
-```
 
-## Examples
-```python
-decimal_hex(10)       # "A"
-decimal_hex(255)      # "FF"
-decimal_hex(16)       # "10"
-decimal_hex(26)       # "1A"
-decimal_hex(0)        # "0"
+
+if __name__ == "__main__":
+    # Test your function
+    decimal_hex(10)       # "A"
+    decimal_hex(255)      # "FF"
+    decimal_hex(16)       # "10"
+    decimal_hex(26)       # "1A"
+    decimal_hex(0)        # "0"
 ```
 
 ## Logic

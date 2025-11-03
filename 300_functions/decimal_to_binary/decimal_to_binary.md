@@ -6,19 +6,19 @@ Write a function that converts a decimal number to binary string.
 - Create a function `decimal_to_binary(n)` that takes a decimal integer
 - Return the binary representation as a string
 
-## Function Signature
+## Template:
 ```python
 def decimal_to_binary(n: int) -> str:
     pass
-```
 
-## Examples
-```python
-decimal_to_binary(10)      # "1010"
-decimal_to_binary(15)      # "1111"
-decimal_to_binary(0)       # "0"
-decimal_to_binary(1)       # "1"
-decimal_to_binary(16)      # "10000"
+
+if __name__ == "__main__":
+    # Test your function
+    decimal_to_binary(10)      # "1010"
+    decimal_to_binary(15)      # "1111"
+    decimal_to_binary(0)       # "0"
+    decimal_to_binary(1)       # "1"
+    decimal_to_binary(16)      # "10000"
 ```
 
 ## Logic

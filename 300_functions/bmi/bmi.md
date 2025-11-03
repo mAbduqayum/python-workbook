@@ -7,18 +7,18 @@ Write a function that calculates Body Mass Index (BMI).
 - Weight is in kilograms, height is in meters
 - Return the BMI value
 
-## Function Signature
+## Template:
 ```python
 def bmi(weight: float, height: float) -> float:
     pass
-```
 
-## Examples
-```python
-bmi(70, 1.75)     # 22.857142857142858
-bmi(80, 1.80)     # 24.691358024691358
-bmi(50, 1.60)     # 19.53125
-bmi(90, 1.75)     # 29.387755102040817
+
+if __name__ == "__main__":
+    # Test your function
+    bmi(70, 1.75)     # 22.857142857142858
+    bmi(80, 1.80)     # 24.691358024691358
+    bmi(50, 1.60)     # 19.53125
+    bmi(90, 1.75)     # 29.387755102040817
 ```
 
 ## Formula

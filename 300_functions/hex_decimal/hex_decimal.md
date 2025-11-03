@@ -6,19 +6,19 @@ Write a function that converts a hexadecimal string to decimal.
 - Create a function `hex_decimal(hex_str)` that takes a hexadecimal string
 - Return the decimal (base 10) equivalent
 
-## Function Signature
+## Template:
 ```python
 def hex_decimal(hex_str: str) -> int:
     pass
-```
 
-## Examples
-```python
-hex_decimal("A")       # 10
-hex_decimal("FF")      # 255
-hex_decimal("10")      # 16
-hex_decimal("1A")      # 26
-hex_decimal("ABC")     # 2748
+
+if __name__ == "__main__":
+    # Test your function
+    hex_decimal("A")       # 10
+    hex_decimal("FF")      # 255
+    hex_decimal("10")      # 16
+    hex_decimal("1A")      # 26
+    hex_decimal("ABC")     # 2748
 ```
 
 ## Logic

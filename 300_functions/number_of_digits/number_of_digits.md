@@ -6,19 +6,19 @@ Write a function that counts the number of digits in an integer.
 - Create a function `number_of_digits(n)` that takes an integer
 - Return the count of digits
 
-## Function Signature
+## Template:
 ```python
 def number_of_digits(n: int) -> int:
     pass
-```
 
-## Examples
-```python
-number_of_digits(123)       # 3
-number_of_digits(0)         # 1
-number_of_digits(-456)      # 3
-number_of_digits(1000000)   # 7
-number_of_digits(7)         # 1
+
+if __name__ == "__main__":
+    # Test your function
+    number_of_digits(123)       # 3
+    number_of_digits(0)         # 1
+    number_of_digits(-456)      # 3
+    number_of_digits(1000000)   # 7
+    number_of_digits(7)         # 1
 ```
 
 ## Logic
