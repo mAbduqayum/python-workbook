@@ -15,9 +15,9 @@ def password(length: int) -> str:
 
 if __name__ == "__main__":
     # Test your function
-    password(8)      # Random 8-character password
-    password(12)     # Random 12-character password
-    password(16)     # Random 16-character password
+    print(password(8))      # Random 8-character password
+    print(password(12))     # Random 12-character password
+    print(password(16))     # Random 16-character password
 ```
 
 ## Logic

@@ -14,11 +14,11 @@ def to_base(n: int, base: int) -> str:
 
 if __name__ == "__main__":
     # Test your function
-    to_base(10, 2)       # "1010"
-    to_base(255, 16)     # "FF"
-    to_base(8, 8)        # "10"
-    to_base(100, 5)      # "400"
-    to_base(0, 10)       # "0"
+    print(to_base(10, 2))       # "1010"
+    print(to_base(255, 16))     # "FF"
+    print(to_base(8, 8))        # "10"
+    print(to_base(100, 5))      # "400"
+    print(to_base(0, 10))       # "0"
 ```
 
 ## Logic

@@ -14,11 +14,11 @@ def gregorian_to_ordinal(year: int, month: int, day: int) -> int:
 
 if __name__ == "__main__":
     # Test your function
-    gregorian_to_ordinal(2024, 1, 1)      # 1
-    gregorian_to_ordinal(2024, 2, 1)      # 32
-    gregorian_to_ordinal(2024, 2, 29)     # 60
-    gregorian_to_ordinal(2023, 3, 1)      # 60
-    gregorian_to_ordinal(2024, 12, 31)    # 366
+    print(gregorian_to_ordinal(2024, 1, 1))      # 1
+    print(gregorian_to_ordinal(2024, 2, 1))      # 32
+    print(gregorian_to_ordinal(2024, 2, 29))     # 60
+    print(gregorian_to_ordinal(2023, 3, 1))      # 60
+    print(gregorian_to_ordinal(2024, 12, 31))    # 366
 ```
 
 ## Logic

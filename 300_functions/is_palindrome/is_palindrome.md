@@ -14,13 +14,13 @@ def is_palindrome(s: str) -> bool:
 
 if __name__ == "__main__":
     # Test your function
-    is_palindrome("racecar")     # True
-    is_palindrome("hello")       # False
-    is_palindrome("madam")       # True
-    is_palindrome("A")           # True
-    is_palindrome("")            # True
-    is_palindrome("noon")        # True
-    is_palindrome("abc")         # False
+    print(is_palindrome("racecar"))     # True
+    print(is_palindrome("hello"))       # False
+    print(is_palindrome("madam"))       # True
+    print(is_palindrome("A"))           # True
+    print(is_palindrome(""))            # True
+    print(is_palindrome("noon"))        # True
+    print(is_palindrome("abc"))         # False
 ```
 
 ## Logic
