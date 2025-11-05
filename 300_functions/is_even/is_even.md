@@ -14,11 +14,11 @@ def is_even(n: int) -> bool:
 
 if __name__ == "__main__":
     # Test your function
-    is_even(4)    # True
-    is_even(7)    # False
-    is_even(0)    # True
-    is_even(-2)   # True
-    is_even(-5)   # False
+    print(is_even(4))    # True
+    print(is_even(7))    # False
+    print(is_even(0))    # True
+    print(is_even(-2))   # True
+    print(is_even(-5))   # False
 ```
 
 ## Logic

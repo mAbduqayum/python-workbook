@@ -14,11 +14,11 @@ def password_strength(pwd: str) -> str:
 
 if __name__ == "__main__":
     # Test your function
-    password_strength("abc")           # "weak"
-    password_strength("Password1")     # "medium"
-    password_strength("P@ssw0rd!")     # "strong"
-    password_strength("hello")         # "weak"
-    password_strength("Hello123")      # "medium"
+    print(password_strength("abc"))           # "weak"
+    print(password_strength("Password1"))     # "medium"
+    print(password_strength("P@ssw0rd!"))     # "strong"
+    print(password_strength("hello"))         # "weak"
+    print(password_strength("Hello123"))      # "medium"
 ```
 
 ## Criteria

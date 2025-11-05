@@ -14,10 +14,10 @@ def caesar_cipher(text: str, shift: int) -> str:
 
 if __name__ == "__main__":
     # Test your function
-    caesar_cipher("abc", 1)        # "bcd"
-    caesar_cipher("xyz", 3)        # "abc"
-    caesar_cipher("Hello", 5)      # "Mjqqt"
-    caesar_cipher("ABC", -1)       # "ZAB"
+    print(caesar_cipher("abc", 1))        # "bcd"
+    print(caesar_cipher("xyz", 3))        # "abc"
+    print(caesar_cipher("Hello", 5))      # "Mjqqt"
+    print(caesar_cipher("ABC", -1))       # "ZAB"
 ```
 
 ## Logic

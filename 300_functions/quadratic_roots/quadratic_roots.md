@@ -15,10 +15,10 @@ def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | None:
 
 if __name__ == "__main__":
     # Test your function
-    quadratic_roots(1, -3, 2)     # (2.0, 1.0)
-    quadratic_roots(1, 0, -4)     # (2.0, -2.0)
-    quadratic_roots(1, -2, 1)     # (1.0, 1.0)
-    quadratic_roots(1, 0, 1)      # None
+    print(quadratic_roots(1, -3, 2))     # (2.0, 1.0)
+    print(quadratic_roots(1, 0, -4))     # (2.0, -2.0)
+    print(quadratic_roots(1, -2, 1))     # (1.0, 1.0)
+    print(quadratic_roots(1, 0, 1))      # None
 ```
 
 ## Formula

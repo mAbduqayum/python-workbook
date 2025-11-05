@@ -14,11 +14,11 @@ def binary_to_decimal(binary: str) -> int:
 
 if __name__ == "__main__":
     # Test your function
-    binary_to_decimal("1010")      # 10
-    binary_to_decimal("1111")      # 15
-    binary_to_decimal("0")         # 0
-    binary_to_decimal("1")         # 1
-    binary_to_decimal("10000")     # 16
+    print(binary_to_decimal("1010"))      # 10
+    print(binary_to_decimal("1111"))      # 15
+    print(binary_to_decimal("0"))         # 0
+    print(binary_to_decimal("1"))         # 1
+    print(binary_to_decimal("10000"))     # 16
 ```
 
 ## Logic

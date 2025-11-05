@@ -14,11 +14,11 @@ def digit_sum(n: int) -> int:
 
 if __name__ == "__main__":
     # Test your function
-    digit_sum(123)       # 6
-    digit_sum(0)         # 0
-    digit_sum(-456)      # 15
-    digit_sum(1000)      # 1
-    digit_sum(99)        # 18
+    print(digit_sum(123))       # 6
+    print(digit_sum(0))         # 0
+    print(digit_sum(-456))      # 15
+    print(digit_sum(1000))      # 1
+    print(digit_sum(99))        # 18
 ```
 
 ## Logic

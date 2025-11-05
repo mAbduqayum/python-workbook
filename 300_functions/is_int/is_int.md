@@ -14,14 +14,14 @@ def is_int(s: str) -> bool:
 
 if __name__ == "__main__":
     # Test your function
-    is_int("123")       # True
-    is_int("-456")      # True
-    is_int("0")         # True
-    is_int("12.5")      # False
-    is_int("abc")       # False
-    is_int("")          # False
-    is_int("+789")      # True
-    is_int("12a")       # False
+    print(is_int("123"))       # True
+    print(is_int("-456"))      # True
+    print(is_int("0"))         # True
+    print(is_int("12.5"))      # False
+    print(is_int("abc"))       # False
+    print(is_int(""))          # False
+    print(is_int("+789"))      # True
+    print(is_int("12a"))       # False
 ```
 
 ## Logic

@@ -14,11 +14,11 @@ def decimal_hex(n: int) -> str:
 
 if __name__ == "__main__":
     # Test your function
-    decimal_hex(10)       # "A"
-    decimal_hex(255)      # "FF"
-    decimal_hex(16)       # "10"
-    decimal_hex(26)       # "1A"
-    decimal_hex(0)        # "0"
+    print(decimal_hex(10))       # "A"
+    print(decimal_hex(255))      # "FF"
+    print(decimal_hex(16))       # "10"
+    print(decimal_hex(26))       # "1A"
+    print(decimal_hex(0))        # "0"
 ```
 
 ## Logic
