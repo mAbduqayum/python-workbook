@@ -15,3 +15,6 @@ skip (continue) or quit (break)
 
 ### Todos
 -[ ] collatz question: output in multiple lines to make it easier
+
+## 300_functions
+- time_it (which prints how much time did a function take?)
