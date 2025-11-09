@@ -38,6 +38,12 @@
   "editor.insertSpaces": true,     // Whether to convert tabs to spaces
   "editor.detectIndentation": false, // Whether to auto-detect indentation settings
 
+  // === GITHUB COPILOT ===
+  "github.copilot.enable": {
+    "*": false                     // Disable Copilot for all file types
+  },
+  "github.copilot.inlineSuggest.enable": false, // Disable inline suggestions
+
   // === HIDE CLUTTER FROM EXPLORER ===
   "files.exclude": {
     "**/__pycache__": true,    // Whether to hide Python bytecode cache folders
