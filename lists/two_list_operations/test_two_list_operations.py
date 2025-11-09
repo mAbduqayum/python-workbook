@@ -1,0 +1,20 @@
+import pytest
+
+try:
+    from two_list_operations import two_list_sum
+except ImportError:
+    two_list_sum = None
+
+
+@pytest.mark.skipif(two_list_sum is None, reason="two_list_sum function not implemented")
+@pytest.mark.parametrize(
+    "list1, list2, expected",
+    [
+        ([1, 2, 3], [4, 5, 6], [5, 7, 9]),
+        ([10, 20], [5, 10], [15, 30]),
+        ([0, 0, 0], [1, 2, 3], [1, 2, 3]),
+        ([-5, 10], [5, -10], [0, 0]),
+    ],
+)
+def test_two_list_sum(list1, list2, expected):
+    assert two_list_sum(list1, list2) == expected
