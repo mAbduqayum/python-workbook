@@ -1,7 +1,7 @@
 import pytest
 
 try:
-    from copy_list import copy_list, are_different_objects
+    from copy_list import are_different_objects, copy_list
 except ImportError:
     copy_list = None
     are_different_objects = None
@@ -14,8 +14,8 @@ except ImportError:
         [1, 2, 3, 4, 5],
         [],
         [10],
-        ['a', 'b', 'c'],
-        [1, 'two', 3.0],
+        ["a", "b", "c"],
+        [1, "two", 3.0],
     ],
 )
 def test_copy_list(lst):
@@ -24,7 +24,10 @@ def test_copy_list(lst):
     assert copied is not lst
 
 
-@pytest.mark.skipif(are_different_objects is None, reason="are_different_objects function not implemented")
+@pytest.mark.skipif(
+    are_different_objects is None,
+    reason="are_different_objects function not implemented",
+)
 def test_are_different_objects():
     lst1 = [1, 2, 3]
     lst2 = [1, 2, 3]

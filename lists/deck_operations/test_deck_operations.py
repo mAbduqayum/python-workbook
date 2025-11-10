@@ -11,14 +11,16 @@ except ImportError:
 def test_create_deck():
     deck = create_deck()
     assert len(deck) == 52
-    assert '2H' in deck
-    assert 'AS' in deck
-    assert 'KD' in deck
+    assert "2H" in deck
+    assert "AS" in deck
+    assert "KD" in deck
     # Check no duplicates
     assert len(set(deck)) == 52
 
 
-@pytest.mark.skipif(shuffle_deck is None, reason="shuffle_deck function not implemented")
+@pytest.mark.skipif(
+    shuffle_deck is None, reason="shuffle_deck function not implemented"
+)
 def test_shuffle_deck():
     deck = create_deck()
     shuffled = shuffle_deck(deck)

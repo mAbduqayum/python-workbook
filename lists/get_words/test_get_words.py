@@ -10,12 +10,12 @@ except ImportError:
 @pytest.mark.parametrize(
     "sentence, expected",
     [
-        ("Hello world", ["Hello", "world"]),
-        ("Python is fun", ["Python", "is", "fun"]),
         ("", []),
         ("One", ["One"]),
-        ("a b c d", ["a", "b", "c", "d"]),
+        ("Hello world", ["Hello", "world"]),
         ("  multiple   spaces  ", ["multiple", "spaces"]),
+        ("Python is fun", ["Python", "is", "fun"]),
+        ("a b c d", ["a", "b", "c", "d"]),
     ],
 )
 def test_get_words(sentence, expected):

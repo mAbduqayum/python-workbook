@@ -1,7 +1,7 @@
 import pytest
 
 try:
-    from list_items import first_item, mid_item, last_item
+    from list_items import first_item, last_item, mid_item
 except ImportError:
     first_item = None
     mid_item = None
@@ -12,10 +12,10 @@ except ImportError:
 @pytest.mark.parametrize(
     "lst, expected",
     [
-        ([1, 2, 3, 4, 5], 1),
         ([10], 10),
-        (["a", "b", "c"], "a"),
         ([100, 200], 100),
+        (["a", "b", "c"], "a"),
+        ([1, 2, 3, 4, 5], 1),
     ],
 )
 def test_first_item(lst, expected):
@@ -26,11 +26,11 @@ def test_first_item(lst, expected):
 @pytest.mark.parametrize(
     "lst, expected",
     [
-        ([1, 2, 3, 4, 5], 3),
-        ([1, 2, 3, 4], 3),
         ([10], 10),
         (["a", "b", "c"], "b"),
         ([100, 200, 300], 200),
+        ([1, 2, 3, 4], 3),
+        ([1, 2, 3, 4, 5], 3),
     ],
 )
 def test_mid_item(lst, expected):
@@ -41,10 +41,10 @@ def test_mid_item(lst, expected):
 @pytest.mark.parametrize(
     "lst, expected",
     [
-        ([1, 2, 3, 4, 5], 5),
         ([10], 10),
-        (["a", "b", "c"], "c"),
         ([100, 200], 200),
+        (["a", "b", "c"], "c"),
+        ([1, 2, 3, 4, 5], 5),
     ],
 )
 def test_last_item(lst, expected):
