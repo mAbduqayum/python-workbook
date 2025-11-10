@@ -10,12 +10,12 @@ except ImportError:
 @pytest.mark.parametrize(
     "n, expected",
     [
-        (6, True),
-        (28, True),
-        (12, False),
         (1, False),
-        (496, True),
+        (6, True),
+        (12, False),
+        (28, True),
         (100, False),
+        (496, True),
         (8128, True),
     ],
 )

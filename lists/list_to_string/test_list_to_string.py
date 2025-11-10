@@ -6,14 +6,16 @@ except ImportError:
     list_to_string = None
 
 
-@pytest.mark.skipif(list_to_string is None, reason="list_to_string function not implemented")
+@pytest.mark.skipif(
+    list_to_string is None, reason="list_to_string function not implemented"
+)
 @pytest.mark.parametrize(
     "words, expected",
     [
-        (["Hello", "world"], "Hello world"),
-        (["Python", "is", "fun"], "Python is fun"),
         ([], ""),
         (["One"], "One"),
+        (["Hello", "world"], "Hello world"),
+        (["Python", "is", "fun"], "Python is fun"),
         (["a", "b", "c", "d"], "a b c d"),
         (["Test", "multiple", "words", "here"], "Test multiple words here"),
     ],

@@ -6,14 +6,16 @@ except ImportError:
     remove_outliers = None
 
 
-@pytest.mark.skipif(remove_outliers is None, reason="remove_outliers function not implemented")
+@pytest.mark.skipif(
+    remove_outliers is None, reason="remove_outliers function not implemented"
+)
 @pytest.mark.parametrize(
     "numbers, expected",
     [
-        ([1, 2, 3, 4, 5], [2, 3, 4]),
+        ([100, 50, 75], [75]),
         ([10, 5, 8, 3], [5, 8]),
         ([1, 1, 5, 5], [1, 5]),
-        ([100, 50, 75], [75]),
+        ([1, 2, 3, 4, 5], [2, 3, 4]),
         ([3, 1, 4, 1, 5], [3, 4, 1]),
     ],
 )

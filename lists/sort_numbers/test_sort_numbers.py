@@ -6,7 +6,9 @@ except ImportError:
     sort_numbers = None
 
 
-@pytest.mark.skipif(sort_numbers is None, reason="sort_numbers function not implemented")
+@pytest.mark.skipif(
+    sort_numbers is None, reason="sort_numbers function not implemented"
+)
 def test_original_not_modified():
     """Test that the original list is not modified"""
     original = [5, 2, 8, 1, 9]
@@ -15,14 +17,16 @@ def test_original_not_modified():
     assert original == original_copy, "Original list should not be modified"
 
 
-@pytest.mark.skipif(sort_numbers is None, reason="sort_numbers function not implemented")
+@pytest.mark.skipif(
+    sort_numbers is None, reason="sort_numbers function not implemented"
+)
 @pytest.mark.parametrize(
     "numbers, expected",
     [
-        ([5, 2, 8, 1, 9], [1, 2, 5, 8, 9]),
-        ([3, 1, 2], [1, 2, 3]),
         ([1], [1]),
+        ([3, 1, 2], [1, 2, 3]),
         ([5, 5, 5], [5, 5, 5]),
+        ([5, 2, 8, 1, 9], [1, 2, 5, 8, 9]),
         ([-5, 0, 5, -10, 10], [-10, -5, 0, 5, 10]),
     ],
 )
