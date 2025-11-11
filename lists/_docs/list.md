@@ -27,19 +27,19 @@ scores = [85, 92, 78]
 
 ## Creating Lists
 
-| Method                | Syntax                                    | Example                                | Result                |
-|-----------------------|-------------------------------------------|----------------------------------------|-----------------------|
-| Empty list (literal)  | `[]`                                      | `empty = []`                           | `[]`                  |
-| Empty list (function) | `list()`                                  | `empty = list()`                       | `[]`                  |
-| With values           | `[val1, val2, ...]`                       | `numbers = [1, 2, 3, 4, 5]`            | `[1, 2, 3, 4, 5]`     |
-| From range            | `list(range(...))`                        | `list(range(5))`                       | `[0, 1, 2, 3, 4]`     |
-| From range (step)     | `list(range(start, stop, step))`          | `list(range(0, 11, 2))`                | `[0, 2, 4, 6, 8, 10]` |
-| List comprehension    | `[expr for var in iterable]`              | `[x ** 2 for x in range(5)]`           | `[0, 1, 4, 9, 16]`    |
-| With condition        | `[expr for var in iterable if condition]` | `[x for x in range(10) if x % 2 == 0]` | `[0, 2, 4, 6, 8]`     |
-| Nested (2D)           | `[[...], [...]]`                          | `[[1, 2], [3, 4]]`                     | `[[1, 2], [3, 4]]`    |
-| Repeat elements       | `[value] * n`                             | `[0] * 5`                              | `[0, 0, 0, 0, 0]`     |
-| From string           | `list(string)`                            | `list("abc")`                          | `['a', 'b', 'c']`     |
-| Split string          | `string.split()`                          | `"1 2 3".split()`                      | `['1', '2', '3']`     |
+| Method                | Example                                | Result                |
+|-----------------------|----------------------------------------|-----------------------|
+| Empty list (literal)  | `empty = []`                           | `[]`                  |
+| Empty list (function) | `empty = list()`                       | `[]`                  |
+| With values           | `numbers = [1, 2, 3, 4, 5]`            | `[1, 2, 3, 4, 5]`     |
+| From range            | `list(range(5))`                       | `[0, 1, 2, 3, 4]`     |
+| From range (step)     | `list(range(0, 11, 2))`                | `[0, 2, 4, 6, 8, 10]` |
+| List comprehension    | `[x ** 2 for x in range(5)]`           | `[0, 1, 4, 9, 16]`    |
+| With condition        | `[x for x in range(10) if x % 2 == 0]` | `[0, 2, 4, 6, 8]`     |
+| Nested (2D)           | `[[1, 2], [3, 4]]`                     | `[[1, 2], [3, 4]]`    |
+| Repeat elements       | `[0] * 5`                              | `[0, 0, 0, 0, 0]`     |
+| From string           | `list("abc")`                          | `['a', 'b', 'c']`     |
+| Split string          | `"1 2 3".split()`                      | `['1', '2', '3']`     |
 
 ### Examples
 
@@ -243,16 +243,16 @@ Lists are **mutable** (can be changed after creation).
 
 ## Iterating Over Lists
 
-| Method                 | Use Case                        | Syntax                                     | Example                                  |
-|------------------------|---------------------------------|--------------------------------------------|------------------------------------------|
-| Basic for loop         | Iterate over values             | `for item in list:`                        | `for fruit in fruits: print(fruit)`      |
-| With enumerate         | Need index and value            | `for i, item in enumerate(list):`          | `for i, fruit in enumerate(fruits):`     |
-| With enumerate (start) | Custom starting index           | `for i, item in enumerate(list, start=n):` | `for i, x in enumerate(data, start=1):`  |
-| With range             | Need index to modify list       | `for i in range(len(list)):`               | `for i in range(len(fruits)):`           |
-| With zip               | Iterate multiple lists together | `for a, b in zip(list1, list2):`           | `for name, score in zip(names, scores):` |
-| Reversed               | Iterate in reverse order        | `for item in reversed(list):`              | `for num in reversed(numbers):`          |
-| With slice             | Iterate over part of list       | `for item in list[start:stop]:`            | `for x in numbers[2:5]:`                 |
-| While loop             | Complex iteration logic         | `while condition:`                         | `i = 0` <br> `while i < len(list):`      |
+| Method                 | Use Case                        | Example                                  |
+|------------------------|---------------------------------|------------------------------------------|
+| Basic for loop         | Iterate over values             | `for fruit in fruits: print(fruit)`      |
+| With enumerate         | Need index and value            | `for i, fruit in enumerate(fruits):`     |
+| With enumerate (start) | Custom starting index           | `for i, x in enumerate(data, start=1):`  |
+| With range             | Need index to modify list       | `for i in range(len(fruits)):`           |
+| With zip               | Iterate multiple lists together | `for name, score in zip(names, scores):` |
+| Reversed               | Iterate in reverse order        | `for num in reversed(numbers):`          |
+| With slice             | Iterate over part of list       | `for x in numbers[2:5]:`                 |
+| While loop             | Complex iteration logic         | `i = 0` <br> `while i < len(list):`      |
 
 ## Common Patterns
 
