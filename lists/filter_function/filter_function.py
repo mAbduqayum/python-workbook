@@ -2,6 +2,14 @@ from typing import Callable
 
 
 def filter_list(lst: list, condition: Callable) -> list:
+    result = []
+    for x in lst:
+        if condition(x):
+            result.append(x)
+    return result
+
+
+def filter_list2(lst: list, condition: Callable) -> list:
     return [x for x in lst if condition(x)]
 
 

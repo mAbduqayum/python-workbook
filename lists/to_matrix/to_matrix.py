@@ -1,4 +1,14 @@
 def to_matrix(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
+    result = []
+    for i in range(rows):
+        row = []
+        for j in range(cols):
+            row.append(numbers[i * cols + j])
+        result.append(row)
+    return result
+
+
+def to_matrix2(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
     return [numbers[i * cols:(i + 1) * cols] for i in range(rows)]
 
 

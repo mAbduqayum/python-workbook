@@ -1,6 +1,15 @@
 def str_to_ints(string: str) -> list[int]:
     if not string.strip():
         return []
+    result = []
+    for x in string.split():
+        result.append(int(x))
+    return result
+
+
+def str_to_ints2(string: str) -> list[int]:
+    if not string.strip():
+        return []
     return [int(x) for x in string.split()]
 
 

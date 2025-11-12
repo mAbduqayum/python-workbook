@@ -1,6 +1,16 @@
 def reverse_list(string: str) -> list[int]:
     if not string.strip():
         return []
+    numbers = []
+    for x in string.split():
+        numbers.append(int(x))
+    numbers.reverse()
+    return numbers
+
+
+def reverse_list2(string: str) -> list[int]:
+    if not string.strip():
+        return []
     numbers = [int(x) for x in string.split()]
     return numbers[::-1]
 
