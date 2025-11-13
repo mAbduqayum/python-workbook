@@ -14,7 +14,7 @@ matrix = [
 
 # Create 3x4 matrix of zeros
 rows, cols = 3, 4
-matrix = [[0 for _ in range(cols)] for _ in range(rows)]
+matrix0 = [[0 for _ in range(cols)] for _ in range(rows)]
 ```
 
 ### Accessing 2D List Elements
@@ -56,7 +56,7 @@ for i in range(len(matrix)):
 ### Common Mistake: Creating 2D Lists Incorrectly
 
 ```python
-# WRONG - creates references to same list
+# WRONG - creates references to the same list
 matrix = [[0] * 3] * 3
 matrix[0][0] = 1
 print(matrix)  # [[1, 0, 0], [1, 0, 0], [1, 0, 0]] - all rows modified!
