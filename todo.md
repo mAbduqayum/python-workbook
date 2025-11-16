@@ -3,6 +3,7 @@
 - n even numbers
 - n odd numbers
 - n numbers divisible by 10
+- explain about Σ and Π (Pi) using loops
 - read input from the user until user enters
 skip (continue) or quit (break)
 - table of numbers:
@@ -17,4 +18,6 @@ skip (continue) or quit (break)
 -[ ] collatz question: output in multiple lines to make it easier
 
 ## 300_functions
-- time_it (which prints how much time did a function take?)
+- time_it (which prints how much time the function took?)
+
+## 400_lists
