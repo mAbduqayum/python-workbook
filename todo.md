@@ -70,7 +70,7 @@
 
 - [ ] `common_elements` in two lists
 - [ ] `duplicates_count` in list
-- [ ] `remove_duplicates` in list
+- [ ] `deduplicate` in list
 - [ ] `uniques` list from list
 - [ ] remove duplicate letters from string.
   tell to use list instead of modifying mutable string to prevent string
@@ -78,20 +78,15 @@
 
 ### dicts
 
-- [ ] `text_messaging`: message -> old cellphone clicks
+- [ ] `Text Messaging`: Convert message -> Old cellphone clicks (T9 style).
 
-| Key | Symbols |
-|-----|---------|
-| 1   | .,?!:   |
-| 2   | ABC     |
-| 3   | DEF     |
-| 4   | GHI     |
-| 5   | JKL     |
-| 6   | MNO     |
-| 7   | PQRS    |
-| 8   | TUV     |
-| 9   | WXYZ    |
-| 0   | space   |
+| Key | Symbols | Key | Symbols |
+|-----|---------|-----|---------|
+| 1   | .,?!:   | 6   | MNO     |
+| 2   | ABC     | 7   | PQRS    |
+| 3   | DEF     | 8   | TUV     |
+| 4   | GHI     | 9   | WXYZ    |
+| 5   | JKL     | 0   | space   |
 
 - [ ] `morse_code`
   Add historical note about morse code
@@ -99,9 +94,10 @@
   Add note about what does encoding mean
 - [ ] `read_aloud` -> 42 -> “FOUR TWO”
 - [ ] `most_frequent_elements`
-- [ ] `chars_map`
+- [ ] `chars_count`
 - [ ] `anagram` function name: is_anagram
 - [ ] `phrase_anagram` function name: is_phrase_anagram
+- [ ] `group_anagrams`: Group words that are anagrams of each other
 
 ### General
 
