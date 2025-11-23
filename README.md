@@ -7,6 +7,7 @@ A structured collection of Python programming exercises designed for learning an
 ### Prerequisites
 
 Install the following tools:
+
 - **Git** - Version control system
 - **uv** - Python package manager
 - **VS Code** - Code editor
@@ -41,13 +42,15 @@ Install the following tools:
 2. Start with basic exercises in the `000_intro/` directory
 3. Use `uv run` to execute Python files
 
-## Project Structure
+## Recommended Reading Order
 
-- `0**` - Basics
-- `1**` - Conditionals
-- `2**` - Repetitions
-- `3**` - Functions
-- `4**` - Lists
-- `5**` - Dictionaries
-- `6**` - Files and exceptions
-- `7**` - Recursion
+1. [`Introduction`](000_intro/000_intro_docs/table_of_contents.md)
+2. [`Conditional`](100_conditionals/100_conditionals_docs/table_of_contents.md)
+3. [`Repetition`](200_repetitions/200_repetition_docs/table_of_contents.md)
+4. [`Function`](300_functions/_docs/table_of_contents.md)
+5. [`List`](lists/_docs/table_of_contents.md)
+6. [`Set`](sets/_docs/table_of_contents.md)
+7. [`Dict`](dicts/_docs/table_of_contents.md)
+8. [`Error`](errors/_docs/table_of_contents.md)
+9. [`File`](files/_docs/table_of_contents.md)
+10. [`Recursion`](recursions/_docs/table_of_contents.md)
