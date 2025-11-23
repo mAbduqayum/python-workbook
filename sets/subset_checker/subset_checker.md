@@ -4,7 +4,8 @@ Determine if one collection is a subset of another.
 
 ## Task
 
-Write a function `is_subset(subset, superset)` that returns `True` if all elements of `subset` are contained in `superset`, and `False` otherwise.
+Write a function `is_subset(subset, superset)` that returns `True` if all elements of `subset` are contained in
+`superset`, and `False` otherwise.
 
 - An empty set is a subset of any set
 - A set is a subset of itself
@@ -42,6 +43,7 @@ return set(subset).issubset(set(superset))
 ## Note
 
 Understanding subset relationships is fundamental in many applications:
+
 - Permission systems (does user have required permissions?)
 - Feature flags (does plan include required features?)
 - Dependency checking (are all dependencies installed?)

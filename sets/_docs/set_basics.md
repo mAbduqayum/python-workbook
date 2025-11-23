@@ -1,6 +1,7 @@
 # Set Basics
 
-A **set** is an unordered collection of unique elements. Sets are one of Python's built-in data types and are extremely useful when you need to:
+A **set** is an unordered collection of unique elements. Sets are one of Python's built-in data types and are extremely
+useful when you need to:
 
 - Remove duplicates from a collection
 - Check membership quickly (O(1) average time)
@@ -24,11 +25,11 @@ chars = set("hello")  # {'h', 'e', 'l', 'o'}
 
 ## Key Characteristics
 
-| Feature | Description |
-|---------|-------------|
-| Unordered | Elements have no index; order is not guaranteed |
-| Unique | No duplicate elements allowed |
-| Mutable | Can add/remove elements (but elements must be immutable) |
+| Feature           | Description                                                  |
+|-------------------|--------------------------------------------------------------|
+| Unordered         | Elements have no index; order is not guaranteed              |
+| Unique            | No duplicate elements allowed                                |
+| Mutable           | Can add/remove elements (but elements must be immutable)     |
 | Hashable elements | Only immutable types can be set elements (no lists or dicts) |
 
 ## Basic Operations
@@ -64,12 +65,12 @@ s = {"apple", "banana", "cherry"}
 
 ## When to Use Sets
 
-| Use Case | Why Sets? |
-|----------|-----------|
-| Remove duplicates | `list(set(my_list))` is the fastest way |
-| Fast membership checks | O(1) vs O(n) for lists |
-| Mathematical operations | Union, intersection, difference built-in |
-| Tracking seen items | Perfect for "have I seen this before?" patterns |
+| Use Case                | Why Sets?                                       |
+|-------------------------|-------------------------------------------------|
+| Remove duplicates       | `list(set(my_list))` is the fastest way         |
+| Fast membership checks  | O(1) vs O(n) for lists                          |
+| Mathematical operations | Union, intersection, difference built-in        |
+| Tracking seen items     | Perfect for "have I seen this before?" patterns |
 
 ## Set vs List: Performance Comparison
 

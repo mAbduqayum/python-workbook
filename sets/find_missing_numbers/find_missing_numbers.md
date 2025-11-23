@@ -4,7 +4,8 @@ Find which numbers are missing from a range.
 
 ## Task
 
-Write a function `find_missing(numbers, n)` that takes a list of numbers and an upper bound `n`, and returns a list of all numbers from 1 to `n` (inclusive) that are **not** in the input list.
+Write a function `find_missing(numbers, n)` that takes a list of numbers and an upper bound `n`, and returns a list of
+all numbers from 1 to `n` (inclusive) that are **not** in the input list.
 
 - The result should be sorted in ascending order
 - Duplicates in the input list should be ignored
@@ -44,7 +45,8 @@ return sorted(missing)
 
 This is a classic interview problem! The set-based solution runs in O(n) time.
 
-An alternative approach without using extra space (for finding a **single** missing number) uses the mathematical formula for the sum of 1 to n:
+An alternative approach without using extra space (for finding a **single** missing number) uses the mathematical
+formula for the sum of 1 to n:
 
 ```python
 expected_sum = n * (n + 1) // 2

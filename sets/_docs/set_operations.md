@@ -1,6 +1,7 @@
 # Set Operations
 
-Python sets support all standard mathematical set operations. These operations are powerful tools for comparing and combining collections.
+Python sets support all standard mathematical set operations. These operations are powerful tools for comparing and
+combining collections.
 
 ## Visual Overview
 
@@ -127,12 +128,12 @@ a ^= {1, 5}          # a.symmetric_difference_update({1, 5})
 
 ## Summary Table
 
-| Operation | Operator | Method | Description |
-|-----------|----------|--------|-------------|
-| Union | `a \| b` | `a.union(b)` | All elements from both sets |
-| Intersection | `a & b` | `a.intersection(b)` | Elements in both sets |
-| Difference | `a - b` | `a.difference(b)` | Elements in a but not b |
-| Symmetric Diff | `a ^ b` | `a.symmetric_difference(b)` | Elements in either, not both |
-| Subset | `a <= b` | `a.issubset(b)` | Is a contained in b? |
-| Superset | `a >= b` | `a.issuperset(b)` | Does a contain b? |
-| Disjoint | - | `a.isdisjoint(b)` | No common elements? |
+| Operation      | Operator | Method                      | Description                  |
+|----------------|----------|-----------------------------|------------------------------|
+| Union          | `a \| b` | `a.union(b)`                | All elements from both sets  |
+| Intersection   | `a & b`  | `a.intersection(b)`         | Elements in both sets        |
+| Difference     | `a - b`  | `a.difference(b)`           | Elements in a but not b      |
+| Symmetric Diff | `a ^ b`  | `a.symmetric_difference(b)` | Elements in either, not both |
+| Subset         | `a <= b` | `a.issubset(b)`             | Is a contained in b?         |
+| Superset       | `a >= b` | `a.issuperset(b)`           | Does a contain b?            |
+| Disjoint       | -        | `a.isdisjoint(b)`           | No common elements?          |

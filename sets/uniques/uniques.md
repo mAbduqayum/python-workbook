@@ -4,7 +4,8 @@ Extract unique elements from a list.
 
 ## Task
 
-Write a function `uniques(values)` that takes a list and returns a new list containing only the unique elements (no duplicates).
+Write a function `uniques(values)` that takes a list and returns a new list containing only the unique elements (no
+duplicates).
 
 - The order of elements in the result does not need to match the original order
 - Return an empty list if the input is empty

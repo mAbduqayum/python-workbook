@@ -4,7 +4,8 @@ Check if two numbers in a list add up to a target value.
 
 ## Task
 
-Write a function `has_two_sum(numbers, target)` that returns `True` if any two **different** numbers in the list add up to the target, and `False` otherwise.
+Write a function `has_two_sum(numbers, target)` that returns `True` if any two **different** numbers in the list add up
+to the target, and `False` otherwise.
 
 - The same element cannot be used twice
 - There may be duplicate values in the list
@@ -30,7 +31,8 @@ if __name__ == "__main__":
 <details>
 <summary>Click to reveal hint</summary>
 
-For each number, calculate what value you'd need (the "complement") to reach the target, and check if you've seen it before:
+For each number, calculate what value you'd need (the "complement") to reach the target, and check if you've seen it
+before:
 
 ```python
 seen = set()

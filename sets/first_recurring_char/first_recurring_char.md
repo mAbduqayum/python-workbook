@@ -4,7 +4,8 @@ Find the first character that appears a second time.
 
 ## Task
 
-Write a function `first_recurring(text)` that returns the first character in the string that appears again later in the string.
+Write a function `first_recurring(text)` that returns the first character in the string that appears again later in the
+string.
 
 - Return `None` if no character repeats
 - The check should be case-sensitive
@@ -52,5 +53,6 @@ This problem demonstrates the power of O(1) set lookups.
 **With sets**, the membership check is O(1), so the entire algorithm is O(n).
 
 For a string with 1 million characters, that's the difference between:
+
 - O(n²) = 1,000,000,000,000 operations
 - O(n) = 1,000,000 operations

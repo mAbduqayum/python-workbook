@@ -4,7 +4,8 @@ Find common elements between two lists.
 
 ## Task
 
-Write a function `list_intersection(list1, list2)` that returns a new list containing only the elements that appear in **both** input lists.
+Write a function `list_intersection(list1, list2)` that returns a new list containing only the elements that appear in *
+*both** input lists.
 
 - Each element should appear only once in the result
 - The order of elements does not need to be preserved

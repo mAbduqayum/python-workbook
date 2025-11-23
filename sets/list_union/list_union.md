@@ -4,7 +4,8 @@ Combine two lists into one without duplicates.
 
 ## Task
 
-Write a function `list_union(list1, list2)` that returns a new list containing all unique elements from both input lists.
+Write a function `list_union(list1, list2)` that returns a new list containing all unique elements from both input
+lists.
 
 - Each element should appear only once in the result
 - The order of elements does not need to be preserved

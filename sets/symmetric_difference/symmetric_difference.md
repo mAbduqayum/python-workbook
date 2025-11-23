@@ -4,7 +4,8 @@ Find elements that are in either of two collections but not in both.
 
 ## Task
 
-Write a function `symmetric_diff(list1, list2)` that returns a new list containing elements that are in **either** `list1` or `list2`, but **not in both**.
+Write a function `symmetric_diff(list1, list2)` that returns a new list containing elements that are in **either**
+`list1` or `list2`, but **not in both**.
 
 This is like an XOR operation for sets.
 

@@ -4,7 +4,8 @@ Find the length of the longest sequence of consecutive numbers.
 
 ## Task
 
-Write a function `longest_consecutive(numbers)` that finds the length of the longest sequence of consecutive integers in the list.
+Write a function `longest_consecutive(numbers)` that finds the length of the longest sequence of consecutive integers in
+the list.
 
 - The numbers don't need to be adjacent in the list
 - The order of numbers in the list doesn't matter
@@ -31,7 +32,8 @@ if __name__ == "__main__":
 <details>
 <summary>Click to reveal hint</summary>
 
-The key insight: only start counting from numbers that are the **beginning** of a sequence (i.e., `num - 1` is not in the set).
+The key insight: only start counting from numbers that are the **beginning** of a sequence (i.e., `num - 1` is not in
+the set).
 
 ```python
 num_set = set(numbers)
@@ -60,7 +62,8 @@ This is a classic **hard** interview problem that becomes elegant with sets.
 
 **Why check `num - 1 not in num_set`?**
 
-Without this optimization, we'd start counting from every number, leading to O(n²) time. By only starting from sequence beginnings, each number is visited at most twice (once in the outer loop, once in the while loop), giving us O(n) time.
+Without this optimization, we'd start counting from every number, leading to O(n²) time. By only starting from sequence
+beginnings, each number is visited at most twice (once in the outer loop, once in the while loop), giving us O(n) time.
 
 **Example walkthrough with [100, 4, 200, 1, 3, 2]:**
 

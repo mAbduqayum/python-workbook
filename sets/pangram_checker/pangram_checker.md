@@ -4,7 +4,8 @@ Check if a string contains every letter of the alphabet.
 
 ## Task
 
-Write a function `is_pangram(text)` that returns `True` if the input string contains every letter of the English alphabet at least once, and `False` otherwise.
+Write a function `is_pangram(text)` that returns `True` if the input string contains every letter of the English
+alphabet at least once, and `False` otherwise.
 
 - The check should be case-insensitive
 - Non-letter characters (spaces, punctuation, numbers) should be ignored
@@ -52,9 +53,11 @@ return alphabet <= set(text.lower())
 A **pangram** is a sentence that uses every letter of the alphabet at least once.
 
 Famous pangrams:
+
 - "The quick brown fox jumps over the lazy dog" (35 letters)
 - "Pack my box with five dozen liquor jugs" (32 letters)
 - "Sphinx of black quartz, judge my vow" (29 letters)
 
 **Perfect pangrams** use each letter exactly once (very rare in English):
+
 - "Mr Jock, TV quiz PhD, bags few lynx" (26 letters)

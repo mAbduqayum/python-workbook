@@ -4,12 +4,12 @@
 
 Sets use **hash tables** internally, which provides O(1) average-case time complexity for common operations:
 
-| Operation | Set | List |
-|-----------|-----|------|
-| Check membership (`in`) | O(1) | O(n) |
-| Add element | O(1) | O(1) or O(n)* |
-| Remove element | O(1) | O(n) |
-| Get length | O(1) | O(1) |
+| Operation               | Set  | List          |
+|-------------------------|------|---------------|
+| Check membership (`in`) | O(1) | O(n)          |
+| Add element             | O(1) | O(1) or O(n)* |
+| Remove element          | O(1) | O(n)          |
+| Get length              | O(1) | O(1)          |
 
 *List append is O(1), but insert at arbitrary position is O(n)
 
