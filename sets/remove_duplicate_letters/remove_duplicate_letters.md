@@ -45,6 +45,9 @@ return "".join(result)
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 Why use a list instead of string concatenation?
 
 Strings in Python are immutable. Each `result += char` creates a new string object, making it O(n²) for n characters.
@@ -63,3 +66,5 @@ for char in text:
     result.append(char)
 return "".join(result)
 ```
+
+</details>

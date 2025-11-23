@@ -42,8 +42,13 @@ return set(subset).issubset(set(superset))
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 Understanding subset relationships is fundamental in many applications:
 
 - Permission systems (does user have required permissions?)
 - Feature flags (does plan include required features?)
 - Dependency checking (are all dependencies installed?)
+
+</details>

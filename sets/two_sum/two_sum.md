@@ -48,6 +48,9 @@ return False
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 This is the **complement search** pattern, one of the most common interview questions!
 
 The key insight: instead of checking every pair of numbers (O(n²)), we ask:
@@ -69,3 +72,5 @@ for num in numbers:
         return True
     seen.add(num)
 ```
+
+</details>

@@ -50,6 +50,9 @@ return alphabet <= set(text.lower())
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 A **pangram** is a sentence that uses every letter of the alphabet at least once.
 
 Famous pangrams:
@@ -61,3 +64,5 @@ Famous pangrams:
 **Perfect pangrams** use each letter exactly once (very rare in English):
 
 - "Mr Jock, TV quiz PhD, bags few lynx" (26 letters)
+
+</details>

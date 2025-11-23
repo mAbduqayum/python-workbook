@@ -43,6 +43,9 @@ return sorted(missing)
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 This is a classic interview problem! The set-based solution runs in O(n) time.
 
 An alternative approach without using extra space (for finding a **single** missing number) uses the mathematical
@@ -55,3 +58,5 @@ missing = expected_sum - actual_sum
 ```
 
 But for **multiple** missing numbers, the set approach is cleaner and more flexible.
+
+</details>

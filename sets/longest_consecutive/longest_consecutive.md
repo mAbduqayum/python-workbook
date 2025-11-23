@@ -58,6 +58,9 @@ return longest
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 This is a classic **hard** interview problem that becomes elegant with sets.
 
 **Why check `num - 1 not in num_set`?**
@@ -77,3 +80,5 @@ num=2:   1 in set → skip
 
 Answer: 4
 ```
+
+</details>

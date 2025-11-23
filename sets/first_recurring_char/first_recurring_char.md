@@ -46,6 +46,9 @@ return None
 
 ## Note
 
+<details>
+<summary>Click to reveal note</summary>
+
 This problem demonstrates the power of O(1) set lookups.
 
 **Without sets** (using a list), checking `if char in seen` would be O(n), making the total algorithm O(n²).
@@ -56,3 +59,5 @@ For a string with 1 million characters, that's the difference between:
 
 - O(n²) = 1,000,000,000,000 operations
 - O(n) = 1,000,000 operations
+
+</details>
