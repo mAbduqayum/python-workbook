@@ -67,25 +67,25 @@
   contains_rotation(str1, str2), which is case-insensitive during the check.
 
 ### sets
-- [ ] `uniques` from list
-- [ ] `list_union`
-- [ ] `list_intersection`
-- [ ] Subset Checker - Determine if one set is a subset of another. Good for understanding containment relationships.
-- [ ] Symmetric Difference - Find elements that are in either of two sets but not in both. Teaches XOR-like set operations.
-- [ ] remove duplicate letters from string.
+- [x] `uniques` from list
+- [x] `list_union`
+- [x] `list_intersection`
+- [x] Subset Checker - Determine if one set is a subset of another. Good for understanding containment relationships.
+- [x] Symmetric Difference - Find elements that are in either of two sets but not in both. Teaches XOR-like set operations.
+- [x] remove duplicate letters from string.
   tell to use list instead of modifying mutable string to prevent string
   recreation each time to prevent slowdown)
-- [ ] Find Missing Numbers - Given a range (1 to n) and an array with some missing numbers, find which numbers are missing using set difference.
-- [ ] Pangram Checker
-- [ ] The First Recurring Character
+- [x] Find Missing Numbers - Given a range (1 to n) and an array with some missing numbers, find which numbers are missing using set difference.
+- [x] Pangram Checker
+- [x] The First Recurring Character
     Problem: Given a string, return the first character that appears a second time.
     Input: "ABCA"
     Output: "A"
-- [ ] Two Sum (The "Complement" Search)
+- [x] Two Sum (The "Complement" Search)
     Problem: Given an array of integers nums and an integer target, return true if two numbers in the array add up to target.
 
 ### sets advanced
-- [ ] Longest Consecutive Sequence
+- [x] Longest Consecutive Sequence
 
 ### dicts
 
