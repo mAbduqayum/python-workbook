@@ -9,9 +9,9 @@ combining collections.
 A = {1, 2, 3}
 B = {2, 3, 4}
 
-Union (A | B):        {1, 2, 3, 4}     - all elements from both
-Intersection (A & B): {2, 3}          - elements in both
-Difference (A - B):   {1}             - elements in A but not B
+Union (A | B):          {1, 2, 3, 4}  - all elements from both
+Intersection (A & B):   {2, 3}        - elements in both
+Difference (A - B):     {1}           - elements in A but not B
 Symmetric Diff (A ^ B): {1, 4}        - elements in either, but not both
 ```
 
@@ -77,7 +77,7 @@ a = {1, 2, 3}
 b = {2, 3, 4}
 
 # Method 1: operator
-a ^ b                # {1, 4}
+a ^ b                      # {1, 4}
 
 # Method 2: method
 a.symmetric_difference(b)  # {1, 4}
