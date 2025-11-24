@@ -30,7 +30,6 @@ Read these in order before starting the exercises:
 | [find_missing_numbers](../find_missing_numbers/find_missing_numbers.md)             | Find missing numbers in a range                   |
 | [pangram_checker](../pangram_checker/pangram_checker.md)                            | Check if a string contains all alphabet letters   |
 | [first_recurring_char](../first_recurring_char/first_recurring_char.md)             | Find the first character that appears twice       |
-| [two_sum](../two_sum/two_sum.md)                                                    | Check if two numbers in a list add up to a target |
 
 ### Advanced
 
