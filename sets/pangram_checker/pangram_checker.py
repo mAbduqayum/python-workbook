@@ -3,7 +3,7 @@ import string
 
 def is_pangram(text: str) -> bool:
     alphabet = set(string.ascii_lowercase)
-    return alphabet <= set(text.lower())
+    return set(text.lower()) >= alphabet
 
 
 if __name__ == "__main__":
