@@ -1,4 +1,32 @@
-# Sets - Table of Contents
+# Table of Contents
+
+```mermaid
+mindmap
+    root((Sets))
+        Creation
+            set literal
+            set constructor
+            frozenset
+        Operations
+            Union |
+            Intersection &
+            Difference -
+            Symmetric ^
+        Methods
+            add
+            remove
+            discard
+            pop
+            clear
+        Comparisons
+            issubset
+            issuperset
+            isdisjoint
+        Performance
+            O&lpar;1&rpar; lookup
+            Hash tables
+            Unique elements
+```
 
 ## Foundation Documentation
 
