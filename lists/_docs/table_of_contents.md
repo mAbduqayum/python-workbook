@@ -1,5 +1,45 @@
 # Table of Contents
 
+```mermaid
+mindmap
+    root((Lists))
+        Creation
+            list literal
+            list constructor
+            comprehension
+            from range
+        Access
+            Indexing [i]
+            Negative [-i]
+            Slicing [:]
+        Operations
+            Length len
+            Concat +
+            Membership in
+            Comparison
+        Methods
+            append
+            insert
+            extend
+            remove
+            pop
+            sort
+            reverse
+            copy
+        Iteration
+            for loop
+            enumerate
+            zip
+            reversed
+        Copying
+            Shallow copy
+            Deep copy
+            References
+        Nested Lists
+            2D arrays
+            Matrices
+```
+
 ## Recommended Reading Order
 
 1. [`list_basics.md`](list_basics.md) - Introduction, creating lists, and accessing elements

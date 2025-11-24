@@ -1,5 +1,28 @@
 # Table of Contents
 
+```mermaid
+mindmap
+    root((Functions))
+        Basics
+            def keyword
+            call function
+            parameters
+            return
+            type hints
+            docstrings
+        Imports
+            import
+            from...import
+            built-in modules
+        Scope
+            local
+            global
+        Modules
+            create .py
+            \__name__==<br>\__main__
+            reusable
+```
+
 ## Recommended Reading Order
 
 1. [`function.md`](function.md)
