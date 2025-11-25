@@ -3,10 +3,6 @@
 ```mermaid
 mindmap
     root((Sets))
-        Creation
-            set literal
-            set constructor
-            frozenset
         Operations
             Union |
             Intersection &
@@ -18,6 +14,10 @@ mindmap
             discard
             pop
             clear
+        Creation
+            set literal
+            set constructor
+            frozenset
         Comparisons
             issubset
             issuperset
