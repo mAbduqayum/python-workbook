@@ -42,25 +42,19 @@ Read these in order before starting the exercises:
 
 ### Beginner
 
-| Exercise                                                                | Description                              |
-|-------------------------------------------------------------------------|------------------------------------------|
-| [uniques](../uniques/uniques.md)                                        | Extract unique elements from a list      |
-| [list_union](../list_union/list_union.md)                               | Combine two lists without duplicates     |
-| [list_intersection](../list_intersection/list_intersection.md)          | Find common elements between two lists   |
-| [subset_checker](../subset_checker/subset_checker.md)                   | Check if one set is a subset of another  |
-| [symmetric_difference](../symmetric_difference/symmetric_difference.md) | Find elements in either set but not both |
+1. [uniques](../uniques/uniques.md)
+1. [list_union](../list_union/list_union.md)
+1. [list_intersection](../list_intersection/list_intersection.md)
+1. [subset_checker](../subset_checker/subset_checker.md)
+1. [symmetric_difference](../symmetric_difference/symmetric_difference.md)
 
 ### Intermediate
 
-| Exercise                                                                            | Description                                       |
-|-------------------------------------------------------------------------------------|---------------------------------------------------|
-| [remove_duplicate_letters](../remove_duplicate_letters/remove_duplicate_letters.md) | Remove duplicate characters from a string         |
-| [find_missing_numbers](../find_missing_numbers/find_missing_numbers.md)             | Find missing numbers in a range                   |
-| [pangram_checker](../pangram_checker/pangram_checker.md)                            | Check if a string contains all alphabet letters   |
-| [first_recurring_char](../first_recurring_char/first_recurring_char.md)             | Find the first character that appears twice       |
+1. [remove_duplicate_letters](../remove_duplicate_letters/remove_duplicate_letters.md)
+1. [find_missing_numbers](../find_missing_numbers/find_missing_numbers.md)
+1. [pangram_checker](../pangram_checker/pangram_checker.md)
+1. [first_recurring_char](../first_recurring_char/first_recurring_char.md)
 
 ### Advanced
 
-| Exercise                                                             | Description                                     |
-|----------------------------------------------------------------------|-------------------------------------------------|
-| [longest_consecutive](../longest_consecutive/longest_consecutive.md) | Find the longest consecutive sequence in a list |
+1. [longest_consecutive](../longest_consecutive/longest_consecutive.md)
