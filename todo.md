@@ -5,7 +5,7 @@
 - n odd numbers
 - n numbers divisible by 10
 - explain about Σ and Π (Pi) using loops
-- read input from the user until user enters
+- read input from the user until the user enters
   skip (continue) or quit (break)
 - table of numbers:
 
@@ -33,7 +33,7 @@
   order—of course without calling the reverse() function of the list.
 - `List Revers (b)`: List Reverse Inplace
   What is different if you want to implement reversing the order inplace to be
-  memory-optimal for very large datasets? What should be given then?
+  memory-optimal for a very large datasets? What should be given then?
 - `Well-Formed Braces`
 - `Maximum Profit`
   Imagine that you have a sequence of prices ordered in time and that you want to
@@ -48,7 +48,7 @@
 - [ ] `Longest Sequence`
   Suppose you are modeling stock prices or altitudes of a track by a list of numbers. Find
   the longest sequence of numbers whose values ascend or at least stay the same. Write
-  function find_longest_growing_sequence(values).
+  the function find_longest_growing_sequence (values).
   Note: make questions more interesting
 - [ ] `Addition of Digits`
 - [ ] Excel Magic Select
@@ -63,28 +63,34 @@
   Consider two strings, str1 and str2, where the first string is supposed to be longer than
   the second. Figure out if the first one contains the other one. In doing so, the characters
   within the first string may also be rotated. Characters can be moved from the beginning
-  or the end to the opposite position (even repeatedly). To do this, create function
-  contains_rotation(str1, str2), which is case-insensitive during the check.
+  or the end to the opposite position (even repeatedly). To do this, create a function contains_rotation   (str1, str2),
+  which is case-insensitive during the check.
 
 ### sets
+
 - [x] `uniques` from list
 - [x] `list_union`
 - [x] `list_intersection`
 - [x] Subset Checker - Determine if one set is a subset of another. Good for understanding containment relationships.
-- [x] Symmetric Difference - Find elements that are in either of two sets but not in both. Teaches XOR-like set operations.
+- [x] Symmetric Difference - Find elements that are in either of two sets but not in both. Teaches XOR-like set
+  operations.
 - [x] remove duplicate letters from string.
   tell to use list instead of modifying mutable string to prevent string
   recreation each time to prevent slowdown)
-- [x] Find Missing Numbers - Given a range (1 to n) and an array with some missing numbers, find which numbers are missing using set difference.
+- [x] Find Missing Numbers - Given a range (1 to n) and an array with some missing numbers, find which numbers are
+  missing using set difference.
 - [x] Pangram Checker
 - [x] The First Recurring Character
-    Problem: Given a string, return the first character that appears a second time.
-    Input: "ABCA"
-    Output: "A"
+  Problem: Given a string, return the first character that appears a second time.
+  Input: `ABCA`
+  Output: `A`
 - [x] Two Sum (The "Complement" Search)
-    Problem: Given an array of integers nums and an integer target, return true if two numbers in the array add up to target.
+  Problem: Given an array of integers nums and an integer target, return true if two numbers in the array add up to
+  target.
+- [ ] convert all function argument types from list to set.
 
 ### sets advanced
+
 - [x] Longest Consecutive Sequence
 
 ### dicts
@@ -112,6 +118,6 @@
 
 ### General
 
-- [ ] Create a table to compare code complexity of common methods in list, set, dict
+- [ ] Create a table to compare code complexity of common methods in a list, set, dict
 - [ ] more complete version of previous task: list, set, dict, tuple, string, queue[list], stack[list], linked list
-- [ ] Create a table to explain difference between hashing, encryption, encoding
+- [ ] Create a table to explain the difference between hashing, encryption, encoding
