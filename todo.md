@@ -84,7 +84,6 @@
   Problem: Given a string, return the first character that appears a second time.
   Input: `ABCA`
   Output: `A`
-- [x] Two Sum (The "Complement" Search)
   Problem: Given an array of integers nums and an integer target, return true if two numbers in the array add up to
   target.
 - [ ] convert all function argument types from list to set.
@@ -105,16 +104,29 @@
 | 4   | GHI     | 9   | WXYZ    |
 | 5   | JKL     | 0   | space   |
 
-- [ ] `morse_code`
-  Add historical note about morse code
+#### Easy
+
 - [ ] `morse_encode`
+  Add historical note about morse code
+- [ ] `morse_decode`
   Add note about what does encoding mean
+- [ ] first unique char
 - [ ] `read_aloud` -> 42 -> “FOUR TWO”
+- [ ] Roman to integer
 - [ ] `most_frequent_elements`
 - [ ] `chars_count`
+
+#### Mid
+
 - [ ] `anagram` function name: is_anagram
 - [ ] `phrase_anagram` function name: is_phrase_anagram
 - [ ] `group_anagrams`: Group words that are anagrams of each other
+- [ ] Two Sum (The "Complement" Search)
+- [ ] Isomorphic Strings
+
+#### Hard
+
+- [ ] Longest Substring Without Repeating Characters
 
 ### General
 
