@@ -94,7 +94,22 @@
 
 ### dicts
 
-- [ ] `Text Messaging`: Convert message -> Old cellphone clicks (T9 style).
+#### Fundamentals (Warm-up)
+
+- [ ] `chars_count`: Count frequency of each character in a string. Return a dictionary.
+- [ ] `most_frequent_char`: Return the character that appears most often.
+- [ ] `first_unique_char`: Return the first character that appears only once.
+
+#### Encoding & Decoding
+
+- [ ] `read_aloud`: Convert digits to words. `42` → `"FOUR TWO"`
+- [ ] `morse_encode`: Text → Morse code.
+  *Historical note: Morse code was developed in the 1830s for telegraph communication.*
+- [ ] `morse_decode`: Morse code → Text.
+  *Note: Encoding transforms data into another format using a known scheme (reversible). Different from encryption (
+  secret) and hashing (one-way).*
+- [ ] `roman_to_int`: Convert Roman numeral string to integer. `"XIV"` → `14`
+- [ ] `text_messaging`: Convert message → old cellphone key presses (T9 style).
 
 | Key | Symbols | Key | Symbols |
 |-----|---------|-----|---------|
@@ -103,18 +118,6 @@
 | 3   | DEF     | 8   | TUV     |
 | 4   | GHI     | 9   | WXYZ    |
 | 5   | JKL     | 0   | space   |
-
-#### Easy
-
-- [ ] `morse_encode`
-  Add historical note about morse code
-- [ ] `morse_decode`
-  Add note about what does encoding mean
-- [ ] first unique char
-- [ ] `read_aloud` -> 42 -> “FOUR TWO”
-- [ ] Roman to integer
-- [ ] `most_frequent_elements`
-- [ ] `chars_count`
 
 #### Mid
 
