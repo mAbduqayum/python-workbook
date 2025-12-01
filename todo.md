@@ -102,7 +102,7 @@
 
 #### Encoding & Decoding
 
-- [ ] `read_aloud`: Convert digits to words. `42` → `"FOUR TWO"`
+- [ ] `read_aloud`: Convert digits to words.
 - [ ] `morse_encode`: Text → Morse code.
   *Historical note: Morse code was developed in the 1830s for telegraph communication.*
 - [ ] `morse_decode`: Morse code → Text.
