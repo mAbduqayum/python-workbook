@@ -38,16 +38,16 @@ Install the following tools:
 
 ### Quick Start
 
-1. Read the documentation in [`000_intro/000_intro_docs/`](000_intro/000_intro_docs/table_of_contents.md)
-2. Start with basic exercises in the `000_intro/` directory
+1. Read the documentation in [`intro/_docs/`](intro/_docs/table_of_contents.md)
+2. Start with basic exercises in the `intro/` directory
 3. Use `uv run` to execute Python files
 
 ## Recommended Reading Order
 
-1. [`Introduction`](000_intro/000_intro_docs/table_of_contents.md)
-2. [`Conditional`](100_conditionals/100_conditionals_docs/table_of_contents.md)
-3. [`Repetition`](200_repetitions/200_repetition_docs/table_of_contents.md)
-4. [`Function`](300_functions/_docs/table_of_contents.md)
+1. [`Introduction`](intro/_docs/table_of_contents.md)
+2. [`Conditional`](conditionals/_docs/table_of_contents.md)
+3. [`Repetition`](repetitions/_docs/table_of_contents.md)
+4. [`Function`](functions/_docs/table_of_contents.md)
 5. [`List`](lists/_docs/table_of_contents.md)
 6. [`Set`](sets/_docs/table_of_contents.md)
 7. [`Dict`](dicts/_docs/table_of_contents.md)

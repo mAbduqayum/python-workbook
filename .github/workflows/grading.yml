@@ -19,9 +19,9 @@ jobs:
       fail-fast: false
       matrix:
         test-module:
-          - 000_intro
-          - 100_conditionals
-          - 200_repetitions
+          - intro
+          - conditionals
+          - repetitions
 
     steps:
       - name: Checkout repository

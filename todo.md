@@ -1,4 +1,4 @@
-## 200_repetitions
+## repetitions
 
 - n numbers
 - n even numbers
@@ -22,7 +22,7 @@
 
 -[ ] collatz question: output in multiple lines to make it easier
 
-## 300_functions
+## functions
 
 - time_it (which prints how much time the function took?)
 
