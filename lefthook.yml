@@ -21,7 +21,8 @@ pre-push:
   piped: true # stop if one fails
   commands:
     lint:
-      run: ruff check .
+      glob: "src/*.py"
+      run: ruff check {push_files}
     #test:
     #  run: uv run pytest tests/
     #security-check:

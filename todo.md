@@ -1,4 +1,4 @@
-## 200_repetitions
+## repetitions
 
 - n numbers
 - n even numbers
@@ -22,7 +22,7 @@
 
 -[ ] collatz question: output in multiple lines to make it easier
 
-## 300_functions
+## functions
 
 - time_it (which prints how much time the function took?)
 
@@ -102,7 +102,7 @@
 
 #### Encoding & Decoding
 
-- [ ] `read_aloud`: Convert digits to words. `42` → `"FOUR TWO"`
+- [ ] `read_aloud`: Convert digits to words.
 - [ ] `morse_encode`: Text → Morse code.
   *Historical note: Morse code was developed in the 1830s for telegraph communication.*
 - [ ] `morse_decode`: Morse code → Text.
