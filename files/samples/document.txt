@@ -1,0 +1,8 @@
+This document contains confidential information.
+The password for the system is stored securely.
+Do not share any secret data with unauthorized users.
+All private communications must remain private.
+
+Public information can be shared freely.
+This paragraph has no sensitive content.
+Contact support for any questions.

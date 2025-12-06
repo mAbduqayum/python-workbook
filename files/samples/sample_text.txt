@@ -1,0 +1,13 @@
+The quick brown fox jumps over the lazy dog.
+
+Programming is the art of telling a computer what to do.
+Python makes programming enjoyable and productive.
+
+Hello World! This is the the classic programming example.
+Did you notice the repeated "the" in the previous sentence?
+Finding repeated words is a common text processing task.
+
+The best programmers are those who understand that
+simple solutions are often the most elegant.
+Code should be written to be read by humans first,
+and machines second.
