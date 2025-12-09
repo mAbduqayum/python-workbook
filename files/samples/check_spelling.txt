@@ -1,0 +1,4 @@
+Hello world, this is a test.
+Ths is a sentense with some mispeled words.
+Python programing is grate for lerning.
+The computr can help us write bettr code.

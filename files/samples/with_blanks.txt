@@ -1,0 +1,9 @@
+Line one of the file.
+
+Line three after a blank line.
+
+Line five after a whitespace-only line.
+
+
+Line eight after two blank lines.
+The end of the file.
