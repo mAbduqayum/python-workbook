@@ -5,7 +5,7 @@ Create a function that finds all lines containing a search term and returns them
 ## Template
 
 ```python
-def search_lines(file_path: str, term: str) -> list[tuple[int, str]]:
+def search_lines(file_path: str, term: str) -> list[list[int | str]]:
     pass
 
 

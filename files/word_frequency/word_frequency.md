@@ -12,8 +12,8 @@ def word_frequency(file_path: str) -> dict[str, int]:
 if __name__ == "__main__":
     # Create a test file
     with open("text.txt", "w") as f:
-        f.write("hello world\n")
-        f.write("hello python world\n")
+        f.write("Hello world!\n")
+        f.write("hello Python, world.\n")
 
     # Test your function
     print(word_frequency("text.txt"))
@@ -23,5 +23,11 @@ if __name__ == "__main__":
 ## Note
 
 - Words are separated by whitespace
-- Words are case-sensitive ("Hello" and "hello" are different)
+- Words are case-insensitive ("Hello" and "hello" are the same)
+- Strip common punctuation (.,!?;:'") from words
 - Return an empty dictionary for an empty file
+- After cleaning, skip empty strings
+
+## Bonus Challenge
+
+Implement `word_frequency2` using Python's `Counter` from the `collections` module

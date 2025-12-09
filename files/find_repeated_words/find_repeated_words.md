@@ -5,7 +5,7 @@ Create a function that finds consecutively repeated words in a file.
 ## Template
 
 ```python
-def find_repeated_words(file_path: str) -> list[tuple[int, str]]:
+def find_repeated_words(file_path: str) -> list[list[int | str]]:
     pass
 
 
@@ -27,5 +27,5 @@ if __name__ == "__main__":
 - A repeated word appears twice in a row (e.g., "the the")
 - Comparison should be case-insensitive ("The the" counts as repeated)
 - Check across line boundaries (word at end of line followed by same word at start of next line)
-- Return list of tuples: (line_number, word) where line_number is where the second occurrence appears
-- The word in the tuple should be lowercase
+- Return list of lists: [line_number, word] where line_number is where the second occurrence appears
+- The word in the list should be lowercase
