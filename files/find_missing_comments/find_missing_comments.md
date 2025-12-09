@@ -5,7 +5,7 @@ Create a function that finds Python functions without preceding comment lines.
 ## Template
 
 ```python
-def find_missing_comments(file_path: str) -> list[tuple[int, str]]:
+def find_missing_comments(file_path: str) -> list[list[int | str]]:
     pass
 
 
@@ -29,6 +29,6 @@ if __name__ == "__main__":
 
 - Find all lines starting with `def ` (function definitions)
 - Check if the previous non-empty line contains a comment (`#`)
-- Return list of tuples: (line_number, function_name)
+- Return list of lists: [line_number, function_name]
 - Extract just the function name (without `def`, parameters, or colon)
 - Skip the first line of the file (if it's a function definition, it can't have a preceding comment)
