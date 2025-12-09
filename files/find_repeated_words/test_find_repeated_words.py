@@ -16,7 +16,7 @@ class TestFindRepeatedWords:
 
         result = find_repeated_words(str(test_file))
 
-        assert result == [(1, "the")]
+        assert result == [[1, "the"]]
 
     def test_case_insensitive(self, tmp_path):
         test_file = tmp_path / "test.txt"
@@ -24,7 +24,7 @@ class TestFindRepeatedWords:
 
         result = find_repeated_words(str(test_file))
 
-        assert result == [(1, "the")]
+        assert result == [[1, "the"]]
 
     def test_multiple_repeats(self, tmp_path):
         test_file = tmp_path / "test.txt"
@@ -32,7 +32,7 @@ class TestFindRepeatedWords:
 
         result = find_repeated_words(str(test_file))
 
-        assert result == [(1, "the"), (1, "fox")]
+        assert result == [[1, "the"], [1, "fox"]]
 
     def test_across_lines(self, tmp_path):
         test_file = tmp_path / "test.txt"
@@ -40,7 +40,7 @@ class TestFindRepeatedWords:
 
         result = find_repeated_words(str(test_file))
 
-        assert result == [(2, "quick")]
+        assert result == [[2, "quick"]]
 
     def test_no_repeats(self, tmp_path):
         test_file = tmp_path / "test.txt"
@@ -64,4 +64,4 @@ class TestFindRepeatedWords:
 
         result = find_repeated_words(str(test_file))
 
-        assert result == [(1, "hello"), (1, "world")]
+        assert result == [[1, "hello"], [1, "world"]]

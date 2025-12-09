@@ -24,7 +24,7 @@ class TestFindMissingComments:
 
         result = find_missing_comments(str(test_file))
 
-        assert result == [(1, "foo")]
+        assert result == [[1, "foo"]]
 
     def test_mixed_functions(self, tmp_path):
         test_file = tmp_path / "test.py"
@@ -35,7 +35,7 @@ class TestFindMissingComments:
 
         result = find_missing_comments(str(test_file))
 
-        assert result == [(5, "bad")]
+        assert result == [[5, "bad"]]
 
     def test_inline_comment(self, tmp_path):
         test_file = tmp_path / "test.py"
@@ -63,7 +63,7 @@ class TestFindMissingComments:
 
         result = find_missing_comments(str(test_file))
 
-        assert result == [(1, "foo"), (4, "bar")]
+        assert result == [[1, "foo"], [4, "bar"]]
 
     def test_function_with_parameters(self, tmp_path):
         test_file = tmp_path / "test.py"
@@ -71,7 +71,7 @@ class TestFindMissingComments:
 
         result = find_missing_comments(str(test_file))
 
-        assert result == [(1, "foo")]
+        assert result == [[1, "foo"]]
 
     def test_empty_file(self, tmp_path):
         test_file = tmp_path / "test.py"
