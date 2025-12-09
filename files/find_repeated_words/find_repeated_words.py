@@ -1,4 +1,4 @@
-def find_repeated_words(file_path: str) -> list[tuple[int, str]]:
+def find_repeated_words(file_path: str) -> list[list[int | str]]:
     repeats = []
     prev_word = None
     with open(file_path, "r", encoding="utf-8") as f:
@@ -7,7 +7,7 @@ def find_repeated_words(file_path: str) -> list[tuple[int, str]]:
             for word in words:
                 word_lower = word.lower().strip(".,!?;:'\"")
                 if prev_word and word_lower == prev_word:
-                    repeats.append((line_num, word_lower))
+                    repeats.append([line_num, word_lower])
                 prev_word = word_lower
     return repeats
 

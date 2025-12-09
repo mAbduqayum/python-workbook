@@ -1,4 +1,4 @@
-def find_missing_comments(file_path: str) -> list[tuple[int, str]]:
+def find_missing_comments(file_path: str) -> list[list[int | str]]:
     missing = []
     with open(file_path, "r", encoding="utf-8") as f:
         lines = f.readlines()
@@ -18,7 +18,7 @@ def find_missing_comments(file_path: str) -> list[tuple[int, str]]:
                     break
 
             if not has_comment:
-                missing.append((i, func_name))
+                missing.append([i, func_name])
 
     return missing
 

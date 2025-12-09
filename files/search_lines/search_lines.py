@@ -1,9 +1,9 @@
-def search_lines(file_path: str, term: str) -> list[tuple[int, str]]:
-    results: list[tuple[int, str]] = []
+def search_lines(file_path: str, term: str) -> list[list[int | str]]:
+    results: list[list[int | str]] = []
     with open(file_path, "r", encoding="utf-8") as f:
         for line_num, line in enumerate(f, 1):
             if term in line:
-                results.append((line_num, line.rstrip("\n")))
+                results.append([line_num, line.rstrip("\n")])
     return results
 
 
