@@ -36,7 +36,7 @@ mindmap
 1. [`fahrenheit_to_celsius`](../fahrenheit_to_celsius/fahrenheit_to_celsius.md)
 1. [`rectangle_area`](../rectangle_area/rectangle_area.md)
 1. [`triangle_area`](../triangle_area/triangle_area.md)
-1. [`get_hypotenuse`](../get_hWypotenuse/get_hypotenuse.md)
+1. [`get_hypotenuse`](../get_hypotenuse/get_hypotenuse.md)
 1. [`bmi`](../bmi/bmi.md)
 1. [`is_leap_year`](../is_leap_year/is_leap_year.md)
 1. [`is_valid_triangle`](../is_valid_triangle/is_valid_triangle.md)
