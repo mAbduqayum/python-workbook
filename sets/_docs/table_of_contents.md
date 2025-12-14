@@ -33,8 +33,8 @@ mindmap
 Read these in order before starting the exercises:
 
 1. [Set Basics](set_basics.md) - Creating sets, basic operations, when to use sets
-2. [Set Operations](set_operations.md) - Union, intersection, difference, symmetric difference
-3. [Set Best Practices](set_best_practices.md) - Performance, common patterns, pitfalls
+1. [Set Operations](set_operations.md) - Union, intersection, difference, symmetric difference
+1. [Set Best Practices](set_best_practices.md) - Performance, common patterns, pitfalls
 
 ---
 

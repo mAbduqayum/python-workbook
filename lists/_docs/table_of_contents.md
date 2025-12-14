@@ -43,12 +43,12 @@ mindmap
 ## Recommended Reading Order
 
 1. [`list_basics.md`](list_basics.md) - Introduction, creating lists, and accessing elements
-2. [`list_operations.md`](list_operations.md) - Operations and methods
-3. [`join_iterable.md`](join_iterable.md) - Joining iterables to strings
-4. [`list_iteration.md`](list_iteration.md) - Iteration patterns and common patterns
-5. [`list_copying.md`](list_copying.md) - Copying concepts and methods
-6. [`nested_lists.md`](nested_lists.md) - Nested lists (2D and 3D)
-7. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
+1. [`list_operations.md`](list_operations.md) - Operations and methods
+1. [`join_iterable.md`](join_iterable.md) - Joining iterables to strings
+1. [`list_iteration.md`](list_iteration.md) - Iteration patterns and common patterns
+1. [`list_copying.md`](list_copying.md) - Copying concepts and methods
+1. [`nested_lists.md`](nested_lists.md) - Nested lists (2D and 3D)
+1. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
 
 ## Practice Questions
 
