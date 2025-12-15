@@ -48,3 +48,9 @@ mindmap
 1. [`binary_search`](../binary_search/binary_search.md) - Search in sorted list
 1. [`flatten_list`](../flatten_list/flatten_list.md) - Flatten nested lists
 1. [`nested_sum`](../nested_sum/nested_sum.md) - Sum of nested list
+1. [`edit_distance`](../edit_distance/edit_distance.md) - String edit distance (Levenshtein)
+1. [`coin_sum`](../coin_sum/coin_sum.md) - Count ways to make change
+1. [`element_spelling`](../element_spelling/element_spelling.md) - Spell words with element symbols
+1. [`element_sequences`](../element_sequences/element_sequences.md) - Longest element chain game
+1. [`run_length_encoding`](../run_length_encoding/run_length_encoding.md) - Compress strings
+1. [`run_length_decoding`](../run_length_decoding/run_length_decoding.md) - Decompress strings
