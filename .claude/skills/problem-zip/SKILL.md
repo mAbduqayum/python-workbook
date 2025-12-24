@@ -1,3 +1,8 @@
+---
+name: problem-zip
+description: Create QDUOJ import ZIP files from problem folders. Use when user wants to export, package, or create ZIP for OJ problem import.
+---
+
 # QDUOJ Import ZIP Creator
 
 Create a QDUOJ import ZIP file from problem folder(s) in `QDUOJ_import/`.

@@ -1,3 +1,8 @@
+---
+name: problem
+description: Create QDUOJ online judge problems with proper format. Use when user mentions creating OJ problems, coding challenges, test cases, or QDUOJ import.
+---
+
 # QDUOJ Problem Creator
 
 Create a new QDUOJ problem in the `QDUOJ_import/` directory following the official import format.
