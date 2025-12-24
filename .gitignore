@@ -185,5 +185,4 @@ uv.lock
 slides/**/*.pdf
 
 # QDUOJ
-QDUOJ/**
-!QDUOJ/CLAUDE.md
+.archive/
