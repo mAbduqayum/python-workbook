@@ -55,3 +55,18 @@ print(result)
 # Is evaluated as: (not True) or (False and True)
 # Result: False or False -> False
 ```
+
+## Short-Circuit Evaluation
+
+Python evaluates boolean expressions from left to right and stops as soon as the outcome is certain.
+
+- `and`: Stops if the left side is `False` (no need to check further)
+- `or`: Stops if the left side is `True` (already satisfied)
+
+```python
+x = 0
+if x != 0 and (10 / x) > 1:
+    print("Valid")
+# x != 0 is False, so Python stops and never attempts 10 / x
+# Without short-circuiting, this would crash with ZeroDivisionError
+```
