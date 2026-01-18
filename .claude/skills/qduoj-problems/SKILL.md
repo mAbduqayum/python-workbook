@@ -7,6 +7,15 @@ description: Create QDUOJ online judge problems (single or batch) with proper fo
 
 Create QDUOJ problems in the `QDUOJ_import/` directory following the official import format.
 
+## CRITICAL: Template Fields Cannot Be Empty
+
+**ALL template fields (`prepend`, `template`, `append`) MUST be non-empty strings.**
+
+Empty strings like `"prepend": ""` will cause a **server error** on import because QDUOJ's `TemplateSerializer` requires non-empty CharField values.
+
+- Correct: `"prepend": "# No imports needed"`
+- Wrong: `"prepend": ""`
+
 ## Single Problem Creation
 
 ### Instructions
@@ -33,7 +42,7 @@ Create QDUOJ problems in the `QDUOJ_import/` directory following the official im
        "description": {"format": "html", "value": "<p>Description</p>"},
        "input_description": {"format": "html", "value": "<p>Input format</p>"},
        "output_description": {"format": "html", "value": "<p>Output format</p>"},
-       "hint": {"format": "html", "value": "<p>Hints</p>"},
+       "hint": {"format": "html", "value": ""},
        "samples": [{"input": "sample input", "output": "sample output"}],
        "test_case_score": [
            {"input_name": "1.in", "output_name": "1.out", "score": 10}
@@ -41,7 +50,13 @@ Create QDUOJ problems in the `QDUOJ_import/` directory following the official im
        "time_limit": 1000,
        "memory_limit": 128,
        "difficulty": "Low",
-       "template": {},
+       "template": {
+           "Python3": {
+               "prepend": "# No imports needed",
+               "template": "# Your code here\npass",
+               "append": "# End of submission"
+           }
+       },
        "spj": null,
        "rule_type": "ACM",
        "source": "",
@@ -53,6 +68,70 @@ Create QDUOJ problems in the `QDUOJ_import/` directory following the official im
 4. Create test cases in `testcase/` directory (scores should sum to 100)
 
 5. **Create the import ZIP** after all files are ready (see ZIP Creation section)
+
+## Code Templates
+
+Templates allow you to wrap user submissions with boilerplate code.
+
+### When to Use Templates
+
+If the source problem markdown has a `## Template:` section, use that template in QDUOJ with I/O handled in the `append` section.
+
+### How Templates Work
+
+When a submission is judged, QDUOJ combines the code like this:
+```python
+code = f"{template['prepend']}\n{user_code}\n{template['append']}"
+```
+
+- **prepend**: Code added BEFORE the user's submission (hidden from user)
+- **template**: The starter code shown to the user in the editor
+- **append**: Code added AFTER the user's submission (hidden from user)
+
+### Template Structure
+
+```json
+"template": {
+    "Python3": {
+        "prepend": "# Prepend",
+        "template": "def solve(n: int) -> int:\n    # Your code here\n    pass",
+        "append": "# Append"
+    }
+}
+```
+
+**Critical**: `prepend` and `append` CANNOT be empty strings. Use `"# Prepend"` and `"# Append"` as placeholders.
+
+### Template Example: Function Implementation
+
+Student implements a function, template handles I/O:
+
+```json
+"template": {
+    "Python3": {
+        "prepend": "# Prepend",
+        "template": "def is_leap_year(year: int) -> bool:\n    # Your code here\n    pass",
+        "append": "if __name__ == \"__main__\":\n    year = int(input())\n    if is_leap_year(year):\n        print(\"Leap year\")\n    else:\n        print(\"Not leap year\")"
+    }
+}
+```
+
+In this example:
+- User only sees and edits the `is_leap_year` function
+- The `append` section handles reading input and printing output
+- Test cases use standard I/O but user focuses on logic
+
+### Template Example: Hidden Test Harness
+
+```json
+"template": {
+    "Python3": {
+        "prepend": "import sys\nfrom io import StringIO",
+        "template": "def process(data: list[int]) -> int:\n    # Your code here\n    pass",
+        "append": "# Test harness\nresult = process([int(x) for x in input().split()])\nprint(result)"
+    }
+}
+```
 
 ## Batch Problem Creation
 
@@ -144,6 +223,7 @@ The QDUOJ importer expects this exact structure inside the ZIP:
 
 ## Critical Rules
 
+- **No hints by default**: Leave `hint` value empty (`""`) unless explicitly requested
 - **Sequential numbering**: ZIP folders MUST be `1/`, `2/`, `3/`, etc. - no gaps, always start from 1
 - **Template fields**: If using templates, `prepend` and `append` CANNOT be empty strings - use `"# Prepend"` and `"# Append"` as placeholders
 - **Format objects**: Description fields must use `{"format": "html", "value": "..."}`
@@ -152,18 +232,6 @@ The QDUOJ importer expects this exact structure inside the ZIP:
 - **Display ID**: Max 24 characters, must be unique per problem
 - **Test case scores**: Must sum to 100
 - **Always create ZIP**: After creating problem folder(s), generate the import ZIP file
-
-## Template Example (Optional)
-
-```json
-"template": {
-    "Python3": {
-        "prepend": "# Prepend",
-        "template": "def solve():\n    # Your code here\n    pass\n\nsolve()",
-        "append": "# Append"
-    }
-}
-```
 
 ## Import Steps (for reference)
 
