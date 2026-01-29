@@ -1,5 +1,26 @@
 # Table of Contents
 
+```mermaid
+mindmap
+    root((Repetition))
+        for loop
+            range
+            iterate strings
+        while loop
+            condition-based
+            sentinel value
+        Patterns
+            accumulation
+            counting
+            min/max
+        Nested loops
+            rows and columns
+            patterns
+        Control
+            break
+            continue
+```
+
 ## Recommended Reading Order
 
 1. [`repetitions.md`](repetitions.md)
