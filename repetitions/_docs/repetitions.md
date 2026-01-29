@@ -251,11 +251,9 @@ print()  # Newline at the end
 ### Using sep Parameter
 
 ```python
-# Print with custom separator
-for i in range(1, 6):
-    print(i, sep="-")
-print()
-# Output: 1-2-3-4-5-
+# sep separates multiple arguments in a single print call
+print(1, 2, 3, 4, 5, sep="-")
+# Output: 1-2-3-4-5
 ```
 
 ## When to Use `for` vs `while`
