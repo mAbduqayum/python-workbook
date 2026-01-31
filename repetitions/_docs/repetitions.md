@@ -182,20 +182,31 @@ for i in range(5):
 print(f"Maximum: {max_value}")
 ```
 
+> **Note:** For minimum, use `float('inf')` instead.
+
 ## Nested Loops
 
 A loop inside another loop is called a **nested loop**. The inner loop executes completely for each iteration of the
 outer loop.
 
-### Example 1: Triangle of Numbers
+### Example: Triangle of Numbers
 
 ```python
 n = int(input())
 
 for i in range(1, n + 1):
     for j in range(1, i + 1):
-        print(j, end="")
+        print(j, end=" ")
     print()
+```
+
+**Output (for n = 4):**
+
+```
+1
+1 2
+1 2 3
+1 2 3 4
 ```
 
 ## Loop Control Statements
@@ -234,7 +245,7 @@ for i in range(1, 11):
 9
 ```
 
-## Using `print()` with Loops
+## Useful `print()` Parameters
 
 ### Printing on the Same Line
 
@@ -319,6 +330,7 @@ for i in range(5):
 | While loop                  | `while condition:`           | Loop while condition is True   |
 | Iterate string              | `for char in text:`          | Process each character         |
 | Loop with index             | `for i in range(len(text)):` | Access by index                |
+| Loop with index (better)    | `for i, char in enumerate(text):` | Access index and value    |
 | Break out of loop           | `break`                      | Exit loop immediately          |
 | Skip to next iteration      | `continue`                   | Skip rest of current iteration |
 | Infinite loop (be careful!) | `while True:`                | Loop forever (use with break)  |
@@ -344,5 +356,3 @@ Loops are essential for writing programs that process large amounts of data or r
 - Python supports an `else` clause on loops that executes when the loop completes without hitting a `break`. While this
 feature exists, it's not commonly used and can be confusing since it's unique to Python and not available in most other
 programming languages. We recommend avoiding it for clarity.
-
-With loops, you can solve much more complex problems efficiently. Practice is key to mastering these concepts!
