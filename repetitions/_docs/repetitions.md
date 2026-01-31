@@ -30,7 +30,7 @@ The `for` loop is used to iterate over a sequence (like a range of numbers, a st
 
 ```python
 for variable in sequence:
-# code to execute
+    # code to execute
 ```
 
 ### Example: Counting from 1 to 5
@@ -109,8 +109,8 @@ The `while` loop repeats as long as a condition is true.
 
 ```python
 while condition:
-# code to execute
-# (usually modify something to eventually make condition false)
+    # code to execute
+    # (usually modify something to eventually make condition false)
 ```
 
 ### Example 1: Count from 1 to 5
@@ -308,16 +308,6 @@ for i in range(5):
 # Use a while loop if you need to control the increment
 ```
 
-## Tips for Success
-
-1. **Choose the right loop**: Use `for` when you know the count, `while` for conditions
-2. **Initialize before the loop**: Set up accumulators, counters, and other variables
-3. **Update inside the loop**: Make sure loop variables change to avoid infinite loops
-4. **Test loop boundaries**: Verify your loop runs the correct number of times
-5. **Use descriptive variable names**: `row`, `column`, `total` are better than `i`, `j`, `x`
-6. **Indent properly**: Python requires correct indentation for loop bodies
-7. **Debug with print statements**: Add `print()` to see what's happening in each iteration
-
 ## Quick Reference
 
 | Operation                   | Example                      | Description                    |
@@ -332,20 +322,27 @@ for i in range(5):
 | Break out of loop           | `break`                      | Exit loop immediately          |
 | Skip to next iteration      | `continue`                   | Skip rest of current iteration |
 | Infinite loop (be careful!) | `while True:`                | Loop forever (use with break)  |
-| Get digit                   | `digit = n % 10`             | Extract last digit             |
-| Remove digit                | `n = n // 10`                | Remove last digit              |
 | Accumulate sum              | `total += value`             | Add to running total           |
 | Count occurrences           | `count += 1`                 | Increment counter              |
 
 ## Summary
 
-Loops are essential for writing programs that process large amounts of data or repeat tasks. The key concepts covered in
-this chapter are:
+Loops are essential for writing programs that process large amounts of data or repeat tasks.
 
-- **For loops**: Iterate a specific number of times using `range()`
-- **While loops**: Repeat based on a condition
-- **Nested loops**: Loops within loops for multidimensional patterns
-- **Loop control**: `break`, `continue`, and `else` clauses
-- **Common patterns**: Accumulation, counting, sentinel values, digit processing
+### Tips for Success
+
+1. **Choose the right loop**: Use `for` when you know the count, `while` for conditions
+2. **Initialize before the loop**: Set up accumulators, counters, and other variables
+3. **Update inside the loop**: Make sure loop variables change to avoid infinite loops
+4. **Test loop boundaries**: Verify your loop runs the correct number of times
+5. **Use descriptive variable names**: `row`, `column`, `total` are better than `i`, `j`, `x`
+6. **Indent properly**: Python requires correct indentation for loop bodies
+7. **Debug with print statements**: Add `print()` to see what's happening in each iteration
+
+### `else` After Loops
+
+- Python supports an `else` clause on loops that executes when the loop completes without hitting a `break`. While this
+feature exists, it's not commonly used and can be confusing since it's unique to Python and not available in most other
+programming languages. We recommend avoiding it for clarity.
 
 With loops, you can solve much more complex problems efficiently. Practice is key to mastering these concepts!
