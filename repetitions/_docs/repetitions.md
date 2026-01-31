@@ -2,9 +2,11 @@
 
 ## Introduction
 
-In the previous chapters, you worked with sequential programs and programs that use conditional statements to make
+In the previous chapters, you worked with sequential programs and programs that
+use conditional statements to make
 decisions.
-While these constructs are powerful, many interesting problems require executing the same code multiple times. For
+While these constructs are powerful, many interesting problems require executing
+the same code multiple times. For
 example:
 
 - Printing a pattern with 100 rows
@@ -12,7 +14,8 @@ example:
 - Processing each character in a string
 - Finding the sum of numbers from 1 to 1000
 
-Writing the same code repeatedly would be impractical and error-prone. **Loops** allow you to execute a block of code
+Writing the same code repeatedly would be impractical and error-prone. **Loops**
+allow you to execute a block of code
 multiple times efficiently.
 
 ## The Two Types of Loops
@@ -24,13 +27,14 @@ Python provides two main types of loops:
 
 ## The `for` Loop
 
-The `for` loop is used to iterate over a sequence (like a range of numbers, a string, or a list).
+The `for` loop is used to iterate over a sequence (like a range of numbers, a
+string, or a list).
 
 ### Basic Syntax
 
 ```python
 for variable in sequence:
-    # code to execute
+# code to execute
 ```
 
 ### Example: Counting from 1 to 5
@@ -52,7 +56,8 @@ for i in range(1, 6):
 
 ### The range() Function
 
-The `range()` function generates a sequence of numbers and is commonly used with for loops.
+The `range()` function generates a sequence of numbers and is commonly used with
+for loops.
 
 | Usage                      | Description                  | Example            | Generated Values   |
 |----------------------------|------------------------------|--------------------|--------------------|
@@ -109,8 +114,8 @@ The `while` loop repeats as long as a condition is true.
 
 ```python
 while condition:
-    # code to execute
-    # (usually modify something to eventually make condition false)
+# code to execute
+# (usually modify something to eventually make condition false)
 ```
 
 ### Example 1: Count from 1 to 5
@@ -186,7 +191,8 @@ print(f"Maximum: {max_value}")
 
 ## Nested Loops
 
-A loop inside another loop is called a **nested loop**. The inner loop executes completely for each iteration of the
+A loop inside another loop is called a **nested loop**. The inner loop executes
+completely for each iteration of the
 outer loop.
 
 ### Example: Triangle of Numbers
@@ -225,7 +231,8 @@ for i in range(100, 201):
 
 ### `continue` - Skip to Next Iteration
 
-The `continue` statement skips the rest of the current iteration and moves to the next:
+The `continue` statement skips the rest of the current iteration and moves to
+the next:
 
 ```python
 # Print odd numbers from 1 to 10
@@ -321,38 +328,46 @@ for i in range(5):
 
 ## Quick Reference
 
-| Operation                   | Example                      | Description                    |
-|-----------------------------|------------------------------|--------------------------------|
-| For loop (count)            | `for i in range(10):`        | Loop 10 times (0 to 9)         |
-| For loop (start, stop)      | `for i in range(5, 10):`     | Loop from 5 to 9               |
-| For loop (with step)        | `for i in range(0, 10, 2):`  | Loop 0, 2, 4, 6, 8             |
-| For loop (backwards)        | `for i in range(10, 0, -1):` | Loop 10, 9, 8, ..., 1          |
-| While loop                  | `while condition:`           | Loop while condition is True   |
-| Iterate string              | `for char in text:`          | Process each character         |
-| Loop with index             | `for i in range(len(text)):` | Access by index                |
-| Loop with index (better)    | `for i, char in enumerate(text):` | Access index and value    |
-| Break out of loop           | `break`                      | Exit loop immediately          |
-| Skip to next iteration      | `continue`                   | Skip rest of current iteration |
-| Infinite loop (be careful!) | `while True:`                | Loop forever (use with break)  |
-| Accumulate sum              | `total += value`             | Add to running total           |
-| Count occurrences           | `count += 1`                 | Increment counter              |
+| Operation                   | Example                           | Description                    |
+|-----------------------------|-----------------------------------|--------------------------------|
+| For loop (count)            | `for i in range(10):`             | Loop 10 times (0 to 9)         |
+| For loop (start, stop)      | `for i in range(5, 10):`          | Loop from 5 to 9               |
+| For loop (with step)        | `for i in range(0, 10, 2):`       | Loop 0, 2, 4, 6, 8             |
+| For loop (backwards)        | `for i in range(10, 0, -1):`      | Loop 10, 9, 8, ..., 1          |
+| While loop                  | `while condition:`                | Loop while condition is True   |
+| Iterate string              | `for char in text:`               | Process each character         |
+| Loop with index             | `for i in range(len(text)):`      | Access by index                |
+| Loop with index (better)    | `for i, char in enumerate(text):` | Access index and value         |
+| Break out of loop           | `break`                           | Exit loop immediately          |
+| Skip to next iteration      | `continue`                        | Skip rest of current iteration |
+| Infinite loop (be careful!) | `while True:`                     | Loop forever (use with break)  |
+| Accumulate sum              | `total += value`                  | Add to running total           |
+| Count occurrences           | `count += 1`                      | Increment counter              |
 
 ## Summary
 
-Loops are essential for writing programs that process large amounts of data or repeat tasks.
+Loops are essential for writing programs that process large amounts of data or
+repeat tasks.
 
 ### Tips for Success
 
-1. **Choose the right loop**: Use `for` when you know the count, `while` for conditions
-2. **Initialize before the loop**: Set up accumulators, counters, and other variables
-3. **Update inside the loop**: Make sure loop variables change to avoid infinite loops
+1. **Choose the right loop**: Use `for` when you know the count, `while` for
+   conditions
+2. **Initialize before the loop**: Set up accumulators, counters, and other
+   variables
+3. **Update inside the loop**: Make sure loop variables change to avoid infinite
+   loops
 4. **Test loop boundaries**: Verify your loop runs the correct number of times
-5. **Use descriptive variable names**: `row`, `column`, `total` are better than `i`, `j`, `x`
+5. **Use descriptive variable names**: `row`, `column`, `total` are better than
+   `i`, `j`, `x`
 6. **Indent properly**: Python requires correct indentation for loop bodies
-7. **Debug with print statements**: Add `print()` to see what's happening in each iteration
+7. **Debug with print statements**: Add `print()` to see what's happening in
+   each iteration
 
 ### `else` After Loops
 
-- Python supports an `else` clause on loops that executes when the loop completes without hitting a `break`. While this
-feature exists, it's not commonly used and can be confusing since it's unique to Python and not available in most other
-programming languages. We recommend avoiding it for clarity.
+- Python supports an `else` clause on loops that executes when the loop
+  completes without hitting a `break`. While this
+  feature exists, it's not commonly used and can be confusing since it's unique
+  to Python and not available in most other
+  programming languages. We recommend avoiding it for clarity.
