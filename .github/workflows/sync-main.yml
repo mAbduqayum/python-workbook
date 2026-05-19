@@ -78,7 +78,7 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore(sync): mirror solutions → main, strip solution code [skip ci]"
+          git commit -m "chore(sync): mirror branch → main"
           git push origin main
           echo "main updated from solutions"
 
