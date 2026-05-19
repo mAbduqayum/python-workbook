@@ -12,7 +12,7 @@ Write a program that converts pressure from kilopascals to other metric units.
 **Example 1:**
 
 ```
-Enter pressure in kilopascals: 101.325
+101.325
 ```
 
 ```
@@ -24,7 +24,7 @@ Pressure in atmospheres: 1.00
 **Example 2:**
 
 ```
-Enter pressure in kilopascals: 200
+200
 ```
 
 ```
@@ -36,7 +36,7 @@ Pressure in atmospheres: 1.97
 **Example 3:**
 
 ```
-Enter pressure in kilopascals: 50
+50
 ```
 
 ```
@@ -50,7 +50,3 @@ Pressure in atmospheres: 0.49
 - Pascals: `Pa = kPa × 1000`
 - Bars: `bar = kPa / 100`
 - Atmospheres: `atm = kPa / 101.325`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

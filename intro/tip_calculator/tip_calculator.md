@@ -45,7 +45,3 @@ Enter tip percentage: 15
 Tip amount: 12.86
 Total amount: 98.61
 ```
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

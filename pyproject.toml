@@ -13,4 +13,5 @@ dev = [
 ]
 
 [tool.pytest.ini_options]
-addopts = "--tb=no --continue-on-collection-errors"
+addopts = "--import-mode=importlib"
+pythonpath = ["."]

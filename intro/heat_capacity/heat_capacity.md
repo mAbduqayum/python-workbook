@@ -54,6 +54,5 @@ Cost to heat water: 0.00 euros
 
 ## Note
 
-- Use `.2f` formatting to display 2 decimal places
 - Water's specific heat capacity is `4.186 J/(g·°C)`
 - `1 kWh = 3,600,000 Joules`

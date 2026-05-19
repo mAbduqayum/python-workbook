@@ -50,7 +50,3 @@ Balance after 1 year(s): 2556.83
 ## Formula
 
 `balance = principal × (1 + rate/1200)^(12×years)`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

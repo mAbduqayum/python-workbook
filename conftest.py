@@ -9,8 +9,23 @@ import pytest
 from tests.grading import GradeReporter
 
 
+def pytest_pycollect_makemodule(module_path, parent, **kwargs):
+    """Put each exercise directory on sys.path.
+
+    With ``--import-mode=importlib`` pytest does not add a test file's own
+    directory to ``sys.path``. Many exercises import their solution as a
+    sibling module (e.g. ``from chars_count import chars_count``), so we
+    insert the test file's directory here before the module is imported.
+    """
+    exercise_dir = str(Path(module_path).parent)
+    if exercise_dir not in sys.path:
+        sys.path.insert(0, exercise_dir)
+    return None
+
+
 class RunResult(NamedTuple):
     """Result of running a script."""
+
     stdout: str
     stderr: str
     returncode: int
@@ -34,7 +49,9 @@ class ScriptRunner:
                 capture_output=True,
                 timeout=self.DEFAULT_TIMEOUT,
             )
-            return RunResult(result.stdout.strip(), result.stderr.strip(), result.returncode)
+            return RunResult(
+                result.stdout.strip(), result.stderr.strip(), result.returncode
+            )
         except subprocess.TimeoutExpired:
             return RunResult("", "Script timed out", 1)
 

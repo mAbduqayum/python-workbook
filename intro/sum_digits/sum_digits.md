@@ -13,7 +13,7 @@ Write a program that calculates the sum of digits in a two-digit integer.
 **Example 1:**
 
 ```
-Enter a two-digit integer: 47
+47
 ```
 
 ```
@@ -23,7 +23,7 @@ Enter a two-digit integer: 47
 **Example 2:**
 
 ```
-Enter a two-digit integer: 82
+82
 ```
 
 ```
@@ -33,13 +33,9 @@ Enter a two-digit integer: 82
 **Example 3:**
 
 ```
-Enter a two-digit integer: 95
+95
 ```
 
 ```
 9 + 5 = 14
 ```
-
-## Note
-
-Use integer division (`//`) and modulo (`%`) operations to extract digits.

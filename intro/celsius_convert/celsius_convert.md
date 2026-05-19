@@ -13,7 +13,7 @@ Write a program that converts a temperature from Celsius to both Fahrenheit and 
 **Example 1:**
 
 ```
-Enter temperature in Celsius: 25
+25
 ```
 
 ```
@@ -24,7 +24,7 @@ Temperature in Kelvin: 298.15
 **Example 2:**
 
 ```
-Enter temperature in Celsius: 0
+0
 ```
 
 ```
@@ -35,7 +35,7 @@ Temperature in Kelvin: 273.15
 **Example 3:**
 
 ```
-Enter temperature in Celsius: 100
+100
 ```
 
 ```
@@ -47,7 +47,3 @@ Temperature in Kelvin: 373.15
 
 - Fahrenheit: `F = (C × 9/5) + 32`
 - Kelvin: `K = C + 273.15`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

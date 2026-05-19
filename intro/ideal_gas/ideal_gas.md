@@ -59,5 +59,4 @@ Amount of gas: 1.01 moles
 
 ## Note
 
-- Use `.2f` formatting to display 2 decimal places
 - Convert Celsius to Kelvin: `K = °C + 273.15`

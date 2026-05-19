@@ -2,26 +2,19 @@ name: Grade Calculator
 
 on:
   push:
-    branches-ignore:
-      - "main"
-  workflow_dispatch:
-  workflow_run:
-    workflows: ["Sync to Solutions"]
-    types:
-      - completed
     branches: [solutions]
+  workflow_dispatch:
 
+# Only the latest commit's grade matters; cancel superseded runs.
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   calculate-grade:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        test-module:
-          - intro
-          - conditionals
-          - repetitions
+    permissions:
+      contents: read
 
     steps:
       - name: Checkout repository
@@ -30,13 +23,11 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
         with:
-          version: "0.8.22"
+          version: "0.11.7"
+          enable-cache: true
 
       - name: Install dependencies
-        run: |
-          uv sync
+        run: uv sync
 
-      - name: Run tests for ${{ matrix.test-module }}
-        run: |
-          echo "## ${{ matrix.test-module }}" >> $GITHUB_STEP_SUMMARY
-          uv run pytest ${{ matrix.test-module }}
+      - name: Run test suite and report grade
+        run: uv run pytest -n auto --tb=no --continue-on-collection-errors
