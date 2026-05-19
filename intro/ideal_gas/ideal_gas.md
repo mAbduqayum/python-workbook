@@ -28,7 +28,7 @@ Amount of gas: 98.47 moles
 ```
 Enter pressure (Pascals): 101325
 Enter volume (liters): 22.4
-Temperature (°C): 0
+Enter temperature (°C): 0
 ```
 
 ```
