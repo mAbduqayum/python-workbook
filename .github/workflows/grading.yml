@@ -2,26 +2,13 @@ name: Grade Calculator
 
 on:
   push:
-    branches-ignore:
-      - "main"
-  workflow_dispatch:
-  workflow_run:
-    workflows: ["Sync to Solutions"]
-    types:
-      - completed
     branches: [solutions]
+  workflow_dispatch:
 
 
 jobs:
   calculate-grade:
     runs-on: ubuntu-latest
-    strategy:
-      fail-fast: false
-      matrix:
-        test-module:
-          - intro
-          - conditionals
-          - repetitions
 
     steps:
       - name: Checkout repository
@@ -36,7 +23,6 @@ jobs:
         run: |
           uv sync
 
-      - name: Run tests for ${{ matrix.test-module }}
+      - name: Run tests for all modules
         run: |
-          echo "## ${{ matrix.test-module }}" >> $GITHUB_STEP_SUMMARY
-          uv run pytest ${{ matrix.test-module }}
+          uv run pytest -n auto
