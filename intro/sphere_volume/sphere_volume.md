@@ -45,4 +45,4 @@ The volume is: 33.51
 
 ## Note
 
-Use `.2f` formatting to display 2 decimal places. Use `π = 3.14159`
+Use `.2f` formatting to display 2 decimal places. Use `math.pi` for π

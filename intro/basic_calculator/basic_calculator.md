@@ -4,7 +4,7 @@ Write a program that performs basic arithmetic operations on two numbers.
 
 ## Task
 
-- Ask the user for two numbers (as `int`)
+- Read two numbers (as `int`)
 - Calculate and display addition and subtraction
 
 ## Examples

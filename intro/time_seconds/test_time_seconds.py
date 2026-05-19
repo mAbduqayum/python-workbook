@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("125\n", "125 seconds = 2 minutes and 5 seconds"),
-        ("90\n", "90 seconds = 1 minutes and 30 seconds"),
-        ("200\n", "200 seconds = 3 minutes and 20 seconds"),
+        ("125\n", "125 second(s) = 2 minute(s) and 5 second(s)"),
+        ("90\n", "90 second(s) = 1 minute(s) and 30 second(s)"),
+        ("200\n", "200 second(s) = 3 minute(s) and 20 second(s)"),
     ],
 )
 def test_time_seconds(script_runner, input_params, expected_output):

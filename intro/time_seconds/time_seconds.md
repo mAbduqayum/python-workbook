@@ -17,7 +17,7 @@ Write a program that converts total seconds into minutes and remaining seconds.
 ```
 
 ```
-125 seconds = 2 minutes and 5 seconds
+125 second(s) = 2 minute(s) and 5 second(s)
 ```
 
 **Example 2:**
@@ -27,7 +27,7 @@ Write a program that converts total seconds into minutes and remaining seconds.
 ```
 
 ```
-90 seconds = 1 minutes and 30 seconds
+90 second(s) = 1 minute(s) and 30 second(s)
 ```
 
 **Example 3:**
@@ -37,5 +37,5 @@ Write a program that converts total seconds into minutes and remaining seconds.
 ```
 
 ```
-200 seconds = 3 minutes and 20 seconds
+200 second(s) = 3 minute(s) and 20 second(s)
 ```

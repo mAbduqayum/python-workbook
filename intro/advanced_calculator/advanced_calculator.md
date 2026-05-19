@@ -4,7 +4,7 @@ Write a program that performs advanced arithmetic operations on two numbers.
 
 ## Task
 
-- Ask the user for two numbers (as `int`)
+- Read two numbers (as `int`)
 - Calculate and display all seven arithmetic operations: addition, subtraction, multiplication, division, integer
   division, modulo, and power
 

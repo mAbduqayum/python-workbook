@@ -1,4 +1,5 @@
+import math
+
 radius = float(input())
-pi = 3.14159
-area = pi * radius * radius
+area = math.pi * radius * radius
 print(f"The area is: {area:.2f}")
