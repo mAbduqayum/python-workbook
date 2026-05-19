@@ -66,6 +66,39 @@ print("I'm learning Python!")
 - **python** executes your Python programs in a safe environment
 - **Python** is the language that understands your code and makes it work
 
+## Working With the Workbook Exercises
+
+Each exercise lives in its own folder and contains:
+
+- `exercise_name.md` - The problem description
+- `exercise_name.py` - The file where you write your solution
+- `test_exercise_name.py` - Automated tests that check your solution
+
+### Run an Exercise
+
+Open the exercise folder, write your code in the `.py` file, then run it:
+
+```
+uv run intro/hello_world/hello_world.py
+```
+
+### Test Your Solution
+
+Tests are written with `pytest`. To check a single exercise:
+
+```
+uv run pytest intro/hello_world/
+```
+
+To run every test in a chapter:
+
+```
+uv run pytest intro/
+```
+
+A passing test means your solution produces the expected output. A failing
+test shows what was expected versus what your program actually printed.
+
 ## Common Commands You'll Use
 
 - `cd` - **C**hange **D**irectory   
@@ -73,5 +106,6 @@ print("I'm learning Python!")
 - `code .` - Open the current folder in VS Code
 - `python main.py` - Run a Python file
 - `uv run main.py` - Alternative way to run a Python file
+- `uv run pytest path/to/exercise/` - Test an exercise solution
 
 Congratulations! You now have a proper Python development setup, and you're ready to start programming.
