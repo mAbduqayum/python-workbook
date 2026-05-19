@@ -13,7 +13,7 @@ Write a program that converts total seconds into minutes and remaining seconds.
 **Example 1:**
 
 ```
-Enter seconds: 125
+125
 ```
 
 ```
@@ -23,7 +23,7 @@ Enter seconds: 125
 **Example 2:**
 
 ```
-Enter seconds: 90
+90
 ```
 
 ```
@@ -33,7 +33,7 @@ Enter seconds: 90
 **Example 3:**
 
 ```
-Enter seconds: 200
+200
 ```
 
 ```

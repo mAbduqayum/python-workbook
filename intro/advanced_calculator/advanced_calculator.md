@@ -13,8 +13,8 @@ Write a program that performs advanced arithmetic operations on two numbers.
 **Example 1:**
 
 ```
-Enter first number: 15
-Enter second number: 4
+15
+4
 ```
 
 ```
@@ -30,8 +30,8 @@ Enter second number: 4
 **Example 2:**
 
 ```
-Enter first number: 20
-Enter second number: 6
+20
+6
 ```
 
 ```
@@ -47,8 +47,8 @@ Enter second number: 6
 **Example 3:**
 
 ```
-Enter first number: 8
-Enter second number: 3
+8
+3
 ```
 
 ```

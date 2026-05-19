@@ -1,4 +1,4 @@
-kpa = float(input("Enter pressure in kilopascals: "))
+kpa = float(input())
 pa = kpa * 1000
 bar = kpa / 100
 atm = kpa / 101.325

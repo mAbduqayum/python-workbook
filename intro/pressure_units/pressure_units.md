@@ -12,7 +12,7 @@ Write a program that converts pressure from kilopascals to other metric units.
 **Example 1:**
 
 ```
-Enter pressure in kilopascals: 101.325
+101.325
 ```
 
 ```
@@ -24,7 +24,7 @@ Pressure in atmospheres: 1.00
 **Example 2:**
 
 ```
-Enter pressure in kilopascals: 200
+200
 ```
 
 ```
@@ -36,7 +36,7 @@ Pressure in atmospheres: 1.97
 **Example 3:**
 
 ```
-Enter pressure in kilopascals: 50
+50
 ```
 
 ```

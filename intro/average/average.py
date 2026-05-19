@@ -1,6 +1,6 @@
-a = float(input("Enter first number: "))
-b = float(input("Enter second number: "))
-c = float(input("Enter third number: "))
+a = float(input())
+b = float(input())
+c = float(input())
 
 avg = (a + b + c) / 3
 # print("The average is:", avg)

@@ -12,8 +12,8 @@ Write a program that performs basic arithmetic operations on two numbers.
 **Example 1:**
 
 ```
-Enter first number: 12
-Enter second number: 8
+12
+8
 ```
 
 ```
@@ -24,8 +24,8 @@ Enter second number: 8
 **Example 2:**
 
 ```
-Enter first number: 25
-Enter second number: 15
+25
+15
 ```
 
 ```
@@ -36,8 +36,8 @@ Enter second number: 15
 **Example 3:**
 
 ```
-Enter first number: 7
-Enter second number: 3
+7
+3
 ```
 
 ```

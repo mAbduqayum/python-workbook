@@ -1,4 +1,4 @@
-total_hours = float(input("Enter total hours: "))
+total_hours = float(input())
 days = int(total_hours // 24)
 remaining_hours = int(total_hours % 24)
 minutes = int((total_hours * 60) % 60)

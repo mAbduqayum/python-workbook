@@ -12,7 +12,7 @@ Write a program that converts the temperature from Celsius to Fahrenheit.
 **Example 1:**
 
 ```
-Enter temperature in Celsius: 25
+25
 ```
 
 ```
@@ -22,7 +22,7 @@ Temperature in Fahrenheit: 77.00
 **Example 2:**
 
 ```
-Enter temperature in Celsius: 0
+0
 ```
 
 ```
@@ -32,7 +32,7 @@ Temperature in Fahrenheit: 32.00
 **Example 3:**
 
 ```
-Enter temperature in Celsius: 100
+100
 ```
 
 ```
