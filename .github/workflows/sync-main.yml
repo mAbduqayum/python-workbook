@@ -66,16 +66,16 @@ jobs:
 
           git add -A
           if git diff --cached --quiet; then
-            echo "✅ main already in sync with solutions; nothing to commit"
+            echo "main already in sync with solutions; nothing to commit"
             exit 0
           fi
 
           git commit -m "chore(sync): mirror solutions → main, strip solution code [skip ci]"
           git push origin main
-          echo "✅ main updated from solutions"
+          echo "main updated from solutions"
 
       - name: Report sync status
         if: always()
         run: |
-          echo "📋 Latest commits on main:"
+          echo "Latest commits on main:"
           git log --oneline -5 origin/main || true
