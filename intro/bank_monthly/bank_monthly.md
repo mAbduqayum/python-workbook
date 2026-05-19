@@ -20,7 +20,7 @@ Enter number of years: 3
 ```
 
 ```
-Balance after 3 years: 1127.27
+Balance after 3 year(s): 1127.27
 ```
 
 **Example 2:**
@@ -32,7 +32,7 @@ Enter number of years: 2
 ```
 
 ```
-Balance after 2 years: 5361.99
+Balance after 2 year(s): 5361.99
 ```
 
 **Example 3:**
@@ -44,7 +44,7 @@ Enter number of years: 1
 ```
 
 ```
-Balance after 1 year: 2556.83
+Balance after 1 year(s): 2556.83
 ```
 
 ## Formula

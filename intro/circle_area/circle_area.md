@@ -5,7 +5,7 @@ Write a program that calculates the area of a circle.
 ## Task
 
 - Read the radius of a circle (as `float`)
-- Calculate and display the area with `.2f` formatting (use `π = 3.14159`)
+- Calculate and display the area
 
 ## Examples
 

@@ -38,8 +38,6 @@
 1. [`time_hours`](../time_hours/time_hours.md)
 1. [`time_units`](../time_units/time_units.md)
 1. [`time_reverse`](../time_reverse/time_reverse.md)
-1. [`eid_fitr`](../eid_fitr/eid_fitr.md)
-1. [`eid_adha`](../eid_adha/eid_adha.md)
 1. [`sort_integers`](../sort_integers/sort_integers.md)
 1. [`pressure_units`](../pressure_units/pressure_units.md)
 1. [`regular_polygon`](../regular_polygon/regular_polygon.md)
