@@ -13,9 +13,9 @@ Write a program that calculates the area of a triangle using Heron's formula whe
 **Example 1:**
 
 ```
-Enter length of side 1: 3
-Enter length of side 2: 4
-Enter length of side 3: 5
+3
+4
+5
 ```
 
 ```
@@ -25,9 +25,9 @@ Area of triangle: 6.00
 **Example 2:**
 
 ```
-Enter length of side 1: 5
-Enter length of side 2: 6
-Enter length of side 3: 7
+5
+6
+7
 ```
 
 ```
@@ -37,9 +37,9 @@ Area of triangle: 14.70
 **Example 3:**
 
 ```
-Enter length of side 1: 10
-Enter length of side 2: 10
-Enter length of side 3: 12
+10
+10
+12
 ```
 
 ```
@@ -50,8 +50,3 @@ Area of triangle: 48.00
 
 - `s = (s1 + s2 + s3) / 2` (semi-perimeter)
 - `Area = √(s × (s - s1) × (s - s2) × (s - s3))`
-
-## Note
-
-- Use `.2f` formatting to display 2 decimal places
-- Use `math.sqrt()` for square root calculation

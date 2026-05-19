@@ -1,0 +1,89 @@
+name: Sync to Main
+
+# Source of truth is the `solutions` branch. On every push to `solutions`,
+# regenerate `main` as: all files from `solutions` EXCEPT solution scripts.
+# A file is stripped iff it is a *.py file whose basename is not `test_*.py`
+# and not `conftest.py`, and it is not under `tests/`. This removes only the
+# exercise solution scripts; test files, fixtures and all non-Python content
+# (docs, slides, configs) are mirrored as-is. Tests already `pytest.skip`
+# when their solution file is absent, so deletion is the intended behaviour.
+# Additionally, the entire `ignore/` directory is solutions-only working
+# space and is stripped from `main` wholesale.
+
+on:
+  push:
+    branches: [solutions]
+  workflow_dispatch:
+
+# Serialize syncs; never cancel an in-flight mirror mid-push.
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  sync-main:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # need full history of both branches
+
+      - name: Configure Git
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Regenerate main from solutions (strip solution scripts)
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git fetch origin solutions main
+
+          # Append onto main's existing history (linear, fast-forwardable).
+          git checkout -B main origin/main
+
+          # Index + working tree now mirror solutions; HEAD stays on main.
+          git read-tree -u --reset origin/solutions
+
+          removed=0
+          while IFS= read -r -d '' f; do
+            case "$f" in
+              tests/*) continue ;;
+            esac
+            base="${f##*/}"
+            case "$base" in
+              test_*.py|conftest.py) continue ;;
+            esac
+            git rm -q -f -- "$f"
+            removed=$((removed + 1))
+          done < <(git ls-files -z -- '*.py')
+
+          echo "Stripped $removed solution script(s) from main"
+
+          # Strip the solutions-only working directory wholesale.
+          if git ls-files -z -- 'ignore/*' | grep -qz .; then
+            git rm -q -r -f -- ignore
+            echo "Stripped ignore/ directory from main"
+          fi
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "main already in sync with solutions; nothing to commit"
+            exit 0
+          fi
+
+          git commit -m "chore(sync): mirror branch → main"
+          git push origin main
+          echo "main updated from solutions"
+
+      - name: Report sync status
+        if: always()
+        run: |
+          echo "Latest commits on main:"
+          git log --oneline -5 origin/main || true

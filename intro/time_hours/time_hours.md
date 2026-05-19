@@ -13,7 +13,7 @@ Write a program that converts total hours into days, hours, and minutes.
 **Example 1:**
 
 ```
-Enter total hours: 26.5
+26.5
 ```
 
 ```
@@ -23,7 +23,7 @@ Enter total hours: 26.5
 **Example 2:**
 
 ```
-Enter total hours: 50.25
+50.25
 ```
 
 ```
@@ -33,7 +33,7 @@ Enter total hours: 50.25
 **Example 3:**
 
 ```
-Enter total hours: 10.75
+10.75
 ```
 
 ```

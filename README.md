@@ -16,9 +16,10 @@ Install the following tools:
 
 1. **Open your terminal**
 
-2. **Navigate to Documents:**
+2. **Create a directory for your repositories:**
    ```bash
-   cd Documents
+   mkdir -p ~/repos
+   cd ~/repos
    ```
 
 3. **Clone the repository:**

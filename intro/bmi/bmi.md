@@ -46,7 +46,3 @@ Your BMI is: 20.20
 ## Formula
 
 `BMI = weight / (height × height)`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

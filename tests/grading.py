@@ -85,7 +85,7 @@ class GradeReporter:
         grade_percentage = self.calculate_grade()
 
         print("\n" + "=" * 50)
-        print("📊 FINAL GRADE REPORT")
+        print("FINAL GRADE REPORT")
         print("=" * 50)
 
         print(f"Total Test Files: {self.total_tests}")

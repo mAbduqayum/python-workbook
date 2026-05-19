@@ -13,7 +13,7 @@ Write a program that converts total seconds into days, hours, minutes, and secon
 **Example 1:**
 
 ```
-Enter total seconds: 186330
+186330
 ```
 
 ```
@@ -23,7 +23,7 @@ Time format: 2:03:45:30
 **Example 2:**
 
 ```
-Enter total seconds: 88200
+88200
 ```
 
 ```
@@ -33,7 +33,7 @@ Time format: 1:00:30:00
 **Example 3:**
 
 ```
-Enter total seconds: 8145
+8145
 ```
 
 ```
@@ -46,8 +46,3 @@ Time format: 0:02:15:45
 - `hours = (seconds % 86400) // 3600`
 - `minutes = (seconds % 3600) // 60`
 - `remaining_seconds = seconds % 60`
-
-## Note
-
-- Use integer division (`//`) and modulo (`%`)
-- Format hours, minutes, and seconds with leading zeros: `:02d`

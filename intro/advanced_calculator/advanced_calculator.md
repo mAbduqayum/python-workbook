@@ -4,7 +4,7 @@ Write a program that performs advanced arithmetic operations on two numbers.
 
 ## Task
 
-- Ask the user for two numbers (as `int`)
+- Read two numbers (as `int`)
 - Calculate and display all seven arithmetic operations: addition, subtraction, multiplication, division, integer
   division, modulo, and power
 
@@ -13,8 +13,8 @@ Write a program that performs advanced arithmetic operations on two numbers.
 **Example 1:**
 
 ```
-Enter first number: 15
-Enter second number: 4
+15
+4
 ```
 
 ```
@@ -30,8 +30,8 @@ Enter second number: 4
 **Example 2:**
 
 ```
-Enter first number: 20
-Enter second number: 6
+20
+6
 ```
 
 ```
@@ -47,8 +47,8 @@ Enter second number: 6
 **Example 3:**
 
 ```
-Enter first number: 8
-Enter second number: 3
+8
+3
 ```
 
 ```
@@ -61,10 +61,6 @@ Enter second number: 3
 8 ** 3 = 512
 ```
 
-## Note
-
-For division results, use `.2f` formatting to display 2 decimal places.
-
 ## Operations Explained
 
 - **Addition (`+`)**: `num1 + num2`
@@ -74,4 +70,3 @@ For division results, use `.2f` formatting to display 2 decimal places.
 - **Integer Division (`//`)**: `num1 // num2` (gives integer result, rounds down)
 - **Modulo (`%`)**: `num1 % num2` (remainder after division)
 - **Power (`**`)**: `num1 ** num2` (num1 raised to the power of num2)
-

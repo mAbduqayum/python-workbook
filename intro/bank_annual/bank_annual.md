@@ -50,7 +50,3 @@ Balance after 1 year(s): 514.00
 ## Formula
 
 `balance = deposit × (1 + rate/100)^years`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.
