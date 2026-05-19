@@ -7,6 +7,8 @@ name: Sync to Main
 # exercise solution scripts; test files, fixtures and all non-Python content
 # (docs, slides, configs) are mirrored as-is. Tests already `pytest.skip`
 # when their solution file is absent, so deletion is the intended behaviour.
+# Additionally, the entire `ignore/` directory is solutions-only working
+# space and is stripped from `main` wholesale.
 
 on:
   push:
@@ -63,6 +65,12 @@ jobs:
           done < <(git ls-files -z -- '*.py')
 
           echo "Stripped $removed solution script(s) from main"
+
+          # Strip the solutions-only working directory wholesale.
+          if git ls-files -z -- 'ignore/*' | grep -qz .; then
+            git rm -q -r -f -- ignore
+            echo "Stripped ignore/ directory from main"
+          fi
 
           git add -A
           if git diff --cached --quiet; then
