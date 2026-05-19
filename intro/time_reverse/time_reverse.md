@@ -46,8 +46,3 @@ Time format: 0:02:15:45
 - `hours = (seconds % 86400) // 3600`
 - `minutes = (seconds % 3600) // 60`
 - `remaining_seconds = seconds % 60`
-
-## Note
-
-- Use integer division (`//`) and modulo (`%`)
-- Format hours, minutes, and seconds with leading zeros: `:02d`

@@ -50,8 +50,3 @@ Area of triangle: 48.00
 
 - `s = (s1 + s2 + s3) / 2` (semi-perimeter)
 - `Area = √(s × (s - s1) × (s - s2) × (s - s3))`
-
-## Note
-
-- Use `.2f` formatting to display 2 decimal places
-- Use `math.sqrt()` for square root calculation

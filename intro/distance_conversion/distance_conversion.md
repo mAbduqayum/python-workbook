@@ -42,7 +42,3 @@ Distance in feet: 49.21
 ## Formula
 
 `Feet = Meters × 3.28084`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

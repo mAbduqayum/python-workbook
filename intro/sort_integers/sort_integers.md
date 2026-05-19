@@ -6,7 +6,6 @@ Write a program that reads three integers and displays them in sorted order from
 
 - Read three integers from the user (as `int`)
 - Display them in sorted order (smallest to largest)
-- Use `min()` and `max()` functions
 
 ## Examples
 

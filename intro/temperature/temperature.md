@@ -42,7 +42,3 @@ Temperature in Fahrenheit: 212.00
 ## Formula
 
 `Fahrenheit = (Celsius × 9/5) + 32`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

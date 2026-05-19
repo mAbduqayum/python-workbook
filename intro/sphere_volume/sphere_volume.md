@@ -42,7 +42,3 @@ The volume is: 33.51
 ## Formula
 
 `Volume = (4/3) × π × radius³`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places. Use `math.pi` for π

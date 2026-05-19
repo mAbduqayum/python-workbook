@@ -46,7 +46,3 @@ Area of triangle: 58.50
 ## Formula
 
 `Area = (base × height) / 2`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

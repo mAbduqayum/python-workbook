@@ -42,7 +42,3 @@ The area is: 314.16
 ## Formula
 
 `Area = π × radius²`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places. Use `math.pi` for π

@@ -61,10 +61,6 @@ Write a program that performs advanced arithmetic operations on two numbers.
 8 ** 3 = 512
 ```
 
-## Note
-
-For division results, use `.2f` formatting to display 2 decimal places.
-
 ## Operations Explained
 
 - **Addition (`+`)**: `num1 + num2`
@@ -74,4 +70,3 @@ For division results, use `.2f` formatting to display 2 decimal places.
 - **Integer Division (`//`)**: `num1 // num2` (gives integer result, rounds down)
 - **Modulo (`%`)**: `num1 % num2` (remainder after division)
 - **Power (`**`)**: `num1 ** num2` (num1 raised to the power of num2)
-

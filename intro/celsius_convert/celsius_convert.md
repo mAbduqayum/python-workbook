@@ -47,7 +47,3 @@ Temperature in Kelvin: 373.15
 
 - Fahrenheit: `F = (C × 9/5) + 32`
 - Kelvin: `K = C + 273.15`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

@@ -49,8 +49,3 @@ Area of regular polygon: 43.01
 
 - `n` = number of sides
 - `s` = side length
-
-## Note
-
-- Use `.2f` formatting to display 2 decimal places
-- Use `math.tan()` and `math.pi`

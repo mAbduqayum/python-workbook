@@ -47,9 +47,3 @@ Final velocity: 44.27 m/s
 - `vi = 0` (initial velocity, dropped)
 - `a = 9.8 m/s²` (acceleration due to gravity)
 - `d = height` (distance fallen)
-
-## Note
-
-- Use `.2f` formatting to display 2 decimal places
-- Use `math.sqrt()` for square root calculation
-- Gravity acceleration: `9.8 m/s²`

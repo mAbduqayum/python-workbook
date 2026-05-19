@@ -44,7 +44,3 @@ The average is: 15.00
 ```
 The average is: 12.00
 ```
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

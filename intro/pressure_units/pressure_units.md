@@ -50,7 +50,3 @@ Pressure in atmospheres: 0.49
 - Pascals: `Pa = kPa × 1000`
 - Bars: `bar = kPa / 100`
 - Atmospheres: `atm = kPa / 101.325`
-
-## Note
-
-Use `.2f` formatting to display 2 decimal places.

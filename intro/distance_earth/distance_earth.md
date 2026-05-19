@@ -56,11 +56,5 @@ First convert every coordinate from degrees to radians, then:
 
 `distance = 6371.01 × arccos(sin(lat1) × sin(lat2) + cos(lat1) × cos(lat2) × cos(lon1 - lon2))`
 
-where `lat1, lat2, lon1, lon2` are the radian values.
-
-## Note
-
-- Use `.2f` formatting to display 2 decimal places
-- The input coordinates are in degrees; the formula needs radians
-- Use `math.acos()`, `math.sin()`, `math.cos()`
-- `6371.01` is Earth's average radius in kilometers
+where `lat1, lat2, lon1, lon2` are the radian values, and `6371.01` is
+Earth's average radius in kilometers.
