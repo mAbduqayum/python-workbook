@@ -2,11 +2,6 @@
 
 A triangle can be classified based on the lengths of its sides as equilateral, isosceles, or scalene. Write a program that reads the lengths of three sides and determines the triangle's type.
 
-## Task
-- Read the lengths of the three sides of a triangle from the user
-- Determine and display the triangle's classification
-- Handle the three types of triangles appropriately
-
 ## Triangle Classifications
 - **Equilateral**: All three sides have the same length
 - **Isosceles**: Two sides have the same length, and the third side has a different length

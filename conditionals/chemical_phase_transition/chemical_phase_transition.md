@@ -4,9 +4,12 @@ Write a program that determines the type of chemical phase transition based on t
 
 ## Task
 
-- Read the initial phase of matter from the user as a string
-- Read the final phase of matter from the user as a string
-- Display the name of the phase transition between the two states
+- Read the initial and final phases of matter from the user as strings
+  (case-insensitive; valid phases are `solid`, `liquid`, `gas`, `plasma`)
+- Display the transition name (see diagram) — or:
+  - `No transition` if the initial and final phases are the same
+  - `Cannot transition directly` if the transition is not physically
+    possible (e.g. `solid` → `plasma`)
 
 ## Phase Transitions Diagram
 
@@ -55,15 +58,3 @@ plasma
 ```
 Cannot transition directly
 ```
-
-## Notes
-
-- Input should be case-insensitive (handle "SOLID", "Liquid", "GAS", etc.)
-- Valid phases are: solid, liquid, gas, plasma
-- If the initial and final phases are the same, display `No transition`
-- If the transition is not physically possible (e.g., solid to plasma), display `Cannot transition directly`
-- Only the following transitions are possible:
-    - Solid ↔ Liquid (melting/freezing)
-    - Liquid ↔ Gas (vaporization/condensation)
-    - Solid ↔ Gas (sublimation/deposition)
-    - Gas ↔ Plasma (ionization/recombination)

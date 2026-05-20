@@ -2,11 +2,6 @@
 
 Write a program that determines the day of the week for January 1st of a given year using a mathematical formula.
 
-## Task
-- Read a year from the user
-- Calculate the day of the week for January 1st of that year
-- Display the full name of the day
-
 ## Formula
 ```
 day_of_week = (year + floor((year - 1) / 4) - floor((year - 1) / 100) + floor((year - 1) / 400)) % 7
@@ -63,9 +58,3 @@ Saturday
 ```
 Monday
 ```
-
-## Note
-- Use `//` for integer division (floor division) in Python
-- The formula accounts for leap years and century adjustments
-- The result is an integer from 0-6 representing Sunday through Saturday
-- Convert the numeric result to the full day name

@@ -2,11 +2,6 @@
 
 Write a program that reads a person's age and determines their life phase.
 
-## Task
-- Read a person's age from the user
-- Determine and display the appropriate life phase
-- Handle edge cases for invalid ages
-
 ## Life Phase Classifications
 | Age Range | Life Phase  |
 |-----------|-------------|
@@ -82,4 +77,3 @@ Senior
 ```
 Invalid age
 ```
-

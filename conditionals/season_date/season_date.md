@@ -2,18 +2,13 @@
 
 Write a program that determines the season based on a given month and day.
 
-## Task
-- Read a month name and day from the user
-- Determine which season the date falls into
-- Use the standard season dates for the Northern Hemisphere
-
-## Season Dates
-| Season | Start Date   |
-|--------|--------------|
-| Spring | March 20     |
-| Summer | June 21      |
-| Fall   | September 22 |
-| Winter | December 21  |
+## Season Ranges
+| Season | Range                      |
+|--------|----------------------------|
+| Spring | March 20 – June 20         |
+| Summer | June 21 – September 21     |
+| Fall   | September 22 – December 20 |
+| Winter | December 21 – March 19     |
 
 ## Examples
 **Example 1:**
@@ -69,10 +64,3 @@ January
 ```
 Winter
 ```
-
-## Logic
-- Spring: March 20 - June 20
-- Summer: June 21 - September 21
-- Fall: September 22 - December 20
-- Winter: December 21 - March 19
-

@@ -2,11 +2,6 @@
 
 Write a program that determines whether a given year is a leap year.
 
-## Task
-- Read a year from the user
-- Determine if it's a leap year using the leap year rules
-- Display the result
-
 ## Leap Year Rules
 A year is a leap year if:
 1. **Divisible by `400`** → Leap year

@@ -2,12 +2,6 @@
 
 Write a program that reads a date and computes its immediate successor (next day).
 
-## Task
-- Read year, month, and day from the user
-- Calculate the next day
-- Handle month and year transitions correctly
-- Account for leap years
-
 ## Examples
 **Example 1:** (Regular day)
 ```
@@ -65,4 +59,3 @@ Write a program that reads a date and computes its immediate successor (next day
 | 1, 3, 5, 7, 8, 10, 12 | 31       |                      |
 | 4, 6, 9, 11           | 30       |                      |
 | 2                     | 28 or 29 | Depends on leap year |
-
