@@ -3,9 +3,10 @@
 Write a program that determines if three numbers are sorted in ascending order, descending order, equal, or random order.
 
 ## Task
-- Read three numbers a, b, and c from the user
-- Determine their order: ascending, descending, equal, or random
-- Display the appropriate classification
+- Read three numbers `a`, `b`, and `c` from the user
+- Display one of: `ascending`, `descending`, `equal`, or `random`
+- Ordering is non-strict (equal adjacent values still count as ascending
+  or descending); if all three values are equal, display `equal`
 
 ## Examples
 **Example 1:**
@@ -67,13 +68,3 @@ descending
 ```
 equal
 ```
-
-## Logic
-- **Equal**: a == b == c (all three numbers are the same)
-- **Ascending**: a ≤ b ≤ c (and not all equal)
-- **Descending**: a ≥ b ≥ c (and not all equal)
-- **Random**: neither ascending, descending, nor equal
-
-## Note
-- Check for all equal first as a special case
-- Allow equal adjacent values for ascending/descending (non-strict ordering)

@@ -1,11 +1,6 @@
 # Exercise: Distance Conversion
 
-Write a program that converts distance from meters to feet.
-
-## Task
-
-- Read a distance in meters (as `float`)
-- Convert it to feet and display the result
+Write a program that converts a distance given in meters to feet.
 
 ## Examples
 

@@ -1,12 +1,6 @@
 # Frequency to Note
 
-Write a program that reverses the process of the previous exercise. Read a frequency from the user and determine if it corresponds to a known musical note.
-
-## Task
-- Read a frequency from the user (as a float)
-- Determine if the frequency is within one Hertz of a known note
-- Display the corresponding note name or indicate that no match was found
-- Only consider the notes from the 4th octave (C4-B4)
+Write a program that reverses the process of the previous exercise. Read a frequency from the user (as a float) and display the 4th-octave note (C4-B4) whose frequency is within ±1 Hz of it, or `No match` if none qualifies.
 
 ## Reference Note Frequencies (4th Octave)
 | Note | Frequency (Hz) |
@@ -59,9 +53,3 @@ No match
 ```
 G4
 ```
-
-## Matching Logic
-- A frequency matches a note if it's within ±1 Hz of the note's frequency
-- For example, A4 (440 Hz) matches frequencies from 439.0 to 441.0
-- Check each note systematically to find a match
-

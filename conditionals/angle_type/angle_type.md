@@ -2,11 +2,6 @@
 
 Write a program that classifies a given angle based on its measurement in degrees.
 
-## Task
-- Read an angle measurement from the user
-- Classify the angle according to standard geometric definitions
-- Handle invalid angles appropriately
-
 ## Angle Classifications
 
 | Type           | Range                          |

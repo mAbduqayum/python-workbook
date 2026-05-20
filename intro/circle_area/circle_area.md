@@ -1,11 +1,6 @@
 # Exercise: Circle Area
 
-Write a program that calculates the area of a circle.
-
-## Task
-
-- Read the radius of a circle (as `float`)
-- Calculate and display the area
+Write a program that calculates the area of a circle given its radius in meters.
 
 ## Examples
 
@@ -16,7 +11,7 @@ Write a program that calculates the area of a circle.
 ```
 
 ```
-The area is: 84.95
+84.95
 ```
 
 **Example 2:**
@@ -26,7 +21,7 @@ The area is: 84.95
 ```
 
 ```
-The area is: 43.01
+43.01
 ```
 
 **Example 3:**
@@ -36,7 +31,7 @@ The area is: 43.01
 ```
 
 ```
-The area is: 314.16
+314.16
 ```
 
 ## Formula

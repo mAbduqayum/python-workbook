@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("8.5\n5.2\n", "The perimeter is: 27.40"),
-        ("12.3\n4.7\n", "The perimeter is: 34.00"),
-        ("6.0\n6.0\n", "The perimeter is: 24.00"),
+        ("8.5\n5.2\n", "27.40"),
+        ("12.3\n4.7\n", "34.00"),
+        ("6.0\n6.0\n", "24.00"),
     ],
 )
 def test_rectangle_perimeter(script_runner, input_params, expected_output):

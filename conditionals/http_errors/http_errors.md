@@ -2,11 +2,6 @@
 
 Write a program that reads an HTTP status code from the user and displays the corresponding category.
 
-## Task
-- Read an HTTP status code from the user (as `int`)
-- Display the category based on the first digit
-- Display `Unknown status code` if it doesn't fit these categories
-
 ## HTTP Status Code Categories
 | Range   | Category      |
 |---------|---------------|

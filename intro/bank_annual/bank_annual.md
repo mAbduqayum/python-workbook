@@ -2,13 +2,6 @@
 
 Write a program that calculates the balance of a savings account after earning annual interest.
 
-## Task
-
-- Read the initial deposit amount (as `float`)
-- Read the annual interest rate percentage (as `float`)
-- Read the number of years (as `int`)
-- Calculate and display the balance after the specified number of years
-
 ## Examples
 
 **Example 1:**

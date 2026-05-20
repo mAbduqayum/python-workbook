@@ -2,11 +2,6 @@
 
 Write a program that calculates `BMI` and determines the weight category.
 
-## Task
-- Read weight (kg) and height (m) from the user
-- Calculate `BMI` using the formula: `BMI = weight / (height²)`
-- Determine and display the `BMI` category
-
 ## BMI Categories
 | BMI Range           | Category      |
 |---------------------|---------------|
@@ -63,9 +58,3 @@ Normal weight
 
 ## Formula
 `BMI = weight (kg) / height² (m²)`
-
-## Note
-- Calculate `BMI` first, then categorize
-- Use appropriate comparison operators for ranges
-- Weight in kilograms, height in meters
-- Standard WHO `BMI` categories

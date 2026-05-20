@@ -2,11 +2,6 @@
 
 Write a program that determines the type of triangle based on its three angles.
 
-## Task
-- Read three angles from the user
-- Check if they form a valid triangle (sum = `180°`)
-- Classify the triangle type based on the angles
-
 ## Triangle Types
 
 | Type             | Condition              |

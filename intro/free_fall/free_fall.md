@@ -1,12 +1,6 @@
 # Exercise: Free Fall
 
-Write a program that calculates how fast an object is traveling when it hits the ground after being dropped.
-
-## Task
-
-- Read the height from which the object is dropped in meters (as `float`)
-- Calculate the final velocity when it hits the ground
-- Display the result
+Write a program that calculates how fast an object is traveling when it hits the ground after being dropped from a given height in meters.
 
 ## Examples
 

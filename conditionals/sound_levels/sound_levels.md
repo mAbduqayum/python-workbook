@@ -2,12 +2,6 @@
 
 Write a program that reads a sound level in decibels from the user and reports information about the sound based on common noise levels.
 
-## Task
-- Read a sound level in decibels from the user
-- Display the corresponding noise if it matches exactly
-- If the level is between noises, indicate which noises it falls between
-- Handle values outside the range appropriately
-
 ## Sound Level Reference Table
 | Noise         | Decibel Level |
 |---------------|---------------|
@@ -64,4 +58,3 @@ Louder than Jackhammer
 ```
 Gas Lawnmower
 ```
-

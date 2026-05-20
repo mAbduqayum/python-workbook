@@ -2,11 +2,6 @@
 
 Write a program that classifies electromagnetic radiation based on its frequency.
 
-## Task
-- Read a frequency in Hz from the user
-- Determine the type of electromagnetic radiation
-- Display the appropriate classification
-
 ## Electromagnetic Radiation Classifications
 | Name              | Frequency Range (Hz)                   |
 |-------------------|----------------------------------------|
@@ -58,4 +53,3 @@ Ultraviolet Light
 ```
 Gamma Rays
 ```
-

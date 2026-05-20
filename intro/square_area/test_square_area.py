@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("7.5\n", "The area is: 56.25"),
-        ("12.3\n", "The area is: 151.29"),
-        ("5.0\n", "The area is: 25.00"),
+        ("7.5\n", "56.25"),
+        ("12.3\n", "151.29"),
+        ("5.0\n", "25.00"),
     ],
 )
 def test_square_area(script_runner, input_params, expected_output):
