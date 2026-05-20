@@ -2,11 +2,6 @@
 
 Write a program that calculates the perimeter of a rectangle.
 
-## Task
-
-- Read the length and width of a rectangle (as `float`)
-- Calculate and display the perimeter with `.2f` formatting
-
 ## Examples
 
 **Example 1:**

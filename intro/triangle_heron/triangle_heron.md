@@ -1,12 +1,6 @@
 # Exercise: Area of a Triangle (Again)
 
-Write a program that calculates the area of a triangle using Heron's formula when all three side lengths are known.
-
-## Task
-
-- Read the lengths of all three sides (as `float`)
-- Calculate and display the area using Heron's formula
-- Triangle sides are guaranteed to form a valid triangle
+Write a program that calculates the area of a triangle using Heron's formula given all three side lengths (assume they form a valid triangle).
 
 ## Examples
 

@@ -2,12 +2,6 @@
 
 Write a program that converts a temperature from Celsius to both Fahrenheit and Kelvin.
 
-## Task
-
-- Read a temperature in Celsius (as `float`)
-- Convert and display in Fahrenheit
-- Convert and display in Kelvin
-
 ## Examples
 
 **Example 1:**

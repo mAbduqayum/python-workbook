@@ -1,12 +1,6 @@
 # Exercise: Mailing Address
 
-Create a program that displays your name and complete mailing address formatted properly.
-
-## Task
-
-- Display your name and complete mailing address
-- Use the proper format for your region
-- No input from the user is required
+Create a program that displays your name and complete mailing address using the proper format for your region. No input from the user is required.
 
 ## Examples
 

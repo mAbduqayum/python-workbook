@@ -2,12 +2,6 @@
 
 Write a program that calculates the area of a regular polygon given the number of sides and side length.
 
-## Task
-
-- Read the number of sides (as `int`)
-- Read the length of each side (as `float`)
-- Calculate and display the area
-
 ## Examples
 
 **Example 1:**

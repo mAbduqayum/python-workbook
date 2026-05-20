@@ -3,12 +3,6 @@
 Write a program that calculates the distance between two points on Earth's surface using the great circle distance
 formula.
 
-## Task
-
-- Read latitude and longitude of first point (as `float`)
-- Read latitude and longitude of second point (as `float`)
-- Calculate and display the distance in kilometers
-
 ## Examples
 
 **Example 1: Dushanbe to Khujand (Tajikistan)**

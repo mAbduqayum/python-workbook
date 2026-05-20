@@ -2,12 +2,6 @@
 
 Write a program that calculates the area of a triangle using base and height.
 
-## Task
-
-- Read the length of the base (as `float`)
-- Read the height (as `float`)
-- Calculate and display the area with `.2f` formatting
-
 ## Examples
 
 **Example 1:**

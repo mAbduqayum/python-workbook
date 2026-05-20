@@ -2,11 +2,6 @@
 
 Write a program that calculates the average of three numbers.
 
-## Task
-
-- Read three numbers from the user (as `float`)
-- Calculate and display their average
-
 ## Examples
 
 **Example 1:**

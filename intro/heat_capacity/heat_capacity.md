@@ -1,13 +1,6 @@
 # Exercise: Heat Capacity
 
-Write a program that calculates the energy required to heat water and the cost of heating.
-
-## Task
-
-- Read the mass of water in grams (as `float`)
-- Read the temperature change in degrees Celsius (as `float`)
-- Calculate energy required in Joules
-- Calculate cost in euros (assuming electricity costs 0.089 euros per kWh)
+Write a program that calculates the energy (Joules) required to heat water and the cost in euros (electricity costs `0.089 euros/kWh`).
 
 ## Examples
 
@@ -52,7 +45,3 @@ Cost to heat water: 0.00 euros
 - Energy: `q = m × C × 𝚫T` where `C = 4.186 J/(g·°C)`
 - Cost: `cost = energy_in_joules / 3600000 × 0.089`
 
-## Note
-
-- Water's specific heat capacity is `4.186 J/(g·°C)`
-- `1 kWh = 3,600,000 Joules`

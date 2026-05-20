@@ -2,12 +2,6 @@
 
 Write a program that calculates the Body Mass Index (BMI) using metric units.
 
-## Task
-
-- Read height in meters (as `float`)
-- Read weight in kilograms (as `float`)
-- Calculate and display the BMI
-
 ## Examples
 
 **Example 1:**

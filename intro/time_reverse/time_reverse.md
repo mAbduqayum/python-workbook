@@ -2,12 +2,6 @@
 
 Write a program that converts total seconds into days, hours, minutes, and seconds format.
 
-## Task
-
-- Read total number of seconds (as `int`)
-- Convert to days, hours, minutes, and remaining seconds
-- Display in `D:HH:MM:SS` format
-
 ## Examples
 
 **Example 1:**

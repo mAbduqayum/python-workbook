@@ -2,13 +2,6 @@
 
 Write a program that calculates compound interest with monthly compounding.
 
-## Task
-
-- Read the initial deposit amount (as `float`)
-- Read the annual interest rate percentage (as `float`)
-- Read the number of years (as `int`)
-- Calculate and display the balance after the specified number of years with monthly compounding
-
 ## Examples
 
 **Example 1:**

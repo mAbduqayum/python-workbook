@@ -2,11 +2,6 @@
 
 Write a program that calculates the area of a circle.
 
-## Task
-
-- Read the radius of a circle (as `float`)
-- Calculate and display the area
-
 ## Examples
 
 **Example 1:**

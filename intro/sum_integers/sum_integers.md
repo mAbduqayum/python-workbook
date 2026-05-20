@@ -2,12 +2,6 @@
 
 Write a program that calculates the sum of all positive integers from 1 to n using the mathematical formula.
 
-## Task
-
-- Read a positive integer `n` from the user (as `int`)
-- Calculate the sum of all integers from 1 to n
-- Display the result
-
 ## Examples
 
 **Example 1:**

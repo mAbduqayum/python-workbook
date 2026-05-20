@@ -2,11 +2,6 @@
 
 Write a program that calculates the area of a square.
 
-## Task
-
-- Read the side length of a square (as `float`)
-- Calculate and display the area of the square with `.2f` formatting
-
 ## Examples
 
 **Example 1:**

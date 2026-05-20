@@ -2,11 +2,6 @@
 
 Write a program that reads three integers and displays them in sorted order from smallest to largest.
 
-## Task
-
-- Read three integers from the user (as `int`)
-- Display them in sorted order (smallest to largest)
-
 ## Examples
 
 **Example 1:**

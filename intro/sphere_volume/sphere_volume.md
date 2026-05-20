@@ -2,11 +2,6 @@
 
 Write a program that calculates the volume of a sphere.
 
-## Task
-
-- Read the radius of a sphere (as `float`)
-- Calculate and display the volume
-
 ## Examples
 
 **Example 1:**

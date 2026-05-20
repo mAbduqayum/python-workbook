@@ -1,12 +1,6 @@
 # Exercise: Advanced Calculator
 
-Write a program that performs advanced arithmetic operations on two numbers.
-
-## Task
-
-- Read two numbers (as `int`)
-- Calculate and display all seven arithmetic operations: addition, subtraction, multiplication, division, integer
-  division, modulo, and power
+Write a program that reads two integers and displays all seven arithmetic operations on them: addition, subtraction, multiplication, division, integer division, modulo, and power.
 
 ## Examples
 
