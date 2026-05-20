@@ -2,11 +2,6 @@
 
 Write a program that reads a wavelength and reports the corresponding color of visible light.
 
-## Task
-- Read a wavelength in nanometers from the user
-- Determine the color corresponding to that wavelength
-- Handle wavelengths outside the visible spectrum
-
 ## Visible Light Spectrum
 | Color  | Wavelength Range (nm)    |
 |--------|--------------------------|
@@ -73,4 +68,3 @@ Outside visible spectrum
 ```
 Outside visible spectrum
 ```
-

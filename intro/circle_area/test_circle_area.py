@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("5.2\n", "The area is: 84.95"),
-        ("3.7\n", "The area is: 43.01"),
-        ("10.0\n", "The area is: 314.16"),
+        ("5.2\n", "84.95"),
+        ("3.7\n", "43.01"),
+        ("10.0\n", "314.16"),
     ],
 )
 def test_circle_area(script_runner, input_params, expected_output):

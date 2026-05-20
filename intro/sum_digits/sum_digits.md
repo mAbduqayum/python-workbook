@@ -2,12 +2,6 @@
 
 Write a program that calculates the sum of digits in a two-digit integer.
 
-## Task
-
-- Read a two-digit integer from the user (as `int`)
-- Calculate and display the sum of its digits
-- Show the calculation process
-
 ## Examples
 
 **Example 1:**

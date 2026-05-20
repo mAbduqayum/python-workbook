@@ -2,11 +2,6 @@
 
 Write a program that computes the real roots of a quadratic function using the quadratic formula.
 
-## Task
-- Read coefficients `a`, `b`, and `c` from the user
-- Calculate the discriminant and determine the number of real roots
-- Display the number of roots and their values in ascending order (if any)
-
 ## Quadratic Formula
 For equation `ax² + bx + c = 0`:
 - **Discriminant**: `𝚫 = b² - 4ac`
@@ -57,6 +52,3 @@ No real roots
 ```
 2 roots: 0.50 and 3.00
 ```
-
-## Note
-- Use `import math` for the square root function (`math.sqrt()`)

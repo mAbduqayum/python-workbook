@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("3\n4\n5\n", "Area of triangle: 6.00"),
-        ("5\n6\n7\n", "Area of triangle: 14.70"),
-        ("10\n10\n12\n", "Area of triangle: 48.00"),
+        ("3\n4\n5\n", "6.00"),
+        ("5\n6\n7\n", "14.70"),
+        ("10\n10\n12\n", "48.00"),
     ],
 )
 def test_triangle_heron(script_runner, input_params, expected_output):

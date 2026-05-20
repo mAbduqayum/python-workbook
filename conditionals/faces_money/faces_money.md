@@ -1,11 +1,7 @@
 # Exercise: Faces on Money
 
-It is common for images of a country's previous leaders, or other individuals of historical significance, to appear on its money. Write a program that identifies which individual appears on Tajikistan banknotes.
-
-## Task
-- Read the denomination of a Tajikistan banknote from the user
-- Display the name of the individual that appears on that banknote
-- Display `Invalid denomination` message if no such note exists
+It is common for images of a country's previous leaders, or other individuals of historical significance, to appear on its money.
+Write a program that identifies which individual appears on Tajikistan banknotes.
 
 ## Tajikistan Banknote Reference Table
 | Amount  | Individual            |
@@ -45,4 +41,3 @@ Ismoili Somoni
 ```
 Invalid denomination
 ```
-

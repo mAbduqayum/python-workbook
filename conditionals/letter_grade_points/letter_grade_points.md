@@ -2,11 +2,6 @@
 
 Write a program that converts letter grades to their equivalent grade points.
 
-## Task
-- Read a letter grade from the user
-- Convert it to the equivalent grade points
-- Handle invalid letter grades with an error message
-
 ## Grade Point Scale
 | Letter Grade | Grade Points |
 |--------------|--------------|
@@ -63,4 +58,3 @@ Z
 ```
 Invalid grade
 ```
-

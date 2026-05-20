@@ -1,11 +1,6 @@
 # Exercise: Sphere Volume
 
-Write a program that calculates the volume of a sphere.
-
-## Task
-
-- Read the radius of a sphere (as `float`)
-- Calculate and display the volume
+Write a program that calculates the volume of a sphere given its radius in meters.
 
 ## Examples
 
@@ -16,7 +11,7 @@ Write a program that calculates the volume of a sphere.
 ```
 
 ```
-The volume is: 113.10
+113.10
 ```
 
 **Example 2:**
@@ -26,7 +21,7 @@ The volume is: 113.10
 ```
 
 ```
-The volume is: 523.60
+523.60
 ```
 
 **Example 3:**
@@ -36,7 +31,7 @@ The volume is: 523.60
 ```
 
 ```
-The volume is: 33.51
+33.51
 ```
 
 ## Formula

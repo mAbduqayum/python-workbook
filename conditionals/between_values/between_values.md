@@ -4,8 +4,8 @@ Write a program that determines if a value `b` is between two other values `a` a
 
 ## Task
 - Read three numbers `a`, `b`, and `c` from the user
-- Determine if `b` is between `a` and `c` (inclusive)
-- Handle cases where `a > c` or `a < c`
+- Determine if `b` lies between `a` and `c` (inclusive, regardless of whether `a < c` or `a > c`)
+- Display `between` or `not between`
 
 ## Examples
 **Example 1:**
@@ -57,13 +57,3 @@ between
 ```
 between
 ```
-
-## Logic
-- If `a ≤ c`: check if `a ≤ b ≤ c`
-- If `a > c`: check if `c ≤ b ≤ a`
-- Use inclusive comparison (`≤` and `≥`)
-
-## Note
-- Handle both ascending and descending ranges
-- Include boundary values (`b` can equal `a` or `c`)
-- The order of `a` and `c` doesn't matter for determining the range

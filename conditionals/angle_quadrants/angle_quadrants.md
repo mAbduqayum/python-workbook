@@ -2,11 +2,6 @@
 
 Write a program that reads an angle in degrees and determines which quadrant it falls into on a coordinate plane.
 
-## Task
-- Read an angle in degrees from the user
-- Determine which quadrant the angle falls into
-- Handle angles of any size using modular arithmetic
-
 ## Quadrant Definitions
 - **Quadrant I**: 0° < angle < 90°
 - **Quadrant II**: 90° < angle < 180°
@@ -54,4 +49,3 @@ Quadrant I
 ```
 Quadrant IV
 ```
-

@@ -2,12 +2,6 @@
 
 Write a program that reads a date (month and day) from the user and determines if it corresponds to a national holiday in Tajikistan.
 
-## Task
-- Read the month (1-12) and day from the user
-- Display the name of the holiday if the date is a national holiday
-- Display "Not a national holiday" if the date is not a holiday
-- Note: Only check fixed-date holidays
-
 ## Tajikistan National Holidays Reference Table
 | Date        | Holiday Name              |
 |-------------|---------------------------|

@@ -2,13 +2,6 @@
 
 Write a program that calculates the amount of gas in moles using the ideal gas law.
 
-## Task
-
-- Read pressure in Pascals (as `float`)
-- Read volume in liters (as `float`)
-- Read temperature in degrees Celsius (as `float`)
-- Calculate and display the amount of gas in moles
-
 ## Examples
 
 **Example 1:**
@@ -56,7 +49,3 @@ Amount of gas: 1.01 moles
 - `n` = amount in moles
 - `R = 8.314 J/(mol·K)` (ideal gas constant)
 - `T` = temperature in Kelvin = `°C + 273.15`
-
-## Note
-
-- Convert Celsius to Kelvin: `K = °C + 273.15`

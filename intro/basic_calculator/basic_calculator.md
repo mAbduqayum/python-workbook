@@ -1,11 +1,6 @@
 # Exercise: Basic Calculator
 
-Write a program that performs basic arithmetic operations on two numbers.
-
-## Task
-
-- Read two numbers (as `int`)
-- Calculate and display addition and subtraction
+Write a program that reads two integers and displays their sum and difference.
 
 ## Examples
 

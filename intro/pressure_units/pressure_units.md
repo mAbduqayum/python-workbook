@@ -1,11 +1,6 @@
 # Exercise: Units of Pressure
 
-Write a program that converts pressure from kilopascals to other metric units.
-
-## Task
-
-- Read pressure in kilopascals (as `float`)
-- Convert and display in pascals, bars, and atmospheres
+Write a program that converts pressure from kilopascals to pascals, bars, and atmospheres.
 
 ## Examples
 

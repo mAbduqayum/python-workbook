@@ -2,12 +2,6 @@
 
 Write a program that converts total seconds into minutes and remaining seconds.
 
-## Task
-
-- Read a number of seconds (as `int`)
-- Convert to minutes and the remaining seconds
-- Display the result
-
 ## Examples
 
 **Example 1:**

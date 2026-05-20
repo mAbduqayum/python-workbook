@@ -2,11 +2,6 @@
 
 Write a program that determines if an integer is positive, negative, or zero.
 
-## Task
-- Read an integer `n` from the user
-- Determine if the number is positive, negative, or zero
-- Display the appropriate classification
-
 ## Examples
 **Example 1:**
 ```
@@ -31,13 +26,3 @@ negative
 ```
 zero
 ```
-
-## Logic
-- If `n > 0`: positive
-- If `n < 0`: negative
-- If `n == 0`: zero
-
-## Note
-- Handle integer input
-- Zero is neither positive nor negative
-- Use simple comparison operators

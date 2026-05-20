@@ -2,11 +2,6 @@
 
 Write a program that reads an earthquake magnitude and displays the appropriate descriptor according to the Richter scale.
 
-## Task
-- Read an earthquake magnitude from the user
-- Display the corresponding earthquake descriptor
-- Handle all magnitude ranges appropriately
-
 ## Richter Scale Classifications
 | Magnitude               | Descriptor |
 |-------------------------|------------|

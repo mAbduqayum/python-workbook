@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("12.50\n3\n", "Total cost: 37.50"),
-        ("8.99\n2\n", "Total cost: 17.98"),
-        ("15.00\n4\n", "Total cost: 60.00"),
+        ("12.50\n3\n", "37.50"),
+        ("8.99\n2\n", "17.98"),
+        ("15.00\n4\n", "60.00"),
     ],
 )
 def test_shopping(script_runner, input_params, expected_output):

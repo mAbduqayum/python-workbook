@@ -8,15 +8,15 @@ import pytest
     [
         (
             "250\n75\n",
-            "Energy required: 78487.50 Joules\nCost to heat water: 0.00 euros",
+            "Energy required: 78487.50 Joules\nCost to heat water: 0.01 somoni",
         ),
         (
             "1000\n80\n",
-            "Energy required: 334880.00 Joules\nCost to heat water: 0.01 euros",
+            "Energy required: 334880.00 Joules\nCost to heat water: 0.04 somoni",
         ),
         (
             "500\n95\n",
-            "Energy required: 198835.00 Joules\nCost to heat water: 0.00 euros",
+            "Energy required: 198835.00 Joules\nCost to heat water: 0.02 somoni",
         ),
     ],
 )

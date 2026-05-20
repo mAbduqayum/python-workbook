@@ -2,11 +2,6 @@
 
 Write a program that determines the color of a chess square based on its position.
 
-## Task
-- Read a chess position from the user (e.g., "a1", "d5")
-- Determine if the square is black or white
-- Use the chess board coordinate system
-
 ## Chess Board Layout
 ```
 8 ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️ ⬜️ ⬛️
@@ -61,4 +56,3 @@ c3
 ```
 black
 ```
-

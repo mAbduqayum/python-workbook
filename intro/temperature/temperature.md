@@ -2,11 +2,6 @@
 
 Write a program that converts the temperature from Celsius to Fahrenheit.
 
-## Task
-
-- Read a temperature in Celsius (as `float`)
-- Convert it to Fahrenheit and display the result
-
 ## Examples
 
 **Example 1:**
