@@ -14,7 +14,7 @@ Enter seconds: 30
 ```
 
 ```
-Total seconds: 186330
+186330
 ```
 
 **Example 2:**
@@ -27,7 +27,7 @@ Enter seconds: 0
 ```
 
 ```
-Total seconds: 88200
+88200
 ```
 
 **Example 3:**
@@ -40,9 +40,5 @@ Enter seconds: 45
 ```
 
 ```
-Total seconds: 8145
+8145
 ```
-
-## Formula
-
-`total_seconds = days×86400 + hours×3600 + minutes×60 + seconds`

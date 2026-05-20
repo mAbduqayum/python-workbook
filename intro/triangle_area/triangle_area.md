@@ -1,6 +1,6 @@
 # Exercise: Area of a Triangle
 
-Write a program that calculates the area of a triangle using base and height.
+Write a program that calculates the area of a triangle given its base and height in meters.
 
 ## Examples
 
@@ -12,7 +12,7 @@ Write a program that calculates the area of a triangle using base and height.
 ```
 
 ```
-Area of triangle: 27.30
+27.30
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ Area of triangle: 27.30
 ```
 
 ```
-Area of triangle: 50.22
+50.22
 ```
 
 **Example 3:**
@@ -34,7 +34,7 @@ Area of triangle: 50.22
 ```
 
 ```
-Area of triangle: 58.50
+58.50
 ```
 
 ## Formula

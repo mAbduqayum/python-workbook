@@ -1,7 +1,6 @@
 # Exercise: Distance Between Two Points on Earth
 
-Write a program that calculates the distance between two points on Earth's surface using the great circle distance
-formula.
+Write a program that calculates the distance (in kilometers) between two points on Earth's surface, given each point's latitude and longitude in degrees, using the great circle distance formula.
 
 ## Examples
 

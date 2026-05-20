@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("5.3\n3.2\n", "The area is: 16.96"),
-        ("10.5\n7.8\n", "The area is: 81.90"),
-        ("4.0\n6.5\n", "The area is: 26.00"),
+        ("5.3\n3.2\n", "16.96"),
+        ("10.5\n7.8\n", "81.90"),
+        ("4.0\n6.5\n", "26.00"),
     ],
 )
 def test_rectangle_area(script_runner, input_params, expected_output):

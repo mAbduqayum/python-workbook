@@ -1,6 +1,6 @@
 # Exercise: Area of a Regular Polygon
 
-Write a program that calculates the area of a regular polygon given the number of sides and side length.
+Write a program that calculates the area of a regular polygon given the number of sides and the side length in meters.
 
 ## Examples
 
@@ -12,7 +12,7 @@ Enter side length: 4
 ```
 
 ```
-Area of regular polygon: 41.57
+41.57
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ Enter side length: 3
 ```
 
 ```
-Area of regular polygon: 43.46
+43.46
 ```
 
 **Example 3:**
@@ -34,7 +34,7 @@ Enter side length: 5
 ```
 
 ```
-Area of regular polygon: 43.01
+43.01
 ```
 
 ## Formula

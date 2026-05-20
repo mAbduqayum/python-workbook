@@ -42,6 +42,17 @@ The first one or two exercises in a chapter that *introduce* `input()` as the
 concept may keep an explicit prompt on purpose — prompting is taught once
 before being dropped.
 
+**Measurement inputs need a unit somewhere.** Once a prompt is dropped, the
+example input becomes a bare number — `5.2` in `circle_area` doesn't say
+"meters". For any measurement exercise, the input unit must appear in either:
+
+- the **intro paragraph** ("calculates the area of a circle given its radius
+  in meters") — preferred for prompt-dropped exercises, or
+- the kept `Enter …:` prompt itself ("Enter height in meters: 1.75") — for
+  mixed-kind inputs where the prompt stays anyway.
+
+This holds even when the program doesn't print the unit in its output.
+
 ## Step 2 — Drop how-to-solve notes; keep output/spec notes
 
 A `## Note` (or inline hint) is **redundant and should be removed** when it:
@@ -99,6 +110,52 @@ Two scoped exceptions: chapters introducing a new feature (e.g.
 explanation, and dedicated separate `*_hint.md` files are opt-in
 scaffolding — leave both alone.
 
+### Step 2c — Drop label prefixes in one-line outputs
+
+When the program's output is a **single line** of the form
+`Label: <value>` (or `Label: <value> <unit>`), and the surrounding context
+(intro + the value alone) already tells the reader what the value is,
+**drop the label prefix** from solution, test, and doc together. Examples:
+
+- `print(f"Sorted order: {a}, {b}, {c}")` → `print(f"{a}, {b}, {c}")`
+- `print(f"The area is: {area:.2f}")` → `print(f"{area:.2f}")`
+- `print(f"Total seconds: {n}")` → `print(f"{n}")`
+
+**Keep the label** when:
+- the output is **multi-line** and labels disambiguate which line is which
+  (Fahrenheit / Kelvin, Energy / Cost, Tip / Total), or
+- the label carries **dynamic information** that wouldn't otherwise appear
+  (`Balance after {years} years: …`), or
+- dropping the label would leave the value ambiguous (no unit anywhere and
+  the intro doesn't pin it).
+
+Prefer **value + unit suffix** (`{feet:.2f} feet`) over **label prefix**
+(`Distance in feet: {feet:.2f}`) when a single-line output needs a unit —
+the unit reads naturally with the number, and there's no leading boilerplate.
+
+Remember: this change touches **three files** (`.py`, `test_*.py`, `.md`).
+Sync them in one pass.
+
+### Step 2d — Don't suggest formulas for grade-school math
+
+`## Formula` is genuinely useful for physics, finance, or trigonometry the
+student can't be expected to derive. It is **not** useful for unit
+conversions that are elementary arithmetic — drop it for things like:
+
+- seconds ↔ minutes/hours/days,
+- millimetres ↔ metres,
+- digit extraction with `//` and `%` on a two-digit number.
+
+If a beginner has to be told `total_seconds = days×86400 + hours×3600 +
+minutes×60 + seconds`, the exercise is teaching the wrong thing.
+
+### Step 2e — Localize to Tajikistan
+
+Where an exercise uses real-world prices, taxes, electricity rates, or
+currency labels, prefer Tajikistan-realistic values (somoni, local tariffs)
+over generic euro/dollar placeholders. Update solution, test, doc together
+and recompute the example outputs.
+
 ## Step 3 — General beginner-friction cleanup
 
 Apply opportunistically while in a chapter:
@@ -131,5 +188,10 @@ Apply opportunistically while in a chapter:
       `## Logic` / `## Algorithm` walkthroughs; default shape is
       `Task → Examples` (plus a thresholds table / formula / diagram
       when declarative).
+- [ ] Add input-unit hints to measurement-exercise intros when prompts were
+      dropped (Step 1).
+- [ ] Drop redundant `Label:` prefixes from single-line outputs; prefer
+      `value + unit suffix` when a unit is needed.
+- [ ] Drop `## Formula` for grade-school arithmetic conversions.
 - [ ] Sync any grammar/format fix across solution + test + doc examples.
 - [ ] `pytest <chapter>` green; spot-check docs render cleanly.

@@ -13,7 +13,7 @@ Write a program that reads three integers and displays them in sorted order from
 ```
 
 ```
-Sorted order: 3, 8, 12
+3, 8, 12
 ```
 
 **Example 2:**
@@ -25,7 +25,7 @@ Sorted order: 3, 8, 12
 ```
 
 ```
-Sorted order: 7, 15, 15
+7, 15, 15
 ```
 
 **Example 3:**
@@ -37,6 +37,6 @@ Sorted order: 7, 15, 15
 ```
 
 ```
-Sorted order: -5, 0, 10
+-5, 0, 10
 ```
 

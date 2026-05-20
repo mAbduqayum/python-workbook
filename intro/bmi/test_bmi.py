@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("1.75\n70.0\n", "Your BMI is: 22.86"),
-        ("1.80\n85.0\n", "Your BMI is: 26.23"),
-        ("1.65\n55.0\n", "Your BMI is: 20.20"),
+        ("1.75\n70.0\n", "22.86"),
+        ("1.80\n85.0\n", "26.23"),
+        ("1.65\n55.0\n", "20.20"),
     ],
 )
 def test_bmi(script_runner, input_params, expected_output):

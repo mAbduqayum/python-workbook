@@ -12,7 +12,7 @@ Enter quantity: 3
 ```
 
 ```
-Total cost: 37.50
+37.50
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ Enter quantity: 2
 ```
 
 ```
-Total cost: 17.98
+17.98
 ```
 
 **Example 3:**
@@ -34,5 +34,5 @@ Enter quantity: 4
 ```
 
 ```
-Total cost: 60.00
+60.00
 ```

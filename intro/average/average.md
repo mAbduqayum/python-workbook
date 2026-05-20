@@ -13,7 +13,7 @@ Write a program that calculates the average of three numbers.
 ```
 
 ```
-The average is: 20.00
+20.00
 ```
 
 **Example 2:**
@@ -25,7 +25,7 @@ The average is: 20.00
 ```
 
 ```
-The average is: 15.00
+15.00
 ```
 
 **Example 3:**
@@ -37,5 +37,5 @@ The average is: 15.00
 ```
 
 ```
-The average is: 12.00
+12.00
 ```

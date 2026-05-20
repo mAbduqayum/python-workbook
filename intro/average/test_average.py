@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("10\n20\n30\n", "The average is: 20.00"),
-        ("5\n15\n25\n", "The average is: 15.00"),
-        ("8\n12\n16\n", "The average is: 12.00"),
+        ("10\n20\n30\n", "20.00"),
+        ("5\n15\n25\n", "15.00"),
+        ("8\n12\n16\n", "12.00"),
     ],
 )
 def test_average(script_runner, input_params, expected_output):

@@ -1,6 +1,6 @@
 # Exercise: Rectangle Perimeter
 
-Write a program that calculates the perimeter of a rectangle.
+Write a program that calculates the perimeter of a rectangle given its length and width in meters.
 
 ## Examples
 
@@ -12,7 +12,7 @@ Write a program that calculates the perimeter of a rectangle.
 ```
 
 ```
-The perimeter is: 27.40
+27.40
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ The perimeter is: 27.40
 ```
 
 ```
-The perimeter is: 34.00
+34.00
 ```
 
 **Example 3:**
@@ -34,7 +34,7 @@ The perimeter is: 34.00
 ```
 
 ```
-The perimeter is: 24.00
+24.00
 ```
 
 ## Formula

@@ -1,6 +1,6 @@
 # Exercise: Free Fall
 
-Write a program that calculates how fast an object is traveling when it hits the ground after being dropped.
+Write a program that calculates how fast an object is traveling when it hits the ground after being dropped from a given height in meters.
 
 ## Examples
 

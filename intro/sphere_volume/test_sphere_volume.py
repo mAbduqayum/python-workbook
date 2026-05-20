@@ -6,9 +6,9 @@ import pytest
 @pytest.mark.parametrize(
     "input_params, expected_output",
     [
-        ("3\n", "The volume is: 113.10"),
-        ("5\n", "The volume is: 523.60"),
-        ("2\n", "The volume is: 33.51"),
+        ("3\n", "113.10"),
+        ("5\n", "523.60"),
+        ("2\n", "33.51"),
     ],
 )
 def test_sphere_volume(script_runner, input_params, expected_output):

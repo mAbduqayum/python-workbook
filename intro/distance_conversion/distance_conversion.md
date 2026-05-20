@@ -1,6 +1,6 @@
 # Exercise: Distance Conversion
 
-Write a program that converts distance from meters to feet.
+Write a program that converts a distance given in meters to feet.
 
 ## Examples
 

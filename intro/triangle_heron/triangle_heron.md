@@ -1,6 +1,6 @@
 # Exercise: Area of a Triangle (Again)
 
-Write a program that calculates the area of a triangle using Heron's formula given all three side lengths (assume they form a valid triangle).
+Write a program that calculates the area of a triangle using Heron's formula given all three side lengths in meters (assume they form a valid triangle).
 
 ## Examples
 
@@ -13,7 +13,7 @@ Write a program that calculates the area of a triangle using Heron's formula giv
 ```
 
 ```
-Area of triangle: 6.00
+6.00
 ```
 
 **Example 2:**
@@ -25,7 +25,7 @@ Area of triangle: 6.00
 ```
 
 ```
-Area of triangle: 14.70
+14.70
 ```
 
 **Example 3:**
@@ -37,7 +37,7 @@ Area of triangle: 14.70
 ```
 
 ```
-Area of triangle: 48.00
+48.00
 ```
 
 ## Formula

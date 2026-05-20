@@ -1,6 +1,6 @@
 # Exercise: Body Mass Index
 
-Write a program that calculates the Body Mass Index (BMI) using metric units.
+Write a program that calculates the Body Mass Index (BMI) given height in meters and weight in kilograms.
 
 ## Examples
 
@@ -12,7 +12,7 @@ Enter weight in kilograms: 70.0
 ```
 
 ```
-Your BMI is: 22.86
+22.86
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ Enter weight in kilograms: 85.0
 ```
 
 ```
-Your BMI is: 26.23
+26.23
 ```
 
 **Example 3:**
@@ -34,7 +34,7 @@ Enter weight in kilograms: 55.0
 ```
 
 ```
-Your BMI is: 20.20
+20.20
 ```
 
 ## Formula

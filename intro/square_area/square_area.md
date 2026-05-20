@@ -1,6 +1,6 @@
 # Exercise: Square Area
 
-Write a program that calculates the area of a square.
+Write a program that calculates the area of a square given its side length in meters.
 
 ## Examples
 
@@ -11,7 +11,7 @@ Write a program that calculates the area of a square.
 ```
 
 ```
-The area is: 56.25
+56.25
 ```
 
 **Example 2:**
@@ -21,7 +21,7 @@ The area is: 56.25
 ```
 
 ```
-The area is: 151.29
+151.29
 ```
 
 **Example 3:**
@@ -31,7 +31,7 @@ The area is: 151.29
 ```
 
 ```
-The area is: 25.00
+25.00
 ```
 
 ## Formula

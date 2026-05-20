@@ -11,7 +11,7 @@ Write a program that calculates the sum of all positive integers from 1 to n usi
 ```
 
 ```
-The sum of integers from 1 to 5 is: 15
+15
 ```
 
 **Example 2:**
@@ -21,7 +21,7 @@ The sum of integers from 1 to 5 is: 15
 ```
 
 ```
-The sum of integers from 1 to 10 is: 55
+55
 ```
 
 **Example 3:**
@@ -31,7 +31,7 @@ The sum of integers from 1 to 10 is: 55
 ```
 
 ```
-The sum of integers from 1 to 100 is: 5050
+5050
 ```
 
 ## Formula

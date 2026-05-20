@@ -1,6 +1,6 @@
 # Exercise: Rectangle Area
 
-Write a program that calculates the area of a rectangle.
+Write a program that calculates the area of a rectangle given its length and width in meters.
 
 ## Examples
 
@@ -12,7 +12,7 @@ Write a program that calculates the area of a rectangle.
 ```
 
 ```
-The area is: 16.96
+16.96
 ```
 
 **Example 2:**
@@ -23,7 +23,7 @@ The area is: 16.96
 ```
 
 ```
-The area is: 81.90
+81.90
 ```
 
 **Example 3:**
@@ -34,7 +34,7 @@ The area is: 81.90
 ```
 
 ```
-The area is: 26.00
+26.00
 ```
 
 ## Formula
