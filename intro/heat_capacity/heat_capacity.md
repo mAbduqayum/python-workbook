@@ -42,7 +42,6 @@ Cost to heat water: $0.03
 
 ## Formula
 
-- Mass: 1 liter of water = 1000 grams
 - Energy: `q = m × C × 𝚫T` where `C = 4.186 J/(g·°C)`
 - Convert to kWh: 1 kWh = 3,600,000 J
 - Cost: `cost = kWh × 0.04`
