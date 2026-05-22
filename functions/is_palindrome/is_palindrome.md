@@ -22,13 +22,3 @@ if __name__ == "__main__":
     print(is_palindrome("noon"))        # True
     print(is_palindrome("abc"))         # False
 ```
-
-## Logic
-- Compare the string with its reverse
-- Can use string slicing: `s[::-1]`
-- Or compare characters from both ends moving inward
-
-## Note
-- Empty string is considered a palindrome
-- Case-sensitive (for this version)
-- Single character is a palindrome

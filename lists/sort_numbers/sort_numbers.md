@@ -23,4 +23,3 @@ if __name__ == "__main__":
 ## Note
 
 - Do not modify the original list
-- Default sort is ascending order

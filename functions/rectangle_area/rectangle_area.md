@@ -22,8 +22,3 @@ if __name__ == "__main__":
 
 ## Formula
 - Area = length × width
-
-## Note
-- Both parameters should be positive numbers
-- Return value should be a float (or int)
-- Works with both integers and floats

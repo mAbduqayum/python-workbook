@@ -23,9 +23,3 @@ if __name__ == "__main__":
 
 ## Formula
 - BMI = weight / height²
-
-## Note
-- Weight should be in kilograms
-- Height should be in meters
-- Both parameters should be positive
-- Return value should be a float

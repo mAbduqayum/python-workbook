@@ -5,6 +5,7 @@ Write a function that converts a decimal number to binary string.
 ## Task
 - Create a function `decimal_to_binary(n)` that takes a decimal integer
 - Return the binary representation as a string
+- Don't use the built-in `bin()`
 
 ## Template:
 ```python
@@ -21,12 +22,3 @@ if __name__ == "__main__":
     print(decimal_to_binary(16))      # "10000"
 ```
 
-## Logic
-- Repeatedly divide by 2 and collect remainders
-- Remainders form the binary digits in reverse order
-- Special case: 0 returns "0"
-
-## Note
-- Don't use built-in `bin()`
-- Implement the conversion algorithm manually
-- Return a string, not an integer

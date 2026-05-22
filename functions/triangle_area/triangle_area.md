@@ -22,8 +22,3 @@ if __name__ == "__main__":
 
 ## Formula
 - Area = (base × height) / 2
-
-## Note
-- Both parameters should be positive numbers
-- Return value should be a float
-- Works with both integers and floats

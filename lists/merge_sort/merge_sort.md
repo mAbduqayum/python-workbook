@@ -1,39 +1,24 @@
-# Merge and Sort
+# Merge Sort
 
 Merge two sorted lists into one sorted list.
 
 ## Task
 
-- Create a function `merge_and_sort(list1, list2)` that takes two sorted lists
+- Create a function `merge_sort(list1, list2)` that takes two sorted lists
 - Return a new sorted list containing all elements from both lists
 
 ## Template:
 
 ```python
-def merge_and_sort(list1: list[int], list2: list[int]) -> list[int]:
+def merge_sort(list1: list[int], list2: list[int]) -> list[int]:
     pass
 
 
 if __name__ == "__main__":
     # Test your function
-    print(merge_and_sort([1, 3, 5], [2, 4, 6]))  # [1, 2, 3, 4, 5, 6]
-    print(merge_and_sort([1, 2], [3, 4]))        # [1, 2, 3, 4]
+    print(merge_sort([1, 3, 5], [2, 4, 6]))  # [1, 2, 3, 4, 5, 6]
+    print(merge_sort([1, 2], [3, 4]))        # [1, 2, 3, 4]
 ```
-
-<details>
-<summary><strong>Hint</strong></summary>
-
-- Concatenate both lists: `list1 + list2`
-- Sort the result: `sorted(list1 + list2)`
-- Or implement a merge algorithm that combines two sorted lists efficiently
-
-</details>
-
-## Note
-
-- Both input lists are already sorted
-- The simple approach is to concatenate and sort: O(n log n)
-- An efficient merge algorithm would be O(n) but is more complex
 
 <details>
 <summary><strong>Historical Note</strong></summary>

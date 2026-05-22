@@ -20,15 +20,3 @@ if __name__ == "__main__":
     print(to_base(100, 5))      # "400"
     print(to_base(0, 10))       # "0"
 ```
-
-## Logic
-- Similar to decimal to binary/hex conversions
-- Use digits 0-9 and letters A-Z for bases up to 36
-- Repeatedly divide by base and collect remainders
-- Map remainders to appropriate characters
-
-## Note
-- Base should be between 2 and 36 inclusive
-- Use uppercase letters for digits > 9
-- Return a string
-- Handle special case for 0

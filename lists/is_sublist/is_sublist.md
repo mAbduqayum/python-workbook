@@ -1,26 +1,3 @@
-# Is Sublist
-
-Check if one list is a sublist (consecutive elements) of another.
-
-## Task
-
-- Create a function `is_sublist(main_list, sub)` that takes two lists
-- Return True if sub appears as consecutive elements in main_list, False otherwise
-
-## Template:
-
-```python
-def is_sublist(main_list: list, sub: list) -> bool:
-    pass
-
-
-if __name__ == "__main__":
-    # Test your function
-    print(is_sublist([1, 2, 3, 4, 5], [2, 3, 4]))  # True
-    print(is_sublist([1, 2, 3, 4, 5], [2, 4]))  # False
-    print(is_sublist([1, 2, 3], []))  # True
-```
-
 <details>
 <summary><strong>Hint</strong></summary>
 

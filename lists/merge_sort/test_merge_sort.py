@@ -1,14 +1,12 @@
 import pytest
 
 try:
-    from merge_and_sort import merge_and_sort
+    from merge_sort import merge_sort
 except ImportError:
-    merge_and_sort = None
+    merge_sort = None
 
 
-@pytest.mark.skipif(
-    merge_and_sort is None, reason="merge_and_sort function not implemented"
-)
+@pytest.mark.skipif(merge_sort is None, reason="merge_sort function not implemented")
 @pytest.mark.parametrize(
     "list1, list2, expected",
     [
@@ -20,5 +18,5 @@ except ImportError:
         ([1, 5, 9], [2, 6, 10], [1, 2, 5, 6, 9, 10]),
     ],
 )
-def test_merge_and_sort(list1, list2, expected):
-    assert merge_and_sort(list1, list2) == expected
+def test_merge_sort(list1, list2, expected):
+    assert merge_sort(list1, list2) == expected

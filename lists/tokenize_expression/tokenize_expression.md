@@ -24,7 +24,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Multi-digit numbers should be treated as single tokens
-- Spaces should be ignored
-- Support basic operators: +, -, *, /, ^
-- Support parentheses: ( and )
+- Ignore spaces
+- Operators: `+`, `-`, `*`, `/`, `^`; parentheses: `(`, `)`

@@ -15,23 +15,11 @@ if __name__ == "__main__":
     print(sieve_of_eratosthenes(10))  # [2, 3, 5, 7]
 ```
 
-<details>
-<summary><strong>Hint</strong></summary>
+## Algorithm
 
-- Create a boolean list `primes` of size n+1, initialized to True
-- Set primes[0] and primes[1] to False (0 and 1 are not prime)
-- For each number i from 2 to √n:
-    - If primes[i] is True:
-        - Mark all multiples of i (i², i²+i, i²+2i, ...) as False
-- Collect all indices where primes is True
-
-</details>
-
-## Note
-
-- This is an efficient algorithm for finding all primes up to n
-- Time complexity: `O(n log log n)`
-- More efficient than checking each number individually
+1. Make a boolean list `is_prime` of length `n + 1`, all `True`, then mark `0` and `1` as `False`.
+2. For each `i` from `2` up to `√n`, if `is_prime[i]` is still `True`, mark every multiple of `i` starting at `i²` (`i²`, `i² + i`, `i² + 2i`, …) as `False`.
+3. The primes are the indices still marked `True`.
 
 <details>
 <summary><strong>Historical Note</strong></summary>

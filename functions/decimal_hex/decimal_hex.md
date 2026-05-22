@@ -5,6 +5,7 @@ Write a function that converts a decimal number to hexadecimal string.
 ## Task
 - Create a function `decimal_hex(n)` that takes a decimal integer
 - Return the hexadecimal representation as a string
+- Don't use the built-in `hex()`
 
 ## Template:
 ```python
@@ -21,14 +22,3 @@ if __name__ == "__main__":
     print(decimal_hex(0))        # "0"
 ```
 
-## Logic
-- Repeatedly divide by 16 and collect remainders
-- Map remainders 0-9 to digits '0'-'9'
-- Map remainders 10-15 to letters 'A'-'F'
-- Remainders form the hex digits in reverse order
-
-## Note
-- Don't use built-in `hex()`
-- Implement the conversion algorithm manually
-- Use uppercase letters (A-F)
-- Return a string

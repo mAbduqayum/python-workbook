@@ -24,6 +24,3 @@ if __name__ == "__main__":
 ## Formula
 - Celsius = (Fahrenheit - 32) × 5/9
 
-## Note
-- Return value should be a float
-- Both positive and negative temperatures are valid

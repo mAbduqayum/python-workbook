@@ -22,6 +22,7 @@ if __name__ == "__main__":
     print(mark_unary(['3', '-', '5']))  # ['3', '-', '5']
 ```
 
+
 <details>
 <summary><strong>Hint</strong></summary>
 

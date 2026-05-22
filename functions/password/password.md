@@ -19,14 +19,3 @@ if __name__ == "__main__":
     print(password(12))     # Random 12-character password
     print(password(16))     # Random 16-character password
 ```
-
-## Logic
-- Define character sets: lowercase, uppercase, digits, special chars
-- Randomly select characters from combined set
-- Ensure password includes at least one from each category
-
-## Note
-- Use `random.choice()` to select random characters
-- Character set: `abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()`
-- Password should be secure and unpredictable
-- For this exercise, simple random selection is acceptable

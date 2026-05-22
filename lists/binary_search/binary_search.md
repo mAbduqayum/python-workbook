@@ -24,8 +24,6 @@ if __name__ == "__main__":
 ## Note
 
 - Assume the list is sorted in ascending order
-- Binary search has O(log n) time complexity
-- More efficient than linear search for large sorted lists
 
 <details>
 <summary><strong>Historical Note</strong></summary>

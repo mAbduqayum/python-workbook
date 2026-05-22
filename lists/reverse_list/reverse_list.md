@@ -15,8 +15,3 @@ if __name__ == "__main__":
     print(reverse_list("10 -5 3"))    # [3, -5, 10]
     print(reverse_list(""))           # []
 ```
-
-## Note
-
-- The function should return a new reversed list
-- Empty string should return an empty list

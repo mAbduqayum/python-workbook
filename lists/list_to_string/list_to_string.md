@@ -15,7 +15,3 @@ if __name__ == "__main__":
     print(list_to_string(["Python", "is", "fun"]))  # "Python is fun"
     print(list_to_string([]))  # ""
 ```
-
-## Note
-
-- The function should return an empty string for an empty list

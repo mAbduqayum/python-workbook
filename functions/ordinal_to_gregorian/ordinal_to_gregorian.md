@@ -20,13 +20,3 @@ if __name__ == "__main__":
     print(ordinal_to_gregorian(2023, 60))     # (2023, 3, 1)
     print(ordinal_to_gregorian(2024, 366))    # (2024, 12, 31)
 ```
-
-## Logic
-- Days per month: [31, 28/29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-- February has 29 days in leap years, 28 otherwise
-- Subtract days from each month until remaining days fit in current month
-
-## Note
-- Account for leap years
-- Return tuple of (year, month, day)
-- Assume valid input (day_of_year is valid for the given year)

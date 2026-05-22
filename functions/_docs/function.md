@@ -451,16 +451,16 @@ print(factorial(5))          # 120
 ### Validation Pattern
 
 ```python
-def is_valid_triangle(a: float, b: float, c: float) -> bool:
-    """Check if three sides can form a valid triangle."""
+def is_triangle(a: float, b: float, c: float) -> bool:
+    """Check if three sides can form a triangle."""
     return (a + b > c) and (a + c > b) and (b + c > a)
 
 def is_leap_year(year: int) -> bool:
     """Check if a year is a leap year."""
     return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
 
-print(is_valid_triangle(3, 4, 5))  # True
-print(is_valid_triangle(1, 1, 10)) # False
+print(is_triangle(3, 4, 5))  # True
+print(is_triangle(1, 1, 10)) # False
 print(is_leap_year(2024))          # True
 print(is_leap_year(2023))          # False
 ```

@@ -24,10 +24,3 @@ if __name__ == "__main__":
     print(precedence('^'))  # 3
     print(precedence('~'))  # 4 (unary minus)
 ```
-
-## Note
-
-- Higher precedence operations are performed first
-- Unary operators typically have highest precedence
-- Exponentiation has higher precedence than multiplication
-- Used in converting infix to postfix notation

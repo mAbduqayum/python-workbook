@@ -24,13 +24,7 @@ if __name__ == "__main__":
     print(is_int("12a"))       # False
 ```
 
-## Logic
-- Valid integers can start with an optional sign (+ or -)
-- Rest of the string must be digits only
-- Empty strings are not valid
-- Leading/trailing spaces should make it invalid (be strict)
-
 ## Note
+- A valid integer is an optional `+`/`-` sign followed by one or more digits
+- An empty string, a lone sign, or surrounding whitespace is invalid
 - Don't use built-in conversion functions like `int()`
-- Check the string character by character
-- Consider edge cases like empty strings and single characters

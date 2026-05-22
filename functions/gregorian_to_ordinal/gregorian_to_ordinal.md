@@ -20,13 +20,3 @@ if __name__ == "__main__":
     print(gregorian_to_ordinal(2023, 3, 1))      # 60
     print(gregorian_to_ordinal(2024, 12, 31))    # 366
 ```
-
-## Logic
-- Sum days from all previous months
-- Add the current day
-- Account for leap years when month > 2
-
-## Note
-- February has 29 days in leap years, 28 otherwise
-- Days per month: [31, 28/29, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
-- Return integer day of year

@@ -1,14 +1,12 @@
 import pytest
 
 try:
-    from is_valid_triangle import is_valid_triangle
+    from is_triangle import is_triangle
 except ImportError:
-    is_valid_triangle = None
+    is_triangle = None
 
 
-@pytest.mark.skipif(
-    is_valid_triangle is None, reason="is_valid_triangle function not implemented"
-)
+@pytest.mark.skipif(is_triangle is None, reason="is_triangle function not implemented")
 @pytest.mark.parametrize(
     "a, b, c, expected",
     [
@@ -23,5 +21,5 @@ except ImportError:
         (1, 2, 10, False),
     ],
 )
-def test_is_valid_triangle(a, b, c, expected):
-    assert is_valid_triangle(a, b, c) == expected
+def test_is_triangle(a, b, c, expected):
+    assert is_triangle(a, b, c) == expected

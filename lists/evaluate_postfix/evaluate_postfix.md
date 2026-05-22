@@ -22,28 +22,6 @@ if __name__ == "__main__":
 ```
 
 <details>
-<summary><strong>Hint</strong></summary>
-
-- Create an empty stack
-- For each token:
-    - If number: push to stack
-    - If operator:
-        - Pop two operands from stack (right, then left)
-        - Apply operation: left op right
-        - Push result back to stack
-    - Special case for unary minus (~): pop one operand, negate it
-- Final result is the only item left on stack
-
-</details>
-
-## Note
-
-- Postfix expressions are evaluated left to right
-- No need to worry about operator precedence
-- Stack-based evaluation is straightforward
-- Handle division by converting operands to float
-
-<details>
 <summary><strong>Historical Note</strong></summary>
 
 Reverse Polish Notation (RPN) achieved widespread fame through HP calculators in the 1970s, particularly the HP-35 (1972), the world's first handheld scientific calculator. Engineers and scientists embraced RPN because it eliminated parentheses and enabled more efficient calculation workflows. Beyond calculators, stack-based evaluation of postfix expressions became fundamental to computer science—many programming language interpreters and virtual machines (including the Java Virtual Machine and Python's bytecode) execute code internally using stack-based postfix-like operations.

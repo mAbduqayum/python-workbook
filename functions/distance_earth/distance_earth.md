@@ -24,8 +24,3 @@ if __name__ == "__main__":
 - a = sin²(Δlat/2) + cos(lat1) × cos(lat2) × sin²(Δlon/2)
 - c = 2 × atan2(√a, √(1-a))
 - distance = R × c (where R = 6371 km, Earth's radius)
-
-## Note
-- Use `math.radians()`, `math.sin()`, `math.cos()`, `math.sqrt()`, `math.atan2()`
-- Earth's radius is approximately 6371 km
-- Result is approximate (Earth isn't a perfect sphere)

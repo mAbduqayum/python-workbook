@@ -19,4 +19,3 @@ if __name__ == "__main__":
 ## Note
 
 - Assume the string contains valid integers separated by spaces
-- The function should return an empty list if the string is empty
