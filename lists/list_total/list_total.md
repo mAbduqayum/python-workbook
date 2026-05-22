@@ -18,5 +18,4 @@ if __name__ == "__main__":
 
 ## Note
 
-- Don't use builtin `sum` function
-- Empty list should return 0
+- Don't use the built-in `sum` function

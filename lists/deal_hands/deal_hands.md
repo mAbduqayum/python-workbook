@@ -7,6 +7,7 @@ Deal cards from a deck to multiple players.
 - Create a function `deal_hands(deck, num_players, cards_per_player)`
 - Return a list of hands, where each hand is a list of cards
 - Each player receives the specified number of cards from the deck
+- Assume the deck has enough cards: `len(deck) >= num_players * cards_per_player`
 
 ## Template:
 
@@ -26,18 +27,3 @@ if __name__ == "__main__":
     # Player 3: ['8H', '9H', '10H']
 ```
 
-<details>
-<summary><strong>Hint</strong></summary>
-
-- Create an empty list for hands
-- For each player, extract cards_per_player cards from the deck
-- Use slicing: deck[i*cards_per_player:(i+1)*cards_per_player]
-- Or deal cards in round-robin fashion (one card to each player in turn)
-
-</details>
-
-## Note
-
-- Assume deck has enough cards: len(deck) >= num_players * cards_per_player
-- Each hand is a sublist of the deck
-- Cards are dealt sequentially or in rounds

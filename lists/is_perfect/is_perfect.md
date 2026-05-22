@@ -23,22 +23,6 @@ if __name__ == "__main__":
 ```
 
 <details>
-<summary><strong>Hint</strong></summary>
-
-- Find all divisors of n from 1 to n-1 (proper divisors)
-- Sum the divisors
-- Check if the sum equals n
-- Use list comprehension: `sum([i for i in range(1, n) if n % i == 0]) == n`
-
-</details>
-
-## Note
-
-- Perfect numbers are rare: 6, 28, 496, 8128, ...
-- Proper divisors exclude the number itself
-- 1 is not considered a perfect number
-
-<details>
 <summary><strong>Historical Note</strong></summary>
 
 Perfect numbers have captivated mathematicians for over two millennia. Euclid proved around 300 BCE that if 2^p - 1 is prime (now called a Mersenne prime), then 2^(p-1) × (2^p - 1) is a perfect number. This elegant formula still generates all known even perfect numbers. As of 2024, only 52 perfect numbers have been discovered—the largest containing over 49 million digits. Whether any odd perfect numbers exist remains one of mathematics' oldest unsolved mysteries, spanning more than 2,000 years.
