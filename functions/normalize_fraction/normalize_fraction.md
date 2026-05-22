@@ -20,13 +20,3 @@ if __name__ == "__main__":
     print(normalize_fraction(7, 3))       # (7, 3)
     print(normalize_fraction(0, 5))       # (0, 1)
 ```
-
-## Logic
-- Find the Greatest Common Divisor (GCD) of numerator and denominator
-- Divide both by the GCD
-- Special case: if numerator is 0, return (0, 1)
-
-## Note
-- Use the Euclidean algorithm to find GCD
-- Both numerator and denominator should be positive in result
-- Handle the case where numerator is 0

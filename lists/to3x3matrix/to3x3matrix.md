@@ -22,6 +22,4 @@ if __name__ == "__main__":
 
 ## Note
 
-- The string contains exactly 9 space-separated integers
-- The matrix is always 3x3
-- Each row is a sublist of 3 elements
+- The input is exactly 9 space-separated integers

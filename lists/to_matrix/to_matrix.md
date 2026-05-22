@@ -23,17 +23,6 @@ if __name__ == "__main__":
     # [[1, 2], [3, 4]]
 ```
 
-<details>
-<summary><strong>Hint</strong></summary>
-
-- Use list comprehension with slicing
-- For each row i, extract elements from index i*cols to (i+1)*cols
-- `[numbers[i*cols:(i+1)*cols] for i in range(rows)]`
-
-</details>
-
 ## Note
 
-- Assume len(numbers) == rows * cols
-- Each row contains exactly cols elements
-- This is a generalization of the 3x3 matrix function
+- Assume `len(numbers) == rows * cols`

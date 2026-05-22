@@ -18,5 +18,4 @@ if __name__ == "__main__":
 
 ## Note
 
-- The function should return an empty list for an empty string
-- Multiple spaces between words should be handled properly
+- Treat any run of whitespace as a separator; ignore leading and trailing spaces

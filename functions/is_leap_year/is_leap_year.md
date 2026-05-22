@@ -21,12 +21,7 @@ if __name__ == "__main__":
     print(is_leap_year(2024))    # True
 ```
 
-## Logic
+## Rule
 A year is a leap year if:
 - It's divisible by 4, AND
 - If it's divisible by 100, it must also be divisible by 400
-
-## Note
-- Year 2000 was a leap year (divisible by 400)
-- Year 1900 was NOT a leap year (divisible by 100 but not by 400)
-- Most years divisible by 4 are leap years

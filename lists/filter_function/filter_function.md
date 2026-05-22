@@ -33,19 +33,3 @@ if __name__ == "__main__":
 
     print(filter_list([-2, -1, 0, 1, 2], is_positive))  # [1, 2]
 ```
-
-<details>
-<summary><strong>Hint</strong></summary>
-
-- Iterate through the list
-- For each element, call condition(element)
-- If condition returns True, include the element in the result
-- Use list comprehension: `[x for x in lst if condition(x)]`
-
-</details>
-
-## Note
-
-- This mimics Python's built-in `filter()` function
-- The condition parameter is a callable (function)
-- You can use lambda functions as conditions

@@ -65,7 +65,7 @@ mindmap
 1. [`binary_search`](../binary_search/binary_search.md)
 1. [`slice`](../slice/slice.md)
 1. [`copy_list`](../copy_list/copy_list.md)
-1. [`merge_and_sort`](../merge_and_sort/merge_and_sort.md)
+1. [`merge_sort`](../merge_sort/merge_sort.md)
 1. [`to3x3matrix`](../to3x3matrix/to3x3matrix.md)
 1. [`to_matrix`](../to_matrix/to_matrix.md)
 1. [`divisors`](../divisors/divisors.md)
