@@ -15,6 +15,15 @@ boilerplate, and docs say *what* to produce — never *how* to solve it.
 - Any prompt wording *other than* `Enter <label>:` is **not** stripped and
   will fail the output comparison.
 
+**The harness is not uniform across chapters — check the test before you
+reason about it.** Some chapters (e.g. `repetitions`) don't use the exact-match
+`_clean_output` path at all. They use the `ScriptRunner` fixture directly with
+**loose substring assertions** (`assert expected in result.stdout`), often
+asserting only the *value* (`"1010"`, `"4"`), not the surrounding label. Where
+that's the style: dropping a label prefix or reformatting output is safe as
+long as the asserted substring still appears, and you can confirm it in seconds
+by grepping the parametrize block.
+
 Implication: removing `Enter …:` prompts from docs/solutions is safe. Tests
 assert program output, not doc text — **doc-only edits never need test
 changes**. Still run the suite to confirm nothing else regressed.
@@ -26,15 +35,17 @@ an output fenced block. Strip the `Enter <label>: ` prefix from each **input**
 line, leaving the bare value. Leave the output block untouched. Mirror the
 change in the solution `.py`: `input("Enter foo: ")` → `input()`.
 
-**KEEP the `Enter …:` prompt when** the exercise reads **multiple inputs of
-different kinds**, where the prompt is the only thing telling the reader which
-value goes on which line (e.g. deposit / rate / years). Without it the input
-block is ambiguous.
+**DROP the prompt** for almost everything, including **fixed multi-input of
+different kinds** (start / diff / count, weight / height, the coefficients
+a / b / c). A `## Task` that names the inputs in the order they're read is
+enough to disambiguate the example's input block — the prompt is redundant
+with it. Drop it.
 
-**DROP the prompt when** input is:
-- a single value, or
-- multiple values of the **same category** (e.g. three numbers to average,
-  three sides of a triangle, a list to sort) — order/meaning is obvious.
+**KEEP the `Enter …:` prompt only when** reads are **interleaved inside a loop**
+so there is no fixed order to name up front, and the prompt is the only thing
+telling the reader which value is being asked for at each step — e.g. reading
+alternating x / y coordinate pairs until the user enters a blank x
+(`polygon_perimeter`). Here a bare input block really is ambiguous.
 
 Also soften `## Task` wording: "Ask/prompt the user for X" → "Read X".
 
@@ -44,14 +55,9 @@ before being dropped.
 
 **Measurement inputs need a unit somewhere.** Once a prompt is dropped, the
 example input becomes a bare number — `5.2` in `circle_area` doesn't say
-"meters". For any measurement exercise, the input unit must appear in either:
-
-- the **intro paragraph** ("calculates the area of a circle given its radius
-  in meters") — preferred for prompt-dropped exercises, or
-- the kept `Enter …:` prompt itself ("Enter height in meters: 1.75") — for
-  mixed-kind inputs where the prompt stays anyway.
-
-This holds even when the program doesn't print the unit in its output.
+"meters". Put the unit in the **intro paragraph** ("calculates the area of a
+circle given its radius in meters"). This holds even when the program doesn't
+print the unit in its output.
 
 ## Step 2 — Drop how-to-solve notes; keep output/spec notes
 
@@ -98,12 +104,19 @@ ask one more question: *does this content belong in `## Task`?*
   "input is case-insensitive", "0°C displays `solid or liquid`") should
   be **moved into `## Task` — or directly into the intro paragraph** if
   it's a single short fact. Then drop the now-empty Note.
-- A `## Logic` / `## Algorithm` section that walks the student through the
-  branches or digit extraction *is* the solution — drop it wholesale.
+- A `## Logic` / `## Algorithm` / `## Pattern` section that walks the student
+  through the branches, the digit extraction, or a term-by-term derivation of
+  the answer *is* the solution — drop it wholesale.
 - Keep a standalone reference section only when it is genuinely
   declarative content the student looks up rather than derives — a
   thresholds table (BMI ranges, day-mapping table), a labeled formula,
   or a diagram. Tables/formulas/diagrams stay; prose how-to goes.
+- **A named method the student cannot be expected to derive (Newton's method,
+  a series for π) keeps its core formula, not just its tolerance.** Dropping
+  the update rule (`guess = (guess + x/guess) / 2`) along with the walkthrough
+  leaves the exercise unsolvable — that's too far. Keep the one labeled formula
+  / series; drop the surrounding "do this, then this" steps. (Naming the method
+  in the title isn't enough for a beginner.)
 
 Two scoped exceptions: chapters introducing a new feature (e.g.
 `if_elif_else` teaching docs in `_docs/`) intentionally keep more
@@ -149,13 +162,6 @@ conversions that are elementary arithmetic — drop it for things like:
 If a beginner has to be told `total_seconds = days×86400 + hours×3600 +
 minutes×60 + seconds`, the exercise is teaching the wrong thing.
 
-### Step 2e — Localize to Tajikistan
-
-Where an exercise uses real-world prices, taxes, electricity rates, or
-currency labels, prefer Tajikistan-realistic values (somoni, local tariffs)
-over generic euro/dollar placeholders. Update solution, test, doc together
-and recompute the example outputs.
-
 ## Step 3 — General beginner-friction cleanup
 
 Apply opportunistically while in a chapter:
@@ -179,9 +185,8 @@ Apply opportunistically while in a chapter:
 
 ## Checklist per chapter
 
-- [ ] Classify each input exercise: single / same-category → drop prompt;
-      mixed-kind → keep prompt.
-- [ ] Strip `Enter …:` from docs **and** solution `.py` for the drop set.
+- [ ] Drop `Enter …:` from docs **and** solution `.py` everywhere except
+      interleaved-loop reads (Step 1).
 - [ ] Soften `## Task` "ask/prompt" → "read".
 - [ ] Remove redundant/how-to notes; keep non-derivable output-spec notes.
 - [ ] Fold any surviving spec bullets into `## Task`; drop standalone
