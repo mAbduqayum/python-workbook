@@ -1,7 +1,5 @@
 n = int(input())
 
-# Take absolute value to handle negative numbers
-n = abs(n)
 digit_sum = 0
 
 while n > 0:

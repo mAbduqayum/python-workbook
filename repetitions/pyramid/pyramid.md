@@ -29,9 +29,3 @@ Create a centered pyramid pattern using asterisks.
  ***
 *****
 ```
-
-## Logic
-- For each row i from 1 to n:
-  - Number of spaces = n - i
-  - Number of stars = 2 * i - 1
-  - Print: spaces + stars

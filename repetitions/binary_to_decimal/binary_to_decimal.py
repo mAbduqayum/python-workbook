@@ -9,4 +9,4 @@ for digit in binary:
     result = result * 2 + int(digit)
 
 # Display result
-print(f"The decimal equivalent is {result}")
+print(result)

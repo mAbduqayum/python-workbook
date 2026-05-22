@@ -29,8 +29,3 @@ Create a right triangle pattern using asterisks.
 **
 ***
 ```
-
-## Logic
-- Use a for loop to iterate from 1 to n (inclusive)
-- For each row i, print i asterisks
-- Use string multiplication: `"*" * i`

@@ -13,4 +13,4 @@ while value != 0:
 
 # Calculate and display average
 average = total / count
-print(f"The average is {average}")
+print(average)

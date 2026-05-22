@@ -10,4 +10,4 @@ while m % d != 0 or n % d != 0:
     d -= 1
 
 # Display result
-print(f"The GCD is {d}")
+print(d)

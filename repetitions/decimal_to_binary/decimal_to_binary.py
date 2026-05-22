@@ -15,4 +15,4 @@ else:
         q = q // 2
 
 # Display result
-print(f"The binary equivalent is {result}")
+print(result)
