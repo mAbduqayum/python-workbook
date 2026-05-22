@@ -24,7 +24,5 @@ Celsius    Fahrenheit
 100        212.0
 ```
 
-## Logic
-- Use a for loop with `range(0, 101, 10)` for multiples of 10
-- Convert Celsius to Fahrenheit using: `F = C × 9/5 + 32`
-- Display each row with formatted output
+## Formula
+`F = C × 9/5 + 32`
