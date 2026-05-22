@@ -20,12 +20,3 @@ if __name__ == "__main__":
     print(is_even(-2))   # True
     print(is_even(-5))   # False
 ```
-
-## Logic
-- A number is even if it's divisible by 2
-- Use the modulo operator `%`
-- If `n % 2 == 0`, the number is even
-
-## Note
-- 0 is considered even
-- Negative numbers can also be even or odd

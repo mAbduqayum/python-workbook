@@ -5,6 +5,7 @@ Write a function that counts the number of digits in an integer.
 ## Task
 - Create a function `number_of_digits(n)` that takes an integer
 - Return the count of digits
+- Don't convert the number to a string
 
 ## Template:
 ```python
@@ -21,12 +22,3 @@ if __name__ == "__main__":
     print(number_of_digits(7))         # 1
 ```
 
-## Logic
-- Count digits by repeatedly dividing by 10
-- Handle negative numbers (count digits, not the sign)
-- Zero has 1 digit
-
-## Note
-- Don't convert to string
-- Use a loop and integer division
-- Handle negative numbers correctly

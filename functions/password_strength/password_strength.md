@@ -5,6 +5,7 @@ Write a function that evaluates password strength.
 ## Task
 - Create a function `password_strength(pwd)` that evaluates a password
 - Return a strength rating: "weak", "medium", or "strong"
+- Special characters: `!@#$%^&*()_+-=[]{}|;:,.<>?`
 
 ## Template:
 ```python
@@ -16,7 +17,7 @@ if __name__ == "__main__":
     # Test your function
     print(password_strength("abc"))           # "weak"
     print(password_strength("Password1"))     # "medium"
-    print(password_strength("P@ssw0rd!"))     # "strong"
+    print(password_strength("P@ssw0rd!"))     # "medium"
     print(password_strength("hello"))         # "weak"
     print(password_strength("Hello123"))      # "medium"
 ```
@@ -34,7 +35,3 @@ if __name__ == "__main__":
 - Length >= 12, AND
 - Has at least 3 character types
 
-## Note
-- Character types: lowercase, uppercase, digits, special characters
-- Special characters: `!@#$%^&*()_+-=[]{}|;:,.<>?`
-- Evaluate based on length and variety

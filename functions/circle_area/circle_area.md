@@ -5,6 +5,8 @@ Write a function that calculates the area of a circle.
 ## Task
 - Create a function `circle_area(radius)` that takes a circle's radius
 - Return the area of the circle
+- Area = π × r²
+- Use `math.pi` for the value of π
 
 ## Template:
 ```python
@@ -20,11 +22,3 @@ if __name__ == "__main__":
     print(circle_area(10))    # 314.1592653589793
 ```
 
-## Formula
-- Area = π × r²
-- Use `math.pi` for the value of π
-
-## Note
-- Import the `math` module
-- Radius should be positive
-- Result should be a float

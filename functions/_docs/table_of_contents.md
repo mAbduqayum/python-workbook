@@ -39,7 +39,7 @@ mindmap
 1. [`get_hypotenuse`](../get_hypotenuse/get_hypotenuse.md)
 1. [`bmi`](../bmi/bmi.md)
 1. [`is_leap_year`](../is_leap_year/is_leap_year.md)
-1. [`is_valid_triangle`](../is_valid_triangle/is_valid_triangle.md)
+1. [`is_triangle`](../is_triangle/is_triangle.md)
 1. [`quadratic_roots`](../quadratic_roots/quadratic_roots.md)
 1. [`number_of_digits`](../number_of_digits/number_of_digits.md)
 1. [`digit_sum`](../digit_sum/digit_sum.md)

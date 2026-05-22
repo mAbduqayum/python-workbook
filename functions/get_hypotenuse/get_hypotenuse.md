@@ -23,8 +23,3 @@ if __name__ == "__main__":
 ## Formula
 - Hypotenuse = √(a² + b²) (Pythagorean theorem)
 - Use `math.sqrt()` for the square root
-
-## Note
-- Import the `math` module
-- Both sides should be positive numbers
-- Result should be a float

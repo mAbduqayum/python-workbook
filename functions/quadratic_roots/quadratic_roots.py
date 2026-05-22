@@ -1,11 +1,14 @@
 import math
 
 
-def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | None:
+def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | float | None:
     discriminant = b**2 - 4 * a * c
 
     if discriminant < 0:
         return None
+
+    if discriminant == 0:
+        return -b / (2 * a)
 
     sqrt_discriminant = math.sqrt(discriminant)
     root1 = (-b + sqrt_discriminant) / (2 * a)
@@ -18,5 +21,5 @@ if __name__ == "__main__":
     # Test your function
     quadratic_roots(1, -3, 2)  # (2.0, 1.0)
     quadratic_roots(1, 0, -4)  # (2.0, -2.0)
-    quadratic_roots(1, -2, 1)  # (1.0, 1.0)
+    quadratic_roots(1, -2, 1)  # 1.0
     quadratic_roots(1, 0, 1)  # None
