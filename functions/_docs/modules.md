@@ -257,7 +257,7 @@ def is_strong_password(password):
 # Demo that shows how the function works
 if __name__ == "__main__":
     examples = ["weak", "StrongPass123", "NoDigits", "short1"]
-    
+
     print("Password Strength Checker Demo:")
     for pwd in examples:
         is_strong = is_strong_password(pwd)
@@ -282,11 +282,11 @@ if __name__ == "__main__":
     # Test multiply
     assert multiply(3, 4) == 12
     assert multiply(-2, 5) == -10
-    
+
     # Test divide
     assert divide(10, 2) == 5
     assert divide(10, 0) is None
-    
+
     print("All tests passed!")
 ```
 
@@ -328,10 +328,10 @@ if __name__ == "__main__":
 def circle_area(radius):
     """
     Calculate the area of a circle.
-    
+
     Args:
         radius: The radius of the circle
-        
+
     Returns:
         The area of the circle
     """
@@ -374,15 +374,15 @@ if __name__ == "__main__":
 
 This pattern allows your file to work both ways:
 
-| Use Case | Command | What Happens |
-|----------|---------|--------------|
-| **As a module** | `import my_module` | Functions are available, test code doesn't run |
-| **As a script** | `python my_module.py` | Functions are defined AND test code runs |
+| Use Case        | Command               | What Happens                                   |
+|-----------------|-----------------------|------------------------------------------------|
+| **As a module** | `import my_module`    | Functions are available, test code doesn't run |
+| **As a script** | `python my_module.py` | Functions are defined AND test code runs       |
 
 ### Complete Example
 
 ```python
-# File: statistics.py
+# File: stats_utils.py
 import math
 
 def mean(numbers):
@@ -406,7 +406,7 @@ def std_dev(numbers):
 # Test/demo code
 if __name__ == "__main__":
     data = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    
+
     print("Statistics Demo")
     print(f"Data: {data}")
     print(f"Mean: {mean(data)}")
@@ -416,7 +416,7 @@ if __name__ == "__main__":
 
 **Using it as a module:**
 ```python
-from statistics import mean, median
+from stats_utils import mean, median
 
 scores = [85, 92, 78, 90, 88]
 avg_score = mean(scores)
@@ -425,7 +425,7 @@ mid_score = median(scores)
 
 **Using it as a script:**
 ```bash
-$ python statistics.py
+$ python stats_utils.py
 Statistics Demo
 Data: [1, 2, 3, 4, 5, 6, 7, 8, 9]
 Mean: 5.0

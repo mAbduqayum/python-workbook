@@ -1,4 +1,4 @@
-# Chapter 2: Decision Making with Conditionals
+# Decision Making with Conditionals
 
 ## Introduction
 
@@ -12,7 +12,19 @@ Execution still begins at the top of the program and progresses toward the botto
 in the program may be skipped. This allows programs to perform different tasks for different input values and greatly
 increases the variety of problems that a Python program can solve.
 
-## Python Conditionals
+## Syntax
+
+```python
+if condition:
+    # runs when condition is True
+elif another_condition:
+    # runs when condition is False and another_condition is True
+else:
+    # runs when no condition above is True
+```
+
+The `elif` and `else` parts are optional. You can use `if` alone, `if` with
+`else`, or add as many `elif` branches as you need.
 
 ## Examples
 
@@ -41,7 +53,7 @@ flowchart TD
     E --> F
 ```
 
-### Example 2: Number Sign (Exercise 102)
+### Example 2: Number Sign
 
 **Problem**: Determine if a number is positive, negative, or zero.
 
@@ -71,7 +83,7 @@ flowchart TD
     G --> H
 ```
 
-### Example 3: Triangle Classification (Exercise 107)
+### Example 3: Triangle Classification
 
 **Problem**: Classify a triangle as equilateral (all sides equal), isosceles (two sides equal), or scalene (no sides
 equal) based on the lengths of its three sides.

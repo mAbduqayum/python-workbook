@@ -25,9 +25,13 @@ mindmap
 
 ## Recommended Reading Order
 
-1. [`function.md`](function.md)
-1. [`import.md`](import.md)
-1. [`modules.md`](modules.md)
+1. [`function_basics.md`](function_basics.md)
+2. [`type_hints_docstrings.md`](type_hints_docstrings.md)
+3. [`function_scope.md`](function_scope.md)
+4. [`function_patterns.md`](function_patterns.md)
+5. [`function_best_practices.md`](function_best_practices.md)
+6. [`import.md`](import.md)
+7. [`modules.md`](modules.md)
 
 ## Practice Questions
 

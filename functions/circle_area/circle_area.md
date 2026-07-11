@@ -8,17 +8,12 @@ Write a function that calculates the area of a circle.
 - Area = π × r²
 - Use `math.pi` for the value of π
 
-## Template:
-```python
-def circle_area(radius: float) -> float:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(circle_area(1))     # 3.141592653589793
-    print(circle_area(2))     # 12.566370614359172
-    print(circle_area(5))     # 78.53981633974483
-    print(circle_area(10))    # 314.1592653589793
-```
+| Call              | Returns              |
+|-------------------|----------------------|
+| `circle_area(1)`  | `3.141592653589793`  |
+| `circle_area(2)`  | `12.566370614359172` |
+| `circle_area(5)`  | `78.53981633974483`  |
+| `circle_area(10)` | `314.1592653589793`  |
 

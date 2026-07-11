@@ -8,17 +8,12 @@ Write a function that encrypts text using the Caesar cipher.
 - Preserve letter case
 - Leave non-letter characters (spaces, punctuation, digits) unchanged
 
-## Template:
-```python
-def caesar_cipher(text: str, shift: int) -> str:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(caesar_cipher("abc", 1))        # "bcd"
-    print(caesar_cipher("xyz", 3))        # "abc"
-    print(caesar_cipher("Hello", 5))      # "Mjqqt"
-    print(caesar_cipher("ABC", -1))       # "ZAB"
-```
+| Call                        | Returns   |
+|-----------------------------|-----------|
+| `caesar_cipher("abc", 1)`   | `"bcd"`   |
+| `caesar_cipher("xyz", 3)`   | `"abc"`   |
+| `caesar_cipher("Hello", 5)` | `"Mjqqt"` |
+| `caesar_cipher("ABC", -1)`  | `"ZAB"`   |
 

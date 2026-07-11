@@ -7,18 +7,13 @@ Write a function that calculates the sum of digits in an integer.
 - Return the sum of all digits
 - Don't convert the number to a string
 
-## Template:
-```python
-def digit_sum(n: int) -> int:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(digit_sum(123))       # 6
-    print(digit_sum(0))         # 0
-    print(digit_sum(-456))      # 15
-    print(digit_sum(1000))      # 1
-    print(digit_sum(99))        # 18
-```
+| Call              | Returns |
+|-------------------|---------|
+| `digit_sum(123)`  | `6`     |
+| `digit_sum(0)`    | `0`     |
+| `digit_sum(-456)` | `15`    |
+| `digit_sum(1000)` | `1`     |
+| `digit_sum(99)`   | `18`    |
 

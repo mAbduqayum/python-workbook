@@ -7,18 +7,13 @@ Write a function that counts the number of digits in an integer.
 - Return the count of digits
 - Don't convert the number to a string
 
-## Template:
-```python
-def number_of_digits(n: int) -> int:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(number_of_digits(123))       # 3
-    print(number_of_digits(0))         # 1
-    print(number_of_digits(-456))      # 3
-    print(number_of_digits(1000000))   # 7
-    print(number_of_digits(7))         # 1
-```
+| Call                        | Returns |
+|-----------------------------|---------|
+| `number_of_digits(123)`     | `3`     |
+| `number_of_digits(0)`       | `1`     |
+| `number_of_digits(-456)`    | `3`     |
+| `number_of_digits(1000000)` | `7`     |
+| `number_of_digits(7)`       | `1`     |
 

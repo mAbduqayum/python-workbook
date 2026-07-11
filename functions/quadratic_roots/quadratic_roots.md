@@ -8,19 +8,14 @@ Write a function that calculates the roots of a quadratic equation.
 - Return the single root when there is exactly one (repeated) root
 - Return `None` when there are no real roots
 
-## Template:
-```python
-def quadratic_roots(a: float, b: float, c: float) -> tuple[float, float] | float | None:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(quadratic_roots(1, -3, 2))     # (2.0, 1.0)
-    print(quadratic_roots(1, 0, -4))     # (2.0, -2.0)
-    print(quadratic_roots(1, -2, 1))     # 1.0
-    print(quadratic_roots(1, 0, 1))      # None
-```
+| Call                        | Returns       |
+|-----------------------------|---------------|
+| `quadratic_roots(1, -3, 2)` | `(2.0, 1.0)`  |
+| `quadratic_roots(1, 0, -4)` | `(2.0, -2.0)` |
+| `quadratic_roots(1, -2, 1)` | `1.0`         |
+| `quadratic_roots(1, 0, 1)`  | `None`        |
 
 ## Formula
 - Discriminant: Δ = b² - 4ac

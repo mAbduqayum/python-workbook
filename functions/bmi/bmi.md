@@ -7,19 +7,14 @@ Write a function that calculates Body Mass Index (BMI).
 - Weight is in kilograms, height is in meters
 - Return the BMI value
 
-## Template:
-```python
-def bmi(weight: float, height: float) -> float:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(bmi(70, 1.75))     # 22.857142857142858
-    print(bmi(80, 1.80))     # 24.691358024691358
-    print(bmi(50, 1.60))     # 19.53125
-    print(bmi(90, 1.75))     # 29.387755102040817
-```
+| Call            | Returns              |
+|-----------------|----------------------|
+| `bmi(70, 1.75)` | `22.857142857142858` |
+| `bmi(80, 1.80)` | `24.691358024691358` |
+| `bmi(50, 1.60)` | `19.53125`           |
+| `bmi(90, 1.75)` | `29.387755102040817` |
 
 ## Formula
 - BMI = weight / height²

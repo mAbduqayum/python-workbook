@@ -10,11 +10,11 @@ particularly useful when you have multiple discrete values to check against.
 ```python
 match expression:
     case pattern1:
-    # code for pattern1
+        # code for pattern1
     case pattern2:
-    # code for pattern2
+        # code for pattern2
     case _:
-    # default case (optional)
+        # default case (optional)
 ```
 
 ## Examples
@@ -130,7 +130,7 @@ match temperature:
 
 - Multiple values with OR (`|`)
 - Guard conditions with `if`
-- Wildcard pattern (`_`):
+- Wildcard pattern (`_`)
 
 ## When to Use Match vs If-Elif
 

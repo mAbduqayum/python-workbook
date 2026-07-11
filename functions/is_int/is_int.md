@@ -6,23 +6,18 @@ Write a function that determines if a string represents a valid integer.
 - Create a function `is_int(s)` that takes a string
 - Return `True` if the string represents a valid integer, `False` otherwise
 
-## Template:
-```python
-def is_int(s: str) -> bool:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(is_int("123"))       # True
-    print(is_int("-456"))      # True
-    print(is_int("0"))         # True
-    print(is_int("12.5"))      # False
-    print(is_int("abc"))       # False
-    print(is_int(""))          # False
-    print(is_int("+789"))      # True
-    print(is_int("12a"))       # False
-```
+| Call             | Returns |
+|------------------|---------|
+| `is_int("123")`  | `True`  |
+| `is_int("-456")` | `True`  |
+| `is_int("0")`    | `True`  |
+| `is_int("12.5")` | `False` |
+| `is_int("abc")`  | `False` |
+| `is_int("")`     | `False` |
+| `is_int("+789")` | `True`  |
+| `is_int("12a")`  | `False` |
 
 ## Note
 - A valid integer is an optional `+`/`-` sign followed by one or more digits

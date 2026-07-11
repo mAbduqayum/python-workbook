@@ -6,20 +6,15 @@ Write a function that determines if three sides can form a triangle.
 - Create a function `is_triangle(a, b, c)` that takes three side lengths
 - Return `True` if they can form a triangle, `False` otherwise
 
-## Template:
-```python
-def is_triangle(a: float, b: float, c: float) -> bool:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(is_triangle(3, 4, 5))      # True
-    print(is_triangle(1, 2, 3))      # False
-    print(is_triangle(5, 5, 5))      # True
-    print(is_triangle(1, 1, 10))     # False
-    print(is_triangle(7, 10, 5))     # True
-```
+| Call                    | Returns |
+|-------------------------|---------|
+| `is_triangle(3, 4, 5)`  | `True`  |
+| `is_triangle(1, 2, 3)`  | `False` |
+| `is_triangle(5, 5, 5)`  | `True`  |
+| `is_triangle(1, 1, 10)` | `False` |
+| `is_triangle(7, 10, 5)` | `True`  |
 
 ## Rule
 Triangle Inequality Theorem: the sum of any two sides must be greater than the third side.
