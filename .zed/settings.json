@@ -1,0 +1,26 @@
+{
+  "disable_ai": true,
+  "languages": {
+    "Python": {
+      "language_servers": ["basedpyright", "ruff", "!pyright", "!pylsp", "!ty"],
+      "format_on_save": "off",
+      "formatter": {
+        "language_server": { "name": "ruff" },
+      },
+    },
+  },
+  "lsp": {
+    "ruff": {
+      "initialization_options": {
+        "settings": {
+          "configuration": "ruff.toml",
+        },
+      },
+    },
+    "basedpyright": {
+      "settings": {
+        "python": { "pythonPath": ".venv/bin/python" },
+      },
+    },
+  },
+}
