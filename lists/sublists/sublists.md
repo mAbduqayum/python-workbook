@@ -4,30 +4,30 @@ Generate all possible sublists (contiguous subsequences) of a list.
 
 ## Task
 
-- Create a function `sublists(lst)` that takes a list
+- Create a function `sublists(l)` that takes a list
 - Return a list of all possible sublists (including empty list and full list)
 
 ## Template:
 
 ```python
-def sublists(lst: list) -> list[list]:
+def sublists(l: list) -> list[list]:
     pass
 
 
 if __name__ == "__main__":
     # Test your function
-    print(sublists([1, 2, 3]))
-    # [[], [1], [2], [3], [1, 2], [2, 3], [1, 2, 3]]
+    print(sublists([2, 3, 5]))
+    # [[], [2], [3], [5], [2, 3], [3, 5], [2, 3, 5]]
 ```
 
 <details>
 <summary><strong>Hint</strong></summary>
 
 - Use nested loops to generate all sublists
-- Outer loop: starting index (0 to len(lst))
-- Inner loop: ending index (start to len(lst))
-- For each pair (i, j), add lst[i:j] to result
-- Include empty list: lst[0:0]
+- Outer loop: starting index (0 to len(l))
+- Inner loop: ending index (start to len(l))
+- For each pair (i, j), add l[i:j] to result
+- Include empty list: l[0:0]
 
 </details>
 

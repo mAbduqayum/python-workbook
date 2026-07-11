@@ -9,19 +9,19 @@ except ImportError:
 
 @pytest.mark.skipif(copy_list is None, reason="copy_list function not implemented")
 @pytest.mark.parametrize(
-    "lst",
+    "l",
     [
-        [1, 2, 3, 4, 5],
+        [2, 3, 5, 7, 11],
         [],
         [10],
         ["a", "b", "c"],
         [1, "two", 3.0],
     ],
 )
-def test_copy_list(lst):
-    copied = copy_list(lst)
-    assert copied == lst
-    assert copied is not lst
+def test_copy_list(l):
+    copied = copy_list(l)
+    assert copied == l
+    assert copied is not l
 
 
 @pytest.mark.skipif(
@@ -29,9 +29,9 @@ def test_copy_list(lst):
     reason="are_different_objects function not implemented",
 )
 def test_are_different_objects():
-    lst1 = [1, 2, 3]
-    lst2 = [1, 2, 3]
-    lst3 = lst1
+    l1 = [2, 3, 5]
+    l2 = [2, 3, 5]
+    l3 = l1
 
-    assert are_different_objects(lst1, lst2) is True
-    assert are_different_objects(lst1, lst3) is False
+    assert are_different_objects(l1, l2) is True
+    assert are_different_objects(l1, l3) is False

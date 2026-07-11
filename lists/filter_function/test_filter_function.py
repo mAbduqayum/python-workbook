@@ -11,7 +11,7 @@ def test_filter_list_even():
     def is_even(x):
         return x % 2 == 0
 
-    assert filter_list([1, 2, 3, 4, 5, 6], is_even) == [2, 4, 6]
+    assert filter_list([11, 4, 7, 22, 9], is_even) == [4, 22]
 
 
 @pytest.mark.skipif(filter_list is None, reason="filter_list function not implemented")
@@ -24,9 +24,9 @@ def test_filter_list_positive():
 
 @pytest.mark.skipif(filter_list is None, reason="filter_list function not implemented")
 def test_filter_list_lambda():
-    assert filter_list([1, 2, 3, 4, 5], lambda x: x > 3) == [4, 5]
+    assert filter_list([2, 3, 5, 7, 11], lambda x: x > 3) == [5, 7, 11]
 
 
 @pytest.mark.skipif(filter_list is None, reason="filter_list function not implemented")
 def test_filter_list_empty():
-    assert filter_list([1, 2, 3], lambda x: x > 10) == []
+    assert filter_list([2, 3, 5], lambda x: x > 10) == []

@@ -4,7 +4,7 @@ Implement a custom filter function that filters a list based on a callable condi
 
 ## Task
 
-- Create a function `filter_list(lst, condition)` that takes a list and a callable function
+- Create a function `filter_list(l, condition)` that takes a list and a callable function
 - Return a new list containing only elements that satisfy the condition
 - The condition is a function that returns True or False
 
@@ -14,7 +14,7 @@ Implement a custom filter function that filters a list based on a callable condi
 from typing import Callable
 
 
-def filter_list(lst: list, condition: Callable) -> list:
+def filter_list(l: list, condition: Callable) -> list:
     pass
 
 
@@ -24,7 +24,7 @@ if __name__ == "__main__":
         return x % 2 == 0
 
 
-    print(filter_list([1, 2, 3, 4, 5, 6], is_even))  # [2, 4, 6]
+    print(filter_list([11, 4, 7, 22, 9], is_even))  # [4, 22]
 
 
     def is_positive(x):

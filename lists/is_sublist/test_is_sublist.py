@@ -10,14 +10,14 @@ except ImportError:
 @pytest.mark.parametrize(
     "main_list, sub, expected",
     [
-        ([1, 2, 3], [], True),
-        ([1, 2, 3, 4, 5], [5], True),
-        ([1, 2, 3, 4, 5], [1, 2], True),
-        ([1, 2, 3, 4, 5], [4, 5], True),
+        ([2, 3, 5], [], True),
+        ([2, 3, 5, 7, 11], [11], True),
+        ([2, 3, 5, 7, 11], [2, 3], True),
+        ([2, 3, 5, 7, 11], [7, 11], True),
         (["a", "b", "c", "d"], ["b", "c"], True),
-        ([1, 2, 3, 4, 5], [2, 4], False),
-        ([1, 2, 3, 4, 5], [2, 3, 4], True),
-        ([1, 2, 3], [1, 2, 3, 4], False),
+        ([2, 3, 5, 7, 11], [3, 7], False),
+        ([2, 3, 5, 7, 11], [3, 5, 7], True),
+        ([2, 3, 5], [2, 3, 5, 7], False),
     ],
 )
 def test_is_sublist(main_list, sub, expected):

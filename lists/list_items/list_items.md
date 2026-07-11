@@ -19,10 +19,10 @@ def last_item(items):
 
 if __name__ == "__main__":
     # Test your functions
-    items = [1, 2, 3, 4, 5]
-    print(first_item(items))  # 1
-    print(mid_item(items))    # 3
-    print(last_item(items))   # 5
+    items = [2, 3, 5, 7, 11]
+    print(first_item(items))  # 2
+    print(mid_item(items))    # 5
+    print(last_item(items))   # 11
 ```
 
 ## Note
