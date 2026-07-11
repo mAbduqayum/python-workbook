@@ -32,7 +32,7 @@ Python follows the standard mathematical order of operations:
 
 1. **P**arentheses `()`
 2. **E**xponents `**`
-3. **M**ultiplication `*` and **D**ivision `/`, `//`
+3. **M**ultiplication `*`, **D**ivision `/`, `//`, and Modulo `%`
 4. **A**ddition `+` and **S**ubtraction `-`
 
 | Expression      | Calculation   | Result |
