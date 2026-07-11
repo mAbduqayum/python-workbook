@@ -22,7 +22,7 @@ Essential Python f-string formatting for beginner programming exercises.
 
 | Use Case            | Example                           | Output               |
 |---------------------|-----------------------------------|----------------------|
-| Quadratic roots (2) | `f"2 roots: {root1} and {root2}"` | `2 roots: 2.5 and 3` |
+| Quadratic roots (2) | `f"2 roots: {root1} and {root2}"` | `2 roots: 2.5 and 3.0` |
 | Quadratic roots (1) | `f"1 root: {root}"`               | `1 root: 2.5`        |
 | Grade points        | `f"{gpa}"`                        | `3.7`                |
 | BMI calculation     | `f"{bmi:.1f}"`                    | `22.5`               |
