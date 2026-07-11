@@ -33,6 +33,4 @@ if __name__ == "__main__":
 
 ## Note
 
-- A sublist is a contiguous subsequence
-- Total number of sublists: n(n+1)/2 + 1 (including empty)
-- Order doesn't matter for the test, but typically sorted by length then position
+- Order of the sublists doesn't matter for the test

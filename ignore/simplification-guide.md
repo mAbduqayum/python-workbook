@@ -190,6 +190,15 @@ functions, … chapters), on top of the steps above. A change here touches
 - **Generic list parameter: `l`, not `lst`.** Keep semantic names
   (`items`, `numbers`, `results`) where they exist. (`E` rules are ignored
   in this repo's ruff config, so E741 won't fire on `l`.)
+- **Notes state behavior, not the computation.** Step 2's how-to test applies
+  to function questions too, but the giveaway looks different: instead of
+  input prompts it's an index expression, formula, or builtin name hiding in
+  an edge-case bullet. Say *which result* the function returns ("for
+  even-length lists, return the second of the two middle items"), never the
+  expression or tool that produces it (`len // 2`, "create the list from
+  `range`", "slicing handles this naturally"). Assumptions ("list is not
+  empty") and *constraints* ("don't use `sum`") are spec — they stay.
+  Opt-in `<details>` Hint blocks are exempt, as always.
 
 ## Step 4 — Verify
 
@@ -217,5 +226,6 @@ functions, … chapters), on top of the steps above. A change here touches
 - [ ] Drop `## Formula` for grade-school arithmetic conversions.
 - [ ] Sync any grammar/format fix across solution + test + doc examples.
 - [ ] Function questions: prime sample values (`[2, 3, 5, 7, 11]`), expected
-      outputs recomputed; `lst` → `l`, semantic names kept.
+      outputs recomputed; `lst` → `l`, semantic names kept; notes state
+      behavior, not the computing expression/builtin.
 - [ ] `pytest <chapter>` green; spot-check docs render cleanly.
