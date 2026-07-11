@@ -11,5 +11,5 @@ def two_list_sum2(list1: list[int], list2: list[int]) -> list[int]:
 
 if __name__ == "__main__":
     # Test your function
-    print(two_list_sum([1, 2, 3], [4, 5, 6]))  # [5, 7, 9]
+    print(two_list_sum([2, 3, 5], [7, 11, 13]))  # [9, 14, 18]
     print(two_list_sum([10, 20], [5, 10]))  # [15, 30]

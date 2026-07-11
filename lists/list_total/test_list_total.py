@@ -26,7 +26,7 @@ def test_no_builtin_sum():
         ([100], 100),
         ([-1, -2, -3], -6),
         ([10, -5, 3], 8),
-        ([1, 2, 3, 4, 5], 15),
+        ([2, 3, 5, 7, 11], 28),
     ],
 )
 def test_list_total(numbers, expected):

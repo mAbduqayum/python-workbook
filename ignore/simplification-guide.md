@@ -174,6 +174,23 @@ Apply opportunistically while in a chapter:
   solution, its test's expected strings, **and** all example outputs in the
   `.md` together so they stay in sync.
 
+## Function questions
+
+Conventions for exercises where the student writes a function (lists,
+functions, … chapters), on top of the steps above. A change here touches
+**three files** — `.md` template/examples, solution `.py` `__main__` block,
+`test_*.py` cases — sync them in one pass.
+
+- **Sample list values: primes, not `[1, 2, 3, 4, 5]`.** Use
+  `[2, 3, 5, 7, 11]` (extend with 13, 17, …); same for string forms
+  (`"1 2 3 4 5"` → `"2 3 5 7 11"`). With consecutive ints starting at 1,
+  value and index+1 coincide, so an example can't show whether a result is
+  an index or a value. Recompute every expected output — sums, averages,
+  found-indices, matrix rows all change with the data.
+- **Generic list parameter: `l`, not `lst`.** Keep semantic names
+  (`items`, `numbers`, `results`) where they exist. (`E` rules are ignored
+  in this repo's ruff config, so E741 won't fire on `l`.)
+
 ## Step 4 — Verify
 
 1. `uv run pytest <chapter> -n auto -q` — expect 100%. (Sandbox note: the `uv`
@@ -199,4 +216,6 @@ Apply opportunistically while in a chapter:
       `value + unit suffix` when a unit is needed.
 - [ ] Drop `## Formula` for grade-school arithmetic conversions.
 - [ ] Sync any grammar/format fix across solution + test + doc examples.
+- [ ] Function questions: prime sample values (`[2, 3, 5, 7, 11]`), expected
+      outputs recomputed; `lst` → `l`, semantic names kept.
 - [ ] `pytest <chapter>` green; spot-check docs render cleanly.

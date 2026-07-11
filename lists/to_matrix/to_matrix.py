@@ -14,8 +14,8 @@ def to_matrix2(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
 
 if __name__ == "__main__":
     # Test your function
-    print(to_matrix([1, 2, 3, 4, 5, 6], 2, 3))
-    # [[1, 2, 3], [4, 5, 6]]
+    print(to_matrix([2, 3, 5, 7, 11, 13], 2, 3))
+    # [[2, 3, 5], [7, 11, 13]]
 
-    print(to_matrix([1, 2, 3, 4], 2, 2))
-    # [[1, 2], [3, 4]]
+    print(to_matrix([2, 3, 5, 7], 2, 2))
+    # [[2, 3], [5, 7]]

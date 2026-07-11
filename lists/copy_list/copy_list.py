@@ -1,14 +1,14 @@
-def copy_list(lst: list) -> list:
-    return lst[:]
+def copy_list(l: list) -> list:
+    return l[:]
 
 
-def are_different_objects(lst1: list, lst2: list) -> bool:
-    return id(lst1) != id(lst2)
+def are_different_objects(l1: list, l2: list) -> bool:
+    return id(l1) != id(l2)
 
 
 if __name__ == "__main__":
     # Test your functions
-    original = [1, 2, 3, 4, 5]
+    original = [2, 3, 5, 7, 11]
     copied = copy_list(original)
-    print(copied)  # [1, 2, 3, 4, 5]
+    print(copied)  # [2, 3, 5, 7, 11]
     print(are_different_objects(original, copied))  # True
