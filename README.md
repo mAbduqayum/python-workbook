@@ -63,6 +63,14 @@ tests (`test_<name>.py`).
 `uv run` installs any dependencies automatically, so there's no separate
 install step.
 
+### Reading the Examples
+
+Problem statements show examples as pairs of plain code blocks: the first
+block is what you type as input, the second is the exact output your
+program must print. For example, in
+[`conditionals/leap_year/leap_year.md`](conditionals/leap_year/leap_year.md),
+input `2000` should produce output `Leap year`.
+
 ### Reading Test Results
 
 - **passed** - your output matches what's expected
