@@ -7,20 +7,15 @@ Write a function that evaluates password strength.
 - Return a strength rating: "weak", "medium", or "strong"
 - Special characters: `!@#$%^&*()_+-=[]{}|;:,.<>?`
 
-## Template:
-```python
-def password_strength(pwd: str) -> str:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(password_strength("abc"))           # "weak"
-    print(password_strength("Password1"))     # "medium"
-    print(password_strength("P@ssw0rd!"))     # "medium"
-    print(password_strength("hello"))         # "weak"
-    print(password_strength("Hello123"))      # "medium"
-```
+| Call                             | Returns    |
+|----------------------------------|------------|
+| `password_strength("abc")`       | `"weak"`   |
+| `password_strength("Password1")` | `"medium"` |
+| `password_strength("P@ssw0rd!")` | `"medium"` |
+| `password_strength("hello")`     | `"weak"`   |
+| `password_strength("Hello123")`  | `"medium"` |
 
 ## Criteria
 **Weak**: 

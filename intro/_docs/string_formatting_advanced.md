@@ -26,7 +26,7 @@ Complete reference for advanced Python f-string formatting features.
 | `{n:*<5}` | Left align with * fill   | `f"{42:*<5}"`  | `42***` |
 | `{n:*>5}` | Right align with * fill  | `f"{42:*>5}"`  | `***42` |
 | `{n:*^5}` | Center align with * fill | `f"{42:*^5}"`  | `*42**` |
-| `{n:*=5}` | Sign-aware with * fill   | `f"{-42:*=5}"` | `*-42*` |
+| `{n:*=5}` | Sign-aware with * fill   | `f"{-42:*=5}"` | `-**42` |
 
 ## Number Base Formatting
 

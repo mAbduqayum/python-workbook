@@ -131,7 +131,7 @@ test shows what was expected versus what your program actually printed.
 
 ## Common Commands You'll Use
 
-- `cd` - **C**hange **D**irectory   
+- `cd` - **C**hange **D**irectory
 - `uv init project-name` - Create a new Python project
 - `code .` - Open the current folder in VS Code
 - `uv run main.py` - Run a Python file

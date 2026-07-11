@@ -103,7 +103,7 @@ print(math.degrees(math.pi)) # 180.0
 ```python
 import random
 
-# Random integer in range [1, 10]
+# Random integer in range [1, 6]
 dice = random.randint(1, 6)
 
 # Random float in range [0.0, 1.0)
@@ -157,13 +157,6 @@ def calculate_area(radius):
     import math  # Don't do this
     return math.pi * radius ** 2
 ```
-
-## Next Steps
-
-Once you're comfortable importing and using built-in modules, you can learn how to create your own modules and make your code reusable. See [`modules.md`](modules.md) to learn about:
-- Creating your own importable modules
-- The `if __name__ == "__main__"` pattern
-- Best practices for module organization
 
 ## Common Patterns
 
@@ -251,3 +244,10 @@ print(sqrt(16))  # Which sqrt is called?
 - **Practice with built-in modules** like `math`, `random`, and `datetime`
 
 Remember: Importing modules is like using a library - you don't need to write every book yourself, just know which shelf to find the one you need!
+
+## Next Steps
+
+Once you're comfortable importing and using built-in modules, you can learn how to create your own modules and make your code reusable. See [`modules.md`](modules.md) to learn about:
+- Creating your own importable modules
+- The `if __name__ == "__main__"` pattern
+- Best practices for module organization

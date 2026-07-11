@@ -2,7 +2,7 @@
 
 This guide covers all the fundamental concepts you need to solve exercises.
 
-## 1. Variables
+## Variables
 
 Variables are containers that store data values. In Python, you create a variable by assigning a value to it.
 
@@ -18,9 +18,10 @@ price = 12.99
 - Must start with a letter or underscore
 - Can contain letters, numbers, and underscores
 - Case-sensitive (`age` and `Age` are different)
-- Cannot use Python keywords (`print`, `input`, `if`, etc.)
+- Cannot use Python keywords (`if`, `for`, `while`, `def`, etc.)
+- Avoid reusing built-in function names (`print`, `input`, `sum`, etc.) — Python allows it, but the function stops working afterward
 
-## 2. Data Types
+## Data Types
 
 | Data Type | Name    | Description                          | Examples                          |
 |-----------|---------|--------------------------------------|-----------------------------------|
@@ -47,7 +48,7 @@ temperature = 25.5
 pi = 3.14159
 ```
 
-## 3. Input and Output
+## Input and Output
 
 ### Getting input from users
 
@@ -74,7 +75,7 @@ print("Your age is:", age)          # Multiple items
 print(f"Hello {name}")              # f-string formatting
 ```
 
-## 4. Type Conversion
+## Type Conversion
 
 Since `input()` always returns a string, you often need to convert it to numbers.
 
@@ -91,14 +92,13 @@ age = int(input("Enter age: "))
 price = float(input("Enter price: "))
 ```
 
-## 5. Arithmetic Operations
+## Arithmetic Operations
 
-**For detailed arithmetic operators and examples, see: `_docs/math_operators.md`**
+For detailed arithmetic operators and examples, see [`math_operators.md`](math_operators.md).
 
+## String Formatting and Operations
 
-## 6. String Formatting and Operations
-
-**For detailed string formatting patterns and examples, see: `_docs/string_formatting.md`**
+For detailed string formatting patterns and examples, see [`string_formatting.md`](string_formatting.md).
 
 ### Basic string operations
 
@@ -132,7 +132,7 @@ print(text.lower())         # hello world
 print(len(text))            # 11
 ```
 
-## 8. Comments
+## Comments
 
 Use comments to explain your code:
 
@@ -141,7 +141,7 @@ Use comments to explain your code:
 name = input("Enter your name: ")  # Get user's name
 ```
 
-## 9. Program Structure
+## Program Structure
 
 A typical program follows this pattern:
 
@@ -157,7 +157,7 @@ area = pi * radius ** 2
 print(f"The area is: {area}")
 ```
 
-## 10. Common Patterns for Exercises
+## Common Patterns for Exercises
 
 ### Pattern 1: Simple calculation
 
@@ -189,7 +189,7 @@ seconds = total_seconds % 60
 print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
 ```
 
-## 11. Tips for Success
+## Tips for Success
 
 1. **Always convert input to the right type:**
    ```python
@@ -205,8 +205,8 @@ print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
 
 3. **Pay attention to output formatting:**
    ```python
-    # If exercise asks for "The result is: 42"
-    print(f"The result is: {result}")  # Exact format matters
+   # If exercise asks for "The result is: 42"
+   print(f"The result is: {result}")  # Exact format matters
    ```
 
 4. **Test with the example data:**
@@ -229,7 +229,7 @@ print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
 | Addition          | `5 + 3`                           | 8       |
 | Subtraction       | `5 - 3`                           | 2       |
 | Multiplication    | `5 * 3`                           | 15      |
-| Division          | `5 / 3`                           | 1.667   |
+| Division          | `5 / 3`                           | 1.666...|
 | Integer division  | `5 // 3`                          | 1       |
 | Remainder         | `5 % 3`                           | 2       |
 | Power             | `5 ** 3`                          | 125     |

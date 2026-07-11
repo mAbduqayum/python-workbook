@@ -13,7 +13,7 @@ Essential Python f-string formatting for beginner programming exercises.
 
 | Format    | Description       | Example            | Output    |
 |-----------|-------------------|--------------------|-----------|
-| `{n}`     | Integer as-is     | `f"{3.14159}"`     | `3.14159` |
+| `{n}`     | Value as-is       | `f"{3.14159}"`     | `3.14159` |
 | `{n:.2f}` | 2 decimal places  | `f"{3.14159:.2f}"` | `3.14`    |
 | `{n:.1f}` | 1 decimal place   | `f"{3.14159:.1f}"` | `3.1`     |
 | `{n:.0f}` | No decimal places | `f"{3.14159:.0f}"` | `3`       |
@@ -22,7 +22,7 @@ Essential Python f-string formatting for beginner programming exercises.
 
 | Use Case            | Example                           | Output               |
 |---------------------|-----------------------------------|----------------------|
-| Quadratic roots (2) | `f"2 roots: {root1} and {root2}"` | `2 roots: 2.5 and 3` |
+| Quadratic roots (2) | `f"2 roots: {root1} and {root2}"` | `2 roots: 2.5 and 3.0` |
 | Quadratic roots (1) | `f"1 root: {root}"`               | `1 root: 2.5`        |
 | Grade points        | `f"{gpa}"`                        | `3.7`                |
 | BMI calculation     | `f"{bmi:.1f}"`                    | `22.5`               |

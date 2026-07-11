@@ -1,0 +1,12 @@
+[
+  {
+    "label": "Run current file",
+    "command": "uv run $ZED_FILE",
+    "reveal": "no_focus",
+  },
+  {
+    "label": "Pytest current file",
+    "command": "uv run pytest $ZED_FILE -v",
+    "reveal": "no_focus",
+  },
+]
