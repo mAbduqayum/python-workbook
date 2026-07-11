@@ -23,7 +23,12 @@ mindmap
 
 ## Recommended Reading Order
 
-1. [`repetitions.md`](repetitions.md)
+1. [`for_loop.md`](for_loop.md)
+2. [`while_loop.md`](while_loop.md)
+3. [`loop_patterns.md`](loop_patterns.md)
+4. [`nested_loops.md`](nested_loops.md)
+5. [`loop_control.md`](loop_control.md)
+6. [`loop_best_practices.md`](loop_best_practices.md)
 
 ## Practice Questions
 
