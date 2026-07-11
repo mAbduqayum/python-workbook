@@ -27,5 +27,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- For lists with even length, mid_item returns the element at position len//2
+- For lists with even length, `mid_item` returns the second of the two middle items
 - Assume the list is not empty
