@@ -12,4 +12,4 @@
 
 - Empty list is considered a sublist of any list
 - Elements must be consecutive
-- [2, 4] is not a sublist of [1, 2, 3, 4, 5] because they're not consecutive
+- [3, 7] is not a sublist of [2, 3, 5, 7, 11] because they're not consecutive

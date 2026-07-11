@@ -8,26 +8,26 @@ except ImportError:
 
 @pytest.mark.skipif(sublists is None, reason="sublists function not implemented")
 @pytest.mark.parametrize(
-    "lst, expected_count",
+    "l, expected_count",
     [
-        ([1, 2, 3], 7),  # [], [1], [1,2], [1,2,3], [2], [2,3], [3]
-        ([1, 2], 4),  # [], [1], [1,2], [2]
-        ([1], 2),  # [], [1]
+        ([2, 3, 5], 7),  # [], [2], [2,3], [2,3,5], [3], [3,5], [5]
+        ([2, 3], 4),  # [], [2], [2,3], [3]
+        ([2], 2),  # [], [2]
         ([], 1),  # []
     ],
 )
-def test_sublists_count(lst, expected_count):
-    result = sublists(lst)
+def test_sublists_count(l, expected_count):
+    result = sublists(l)
     assert len(result) == expected_count
 
 
 @pytest.mark.skipif(sublists is None, reason="sublists function not implemented")
 def test_sublists_content():
-    result = sublists([1, 2, 3])
+    result = sublists([2, 3, 5])
     assert [] in result
-    assert [1] in result
     assert [2] in result
     assert [3] in result
-    assert [1, 2] in result
+    assert [5] in result
     assert [2, 3] in result
-    assert [1, 2, 3] in result
+    assert [3, 5] in result
+    assert [2, 3, 5] in result
