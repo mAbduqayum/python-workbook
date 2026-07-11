@@ -1,12 +1,14 @@
 # Booleans and Boolean Operators
 
 ## Boolean Type
+
 The boolean type (`bool`) has only two values: `True` and `False`. These are used in conditional statements to make decisions.
 
 ## Boolean Operators
+
 Boolean operators `and`, `or`, `not` allow you to combine and manipulate boolean values `True`, `False` to create more complex conditions.
 
-### 1. `and` Operator
+### `and` Operator
 
 Returns `True` only when both conditions are true.
 
@@ -17,7 +19,7 @@ Returns `True` only when both conditions are true.
 | False | True  | False   |
 | False | False | False   |
 
-### 2. `or` Operator
+### `or` Operator
 
 Returns `True` when at least one condition is true.
 
@@ -28,7 +30,7 @@ Returns `True` when at least one condition is true.
 | False | True  | True   |
 | False | False | False  |
 
-### 3. `not` Operator
+### `not` Operator
 
 Reverses the boolean value.
 
@@ -37,13 +39,10 @@ Reverses the boolean value.
 | True  | False |
 | False | True  |
 
-## Combining Multiple Operators
-
-You can combine multiple boolean operators in a single expression:
-
 ## Operator Precedence
 
-When combining operators, Python follows this order:
+When you combine multiple boolean operators in a single expression, Python
+follows this order:
 
 1. `not` (highest precedence)
 2. `and`
