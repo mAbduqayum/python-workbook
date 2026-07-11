@@ -8,9 +8,9 @@ A structured collection of Python programming exercises designed for learning an
 
 Install the following tools:
 
-- **Git** - Version control system
-- **uv** - Python package manager
-- **VS Code** - Code editor
+- **[Git](https://git-scm.com/downloads)** - Version control system
+- **[uv](https://docs.astral.sh/uv/getting-started/installation/)** - Python package manager
+- **[VS Code](https://code.visualstudio.com/download)** - Code editor
 
 ### Setup Instructions
 
