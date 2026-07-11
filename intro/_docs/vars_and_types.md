@@ -18,7 +18,8 @@ price = 12.99
 - Must start with a letter or underscore
 - Can contain letters, numbers, and underscores
 - Case-sensitive (`age` and `Age` are different)
-- Cannot use Python keywords (`print`, `input`, `if`, etc.)
+- Cannot use Python keywords (`if`, `for`, `while`, `def`, etc.)
+- Avoid reusing built-in function names (`print`, `input`, `sum`, etc.) — Python allows it, but the function stops working afterward
 
 ## Data Types
 
