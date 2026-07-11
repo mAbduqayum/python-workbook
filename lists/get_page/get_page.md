@@ -25,4 +25,4 @@ if __name__ == "__main__":
 
 - Pages are 1-indexed: page 1 holds the first `page_size` items
 - The last page may have fewer than `page_size` items
-- A page past the end returns `[]` (slicing handles this naturally)
+- A page past the end returns `[]`

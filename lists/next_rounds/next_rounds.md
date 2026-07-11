@@ -19,7 +19,3 @@ if __name__ == "__main__":
     print(next_rounds(27))  # [28, 29, 30]
     print(next_rounds(0))  # [1, 2, 3]
 ```
-
-## Note
-
-- Create the list from `range`
