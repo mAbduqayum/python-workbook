@@ -7,18 +7,13 @@ Write a function that converts a decimal number to hexadecimal string.
 - Return the hexadecimal representation as a string
 - Don't use the built-in `hex()`
 
-## Template:
-```python
-def decimal_hex(n: int) -> str:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(decimal_hex(10))       # "A"
-    print(decimal_hex(255))      # "FF"
-    print(decimal_hex(16))       # "10"
-    print(decimal_hex(26))       # "1A"
-    print(decimal_hex(0))        # "0"
-```
+| Call               | Returns |
+|--------------------|---------|
+| `decimal_hex(10)`  | `"A"`   |
+| `decimal_hex(255)` | `"FF"`  |
+| `decimal_hex(16)`  | `"10"`  |
+| `decimal_hex(26)`  | `"1A"`  |
+| `decimal_hex(0)`   | `"0"`   |
 

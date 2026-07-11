@@ -6,20 +6,15 @@ Write a function that determines if a year is a leap year.
 - Create a function `is_leap_year(year)` that takes a year
 - Return `True` if it's a leap year, `False` otherwise
 
-## Template:
-```python
-def is_leap_year(year: int) -> bool:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(is_leap_year(2000))    # True
-    print(is_leap_year(2004))    # True
-    print(is_leap_year(1900))    # False
-    print(is_leap_year(2001))    # False
-    print(is_leap_year(2024))    # True
-```
+| Call                 | Returns |
+|----------------------|---------|
+| `is_leap_year(2000)` | `True`  |
+| `is_leap_year(2004)` | `True`  |
+| `is_leap_year(1900)` | `False` |
+| `is_leap_year(2001)` | `False` |
+| `is_leap_year(2024)` | `True`  |
 
 ## Rule
 A year is a leap year if:

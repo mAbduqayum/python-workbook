@@ -6,17 +6,12 @@ Write a function that determines if a number is even.
 - Create a function `is_even(n)` that takes an integer
 - Return `True` if the number is even, `False` otherwise
 
-## Template:
-```python
-def is_even(n: int) -> bool:
-    pass
+## Examples
 
-
-if __name__ == "__main__":
-    # Test your function
-    print(is_even(4))    # True
-    print(is_even(7))    # False
-    print(is_even(0))    # True
-    print(is_even(-2))   # True
-    print(is_even(-5))   # False
-```
+| Call          | Returns |
+|---------------|---------|
+| `is_even(4)`  | `True`  |
+| `is_even(7)`  | `False` |
+| `is_even(0)`  | `True`  |
+| `is_even(-2)` | `True`  |
+| `is_even(-5)` | `False` |
