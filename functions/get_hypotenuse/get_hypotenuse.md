@@ -17,4 +17,3 @@ Write a function that calculates the hypotenuse of a right triangle.
 
 ## Formula
 - Hypotenuse = √(a² + b²) (Pythagorean theorem)
-- Use `math.sqrt()` for the square root
