@@ -52,18 +52,19 @@ mindmap
 
 ## Practice Questions
 
+1. [`next_rounds`](../next_rounds/next_rounds.md)
+1. [`list_items`](../list_items/list_items.md)
+1. [`get_page`](../get_page/get_page.md)
 1. [`str_to_ints`](../str_to_ints/str_to_ints.md)
 1. [`list_to_string`](../list_to_string/list_to_string.md)
 1. [`get_words`](../get_words/get_words.md)
 1. [`reverse_list`](../reverse_list/reverse_list.md)
-1. [`list_items`](../list_items/list_items.md)
 1. [`list_total`](../list_total/list_total.md)
 1. [`average`](../average/average.md)
 1. [`two_list_operations`](../two_list_operations/two_list_operations.md)
 1. [`remove_outliers`](../remove_outliers/remove_outliers.md)
 1. [`sort_numbers`](../sort_numbers/sort_numbers.md)
 1. [`binary_search`](../binary_search/binary_search.md)
-1. [`slice`](../slice/slice.md)
 1. [`copy_list`](../copy_list/copy_list.md)
 1. [`merge_sort`](../merge_sort/merge_sort.md)
 1. [`to3x3matrix`](../to3x3matrix/to3x3matrix.md)
