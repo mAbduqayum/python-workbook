@@ -20,10 +20,10 @@ def symmetric_diff(list1: list, list2: list) -> list:
 
 
 if __name__ == "__main__":
-    print(symmetric_diff([1, 2, 3], [2, 3, 4]))  # [1, 4] (order may vary)
+    print(symmetric_diff([2, 3, 5], [3, 5, 7]))  # [2, 7] (order may vary)
     print(symmetric_diff(["a", "b", "c"], ["b", "c", "d"]))  # ['a', 'd'] (order may vary)
-    print(symmetric_diff([1, 2], [1, 2]))  # []
-    print(symmetric_diff([1, 2], [3, 4]))  # [1, 2, 3, 4] (order may vary)
+    print(symmetric_diff([2, 3], [2, 3]))  # []
+    print(symmetric_diff([2, 3], [5, 7]))  # [2, 3, 5, 7] (order may vary)
 ```
 
 ## Hint
@@ -44,16 +44,16 @@ return list(set1 ^ set2)
 ## Visual Example
 
 ```
-list1 = [1, 2, 3]
-list2 = [2, 3, 4]
+list1 = [2, 3, 5]
+list2 = [3, 5, 7]
 
     list1       list2
    +-----+     +-----+
-   |  1  |     |     |
+   |  2  |     |     |
    |  +--+-----+--+  |
-   |  | 2    3 |  4  |
+   |  | 3    5 |  7  |
    +--+--------+-----+
       (common)
 
-Symmetric difference = [1, 4]  (elements NOT in the overlap)
+Symmetric difference = [2, 7]  (elements NOT in the overlap)
 ```

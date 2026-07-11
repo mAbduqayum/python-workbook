@@ -3,8 +3,8 @@ from list_intersection import list_intersection
 
 
 def test_intersection_with_overlap():
-    result = list_intersection([1, 2, 3, 4], [3, 4, 5, 6])
-    assert sorted(result) == [3, 4]
+    result = list_intersection([2, 3, 5, 7], [5, 7, 11, 13])
+    assert sorted(result) == [5, 7]
 
 
 def test_intersection_with_strings():
@@ -13,20 +13,20 @@ def test_intersection_with_strings():
 
 
 def test_intersection_no_overlap():
-    assert list_intersection([1, 2], [3, 4]) == []
+    assert list_intersection([2, 3], [5, 7]) == []
 
 
 def test_intersection_with_duplicates():
-    result = list_intersection([1, 1, 2, 2], [2, 2, 3, 3])
-    assert result == [2]
+    result = list_intersection([2, 2, 3, 3], [3, 3, 5, 5])
+    assert result == [3]
 
 
 def test_intersection_empty_first():
-    assert list_intersection([], [1, 2, 3]) == []
+    assert list_intersection([], [2, 3, 5]) == []
 
 
 def test_intersection_empty_second():
-    assert list_intersection([1, 2, 3], []) == []
+    assert list_intersection([2, 3, 5], []) == []
 
 
 def test_intersection_both_empty():
@@ -34,10 +34,10 @@ def test_intersection_both_empty():
 
 
 def test_intersection_identical_lists():
-    result = list_intersection([1, 2, 3], [1, 2, 3])
-    assert sorted(result) == [1, 2, 3]
+    result = list_intersection([2, 3, 5], [2, 3, 5])
+    assert sorted(result) == [2, 3, 5]
 
 
 def test_intersection_subset():
-    result = list_intersection([1, 2], [1, 2, 3, 4])
-    assert sorted(result) == [1, 2]
+    result = list_intersection([2, 3], [2, 3, 5, 7])
+    assert sorted(result) == [2, 3]

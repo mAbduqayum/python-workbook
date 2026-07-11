@@ -3,8 +3,8 @@ from list_union import list_union
 
 
 def test_union_with_overlap():
-    result = list_union([1, 2, 3], [3, 4, 5])
-    assert sorted(result) == [1, 2, 3, 4, 5]
+    result = list_union([2, 3, 5], [5, 7, 11])
+    assert sorted(result) == [2, 3, 5, 7, 11]
 
 
 def test_union_with_strings():
@@ -13,13 +13,13 @@ def test_union_with_strings():
 
 
 def test_union_with_empty_first():
-    result = list_union([], [1, 2])
-    assert sorted(result) == [1, 2]
+    result = list_union([], [2, 3])
+    assert sorted(result) == [2, 3]
 
 
 def test_union_with_empty_second():
-    result = list_union([1, 2], [])
-    assert sorted(result) == [1, 2]
+    result = list_union([2, 3], [])
+    assert sorted(result) == [2, 3]
 
 
 def test_union_both_empty():
@@ -27,15 +27,15 @@ def test_union_both_empty():
 
 
 def test_union_with_duplicates():
-    result = list_union([1, 1, 2], [2, 2, 3])
-    assert sorted(result) == [1, 2, 3]
+    result = list_union([2, 2, 3], [3, 3, 5])
+    assert sorted(result) == [2, 3, 5]
 
 
 def test_union_no_overlap():
-    result = list_union([1, 2], [3, 4])
-    assert sorted(result) == [1, 2, 3, 4]
+    result = list_union([2, 3], [5, 7])
+    assert sorted(result) == [2, 3, 5, 7]
 
 
 def test_union_identical_lists():
-    result = list_union([1, 2, 3], [1, 2, 3])
-    assert sorted(result) == [1, 2, 3]
+    result = list_union([2, 3, 5], [2, 3, 5])
+    assert sorted(result) == [2, 3, 5]

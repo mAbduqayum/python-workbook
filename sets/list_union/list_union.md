@@ -18,10 +18,10 @@ def list_union(list1: list, list2: list) -> list:
 
 
 if __name__ == "__main__":
-    print(list_union([1, 2, 3], [3, 4, 5]))  # [1, 2, 3, 4, 5] (order may vary)
+    print(list_union([2, 3, 5], [5, 7, 11]))  # [2, 3, 5, 7, 11] (order may vary)
     print(list_union(["a", "b"], ["b", "c", "d"]))  # ['a', 'b', 'c', 'd'] (order may vary)
-    print(list_union([], [1, 2]))  # [1, 2]
-    print(list_union([1, 1, 2], [2, 2, 3]))  # [1, 2, 3] (order may vary)
+    print(list_union([], [2, 3]))  # [2, 3]
+    print(list_union([2, 2, 3], [3, 3, 5]))  # [2, 3, 5] (order may vary)
 ```
 
 ## Hint
