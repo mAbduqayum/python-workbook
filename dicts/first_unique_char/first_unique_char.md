@@ -7,9 +7,8 @@ Find the first character that appears only once in a string.
 Write a function `first_unique_char(text)` that returns the first character in the string that appears exactly once.
 
 - Return `None` if no character appears exactly once
-- Return `None` for empty strings
-- The check should be case-sensitive
-- Consider all characters including spaces and punctuation
+- The check is case-sensitive
+- Consider every character, including spaces and punctuation
 
 ## Template
 

@@ -1,4 +1,3 @@
-import pytest
 from text_messaging import text_messaging
 
 
@@ -34,6 +33,5 @@ def test_with_period():
     assert text_messaging("OK.") == "666551"
 
 
-def test_numbers():
-    result = text_messaging("ABC")
-    assert result == "222222"
+def test_same_key_letters():
+    assert text_messaging("ABC") == "222222"

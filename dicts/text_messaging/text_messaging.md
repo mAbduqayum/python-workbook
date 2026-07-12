@@ -7,12 +7,8 @@ Convert a message to old cellphone key presses.
 Write a function `text_messaging(message)` that converts a text message to the sequence of key presses needed on an old
 cellphone keypad (T9 style).
 
-- Convert message to uppercase before processing
-- Each letter requires pressing its key 1-4 times
-- Spaces are represented by '0'
-- Include punctuation: . , ? ! :
-- Skip characters that don't have a mapping
-- Return empty string for empty input
+- Conversion is case-insensitive ('a' and 'A' are the same)
+- Skip characters that have no keypad mapping
 
 ### T9 Keypad Layout
 
@@ -46,10 +42,10 @@ def text_messaging(message: str) -> str:
 
 
 if __name__ == "__main__":
-    print(text_messaging("HI"))  # "4444"
+    print(text_messaging("HI"))  # "44444"
     print(text_messaging("HELLO"))  # "4433555555666"
-    print(text_messaging("HI THERE"))  # "44440844433777733"
-    print(text_messaging("HI!"))  # "4444441111"
+    print(text_messaging("HI THERE"))  # "4444408443377733"
+    print(text_messaging("HI!"))  # "444441111"
     print(text_messaging("A"))  # "2"
     print(text_messaging(""))  # ""
 ```
@@ -86,7 +82,7 @@ Before smartphones with touchscreens, text messaging on cellphones required pres
 For example, to type "HI":
 - H: Press 4 twice (44)
 - I: Press 4 three times (444)
-- Result: "4444"
+- Result: "44444"
 
 **Why This Encoding Matters:**
 

@@ -4,13 +4,12 @@ Find two numbers that add up to a target value.
 
 ## Task
 
-Write a function `two_sum(nums, target)` that finds two numbers in the array that add up to the target value.
+Write a function `two_sum(nums, target)` that finds two numbers in the list that add up to the target value.
 
 - Return the indices of the two numbers as a list `[index1, index2]`
 - Return `None` if no two numbers add up to the target
 - You cannot use the same element twice
 - There may be multiple valid answers; return any one of them
-- The array may contain negative numbers and zeros
 
 ## Template
 

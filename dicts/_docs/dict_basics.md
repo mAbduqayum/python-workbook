@@ -140,25 +140,3 @@ d = {
 d = {"a": 1, "b": 2, "a": 3}
 print(d)  # {"a": 3, "b": 2} - second "a" overwrites first
 ```
-
-## Common Patterns
-
-### Frequency Counting
-
-```python
-text = "hello world"
-freq = {}
-for char in text:
-    freq[char] = freq.get(char, 0) + 1
-# {'h': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'w': 1, 'r': 1, 'd': 1}
-```
-
-### Grouping by Key
-
-```python
-items = [("fruit", "apple"), ("veg", "carrot"), ("fruit", "banana")]
-groups = {}
-for category, item in items:
-    groups.setdefault(category, []).append(item)
-# {'fruit': ['apple', 'banana'], 'veg': ['carrot']}
-```

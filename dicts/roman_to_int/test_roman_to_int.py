@@ -1,4 +1,3 @@
-import pytest
 from roman_to_int import roman_to_int
 
 

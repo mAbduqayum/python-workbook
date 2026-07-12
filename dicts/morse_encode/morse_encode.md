@@ -6,12 +6,9 @@ Convert text to Morse code.
 
 Write a function `morse_encode(text)` that converts a string to Morse code.
 
-- Convert letters (A-Z) and digits (0-9) to their Morse code equivalents
-- Use spaces to separate individual character codes
-- Use ' / ' (space-slash-space) to represent word boundaries (spaces in the original text)
-- The conversion should be case-insensitive (treat 'a' and 'A' the same)
-- Skip characters that don't have a Morse code mapping
-- Return empty string for empty input
+- Separate individual character codes with single spaces
+- Encoding is case-insensitive ('a' and 'A' are the same)
+- Skip characters that have no Morse code mapping
 
 ## Template
 

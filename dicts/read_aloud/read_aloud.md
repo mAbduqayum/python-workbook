@@ -6,9 +6,7 @@ Convert a number to its word equivalent.
 
 Write a function `read_aloud(number)` that takes a string representation of a number (0-999) and returns the number spelled out in English words in uppercase.
 
-- Convert numbers 0-999 to English words
-- Return words in uppercase
-- Return empty string for empty input
+- Return an empty string for empty input
 - Input will only contain digit characters
 
 ## Template
@@ -35,12 +33,15 @@ def read_aloud(number: str) -> str:
 
 
 if __name__ == "__main__":
-    print(read_aloud("42"))  # "FORTY TWO"
     print(read_aloud("7"))  # "SEVEN"
+    print(read_aloud("15"))  # "FIFTEEN"
+    print(read_aloud("42"))  # "FORTY TWO"
+    print(read_aloud("90"))  # "NINETY"
+    print(read_aloud("100"))  # "ONE HUNDRED"
     print(read_aloud("105"))  # "ONE HUNDRED FIVE"
     print(read_aloud("333"))  # "THREE HUNDRED THIRTY THREE"
-    print(read_aloud(""))  # ""
     print(read_aloud("0"))  # "ZERO"
+    print(read_aloud(""))  # ""
 ```
 
 ## Hint

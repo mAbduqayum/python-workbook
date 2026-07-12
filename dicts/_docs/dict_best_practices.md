@@ -95,52 +95,6 @@ def expensive_calculation(n):
     return n ** 2
 ```
 
-### Pattern 5: Complement Search (Two-Sum)
-
-```python
-# Find pairs that sum to target
-def two_sum(nums, target):
-    seen = {}
-    for i, num in enumerate(nums):
-        complement = target - num
-        if complement in seen:
-            return [seen[complement], i]
-        seen[num] = i
-    return None
-
-two_sum([2, 7, 11, 15], 9)  # [0, 1]
-```
-
-### Pattern 6: Character/String Mapping
-
-```python
-# Map characters between strings (isomorphic)
-def is_isomorphic(s, t):
-    if len(s) != len(t):
-        return False
-
-    s_to_t = {}
-    t_to_s = {}
-
-    for char_s, char_t in zip(s, t):
-        if char_s in s_to_t:
-            if s_to_t[char_s] != char_t:
-                return False
-        else:
-            s_to_t[char_s] = char_t
-
-        if char_t in t_to_s:
-            if t_to_s[char_t] != char_s:
-                return False
-        else:
-            t_to_s[char_t] = char_s
-
-    return True
-
-is_isomorphic("egg", "add")  # True
-is_isomorphic("foo", "bar")  # False
-```
-
 ## Common Mistakes to Avoid
 
 ### Mistake 1: Using Mutable Objects as Keys

@@ -6,11 +6,9 @@ Check if two strings are isomorphic.
 
 Write a function `isomorphic_strings(s, t)` that determines if two strings are isomorphic.
 
-- Two strings are isomorphic if characters in `s` can be replaced to get `t`
-- Each character must map to exactly one character (bijection)
-- Different characters cannot map to the same character
-- A character can map to itself
-- Strings of different lengths are not isomorphic
+- Two strings are isomorphic if the characters in `s` can be replaced to get `t`
+- Each character must map to exactly one character; different characters cannot map to the same character
+- A character may map to itself
 
 ## Template
 

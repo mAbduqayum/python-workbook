@@ -6,10 +6,8 @@ Convert a Roman numeral string to an integer.
 
 Write a function `roman_to_int(roman)` that converts a Roman numeral string to its integer value.
 
-- Support the standard Roman numeral symbols: I (1), V (5), X (10), L (50), C (100), D (500), M (1000)
-- Handle subtraction cases: IV (4), IX (9), XL (40), XC (90), CD (400), CM (900)
+- Roman numerals are written from largest to smallest, left to right, except for the subtraction cases: IV (4), IX (9), XL (40), XC (90), CD (400), CM (900)
 - Input will be a valid Roman numeral string
-- Roman numerals are written from largest to smallest, left to right, except for subtraction cases
 
 ## Template
 

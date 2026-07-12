@@ -7,10 +7,7 @@ Convert Morse code back to text.
 Write a function `morse_decode(morse)` that converts Morse code back to readable text.
 
 - Individual character codes are separated by single spaces
-- Word boundaries are represented by ' / ' (space-slash-space)
-- Return the decoded text in uppercase
-- Return empty string for empty input
-- Handle invalid Morse code gracefully (skip unknown codes)
+- Skip codes that have no character mapping
 
 ## Template
 
@@ -36,7 +33,7 @@ def morse_decode(morse: str) -> str:
 
 if __name__ == "__main__":
     print(morse_decode("... --- ..."))  # "SOS"
-    print(morse_decode(".... .. / - .... . .-. . .-."))  # "HI THERE"
+    print(morse_decode(".... .. / - .... . .-. ."))  # "HI THERE"
     print(morse_decode(".---- ..--- ...--"))  # "123"
     print(morse_decode(""))  # ""
     print(morse_decode(".-"))  # "A"

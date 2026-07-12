@@ -6,10 +6,7 @@ Check if two phrases are anagrams of each other, ignoring spaces and case.
 
 Write a function `is_phrase_anagram(phrase1, phrase2)` that determines if two phrases are anagrams.
 
-- Remove spaces before comparing
-- The comparison should be case-insensitive
-- Two phrases are anagrams if they contain the same letters with the same frequencies (ignoring spaces and case)
-- Empty strings/phrases are anagrams of each other
+- Two phrases are anagrams if they contain the same letters with the same frequencies, ignoring spaces and case
 
 ## Template
 
