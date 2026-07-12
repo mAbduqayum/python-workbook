@@ -42,3 +42,22 @@ csv_line = ",".join(data)  # "Alice,25,Engineer"
 > - It pairs with `split()`: `"a,b,c".split(",")` creates a list, `",".join(["a","b","c"])` creates a string
 >
 > **Common mistake**: `my_list.join(",")` will cause an AttributeError! Use `",".join(my_list)` instead.
+
+## Why join() Instead of += ?
+
+Strings are immutable, so each `result += piece` creates a brand-new string, copying everything built so far. In a loop
+over n pieces that's O(n²) total work. Appending to a list is O(1), and a single `join()` at the end copies each
+character once — O(n) overall.
+
+```python
+# Slow: O(n²) - copies the whole string on every iteration
+result = ""
+for char in text:
+    result += char
+
+# Fast: O(n) - append to a list, join once at the end
+chars = []
+for char in text:
+    chars.append(char)
+result = "".join(chars)
+```

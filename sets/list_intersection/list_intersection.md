@@ -4,8 +4,7 @@ Find common elements between two lists.
 
 ## Task
 
-Write a function `list_intersection(list1, list2)` that returns a new list containing only the elements that appear in *
-*both** input lists.
+Write a function `list_intersection(list1, list2)` that returns a new list containing only the elements that appear in **both** input lists.
 
 - Each element should appear only once in the result
 - The order of elements does not need to be preserved
@@ -23,18 +22,3 @@ if __name__ == "__main__":
     print(list_intersection([2, 3], [5, 7]))  # []
     print(list_intersection([2, 2, 3, 3], [3, 3, 5, 5]))  # [3]
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Use the set intersection operator `&` or the `.intersection()` method:
-
-```python
-set1 = set(list1)
-set2 = set(list2)
-return list(set1 & set2)
-```
-
-</details>

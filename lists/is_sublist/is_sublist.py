@@ -11,7 +11,6 @@ def is_sublist(main_list: list, sub: list) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(is_sublist([2, 3, 5, 7, 11], [3, 5, 7]))  # True
     print(is_sublist([2, 3, 5, 7, 11], [3, 7]))  # False
     print(is_sublist([2, 3, 5], []))  # True

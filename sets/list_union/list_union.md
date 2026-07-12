@@ -23,18 +23,3 @@ if __name__ == "__main__":
     print(list_union([], [2, 3]))  # [2, 3]
     print(list_union([2, 2, 3], [3, 3, 5]))  # [2, 3, 5] (order may vary)
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Use the set union operator `|` or the `.union()` method:
-
-```python
-set1 = set(list1)
-set2 = set(list2)
-return list(set1 | set2)
-```
-
-</details>

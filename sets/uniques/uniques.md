@@ -23,17 +23,3 @@ if __name__ == "__main__":
     print(uniques([]))  # []
     print(uniques([7, 7, 7, 7]))  # [7]
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Sets automatically remove duplicates. Convert to a set, then back to a list.
-
-```python
-unique_set = set(values)
-return list(unique_set)
-```
-
-</details>

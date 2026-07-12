@@ -26,21 +26,6 @@ if __name__ == "__main__":
     print(symmetric_diff([2, 3], [5, 7]))  # [2, 3, 5, 7] (order may vary)
 ```
 
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Use the set symmetric difference operator `^` or the `.symmetric_difference()` method:
-
-```python
-set1 = set(list1)
-set2 = set(list2)
-return list(set1 ^ set2)
-```
-
-</details>
-
 ## Visual Example
 
 ```
