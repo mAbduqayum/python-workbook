@@ -118,10 +118,9 @@ ask one more question: *does this content belong in `## Task`?*
   / series; drop the surrounding "do this, then this" steps. (Naming the method
   in the title isn't enough for a beginner.)
 
-Two scoped exceptions: chapters introducing a new feature (e.g.
+One scoped exception: chapters introducing a new feature (e.g.
 `if_elif_else` teaching docs in `_docs/`) intentionally keep more
-explanation, and dedicated separate `*_hint.md` files are opt-in
-scaffolding — leave both alone.
+explanation — leave those alone.
 
 ### Step 2c — Drop label prefixes in one-line outputs
 
@@ -162,6 +161,29 @@ conversions that are elementary arithmetic — drop it for things like:
 If a beginner has to be told `total_seconds = days×86400 + hours×3600 +
 minutes×60 + seconds`, the exercise is teaching the wrong thing.
 
+### Step 2e — Delete `<details>` Hint/Note blocks; use a `*_hint.md` if truly needed
+
+`<details>` Hint and Note blocks inside an exercise doc paste a complete or
+near-complete solution, defeating the guide's goal (*what* to produce, never
+*how*). **Delete them all.** First fold any spec-critical fact they contain
+into `## Task` (Step 2b) so nothing non-derivable is lost.
+
+Only when a hint is **really necessary** — a named technique a beginner cannot
+be expected to derive, and where the obvious brute-force bypasses the concept
+the exercise teaches (sliding window, complement search, sorted-key grouping) —
+create a **standalone `<exercise>_hint.md`** next to the exercise, modeled on
+`intro/sort_integers/sort_integers_hint.md`:
+
+- `# <Title> - Hint` heading,
+- terse `## Algorithm` bullets describing the approach in words,
+- an optional one-line `## Note`,
+- **no full solution code**, and
+- **not linked** from the exercise doc — the student opens it deliberately.
+
+Keep the bar high: if the technique is taught in `_docs/`, or the needed
+mapping/tool is already handed to the student in the template, no hint file is
+warranted.
+
 ## Step 3 — General beginner-friction cleanup
 
 Apply opportunistically while in a chapter:
@@ -198,7 +220,8 @@ functions, … chapters), on top of the steps above. A change here touches
   expression or tool that produces it (`len // 2`, "create the list from
   `range`", "slicing handles this naturally"). Assumptions ("list is not
   empty") and *constraints* ("don't use `sum`") are spec — they stay.
-  Opt-in `<details>` Hint blocks are exempt, as always.
+  Delete any `<details>` Hint/Note blocks (Step 2e); promote a truly-needed
+  hint to a standalone `*_hint.md`.
 
 ## Step 4 — Verify
 
@@ -215,6 +238,8 @@ functions, … chapters), on top of the steps above. A change here touches
       interleaved-loop reads (Step 1).
 - [ ] Soften `## Task` "ask/prompt" → "read".
 - [ ] Remove redundant/how-to notes; keep non-derivable output-spec notes.
+- [ ] Delete all `<details>` Hint/Note blocks; promote a truly-needed hint to a
+      standalone `<exercise>_hint.md` (Step 2e).
 - [ ] Fold any surviving spec bullets into `## Task`; drop standalone
       `## Logic` / `## Algorithm` walkthroughs; default shape is
       `Task → Examples` (plus a thresholds table / formula / diagram
