@@ -1,14 +1,14 @@
 def mark_unary(tokens: list[str]) -> list[str]:
     result = []
-    operators = {'+', '-', '*', '/', '^'}
+    operators = {"+", "-", "*", "/", "^"}
 
     for i, token in enumerate(tokens):
-        if token == '-':
+        if token == "-":
             # Check if it's unary
-            if i == 0 or tokens[i - 1] == '(' or tokens[i - 1] in operators:
-                result.append('~')
+            if i == 0 or tokens[i - 1] == "(" or tokens[i - 1] in operators:
+                result.append("~")
             else:
-                result.append('-')
+                result.append("-")
         else:
             result.append(token)
 
@@ -17,6 +17,6 @@ def mark_unary(tokens: list[str]) -> list[str]:
 
 if __name__ == "__main__":
     # Test your function
-    print(mark_unary(['-', '5', '+', '3']))  # ['~', '5', '+', '3']
-    print(mark_unary(['(', '-', '5', ')', '*', '2']))  # ['(', '~', '5', ')', '*', '2']
-    print(mark_unary(['3', '-', '5']))  # ['3', '-', '5']
+    print(mark_unary(["-", "5", "+", "3"]))  # ['~', '5', '+', '3']
+    print(mark_unary(["(", "-", "5", ")", "*", "2"]))  # ['(', '~', '5', ')', '*', '2']
+    print(mark_unary(["3", "-", "5"]))  # ['3', '-', '5']

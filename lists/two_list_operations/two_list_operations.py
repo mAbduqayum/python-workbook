@@ -6,7 +6,7 @@ def two_list_sum(list1: list[int], list2: list[int]) -> list[int]:
 
 
 def two_list_sum2(list1: list[int], list2: list[int]) -> list[int]:
-    return [a + b for a, b in zip(list1, list2)]
+    return [a + b for a, b in zip(list1, list2, strict=True)]
 
 
 if __name__ == "__main__":

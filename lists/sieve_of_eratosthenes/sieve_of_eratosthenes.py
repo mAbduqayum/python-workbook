@@ -5,7 +5,7 @@ def sieve_of_eratosthenes(n: int) -> list[int]:
     primes = [True] * (n + 1)
     primes[0] = primes[1] = False
 
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):
         if primes[i]:
             for j in range(i * i, n + 1, i):
                 primes[j] = False
@@ -24,7 +24,7 @@ def sieve_of_eratosthenes2(n: int) -> list[int]:
     primes = [True] * (n + 1)
     primes[0] = primes[1] = False
 
-    for i in range(2, int(n ** 0.5) + 1):
+    for i in range(2, int(n**0.5) + 1):
         if primes[i]:
             for j in range(i * i, n + 1, i):
                 primes[j] = False

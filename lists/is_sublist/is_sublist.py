@@ -4,7 +4,7 @@ def is_sublist(main_list: list, sub: list) -> bool:
 
     sub_len = len(sub)
     for i in range(len(main_list) - sub_len + 1):
-        if main_list[i:i + sub_len] == sub:
+        if main_list[i : i + sub_len] == sub:
             return True
 
     return False

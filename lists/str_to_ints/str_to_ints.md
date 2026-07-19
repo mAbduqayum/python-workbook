@@ -1,6 +1,6 @@
 # String to Integers
 
-Create a function to convert string of integers into a list of integers.
+Create a function to convert a string of space-separated integers into a list of integers.
 
 ## Template:
 
@@ -15,7 +15,3 @@ if __name__ == "__main__":
     print(str_to_ints("10 -5 3"))     # [10, -5, 3]
     print(str_to_ints(""))           # []
 ```
-
-## Note
-
-- Assume the string contains valid integers separated by spaces

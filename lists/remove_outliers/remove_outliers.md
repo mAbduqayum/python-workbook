@@ -6,6 +6,8 @@ Remove the minimum and maximum values from a list of integers.
 
 - Create a function `remove_outliers(numbers)` that takes a list of integers
 - Return a new list with the minimum and maximum values removed
+- If a value is duplicated at the min or max, remove only one occurrence of each
+- Assume the list has at least 2 elements
 
 ## Template:
 
@@ -20,8 +22,3 @@ if __name__ == "__main__":
     print(remove_outliers([10, 5, 8, 3]))       # [5, 8]
     print(remove_outliers([3, 7, 1, 9, 4, 6]))  # [3, 7, 4, 6]
 ```
-
-## Note
-
-- If a value is duplicated at the min or max, remove only one occurrence of each
-- Assume the list has at least 2 elements

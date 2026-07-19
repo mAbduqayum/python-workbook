@@ -1,6 +1,6 @@
 # List Sum
 
-Create a function to calculate the sum of all integers in a list.
+Create a function to calculate the sum of all integers in a list without using the built-in `sum` function.
 
 ## Template:
 
@@ -15,7 +15,3 @@ if __name__ == "__main__":
     print(list_total([10, -5, 3]))       # 8
     print(list_total([]))                # 0
 ```
-
-## Note
-
-- Don't use the built-in `sum` function

@@ -9,7 +9,7 @@ def to_matrix(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
 
 
 def to_matrix2(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
-    return [numbers[i * cols:(i + 1) * cols] for i in range(rows)]
+    return [numbers[i * cols : (i + 1) * cols] for i in range(rows)]
 
 
 if __name__ == "__main__":

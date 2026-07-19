@@ -1,12 +1,12 @@
 def precedence(operation: str) -> int:
     match operation:
-        case '+' | '-':
+        case "+" | "-":
             return 1
-        case '*' | '/':
+        case "*" | "/":
             return 2
-        case '^':
+        case "^":
             return 3
-        case '~':
+        case "~":
             return 4
         case _:
             return -1  # treat -1 as not found
@@ -14,9 +14,9 @@ def precedence(operation: str) -> int:
 
 if __name__ == "__main__":
     # Test your function
-    print(precedence('+'))  # 1
-    print(precedence('-'))  # 1
-    print(precedence('*'))  # 2
-    print(precedence('/'))  # 2
-    print(precedence('^'))  # 3
-    print(precedence('~'))  # 4 (unary minus)
+    print(precedence("+"))  # 1
+    print(precedence("-"))  # 1
+    print(precedence("*"))  # 2
+    print(precedence("/"))  # 2
+    print(precedence("^"))  # 3
+    print(precedence("~"))  # 4 (unary minus)

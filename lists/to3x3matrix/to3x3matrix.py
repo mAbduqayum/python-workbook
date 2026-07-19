@@ -13,7 +13,7 @@ def to3x3matrix(string: str) -> list[list[int]]:
 
 def to3x3matrix2(string: str) -> list[list[int]]:
     numbers = [int(x) for x in string.split()]
-    return [numbers[i:i + 3] for i in range(0, 9, 3)]
+    return [numbers[i : i + 3] for i in range(0, 9, 3)]
 
 
 if __name__ == "__main__":
