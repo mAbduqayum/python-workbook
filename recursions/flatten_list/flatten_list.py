@@ -1,6 +1,6 @@
-def flatten_list(lst: list) -> list:
+def flatten_list(l: list) -> list:
     result = []
-    for item in lst:
+    for item in l:
         if isinstance(item, list):
             result.extend(flatten_list(item))
         else:
@@ -9,7 +9,7 @@ def flatten_list(lst: list) -> list:
 
 
 if __name__ == "__main__":
-    print(flatten_list([1, 2, 3]))  # [1, 2, 3]
-    print(flatten_list([1, [2, 3], 4]))  # [1, 2, 3, 4]
-    print(flatten_list([[1, 2], [3, 4]]))  # [1, 2, 3, 4]
-    print(flatten_list([1, [2, [3, [4]]]]))  # [1, 2, 3, 4]
+    print(flatten_list([2, 3, 5]))  # [2, 3, 5]
+    print(flatten_list([2, [3, 5], 7]))  # [2, 3, 5, 7]
+    print(flatten_list([[2, 3], [5, 7]]))  # [2, 3, 5, 7]
+    print(flatten_list([2, [3, [5, [7]]]]))  # [2, 3, 5, 7]

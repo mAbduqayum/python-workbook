@@ -8,17 +8,17 @@ except ImportError:
 
 @pytest.mark.skipif(flatten_list is None, reason="flatten_list not implemented")
 @pytest.mark.parametrize(
-    "lst, expected",
+    "l, expected",
     [
         ([], []),
-        ([1, 2, 3], [1, 2, 3]),
-        ([1, [2, 3], 4], [1, 2, 3, 4]),
-        ([[1, 2], [3, 4]], [1, 2, 3, 4]),
-        ([1, [2, [3, [4]]]], [1, 2, 3, 4]),
-        ([[[[1]]]], [1]),
-        ([1, [], 2, [], 3], [1, 2, 3]),
-        ([[1, 2, 3]], [1, 2, 3]),
+        ([2, 3, 5], [2, 3, 5]),
+        ([2, [3, 5], 7], [2, 3, 5, 7]),
+        ([[2, 3], [5, 7]], [2, 3, 5, 7]),
+        ([2, [3, [5, [7]]]], [2, 3, 5, 7]),
+        ([[[[2]]]], [2]),
+        ([2, [], 3, [], 5], [2, 3, 5]),
+        ([[2, 3, 5]], [2, 3, 5]),
     ],
 )
-def test_flatten_list(lst, expected):
-    assert flatten_list(lst) == expected
+def test_flatten_list(l, expected):
+    assert flatten_list(l) == expected

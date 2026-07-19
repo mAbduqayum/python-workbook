@@ -1,6 +1,6 @@
-def nested_sum(lst: list) -> int:
+def nested_sum(l: list) -> int:
     total = 0
-    for item in lst:
+    for item in l:
         if isinstance(item, list):
             total += nested_sum(item)
         else:
@@ -9,7 +9,7 @@ def nested_sum(lst: list) -> int:
 
 
 if __name__ == "__main__":
-    print(nested_sum([1, 2, 3]))  # 6
-    print(nested_sum([1, [2, 3], 4]))  # 10
-    print(nested_sum([1, [2, [3, [4]]]]))  # 10
-    print(nested_sum([[1, 2], [3, [4, 5]]]))  # 15
+    print(nested_sum([2, 3, 5]))  # 10
+    print(nested_sum([2, [3, 5], 7]))  # 17
+    print(nested_sum([2, [3, [5, [7]]]]))  # 17
+    print(nested_sum([[2, 3], [5, [7, 11]]]))  # 28

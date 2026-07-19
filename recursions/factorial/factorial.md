@@ -17,11 +17,3 @@ if __name__ == "__main__":
     print(factorial(5))   # 120
     print(factorial(10))  # 3628800
 ```
-
-<details>
-<summary>Hint</summary>
-
-- `0! = 1` and `1! = 1` (base cases)
-- `n! = n × (n-1)!` for n > 1
-
-</details>
