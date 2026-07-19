@@ -1,4 +1,3 @@
-import pytest
 from first_unique_char import first_unique_char
 
 
@@ -39,5 +38,4 @@ def test_middle_unique():
 
 
 def test_with_spaces():
-    result = first_unique_char("hello world")
-    assert result in ["h", "e", "w", "r", "d", " "]
+    assert first_unique_char("hello world") == "h"

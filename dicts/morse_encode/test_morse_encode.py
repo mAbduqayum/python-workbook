@@ -1,4 +1,3 @@
-import pytest
 from morse_encode import morse_encode
 
 

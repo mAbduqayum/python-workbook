@@ -53,7 +53,7 @@ Read these in order before starting the exercises:
 1. [remove_duplicate_letters](../remove_duplicate_letters/remove_duplicate_letters.md)
 1. [find_missing_numbers](../find_missing_numbers/find_missing_numbers.md)
 1. [pangram_checker](../pangram_checker/pangram_checker.md)
-1. [first_recurring_char](../first_recurring_char/first_recurring_char.md)
+1. [isogram](../isogram/isogram.md)
 
 ### Advanced
 

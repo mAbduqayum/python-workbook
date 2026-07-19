@@ -1,4 +1,3 @@
-import pytest
 from read_aloud import read_aloud
 
 

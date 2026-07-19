@@ -3,8 +3,8 @@ from uniques import uniques
 
 
 def test_uniques_with_integers():
-    result = uniques([1, 2, 2, 3, 3, 3])
-    assert sorted(result) == [1, 2, 3]
+    result = uniques([2, 3, 3, 5, 5, 5])
+    assert sorted(result) == [2, 3, 5]
 
 
 def test_uniques_with_strings():
@@ -17,12 +17,12 @@ def test_uniques_empty_list():
 
 
 def test_uniques_all_same():
-    assert uniques([1, 1, 1, 1]) == [1]
+    assert uniques([7, 7, 7, 7]) == [7]
 
 
 def test_uniques_already_unique():
-    result = uniques([1, 2, 3, 4])
-    assert sorted(result) == [1, 2, 3, 4]
+    result = uniques([2, 3, 5, 7])
+    assert sorted(result) == [2, 3, 5, 7]
 
 
 def test_uniques_single_element():
@@ -30,5 +30,5 @@ def test_uniques_single_element():
 
 
 def test_uniques_mixed_types():
-    result = uniques([1, "a", 1, "a", 2])
-    assert set(result) == {1, "a", 2}
+    result = uniques([2, "a", 2, "a", 3])
+    assert set(result) == {2, "a", 3}

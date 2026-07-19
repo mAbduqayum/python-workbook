@@ -14,6 +14,3 @@ Write a function that calculates the area of a triangle.
 | `triangle_area(6, 8)`   | `24.0`  |
 | `triangle_area(7.5, 4)` | `15.0`  |
 | `triangle_area(1, 1)`   | `0.5`   |
-
-## Formula
-- Area = (base × height) / 2

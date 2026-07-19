@@ -1,4 +1,3 @@
-import pytest
 from is_phrase_anagram import is_phrase_anagram
 
 

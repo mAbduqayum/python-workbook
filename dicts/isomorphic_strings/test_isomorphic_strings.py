@@ -1,4 +1,3 @@
-import pytest
 from isomorphic_strings import isomorphic_strings
 
 

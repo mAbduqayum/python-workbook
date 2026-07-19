@@ -6,9 +6,7 @@ Convert a number to its word equivalent.
 
 Write a function `read_aloud(number)` that takes a string representation of a number (0-999) and returns the number spelled out in English words in uppercase.
 
-- Convert numbers 0-999 to English words
-- Return words in uppercase
-- Return empty string for empty input
+- Return an empty string for empty input
 - Input will only contain digit characters
 
 ## Template
@@ -35,55 +33,13 @@ def read_aloud(number: str) -> str:
 
 
 if __name__ == "__main__":
-    print(read_aloud("42"))  # "FORTY TWO"
     print(read_aloud("7"))  # "SEVEN"
+    print(read_aloud("15"))  # "FIFTEEN"
+    print(read_aloud("42"))  # "FORTY TWO"
+    print(read_aloud("90"))  # "NINETY"
+    print(read_aloud("100"))  # "ONE HUNDRED"
     print(read_aloud("105"))  # "ONE HUNDRED FIVE"
     print(read_aloud("333"))  # "THREE HUNDRED THIRTY THREE"
-    print(read_aloud(""))  # ""
     print(read_aloud("0"))  # "ZERO"
+    print(read_aloud(""))  # ""
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Use dictionaries to map numbers to words, then handle different cases:
-
-```python
-num = int(number)
-
-if num == 0:
-    return "ZERO"
-if num < 10:
-    return ONES[num]
-if num < 20:
-    return TEENS[num]
-if num < 100:
-    tens_digit = num // 10 * 10
-    ones_digit = num % 10
-    if ones_digit == 0:
-        return TENS[tens_digit]
-    else:
-        return TENS[tens_digit] + " " + ONES[ones_digit]
-```
-
-For hundreds, extract the hundreds digit and process the remainder (0-99) recursively.
-
-</details>
-
-## Note
-
-<details>
-<summary>Click to reveal note</summary>
-
-**Number ranges require different handling:**
-
-- **0-9**: Direct lookup in ONES dictionary
-- **10-19**: Direct lookup in TEENS dictionary (special cases)
-- **20-99**: Combine TENS and ONES ("FORTY" + "TWO")
-- **100-999**: Say hundreds digit + "HUNDRED" + remainder
-
-The teens (10-19) are special because they don't follow the regular pattern - "eleven" is not "ten one", "twelve" is not "ten two", etc.
-
-</details>

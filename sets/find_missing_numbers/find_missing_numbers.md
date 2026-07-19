@@ -24,39 +24,3 @@ if __name__ == "__main__":
     print(find_missing([], 5))  # [1, 2, 3, 4, 5]
     print(find_missing([1, 1, 2, 2], 4))  # [3, 4]
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Use set difference to find missing numbers:
-
-```python
-full_range = set(range(1, n + 1))
-present = set(numbers)
-missing = full_range - present
-return sorted(missing)
-```
-
-</details>
-
-## Note
-
-<details>
-<summary>Click to reveal note</summary>
-
-This is a classic interview problem! The set-based solution runs in O(n) time.
-
-An alternative approach without using extra space (for finding a **single** missing number) uses the mathematical
-formula for the sum of 1 to n:
-
-```python
-expected_sum = n * (n + 1) // 2
-actual_sum = sum(numbers)
-missing = expected_sum - actual_sum
-```
-
-But for **multiple** missing numbers, the set approach is cleaner and more flexible.
-
-</details>

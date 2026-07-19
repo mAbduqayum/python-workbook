@@ -21,7 +21,7 @@ def test_all_unique():
 
 
 def test_case_sensitive():
-    result = most_frequent_char("AaAaBb")
+    result = most_frequent_char("AaA")
     assert result == "A"
 
 

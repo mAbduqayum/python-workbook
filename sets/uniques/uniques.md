@@ -18,22 +18,8 @@ def uniques(values: list) -> list:
 
 
 if __name__ == "__main__":
-    print(uniques([1, 2, 2, 3, 3, 3]))  # [1, 2, 3] (order may vary)
+    print(uniques([2, 3, 3, 5, 5, 5]))  # [2, 3, 5] (order may vary)
     print(uniques(["a", "b", "a", "c", "b"]))  # ['a', 'b', 'c'] (order may vary)
     print(uniques([]))  # []
-    print(uniques([1, 1, 1, 1]))  # [1]
+    print(uniques([7, 7, 7, 7]))  # [7]
 ```
-
-## Hint
-
-<details>
-<summary>Click to reveal hint</summary>
-
-Sets automatically remove duplicates. Convert to a set, then back to a list.
-
-```python
-unique_set = set(values)
-return list(unique_set)
-```
-
-</details>

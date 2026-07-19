@@ -6,13 +6,13 @@ combining collections.
 ## Visual Overview
 
 ```
-A = {1, 2, 3}
-B = {2, 3, 4}
+A = {2, 3, 5}
+B = {3, 5, 7}
 
-Union (A | B):          {1, 2, 3, 4}  - all elements from both
-Intersection (A & B):   {2, 3}        - elements in both
-Difference (A - B):     {1}           - elements in A but not B
-Symmetric Diff (A ^ B): {1, 4}        - elements in either, but not both
+Union (A | B):          {2, 3, 5, 7}  - all elements from both
+Intersection (A & B):   {3, 5}        - elements in both
+Difference (A - B):     {2}           - elements in A but not B
+Symmetric Diff (A ^ B): {2, 7}        - elements in either, but not both
 ```
 
 ## Union
@@ -20,18 +20,18 @@ Symmetric Diff (A ^ B): {1, 4}        - elements in either, but not both
 Elements that are in **either** set (or both).
 
 ```python
-a = {1, 2, 3}
-b = {3, 4, 5}
+a = {2, 3, 5}
+b = {3, 5, 7}
 
 # Method 1: operator
-a | b                # {1, 2, 3, 4, 5}
+a | b                # {2, 3, 5, 7}
 
 # Method 2: method (can take any iterable)
-a.union(b)           # {1, 2, 3, 4, 5}
-a.union([3, 4, 5])   # {1, 2, 3, 4, 5}
+a.union(b)           # {2, 3, 5, 7}
+a.union([3, 5, 7])   # {2, 3, 5, 7}
 
 # Multiple sets
-a | b | {6, 7}       # {1, 2, 3, 4, 5, 6, 7}
+a | b | {11, 13}     # {2, 3, 5, 7, 11, 13}
 ```
 
 ## Intersection
@@ -39,17 +39,17 @@ a | b | {6, 7}       # {1, 2, 3, 4, 5, 6, 7}
 Elements that are in **both** sets.
 
 ```python
-a = {1, 2, 3}
-b = {2, 3, 4}
+a = {2, 3, 5}
+b = {3, 5, 7}
 
 # Method 1: operator
-a & b                # {2, 3}
+a & b                # {3, 5}
 
 # Method 2: method
-a.intersection(b)    # {2, 3}
+a.intersection(b)    # {3, 5}
 
 # Multiple sets
-a & b & {2, 5}       # {2}
+a & b & {3, 11}      # {3}
 ```
 
 ## Difference
@@ -57,15 +57,15 @@ a & b & {2, 5}       # {2}
 Elements in the **first** set but **not** in the second.
 
 ```python
-a = {1, 2, 3}
-b = {2, 3, 4}
+a = {2, 3, 5}
+b = {3, 5, 7}
 
 # Method 1: operator
-a - b                # {1}
-b - a                # {4}
+a - b                # {2}
+b - a                # {7}
 
 # Method 2: method
-a.difference(b)      # {1}
+a.difference(b)      # {2}
 ```
 
 ## Symmetric Difference
@@ -73,21 +73,21 @@ a.difference(b)      # {1}
 Elements in **either** set, but **not in both** (XOR operation).
 
 ```python
-a = {1, 2, 3}
-b = {2, 3, 4}
+a = {2, 3, 5}
+b = {3, 5, 7}
 
 # Method 1: operator
-a ^ b                      # {1, 4}
+a ^ b                      # {2, 7}
 
 # Method 2: method
-a.symmetric_difference(b)  # {1, 4}
+a.symmetric_difference(b)  # {2, 7}
 ```
 
 ## Subset and Superset
 
 ```python
-a = {1, 2}
-b = {1, 2, 3, 4}
+a = {2, 3}
+b = {2, 3, 5, 7}
 
 # Subset: is every element of a in b?
 a <= b               # True (a is subset of b)
@@ -105,12 +105,12 @@ b.issuperset(a)      # True
 Two sets are **disjoint** if they have no elements in common.
 
 ```python
-a = {1, 2, 3}
-b = {4, 5, 6}
-c = {3, 4, 5}
+a = {2, 3, 5}
+b = {7, 11, 13}
+c = {5, 7, 11}
 
 a.isdisjoint(b)      # True - no common elements
-a.isdisjoint(c)      # False - both have 3
+a.isdisjoint(c)      # False - both have 5
 ```
 
 ## In-Place Operations
@@ -118,12 +118,12 @@ a.isdisjoint(c)      # False - both have 3
 Modify the set directly instead of creating a new one:
 
 ```python
-a = {1, 2, 3}
+a = {2, 3, 5}
 
-a |= {4, 5}          # a.update({4, 5})
-a &= {2, 3, 4}       # a.intersection_update({2, 3, 4})
-a -= {3}             # a.difference_update({3})
-a ^= {1, 5}          # a.symmetric_difference_update({1, 5})
+a |= {7, 11}         # a.update({7, 11})
+a &= {3, 5, 7}       # a.intersection_update({3, 5, 7})
+a -= {5}             # a.difference_update({5})
+a ^= {2, 11}         # a.symmetric_difference_update({2, 11})
 ```
 
 ## Summary Table
