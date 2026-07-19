@@ -31,9 +31,8 @@ if __name__ == "__main__":
 
 ## Note
 
-- Read sensitive words from words_path (one word per line)
-- Replace each occurrence of sensitive words with asterisks (same length as the word)
-- Matching should be case-insensitive
-- Preserve the original case pattern in the replacement (if "Secret" is redacted, output "******")
+- The words file contains one sensitive word per line
+- Replace each occurrence of a sensitive word with asterisks of the same length
+- Matching is case-insensitive
 - Return the total count of redacted words
 - Preserve all punctuation and whitespace

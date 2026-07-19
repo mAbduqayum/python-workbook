@@ -31,7 +31,7 @@ def divide(a, b):
 class Calculator:
     # A simple calculator class
 
-    def __init__(self):
+    def __init__(self) -> None:
         self.result = 0
 
     def calculate(self, operation, a, b):

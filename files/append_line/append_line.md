@@ -29,6 +29,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Use append mode (`'a'`) to add to the file without overwriting
-- Add a newline character after the line
+- The appended line ends with a newline character; existing content is untouched
 - If the file doesn't exist, it should be created

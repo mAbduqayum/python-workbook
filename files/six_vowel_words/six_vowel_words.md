@@ -28,7 +28,6 @@ if __name__ == "__main__":
 ## Note
 
 - Each vowel (a, e, i, o, u, y) must appear exactly once in the word
-- The vowels must appear in alphabetical order (a before e before i, etc.)
 - Other letters can appear between the vowels
 - Comparison should be case-insensitive
 - Each line in the file contains one word
