@@ -14,6 +14,3 @@ Write a function that calculates the area of a rectangle.
 | `rectangle_area(10, 2)`  | `20`    |
 | `rectangle_area(7.5, 4)` | `30.0`  |
 | `rectangle_area(1, 1)`   | `1`     |
-
-## Formula
-- Area = length × width

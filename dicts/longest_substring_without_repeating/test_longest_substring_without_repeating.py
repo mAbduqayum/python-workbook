@@ -1,4 +1,3 @@
-import pytest
 from longest_substring_without_repeating import longest_substring_without_repeating
 
 

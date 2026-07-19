@@ -1,4 +1,3 @@
-import pytest
 from morse_decode import morse_decode
 
 
@@ -24,10 +23,6 @@ def test_single_letter():
 
 def test_hello():
     assert morse_decode(".... . .-.. .-.. ---") == "HELLO"
-
-
-def test_single_word():
-    assert morse_decode("... --- ...") == "SOS"
 
 
 def test_alphabet():

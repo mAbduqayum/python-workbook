@@ -80,12 +80,10 @@
 - [x] Find Missing Numbers - Given a range (1 to n) and an array with some missing numbers, find which numbers are
   missing using set difference.
 - [x] Pangram Checker
-- [x] The First Recurring Character
-  Problem: Given a string, return the first character that appears a second time.
-  Input: `ABCA`
-  Output: `A`
-  Problem: Given an array of integers nums and an integer target, return true if two numbers in the array add up to
-  target.
+- [x] Isogram
+  Problem: Given a word or phrase, return True if no letter repeats (ignoring spaces, hyphens, and case).
+  Input: `thumbscrew-japingly`
+  Output: `True`
 - [ ] convert all function argument types from list to set.
 
 ### sets advanced

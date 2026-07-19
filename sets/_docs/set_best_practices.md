@@ -11,7 +11,10 @@ Sets use **hash tables** internally, which provides O(1) average-case time compl
 | Remove element          | O(1) | O(n)          |
 | Get length              | O(1) | O(1)          |
 
-*List append is O(1), but insert at arbitrary position is O(n)
+*List append is amortized O(1), but insert at arbitrary position is O(n).
+
+**Amortized** means averaged over many calls: both lists and sets occasionally resize their underlying storage (an O(n)
+event), but it happens rarely enough that the average cost per `append`/`add` stays O(1).
 
 ## Common Patterns
 
@@ -25,28 +28,7 @@ unique = list(set(my_list))
 unique = list(dict.fromkeys(my_list))
 ```
 
-### Pattern 2: Track Seen Items
-
-```python
-def has_duplicates(items):
-    seen = set()
-    for item in items:
-        if item in seen:
-            return True
-        seen.add(item)
-    return False
-```
-
-### Pattern 3: Find Common Elements
-
-```python
-list1 = [1, 2, 3, 4, 5]
-list2 = [4, 5, 6, 7, 8]
-
-common = set(list1) & set(list2)  # {4, 5}
-```
-
-### Pattern 4: Filter with Set Lookup
+### Pattern 2: Filter with Set Lookup
 
 ```python
 allowed = {"admin", "editor", "viewer"}
@@ -54,19 +36,6 @@ users = [("alice", "admin"), ("bob", "guest"), ("carol", "editor")]
 
 # Fast lookup using set
 authorized = [(name, role) for name, role in users if role in allowed]
-```
-
-### Pattern 5: Complement Search (Two Sum Pattern)
-
-```python
-def has_pair_with_sum(numbers, target):
-    seen = set()
-    for num in numbers:
-        complement = target - num
-        if complement in seen:
-            return True
-        seen.add(num)
-    return False
 ```
 
 ## Common Mistakes
