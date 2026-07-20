@@ -20,5 +20,3 @@ if __name__ == "__main__":
 
 - Print each line without the trailing newline character
 - If the file has fewer than n lines, print all lines
-- Default value for n is 10
-- Test with different sample files: `../samples/khayyam.txt` (UTF-8), `../samples/server_log.txt`

@@ -14,13 +14,5 @@ if __name__ == "__main__":
     print(count_digits(5))       # 1
     print(count_digits(123))     # 3
     print(count_digits(1000000)) # 7
+    print(count_digits(-123))    # 3
 ```
-
-<details>
-<summary>Hint</summary>
-
-- Single digit (0-9) has 1 digit (base case)
-- `count_digits(n) = 1 + count_digits(n // 10)` for n >= 10
-- Handle negative numbers by using absolute value
-
-</details>

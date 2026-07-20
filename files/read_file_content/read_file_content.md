@@ -19,9 +19,3 @@ if __name__ == "__main__":
     # Output: Hello, World!
     #         This is a test file.
 ```
-
-## Note
-
-- Use a context manager (`with` statement) to open the file
-- Use `encoding="utf-8"` when opening the file
-- Return the content without any modifications

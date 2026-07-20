@@ -21,10 +21,3 @@ if __name__ == "__main__":
     print(is_perfect(28))  # True (1 + 2 + 4 + 7 + 14 = 28)
     print(is_perfect(12))  # False
 ```
-
-<details>
-<summary><strong>Historical Note</strong></summary>
-
-Perfect numbers have captivated mathematicians for over two millennia. Euclid proved around 300 BCE that if 2^p - 1 is prime (now called a Mersenne prime), then 2^(p-1) × (2^p - 1) is a perfect number. This elegant formula still generates all known even perfect numbers. As of 2024, only 52 perfect numbers have been discovered—the largest containing over 49 million digits. Whether any odd perfect numbers exist remains one of mathematics' oldest unsolved mysteries, spanning more than 2,000 years.
-
-</details>

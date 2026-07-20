@@ -19,7 +19,3 @@ if __name__ == "__main__":
     print(two_list_sum([2, 3, 5], [7, 11, 13]))  # [9, 14, 18]
     print(two_list_sum([10, 20], [5, 10]))       # [15, 30]
 ```
-
-## Note
-
-- Assume both lists have the same length

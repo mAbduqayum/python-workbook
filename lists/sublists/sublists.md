@@ -6,6 +6,7 @@ Generate all possible sublists (contiguous subsequences) of a list.
 
 - Create a function `sublists(l)` that takes a list
 - Return a list of all possible sublists (including empty list and full list)
+- Order of the sublists doesn't matter
 
 ## Template:
 
@@ -19,18 +20,3 @@ if __name__ == "__main__":
     print(sublists([2, 3, 5]))
     # [[], [2], [3], [5], [2, 3], [3, 5], [2, 3, 5]]
 ```
-
-<details>
-<summary><strong>Hint</strong></summary>
-
-- Use nested loops to generate all sublists
-- Outer loop: starting index (0 to len(l))
-- Inner loop: ending index (start to len(l))
-- For each pair (i, j), add l[i:j] to result
-- Include empty list: l[0:0]
-
-</details>
-
-## Note
-
-- Order of the sublists doesn't matter for the test

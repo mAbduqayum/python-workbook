@@ -6,6 +6,7 @@ Convert a flat list into a matrix with specified dimensions (general form).
 
 - Create a function `to_matrix(numbers, rows, cols)` that takes a list and dimensions
 - Return a 2D list (matrix) with the specified number of rows and columns
+- Assume `len(numbers) == rows * cols`
 
 ## Template:
 
@@ -22,7 +23,3 @@ if __name__ == "__main__":
     print(to_matrix([2, 3, 5, 7], 2, 2))
     # [[2, 3], [5, 7]]
 ```
-
-## Note
-
-- Assume `len(numbers) == rows * cols`

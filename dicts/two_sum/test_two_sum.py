@@ -14,7 +14,7 @@ def test_same_value():
 
 
 def test_not_found():
-    assert two_sum([1, 2, 3], 10) is None
+    assert two_sum([2, 3, 5], 10) is None
 
 
 def test_negative_numbers():
@@ -31,12 +31,11 @@ def test_large_numbers():
 
 
 def test_first_and_last():
-    result = two_sum([1, 2, 3, 4, 5], 6)
-    assert result in [[0, 4], [1, 3]]
+    assert two_sum([2, 3, 5, 7, 11], 13) == [0, 4]
 
 
 def test_consecutive():
-    assert two_sum([1, 2, 3, 4], 3) == [0, 1]
+    assert two_sum([2, 3, 5, 7], 5) == [0, 1]
 
 
 def test_single_element():
@@ -44,8 +43,8 @@ def test_single_element():
 
 
 def test_two_elements_match():
-    assert two_sum([1, 2], 3) == [0, 1]
+    assert two_sum([2, 3], 5) == [0, 1]
 
 
 def test_two_elements_no_match():
-    assert two_sum([1, 2], 5) is None
+    assert two_sum([2, 3], 7) is None

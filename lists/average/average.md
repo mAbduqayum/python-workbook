@@ -1,6 +1,6 @@
 # Average
 
-Create a function to calculate the average of integers in a list.
+Create a function to calculate the average of integers in a non-empty list.
 
 ## Template:
 
@@ -15,7 +15,3 @@ if __name__ == "__main__":
     print(average([10, 20, 30]))      # 20.0
     print(average([5]))               # 5.0
 ```
-
-## Note
-
-- Assume the list is not empty

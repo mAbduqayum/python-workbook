@@ -19,10 +19,3 @@ if __name__ == "__main__":
     print(merge_sort([2, 5, 11], [3, 7, 13]))  # [2, 3, 5, 7, 11, 13]
     print(merge_sort([2, 3], [5, 7]))          # [2, 3, 5, 7]
 ```
-
-<details>
-<summary><strong>Historical Note</strong></summary>
-
-The merge operation is the key component of merge sort, one of computer science's most elegant algorithms. Merge sort was invented by John von Neumann in 1945, making it one of the earliest sorting algorithms designed for computers. Von Neumann was a legendary polymath whose contributions spanned mathematics, physics, economics, and computer science. Beyond inventing merge sort, he worked on the Manhattan Project, pioneered game theory, and developed the stored-program computer architecture (the "von Neumann architecture") that remains the foundation of nearly all modern computers.
-
-</details>

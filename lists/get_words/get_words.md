@@ -1,6 +1,6 @@
 # Get Words
 
-Create a function to convert a sentence into a list of words.
+Create a function to convert a sentence into a list of words. Any run of whitespace separates words; leading and trailing spaces are ignored.
 
 ## Template:
 
@@ -15,7 +15,3 @@ if __name__ == "__main__":
     print(get_words("Python is fun"))  # ["Python", "is", "fun"]
     print(get_words(""))  # []
 ```
-
-## Note
-
-- Treat any run of whitespace as a separator; ignore leading and trailing spaces

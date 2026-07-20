@@ -4,7 +4,7 @@ Some people like to play a game that constructs a sequence of chemical elements 
 
 For example, if a sequence begins with Hydrogen, then the next element must be an element that begins with N, such as Nickel. The element following Nickel must begin with L, such as Lithium. The element sequence that is constructed cannot contain any duplicates.
 
-Create a recursive function that finds the longest sequence of elements starting from a given element.
+Create a recursive function that finds the longest sequence of elements starting from a given element. The starting element is matched case-insensitively; the returned sequence uses the spellings as written in `ELEMENTS`.
 
 **Note:** It may take your program up to two minutes to find the longest sequence for some elements. Molybdenum and Magnesium are good test cases as they find sequences quickly.
 
@@ -46,15 +46,3 @@ if __name__ == "__main__":
     print(longest_element_sequence("InvalidElement"))
     # []
 ```
-
-<details>
-<summary>Hint</summary>
-
-- Validate the starting element against the ELEMENTS list (case-insensitive)
-- Get the last letter of the current element
-- Find all elements that start with that letter and haven't been used
-- Recursively find the longest sequence starting from each candidate
-- Keep track of used elements to avoid duplicates
-- Return the longest sequence found
-
-</details>

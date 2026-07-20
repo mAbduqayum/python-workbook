@@ -23,6 +23,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Each string should be followed by a newline character
+- Each string is followed by a newline character, including the last one
 - The function creates a new file or overwrites an existing one
-- Use `encoding="utf-8"` when opening the file

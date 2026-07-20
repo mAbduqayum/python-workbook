@@ -5,8 +5,8 @@ Mark unary operators (negative signs) in a tokenized expression.
 ## Task
 
 - Create a function `mark_unary(tokens)` that takes a list of tokens
-- Return a new list with unary minus operators marked (e.g., as '~')
-- Distinguish between binary minus (subtraction) and unary minus (negation)
+- Return a new list with each unary minus (negation) replaced by `'~'`
+- A minus is unary when it's the first token, follows `'('`, or follows another operator; otherwise it's binary (subtraction) and stays `'-'`
 
 ## Template:
 
@@ -21,22 +21,3 @@ if __name__ == "__main__":
     print(mark_unary(['(', '-', '5', ')', '*', '2']))  # ['(', '~', '5', ')', '*', '2']
     print(mark_unary(['3', '-', '5']))  # ['3', '-', '5']
 ```
-
-
-<details>
-<summary><strong>Hint</strong></summary>
-
-- A minus is unary if:
-    - It's at the beginning of the expression
-    - It follows an opening parenthesis '('
-    - It follows another operator
-- Otherwise, it's binary (subtraction)
-- Replace unary minus with a different symbol (e.g., '~')
-
-</details>
-
-## Note
-
-- Unary minus: `-5` (negation)
-- Binary minus: `3 - 5` (subtraction)
-- This helps in expression evaluation

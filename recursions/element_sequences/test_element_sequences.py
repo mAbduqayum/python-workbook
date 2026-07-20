@@ -1,10 +1,9 @@
 import pytest
 
 try:
-    from element_sequences import ELEMENTS_LOWER, longest_element_sequence
+    from element_sequences import longest_element_sequence
 except ImportError:
     longest_element_sequence = None
-    ELEMENTS_LOWER = None
 
 
 @pytest.mark.skipif(

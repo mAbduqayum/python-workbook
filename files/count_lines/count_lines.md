@@ -20,6 +20,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Each line ending with `\n` counts as a line
 - An empty file has 0 lines
-- A file with just "hello" (no newline) has 1 line
+- A final line without a trailing newline still counts: a file with just "hello" has 1 line

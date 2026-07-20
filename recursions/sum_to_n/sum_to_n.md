@@ -17,11 +17,3 @@ if __name__ == "__main__":
     print(sum_to_n(10))  # 55
     print(sum_to_n(100)) # 5050
 ```
-
-<details>
-<summary>Hint</summary>
-
-- `sum_to_n(1) = 1` (base case)
-- `sum_to_n(n) = n + sum_to_n(n-1)` for n > 1
-
-</details>

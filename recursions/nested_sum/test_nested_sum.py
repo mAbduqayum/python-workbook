@@ -8,18 +8,18 @@ except ImportError:
 
 @pytest.mark.skipif(nested_sum is None, reason="nested_sum not implemented")
 @pytest.mark.parametrize(
-    "lst, expected",
+    "l, expected",
     [
         ([], 0),
-        ([1, 2, 3], 6),
-        ([1, [2, 3], 4], 10),
-        ([[1, 2], [3, 4]], 10),
-        ([1, [2, [3, [4]]]], 10),
+        ([2, 3, 5], 10),
+        ([2, [3, 5], 7], 17),
+        ([[2, 3], [5, 7]], 17),
+        ([2, [3, [5, [7]]]], 17),
         ([[[[5]]]], 5),
-        ([1, [], 2, [], 3], 6),
+        ([2, [], 3, [], 5], 10),
         ([10, [20, [30]]], 60),
-        ([[1, 2], [3, [4, 5]]], 15),
+        ([[2, 3], [5, [7, 11]]], 28),
     ],
 )
-def test_nested_sum(lst, expected):
-    assert nested_sum(lst) == expected
+def test_nested_sum(l, expected):
+    assert nested_sum(l) == expected

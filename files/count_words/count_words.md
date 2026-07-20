@@ -21,6 +21,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Words are separated by whitespace
+- Words are separated by runs of whitespace: multiple spaces don't affect the count
 - An empty file has 0 words
-- Multiple spaces between words should not affect the count

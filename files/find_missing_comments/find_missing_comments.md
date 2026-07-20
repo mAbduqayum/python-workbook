@@ -27,8 +27,8 @@ if __name__ == "__main__":
 
 ## Note
 
-- Find all lines starting with `def ` (function definitions)
-- Check if the previous non-empty line contains a comment (`#`)
-- Return list of lists: [line_number, function_name]
-- Extract just the function name (without `def`, parameters, or colon)
-- Skip the first line of the file (if it's a function definition, it can't have a preceding comment)
+- A function definition is a line starting with `def `
+- A function counts as documented when the nearest non-empty line above it contains a `#`
+- Return a list of lists: [line_number, function_name], using the line number of the `def` line
+- Report just the function name (without `def`, parameters, or colon)
+- A definition on the first line of the file has no line above it, so it is always reported

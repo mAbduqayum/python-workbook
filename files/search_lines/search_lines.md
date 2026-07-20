@@ -19,12 +19,10 @@ if __name__ == "__main__":
 
     # Test your function
     print(search_lines("code.txt", "def"))
-    # [(1, "def hello():"), (3, "def goodbye():")]
+    # [[1, "def hello():"], [3, "def goodbye():"]]
 ```
 
 ## Note
 
-- Line numbers start at 1
 - The search is case-sensitive
-- Return lines without the trailing newline character
 - Return an empty list if no matches are found

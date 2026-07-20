@@ -17,12 +17,3 @@ if __name__ == "__main__":
     print(fibonacci(6))   # 8
     print(fibonacci(10))  # 55
 ```
-
-<details>
-<summary>Hint</summary>
-
-- `fibonacci(0) = 0` (base case)
-- `fibonacci(1) = 1` (base case)
-- `fibonacci(n) = fibonacci(n-1) + fibonacci(n-2)` for n > 1
-
-</details>

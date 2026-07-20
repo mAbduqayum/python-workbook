@@ -18,14 +18,3 @@ if __name__ == "__main__":
     print(run_length_encode(""))             # ""
     print(run_length_encode("AABBBCCCC"))    # "2A3B4C"
 ```
-
-<details>
-<summary>Hint</summary>
-
-- Base case: empty string returns empty string
-- Count consecutive occurrences of the first character
-- Create encoding for that run: count + character
-- Recursively encode the rest of the string (after the run)
-- Concatenate results
-
-</details>
