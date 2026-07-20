@@ -20,10 +20,3 @@ if __name__ == "__main__":
     print(evaluate_postfix(['3', '5', '+', '2', '*']))  # 16.0 ((3+5)*2)
     print(evaluate_postfix(['15', '7', '1', '1', '+', '-', '/']))  # 3.0
 ```
-
-<details>
-<summary><strong>Historical Note</strong></summary>
-
-Reverse Polish Notation (RPN) achieved widespread fame through HP calculators in the 1970s, particularly the HP-35 (1972), the world's first handheld scientific calculator. Engineers and scientists embraced RPN because it eliminated parentheses and enabled more efficient calculation workflows. Beyond calculators, stack-based evaluation of postfix expressions became fundamental to computer science—many programming language interpreters and virtual machines (including the Java Virtual Machine and Python's bytecode) execute code internally using stack-based postfix-like operations.
-
-</details>

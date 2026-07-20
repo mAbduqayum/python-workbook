@@ -39,14 +39,3 @@ if __name__ == "__main__":
     print(spell_with_elements("bacon"))  # ['B', 'Ac', 'O', 'N']
     print(spell_with_elements("beach"))  # ['Be', 'Ac', 'H']
 ```
-
-<details>
-<summary>Hint</summary>
-
-- Base case: empty string returns True (or empty list)
-- Try matching 1-letter element symbol at start, then recurse on rest
-- Try matching 2-letter element symbol at start, then recurse on rest
-- Element symbols are case-sensitive (first letter uppercase, second lowercase)
-- Convert input to proper case before matching
-
-</details>

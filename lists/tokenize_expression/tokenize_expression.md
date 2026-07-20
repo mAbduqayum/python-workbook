@@ -6,7 +6,8 @@ Parse a mathematical expression string into a list of tokens.
 
 - Create a function `tokenize_expression(expr)` that takes an expression string
 - Return a list of tokens (numbers, operators, parentheses)
-- Handle multi-digit numbers
+- Handle multi-digit numbers and ignore spaces
+- Operators: `+`, `-`, `*`, `/`, `^`; parentheses: `(`, `)`
 
 ## Template:
 
@@ -21,8 +22,3 @@ if __name__ == "__main__":
     print(tokenize_expression("(10+20)*3"))  # ['(', '10', '+', '20', ')', '*', '3']
     print(tokenize_expression("15 - 7 + 2"))  # ['15', '-', '7', '+', '2']
 ```
-
-## Note
-
-- Ignore spaces
-- Operators: `+`, `-`, `*`, `/`, `^`; parentheses: `(`, `)`

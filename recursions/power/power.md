@@ -15,11 +15,3 @@ if __name__ == "__main__":
     print(power(3, 4))   # 81
     print(power(10, 3))  # 1000
 ```
-
-<details>
-<summary>Hint</summary>
-
-- `power(base, 0) = 1` (base case)
-- `power(base, exp) = base × power(base, exp - 1)` for exp > 0
-
-</details>

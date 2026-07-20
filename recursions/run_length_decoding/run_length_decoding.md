@@ -18,15 +18,3 @@ if __name__ == "__main__":
     print(run_length_decode(""))            # ""
     print(run_length_decode("12A3B"))       # "AAAAAAAAAAAABBB"
 ```
-
-<details>
-<summary>Hint</summary>
-
-- Base case: empty string returns empty string
-- Parse the count (may be multiple digits) from the start
-- Get the character after the count
-- Repeat the character count times
-- Recursively decode the rest of the string
-- Concatenate results
-
-</details>

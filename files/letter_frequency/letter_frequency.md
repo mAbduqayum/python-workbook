@@ -23,7 +23,5 @@ if __name__ == "__main__":
 
 ## Note
 
-- Count only alphabetic characters (a-z)
-- Convert all letters to lowercase before counting
-- Ignore spaces, digits, punctuation, and other non-letter characters
+- Count only alphabetic characters, case-insensitively: keys are lowercase letters
 - Return an empty dictionary for empty files or files with no letters

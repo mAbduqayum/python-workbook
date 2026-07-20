@@ -8,7 +8,7 @@ except ImportError:
 
 @pytest.mark.skipif(binary_search is None, reason="binary_search not implemented")
 @pytest.mark.parametrize(
-    "lst, target, expected",
+    "l, target, expected",
     [
         ([1, 3, 5, 7, 9, 11], 7, 3),
         ([1, 3, 5, 7, 9, 11], 1, 0),
@@ -19,8 +19,8 @@ except ImportError:
         ([5], 5, 0),
         ([5], 3, -1),
         ([], 5, -1),
-        ([1, 2, 3, 4, 5, 6, 7, 8, 9, 10], 5, 4),
+        ([2, 3, 5, 7, 11, 13, 17, 19, 23, 29], 11, 4),
     ],
 )
-def test_binary_search(lst, target, expected):
-    assert binary_search(lst, target) == expected
+def test_binary_search(l, target, expected):
+    assert binary_search(l, target) == expected

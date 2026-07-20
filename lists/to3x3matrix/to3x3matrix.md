@@ -1,6 +1,6 @@
 # To 3x3 Matrix
 
-Create a function to convert a string of 9 integers into a 3x3 matrix.
+Create a function to convert a string of exactly 9 space-separated integers into a 3x3 matrix.
 
 ## Template:
 
@@ -19,7 +19,3 @@ if __name__ == "__main__":
     # [7, 11, 13]
     # [17, 19, 23]
 ```
-
-## Note
-
-- The input is exactly 9 space-separated integers

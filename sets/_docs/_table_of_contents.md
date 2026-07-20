@@ -42,11 +42,7 @@ Read these in order before starting the exercises:
 
 ### Beginner
 
-1. [uniques](../uniques/uniques.md)
-1. [list_union](../list_union/list_union.md)
-1. [list_intersection](../list_intersection/list_intersection.md)
-1. [subset_checker](../subset_checker/subset_checker.md)
-1. [symmetric_difference](../symmetric_difference/symmetric_difference.md)
+1. [set_operations](../set_operations/set_operations.md)
 
 ### Intermediate
 
