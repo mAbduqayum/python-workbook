@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from morse_encode import morse_encode
 except ImportError:

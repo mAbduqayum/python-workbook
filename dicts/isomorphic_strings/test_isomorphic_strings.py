@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from isomorphic_strings import isomorphic_strings
 except ImportError:

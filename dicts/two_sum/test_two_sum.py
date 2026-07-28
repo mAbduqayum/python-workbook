@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from two_sum import two_sum
 except ImportError:

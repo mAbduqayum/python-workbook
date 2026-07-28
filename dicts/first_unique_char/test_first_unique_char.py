@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from first_unique_char import first_unique_char
 except ImportError:

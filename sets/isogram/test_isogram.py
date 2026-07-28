@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from isogram import is_isogram
 except ImportError:

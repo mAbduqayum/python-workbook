@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from read_aloud import read_aloud
 except ImportError:

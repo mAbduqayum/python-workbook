@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from roman_to_int import roman_to_int
 except ImportError:

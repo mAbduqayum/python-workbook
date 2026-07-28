@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from text_messaging import text_messaging
 except ImportError:

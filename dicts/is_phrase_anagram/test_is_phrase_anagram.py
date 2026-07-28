@@ -1,3 +1,5 @@
+import pytest
+
 try:
     from is_phrase_anagram import is_phrase_anagram
 except ImportError:
