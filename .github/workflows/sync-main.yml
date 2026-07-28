@@ -2,11 +2,12 @@ name: Sync to Main
 
 # Source of truth is the `solutions` branch. On every push to `solutions`,
 # regenerate `main` as: all files from `solutions` EXCEPT solution scripts.
-# A file is stripped iff it is a *.py file whose basename is not `test_*.py`
-# and not `conftest.py`, and it is not under `tests/`. This removes only the
-# exercise solution scripts; test files, fixtures and all non-Python content
-# (docs, slides, configs) are mirrored as-is. Tests already `pytest.skip`
-# when their solution file is absent, so deletion is the intended behaviour.
+# An exercise is named after its directory, so a solution script is exactly
+# `<topic>/<exercise>/<exercise>.py`, and a file is stripped iff it matches
+# that shape. Everything else is mirrored as-is: tests, `conftest.py`, Python
+# fixture data such as `files/samples/calculator.py`, and all non-Python
+# content (docs, slides, configs). Tests already `pytest.skip` when their
+# solution file is absent, so deletion is the intended behaviour.
 # Additionally, the entire `ignore/` directory is solutions-only working
 # space and is stripped from `main` wholesale.
 
@@ -53,13 +54,8 @@ jobs:
 
           removed=0
           while IFS= read -r -d '' f; do
-            case "$f" in
-              tests/*) continue ;;
-            esac
-            base="${f##*/}"
-            case "$base" in
-              test_*.py|conftest.py) continue ;;
-            esac
+            dir="${f%/*}"
+            [ "$f" = "$dir/${dir##*/}.py" ] || continue
             git rm -q -f -- "$f"
             removed=$((removed + 1))
           done < <(git ls-files -z -- '*.py')
