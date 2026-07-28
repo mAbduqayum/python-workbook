@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -21,13 +19,7 @@ import pytest
         (200, "gas"),
     ],
 )
-def test_h2o_phases(script_runner, temperature, expected_output):
-    script_path = Path(__file__).parent / "h2o_phases.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file h2o_phases.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_h2o_phases(solution, temperature, expected_output):
+    solution.check_output(
         input_text=f"{temperature}\n", expected_output=expected_output
     )

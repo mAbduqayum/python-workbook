@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -23,13 +21,5 @@ import pytest
         ("", "Invalid grade"),
     ],
 )
-def test_letter_grade_points(script_runner, grade, expected_output):
-    script_path = Path(__file__).parent / "letter_grade_points.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file letter_grade_points.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{grade}\n", expected_output=expected_output
-    )
+def test_letter_grade_points(solution, grade, expected_output):
+    solution.check_output(input_text=f"{grade}\n", expected_output=expected_output)

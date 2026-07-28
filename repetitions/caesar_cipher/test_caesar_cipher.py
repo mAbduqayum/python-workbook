@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -14,13 +12,7 @@ import pytest
         ("abc", "-3", "xyz"),
     ],
 )
-def test_caesar_cipher(script_runner, message, shift, expected_output):
-    script_path = Path(__file__).parent / "caesar_cipher.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file caesar_cipher.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=f"{message}\n{shift}\n")
+def test_caesar_cipher(solution, message, shift, expected_output):
+    result = solution.run(input_text=f"{message}\n{shift}\n")
 
     assert expected_output in result.stdout

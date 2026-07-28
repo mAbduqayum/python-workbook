@@ -5,10 +5,11 @@ try:
 except ImportError:
     decimal_to_binary = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     decimal_to_binary is None, reason="decimal_to_binary function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "n, expected",
     [

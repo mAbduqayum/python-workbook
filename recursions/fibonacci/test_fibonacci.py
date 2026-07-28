@@ -5,8 +5,9 @@ try:
 except ImportError:
     fibonacci = None
 
+pytestmark = pytest.mark.skipif(fibonacci is None, reason="fibonacci not implemented")
 
-@pytest.mark.skipif(fibonacci is None, reason="fibonacci not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

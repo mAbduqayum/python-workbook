@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,12 +9,6 @@ import pytest
         ("7\n\n", "Minimum: 7\nMaximum: 7"),
     ],
 )
-def test_vanilla_min_max(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "vanilla_min_max.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file vanilla_min_max.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_vanilla_min_max(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

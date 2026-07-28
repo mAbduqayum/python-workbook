@@ -10,6 +10,10 @@ except ImportError:
     set_operations = None
     intersection = is_subset = symmetric_diff = union = uniques = None
 
+pytestmark = pytest.mark.skipif(
+    set_operations is None, reason="set_operations not implemented"
+)
+
 BANNED_METHODS = {
     "union",
     "intersection",
@@ -33,7 +37,6 @@ def nodes_inside_functions(tree):
             yield from ast.walk(node)
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 def test_no_set_shortcuts():
     source = Path(set_operations.__file__).read_text()
     for node in nodes_inside_functions(ast.parse(source)):
@@ -64,7 +67,6 @@ def check(result, expected):
     assert result == expected
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 @pytest.mark.parametrize(
     "values, expected",
     [
@@ -81,7 +83,6 @@ def test_uniques(values, expected):
     check(uniques(values), expected)
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 @pytest.mark.parametrize(
     "set1, set2, expected",
     [
@@ -98,7 +99,6 @@ def test_union(set1, set2, expected):
     check(union(set1, set2), expected)
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 @pytest.mark.parametrize(
     "set1, set2, expected",
     [
@@ -116,7 +116,6 @@ def test_intersection(set1, set2, expected):
     check(intersection(set1, set2), expected)
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 @pytest.mark.parametrize(
     "subset, superset, expected",
     [
@@ -136,7 +135,6 @@ def test_is_subset(subset, superset, expected):
     assert is_subset(subset, superset) is expected
 
 
-@pytest.mark.skipif(set_operations is None, reason="set_operations not implemented")
 @pytest.mark.parametrize(
     "set1, set2, expected",
     [

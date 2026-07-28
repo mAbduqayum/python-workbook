@@ -5,8 +5,9 @@ try:
 except ImportError:
     power = None
 
+pytestmark = pytest.mark.skipif(power is None, reason="power not implemented")
 
-@pytest.mark.skipif(power is None, reason="power not implemented")
+
 @pytest.mark.parametrize(
     "base, exp, expected",
     [

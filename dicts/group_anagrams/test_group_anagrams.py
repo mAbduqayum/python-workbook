@@ -5,10 +5,11 @@ try:
 except ImportError:
     group_anagrams = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     group_anagrams is None, reason="group_anagrams function not implemented"
 )
+
+
 def test_basic():
     result = group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
     # Sort each group and the list of groups for comparison
@@ -18,9 +19,6 @@ def test_basic():
     assert result_sorted == expected
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_no_anagrams():
     result = group_anagrams(["abc", "def"])
     assert len(result) == 2
@@ -28,40 +26,25 @@ def test_no_anagrams():
     assert ["def"] in result
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_all_anagrams():
     result = group_anagrams(["abc", "bca", "cab"])
     assert len(result) == 1
     assert sorted(result[0]) == ["abc", "bca", "cab"]
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_empty_list():
     assert group_anagrams([]) == []
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_single_word():
     assert group_anagrams(["hello"]) == [["hello"]]
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_empty_strings():
     result = group_anagrams(["", ""])
     assert result == [["", ""]]
 
 
-@pytest.mark.skipif(
-    group_anagrams is None, reason="group_anagrams function not implemented"
-)
 def test_single_char_words():
     result = group_anagrams(["a", "b", "a"])
     result_sorted = [sorted(group) for group in result]

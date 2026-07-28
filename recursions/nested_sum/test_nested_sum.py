@@ -5,8 +5,9 @@ try:
 except ImportError:
     nested_sum = None
 
+pytestmark = pytest.mark.skipif(nested_sum is None, reason="nested_sum not implemented")
 
-@pytest.mark.skipif(nested_sum is None, reason="nested_sum not implemented")
+
 @pytest.mark.parametrize(
     "l, expected",
     [

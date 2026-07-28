@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("55.7558\n37.6176\n40.7128\n-74.0060\n", "Distance: 7510.29 km"),
     ],
 )
-def test_distance_earth(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "distance_earth.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file distance_earth.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_distance_earth(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

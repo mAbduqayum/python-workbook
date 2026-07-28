@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -15,13 +13,7 @@ import pytest
         ("101010", "42"),
     ],
 )
-def test_binary_to_decimal(script_runner, binary_input, expected_decimal):
-    script_path = Path(__file__).parent / "binary_to_decimal.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file binary_to_decimal.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=f"{binary_input}\n")
+def test_binary_to_decimal(solution, binary_input, expected_decimal):
+    result = solution.run(input_text=f"{binary_input}\n")
 
     assert expected_decimal in result.stdout

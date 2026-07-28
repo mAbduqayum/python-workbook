@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -13,13 +11,7 @@ import pytest
         ("25\n30\n35\n\n", "69.00"),
     ],
 )
-def test_admission_price(script_runner, input_values, expected_cost):
-    script_path = Path(__file__).parent / "admission_price.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file admission_price.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_values)
+def test_admission_price(solution, input_values, expected_cost):
+    result = solution.run(input_text=input_values)
 
     assert expected_cost in result.stdout

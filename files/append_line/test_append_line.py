@@ -5,8 +5,11 @@ try:
 except ImportError:
     append_line = None
 
+pytestmark = pytest.mark.skipif(
+    append_line is None, reason="append_line not implemented"
+)
 
-@pytest.mark.skipif(append_line is None, reason="append_line not implemented")
+
 class TestAppendLine:
     def test_append_to_existing(self, tmp_path):
         test_file = tmp_path / "log.txt"

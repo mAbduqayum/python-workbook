@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,12 +9,6 @@ import pytest
         ("100\n", "5050"),
     ],
 )
-def test_sum_to_n(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "sum_to_n.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file sum_to_n.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_sum_to_n(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

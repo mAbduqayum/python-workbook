@@ -5,8 +5,11 @@ try:
 except ImportError:
     list_divisors = None
 
+pytestmark = pytest.mark.skipif(
+    divisors is None, reason="list_divisors function not implemented"
+)
 
-@pytest.mark.skipif(divisors is None, reason="list_divisors function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

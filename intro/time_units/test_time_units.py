@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("0\n2\n15\n45\n", "8145"),
     ],
 )
-def test_time_units(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "time_units.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file time_units.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_time_units(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

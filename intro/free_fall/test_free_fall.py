@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("100\n", "Final velocity: 44.27 m/s"),
     ],
 )
-def test_free_fall(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "free_fall.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file free_fall.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_free_fall(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

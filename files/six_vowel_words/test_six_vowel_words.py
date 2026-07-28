@@ -5,8 +5,11 @@ try:
 except ImportError:
     six_vowel_words = None
 
+pytestmark = pytest.mark.skipif(
+    six_vowel_words is None, reason="six_vowel_words not implemented"
+)
 
-@pytest.mark.skipif(six_vowel_words is None, reason="six_vowel_words not implemented")
+
 class TestSixVowelWords:
     def test_facetiously(self, tmp_path):
         test_file = tmp_path / "words.txt"

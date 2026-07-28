@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -26,13 +24,7 @@ import pytest
         (5, 0, -2, "descending"),
     ],
 )
-def test_sorted_order(script_runner, a, b, c, expected_output):
-    script_path = Path(__file__).parent / "sorted_order.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file sorted_order.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_sorted_order(solution, a, b, c, expected_output):
+    solution.check_output(
         input_text=f"{a}\n{b}\n{c}\n", expected_output=expected_output
     )

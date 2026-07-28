@@ -5,8 +5,11 @@ try:
 except ImportError:
     to_matrix = None
 
+pytestmark = pytest.mark.skipif(
+    to_matrix is None, reason="to_matrix function not implemented"
+)
 
-@pytest.mark.skipif(to_matrix is None, reason="to_matrix function not implemented")
+
 @pytest.mark.parametrize(
     "numbers, rows, cols, expected",
     [

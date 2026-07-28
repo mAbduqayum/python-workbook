@@ -7,8 +7,11 @@ try:
 except ImportError:
     circle_area = None
 
+pytestmark = pytest.mark.skipif(
+    circle_area is None, reason="circle_area function not implemented"
+)
 
-@pytest.mark.skipif(circle_area is None, reason="circle_area function not implemented")
+
 @pytest.mark.parametrize(
     "radius, expected",
     [

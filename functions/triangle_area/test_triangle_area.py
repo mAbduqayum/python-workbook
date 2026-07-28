@@ -5,10 +5,11 @@ try:
 except ImportError:
     triangle_area = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     triangle_area is None, reason="triangle_area function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "base, height, expected",
     [

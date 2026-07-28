@@ -5,8 +5,11 @@ try:
 except ImportError:
     to3x3matrix = None
 
+pytestmark = pytest.mark.skipif(
+    to3x3matrix is None, reason="to3x3matrix function not implemented"
+)
 
-@pytest.mark.skipif(to3x3matrix is None, reason="to3x3matrix function not implemented")
+
 @pytest.mark.parametrize(
     "string, expected",
     [

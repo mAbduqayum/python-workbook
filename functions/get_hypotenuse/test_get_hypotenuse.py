@@ -7,10 +7,11 @@ try:
 except ImportError:
     get_hypotenuse = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     get_hypotenuse is None, reason="get_hypotenuse function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [

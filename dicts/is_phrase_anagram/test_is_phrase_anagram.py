@@ -5,72 +5,46 @@ try:
 except ImportError:
     is_phrase_anagram = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
 )
+
+
 def test_basic():
     assert is_phrase_anagram("listen", "silent") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_with_spaces():
     assert is_phrase_anagram("conversation", "voices rant on") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_case_insensitive():
     assert is_phrase_anagram("The Eyes", "They See") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_not_anagrams():
     assert is_phrase_anagram("hello world", "world peace") is False
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_different_after_cleaning():
     assert is_phrase_anagram("abc", "a b c") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_empty():
     assert is_phrase_anagram("", "") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_spaces_only():
     assert is_phrase_anagram(" ", "") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_mixed_case_and_spaces():
     assert is_phrase_anagram("A gentleman", "Elegant man") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_complex_phrase():
     assert is_phrase_anagram("Eleven plus two", "Twelve plus one") is True
 
 
-@pytest.mark.skipif(
-    is_phrase_anagram is None, reason="is_phrase_anagram function not implemented"
-)
 def test_partial_match():
     assert is_phrase_anagram("hello", "help") is False

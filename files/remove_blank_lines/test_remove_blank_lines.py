@@ -5,10 +5,11 @@ try:
 except ImportError:
     remove_blank_lines = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     remove_blank_lines is None, reason="remove_blank_lines not implemented"
 )
+
+
 class TestRemoveBlankLines:
     def test_remove_blank_lines(self, tmp_path):
         input_file = tmp_path / "input.txt"

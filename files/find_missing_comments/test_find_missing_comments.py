@@ -5,10 +5,11 @@ try:
 except ImportError:
     find_missing_comments = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     find_missing_comments is None, reason="find_missing_comments not implemented"
 )
+
+
 class TestFindMissingComments:
     def test_function_with_comment(self, tmp_path):
         test_file = tmp_path / "test.py"

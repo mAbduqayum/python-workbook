@@ -71,15 +71,15 @@ class RunResult(NamedTuple):
 
 
 class ScriptRunner:
-    """Helper class to run Python scripts and capture output."""
+    """Runs an exercise script in a subprocess and inspects what it printed."""
 
     DEFAULT_TIMEOUT = 3
 
     def __init__(self, script_path: str | Path) -> None:
         self.script_path = Path(script_path)
 
-    def run(self, input_text: str = "") -> RunResult:
-        """Run the script with optional input and return RunResult with stdout, stderr, returncode."""
+    def _execute(self, input_text: str) -> RunResult:
+        """Run the script, turning a timeout into an ordinary failed run."""
         try:
             result = subprocess.run(
                 [sys.executable, str(self.script_path)],
@@ -88,28 +88,22 @@ class ScriptRunner:
                 capture_output=True,
                 timeout=self.DEFAULT_TIMEOUT,
             )
-            return RunResult(
-                result.stdout.strip(), result.stderr.strip(), result.returncode
-            )
         except subprocess.TimeoutExpired:
-            return RunResult("", "Script timed out", 1)
+            return RunResult("", f"timed out after {self.DEFAULT_TIMEOUT}s", 1)
+        return RunResult(
+            result.stdout.strip(), result.stderr.strip(), result.returncode
+        )
 
-    @staticmethod
-    def _validate_execution(stderr: str, return_code: int) -> None:
-        """Validate that script execution was successful."""
-        if return_code != 0:
-            pytest.fail(f"Script failed with error: {stderr}")
+    def run(self, input_text: str = "") -> RunResult:
+        """Run the script and fail the test if it crashed or timed out.
 
-    def run_and_check(self, input_text: str = "", expected_output: str = "") -> str:
-        """Run script and assert expected output."""
-        result = self.run(input_text)
-        self._validate_execution(result.stderr, result.returncode)
-
-        actual = result.stdout.strip()
-        expected = expected_output.strip()
-
-        assert actual == expected, f"Expected: {expected!r}, Got: {actual!r}"
-        return result.stdout
+        Tests that assert loosely on the output still go through here, so a
+        script cannot pass by printing the right thing and then dying.
+        """
+        result = self._execute(input_text)
+        if result.returncode != 0:
+            pytest.fail(f"Script failed with error: {result.stderr}")
+        return result
 
     @staticmethod
     def _clean_output(stdout: str) -> str:
@@ -119,13 +113,9 @@ class ScriptRunner:
             line.strip() for line in cleaned_output.split("\n") if line.strip()
         )
 
-    def run_and_check_output_only(
-        self, input_text: str = "", expected_output: str = ""
-    ) -> str:
-        """Run script and assert expected output, filtering out input prompts."""
+    def check_output(self, input_text: str = "", expected_output: str = "") -> str:
+        """Run the script and assert its output, ignoring any input prompts."""
         result = self.run(input_text)
-        self._validate_execution(result.stderr, result.returncode)
-
         actual_output = self._clean_output(result.stdout)
 
         assert actual_output == expected_output, (
@@ -135,9 +125,20 @@ class ScriptRunner:
 
 
 @pytest.fixture
-def script_runner():
-    """Fixture to provide ScriptRunner functionality."""
-    return ScriptRunner
+def solution(request):
+    """The script this test file grades, ready to run.
+
+    ``test_bmi.py`` grades ``bmi.py`` in the same directory. Deriving the name
+    here keeps every test from repeating the path, the existence check and the
+    skip; the exercise is skipped rather than failed when it is not written.
+    """
+    test_file = Path(request.path)
+    script_path = test_file.parent / f"{test_file.stem.removeprefix('test_')}.py"
+
+    if not script_path.exists():
+        pytest.skip(f"{script_path.name} not implemented")
+
+    return ScriptRunner(script_path)
 
 
 def pytest_addoption(parser):

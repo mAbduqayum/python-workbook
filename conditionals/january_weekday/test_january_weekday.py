@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -28,13 +26,5 @@ import pytest
         (2400, "Saturday"),
     ],
 )
-def test_january_weekday(script_runner, year, expected_output):
-    script_path = Path(__file__).parent / "january_weekday.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file january_weekday.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{year}\n", expected_output=expected_output
-    )
+def test_january_weekday(solution, year, expected_output):
+    solution.check_output(input_text=f"{year}\n", expected_output=expected_output)

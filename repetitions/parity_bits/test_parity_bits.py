@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -14,26 +12,14 @@ import pytest
         ("11110000\n\n", ["0"]),
     ],
 )
-def test_parity_bits(script_runner, input_values, expected_outputs):
-    script_path = Path(__file__).parent / "parity_bits.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file parity_bits.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_values)
+def test_parity_bits(solution, input_values, expected_outputs):
+    result = solution.run(input_text=input_values)
 
     for expected in expected_outputs:
         assert expected in result.stdout
 
 
-def test_parity_bits_error(script_runner):
-    script_path = Path(__file__).parent / "parity_bits.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file parity_bits.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="1010\n\n")
+def test_parity_bits_error(solution):
+    result = solution.run(input_text="1010\n\n")
 
     assert "error" in result.stdout.lower()

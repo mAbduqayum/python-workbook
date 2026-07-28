@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_int = None
 
+pytestmark = pytest.mark.skipif(
+    is_int is None, reason="is_int function not implemented"
+)
 
-@pytest.mark.skipif(is_int is None, reason="is_int function not implemented")
+
 @pytest.mark.parametrize(
     "s, expected",
     [

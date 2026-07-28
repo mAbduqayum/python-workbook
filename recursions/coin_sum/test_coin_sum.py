@@ -5,8 +5,9 @@ try:
 except ImportError:
     coin_sum = None
 
+pytestmark = pytest.mark.skipif(coin_sum is None, reason="coin_sum not implemented")
 
-@pytest.mark.skipif(coin_sum is None, reason="coin_sum not implemented")
+
 @pytest.mark.parametrize(
     "amount, coins, expected",
     [

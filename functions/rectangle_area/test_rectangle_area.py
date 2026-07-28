@@ -5,10 +5,11 @@ try:
 except ImportError:
     rectangle_area = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     rectangle_area is None, reason="rectangle_area function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "length, width, expected",
     [

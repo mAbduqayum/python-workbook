@@ -5,8 +5,11 @@ try:
 except ImportError:
     sublists = None
 
+pytestmark = pytest.mark.skipif(
+    sublists is None, reason="sublists function not implemented"
+)
 
-@pytest.mark.skipif(sublists is None, reason="sublists function not implemented")
+
 @pytest.mark.parametrize(
     "l, expected_count",
     [
@@ -21,7 +24,6 @@ def test_sublists_count(l, expected_count):
     assert len(result) == expected_count
 
 
-@pytest.mark.skipif(sublists is None, reason="sublists function not implemented")
 def test_sublists_content():
     result = sublists([2, 3, 5])
     assert [] in result

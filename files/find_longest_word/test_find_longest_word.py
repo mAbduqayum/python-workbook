@@ -5,10 +5,11 @@ try:
 except ImportError:
     find_longest_word = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     find_longest_word is None, reason="find_longest_word not implemented"
 )
+
+
 class TestFindLongestWord:
     def test_multiple_lines(self, tmp_path):
         test_file = tmp_path / "test.txt"

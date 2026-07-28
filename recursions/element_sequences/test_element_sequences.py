@@ -5,10 +5,11 @@ try:
 except ImportError:
     longest_element_sequence = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     longest_element_sequence is None, reason="longest_element_sequence not implemented"
 )
+
+
 class TestElementSequences:
     def test_invalid_element(self):
         assert longest_element_sequence("NotAnElement") == []

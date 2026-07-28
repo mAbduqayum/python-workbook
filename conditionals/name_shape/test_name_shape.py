@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -21,13 +19,5 @@ import pytest
         (-1, "Invalid number of sides"),
     ],
 )
-def test_name_shape(script_runner, sides, expected_output):
-    script_path = Path(__file__).parent / "name_shape.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file name_shape.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{sides}\n", expected_output=expected_output
-    )
+def test_name_shape(solution, sides, expected_output):
+    solution.check_output(input_text=f"{sides}\n", expected_output=expected_output)

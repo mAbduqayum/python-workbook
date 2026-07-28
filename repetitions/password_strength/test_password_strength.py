@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -16,12 +14,6 @@ import pytest
         ("12345\n", "Very Weak"),
     ],
 )
-def test_password_strength(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "password_strength.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file password_strength.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_password_strength(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

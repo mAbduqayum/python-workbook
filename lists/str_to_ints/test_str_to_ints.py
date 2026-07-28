@@ -5,8 +5,11 @@ try:
 except ImportError:
     str_to_ints = None
 
+pytestmark = pytest.mark.skipif(
+    str_to_ints is None, reason="str_to_ints function not implemented"
+)
 
-@pytest.mark.skipif(str_to_ints is None, reason="str_to_ints function not implemented")
+
 @pytest.mark.parametrize(
     "string, expected",
     [

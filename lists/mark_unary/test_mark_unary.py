@@ -5,8 +5,11 @@ try:
 except ImportError:
     mark_unary = None
 
+pytestmark = pytest.mark.skipif(
+    mark_unary is None, reason="mark_unary function not implemented"
+)
 
-@pytest.mark.skipif(mark_unary is None, reason="mark_unary function not implemented")
+
 @pytest.mark.parametrize(
     "tokens, expected",
     [

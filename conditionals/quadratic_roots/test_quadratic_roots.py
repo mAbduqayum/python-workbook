@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -22,13 +20,7 @@ import pytest
         (1, -7, 12, "2 roots: 3.00 and 4.00"),  # Two roots: 3, 4
     ],
 )
-def test_quadratic_roots(script_runner, a, b, c, expected_output):
-    script_path = Path(__file__).parent / "quadratic_roots.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file quadratic_roots.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_quadratic_roots(solution, a, b, c, expected_output):
+    solution.check_output(
         input_text=f"{a}\n{b}\n{c}\n", expected_output=expected_output
     )

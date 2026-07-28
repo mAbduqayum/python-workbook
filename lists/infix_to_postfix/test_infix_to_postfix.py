@@ -5,10 +5,11 @@ try:
 except ImportError:
     infix_to_postfix = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     infix_to_postfix is None, reason="infix_to_postfix function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "infix, expected",
     [

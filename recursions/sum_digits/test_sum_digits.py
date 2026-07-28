@@ -5,8 +5,9 @@ try:
 except ImportError:
     sum_digits = None
 
+pytestmark = pytest.mark.skipif(sum_digits is None, reason="sum_digits not implemented")
 
-@pytest.mark.skipif(sum_digits is None, reason="sum_digits not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

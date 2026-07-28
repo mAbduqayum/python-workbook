@@ -6,23 +6,32 @@ boilerplate, and docs say *what* to produce — never *how* to solve it.
 
 ## How the test harness works (read this first)
 
-`conftest.py` `_clean_output()` runs
-`re.sub(r"Enter [^:]+:\s*", "", stdout.strip())` before comparing output.
+Every script-based test takes the `solution` fixture, which resolves the
+exercise script from the test filename (`test_bmi.py` → `bmi.py`) and skips
+when it is not written yet. There are only two ways to use it:
 
-- `run_and_check_output_only` (used by ~all exercises): bare `input()` **and**
-  `input("Enter X: ")` both pass — the `Enter …:` prompt is stripped.
-- `run_and_check` (strict, only `hello_world`): takes no input, unaffected.
-- Any prompt wording *other than* `Enter <label>:` is **not** stripped and
-  will fail the output comparison.
+- `solution.check_output(input_text=…, expected_output=…)` — exact match.
+  `_clean_output()` runs `re.sub(r"Enter [^:]+:\s*", "", stdout.strip())`
+  first, so bare `input()` **and** `input("Enter X: ")` both pass.
+- `solution.run(input_text=…)` — returns `RunResult(stdout, stderr,
+  returncode)` for tests that assert loosely. It fails the test if the script
+  crashes or times out, so loose assertions cannot mask a broken script.
 
-**The harness is not uniform across chapters — check the test before you
-reason about it.** Some chapters (e.g. `repetitions`) don't use the exact-match
-`_clean_output` path at all. They use the `ScriptRunner` fixture directly with
+Any prompt wording *other than* `Enter <label>:` is **not** stripped and will
+fail the output comparison.
+
+Chapters differ in *how strictly they assert*, not in the harness. `intro` and
+`conditionals` use `check_output` (exact); `repetitions` mostly uses `run` with
 **loose substring assertions** (`assert expected in result.stdout`), often
 asserting only the *value* (`"1010"`, `"4"`), not the surrounding label. Where
 that's the style: dropping a label prefix or reformatting output is safe as
 long as the asserted substring still appears, and you can confirm it in seconds
 by grepping the parametrize block.
+
+Import-based chapters (`lists`, `dicts`, `sets`, `functions`, `recursions`,
+`files`) import the solution at module level and carry a single
+`pytestmark = pytest.mark.skipif(<name> is None, …)`. Six exercises that expose
+several independent functions keep per-function decorators instead.
 
 Implication: removing `Enter …:` prompts from docs/solutions is safe. Tests
 assert program output, not doc text — **doc-only edits never need test

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -21,13 +19,7 @@ import pytest
         (250, "Invalid denomination"),
     ],
 )
-def test_faces_money(script_runner, denomination, expected_output):
-    script_path = Path(__file__).parent / "faces_money.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file faces_money.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_faces_money(solution, denomination, expected_output):
+    solution.check_output(
         input_text=f"{denomination}\n", expected_output=expected_output
     )

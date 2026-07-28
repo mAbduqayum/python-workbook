@@ -5,10 +5,11 @@ try:
 except ImportError:
     tokenize_expression = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     tokenize_expression is None, reason="tokenize_expression function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "expr, expected",
     [

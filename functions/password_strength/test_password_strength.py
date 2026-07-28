@@ -5,10 +5,11 @@ try:
 except ImportError:
     password_strength = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     password_strength is None, reason="password_strength function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "pwd, expected",
     [

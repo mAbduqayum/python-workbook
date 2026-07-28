@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("500000\n5\n25\n", "Amount of gas: 1.01 moles"),
     ],
 )
-def test_ideal_gas(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "ideal_gas.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file ideal_gas.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_ideal_gas(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

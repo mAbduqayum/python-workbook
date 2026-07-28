@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -12,14 +10,8 @@ import pytest
         ("10\n0\n", ["10", "5", "16", "8", "4", "2", "1"]),
     ],
 )
-def test_collatz(script_runner, input_value, expected_sequence):
-    script_path = Path(__file__).parent / "collatz.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file collatz.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_value)
+def test_collatz(solution, input_value, expected_sequence):
+    result = solution.run(input_text=input_value)
 
     # Check that all numbers in sequence appear in output
     for num in expected_sequence:

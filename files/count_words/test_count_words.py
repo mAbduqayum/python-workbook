@@ -5,8 +5,11 @@ try:
 except ImportError:
     count_words = None
 
+pytestmark = pytest.mark.skipif(
+    count_words is None, reason="count_words not implemented"
+)
 
-@pytest.mark.skipif(count_words is None, reason="count_words not implemented")
+
 class TestCountWords:
     def test_simple_text(self, tmp_path):
         test_file = tmp_path / "test.txt"

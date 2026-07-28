@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_prime = None
 
+pytestmark = pytest.mark.skipif(
+    is_prime is None, reason="is_prime function not implemented"
+)
 
-@pytest.mark.skipif(is_prime is None, reason="is_prime function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

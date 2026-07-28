@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -23,13 +21,5 @@ import pytest
         ("jan", "Invalid month"),
     ],
 )
-def test_month_days(script_runner, month, expected_output):
-    script_path = Path(__file__).parent / "month_days.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file month_days.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{month}\n", expected_output=expected_output
-    )
+def test_month_days(solution, month, expected_output):
+    solution.check_output(input_text=f"{month}\n", expected_output=expected_output)

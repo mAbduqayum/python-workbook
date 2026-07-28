@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,12 +9,6 @@ import pytest
         ("10\n-2\n5\n", "10\n8\n6\n4\n2"),
     ],
 )
-def test_arithmetic_sequence(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "arithmetic_sequence.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file arithmetic_sequence.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_arithmetic_sequence(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

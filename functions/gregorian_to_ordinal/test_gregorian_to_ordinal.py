@@ -5,11 +5,11 @@ try:
 except ImportError:
     gregorian_to_ordinal = None
 
-
-@pytest.mark.skipif(
-    gregorian_to_ordinal is None,
-    reason="gregorian_to_ordinal function not implemented",
+pytestmark = pytest.mark.skipif(
+    gregorian_to_ordinal is None, reason="gregorian_to_ordinal function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "year, month, day, expected",
     [

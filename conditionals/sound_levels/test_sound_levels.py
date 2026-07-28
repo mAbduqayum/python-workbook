@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -24,13 +22,7 @@ import pytest
         (200, "Louder than Jackhammer"),
     ],
 )
-def test_sound_levels(script_runner, decibel_level, expected_output):
-    script_path = Path(__file__).parent / "sound_levels.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file sound_levels.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_sound_levels(solution, decibel_level, expected_output):
+    solution.check_output(
         input_text=f"{decibel_level}\n", expected_output=expected_output
     )

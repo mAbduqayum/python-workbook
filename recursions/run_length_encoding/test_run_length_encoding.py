@@ -5,10 +5,11 @@ try:
 except ImportError:
     run_length_encode = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     run_length_encode is None, reason="run_length_encode not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "text, expected",
     [

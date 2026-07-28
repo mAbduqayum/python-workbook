@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -29,14 +27,8 @@ import pytest
     ],
 )
 def test_chemical_phase_transition(
-    script_runner, initial_phase, final_phase, expected_output
+    solution, initial_phase, final_phase, expected_output
 ):
-    script_path = Path(__file__).parent / "chemical_phase_transition.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file chemical_phase_transition.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+    solution.check_output(
         input_text=f"{initial_phase}\n{final_phase}\n", expected_output=expected_output
     )

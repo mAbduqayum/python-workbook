@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -30,13 +28,5 @@ import pytest
         (800, "Outside visible spectrum"),
     ],
 )
-def test_visible_light(script_runner, wavelength, expected_output):
-    script_path = Path(__file__).parent / "visible_light.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file visible_light.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{wavelength}\n", expected_output=expected_output
-    )
+def test_visible_light(solution, wavelength, expected_output):
+    solution.check_output(input_text=f"{wavelength}\n", expected_output=expected_output)

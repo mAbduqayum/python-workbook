@@ -5,10 +5,11 @@ try:
 except ImportError:
     binary_to_decimal = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     binary_to_decimal is None, reason="binary_to_decimal function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "binary, expected",
     [
