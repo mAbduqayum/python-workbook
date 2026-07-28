@@ -8,18 +8,57 @@ import pytest
 
 from tests.grading import GradeReporter
 
+_active_exercise_dir: str | None = None
+
+
+def _evict_solutions_from(exercise_dir: Path) -> None:
+    """Forget the solution modules imported while ``exercise_dir`` was active.
+
+    Python caches imports by module name and never consults ``sys.path`` on a
+    hit. Exercise names repeat across topics -- ``binary_search.py`` exists in
+    both ``lists/`` and ``recursions/`` -- so a cached solution left in place
+    is silently reused by the next exercise of the same name, whether or not
+    that exercise has been solved.
+    """
+    directory = exercise_dir.resolve()
+    for name, module in list(sys.modules.items()):
+        file = getattr(module, "__file__", None)
+        if not file:
+            continue
+        solution = Path(file)
+        if solution.parent.resolve() != directory:
+            continue
+        if solution.name == "conftest.py" or solution.name.startswith("test_"):
+            continue
+        del sys.modules[name]
+
+
+def _scope_to_exercise(exercise_dir: Path) -> None:
+    """Make ``exercise_dir`` the only exercise directory imports can reach."""
+    global _active_exercise_dir
+
+    entry = str(exercise_dir)
+    if entry == _active_exercise_dir:
+        return
+    if _active_exercise_dir is not None:
+        if _active_exercise_dir in sys.path:
+            sys.path.remove(_active_exercise_dir)
+        _evict_solutions_from(Path(_active_exercise_dir))
+    sys.path.insert(0, entry)
+    _active_exercise_dir = entry
+
 
 def pytest_pycollect_makemodule(module_path, parent, **kwargs):
-    """Put each exercise directory on sys.path.
+    """Point imports at the exercise directory owning the test being collected.
 
     With ``--import-mode=importlib`` pytest does not add a test file's own
     directory to ``sys.path``. Many exercises import their solution as a
     sibling module (e.g. ``from chars_count import chars_count``), so we
-    insert the test file's directory here before the module is imported.
+    prepare both ``sys.path`` and ``sys.modules`` here, before the test module
+    is imported. Every solution import in the suite happens at module level,
+    so this is the only point at which the state has to be correct.
     """
-    exercise_dir = str(Path(module_path).parent)
-    if exercise_dir not in sys.path:
-        sys.path.insert(0, exercise_dir)
+    _scope_to_exercise(Path(module_path).parent)
     return None
 
 
