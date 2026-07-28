@@ -11,14 +11,14 @@ exercise script from the test filename (`test_bmi.py` → `bmi.py`) and skips
 when it is not written yet. There are only two ways to use it:
 
 - `solution.check_output(input_text=…, expected_output=…)` — exact match.
-  `_clean_output()` runs `re.sub(r"Enter [^:]+:\s*", "", stdout.strip())`
-  first, so bare `input()` **and** `input("Enter X: ")` both pass.
 - `solution.run(input_text=…)` — returns `RunResult(stdout, stderr,
   returncode)` for tests that assert loosely. It fails the test if the script
   crashes or times out, so loose assertions cannot mask a broken script.
 
-Any prompt wording *other than* `Enter <label>:` is **not** stripped and will
-fail the output comparison.
+Scripts run under `tests/run_script.py`, which silences `input()` prompts, so
+stdout holds only what the script deliberately prints. Prompt wording is free:
+bare `input()`, `input("Enter X: ")` and `input("X? ")` are all equivalent to
+the grader.
 
 Chapters differ in *how strictly they assert*, not in the harness. `intro` and
 `conditionals` use `check_output` (exact); `repetitions` mostly uses `run` with
@@ -33,7 +33,7 @@ Import-based chapters (`lists`, `dicts`, `sets`, `functions`, `recursions`,
 `pytestmark = pytest.mark.skipif(<name> is None, …)`. Six exercises that expose
 several independent functions keep per-function decorators instead.
 
-Implication: removing `Enter …:` prompts from docs/solutions is safe. Tests
+Implication: adding, removing or rewording prompts in docs/solutions is safe. Tests
 assert program output, not doc text — **doc-only edits never need test
 changes**. Still run the suite to confirm nothing else regressed.
 

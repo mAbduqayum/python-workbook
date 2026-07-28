@@ -1,4 +1,3 @@
-import re
 import subprocess
 import sys
 from pathlib import Path
@@ -7,6 +6,8 @@ from typing import NamedTuple
 import pytest
 
 from tests.grading import GradeReporter
+
+_RUN_SCRIPT = Path(__file__).parent / "tests" / "run_script.py"
 
 _active_exercise_dir: str | None = None
 
@@ -71,7 +72,12 @@ class RunResult(NamedTuple):
 
 
 class ScriptRunner:
-    """Runs an exercise script in a subprocess and inspects what it printed."""
+    """Runs an exercise script in a subprocess and inspects what it printed.
+
+    The script runs under ``tests/run_script.py``, which silences ``input()``
+    prompts so only what the script deliberately prints reaches stdout. Prompt
+    wording is therefore the student's business, not the grader's.
+    """
 
     DEFAULT_TIMEOUT = 3
 
@@ -82,7 +88,7 @@ class ScriptRunner:
         """Run the script, turning a timeout into an ordinary failed run."""
         try:
             result = subprocess.run(
-                [sys.executable, str(self.script_path)],
+                [sys.executable, str(_RUN_SCRIPT), str(self.script_path)],
                 input=input_text,
                 text=True,
                 capture_output=True,
@@ -107,10 +113,9 @@ class ScriptRunner:
 
     @staticmethod
     def _clean_output(stdout: str) -> str:
-        """Remove input prompts and clean up whitespace from output."""
-        cleaned_output = re.sub(r"Enter [^:]+:\s*", "", stdout.strip())
+        """Drop blank lines and stray indentation so spacing is not graded."""
         return "\n".join(
-            line.strip() for line in cleaned_output.split("\n") if line.strip()
+            line.strip() for line in stdout.strip().split("\n") if line.strip()
         )
 
     def check_output(self, input_text: str = "", expected_output: str = "") -> str:
