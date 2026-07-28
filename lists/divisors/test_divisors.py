@@ -3,10 +3,10 @@ import pytest
 try:
     from divisors import divisors
 except ImportError:
-    list_divisors = None
+    divisors = None
 
 pytestmark = pytest.mark.skipif(
-    divisors is None, reason="list_divisors function not implemented"
+    divisors is None, reason="divisors function not implemented"
 )
 
 

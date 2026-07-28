@@ -1,6 +1,4 @@
-def precedence(op: str) -> int:
-    precedence_map = {"+": 1, "-": 1, "*": 2, "/": 2, "^": 3, "~": 4}
-    return precedence_map.get(op, 0)
+from lists.precedence.precedence import precedence
 
 
 def infix_to_postfix(tokens: list[str]) -> list[str]:

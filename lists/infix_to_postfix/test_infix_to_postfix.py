@@ -2,11 +2,16 @@ import pytest
 
 try:
     from infix_to_postfix import infix_to_postfix
-except ImportError:
-    infix_to_postfix = None
+except ImportError as missing:
+    # This exercise imports `precedence`, so the import can fail for two
+    # reasons. Name the one that actually failed instead of always blaming
+    # infix_to_postfix.
+    unresolved = missing.name
+else:
+    unresolved = None
 
 pytestmark = pytest.mark.skipif(
-    infix_to_postfix is None, reason="infix_to_postfix function not implemented"
+    unresolved is not None, reason=f"{unresolved} not implemented"
 )
 
 
