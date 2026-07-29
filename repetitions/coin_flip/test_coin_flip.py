@@ -1,16 +1,5 @@
-from pathlib import Path
-
-import pytest
-
-
-def test_coin_flip(script_runner):
-    script_path = Path(__file__).parent / "coin_flip.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file coin_flip.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="")
+def test_coin_flip(solution):
+    result = solution.run(input_text="")
 
     # Check for key elements in output
     assert "flip" in result.stdout.lower()

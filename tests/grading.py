@@ -1,3 +1,11 @@
+# pytest files one report per test *phase*, so a single passing test produces
+# three: setup, call and teardown. Only the phase that settled the outcome is
+# filed under a real category; the other two land under "". Counting just these
+# four therefore counts each test exactly once, and keeps non-test entries such
+# as "warnings" -- whose nodeid may be None -- out of the report entirely.
+TEST_OUTCOMES = ("passed", "failed", "skipped", "error")
+
+
 class GradeReporter:
     def __init__(self, stats: dict) -> None:
         # Group test results by test file
@@ -23,6 +31,8 @@ class GradeReporter:
 
         # Process all test results
         for status, test_list in stats.items():
+            if status not in TEST_OUTCOMES:
+                continue
             for test_report in test_list:
                 # Extract test file path from test nodeid
                 # Example nodeid: "intro/name_age/test_name_age.py::test_name_age[Farid-22]"
@@ -40,12 +50,7 @@ class GradeReporter:
                     }
 
                 # Count test cases per file for reporting
-                count_key = f"{status}_count"
-                if count_key in file_stats[test_file]:
-                    file_stats[test_file][count_key] += 1
-                else:
-                    # Handle unknown status types by creating the key
-                    file_stats[test_file][count_key] = 1
+                file_stats[test_file][f"{status}_count"] += 1
                 file_stats[test_file]["total_count"] += 1
 
                 # Update overall file status (failed/error takes precedence)
@@ -67,17 +72,18 @@ class GradeReporter:
         return file_stats
 
     @property
-    def total_tests(self) -> int:
+    def total_files(self) -> int:
+        """How many test files ran. The grade is a fraction of these.
+
+        Named for what it counts: ``passed`` and friends are per-file tallies,
+        so this is a file count, not a test count.
+        """
         return self.passed + self.failed + self.skipped + self.error
 
-    @property
-    def possible_tests(self) -> int:
-        return self.passed + self.failed + self.error + self.skipped
-
     def calculate_grade(self) -> float:
-        if self.possible_tests == 0:
+        if self.total_files == 0:
             return 0.0
-        return (self.passed / self.possible_tests) * 100
+        return (self.passed / self.total_files) * 100
 
     def print_report(self) -> None:
         import os
@@ -88,7 +94,7 @@ class GradeReporter:
         print("FINAL GRADE REPORT")
         print("=" * 50)
 
-        print(f"Total Test Files: {self.total_tests}")
+        print(f"Total Test Files: {self.total_files}")
         print(f"Passed: {self.passed}")
         print(f"Failed: {self.failed}")
         print(f"Skipped: {self.skipped}")
@@ -109,5 +115,5 @@ class GradeReporter:
         if summary_file := os.getenv("GITHUB_STEP_SUMMARY"):
             with open(summary_file, "a") as f:
                 f.write(
-                    f"**Grade: {grade_percentage:.1f}%** ({self.passed}/{self.possible_tests} passed)\n\n"
+                    f"**Grade: {grade_percentage:.1f}%** ({self.passed}/{self.total_files} passed)\n\n"
                 )

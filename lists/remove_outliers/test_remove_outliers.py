@@ -5,10 +5,11 @@ try:
 except ImportError:
     remove_outliers = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     remove_outliers is None, reason="remove_outliers function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "numbers, expected",
     [

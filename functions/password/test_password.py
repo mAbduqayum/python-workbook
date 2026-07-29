@@ -5,15 +5,17 @@ try:
 except ImportError:
     password = None
 
+pytestmark = pytest.mark.skipif(
+    password is None, reason="password function not implemented"
+)
 
-@pytest.mark.skipif(password is None, reason="password function not implemented")
+
 @pytest.mark.parametrize("length", [8, 12, 16, 20])
 def test_password_length(length):
     pwd = password(length)
     assert len(pwd) == length
 
 
-@pytest.mark.skipif(password is None, reason="password function not implemented")
 def test_password_contains_all_types():
     pwd = password(20)
 
@@ -28,7 +30,6 @@ def test_password_contains_all_types():
     assert has_special, "Password should contain special characters"
 
 
-@pytest.mark.skipif(password is None, reason="password function not implemented")
 def test_password_randomness():
     # Generate multiple passwords and ensure they're different
     passwords = [password(12) for _ in range(10)]

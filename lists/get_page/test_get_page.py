@@ -5,8 +5,11 @@ try:
 except ImportError:
     get_page = None
 
+pytestmark = pytest.mark.skipif(
+    get_page is None, reason="get_page function not implemented"
+)
 
-@pytest.mark.skipif(get_page is None, reason="get_page function not implemented")
+
 @pytest.mark.parametrize(
     "items, page_num, page_size, expected",
     [

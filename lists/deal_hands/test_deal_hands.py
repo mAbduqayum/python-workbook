@@ -5,8 +5,11 @@ try:
 except ImportError:
     deal_hands = None
 
+pytestmark = pytest.mark.skipif(
+    deal_hands is None, reason="deal_hands function not implemented"
+)
 
-@pytest.mark.skipif(deal_hands is None, reason="deal_hands function not implemented")
+
 @pytest.mark.parametrize(
     "deck, num_players, cards_per_player, expected",
     [

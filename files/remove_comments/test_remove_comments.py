@@ -5,8 +5,11 @@ try:
 except ImportError:
     remove_comments = None
 
+pytestmark = pytest.mark.skipif(
+    remove_comments is None, reason="remove_comments not implemented"
+)
 
-@pytest.mark.skipif(remove_comments is None, reason="remove_comments not implemented")
+
 class TestRemoveComments:
     def test_remove_comment_lines(self, tmp_path):
         input_file = tmp_path / "input.py"

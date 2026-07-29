@@ -1,8 +1,11 @@
 name: Grade Calculator
 
+# Runs on every branch and pull request, so a student working in a fork gets a
+# grade on their own pushes. Unimplemented exercises `pytest.skip` and count
+# against the total, so the report is meaningful on any branch.
 on:
   push:
-    branches: [solutions]
+  pull_request:
   workflow_dispatch:
 
 # Only the latest commit's grade matters; cancel superseded runs.
@@ -13,6 +16,9 @@ concurrency:
 jobs:
   calculate-grade:
     runs-on: ubuntu-latest
+    # `Sync to Main` deletes every solution before pushing, so grading the
+    # bot's commits would always report 0%.
+    if: github.actor != 'github-actions[bot]'
     permissions:
       contents: read
 

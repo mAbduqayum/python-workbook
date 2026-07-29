@@ -5,10 +5,11 @@ try:
 except ImportError:
     distance_earth = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     distance_earth is None, reason="distance_earth function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "lat1, lon1, lat2, lon2, expected",
     [

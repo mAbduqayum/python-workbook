@@ -5,8 +5,11 @@ try:
 except ImportError:
     flatten_list = None
 
+pytestmark = pytest.mark.skipif(
+    flatten_list is None, reason="flatten_list not implemented"
+)
 
-@pytest.mark.skipif(flatten_list is None, reason="flatten_list not implemented")
+
 @pytest.mark.parametrize(
     "l, expected",
     [

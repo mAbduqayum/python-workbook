@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -12,12 +10,6 @@ import pytest
         ("12345\n", "15"),
     ],
 )
-def test_digit_sum(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "digit_sum.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file digit_sum.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_digit_sum(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

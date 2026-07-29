@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_triangle = None
 
+pytestmark = pytest.mark.skipif(
+    is_triangle is None, reason="is_triangle function not implemented"
+)
 
-@pytest.mark.skipif(is_triangle is None, reason="is_triangle function not implemented")
+
 @pytest.mark.parametrize(
     "a, b, c, expected",
     [

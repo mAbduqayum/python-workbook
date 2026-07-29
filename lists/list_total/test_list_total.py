@@ -7,8 +7,11 @@ try:
 except ImportError:
     list_total = None
 
+pytestmark = pytest.mark.skipif(
+    list_total is None, reason="list_total function not implemented"
+)
 
-@pytest.mark.skipif(list_total is None, reason="list_total function not implemented")
+
 def test_no_builtin_sum():
     """Test that the builtin sum function is not used"""
     source = inspect.getsource(list_total)
@@ -17,7 +20,6 @@ def test_no_builtin_sum():
     )
 
 
-@pytest.mark.skipif(list_total is None, reason="list_total function not implemented")
 @pytest.mark.parametrize(
     "numbers, expected",
     [

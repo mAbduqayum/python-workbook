@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,12 +9,6 @@ import pytest
         ("5\n", "5\n4\n3\n2\n1"),
     ],
 )
-def test_countdown(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "countdown.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file countdown.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_countdown(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

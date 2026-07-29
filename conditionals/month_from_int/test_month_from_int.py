@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -24,13 +22,5 @@ import pytest
         (15, "Invalid month number"),
     ],
 )
-def test_month_from_int(script_runner, month_num, expected_output):
-    script_path = Path(__file__).parent / "month_from_int.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file month_from_int.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{month_num}\n", expected_output=expected_output
-    )
+def test_month_from_int(solution, month_num, expected_output):
+    solution.check_output(input_text=f"{month_num}\n", expected_output=expected_output)

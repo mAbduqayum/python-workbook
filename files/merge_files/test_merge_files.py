@@ -5,8 +5,11 @@ try:
 except ImportError:
     merge_files = None
 
+pytestmark = pytest.mark.skipif(
+    merge_files is None, reason="merge_files not implemented"
+)
 
-@pytest.mark.skipif(merge_files is None, reason="merge_files not implemented")
+
 class TestMergeFiles:
     def test_merge_three_files(self, tmp_path):
         file1 = tmp_path / "file1.txt"

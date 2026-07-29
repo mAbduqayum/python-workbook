@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("2\n", "33.51"),
     ],
 )
-def test_sphere_volume(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "sphere_volume.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file sphere_volume.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_sphere_volume(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

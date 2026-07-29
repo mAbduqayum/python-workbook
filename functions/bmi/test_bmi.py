@@ -5,8 +5,9 @@ try:
 except ImportError:
     bmi = None
 
+pytestmark = pytest.mark.skipif(bmi is None, reason="bmi function not implemented")
 
-@pytest.mark.skipif(bmi is None, reason="bmi function not implemented")
+
 @pytest.mark.parametrize(
     "weight, height, expected",
     [

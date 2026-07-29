@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("4.0\n6.5\n", "26.00"),
     ],
 )
-def test_rectangle_area(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "rectangle_area.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file rectangle_area.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_rectangle_area(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

@@ -92,14 +92,16 @@ The area is: 84.95
   input, like `hello_world`, this block is omitted.)
 - The **second block** is exactly what your program must print.
 
-You do **not** have to write a prompt string. Both of these are accepted:
+You do **not** have to write a prompt string, and if you do, the wording is
+yours to choose. All of these are accepted:
 
 ```python
 radius = float(input("Enter radius: "))  # prompt is fine
+radius = float(input("Radius? "))        # any wording is fine
 radius = float(input())                  # no prompt is also fine
 ```
 
-The checker ignores any `Enter ...:` prompt text and only compares the
+The checker never sees your prompts. It compares only the
 values you read and the output you print. Some exercises still show prompts
 in their examples (e.g. multi-value ones like `bmi`); those prompts are
 optional too.

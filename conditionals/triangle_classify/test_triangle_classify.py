@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -19,13 +17,7 @@ import pytest
         (13, 14, 15, "scalene"),
     ],
 )
-def test_triangle_classify(script_runner, side1, side2, side3, expected_output):
-    script_path = Path(__file__).parent / "triangle_classify.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file triangle_classify.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_triangle_classify(solution, side1, side2, side3, expected_output):
+    solution.check_output(
         input_text=f"{side1}\n{side2}\n{side3}\n", expected_output=expected_output
     )

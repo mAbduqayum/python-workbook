@@ -5,8 +5,11 @@ try:
 except ImportError:
     write_lines = None
 
+pytestmark = pytest.mark.skipif(
+    write_lines is None, reason="write_lines not implemented"
+)
 
-@pytest.mark.skipif(write_lines is None, reason="write_lines not implemented")
+
 class TestWriteLines:
     def test_write_three_lines(self, tmp_path):
         test_file = tmp_path / "output.txt"

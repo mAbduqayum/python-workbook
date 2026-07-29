@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -20,13 +18,7 @@ import pytest
         (45, 60, 75, "Acute Triangle"),
     ],
 )
-def test_triangle_angle_type(script_runner, angle1, angle2, angle3, expected_output):
-    script_path = Path(__file__).parent / "triangle_angle_type.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file triangle_angle_type.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_triangle_angle_type(solution, angle1, angle2, angle3, expected_output):
+    solution.check_output(
         input_text=f"{angle1}\n{angle2}\n{angle3}\n", expected_output=expected_output
     )

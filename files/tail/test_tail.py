@@ -5,8 +5,9 @@ try:
 except ImportError:
     tail = None
 
+pytestmark = pytest.mark.skipif(tail is None, reason="tail not implemented")
 
-@pytest.mark.skipif(tail is None, reason="tail not implemented")
+
 class TestTail:
     def test_last_three_lines(self, tmp_path, capsys):
         test_file = tmp_path / "test.txt"

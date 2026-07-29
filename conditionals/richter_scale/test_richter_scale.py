@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -27,13 +25,5 @@ import pytest
         (15.0, "Meteoric"),
     ],
 )
-def test_richter_scale(script_runner, magnitude, expected_output):
-    script_path = Path(__file__).parent / "richter_scale.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file richter_scale.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{magnitude}\n", expected_output=expected_output
-    )
+def test_richter_scale(solution, magnitude, expected_output):
+    solution.check_output(input_text=f"{magnitude}\n", expected_output=expected_output)

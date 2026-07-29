@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -15,13 +13,5 @@ import pytest
         (5, "Invalid year"),
     ],
 )
-def test_student_year_level(script_runner, year, expected_output):
-    script_path = Path(__file__).parent / "student_year_level.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file student_year_level.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{year}\n", expected_output=expected_output
-    )
+def test_student_year_level(solution, year, expected_output):
+    solution.check_output(input_text=f"{year}\n", expected_output=expected_output)

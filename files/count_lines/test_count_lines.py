@@ -5,8 +5,11 @@ try:
 except ImportError:
     count_lines = None
 
+pytestmark = pytest.mark.skipif(
+    count_lines is None, reason="count_lines not implemented"
+)
 
-@pytest.mark.skipif(count_lines is None, reason="count_lines not implemented")
+
 class TestCountLines:
     def test_three_lines(self, tmp_path):
         test_file = tmp_path / "test.txt"

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -29,13 +27,7 @@ import pytest
         (2021, 2, 28, "2021-03-01"),  # Non-leap year February
     ],
 )
-def test_next_day(script_runner, year, month, day, expected_output):
-    script_path = Path(__file__).parent / "next_day.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file next_day.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_next_day(solution, year, month, day, expected_output):
+    solution.check_output(
         input_text=f"{year}\n{month}\n{day}\n", expected_output=expected_output
     )

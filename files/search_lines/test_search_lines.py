@@ -5,8 +5,11 @@ try:
 except ImportError:
     search_lines = None
 
+pytestmark = pytest.mark.skipif(
+    search_lines is None, reason="search_lines not implemented"
+)
 
-@pytest.mark.skipif(search_lines is None, reason="search_lines not implemented")
+
 class TestSearchLines:
     def test_find_multiple_matches(self, tmp_path):
         test_file = tmp_path / "code.txt"

@@ -5,8 +5,11 @@ try:
 except ImportError:
     decimal_hex = None
 
+pytestmark = pytest.mark.skipif(
+    decimal_hex is None, reason="decimal_hex function not implemented"
+)
 
-@pytest.mark.skipif(decimal_hex is None, reason="decimal_hex function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

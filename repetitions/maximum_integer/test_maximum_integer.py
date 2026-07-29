@@ -1,16 +1,5 @@
-from pathlib import Path
-
-import pytest
-
-
-def test_maximum_integer(script_runner):
-    script_path = Path(__file__).parent / "maximum_integer.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file maximum_integer.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="")
+def test_maximum_integer(solution):
+    result = solution.run(input_text="")
 
     # Check for key phrases in output
     assert "maximum" in result.stdout.lower()

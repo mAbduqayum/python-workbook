@@ -8,9 +8,16 @@ Convert an infix expression to postfix notation (Reverse Polish Notation).
 - Return a list of tokens in postfix notation
 - Use the Shunting Yard algorithm
 
+Solve the [`precedence`](../precedence/precedence.md) exercise first. The
+algorithm needs it to decide which operator binds tighter, and you can import
+the function you already wrote rather than writing it a second time.
+
 ## Template:
 
 ```python
+from lists.precedence.precedence import precedence
+
+
 def infix_to_postfix(tokens: list[str]) -> list[str]:
     pass
 

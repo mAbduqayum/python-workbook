@@ -5,10 +5,11 @@ try:
 except ImportError:
     caesar_cipher = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     caesar_cipher is None, reason="caesar_cipher function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "text, shift, expected",
     [

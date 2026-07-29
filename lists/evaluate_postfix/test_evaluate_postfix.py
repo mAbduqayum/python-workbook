@@ -5,10 +5,11 @@ try:
 except ImportError:
     evaluate_postfix = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     evaluate_postfix is None, reason="evaluate_postfix function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "postfix, expected",
     [

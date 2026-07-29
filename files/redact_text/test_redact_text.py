@@ -5,8 +5,11 @@ try:
 except ImportError:
     redact_text = None
 
+pytestmark = pytest.mark.skipif(
+    redact_text is None, reason="redact_text not implemented"
+)
 
-@pytest.mark.skipif(redact_text is None, reason="redact_text not implemented")
+
 class TestRedactText:
     def test_simple_redaction(self, tmp_path):
         words_file = tmp_path / "words.txt"

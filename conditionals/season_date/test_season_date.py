@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -31,13 +29,7 @@ import pytest
         ("December", 25, "Winter"),
     ],
 )
-def test_season_date(script_runner, month, day, expected_output):
-    script_path = Path(__file__).parent / "season_date.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file season_date.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_season_date(solution, month, day, expected_output):
+    solution.check_output(
         input_text=f"{month}\n{day}\n", expected_output=expected_output
     )

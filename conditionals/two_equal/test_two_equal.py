@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -18,13 +16,7 @@ import pytest
         (-2, 3, -2, "yes"),
     ],
 )
-def test_two_equal(script_runner, a, b, c, expected_output):
-    script_path = Path(__file__).parent / "two_equal.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file two_equal.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_two_equal(solution, a, b, c, expected_output):
+    solution.check_output(
         input_text=f"{a}\n{b}\n{c}\n", expected_output=expected_output
     )

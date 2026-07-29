@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_even = None
 
+pytestmark = pytest.mark.skipif(
+    is_even is None, reason="is_even function not implemented"
+)
 
-@pytest.mark.skipif(is_even is None, reason="is_even function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

@@ -5,8 +5,11 @@ try:
 except ImportError:
     edit_distance = None
 
+pytestmark = pytest.mark.skipif(
+    edit_distance is None, reason="edit_distance not implemented"
+)
 
-@pytest.mark.skipif(edit_distance is None, reason="edit_distance not implemented")
+
 @pytest.mark.parametrize(
     "s1, s2, expected",
     [

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -15,12 +13,6 @@ import pytest
         ("5\n2\n1\n", "5"),
     ],
 )
-def test_geometric_sequence(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "geometric_sequence.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file geometric_sequence.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_geometric_sequence(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

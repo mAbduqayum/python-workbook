@@ -5,8 +5,9 @@ try:
 except ImportError:
     head = None
 
+pytestmark = pytest.mark.skipif(head is None, reason="head not implemented")
 
-@pytest.mark.skipif(head is None, reason="head not implemented")
+
 class TestHead:
     def test_first_three_lines(self, tmp_path, capsys):
         test_file = tmp_path / "test.txt"

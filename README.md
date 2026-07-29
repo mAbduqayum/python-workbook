@@ -49,3 +49,7 @@ Install the following tools:
 8. [`Error`](errors/_docs/_table_of_contents.md)
 9. [`File`](files/_docs/_table_of_contents.md)
 10. [`Recursion`](recursions/_docs/_table_of_contents.md)
+
+## References
+
+Books and online resources this workbook draws on: [`REFERENCES.md`](REFERENCES.md)

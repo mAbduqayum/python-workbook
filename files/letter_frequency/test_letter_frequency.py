@@ -5,8 +5,11 @@ try:
 except ImportError:
     letter_frequency = None
 
+pytestmark = pytest.mark.skipif(
+    letter_frequency is None, reason="letter_frequency not implemented"
+)
 
-@pytest.mark.skipif(letter_frequency is None, reason="letter_frequency not implemented")
+
 class TestLetterFrequency:
     def test_simple_text(self, tmp_path):
         test_file = tmp_path / "test.txt"

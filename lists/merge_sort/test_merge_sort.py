@@ -5,8 +5,11 @@ try:
 except ImportError:
     merge_sort = None
 
+pytestmark = pytest.mark.skipif(
+    merge_sort is None, reason="merge_sort function not implemented"
+)
 
-@pytest.mark.skipif(merge_sort is None, reason="merge_sort function not implemented")
+
 @pytest.mark.parametrize(
     "list1, list2, expected",
     [

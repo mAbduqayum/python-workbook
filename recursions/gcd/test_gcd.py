@@ -5,8 +5,9 @@ try:
 except ImportError:
     gcd = None
 
+pytestmark = pytest.mark.skipif(gcd is None, reason="gcd not implemented")
 
-@pytest.mark.skipif(gcd is None, reason="gcd not implemented")
+
 @pytest.mark.parametrize(
     "a, b, expected",
     [

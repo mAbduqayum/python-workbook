@@ -5,8 +5,11 @@ try:
 except ImportError:
     next_rounds = None
 
+pytestmark = pytest.mark.skipif(
+    next_rounds is None, reason="next_rounds function not implemented"
+)
 
-@pytest.mark.skipif(next_rounds is None, reason="next_rounds function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

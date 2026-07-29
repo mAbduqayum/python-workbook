@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -13,12 +11,6 @@ import pytest
         ("1000000\n", "7"),
     ],
 )
-def test_number_of_digits(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "number_of_digits.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file number_of_digits.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_number_of_digits(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected
