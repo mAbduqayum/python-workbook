@@ -1,11 +1,18 @@
 name: Lint
 
-# Style gate for every branch and pull request. Locally the same checks run as
-# lefthook pre-commit hooks; this catches commits that bypassed them.
+# Style gate for the curriculum itself, not for the people learning from it: a
+# beginner's first loop failing ruff is discouraging noise, and `Grade
+# Calculator` is the feedback that actually means something to them. So this
+# runs on `solutions` only — never on `main`, which students work from, and
+# never in their forks.
+# Locally the same checks run as lefthook pre-commit hooks; this catches
+# commits that bypassed them.
 
 on:
   push:
+    branches: [solutions]
   pull_request:
+    branches: [solutions]
   workflow_dispatch:
 
 concurrency:
@@ -15,6 +22,10 @@ concurrency:
 jobs:
   ruff:
     runs-on: ubuntu-latest
+    # A student who forks and pushes to their own `solutions` is still a
+    # student. Pull requests are exempt: `repository` is the base repo there,
+    # so outside contributions are still linted.
+    if: github.event.repository.fork == false
     permissions:
       contents: read
 

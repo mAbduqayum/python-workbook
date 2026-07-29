@@ -1,15 +1,15 @@
 name: Sync to Main
 
-# Source of truth is the `solutions` branch. On every push to `solutions`,
-# regenerate `main` as: all files from `solutions` EXCEPT solution scripts.
-# An exercise is named after its directory, so a solution script is exactly
-# `<topic>/<exercise>/<exercise>.py`, and a file is stripped iff it matches
-# that shape. Everything else is mirrored as-is: tests, `conftest.py`, Python
-# fixture data such as `files/samples/calculator.py`, and all non-Python
-# content (docs, slides, configs). Tests already `pytest.skip` when their
-# solution file is absent, so deletion is the intended behaviour.
-# Additionally, the entire `ignore/` directory is solutions-only working
-# space and is stripped from `main` wholesale.
+# Source of truth is the `solutions` branch. On every push to `solutions`, its
+# new commits are replayed onto `main` one at a time under their own title,
+# plus a `Source-commit: <sha>` trailer — the newest such trailer on `main` is
+# where the next run resumes.
+# A replayed commit holds the source tree except the solution scripts (see
+# `is_solution_script` below) and the whole `ignore/` directory, which is
+# solutions-only working space. Everything else is mirrored as-is: tests,
+# `conftest.py`, Python fixture data such as `files/samples/calculator.py`, and
+# all non-Python content (docs, slides, configs). Tests already `pytest.skip`
+# when their solution file is absent, so deletion is the intended behaviour.
 
 on:
   push:
@@ -39,42 +39,59 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
 
-      - name: Regenerate main from solutions (strip solution scripts)
+      - name: Replay new solutions commits onto main (strip solution scripts)
         shell: bash
         run: |
           set -euo pipefail
+
+          # An exercise is named after its directory, so its solution script is
+          # exactly <topic>/<exercise>/<exercise>.py.
+          is_solution_script() {
+            local exercise_dir="${1%/*}"
+            [ "$1" = "$exercise_dir/${exercise_dir##*/}.py" ]
+          }
 
           git fetch origin solutions main
 
           # Append onto main's existing history (linear, fast-forwardable).
           git checkout -B main origin/main
 
-          # Index + working tree now mirror solutions; HEAD stays on main.
-          git read-tree -u --reset origin/solutions
+          synced_through=$(git log -1 --grep='^Source-commit: ' \
+            --format='%(trailers:key=Source-commit,valueonly)' origin/main)
 
-          removed=0
-          while IFS= read -r -d '' f; do
-            dir="${f%/*}"
-            [ "$f" = "$dir/${dir##*/}.py" ] || continue
-            git rm -q -f -- "$f"
-            removed=$((removed + 1))
-          done < <(git ls-files -z -- '*.py')
-
-          echo "Stripped $removed solution script(s) from main"
-
-          # Strip the solutions-only working directory wholesale.
-          if git ls-files -z -- 'ignore/*' | grep -qz .; then
-            git rm -q -r -f -- ignore
-            echo "Stripped ignore/ directory from main"
+          if [ -z "$synced_through" ] || ! git merge-base --is-ancestor "$synced_through" origin/solutions; then
+            echo "::error::main has no Source-commit trailer to resume from"
+            exit 1
           fi
 
-          git add -A
-          if git diff --cached --quiet; then
-            echo "main already in sync with solutions; nothing to commit"
+          # Merges are skipped: the commits they merge are replayed on their
+          # own. Excluding main skips whatever it already carries.
+          unsynced=$(git rev-list --reverse --topo-order --no-merges origin/solutions --not "$synced_through" main)
+
+          for source_commit in $unsynced; do
+            # Index + working tree now mirror it; HEAD stays on main.
+            git read-tree -u --reset "$source_commit"
+
+            git ls-files -z -- '*.py' | while IFS= read -r -d '' file; do
+              # `if`, not `&&`: a last file that is not a solution would leave
+              # the loop exit 1 and pipefail would kill the run silently.
+              if is_solution_script "$file"; then printf '%s\0' "$file"; fi
+            done | xargs -0r git rm -q -f --
+            git rm -q -r -f --ignore-unmatch -- ignore
+
+            # Commits touching nothing but stripped files leave main as it was.
+            git diff --cached --quiet HEAD && continue
+
+            printf '%s\n\nSource-commit: %s\n' "$(git log -1 --format=%s "$source_commit")" "$source_commit" |
+              git commit -q --no-verify -F -
+            git log -1 --format='replayed %h %s' "$source_commit"
+          done
+
+          if [ "$(git rev-parse main)" = "$(git rev-parse origin/main)" ]; then
+            echo "main already mirrors solutions; nothing to commit"
             exit 0
           fi
 
-          git commit -m "chore(sync): mirror branch → main"
           git push origin main
           echo "main updated from solutions"
 
@@ -82,4 +99,4 @@ jobs:
         if: always()
         run: |
           echo "Latest commits on main:"
-          git log --oneline -5 origin/main || true
+          git log --oneline -5 main || true
