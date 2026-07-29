@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -37,13 +35,5 @@ import pytest
         ("h8", "black"),
     ],
 )
-def test_chess_square_color(script_runner, position, expected_output):
-    script_path = Path(__file__).parent / "chess_square_color.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file chess_square_color.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{position}\n", expected_output=expected_output
-    )
+def test_chess_square_color(solution, position, expected_output):
+    solution.check_output(input_text=f"{position}\n", expected_output=expected_output)

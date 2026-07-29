@@ -5,10 +5,11 @@ try:
 except ImportError:
     is_palindrome = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     is_palindrome is None, reason="is_palindrome function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "s, expected",
     [

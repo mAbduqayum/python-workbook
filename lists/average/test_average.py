@@ -5,8 +5,11 @@ try:
 except ImportError:
     average = None
 
+pytestmark = pytest.mark.skipif(
+    average is None, reason="average function not implemented"
+)
 
-@pytest.mark.skipif(average is None, reason="average function not implemented")
+
 @pytest.mark.parametrize(
     "numbers, expected",
     [

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,13 +9,5 @@ import pytest
         ("5\n5\n", "43.01"),
     ],
 )
-def test_regular_polygon(script_runner, input_params, expected_output):
-    script_path = Path(__file__).parent / "regular_polygon.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file regular_polygon.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=input_params, expected_output=expected_output
-    )
+def test_regular_polygon(solution, input_params, expected_output):
+    solution.check_output(input_text=input_params, expected_output=expected_output)

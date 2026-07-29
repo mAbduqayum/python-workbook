@@ -5,10 +5,11 @@ try:
 except ImportError:
     list_to_string = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     list_to_string is None, reason="list_to_string function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "words, expected",
     [

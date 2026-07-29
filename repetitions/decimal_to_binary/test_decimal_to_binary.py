@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -15,13 +13,7 @@ import pytest
         ("16", "10000"),
     ],
 )
-def test_decimal_to_binary(script_runner, decimal_input, expected_binary):
-    script_path = Path(__file__).parent / "decimal_to_binary.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file decimal_to_binary.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=f"{decimal_input}\n")
+def test_decimal_to_binary(solution, decimal_input, expected_binary):
+    result = solution.run(input_text=f"{decimal_input}\n")
 
     assert expected_binary in result.stdout

@@ -5,10 +5,11 @@ try:
 except ImportError:
     is_leap_year = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     is_leap_year is None, reason="is_leap_year function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "year, expected",
     [

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -14,14 +12,8 @@ import pytest
         ("0\n0\n3\n0\n0\n4\n\n", 12.0),
     ],
 )
-def test_polygon_perimeter(script_runner, input_values, expected_perimeter):
-    script_path = Path(__file__).parent / "polygon_perimeter.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file polygon_perimeter.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_values)
+def test_polygon_perimeter(solution, input_values, expected_perimeter):
+    result = solution.run(input_text=input_values)
 
     # Extract the numeric value from output
     import re

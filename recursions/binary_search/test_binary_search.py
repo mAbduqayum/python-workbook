@@ -5,8 +5,11 @@ try:
 except ImportError:
     binary_search = None
 
+pytestmark = pytest.mark.skipif(
+    binary_search is None, reason="binary_search not implemented"
+)
 
-@pytest.mark.skipif(binary_search is None, reason="binary_search not implemented")
+
 @pytest.mark.parametrize(
     "l, target, expected",
     [

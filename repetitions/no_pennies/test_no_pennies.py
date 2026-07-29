@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -13,14 +11,8 @@ import pytest
         ("1.03\n\n", "1.03", "1.05"),
     ],
 )
-def test_no_pennies(script_runner, input_values, expected_total, expected_cash):
-    script_path = Path(__file__).parent / "no_pennies.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file no_pennies.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_values)
+def test_no_pennies(solution, input_values, expected_total, expected_cash):
+    result = solution.run(input_text=input_values)
 
     assert expected_total in result.stdout
     assert expected_cash in result.stdout

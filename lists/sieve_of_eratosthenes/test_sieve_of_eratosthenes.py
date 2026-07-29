@@ -5,11 +5,12 @@ try:
 except ImportError:
     sieve_of_eratosthenes = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     sieve_of_eratosthenes is None,
     reason="sieve_of_eratosthenes function not implemented",
 )
+
+
 @pytest.mark.parametrize(
     "n, expected",
     [

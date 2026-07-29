@@ -5,10 +5,11 @@ try:
 except ImportError:
     sort_numbers = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     sort_numbers is None, reason="sort_numbers function not implemented"
 )
+
+
 def test_original_not_modified():
     """Test that the original list is not modified"""
     original = [5, 2, 8, 1, 9]
@@ -17,9 +18,6 @@ def test_original_not_modified():
     assert original == original_copy, "Original list should not be modified"
 
 
-@pytest.mark.skipif(
-    sort_numbers is None, reason="sort_numbers function not implemented"
-)
 @pytest.mark.parametrize(
     "numbers, expected",
     [

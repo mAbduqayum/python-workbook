@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -31,13 +29,5 @@ import pytest
         (720, "Invalid Angle"),
     ],
 )
-def test_angle_type(script_runner, angle, expected_output):
-    script_path = Path(__file__).parent / "angle_type.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file angle_type.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{angle}\n", expected_output=expected_output
-    )
+def test_angle_type(solution, angle, expected_output):
+    solution.check_output(input_text=f"{angle}\n", expected_output=expected_output)

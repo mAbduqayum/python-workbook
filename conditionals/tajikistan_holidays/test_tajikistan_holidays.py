@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -28,13 +26,7 @@ import pytest
         (12, 31, "Not a national holiday"),
     ],
 )
-def test_tajikistan_holidays(script_runner, month, day, expected_output):
-    script_path = Path(__file__).parent / "tajikistan_holidays.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file tajikistan_holidays.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_tajikistan_holidays(solution, month, day, expected_output):
+    solution.check_output(
         input_text=f"{month}\n{day}\n", expected_output=expected_output
     )

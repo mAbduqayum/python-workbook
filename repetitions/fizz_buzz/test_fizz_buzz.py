@@ -1,16 +1,5 @@
-from pathlib import Path
-
-import pytest
-
-
-def test_fizz_buzz(script_runner):
-    script_path = Path(__file__).parent / "fizz_buzz.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file fizz_buzz.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="")
+def test_fizz_buzz(solution):
+    result = solution.run(input_text="")
 
     lines = result.stdout.strip().split("\n")
 

@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -23,13 +21,7 @@ import pytest
         ),
     ],
 )
-def test_advanced_calculator(script_runner, first_num, second_num, expected_output):
-    script_path = Path(__file__).parent / "advanced_calculator.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file advanced_calculator.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
+def test_advanced_calculator(solution, first_num, second_num, expected_output):
+    solution.check_output(
         input_text=f"{first_num}\n{second_num}\n", expected_output=expected_output
     )

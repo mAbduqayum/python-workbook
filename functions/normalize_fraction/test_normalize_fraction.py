@@ -5,10 +5,11 @@ try:
 except ImportError:
     normalize_fraction = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     normalize_fraction is None, reason="normalize_fraction function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "numerator, denominator, expected",
     [

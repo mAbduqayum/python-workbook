@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_sublist = None
 
+pytestmark = pytest.mark.skipif(
+    is_sublist is None, reason="is_sublist function not implemented"
+)
 
-@pytest.mark.skipif(is_sublist is None, reason="is_sublist function not implemented")
+
 @pytest.mark.parametrize(
     "main_list, sub, expected",
     [

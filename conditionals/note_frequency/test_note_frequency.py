@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -24,13 +22,5 @@ import pytest
         ("A3", "220.00"),
     ],
 )
-def test_note_frequency(script_runner, note, expected_output):
-    script_path = Path(__file__).parent / "note_frequency.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file note_frequency.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{note}\n", expected_output=expected_output
-    )
+def test_note_frequency(solution, note, expected_output):
+    solution.check_output(input_text=f"{note}\n", expected_output=expected_output)

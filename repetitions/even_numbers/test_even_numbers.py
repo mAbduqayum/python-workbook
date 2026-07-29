@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -11,12 +9,6 @@ import pytest
         ("2\n", "2"),
     ],
 )
-def test_even_numbers(script_runner, input_text, expected):
-    script_path = Path(__file__).parent / "even_numbers.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file even_numbers.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_text)
+def test_even_numbers(solution, input_text, expected):
+    result = solution.run(input_text=input_text)
     assert result.stdout == expected

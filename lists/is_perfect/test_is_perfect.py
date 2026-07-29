@@ -5,8 +5,11 @@ try:
 except ImportError:
     is_perfect = None
 
+pytestmark = pytest.mark.skipif(
+    is_perfect is None, reason="is_perfect function not implemented"
+)
 
-@pytest.mark.skipif(is_perfect is None, reason="is_perfect function not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

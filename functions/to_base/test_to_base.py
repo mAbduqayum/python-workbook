@@ -5,8 +5,11 @@ try:
 except ImportError:
     to_base = None
 
+pytestmark = pytest.mark.skipif(
+    to_base is None, reason="to_base function not implemented"
+)
 
-@pytest.mark.skipif(to_base is None, reason="to_base function not implemented")
+
 @pytest.mark.parametrize(
     "n, base, expected",
     [

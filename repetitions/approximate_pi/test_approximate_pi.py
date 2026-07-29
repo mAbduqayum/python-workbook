@@ -1,16 +1,5 @@
-from pathlib import Path
-
-import pytest
-
-
-def test_approximate_pi(script_runner):
-    script_path = Path(__file__).parent / "approximate_pi.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file approximate_pi.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text="")
+def test_approximate_pi(solution):
+    result = solution.run(input_text="")
 
     # Check that output contains 15 lines with approximations
     lines = result.stdout.strip().split("\n")

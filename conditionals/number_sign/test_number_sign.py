@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -15,13 +13,5 @@ import pytest
         (-1, "negative"),
     ],
 )
-def test_number_sign(script_runner, number, expected_output):
-    script_path = Path(__file__).parent / "number_sign.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file number_sign.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{number}\n", expected_output=expected_output
-    )
+def test_number_sign(solution, number, expected_output):
+    solution.check_output(input_text=f"{number}\n", expected_output=expected_output)

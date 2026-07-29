@@ -5,11 +5,12 @@ try:
 except ImportError:
     fahrenheit_to_celsius = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     fahrenheit_to_celsius is None,
     reason="fahrenheit_to_celsius function not implemented",
 )
+
+
 @pytest.mark.parametrize(
     "fahrenheit, expected",
     [

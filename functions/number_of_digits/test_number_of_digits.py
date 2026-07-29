@@ -5,10 +5,11 @@ try:
 except ImportError:
     number_of_digits = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     number_of_digits is None, reason="number_of_digits function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "n, expected",
     [

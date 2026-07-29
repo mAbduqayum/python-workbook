@@ -5,10 +5,11 @@ try:
 except ImportError:
     reverse_list = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     reverse_list is None, reason="reverse_list function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "string, expected",
     [

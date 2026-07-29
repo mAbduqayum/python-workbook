@@ -5,33 +5,17 @@ pre-commit:
       glob: "pyproject.toml"
       run: uvx uv-sort
       stage_fixed: true
-    lint:
+    # One command, not two: `check --fix` and `format` both rewrite the whole
+    # file, so as separate parallel commands they race and the loser's fixes
+    # are silently dropped. Lint first -- formatting its output is stable,
+    # fixing formatted output is not.
+    ruff:
       glob: "*.py"
-      run: ruff check --fix {staged_files}
-      stage_fixed: true
-    format:
-      glob: "*.py"
-      run: ruff format {staged_files}
+      run: uv run ruff check --fix {staged_files} && uv run ruff format {staged_files}
       stage_fixed: true
   exclude_tags:
     - merge
     - rebase
-
-pre-push:
-  piped: true # stop if one fails
-  commands:
-    lint:
-      glob: "src/*.py"
-      run: ruff check {push_files}
-    #test:
-    #  run: uv run pytest tests/
-    #security-check:
-    #  run: ruff check . --select S
-    #  skip:
-    #    - merge
-    #    - rebase
-    #git-leaks:
-    #  run: gitleaks git
 
 commit-msg:
   commands:

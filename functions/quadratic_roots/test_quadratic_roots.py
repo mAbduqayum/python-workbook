@@ -5,10 +5,11 @@ try:
 except ImportError:
     quadratic_roots = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     quadratic_roots is None, reason="quadratic_roots function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "a, b, c, expected",
     [

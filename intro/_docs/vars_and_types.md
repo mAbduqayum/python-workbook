@@ -57,13 +57,14 @@ name = input("Enter your name: ")  # Always returns a string
 age_str = input("Enter your age: ")  # This is a string, not a number
 ```
 
-The prompt text is **optional**. Writing `input()` with no prompt works
-exactly the same, and the exercise checker ignores any `Enter ...:` prompt
-text — it only checks the values you read and what you print. So both styles
-are accepted:
+The prompt text is **optional**, and its wording is up to you. Writing
+`input()` with no prompt works exactly the same: the exercise checker never
+sees your prompts, only the values you read and what you print. So all of
+these are accepted:
 
 ```python
 name = input("Enter your name: ")  # with a prompt
+name = input("Your name? ")        # any wording — also fine
 name = input()                     # no prompt — also fine
 ```
 

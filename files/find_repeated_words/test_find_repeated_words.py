@@ -5,10 +5,11 @@ try:
 except ImportError:
     find_repeated_words = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     find_repeated_words is None, reason="find_repeated_words not implemented"
 )
+
+
 class TestFindRepeatedWords:
     def test_simple_repeat(self, tmp_path):
         test_file = tmp_path / "test.txt"

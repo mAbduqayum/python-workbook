@@ -5,10 +5,11 @@ try:
 except ImportError:
     two_list_sum = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     two_list_sum is None, reason="two_list_sum function not implemented"
 )
+
+
 @pytest.mark.parametrize(
     "list1, list2, expected",
     [

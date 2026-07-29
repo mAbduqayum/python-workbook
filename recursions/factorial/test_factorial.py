@@ -5,8 +5,9 @@ try:
 except ImportError:
     factorial = None
 
+pytestmark = pytest.mark.skipif(factorial is None, reason="factorial not implemented")
 
-@pytest.mark.skipif(factorial is None, reason="factorial not implemented")
+
 @pytest.mark.parametrize(
     "n, expected",
     [

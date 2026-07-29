@@ -5,8 +5,11 @@ try:
 except ImportError:
     spell_checker = None
 
+pytestmark = pytest.mark.skipif(
+    spell_checker is None, reason="spell_checker not implemented"
+)
 
-@pytest.mark.skipif(spell_checker is None, reason="spell_checker not implemented")
+
 class TestSpellChecker:
     def test_simple_misspelled(self, tmp_path):
         dict_file = tmp_path / "dict.txt"

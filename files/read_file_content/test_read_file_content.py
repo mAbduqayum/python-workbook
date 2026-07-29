@@ -5,10 +5,11 @@ try:
 except ImportError:
     read_file_content = None
 
-
-@pytest.mark.skipif(
+pytestmark = pytest.mark.skipif(
     read_file_content is None, reason="read_file_content not implemented"
 )
+
+
 class TestReadFileContent:
     def test_simple_content(self, tmp_path):
         test_file = tmp_path / "test.txt"

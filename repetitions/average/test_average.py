@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -12,12 +10,6 @@ import pytest
         ("1\n2\n3\n4\n5\n0\n", "3.0"),
     ],
 )
-def test_average(script_runner, input_values, expected_output):
-    script_path = Path(__file__).parent / "average.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file average.py not found")
-
-    runner = script_runner(script_path)
-    result = runner.run(input_text=input_values)
+def test_average(solution, input_values, expected_output):
+    result = solution.run(input_text=input_values)
     assert expected_output in result.stdout

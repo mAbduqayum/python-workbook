@@ -5,8 +5,11 @@ try:
 except ImportError:
     get_words = None
 
+pytestmark = pytest.mark.skipif(
+    get_words is None, reason="get_words function not implemented"
+)
 
-@pytest.mark.skipif(get_words is None, reason="get_words function not implemented")
+
 @pytest.mark.parametrize(
     "sentence, expected",
     [

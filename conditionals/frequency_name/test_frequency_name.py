@@ -1,5 +1,3 @@
-from pathlib import Path
-
 import pytest
 
 
@@ -24,13 +22,5 @@ import pytest
         (100000000000000000000, "Gamma Rays"),  # 1 × 10²⁰
     ],
 )
-def test_frequency_name(script_runner, frequency, expected_output):
-    script_path = Path(__file__).parent / "frequency_name.py"
-
-    if not script_path.exists():
-        pytest.skip("Solution file frequency_name.py not found")
-
-    runner = script_runner(script_path)
-    runner.run_and_check_output_only(
-        input_text=f"{frequency}\n", expected_output=expected_output
-    )
+def test_frequency_name(solution, frequency, expected_output):
+    solution.check_output(input_text=f"{frequency}\n", expected_output=expected_output)
