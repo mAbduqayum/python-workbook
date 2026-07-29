@@ -18,7 +18,7 @@ Install the following tools:
 
 2. **Create a directory for your repositories:**
    ```bash
-   mkdir -p ~/repos
+   mkdir ~/repos
    cd ~/repos
    ```
 
