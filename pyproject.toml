@@ -1,7 +1,7 @@
 [project]
 name = "python-workbook"
 version = "0.1.0"
-description = "Add your description here"
+description = "A structured collection of Python exercises with automated tests"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = []
