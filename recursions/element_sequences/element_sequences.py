@@ -119,7 +119,9 @@ ELEMENTS = [
     "Oganesson",
 ]
 
-ELEMENTS_LOWER = {e.lower(): e for e in ELEMENTS}
+ELEMENTS_LOWER = {}
+for element in ELEMENTS:
+    ELEMENTS_LOWER[element.lower()] = element
 
 
 def longest_element_sequence(start: str, used: set[str] | None = None) -> list[str]:
@@ -136,7 +138,10 @@ def longest_element_sequence(start: str, used: set[str] | None = None) -> list[s
     used = used | {normalized}
     last_letter = normalized[-1].upper()
 
-    candidates = [e for e in ELEMENTS if e[0].upper() == last_letter and e not in used]
+    candidates = []
+    for element in ELEMENTS:
+        if element[0].upper() == last_letter and element not in used:
+            candidates.append(element)
 
     best_sequence = [normalized]
 

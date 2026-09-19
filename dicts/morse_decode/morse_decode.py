@@ -38,7 +38,9 @@ MORSE_CODE = {
     " ": "/",
 }
 
-MORSE_TO_CHAR = {code: char for char, code in MORSE_CODE.items()}
+MORSE_TO_CHAR = {}
+for char, code in MORSE_CODE.items():
+    MORSE_TO_CHAR[code] = char
 
 
 def morse_decode(morse: str) -> str:

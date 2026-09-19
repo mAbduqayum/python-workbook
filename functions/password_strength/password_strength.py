@@ -1,12 +1,30 @@
 def password_strength(pwd: str) -> str:
     length = len(pwd)
 
-    has_lower = any(c.islower() for c in pwd)
-    has_upper = any(c.isupper() for c in pwd)
-    has_digit = any(c.isdigit() for c in pwd)
-    has_special = any(c in "!@#$%^&*()_+-=[]{}|;:,.<>?" for c in pwd)
+    has_lower = False
+    has_upper = False
+    has_digit = False
+    has_special = False
 
-    char_types = sum([has_lower, has_upper, has_digit, has_special])
+    for char in pwd:
+        if char.islower():
+            has_lower = True
+        elif char.isupper():
+            has_upper = True
+        elif char.isdigit():
+            has_digit = True
+        elif char in "!@#$%^&*()_+-=[]{}|;:,.<>?":
+            has_special = True
+
+    char_types = 0
+    if has_lower:
+        char_types += 1
+    if has_upper:
+        char_types += 1
+    if has_digit:
+        char_types += 1
+    if has_special:
+        char_types += 1
 
     if length >= 12 and char_types >= 3:
         return "strong"
