@@ -1,6 +1,4 @@
 def get_words(sentence: str) -> list[str]:
-    if not sentence:
-        return []
     return sentence.split()
 
 

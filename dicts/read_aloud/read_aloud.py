@@ -42,11 +42,11 @@ def read_below_hundred(num: int) -> str:
     if num < 20:
         return TEENS[num]
 
-    tens_digit = num // 10 * 10
+    tens_value = num // 10 * 10
     ones_digit = num % 10
     if ones_digit == 0:
-        return TENS[tens_digit]
-    return TENS[tens_digit] + " " + ONES[ones_digit]
+        return TENS[tens_value]
+    return TENS[tens_value] + " " + ONES[ones_digit]
 
 
 def read_aloud(number: str) -> str:

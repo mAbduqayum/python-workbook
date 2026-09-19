@@ -1,16 +1,16 @@
 def binary_search(l: list, target: int) -> int:
-    def helper(low: int, high: int) -> int:
+    def search(low: int, high: int) -> int:
         if low > high:
             return -1
         mid = (low + high) // 2
         if l[mid] == target:
             return mid
         elif l[mid] > target:
-            return helper(low, mid - 1)
+            return search(low, mid - 1)
         else:
-            return helper(mid + 1, high)
+            return search(mid + 1, high)
 
-    return helper(0, len(l) - 1)
+    return search(0, len(l) - 1)
 
 
 if __name__ == "__main__":

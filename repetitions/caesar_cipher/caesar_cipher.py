@@ -5,14 +5,10 @@ result = ""
 
 for char in message:
     if char.isalpha():
-        if char.isupper():
-            pos = ord(char) - ord("A")
-            new_pos = (pos + shift) % 26
-            result += chr(new_pos + ord("A"))
-        else:
-            pos = ord(char) - ord("a")
-            new_pos = (pos + shift) % 26
-            result += chr(new_pos + ord("a"))
+        base = ord("A") if char.isupper() else ord("a")
+        pos = ord(char) - base
+        new_pos = (pos + shift) % 26
+        result += chr(new_pos + base)
     else:
         result += char
 

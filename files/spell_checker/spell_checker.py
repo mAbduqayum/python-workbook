@@ -15,7 +15,7 @@ def spell_checker(file_path: str, dictionary_path: str) -> list[str]:
                 if clean_word and clean_word not in dictionary:
                     misspelled.add(clean_word)
 
-    return sorted(list(misspelled))
+    return sorted(misspelled)
 
 
 if __name__ == "__main__":

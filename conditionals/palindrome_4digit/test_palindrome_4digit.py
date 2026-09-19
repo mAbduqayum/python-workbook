@@ -31,7 +31,6 @@ import pytest
         (8765, "not palindrome"),
         (1234, "not palindrome"),
         (5678, "not palindrome"),
-        (1234, "not palindrome"),
     ],
 )
 def test_palindrome_4digit(solution, number, expected_output):

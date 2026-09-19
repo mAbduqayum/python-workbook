@@ -31,7 +31,7 @@ def isomorphic_strings2(s: str, t: str) -> bool:
     s_to_t = {}
     t_to_s = {}
 
-    for char_s, char_t in zip(s, t, strict=False):
+    for char_s, char_t in zip(s, t, strict=True):
         if char_s in s_to_t:
             if s_to_t[char_s] != char_t:
                 return False

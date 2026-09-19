@@ -141,11 +141,9 @@ def longest_element_sequence(start: str, used: set[str] | None = None) -> list[s
     best_sequence = [normalized]
 
     for candidate in candidates:
-        sequence = longest_element_sequence(candidate, used)
-        if sequence:
-            full_sequence = [normalized] + sequence
-            if len(full_sequence) > len(best_sequence):
-                best_sequence = full_sequence
+        sequence = [normalized] + longest_element_sequence(candidate, used)
+        if len(sequence) > len(best_sequence):
+            best_sequence = sequence
 
     return best_sequence
 

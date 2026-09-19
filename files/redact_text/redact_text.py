@@ -16,9 +16,8 @@ def redact_text(input_path: str, words_path: str, output_path: str) -> int:
     for word in sensitive_words:
         # \b word boundaries: match "secret" but not "secretly"
         pattern = re.compile(r"\b" + re.escape(word) + r"\b", re.IGNORECASE)
-        matches = pattern.findall(text)
-        count += len(matches)
-        text = pattern.sub("*" * len(word), text)
+        text, replacements = pattern.subn("*" * len(word), text)
+        count += replacements
 
     with open(output_path, "w", encoding="utf-8") as f:
         f.write(text)
