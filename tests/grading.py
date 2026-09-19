@@ -32,14 +32,9 @@ class GradeReporter:
                 if test_file not in file_stats:
                     file_stats[test_file] = {
                         "status": "passed",
-                        "passed_count": 0,
-                        "failed_count": 0,
-                        "skipped_count": 0,
-                        "error_count": 0,
                         "total_count": 0,
                     }
 
-                file_stats[test_file][f"{status}_count"] += 1
                 file_stats[test_file]["total_count"] += 1
 
                 # File status precedence: failed/error beat skipped, skipped beats passed
@@ -50,12 +45,6 @@ class GradeReporter:
                     "error",
                 ]:
                     file_stats[test_file]["status"] = "skipped"
-                elif status == "passed" and file_stats[test_file]["status"] not in [
-                    "failed",
-                    "error",
-                    "skipped",
-                ]:
-                    file_stats[test_file]["status"] = "passed"
 
         return file_stats
 
