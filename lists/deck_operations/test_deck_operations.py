@@ -14,7 +14,6 @@ def test_create_deck():
     assert "2H" in deck
     assert "AS" in deck
     assert "KD" in deck
-    # Check no duplicates
     assert len(set(deck)) == 52
 
 
@@ -25,10 +24,7 @@ def test_shuffle_deck():
     deck = create_deck()
     shuffled = shuffle_deck(deck)
 
-    # Check length preserved
     assert len(shuffled) == 52
-
-    # Check all cards still present
     assert set(shuffled) == set(deck)
 
     # The original deck should not be modified
