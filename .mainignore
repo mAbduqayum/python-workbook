@@ -1,0 +1,8 @@
+# Solutions-only paths, stripped from every commit the Sync to Main workflow
+# replays onto main. One git pathspec per line; this list strips itself, so
+# main never carries it. Solution scripts (<topic>/<exercise>/<exercise>.py)
+# follow a naming rule a pathspec cannot express -- see is_solution_script
+# in .github/workflows/sync-main.yml.
+.mainignore
+ignore
+justfile

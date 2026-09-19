@@ -5,8 +5,10 @@ name: Sync to Main
 # plus a `Source-commit: <sha>` trailer — the newest such trailer on `main` is
 # where the next run resumes.
 # A replayed commit holds the source tree except the solution scripts (see
-# `is_solution_script` below) and the whole `ignore/` directory, which is
-# solutions-only working space. Everything else is mirrored as-is: tests,
+# `is_solution_script` below) and the paths listed in `.mainignore` --
+# solutions-only files such as the `ignore/` working space and the
+# `justfile`. The list strips itself, so `main` never carries it either.
+# Everything else is mirrored as-is: tests,
 # `conftest.py`, Python fixture data such as `files/samples/calculator.py`, and
 # all non-Python content (docs, slides, configs). Tests already `pytest.skip`
 # when their solution file is absent, so deletion is the intended behaviour.
@@ -77,7 +79,13 @@ jobs:
               # the loop exit 1 and pipefail would kill the run silently.
               if is_solution_script "$file"; then printf '%s\0' "$file"; fi
             done | xargs -0r git rm -q -f --
-            git rm -q -r -f --ignore-unmatch -- ignore
+            # Strip the static solutions-only paths: one pathspec per line in
+            # .mainignore, read from the commit being replayed so each commit
+            # is stripped by its own list. Absent in commits that predate it.
+            if [ -f .mainignore ]; then
+              sed 's/\r$//; /^[[:space:]]*#/d; /^[[:space:]]*$/d' .mainignore |
+                tr '\n' '\0' | xargs -0r git rm -q -r -f --ignore-unmatch --
+            fi
 
             # Commits touching nothing but stripped files leave main as it was.
             git diff --cached --quiet HEAD && continue
