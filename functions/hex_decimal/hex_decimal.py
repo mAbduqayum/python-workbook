@@ -16,7 +16,6 @@ def hex_decimal(hex_str: str) -> int:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(hex_decimal("A"))  # 10
     print(hex_decimal("FF"))  # 255
     print(hex_decimal("10"))  # 16

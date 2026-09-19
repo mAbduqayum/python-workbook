@@ -3,7 +3,6 @@ def fahrenheit_to_celsius(fahrenheit: float) -> float:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(fahrenheit_to_celsius(32))  # 0.0
     print(fahrenheit_to_celsius(212))  # 100.0
     print(fahrenheit_to_celsius(98.6))  # 37.0

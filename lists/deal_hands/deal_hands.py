@@ -9,7 +9,6 @@ def deal_hands(
 
 
 if __name__ == "__main__":
-    # Test your function
     deck = ["2H", "3H", "4H", "5H", "6H", "7H", "8H", "9H", "10H"]
     hands = deal_hands(deck, 3, 3)
     for i, hand in enumerate(hands, 1):

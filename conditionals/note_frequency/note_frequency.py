@@ -2,7 +2,7 @@ note = input()
 
 if len(note) == 2:
     note_name, octave_char = note
-    note_name = note_name.upper()  # Convert to uppercase for consistency
+    note_name = note_name.upper()
 
     if note_name == "C" and octave_char in "012345678":
         base_freq = 261.63

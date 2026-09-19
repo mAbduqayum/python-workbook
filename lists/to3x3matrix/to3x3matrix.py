@@ -17,7 +17,6 @@ def to3x3matrix2(string: str) -> list[list[int]]:
 
 
 if __name__ == "__main__":
-    # Test your function
     matrix = to3x3matrix("2 3 5 7 11 13 17 19 23")
     for row in matrix:
         print(row)

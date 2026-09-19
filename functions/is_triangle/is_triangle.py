@@ -3,7 +3,6 @@ def is_triangle(a: float, b: float, c: float) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(is_triangle(3, 4, 5))  # True
     print(is_triangle(1, 2, 3))  # False
     print(is_triangle(5, 5, 5))  # True

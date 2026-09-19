@@ -1,7 +1,6 @@
 def password_strength(pwd: str) -> str:
     length = len(pwd)
 
-    # Count character types
     has_lower = any(c.islower() for c in pwd)
     has_upper = any(c.isupper() for c in pwd)
     has_digit = any(c.isdigit() for c in pwd)
@@ -9,7 +8,6 @@ def password_strength(pwd: str) -> str:
 
     char_types = sum([has_lower, has_upper, has_digit, has_special])
 
-    # Evaluate strength
     if length >= 12 and char_types >= 3:
         return "strong"
     elif length >= 8 and char_types >= 2:
@@ -19,7 +17,6 @@ def password_strength(pwd: str) -> str:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(password_strength("abc"))  # "weak"
     print(password_strength("Password1"))  # "medium"
     print(password_strength("P@ssw0rd!"))  # "medium"

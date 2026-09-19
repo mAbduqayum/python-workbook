@@ -9,11 +9,10 @@ def precedence(operation: str) -> int:
         case "~":
             return 4
         case _:
-            return -1  # treat -1 as not found
+            return -1  # unknown operator
 
 
 if __name__ == "__main__":
-    # Test your function
     print(precedence("+"))  # 1
     print(precedence("-"))  # 1
     print(precedence("*"))  # 2

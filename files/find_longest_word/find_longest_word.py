@@ -6,10 +6,8 @@ def find_longest_word(file_path: str) -> str:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("text.txt", "w") as f:
         f.write("The quick brown fox jumps over the lazy dog\n")
         f.write("Python programming is wonderful\n")
 
-    # Test your function
     print(find_longest_word("text.txt"))  # "programming"

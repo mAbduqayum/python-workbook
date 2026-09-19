@@ -36,6 +36,19 @@ TENS = {
 }
 
 
+def read_below_hundred(num: int) -> str:
+    if num < 10:
+        return ONES[num]
+    if num < 20:
+        return TEENS[num]
+
+    tens_digit = num // 10 * 10
+    ones_digit = num % 10
+    if ones_digit == 0:
+        return TENS[tens_digit]
+    return TENS[tens_digit] + " " + ONES[ones_digit]
+
+
 def read_aloud(number: str) -> str:
     if not number:
         return ""
@@ -44,34 +57,14 @@ def read_aloud(number: str) -> str:
 
     if num == 0:
         return "ZERO"
-    if num < 10:
-        return ONES[num]
-    if num < 20:
-        return TEENS[num]
     if num < 100:
-        tens_digit = num // 10 * 10
-        ones_digit = num % 10
-        if ones_digit == 0:
-            return TENS[tens_digit]
-        else:
-            return TENS[tens_digit] + " " + ONES[ones_digit]
+        return read_below_hundred(num)
     if num < 1000:
-        hundreds_digit = num // 100
+        hundreds = ONES[num // 100] + " HUNDRED"
         remainder = num % 100
-        result = ONES[hundreds_digit] + " HUNDRED"
-        if remainder > 0:
-            if remainder < 10:
-                result = result + " " + ONES[remainder]
-            elif remainder < 20:
-                result = result + " " + TEENS[remainder]
-            else:
-                tens_digit = remainder // 10 * 10
-                ones_digit = remainder % 10
-                if ones_digit == 0:
-                    result = result + " " + TENS[tens_digit]
-                else:
-                    result = result + " " + TENS[tens_digit] + " " + ONES[ones_digit]
-        return result
+        if remainder == 0:
+            return hundreds
+        return hundreds + " " + read_below_hundred(remainder)
 
     return ""
 

@@ -124,15 +124,13 @@ def can_spell(word: str) -> bool:
     if len(word) == 0:
         return True
 
-    # Try 1-letter symbol
-    one = word[0].upper()
-    if one in ELEMENTS and can_spell(word[1:]):
+    one_letter = word[0].upper()
+    if one_letter in ELEMENTS and can_spell(word[1:]):
         return True
 
-    # Try 2-letter symbol
     if len(word) >= 2:
-        two = word[0].upper() + word[1].lower()
-        if two in ELEMENTS and can_spell(word[2:]):
+        two_letter = word[0].upper() + word[1].lower()
+        if two_letter in ELEMENTS and can_spell(word[2:]):
             return True
 
     return False
@@ -143,20 +141,18 @@ def spell_with_elements(word: str) -> list[str] | None:
     if len(word) == 0:
         return []
 
-    # Try 1-letter symbol
-    one = word[0].upper()
-    if one in ELEMENTS:
+    one_letter = word[0].upper()
+    if one_letter in ELEMENTS:
         rest = spell_with_elements(word[1:])
         if rest is not None:
-            return [one] + rest
+            return [one_letter] + rest
 
-    # Try 2-letter symbol
     if len(word) >= 2:
-        two = word[0].upper() + word[1].lower()
-        if two in ELEMENTS:
+        two_letter = word[0].upper() + word[1].lower()
+        if two_letter in ELEMENTS:
             rest = spell_with_elements(word[2:])
             if rest is not None:
-                return [two] + rest
+                return [two_letter] + rest
 
     return None
 

@@ -14,7 +14,6 @@ def binary_search(items: list, target) -> int:
 
 
 if __name__ == "__main__":
-    # Test your function
     items = [2, 3, 5, 7, 11]
     print(binary_search(items, 5))  # 2
     print(binary_search(items, 4))  # -1

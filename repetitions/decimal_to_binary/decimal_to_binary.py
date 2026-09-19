@@ -1,18 +1,14 @@
-# Read decimal number
-q = int(input())
+n = int(input())
 
-# Handle special case of 0
-if q == 0:
+if n == 0:
     result = "0"
 else:
-    # Initialize result as empty string
     result = ""
 
-    # Convert to binary using division algorithm
-    while q > 0:
-        r = q % 2
-        result = str(r) + result
-        q = q // 2
+    # Each remainder is the next binary digit from the right, hence the prepend
+    while n > 0:
+        remainder = n % 2
+        result = str(remainder) + result
+        n = n // 2
 
-# Display result
 print(result)

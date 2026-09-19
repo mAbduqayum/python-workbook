@@ -4,9 +4,7 @@ def count_lines(file_path: str) -> int:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("test.txt", "w") as f:
         f.write("Line 1\nLine 2\nLine 3\n")
 
-    # Test your function
     print(count_lines("test.txt"))  # 3

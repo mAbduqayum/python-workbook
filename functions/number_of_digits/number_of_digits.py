@@ -13,7 +13,6 @@ def number_of_digits(n: int) -> int:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(number_of_digits(123))  # 3
     print(number_of_digits(0))  # 1
     print(number_of_digits(-456))  # 3

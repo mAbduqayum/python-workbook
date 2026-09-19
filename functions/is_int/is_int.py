@@ -16,7 +16,6 @@ def is_int(s: str) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(is_int("123"))  # True
     print(is_int("-456"))  # True
     print(is_int("0"))  # True

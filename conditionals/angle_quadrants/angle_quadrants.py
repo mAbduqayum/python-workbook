@@ -1,6 +1,6 @@
 angle = int(input())
 
-# Normalize angle to 0-360 range
+# Python's % is never negative, so this lands in [0, 360) even for negative angles
 angle = angle % 360
 
 if angle == 0 or angle == 90 or angle == 180 or angle == 270:

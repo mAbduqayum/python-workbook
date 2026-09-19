@@ -8,12 +8,10 @@ def search_lines(file_path: str, term: str) -> list[list[int | str]]:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("code.txt", "w") as f:
         f.write("def hello():\n")
         f.write("    print('Hello')\n")
         f.write("def goodbye():\n")
         f.write("    print('Goodbye')\n")
 
-    # Test your function
     print(search_lines("code.txt", "def"))

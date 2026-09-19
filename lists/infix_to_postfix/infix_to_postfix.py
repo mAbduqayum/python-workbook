@@ -8,17 +8,14 @@ def infix_to_postfix(tokens: list[str]) -> list[str]:
 
     for token in tokens:
         if token.isdigit():
-            # Operand: add to output
             output.append(token)
         elif token == "(":
-            # Left parenthesis: push to stack
             stack.append(token)
         elif token == ")":
-            # Right parenthesis: pop until '('
             while stack and stack[-1] != "(":
                 output.append(stack.pop())
             if stack:
-                stack.pop()  # Remove '('
+                stack.pop()  # discard the '(' rather than sending it to the output
         elif token in operators:
             # Operator: pop higher/equal precedence, then push
             while (
@@ -30,7 +27,6 @@ def infix_to_postfix(tokens: list[str]) -> list[str]:
                 output.append(stack.pop())
             stack.append(token)
 
-    # Pop remaining operators
     while stack:
         output.append(stack.pop())
 
@@ -38,7 +34,6 @@ def infix_to_postfix(tokens: list[str]) -> list[str]:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(infix_to_postfix(["3", "+", "5", "*", "2"]))
     # ['3', '5', '2', '*', '+']
 

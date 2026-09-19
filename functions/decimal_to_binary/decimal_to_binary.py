@@ -11,7 +11,6 @@ def decimal_to_binary(n: int) -> str:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(decimal_to_binary(10))  # "1010"
     print(decimal_to_binary(15))  # "1111"
     print(decimal_to_binary(0))  # "0"

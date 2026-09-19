@@ -126,7 +126,6 @@ def longest_element_sequence(start: str, used: set[str] | None = None) -> list[s
     if used is None:
         used = set()
 
-    # Normalize the element name
     normalized = ELEMENTS_LOWER.get(start.lower())
     if normalized is None:
         return []
@@ -137,7 +136,6 @@ def longest_element_sequence(start: str, used: set[str] | None = None) -> list[s
     used = used | {normalized}
     last_letter = normalized[-1].upper()
 
-    # Find all candidates starting with the last letter
     candidates = [e for e in ELEMENTS if e[0].upper() == last_letter and e not in used]
 
     best_sequence = [normalized]

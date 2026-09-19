@@ -3,7 +3,6 @@ def is_even(n: int) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(is_even(4))  # True
     print(is_even(7))  # False
     print(is_even(0))  # True

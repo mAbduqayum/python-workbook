@@ -6,7 +6,6 @@ def get_hypotenuse(a: float, b: float) -> float:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(get_hypotenuse(3, 4))  # 5.0
     print(get_hypotenuse(5, 12))  # 13.0
     print(get_hypotenuse(8, 15))  # 17.0

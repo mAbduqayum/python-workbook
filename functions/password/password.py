@@ -9,7 +9,7 @@ def password(length: int) -> str:
 
     all_chars = lowercase + uppercase + digits + special
 
-    # Ensure at least one character from each category
+    # Guarantee at least one character from each category
     pwd = [
         random.choice(lowercase),
         random.choice(uppercase),
@@ -17,18 +17,16 @@ def password(length: int) -> str:
         random.choice(special),
     ]
 
-    # Fill the rest randomly
-    for _ in range(length - 4):
+    for _ in range(length - len(pwd)):
         pwd.append(random.choice(all_chars))
 
-    # Shuffle to avoid predictable pattern
+    # Shuffle so the guaranteed characters don't always sit in the first four spots
     random.shuffle(pwd)
 
     return "".join(pwd)
 
 
 if __name__ == "__main__":
-    # Test your function
     print(password(8))  # Random 8-character password
     print(password(12))  # Random 12-character password
     print(password(16))  # Random 16-character password

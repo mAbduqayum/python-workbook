@@ -19,7 +19,6 @@ def is_prime(n: int) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(is_prime(2))  # True
     print(is_prime(17))  # True
     print(is_prime(1))  # False

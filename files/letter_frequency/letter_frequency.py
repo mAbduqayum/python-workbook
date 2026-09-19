@@ -9,12 +9,10 @@ def letter_frequency(file_path: str) -> dict[str, int]:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("sample.txt", "w") as f:
         f.write("Hello World!\n")
         f.write("Python is great.\n")
 
-    # Test your function
     freq = letter_frequency("sample.txt")
     for letter, count in sorted(freq.items()):
         print(f"{letter}: {count}")

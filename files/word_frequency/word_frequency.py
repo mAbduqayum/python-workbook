@@ -4,7 +4,6 @@ def word_frequency(file_path: str) -> dict[str, int]:
         for line in f:
             words = line.split()
             for word in words:
-                # Remove punctuation and convert to lowercase
                 clean_word = word.lower().strip(".,!?;:'\"")
                 if clean_word:
                     if clean_word in freq:
@@ -21,7 +20,6 @@ def word_frequency2(file_path: str) -> dict[str, int]:
     with open(file_path, "r", encoding="utf-8") as f:
         for line in f:
             for word in line.split():
-                # Remove punctuation and convert to lowercase
                 clean_word = word.lower().strip(".,!?;:'\"")
                 if clean_word:
                     words.append(clean_word)
@@ -30,11 +28,9 @@ def word_frequency2(file_path: str) -> dict[str, int]:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("text.txt", "w") as f:
         f.write("Hello world!\n")
         f.write("hello Python, world.\n")
 
-    # Test your functions
     print(word_frequency("text.txt"))  # {'hello': 2, 'world': 2, 'python': 1}
     print(word_frequency2("text.txt"))  # {'hello': 2, 'world': 2, 'python': 1}

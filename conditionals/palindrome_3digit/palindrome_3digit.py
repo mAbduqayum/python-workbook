@@ -1,6 +1,5 @@
 n = int(input())
 
-# Extract digits
 first_digit = n // 100
 last_digit = n % 10
 

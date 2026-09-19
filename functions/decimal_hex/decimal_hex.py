@@ -13,7 +13,6 @@ def decimal_hex(n: int) -> str:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(decimal_hex(10))  # "A"
     print(decimal_hex(255))  # "FF"
     print(decimal_hex(16))  # "10"

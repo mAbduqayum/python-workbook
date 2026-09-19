@@ -24,7 +24,6 @@ def has_six_vowels_in_order(word: str) -> bool:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("words.txt", "w") as f:
         f.write("facetiously\n")
         f.write("abstentiously\n")
@@ -32,7 +31,6 @@ if __name__ == "__main__":
         f.write("hello\n")
         f.write("world\n")
 
-    # Test your function
     words = six_vowel_words("words.txt")
     print(f"Found {len(words)} words with six vowels in order:")
     for word in words:

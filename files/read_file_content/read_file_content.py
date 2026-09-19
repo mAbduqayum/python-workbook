@@ -4,9 +4,7 @@ def read_file_content(file_path: str) -> str:
 
 
 if __name__ == "__main__":
-    # Create a test file
     with open("test.txt", "w") as f:
         f.write("Hello, World!\nThis is a test file.")
 
-    # Test your function
     print(read_file_content("test.txt"))

@@ -19,7 +19,6 @@ for char in password:
 
 has_length = len(password) >= 8
 
-# Count criteria met
 criteria_met = 0
 if has_upper:
     criteria_met += 1

@@ -7,7 +7,6 @@ def are_different_objects(l1: list, l2: list) -> bool:
 
 
 if __name__ == "__main__":
-    # Test your functions
     original = [2, 3, 5, 7, 11]
     copied = copy_list(original)
     print(copied)  # [2, 3, 5, 7, 11]

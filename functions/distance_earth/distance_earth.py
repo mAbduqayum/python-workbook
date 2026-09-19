@@ -2,7 +2,6 @@ import math
 
 
 def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
-    # Convert to radians
     lat1_rad = math.radians(lat1)
     lon1_rad = math.radians(lon1)
     lat2_rad = math.radians(lat2)
@@ -18,14 +17,10 @@ def distance_earth(lat1: float, lon1: float, lat2: float, lon2: float) -> float:
     )
     c = 2 * math.atan2(math.sqrt(a), math.sqrt(1 - a))
 
-    # Earth's radius in kilometers
-    R = 6371
-    distance = R * c
-
-    return distance
+    earth_radius_km = 6371
+    return earth_radius_km * c
 
 
 if __name__ == "__main__":
-    # Test your function
     print(distance_earth(0, 0, 0, 0))  # 0.0
     print(distance_earth(40.7128, -74.0060, 34.0522, -118.2437))  # ~5574 km

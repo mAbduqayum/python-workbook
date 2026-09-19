@@ -13,7 +13,6 @@ def to_base(n: int, base: int) -> str:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(to_base(10, 2))  # "1010"
     print(to_base(255, 16))  # "FF"
     print(to_base(8, 8))  # "10"

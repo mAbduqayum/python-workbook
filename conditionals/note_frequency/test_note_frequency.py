@@ -13,9 +13,9 @@ import pytest
         ("B4", "493.88"),
         ("X4", "Invalid note"),
         ("Z4", "Invalid note"),
-        ("c4", "261.63"),  # Test case insensitivity if implemented
-        ("a4", "440.00"),  # Test case insensitivity if implemented
-        # Extended version tests (if implemented)
+        ("c4", "261.63"),  # lowercase input
+        ("a4", "440.00"),  # lowercase input
+        # Octaves other than 4
         ("C3", "130.81"),
         ("A5", "880.00"),
         ("C5", "523.26"),

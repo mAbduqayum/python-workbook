@@ -13,7 +13,6 @@ def to_matrix2(numbers: list[int], rows: int, cols: int) -> list[list[int]]:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(to_matrix([2, 3, 5, 7, 11, 13], 2, 3))
     # [[2, 3, 5], [7, 11, 13]]
 

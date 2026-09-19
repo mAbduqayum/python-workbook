@@ -11,7 +11,6 @@ def remove_blank_lines(input_path: str, output_path: str) -> int:
 
 
 if __name__ == "__main__":
-    # Create a test file with blank lines
     with open("input.txt", "w") as f:
         f.write("Line 1\n")
         f.write("\n")
@@ -19,10 +18,8 @@ if __name__ == "__main__":
         f.write("   \n")
         f.write("Line 3\n")
 
-    # Test your function
     removed = remove_blank_lines("input.txt", "output.txt")
     print(f"Removed {removed} blank lines")
 
-    # Verify output
     with open("output.txt", "r") as f:
         print(f.read())

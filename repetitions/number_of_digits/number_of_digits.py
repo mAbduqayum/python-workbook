@@ -1,11 +1,9 @@
 n = int(input())
 
-# Handle special case of 0
 if n == 0:
     print(1)
 else:
-    # Take absolute value to handle negative numbers
-    n = abs(n)
+    n = abs(n)  # the minus sign is not a digit
     count = 0
 
     while n > 0:

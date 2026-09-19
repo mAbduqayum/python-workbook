@@ -14,7 +14,6 @@ def filter_list2(l: list, condition: Callable) -> list:
 
 
 if __name__ == "__main__":
-    # Test your function
     def is_even(x):
         return x % 2 == 0
 

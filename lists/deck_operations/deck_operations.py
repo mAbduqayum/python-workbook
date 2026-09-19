@@ -24,7 +24,6 @@ def shuffle_deck(deck: list[str]) -> list[str]:
 
 
 if __name__ == "__main__":
-    # Test your functions
     deck = create_deck()
     print(f"Deck size: {len(deck)}")  # 52
     print(f"First 5 cards: {deck[:5]}")

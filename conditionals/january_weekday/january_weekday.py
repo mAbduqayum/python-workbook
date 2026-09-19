@@ -1,6 +1,6 @@
 year = int(input())
 
-# Calculate day of week for January 1st
+# Gauss's formula: leap days since year 1 shift January 1st's weekday (0 = Sunday)
 day_of_week = (year + (year - 1) // 4 - (year - 1) // 100 + (year - 1) // 400) % 7
 
 if day_of_week == 0:

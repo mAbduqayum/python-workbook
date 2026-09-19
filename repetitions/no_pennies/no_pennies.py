@@ -1,7 +1,5 @@
-# Initialize total
 total = 0
 
-# Read prices until blank line
 price_input = input()
 while price_input != "":
     total += float(price_input)
@@ -18,6 +16,5 @@ else:
 
 cash_payment = cash_payment / 100
 
-# Display results
 print(f"Total: ${total:.2f}")
 print(f"Cash payment: ${cash_payment:.2f}")

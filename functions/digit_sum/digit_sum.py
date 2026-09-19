@@ -10,7 +10,6 @@ def digit_sum(n: int) -> int:
 
 
 if __name__ == "__main__":
-    # Test your function
     print(digit_sum(123))  # 6
     print(digit_sum(0))  # 0
     print(digit_sum(-456))  # 15
