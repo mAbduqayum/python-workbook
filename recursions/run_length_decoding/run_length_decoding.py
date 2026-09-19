@@ -2,7 +2,6 @@ def run_length_decode(encoded: str) -> str:
     if len(encoded) == 0:
         return ""
 
-    # Parse the count (may be multiple digits)
     i = 0
     while i < len(encoded) and encoded[i].isdigit():
         i += 1

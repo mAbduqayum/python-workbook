@@ -5,7 +5,6 @@ def tokenize_expression(expr: str) -> list[str]:
 
     while i < len(expr):
         if expr[i].isdigit():
-            # Accumulate digits for multi-digit numbers
             num = ""
             while i < len(expr) and expr[i].isdigit():
                 num += expr[i]

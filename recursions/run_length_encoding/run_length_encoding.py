@@ -2,7 +2,6 @@ def run_length_encode(text: str) -> str:
     if len(text) == 0:
         return ""
 
-    # Count consecutive occurrences of first character
     char = text[0]
     count = 1
     while count < len(text) and text[count] == char:

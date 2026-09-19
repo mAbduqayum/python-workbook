@@ -17,7 +17,7 @@ def infix_to_postfix(tokens: list[str]) -> list[str]:
             if stack:
                 stack.pop()  # discard the '(' rather than sending it to the output
         elif token in operators:
-            # Operator: pop higher/equal precedence, then push
+            # Pop operators of higher or equal precedence, then push this one
             while (
                 stack
                 and stack[-1] != "("

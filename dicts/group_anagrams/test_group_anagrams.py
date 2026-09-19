@@ -10,13 +10,15 @@ pytestmark = pytest.mark.skipif(
 )
 
 
+def normalized(groups: list[list[str]]) -> list[list[str]]:
+    """Sort within and across groups, since the exercise fixes neither order."""
+    return sorted(sorted(group) for group in groups)
+
+
 def test_basic():
     result = group_anagrams(["eat", "tea", "tan", "ate", "nat", "bat"])
-    # Sort each group and the list of groups for comparison
-    result_sorted = [sorted(group) for group in result]
-    result_sorted.sort()
     expected = [["ate", "eat", "tea"], ["bat"], ["nat", "tan"]]
-    assert result_sorted == expected
+    assert normalized(result) == expected
 
 
 def test_no_anagrams():
@@ -47,7 +49,5 @@ def test_empty_strings():
 
 def test_single_char_words():
     result = group_anagrams(["a", "b", "a"])
-    result_sorted = [sorted(group) for group in result]
-    result_sorted.sort()
     expected = [["a", "a"], ["b"]]
-    assert result_sorted == expected
+    assert normalized(result) == expected
