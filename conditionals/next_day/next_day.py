@@ -23,4 +23,4 @@ if next_day > days_in_month:
         next_month = 1
         next_year += 1
 
-print(f"{next_year}-{next_month:02d}-{next_day:02d}")
+print(next_year, next_month, next_day)

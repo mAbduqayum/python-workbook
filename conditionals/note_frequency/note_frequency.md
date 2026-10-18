@@ -1,8 +1,8 @@
 # Note to Frequency
 
-Write a program that reads the name of a musical note from the user and displays the note's frequency. The basic version supports the 4th-octave notes in the table below; as an optional challenge, extend it to support all notes from C0 to C8.
+Write a program that reads the name of a musical note from the user (case-insensitive) and displays the note's frequency. Support all notes from C0 to C8: the table below lists the 4th octave, and each octave up doubles the frequency (each octave down halves it).
 
-## Basic Note Frequencies (4th Octave)
+## Note Frequencies (4th Octave)
 | Note | Frequency (Hz) |
 |------|----------------|
 | C4   | 261.63         |
@@ -14,15 +14,7 @@ Write a program that reads the name of a musical note from the user and displays
 | B4   | 493.88         |
 
 ## Examples
-**Example 1 (Basic):**
-```
-C4
-```
-```
-261.63
-```
-
-**Example 2 (Basic):**
+**Example 1:**
 ```
 A4
 ```
@@ -30,23 +22,15 @@ A4
 440.00
 ```
 
-**Example 3 (Extended):**
+**Example 2:**
 ```
 C3
 ```
 ```
-130.82
+130.81
 ```
 
-**Example 4 (Extended):**
-```
-A5
-```
-```
-880.00
-```
-
-**Example 5 (Invalid):**
+**Example 3:**
 ```
 X4
 ```

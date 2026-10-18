@@ -24,54 +24,6 @@ Infant
 
 **Example 2:**
 ```
-4
-```
-```
-Toddler
-```
-
-**Example 3:**
-```
-8
-```
-```
-Child
-```
-
-**Example 4:**
-```
-15
-```
-```
-Adolescent
-```
-
-**Example 5:**
-```
-25
-```
-```
-Young Adult
-```
-
-**Example 6:**
-```
-50
-```
-```
-Middle-aged
-```
-
-**Example 7:**
-```
-70
-```
-```
-Senior
-```
-
-**Example 8:**
-```
 -5
 ```
 ```

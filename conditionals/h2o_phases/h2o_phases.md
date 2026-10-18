@@ -23,23 +23,3 @@ Write a program that determines the phase of water based on temperature.
 ```
 solid
 ```
-
-**Example 2:**
-
-```
-25
-```
-
-```
-liquid
-```
-
-**Example 3:**
-
-```
-0
-```
-
-```
-solid or liquid
-```

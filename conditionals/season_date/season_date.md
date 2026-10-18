@@ -13,54 +13,9 @@ Write a program that determines the season based on a given month and day.
 ## Examples
 **Example 1:**
 ```
-March
-25
-```
-```
-Spring
-```
-
-**Example 2:**
-```
 june
 15
 ```
 ```
 Spring
-```
-
-**Example 3:**
-```
-July
-4
-```
-```
-Summer
-```
-
-**Example 4:**
-```
-October
-31
-```
-```
-Fall
-```
-
-**Example 5:**
-```
-December
-25
-```
-```
-Winter
-```
-
-**Example 6:**
-```
-January
-15
-```
-```
-Winter
 ```

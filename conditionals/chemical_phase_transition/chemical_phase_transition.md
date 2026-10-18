@@ -40,21 +40,3 @@ solid
 ```
 freezing
 ```
-
-**Example 2:**
-```
-plasma
-plasma
-```
-```
-No transition
-```
-
-**Example 3:**
-```
-solid
-plasma
-```
-```
-Cannot transition directly
-```

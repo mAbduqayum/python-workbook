@@ -33,15 +33,6 @@ Independence Day
 
 **Example 2:**
 ```
-3
-20
-```
-```
-Navruz (Persian New Year)
-```
-
-**Example 3:**
-```
 12
 25
 ```

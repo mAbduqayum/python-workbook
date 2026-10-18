@@ -13,10 +13,10 @@ elif discriminant == 0:
     # -b / (2a) can be -0.0, which would print as "-0.00"
     if root == 0:
         root = 0
-    print(f"1 root: {root:.2f}")
+    print(f"{root:.2f}")
 else:
     root1 = (-b + math.sqrt(discriminant)) / (2 * a)
     root2 = (-b - math.sqrt(discriminant)) / (2 * a)
     if root1 > root2:
         root1, root2 = root2, root1
-    print(f"2 roots: {root1:.2f} and {root2:.2f}")
+    print(f"{root1:.2f} {root2:.2f}")

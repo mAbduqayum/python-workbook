@@ -1,6 +1,6 @@
 # Exercise: Next Day
 
-Write a program that reads a date and computes its immediate successor (next day).
+Write a program that reads a date and computes its immediate successor (next day). Print the year, month, and day of the next day on one line, separated by spaces.
 
 ## Examples
 **Example 1:** (Regular day)
@@ -10,7 +10,7 @@ Write a program that reads a date and computes its immediate successor (next day
 18
 ```
 ```
-2019-11-19
+2019 11 19
 ```
 
 **Example 2:** (End of month)
@@ -20,7 +20,7 @@ Write a program that reads a date and computes its immediate successor (next day
 30
 ```
 ```
-2019-12-01
+2019 12 1
 ```
 
 **Example 3:** (End of year)
@@ -30,7 +30,7 @@ Write a program that reads a date and computes its immediate successor (next day
 31
 ```
 ```
-2020-01-01
+2020 1 1
 ```
 
 **Example 4:** (Leap year)
@@ -40,7 +40,7 @@ Write a program that reads a date and computes its immediate successor (next day
 28
 ```
 ```
-2020-02-29
+2020 2 29
 ```
 
 **Example 5:** (Non-leap year)
@@ -50,7 +50,7 @@ Write a program that reads a date and computes its immediate successor (next day
 28
 ```
 ```
-2021-03-01
+2021 3 1
 ```
 
 ## Days in Each Month

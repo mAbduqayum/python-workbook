@@ -1,6 +1,6 @@
 # Exercise: Roots of a Quadratic Function
 
-Write a program that computes the real roots of a quadratic function using the quadratic formula.
+Write a program that computes the real roots of a quadratic function using the quadratic formula. Print each root with 2 decimal places; when there are two, print them on one line, smallest first, separated by a space.
 
 ## Quadratic Formula
 For equation `ax² + bx + c = 0`:
@@ -20,7 +20,7 @@ For equation `ax² + bx + c = 0`:
 6
 ```
 ```
-2 roots: 2.00 and 3.00
+2.00 3.00
 ```
 
 **Example 2:** (One root)
@@ -30,7 +30,7 @@ For equation `ax² + bx + c = 0`:
 4
 ```
 ```
-1 root: 2.00
+2.00
 ```
 
 **Example 3:** (No real roots)
@@ -41,14 +41,4 @@ For equation `ax² + bx + c = 0`:
 ```
 ```
 No real roots
-```
-
-**Example 4:** (Two roots)
-```
-2
--7
-3
-```
-```
-2 roots: 0.50 and 3.00
 ```

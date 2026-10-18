@@ -51,16 +51,6 @@ ascending
 
 **Example 5:**
 ```
-8
-4
-4
-```
-```
-descending
-```
-
-**Example 6:**
-```
 2
 2
 2

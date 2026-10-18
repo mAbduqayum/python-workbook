@@ -47,13 +47,3 @@ not between
 ```
 between
 ```
-
-**Example 5:**
-```
-10
-5
-5
-```
-```
-between
-```

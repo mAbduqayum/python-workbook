@@ -35,15 +35,3 @@ valid triangle
 ```
 invalid triangle
 ```
-
-**Example 3:**
-
-```
-1
-1
-3
-```
-
-```
-invalid triangle
-```

@@ -18,27 +18,3 @@ palindrome
 ```
 not palindrome
 ```
-
-**Example 3:**
-```
-9009
-```
-```
-palindrome
-```
-
-**Example 4:**
-```
-7337
-```
-```
-palindrome
-```
-
-**Example 5:**
-```
-5678
-```
-```
-not palindrome
-```

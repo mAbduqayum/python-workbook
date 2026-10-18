@@ -18,11 +18,3 @@ palindrome
 ```
 not palindrome
 ```
-
-**Example 3:**
-```
-505
-```
-```
-palindrome
-```
