@@ -12,5 +12,3 @@ def divisors2(n: int) -> list[int]:
 
 if __name__ == "__main__":
     print(divisors(12))  # [1, 2, 3, 4, 6, 12]
-    print(divisors(7))  # [1, 7]
-    print(divisors(1))  # [1]

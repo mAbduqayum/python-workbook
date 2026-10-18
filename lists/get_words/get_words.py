@@ -4,5 +4,4 @@ def get_words(sentence: str) -> list[str]:
 
 if __name__ == "__main__":
     print(get_words("Hello world"))  # ["Hello", "world"]
-    print(get_words("Python is fun"))  # ["Python", "is", "fun"]
     print(get_words(""))  # []

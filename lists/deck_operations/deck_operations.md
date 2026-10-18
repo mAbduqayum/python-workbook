@@ -5,7 +5,7 @@ Create and shuffle a deck of playing cards.
 ## Task
 
 - Create a function `create_deck()` that generates a standard 52-card deck
-- Create a function `shuffle_deck(deck)` that shuffles the deck
+- Create a function `shuffle_deck(deck)` that returns a shuffled copy of the deck, leaving the original unchanged
 
 ## Cards
 
