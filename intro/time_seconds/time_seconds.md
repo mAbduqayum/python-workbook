@@ -1,6 +1,6 @@
 # Exercise: Time Converter
 
-Write a program that converts total seconds into minutes and remaining seconds.
+Write a program that converts total seconds into minutes and remaining seconds. Print the minutes and the remaining seconds on one line, separated by a space.
 
 ## Examples
 
@@ -11,25 +11,15 @@ Write a program that converts total seconds into minutes and remaining seconds.
 ```
 
 ```
-125 second(s) = 2 minute(s) and 5 second(s)
+2 5
 ```
 
 **Example 2:**
 
 ```
-90
+45
 ```
 
 ```
-90 second(s) = 1 minute(s) and 30 second(s)
-```
-
-**Example 3:**
-
-```
-200
-```
-
-```
-200 second(s) = 3 minute(s) and 20 second(s)
+0 45
 ```

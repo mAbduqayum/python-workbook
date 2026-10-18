@@ -14,26 +14,6 @@ Write a program that calculates the sum of all positive integers from 1 to n usi
 15
 ```
 
-**Example 2:**
-
-```
-10
-```
-
-```
-55
-```
-
-**Example 3:**
-
-```
-100
-```
-
-```
-5050
-```
-
 ## Formula
 
 `sum = n × (n + 1) / 2`

@@ -16,30 +16,6 @@ Enter temperature (°C): 20
 Amount of gas: 98.47 moles
 ```
 
-**Example 2:**
-
-```
-Enter pressure (Pascals): 101325
-Enter volume (liters): 22.4
-Enter temperature (°C): 0
-```
-
-```
-Amount of gas: 1.00 moles
-```
-
-**Example 3:**
-
-```
-Enter pressure (Pascals): 500000
-Enter volume (liters): 5
-Enter temperature (°C): 25
-```
-
-```
-Amount of gas: 1.01 moles
-```
-
 ## Formula
 
 `PV = nRT` → `n = PV / (RT)` where:

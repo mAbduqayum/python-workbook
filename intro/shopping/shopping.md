@@ -14,25 +14,3 @@ Enter quantity: 3
 ```
 37.50
 ```
-
-**Example 2:**
-
-```
-Enter price: 8.99
-Enter quantity: 2
-```
-
-```
-17.98
-```
-
-**Example 3:**
-
-```
-Enter price: 15.00
-Enter quantity: 4
-```
-
-```
-60.00
-```

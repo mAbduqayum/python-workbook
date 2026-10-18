@@ -18,23 +18,3 @@ Enter your name: Farid
 ```
 Hello Farid!
 ```
-
-**Example 2:**
-
-```
-Enter your name: Gulnora
-```
-
-```
-Hello Gulnora!
-```
-
-**Example 3:**
-
-```
-Enter your name: Davron
-```
-
-```
-Hello Davron!
-```

@@ -15,27 +15,3 @@ Write a program that calculates the average of three numbers.
 ```
 20.00
 ```
-
-**Example 2:**
-
-```
-5
-15
-25
-```
-
-```
-15.00
-```
-
-**Example 3:**
-
-```
-8
-12
-16
-```
-
-```
-12.00
-```

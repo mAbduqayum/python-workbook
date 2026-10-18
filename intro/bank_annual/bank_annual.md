@@ -13,31 +13,7 @@ Enter number of years: 3
 ```
 
 ```
-Balance after 3 year(s): 1141.17
-```
-
-**Example 2:**
-
-```
-Enter initial deposit: 2500.00
-Enter annual interest rate (%): 3.25
-Enter number of years: 5
-```
-
-```
-Balance after 5 year(s): 2933.53
-```
-
-**Example 3:**
-
-```
-Enter initial deposit: 500.00
-Enter annual interest rate (%): 2.8
-Enter number of years: 1
-```
-
-```
-Balance after 1 year(s): 514.00
+1141.17
 ```
 
 ## Formula

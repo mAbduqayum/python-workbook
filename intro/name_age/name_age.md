@@ -20,25 +20,3 @@ Enter your age: 22
 ```
 Hello Farid, you are 22 years old.
 ```
-
-**Example 2:**
-
-```
-Enter your name: Gulnora
-Enter your age: 35
-```
-
-```
-Hello Gulnora, you are 35 years old.
-```
-
-**Example 3:**
-
-```
-Enter your name: Davron
-Enter your age: 18
-```
-
-```
-Hello Davron, you are 18 years old.
-```

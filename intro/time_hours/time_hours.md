@@ -1,6 +1,6 @@
 # Exercise: Time Hours Converter
 
-Write a program that converts total hours into days, hours, and minutes.
+Write a program that converts total hours into days, hours, and minutes. Print the days, hours, and minutes on one line, separated by spaces.
 
 ## Examples
 
@@ -11,25 +11,15 @@ Write a program that converts total hours into days, hours, and minutes.
 ```
 
 ```
-26.5 hours = 1 days, 2 hours, and 30 minutes
+1 2 30
 ```
 
 **Example 2:**
-
-```
-50.25
-```
-
-```
-50.25 hours = 2 days, 2 hours, and 15 minutes
-```
-
-**Example 3:**
 
 ```
 10.75
 ```
 
 ```
-10.75 hours = 0 days, 10 hours, and 45 minutes
+0 10 45
 ```

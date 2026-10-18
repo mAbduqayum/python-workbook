@@ -15,28 +15,6 @@ Temperature in Fahrenheit: 77.00
 Temperature in Kelvin: 298.15
 ```
 
-**Example 2:**
-
-```
-0
-```
-
-```
-Temperature in Fahrenheit: 32.00
-Temperature in Kelvin: 273.15
-```
-
-**Example 3:**
-
-```
-100
-```
-
-```
-Temperature in Fahrenheit: 212.00
-Temperature in Kelvin: 373.15
-```
-
 ## Formula
 
 - Fahrenheit: `F = (C × 9/5) + 32`

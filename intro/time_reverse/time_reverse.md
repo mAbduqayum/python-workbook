@@ -1,6 +1,6 @@
 # Exercise: Units of Time (Again)
 
-Write a program that converts total seconds into `D:HH:MM:SS` format.
+Write a program that converts total seconds into days, hours, minutes, and seconds. Print them on one line, separated by spaces.
 
 ## Examples
 
@@ -11,25 +11,15 @@ Write a program that converts total seconds into `D:HH:MM:SS` format.
 ```
 
 ```
-2:03:45:30
+2 3 45 30
 ```
 
 **Example 2:**
-
-```
-88200
-```
-
-```
-1:00:30:00
-```
-
-**Example 3:**
 
 ```
 8145
 ```
 
 ```
-0:02:15:45
+0 2 15 45
 ```

@@ -15,28 +15,6 @@ Enter side length: 4
 41.57
 ```
 
-**Example 2:**
-
-```
-Enter number of sides: 8
-Enter side length: 3
-```
-
-```
-43.46
-```
-
-**Example 3:**
-
-```
-Enter number of sides: 5
-Enter side length: 5
-```
-
-```
-43.01
-```
-
 ## Formula
 
 `Area = (n × s²) / (4 × tan(π/n))` where:
