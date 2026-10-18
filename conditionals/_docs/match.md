@@ -1,6 +1,6 @@
 # Match Statement
 
-## Python Match Statement (Python 3.10+)
+## Python Match Statement
 
 The `match` statement provides pattern matching similar to switch statements in other languages, but more powerful. It's
 particularly useful when you have multiple discrete values to check against.

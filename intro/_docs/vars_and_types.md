@@ -57,16 +57,8 @@ name = input("Enter your name: ")  # Always returns a string
 age_str = input("Enter your age: ")  # This is a string, not a number
 ```
 
-The prompt text is **optional**, and its wording is up to you. Writing
-`input()` with no prompt works exactly the same: the exercise checker never
-sees your prompts, only the values you read and what you print. So all of
-these are accepted:
-
-```python
-name = input("Enter your name: ")  # with a prompt
-name = input("Your name? ")        # any wording — also fine
-name = input()                     # no prompt — also fine
-```
+The prompt text is **optional**, and its wording is up to you (see
+[`working_through_an_exercise.md`](working_through_an_exercise.md#prompts-are-optional)).
 
 ### Displaying output
 
@@ -227,12 +219,5 @@ print(meters, cm)
 | Get string input  | `name = input("Name: ")`          | String  |
 | Get integer input | `age = int(input("Age: "))`       | Integer |
 | Get float input   | `price = float(input("Price: "))` | Float   |
-| Addition          | `5 + 3`                           | 8       |
-| Subtraction       | `5 - 3`                           | 2       |
-| Multiplication    | `5 * 3`                           | 15      |
-| Division          | `5 / 3`                           | 1.666...|
-| Integer division  | `5 // 3`                          | 1       |
-| Remainder         | `5 % 3`                           | 2       |
-| Power             | `5 ** 3`                          | 125     |
 | Print simple      | `print("Hello")`                  | Hello   |
 | Print variable    | `print(f"Age: {age}")`            | Age: 25 |

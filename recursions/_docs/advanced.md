@@ -92,37 +92,3 @@ def subsets(lst):
 print(subsets([1, 2, 3]))
 # [[], [3], [2], [2,3], [1], [1,3], [1,2], [1,2,3]]
 ```
-
-## Directory Tree (Conceptual)
-
-```python
-import os
-
-def list_files(path):
-    for item in os.listdir(path):
-        full_path = os.path.join(path, item)
-        if os.path.isdir(full_path):
-            list_files(full_path)  # recurse into subdirectory
-        else:
-            print(full_path)
-```
-
-## Tail Recursion
-
-When recursive call is the last operation:
-
-```python
-# Not tail recursive (multiplication after call)
-def factorial(n):
-    if n <= 1:
-        return 1
-    return n * factorial(n - 1)
-
-# Tail recursive (nothing after call)
-def factorial_tail(n, acc=1):
-    if n <= 1:
-        return acc
-    return factorial_tail(n - 1, n * acc)
-```
-
-Note: Python doesn't optimize tail recursion, but it's a useful pattern for converting to loops.

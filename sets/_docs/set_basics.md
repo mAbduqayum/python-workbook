@@ -72,17 +72,6 @@ s = {"apple", "banana", "cherry"}
 | Mathematical operations | Union, intersection, difference built-in        |
 | Tracking seen items     | Perfect for "have I seen this before?" patterns |
 
-## Set vs List: Performance Comparison
-
-```python
-# Checking if item exists:
-my_list = [1, 2, 3, ..., 1000000]
-my_set = {1, 2, 3, ..., 1000000}
-
-999999 in my_list  # O(n) - slow, checks each element
-999999 in my_set   # O(1) - fast, uses hash lookup
-```
-
 ## Frozen Sets
 
 If you need an immutable set (e.g., to use as a dictionary key), use `frozenset`:

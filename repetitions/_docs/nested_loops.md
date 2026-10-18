@@ -1,8 +1,7 @@
 # Repetition in Python - Nested Loops
 
 A loop inside another loop is called a **nested loop**. The inner loop executes
-completely for each iteration of the
-outer loop.
+completely for each iteration of the outer loop.
 
 ## Example: Triangle of Numbers
 

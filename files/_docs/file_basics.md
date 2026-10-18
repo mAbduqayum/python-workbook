@@ -12,12 +12,12 @@ file.close()
 
 ### File Modes
 
-| Mode | Description |
-|------|-------------|
-| `'r'` | Read (default) - file must exist |
-| `'w'` | Write - creates new or truncates existing |
+| Mode  | Description                                 |
+|-------|---------------------------------------------|
+| `'r'` | Read (default) - file must exist            |
+| `'w'` | Write - creates new or truncates existing   |
 | `'a'` | Append - creates new or appends to existing |
-| `'x'` | Exclusive create - fails if file exists |
+| `'x'` | Exclusive create - fails if file exists     |
 
 ## Context Managers
 

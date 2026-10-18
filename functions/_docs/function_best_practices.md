@@ -96,46 +96,18 @@ def add_to_total(value):
     total += value
 ```
 
-### 5. Use Type Hints
+### 5. Use Type Hints and Docstrings
 
-Make your function expectations clear:
+Type hints make a function's expectations clear, and a docstring explains what it does. See
+[`type_hints_docstrings.md`](type_hints_docstrings.md) for details.
 
 ```python
-# Good - clear expectations
 def calculate_discount(price: float, discount_percent: float) -> float:
+    """Return the price after a percentage discount."""
     return price * (1 - discount_percent / 100)
-
-# Less clear
-def calculate_discount(price, discount):
-    return price * (1 - discount / 100)
 ```
 
-### 6. Document Complex Functions
-
-Use docstrings for non-trivial functions:
-
-```python
-import math
-
-def normalize_fraction(numerator: int, denominator: int) -> tuple:
-    """
-    Reduce a fraction to its simplest form.
-
-    Parameters:
-        numerator: The top number of the fraction
-        denominator: The bottom number of the fraction
-
-    Returns:
-        A tuple (num, denom) in the simplest form
-
-    Example:
-        normalize_fraction(6, 9) returns (2, 3)
-    """
-    gcd = math.gcd(numerator, denominator)
-    return numerator // gcd, denominator // gcd
-```
-
-### 7. Return Early for Validation
+### 6. Return Early for Validation
 
 Handle edge cases early with early returns:
 

@@ -50,11 +50,11 @@ finally:
     print("Done")
 ```
 
-| Clause    | When It Runs                          |
-|-----------|---------------------------------------|
-| `except`  | Only if an exception occurred         |
-| `else`    | Only if NO exception occurred         |
-| `finally` | ALWAYS runs (exception or not)        |
+| Clause    | When It Runs                   |
+|-----------|--------------------------------|
+| `except`  | Only if an exception occurred  |
+| `else`    | Only if NO exception occurred  |
+| `finally` | ALWAYS runs (exception or not) |
 
 ## Catching All Exceptions
 
@@ -118,27 +118,27 @@ with (
 
 ## Common Built-in Exceptions
 
-| Exception            | When It Occurs                        |
-|----------------------|---------------------------------------|
-| `ValueError`         | Wrong value type/content              |
-| `TypeError`          | Wrong type for operation              |
-| `KeyError`           | Dictionary key not found              |
-| `IndexError`         | List index out of range               |
-| `AttributeError`     | Attribute doesn't exist               |
-| `FileNotFoundError`  | File doesn't exist                    |
-| `OSError`            | File or system operation failed       |
-| `ImportError`        | Module import failed                  |
-| `ZeroDivisionError`  | Division by zero                      |
-| `RuntimeError`       | Generic runtime error                 |
+| Exception           | When It Occurs                  |
+|---------------------|---------------------------------|
+| `ValueError`        | Wrong value type/content        |
+| `TypeError`         | Wrong type for operation        |
+| `KeyError`          | Dictionary key not found        |
+| `IndexError`        | List index out of range         |
+| `AttributeError`    | Attribute doesn't exist         |
+| `FileNotFoundError` | File doesn't exist              |
+| `OSError`           | File or system operation failed |
+| `ImportError`       | Module import failed            |
+| `ZeroDivisionError` | Division by zero                |
+| `RuntimeError`      | Generic runtime error           |
 
 ## Best Practices
 
-| Do ✅                              | Don't ❌                               |
-|------------------------------------|----------------------------------------|
+| Do ✅                              | Don't ❌                                   |
+|------------------------------------|--------------------------------------------|
 | Catch specific exceptions          | Catch generic `Exception` or bare `except` |
-| Use context managers for resources | Leave files/connections open           |
-| Validate early, fail fast          | Silently ignore errors                 |
-| Clean up in `finally`              | Use empty `except: pass` blocks        |
+| Use context managers for resources | Leave files/connections open               |
+| Validate early, fail fast          | Silently ignore errors                     |
+| Clean up in `finally`              | Use empty `except: pass` blocks            |
 
 ```python
 # ❌ Bad: Silencing errors

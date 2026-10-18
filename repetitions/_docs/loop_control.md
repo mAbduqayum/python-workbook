@@ -39,8 +39,7 @@ for i in range(1, 11):
 
 ## `else` After Loops
 
-- Python supports an `else` clause on loops that executes when the loop
-  completes without hitting a `break`. While this
-  feature exists, it's not commonly used and can be confusing since it's unique
-  to Python and not available in most other
-  programming languages. We recommend avoiding it for clarity.
+Python supports an `else` clause on loops that executes when the loop completes
+without hitting a `break`. While this feature exists, it's not commonly used and
+can be confusing since it's unique to Python and not available in most other
+programming languages. We recommend avoiding it for clarity.

@@ -32,12 +32,12 @@ print(list2)  # [1, 2, 3, 4]
 
 | Method             | Syntax                 | Creates New List | Notes                             |
 |--------------------|------------------------|------------------|-----------------------------------|
-| Assignment (NO!)   | `list2 = list1`        | ❌ No             | Both variables point to same list |
-| `.copy()` method   | `list2 = list1.copy()` | ✅ Yes            | Recommended for clarity           |
-| Slice notation     | `list2 = list1[:]`     | ✅ Yes            | Common idiom                      |
-| `list()` function  | `list2 = list(list1)`  | ✅ Yes            | Explicit conversion               |
-| `copy` module      | `copy.copy(list1)`     | ✅ Yes            | For shallow copy                  |
-| `copy` module deep | `copy.deepcopy(list1)` | ✅ Yes            | For nested lists (deep copy)      |
+| Assignment (NO!)   | `list2 = list1`        | ❌ No            | Both variables point to same list |
+| `.copy()` method   | `list2 = list1.copy()` | ✅ Yes           | Recommended for clarity           |
+| Slice notation     | `list2 = list1[:]`     | ✅ Yes           | Common idiom                      |
+| `list()` function  | `list2 = list(list1)`  | ✅ Yes           | Explicit conversion               |
+| `copy` module      | `copy.copy(list1)`     | ✅ Yes           | For shallow copy                  |
+| `copy` module deep | `copy.deepcopy(list1)` | ✅ Yes           | For nested lists (deep copy)      |
 
 ```python
 original = [1, 2, 3]

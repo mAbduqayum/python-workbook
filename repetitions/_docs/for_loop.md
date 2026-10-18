@@ -3,11 +3,9 @@
 ## Introduction
 
 In the previous chapters, you worked with sequential programs and programs that
-use conditional statements to make
-decisions.
-While these constructs are powerful, many interesting problems require executing
-the same code multiple times. For
-example:
+use conditional statements to make decisions. While these constructs are
+powerful, many interesting problems require executing the same code multiple
+times. For example:
 
 - Printing a pattern with 100 rows
 - Reading values until the user enters a specific value
@@ -15,8 +13,7 @@ example:
 - Finding the sum of numbers from 1 to 1000
 
 Writing the same code repeatedly would be impractical and error-prone. **Loops**
-allow you to execute a block of code
-multiple times efficiently.
+allow you to execute a block of code multiple times efficiently.
 
 ## The Two Types of Loops
 
