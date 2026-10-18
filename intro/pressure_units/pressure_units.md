@@ -16,30 +16,6 @@ Pressure in bars: 1.01
 Pressure in atmospheres: 1.00
 ```
 
-**Example 2:**
-
-```
-200
-```
-
-```
-Pressure in pascals: 200000.00
-Pressure in bars: 2.00
-Pressure in atmospheres: 1.97
-```
-
-**Example 3:**
-
-```
-50
-```
-
-```
-Pressure in pascals: 50000.00
-Pressure in bars: 0.50
-Pressure in atmospheres: 0.49
-```
-
 ## Formula
 
 - Pascals: `Pa = kPa × 1000`

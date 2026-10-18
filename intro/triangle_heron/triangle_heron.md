@@ -16,30 +16,6 @@ Write a program that calculates the area of a triangle using Heron's formula giv
 6.00
 ```
 
-**Example 2:**
-
-```
-5
-6
-7
-```
-
-```
-14.70
-```
-
-**Example 3:**
-
-```
-10
-10
-12
-```
-
-```
-48.00
-```
-
 ## Formula
 
 - `s = (s1 + s2 + s3) / 2` (semi-perimeter)

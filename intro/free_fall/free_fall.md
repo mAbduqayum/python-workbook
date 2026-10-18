@@ -14,26 +14,6 @@ Write a program that calculates how fast an object is traveling when it hits the
 Final velocity: 14.00 m/s
 ```
 
-**Example 2:**
-
-```
-50
-```
-
-```
-Final velocity: 31.30 m/s
-```
-
-**Example 3:**
-
-```
-100
-```
-
-```
-Final velocity: 44.27 m/s
-```
-
 ## Formula
 
 `vf = √(vi² + 2ad)` where:
