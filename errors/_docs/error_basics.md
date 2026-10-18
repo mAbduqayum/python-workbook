@@ -23,24 +23,31 @@ except ValueError:
     print("That's not a valid number!")
 except ZeroDivisionError:
     print("Cannot divide by zero!")
-except (TypeError, AttributeError) as e:  # Catch multiple in one block
-    print(f"Type or attribute error: {e}")
+```
+
+To handle several exceptions the same way, list them in a tuple:
+
+```python
+try:
+    value = int(input("Enter a number: "))
+    result = 10 / value
+except (ValueError, ZeroDivisionError) as e:
+    print(f"Invalid input: {e}")
 ```
 
 ## The Full try/except/else/finally Pattern
 
 ```python
 try:
-    file = open("data.txt", "r")
-    data = file.read()
-except FileNotFoundError:
-    print("File not found!")
+    value = int(input("Enter a number: "))
+except ValueError:
+    print("That's not a valid number!")
 else:
     # Runs only if NO exception occurred
-    print(f"Read {len(data)} characters")
+    print(f"You entered {value}")
 finally:
     # ALWAYS runs, regardless of exceptions
-    print("Cleanup complete")
+    print("Done")
 ```
 
 | Clause    | When It Runs                          |
@@ -98,11 +105,14 @@ Context managers automatically handle cleanup, even when exceptions occur:
 
 ```python
 # Automatically closes file, even with exceptions
-with open("data.txt", "r") as file:
+with open("data.txt", "r", encoding="utf-8") as file:
     data = file.read()
 
 # Multiple resources
-with open("input.txt") as infile, open("output.txt", "w") as outfile:
+with (
+    open("input.txt", encoding="utf-8") as infile,
+    open("output.txt", "w", encoding="utf-8") as outfile,
+):
     outfile.write(infile.read())
 ```
 
@@ -116,7 +126,7 @@ with open("input.txt") as infile, open("output.txt", "w") as outfile:
 | `IndexError`         | List index out of range               |
 | `AttributeError`     | Attribute doesn't exist               |
 | `FileNotFoundError`  | File doesn't exist                    |
-| `IOError`            | I/O operation failed                  |
+| `OSError`            | File or system operation failed       |
 | `ImportError`        | Module import failed                  |
 | `ZeroDivisionError`  | Division by zero                      |
 | `RuntimeError`       | Generic runtime error                 |

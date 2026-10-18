@@ -23,3 +23,19 @@ Comparison operators allow you to compare values and return boolean results (`Tr
 | `<=`     | `3 <= 5`<br>`5 <= 5`<br>`7 <= 5`             | `True`<br>`True`<br>`False`  |
 | `>`      | `5 > 3`<br>`3 > 5`<br>`5 > 5`                | `True`<br>`False`<br>`False` |
 | `>=`     | `5 >= 3`<br>`5 >= 5`<br>`3 >= 5`             | `True`<br>`True`<br>`False`  |
+
+## Chained Comparisons
+
+Comparisons can be chained, just like in math. Each neighboring pair is
+compared, and the chain is `True` only if every comparison is `True`:
+
+| Chained         | Same as                     |
+|-----------------|-----------------------------|
+| `0 <= x < 10`   | `0 <= x and x < 10`         |
+| `a == b == c`   | `a == b and b == c`         |
+| `a < b < c < d` | `a < b and b < c and c < d` |
+
+```python
+age = 15
+print(13 <= age <= 19)  # True - age is in the teens
+```

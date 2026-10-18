@@ -118,12 +118,29 @@ temperature = int(input())
 match temperature:
     case temp if temp < 0:
         print("freezing")
-    case temp if 0 <= temp < 20:
+    case temp if temp < 20:
         print("cold")
-    case temp if 20 <= temp < 30:
+    case temp if temp < 30:
         print("warm")
-    case temp if temp >= 30:
+    case _:
         print("hot")
+```
+
+Cases are checked from top to bottom, so `cold` doesn't need `0 <= temp`:
+any temperature below 0 already matched `freezing`.
+
+Guards work, but when every case is a guard, as here, an `if-elif` chain
+says the same thing more simply:
+
+```python
+if temperature < 0:
+    print("freezing")
+elif temperature < 20:
+    print("cold")
+elif temperature < 30:
+    print("warm")
+else:
+    print("hot")
 ```
 
 ## Common Match Patterns
@@ -137,3 +154,4 @@ match temperature:
 - Use `match` when checking a single variable against multiple discrete values
 - Use `if-elif` when you need complex boolean conditions or range checking
 - `match` is cleaner for value-based branching, `if-elif` is better for condition-based logic
+- Guards are for the occasional condition inside a `match`; if every case needs one, switch to `if-elif`

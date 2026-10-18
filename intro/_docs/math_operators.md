@@ -42,6 +42,27 @@ Python follows the standard mathematical order of operations:
 | `10 - 2 ** 3`   | `10 - 8`      | `2`    |
 | `(10 - 2) ** 2` | `8 ** 2`      | `64`   |
 
+## Augmented Assignment
+
+Updating a variable with its own value is so common that every operator has
+a shortcut:
+
+| Shortcut  | Same as      |
+|-----------|--------------|
+| `x += 3`  | `x = x + 3`  |
+| `x -= 3`  | `x = x - 3`  |
+| `x *= 3`  | `x = x * 3`  |
+| `x /= 3`  | `x = x / 3`  |
+| `x //= 3` | `x = x // 3` |
+| `x %= 3`  | `x = x % 3`  |
+| `x **= 3` | `x = x ** 3` |
+
+```python
+balance = 100
+balance += 50   # 150
+balance *= 2    # 300
+```
+
 ## Common Use Cases
 
 ### Basic calculations

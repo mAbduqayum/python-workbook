@@ -66,71 +66,6 @@ print("I'm learning Python!")
 - **uv run** executes your Python programs in the project's managed environment
 - **Python** is the language that understands your code and makes it work
 
-## Working With the Workbook Exercises
-
-Each exercise lives in its own folder and contains:
-
-- `exercise_name.md` - The problem description
-- `exercise_name.py` - The file where you write your solution
-- `test_exercise_name.py` - Automated tests that check your solution
-
-### How to Read an Exercise
-
-Each `exercise_name.md` ends with an **Examples** section. An example has up
-to two code blocks:
-
-```
-5.2
-```
-
-```
-The area is: 84.95
-```
-
-- The **first block** is the input you type while the program runs — one
-  value per line, pressing **Enter** after each. (If an exercise needs no
-  input, like `hello_world`, this block is omitted.)
-- The **second block** is exactly what your program must print.
-
-You do **not** have to write a prompt string, and if you do, the wording is
-yours to choose. All of these are accepted:
-
-```python
-radius = float(input("Enter radius: "))  # prompt is fine
-radius = float(input("Radius? "))        # any wording is fine
-radius = float(input())                  # no prompt is also fine
-```
-
-The checker never sees your prompts. It compares only the
-values you read and the output you print. Some exercises still show prompts
-in their examples (e.g. multi-value ones like `bmi`); those prompts are
-optional too.
-
-### Run an Exercise
-
-Open the exercise folder, write your code in the `.py` file, then run it:
-
-```
-uv run intro/hello_world/hello_world.py
-```
-
-### Test Your Solution
-
-Tests are written with `pytest`. To check a single exercise:
-
-```
-uv run pytest intro/hello_world/
-```
-
-To run every test in a chapter:
-
-```
-uv run pytest intro/
-```
-
-A passing test means your solution produces the expected output. A failing
-test shows what was expected versus what your program actually printed.
-
 ## Common Commands You'll Use
 
 - `cd` - **C**hange **D**irectory
@@ -140,3 +75,4 @@ test shows what was expected versus what your program actually printed.
 - `uv run pytest path/to/exercise/` - Test an exercise solution
 
 Congratulations! You now have a proper Python development setup, and you're ready to start programming.
+Next, read [`working_through_an_exercise.md`](working_through_an_exercise.md) to learn how the workbook exercises work.

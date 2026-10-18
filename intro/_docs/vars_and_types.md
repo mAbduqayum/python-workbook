@@ -183,11 +183,11 @@ print(f"The area is: {area}")
 ### Pattern 3: Unit conversion
 
 ```python
-# Convert seconds to minutes and seconds
-total_seconds = int(input("Enter seconds: "))
-minutes = total_seconds // 60
-seconds = total_seconds % 60
-print(f"{total_seconds} seconds = {minutes} minutes and {seconds} seconds")
+# Convert centimeters to meters and centimeters
+total_cm = int(input("Enter centimeters: "))
+meters = total_cm // 100
+cm = total_cm % 100
+print(meters, cm)
 ```
 
 ## Tips for Success

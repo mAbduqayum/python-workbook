@@ -14,9 +14,6 @@ mindmap
             KeyError
             IndexError
             FileNotFoundError
-        Patterns
-            EAFP vs LBYL
-            Safe wrappers
         Best Practices
             Be specific
             Don't silence errors

@@ -101,10 +101,7 @@ def expensive_calculation(n):
 
 ```python
 # DON'T: Lists are mutable and unhashable
-try:
-    d = {[1, 2]: "value"}  # TypeError: unhashable type: 'list'
-except TypeError:
-    pass
+# d = {[1, 2]: "value"}  # TypeError: unhashable type: 'list'
 
 # DO: Use tuples instead
 d = {(1, 2): "value"}  # OK - tuples are immutable
