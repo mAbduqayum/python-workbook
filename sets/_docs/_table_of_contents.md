@@ -43,9 +43,9 @@ mindmap
 ### Intermediate
 
 1. [`remove_duplicate_letters`](../remove_duplicate_letters/remove_duplicate_letters.md)
-1. [`find_missing_numbers`](../find_missing_numbers/find_missing_numbers.md)
-1. [`pangram_checker`](../pangram_checker/pangram_checker.md)
-1. [`isogram`](../isogram/isogram.md)
+2. [`find_missing_numbers`](../find_missing_numbers/find_missing_numbers.md)
+3. [`pangram_checker`](../pangram_checker/pangram_checker.md)
+4. [`isogram`](../isogram/isogram.md)
 
 ### Advanced
 

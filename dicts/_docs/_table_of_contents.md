@@ -45,26 +45,26 @@ mindmap
 ### Beginner
 
 1. [`chars_count`](../chars_count/chars_count.md)
-1. [`most_frequent_char`](../most_frequent_char/most_frequent_char.md)
-1. [`first_unique_char`](../first_unique_char/first_unique_char.md)
+2. [`most_frequent_char`](../most_frequent_char/most_frequent_char.md)
+3. [`first_unique_char`](../first_unique_char/first_unique_char.md)
 
 ### Intermediate
 
 **Encoding & Decoding:**
 
 1. [`read_aloud`](../read_aloud/read_aloud.md)
-1. [`morse_encode`](../morse_encode/morse_encode.md)
-1. [`morse_decode`](../morse_decode/morse_decode.md)
-1. [`roman_to_int`](../roman_to_int/roman_to_int.md)
-1. [`text_messaging`](../text_messaging/text_messaging.md)
+2. [`morse_encode`](../morse_encode/morse_encode.md)
+3. [`morse_decode`](../morse_decode/morse_decode.md)
+4. [`roman_to_int`](../roman_to_int/roman_to_int.md)
+5. [`text_messaging`](../text_messaging/text_messaging.md)
 
 **Operations:**
 
 1. [`is_anagram`](../is_anagram/is_anagram.md)
-1. [`is_phrase_anagram`](../is_phrase_anagram/is_phrase_anagram.md)
-1. [`group_anagrams`](../group_anagrams/group_anagrams.md)
-1. [`two_sum`](../two_sum/two_sum.md)
-1. [`isomorphic_strings`](../isomorphic_strings/isomorphic_strings.md)
+2. [`is_phrase_anagram`](../is_phrase_anagram/is_phrase_anagram.md)
+3. [`group_anagrams`](../group_anagrams/group_anagrams.md)
+4. [`two_sum`](../two_sum/two_sum.md)
+5. [`isomorphic_strings`](../isomorphic_strings/isomorphic_strings.md)
 
 ### Advanced
 
