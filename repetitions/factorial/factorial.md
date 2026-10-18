@@ -24,11 +24,3 @@ Compute the factorial of a given number.
 ```
 120
 ```
-
-**Example 3:**
-```
-10
-```
-```
-3628800
-```

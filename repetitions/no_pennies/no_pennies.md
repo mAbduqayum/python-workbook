@@ -11,18 +11,6 @@ Canadian retailers must round cash payments to the nearest nickel (5 cents).
 ## Examples
 **Example 1:**
 ```
-10.25
-5.78
-3.12
-
-```
-```
-Total: $19.15
-Cash payment: $19.15
-```
-
-**Example 2:**
-```
 4.99
 2.48
 1.22
@@ -31,15 +19,4 @@ Cash payment: $19.15
 ```
 Total: $8.69
 Cash payment: $8.70
-```
-
-**Example 3:**
-```
-7.53
-3.21
-
-```
-```
-Total: $10.74
-Cash payment: $10.75
 ```

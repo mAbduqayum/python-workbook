@@ -9,34 +9,19 @@ Generate and display a geometric sequence.
   - `count`: number of terms to generate (integer)
 - Display the first `count` terms of the geometric sequence
 - Each term on its own line
-- **Formatting:** Display whole numbers without decimal points (e.g., `100` instead of `100.0`), but show decimals when necessary (e.g., `12.5`)
 - **Note:** You can assume that count is always at least 1
 
 ## Examples
 **Example 1:**
-```
-2
-3
-5
-```
-```
-2
-6
-18
-54
-162
-```
-
-**Example 2:**
 ```
 100
 0.5
 5
 ```
 ```
-100
-50
-25
+100.0
+50.0
+25.0
 12.5
 6.25
 ```

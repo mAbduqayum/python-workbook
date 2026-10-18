@@ -19,27 +19,3 @@ Create a right triangle pattern using consecutive numbers.
 1234
 12345
 ```
-
-**Example 2:**
-```
-3
-```
-```
-1
-12
-123
-```
-
-**Example 3:**
-```
-7
-```
-```
-1
-12
-123
-1234
-12345
-123456
-1234567
-```

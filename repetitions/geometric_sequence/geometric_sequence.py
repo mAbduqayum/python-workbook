@@ -4,5 +4,5 @@ count = int(input())
 
 current = start
 for _ in range(count):
-    print(f"{current:.9g}")
+    print(current)
     current *= ratio

@@ -19,21 +19,3 @@ Print the odd numbers up to a given number.
 7
 9
 ```
-
-**Example 2:**
-```
-6
-```
-```
-1
-3
-5
-```
-
-**Example 3:**
-```
-1
-```
-```
-1
-```

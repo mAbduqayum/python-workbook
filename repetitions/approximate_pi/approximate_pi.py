@@ -1,7 +1,7 @@
 # Nilakantha series: pi = 3 + 4/(2*3*4) - 4/(4*5*6) + 4/(6*7*8) - ...
 approximation = 3.0
 
-print(f"Approximation 1: {approximation}")
+print(approximation)
 
 for i in range(2, 16):
     n = (i - 1) * 2
@@ -12,4 +12,4 @@ for i in range(2, 16):
     else:
         approximation -= 4 / denominator
 
-    print(f"Approximation {i}: {approximation}")
+    print(approximation)

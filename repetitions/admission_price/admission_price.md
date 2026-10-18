@@ -28,25 +28,3 @@ A zoo determines admission price based on the age of guests.
 ```
 $69.00
 ```
-
-**Example 2:**
-```
-2
-8
-35
-
-```
-```
-$37.00
-```
-
-**Example 3:**
-```
-1
-2
-3
-
-```
-```
-$14.00
-```

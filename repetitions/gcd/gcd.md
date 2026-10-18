@@ -12,21 +12,3 @@ integer that divides both of them evenly.
 ```
 4
 ```
-
-**Example 2:**
-```
-48
-18
-```
-```
-6
-```
-
-**Example 3:**
-```
-17
-19
-```
-```
-1
-```

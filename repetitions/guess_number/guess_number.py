@@ -10,5 +10,5 @@ while True:
     elif guess > target:
         print("Too high")
     else:
-        print("Correct")
+        print("Correct!")
         break

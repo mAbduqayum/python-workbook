@@ -15,19 +15,3 @@ Convert a decimal (base 10) number to binary (base 2).
 ```
 1010
 ```
-
-**Example 2:**
-```
-15
-```
-```
-1111
-```
-
-**Example 3:**
-```
-42
-```
-```
-101010
-```

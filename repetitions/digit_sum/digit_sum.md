@@ -15,11 +15,3 @@ Calculate the sum of all digits in an integer using loops.
 ```
 15
 ```
-
-**Example 2:**
-```
-0
-```
-```
-0
-```

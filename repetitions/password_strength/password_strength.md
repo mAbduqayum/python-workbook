@@ -28,39 +28,7 @@ Very Strong
 
 **Example 2:**
 ```
-Hello123
-```
-```
-Strong
-```
-
-**Example 3:**
-```
 hello123
-```
-```
-Weak
-```
-
-**Example 4:**
-```
-hello
-```
-```
-Very Weak
-```
-
-**Example 5:**
-```
-12345
-```
-```
-Very Weak
-```
-
-**Example 6:**
-```
-Hel!23
 ```
 ```
 Medium

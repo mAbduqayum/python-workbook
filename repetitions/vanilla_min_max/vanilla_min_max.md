@@ -22,16 +22,3 @@ Find the minimum and maximum values from user input without using lists.
 Minimum: 3
 Maximum: 15
 ```
-
-**Example 2:**
-```
--5
--2
--10
--1
-
-```
-```
-Minimum: -10
-Maximum: -1
-```

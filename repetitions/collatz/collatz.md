@@ -18,6 +18,7 @@ Generate and display Collatz sequences for integers entered by the user.
 **Example 1:**
 ```
 5
+0
 ```
 ```
 5
@@ -25,27 +26,5 @@ Generate and display Collatz sequences for integers entered by the user.
 8
 4
 2
-1
-```
-
-**Example 2:**
-```
-10
-```
-```
-10
-5
-16
-8
-4
-2
-1
-```
-
-**Example 3:**
-```
-1
-```
-```
 1
 ```

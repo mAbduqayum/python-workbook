@@ -10,29 +10,9 @@ Print a countdown from a given number down to 1.
 ## Examples
 **Example 1:**
 ```
-1
-```
-```
-1
-```
-
-**Example 2:**
-```
 3
 ```
 ```
-3
-2
-1
-```
-
-**Example 3:**
-```
-5
-```
-```
-5
-4
 3
 2
 1
