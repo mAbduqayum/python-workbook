@@ -33,6 +33,4 @@ def most_frequent_char2(text: str) -> str:
 if __name__ == "__main__":
     print(most_frequent_char("hello"))  # 'l'
     print(most_frequent_char("aabbcc"))  # 'a' (or 'b' or 'c' - all tied)
-    print(most_frequent_char("a"))  # 'a'
     print(most_frequent_char("AaA"))  # 'A'
-    print(most_frequent_char("hello world"))  # 'l'

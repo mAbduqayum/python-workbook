@@ -33,8 +33,5 @@ def morse_encode(text: str) -> str:
 if __name__ == "__main__":
     print(morse_encode("SOS"))  # "... --- ..."
     print(morse_encode("HI THERE"))  # ".... .. / - .... . .-. ."
-    print(morse_encode("123"))  # ".---- ..--- ...--"
     print(morse_encode("Hello"))  # ".... . .-.. .-.. ---"
-    print(morse_encode(""))  # ""
-    print(morse_encode("A"))  # ".-"
 ```

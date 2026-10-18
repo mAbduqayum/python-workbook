@@ -20,8 +20,5 @@ def isomorphic_strings(s: str, t: str) -> bool:
 if __name__ == "__main__":
     print(isomorphic_strings("egg", "add"))  # True
     print(isomorphic_strings("foo", "bar"))  # False
-    print(isomorphic_strings("paper", "title"))  # True
-    print(isomorphic_strings("ab", "abc"))  # False
     print(isomorphic_strings("abc", "abc"))  # True
-    print(isomorphic_strings("", ""))  # True
 ```
