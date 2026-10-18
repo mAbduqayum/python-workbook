@@ -12,7 +12,4 @@ def run_length_encode(text: str) -> str:
 
 if __name__ == "__main__":
     print(run_length_encode("AAABBC"))  # "3A2B1C"
-    print(run_length_encode("Hello"))  # "1H1e2l1o"
-    print(run_length_encode("XXXXX"))  # "5X"
     print(run_length_encode(""))  # ""
-    print(run_length_encode("AABBBCCCC"))  # "2A3B4C"

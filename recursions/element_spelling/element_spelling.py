@@ -159,7 +159,4 @@ def spell_with_elements(word: str) -> list[str] | None:
 
 if __name__ == "__main__":
     print(can_spell("bacon"))  # True
-    print(can_spell("beach"))  # True (Be-Ac-H)
-    print(can_spell("since"))  # True
-    print(spell_with_elements("bacon"))  # ['B', 'Ac', 'O', 'N']
     print(spell_with_elements("beach"))  # ['Be', 'Ac', 'H']

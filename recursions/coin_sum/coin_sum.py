@@ -12,4 +12,3 @@ if __name__ == "__main__":
     print(coin_sum(5, [1, 2, 5]))  # 4
     print(coin_sum(3, [2]))  # 0
     print(coin_sum(0, [1, 2]))  # 1
-    print(coin_sum(10, [1, 5, 10]))  # 4

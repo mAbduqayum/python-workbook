@@ -9,7 +9,5 @@ def nested_sum(l: list) -> int:
 
 
 if __name__ == "__main__":
-    print(nested_sum([2, 3, 5]))  # 10
     print(nested_sum([2, [3, 5], 7]))  # 17
-    print(nested_sum([2, [3, [5, [7]]]]))  # 17
     print(nested_sum([[2, 3], [5, [7, 11]]]))  # 28

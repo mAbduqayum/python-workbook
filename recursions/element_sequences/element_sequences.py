@@ -155,5 +155,4 @@ def longest_element_sequence(start: str, used: set[str] | None = None) -> list[s
 
 if __name__ == "__main__":
     print(longest_element_sequence("Molybdenum"))
-    print(longest_element_sequence("Nickel"))
     print(longest_element_sequence("InvalidElement"))

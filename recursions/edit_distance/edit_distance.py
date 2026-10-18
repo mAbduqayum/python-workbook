@@ -17,6 +17,4 @@ def edit_distance(s1: str, s2: str) -> int:
 if __name__ == "__main__":
     print(edit_distance("kitten", "sitting"))  # 3
     print(edit_distance("", "abc"))  # 3
-    print(edit_distance("abc", ""))  # 3
     print(edit_distance("abc", "abc"))  # 0
-    print(edit_distance("horse", "ros"))  # 3
