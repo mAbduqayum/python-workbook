@@ -22,6 +22,10 @@ mindmap
             word counting
             searching
             filtering
+        Encoding
+            UTF-8
+            encoding argument
+            str vs bytes
 ```
 
 ## Foundation Documentation

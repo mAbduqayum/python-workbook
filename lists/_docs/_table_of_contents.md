@@ -9,14 +9,15 @@ mindmap
             comprehension
             from range
         Access
-            Indexing [i]
-            Negative [-i]
-            Slicing [:]
+            Indexing #91;i#93;
+            Negative #91;-i#93;
+            Slicing #91;:#93;
         Operations
             Length len
             Concat +
             Membership in
             Comparison
+            join to string
         Methods
             append
             insert

@@ -29,7 +29,7 @@ mindmap
             Caching
             Complement search
         Performance
-            O&lpar;1&rpar; lookup
+            O#40;1#41; lookup
             Hash tables
             Unique keys
 ```

@@ -1,5 +1,35 @@
 # Table of Contents
 
+```mermaid
+mindmap
+    root((Conditionals))
+        Booleans
+            True and False
+            and, or, not
+            precedence
+            short-circuit
+        Comparisons
+            == and !=
+            < <= > >=
+        if Statement
+            if
+            elif
+            else
+            nested if
+        Strings
+            in
+            len
+            lower and upper
+            isdigit and isalpha
+            ord and chr
+            ASCII table
+        match Statement
+            case
+            a | b patterns
+            wildcard _
+            guards
+```
+
 ## Recommended Reading Order
 
 1. [`boolean_operators.md`](boolean_operators.md)

@@ -10,6 +10,15 @@ mindmap
             return
             type hints
             docstrings
+        Patterns
+            calculations
+            boolean checks
+            conversions
+            validation
+        Best Practices
+            single responsibility
+            pure functions
+            early return
         Imports
             import
             from...import
@@ -19,7 +28,7 @@ mindmap
             global
         Modules
             create .py
-            \__name__==<br>\__main__
+            #95;#95;main#95;#95; guard
             reusable
 ```
 

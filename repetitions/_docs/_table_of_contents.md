@@ -19,6 +19,10 @@ mindmap
         Control
             break
             continue
+        Pitfalls
+            infinite loops
+            off-by-one
+            changing the loop variable
 ```
 
 ## Recommended Reading Order
