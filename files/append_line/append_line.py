@@ -8,7 +8,6 @@ if __name__ == "__main__":
         f.write("Entry 1\n")
 
     append_line("log.txt", "Entry 2")
-    append_line("log.txt", "Entry 3")
 
     with open("log.txt", "r") as f:
         print(f.read())

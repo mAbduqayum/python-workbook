@@ -29,9 +29,5 @@ if __name__ == "__main__":
         f.write("abstentiously\n")
         f.write("adventitiously\n")
         f.write("hello\n")
-        f.write("world\n")
 
-    words = six_vowel_words("words.txt")
-    print(f"Found {len(words)} words with six vowels in order:")
-    for word in words:
-        print(f"  {word}")
+    print(six_vowel_words("words.txt"))  # ['facetiously', 'abstentiously']

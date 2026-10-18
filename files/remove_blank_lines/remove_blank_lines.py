@@ -18,8 +18,7 @@ if __name__ == "__main__":
         f.write("   \n")
         f.write("Line 3\n")
 
-    removed = remove_blank_lines("input.txt", "output.txt")
-    print(f"Removed {removed} blank lines")
+    print(remove_blank_lines("input.txt", "output.txt"))  # 2
 
     with open("output.txt", "r") as f:
         print(f.read())

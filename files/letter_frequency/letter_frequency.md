@@ -13,12 +13,10 @@ if __name__ == "__main__":
     # Create a test file
     with open("sample.txt", "w") as f:
         f.write("Hello World!\n")
-        f.write("Python is great.\n")
 
     # Test your function
-    freq = letter_frequency("sample.txt")
-    for letter, count in sorted(freq.items()):
-        print(f"{letter}: {count}")
+    print(letter_frequency("sample.txt"))
+    # {'h': 1, 'e': 1, 'l': 3, 'o': 2, 'w': 1, 'r': 1, 'd': 1}
 ```
 
 ## Note

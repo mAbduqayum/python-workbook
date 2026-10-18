@@ -34,8 +34,7 @@ if __name__ == "__main__":
         f.write("The password is hidden.\n")
         f.write("Public information here.\n")
 
-    count = redact_text("document.txt", "sensitive.txt", "redacted.txt")
-    print(f"Redacted {count} words")
+    print(redact_text("document.txt", "sensitive.txt", "redacted.txt"))  # 2
 
     with open("redacted.txt", "r") as f:
         print(f.read())

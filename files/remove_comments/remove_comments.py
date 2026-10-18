@@ -17,8 +17,7 @@ if __name__ == "__main__":
         f.write("  # Indented comment\n")
         f.write("y = 2  # inline comment stays\n")
 
-    removed = remove_comments("code.py", "clean_code.py")
-    print(f"Removed {removed} comment lines")
+    print(remove_comments("code.py", "clean_code.py"))  # 2
 
     with open("clean_code.py", "r") as f:
         print(f.read())

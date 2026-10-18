@@ -23,8 +23,6 @@ if __name__ == "__main__":
         f.write("hello\nworld\npython\ncode\n")
 
     with open("text.txt", "w") as f:
-        f.write("Hello world! This is pyton code.\n")
-        f.write("Some wrng words here.\n")
+        f.write("Helo world, pyton code! Helo!\n")
 
-    misspelled = spell_checker("text.txt", "dictionary.txt")
-    print(f"Misspelled words: {misspelled}")
+    print(spell_checker("text.txt", "dictionary.txt"))  # ['helo', 'pyton']

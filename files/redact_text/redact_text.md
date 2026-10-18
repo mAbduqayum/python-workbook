@@ -21,12 +21,15 @@ if __name__ == "__main__":
         f.write("Public information here.\n")
 
     # Test your function
-    count = redact_text("document.txt", "sensitive.txt", "redacted.txt")
-    print(f"Redacted {count} words")
+    print(redact_text("document.txt", "sensitive.txt", "redacted.txt"))  # 2
 
     # View redacted file
     with open("redacted.txt", "r") as f:
         print(f.read())
+    # Output:
+    # This is a ****** document.
+    # The ******** is hidden.
+    # Public information here.
 ```
 
 ## Note

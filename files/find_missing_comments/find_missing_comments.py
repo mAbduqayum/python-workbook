@@ -29,6 +29,4 @@ if __name__ == "__main__":
         f.write("def bad_function():\n")
         f.write("    pass\n")
 
-    missing = find_missing_comments("code.py")
-    for line_num, func_name in missing:
-        print(f"Line {line_num}: {func_name} has no comment")
+    print(find_missing_comments("code.py"))  # [[5, 'bad_function']]

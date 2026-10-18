@@ -19,12 +19,15 @@ if __name__ == "__main__":
         f.write("Line 3\n")
 
     # Test your function
-    removed = remove_blank_lines("input.txt", "output.txt")
-    print(f"Removed {removed} blank lines")  # Removed 2 blank lines
+    print(remove_blank_lines("input.txt", "output.txt"))  # 2
 
     # Verify output
     with open("output.txt", "r") as f:
         print(f.read())
+    # Output:
+    # Line 1
+    # Line 2
+    # Line 3
 ```
 
 ## Note

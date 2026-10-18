@@ -10,10 +10,8 @@ if __name__ == "__main__":
         f.write("Content of file 1\n")
     with open("file2.txt", "w") as f:
         f.write("Content of file 2\n")
-    with open("file3.txt", "w") as f:
-        f.write("Content of file 3\n")
 
-    merge_files(["file1.txt", "file2.txt", "file3.txt"], "merged.txt")
+    merge_files(["file1.txt", "file2.txt"], "merged.txt")
 
     with open("merged.txt", "r") as f:
         print(f.read())

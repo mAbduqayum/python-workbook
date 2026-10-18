@@ -14,9 +14,8 @@ if __name__ == "__main__":
     with open("log.txt", "w") as f:
         f.write("Entry 1\n")
 
-    # Append new lines
+    # Append a new line
     append_line("log.txt", "Entry 2")
-    append_line("log.txt", "Entry 3")
 
     # Verify
     with open("log.txt", "r") as f:
@@ -24,7 +23,6 @@ if __name__ == "__main__":
     # Output:
     # Entry 1
     # Entry 2
-    # Entry 3
 ```
 
 ## Note
