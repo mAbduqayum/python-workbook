@@ -13,8 +13,8 @@ def add(a: int, b: int) -> int:
 def greet(name: str) -> None:
     print(f"Hello, {name}!")
 
-def calculate_average(numbers: list) -> float:
-    return sum(numbers) / len(numbers)
+def average(a: float, b: float) -> float:
+    return (a + b) / 2
 ```
 
 Syntax:
@@ -31,11 +31,11 @@ def process_age(age: int) -> str:
 def calculate_area(length: float, width: float) -> float:
     return length * width
 
-def is_valid(value: bool) -> bool:
-    return not value
+def is_adult(age: int) -> bool:
+    return age >= 18
 
-def get_items(data: list) -> tuple:
-    return (data[0], data[-1])
+def full_name(first: str, last: str) -> str:
+    return first + " " + last
 ```
 
 ### Why Use Type Hints?

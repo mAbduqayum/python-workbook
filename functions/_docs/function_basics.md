@@ -180,3 +180,38 @@ def is_even(number):
 print(is_even(4))  # True
 print(is_even(7))  # False
 ```
+
+## How Function Exercises Are Checked
+
+From this chapter on, most exercises ask for a **function** instead of a
+whole program. Their examples are a table of calls and the values they must
+return:
+
+| Call         | Returns |
+|--------------|---------|
+| `square(3)`  | `9`     |
+| `square(-4)` | `16`    |
+
+The tests **import** your function and call it directly, so:
+
+- **Return** the value. Don't print it, and don't read it with `input()`:
+  the arguments are the input.
+- Keep the function name and parameters exactly as the exercise gives them.
+- Put any code that tries out your function under an
+  `if __name__ == "__main__":` guard:
+
+```python
+def square(n):
+    return n * n
+
+
+if __name__ == "__main__":
+    print(square(3))   # 9
+    print(square(-4))  # 16
+```
+
+Code under the guard runs when you run the file yourself
+(`uv run functions/<name>/<name>.py`), but not when the tests import it.
+Without the guard, an `input()` call at the top level makes the tests stop
+with `OSError: pytest: reading from stdin while output is captured!`.
+[`modules.md`](modules.md) explains how the guard works.

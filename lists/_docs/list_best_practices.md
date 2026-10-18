@@ -97,7 +97,7 @@ from_range = list(range(10))
 # Accessing
 first = numbers[0]
 last = numbers[-1]
-slice = numbers[1:3]
+middle = numbers[1:3]
 
 # Modifying
 numbers.append(4)  # Add to end
@@ -120,8 +120,9 @@ numbers.reverse()  # Reverse in place
 
 # Iteration
 for item in numbers:  # Iterate values
-    for i, item in enumerate(numbers):  # With index
-        pass
+    print(item)
+for i, item in enumerate(numbers):  # With index
+    print(i, item)
 
 # Common operations
 total = sum(numbers)  # Sum all elements

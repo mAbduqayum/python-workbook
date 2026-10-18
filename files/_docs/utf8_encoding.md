@@ -32,16 +32,18 @@ symbol in the world.
 
 ## UTF-8 in Python
 
-### Python 3 Uses UTF-8 by Default
+### Python Strings Are Unicode
 
-Good news! Python 3 handles UTF-8 automatically in most cases. Strings in Python
-3 are Unicode by default.
+Good news! Inside your program, a Python string can hold any character from
+any language, emojis included:
 
 ```python
-# This just works in Python 3
 message = "Hello, 世界! 🐍"
 print(message)  # Output: Hello, 世界! 🐍
 ```
+
+UTF-8 only comes into play when text leaves your program as **bytes**: when
+it is saved to a file or sent over the internet.
 
 ### Encoding: Text → Bytes
 
@@ -71,7 +73,10 @@ print(decoded)  # Hello, 世界!
 
 ### Reading and Writing Files
 
-Always specify encoding when working with files:
+Always specify encoding when working with files. Without it, `open()` uses
+your operating system's default encoding, which is not UTF-8 everywhere
+(Windows often uses a different one). The same code could then read a file
+correctly on one computer and fail on another.
 
 ```python
 # Writing
@@ -88,17 +93,23 @@ with open('myfile.txt', 'r', encoding='utf-8') as f:
 If you see this error, it usually means:
 
 1. The file isn't actually UTF-8 encoded
-2. You forgot to specify the encoding
+2. You forgot to specify the encoding, and your system's default doesn't
+   match the file
 
 ```python
-# This might fail if the file uses a different encoding
+# This fails if the file uses a different encoding
 with open('oldfile.txt', 'r', encoding='utf-8') as f:
     content = f.read()  # UnicodeDecodeError!
 
-# Try specifying a different encoding
+# If you know the file's real encoding, use that instead
 with open('oldfile.txt', 'r', encoding='latin-1') as f:
-    content = f.read()  # Works!
+    content = f.read()
 ```
+
+> **Note:** `latin-1` never raises an error, because every byte is some
+> character in it. If you pick it for a file that isn't really `latin-1`,
+> you get garbled text instead of an error, so check that the result looks
+> right.
 
 ---
 
@@ -116,7 +127,8 @@ with open('oldfile.txt', 'r', encoding='latin-1') as f:
 ## Key Takeaways
 
 1. **UTF-8** is the most popular way to represent text as numbers
-2. **Python 3** uses UTF-8 by default for strings
+2. **Python strings** hold Unicode text; UTF-8 is how that text is stored as
+   bytes
 3. **Always specify `encoding='utf-8'`** when reading/writing files
 4. Use `.encode()` to go from text → bytes
 5. Use `.decode()` to go from bytes → text

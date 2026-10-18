@@ -32,7 +32,8 @@ mindmap
 3. [`loop_patterns.md`](loop_patterns.md)
 4. [`nested_loops.md`](nested_loops.md)
 5. [`loop_control.md`](loop_control.md)
-6. [`loop_best_practices.md`](loop_best_practices.md)
+6. [`random_numbers.md`](random_numbers.md)
+7. [`loop_best_practices.md`](loop_best_practices.md)
 
 ## Practice Questions
 

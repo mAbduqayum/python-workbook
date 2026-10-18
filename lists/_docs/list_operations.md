@@ -30,29 +30,8 @@ zeros = [0] * 5  # [0, 0, 0, 0, 0]
 pattern = [1, 2] * 3  # [1, 2, 1, 2, 1, 2]
 ```
 
-> **Note: Avoid using list multiplication!**
->
-> While `[0] * 5` might seem convenient, **it's best to avoid list multiplication entirely** as it can lead to subtle
-> bugs,
-> especially with nested lists or when the code is modified later.
->
-> **The problem**:
-> ```python
-> # DANGEROUS - creates references to the SAME inner list!
-> matrix = [[0] * 3] * 3  # All rows point to the same list
-> matrix[0][0] = 1
-> print(matrix)  # [[1, 0, 0], [1, 0, 0], [1, 0, 0]] - all rows modified!
-> ```
->
-> **Instead, always use list comprehensions or loops**:
-> ```python
-> # GOOD - clear and explicit
-> zeros = [0 for _ in range(5)]
-> matrix = [[0 for _ in range(3)] for _ in range(3)]
-> ```
->
-> List comprehensions are more explicit, easier to understand, and prevent the subtle reference bugs that multiplication
-> can cause. They also make your code more maintainable when requirements change.
+> **Note:** Repetition is safe for numbers and strings, but not for nested lists: `[[0] * 3] * 3` makes three
+> references to the *same* row. See [`nested_list.md`](nested_list.md) for the right way to build a 2D list.
 
 ### Membership Testing
 
