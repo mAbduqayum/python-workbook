@@ -10,11 +10,10 @@ Write a function that determines if a year is a leap year.
 
 | Call                 | Returns |
 |----------------------|---------|
-| `is_leap_year(2000)` | `True`  |
 | `is_leap_year(2004)` | `True`  |
-| `is_leap_year(1900)` | `False` |
 | `is_leap_year(2001)` | `False` |
-| `is_leap_year(2024)` | `True`  |
+| `is_leap_year(1900)` | `False` |
+| `is_leap_year(2000)` | `True`  |
 
 ## Rule
 A year is a leap year if:

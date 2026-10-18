@@ -10,12 +10,11 @@ Write a function that calculates the roots of a quadratic equation.
 
 ## Examples
 
-| Call                        | Returns       |
-|-----------------------------|---------------|
-| `quadratic_roots(1, -3, 2)` | `(2.0, 1.0)`  |
-| `quadratic_roots(1, 0, -4)` | `(2.0, -2.0)` |
-| `quadratic_roots(1, -2, 1)` | `1.0`         |
-| `quadratic_roots(1, 0, 1)`  | `None`        |
+| Call                        | Returns      |
+|-----------------------------|--------------|
+| `quadratic_roots(1, -3, 2)` | `(2.0, 1.0)` |
+| `quadratic_roots(1, -2, 1)` | `1.0`        |
+| `quadratic_roots(1, 0, 1)`  | `None`       |
 
 ## Formula
 - Discriminant: Δ = b² - 4ac

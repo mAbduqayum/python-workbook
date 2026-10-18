@@ -12,12 +12,9 @@ Write a function that determines if a string represents a valid integer.
 |------------------|---------|
 | `is_int("123")`  | `True`  |
 | `is_int("-456")` | `True`  |
-| `is_int("0")`    | `True`  |
-| `is_int("12.5")` | `False` |
-| `is_int("abc")`  | `False` |
-| `is_int("")`     | `False` |
 | `is_int("+789")` | `True`  |
-| `is_int("12a")`  | `False` |
+| `is_int("12.5")` | `False` |
+| `is_int("")`     | `False` |
 
 ## Note
 - A valid integer is an optional `+`/`-` sign followed by one or more digits

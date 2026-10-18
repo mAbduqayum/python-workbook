@@ -9,13 +9,12 @@ Write a function that evaluates password strength.
 
 ## Examples
 
-| Call                             | Returns    |
-|----------------------------------|------------|
-| `password_strength("abc")`       | `"weak"`   |
-| `password_strength("Password1")` | `"medium"` |
-| `password_strength("P@ssw0rd!")` | `"medium"` |
-| `password_strength("hello")`     | `"weak"`   |
-| `password_strength("Hello123")`  | `"medium"` |
+| Call                                | Returns    |
+|-------------------------------------|------------|
+| `password_strength("abc")`          | `"weak"`   |
+| `password_strength("abcdefgh")`     | `"weak"`   |
+| `password_strength("P@ssw0rd!")`    | `"medium"` |
+| `password_strength("MyP@ssw0rd!2")` | `"strong"` |
 
 ## Criteria
 **Weak**: 

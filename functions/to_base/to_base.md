@@ -12,6 +12,4 @@ Write a function that converts a decimal number to any base (2-36).
 |--------------------|----------|
 | `to_base(10, 2)`   | `"1010"` |
 | `to_base(255, 16)` | `"FF"`   |
-| `to_base(8, 8)`    | `"10"`   |
-| `to_base(100, 5)`  | `"400"`  |
 | `to_base(0, 10)`   | `"0"`    |

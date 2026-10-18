@@ -8,13 +8,10 @@ Write a function that converts a hexadecimal string to decimal.
 
 ## Examples
 
-| Call                 | Returns |
-|----------------------|---------|
-| `hex_decimal("A")`   | `10`    |
-| `hex_decimal("FF")`  | `255`   |
-| `hex_decimal("10")`  | `16`    |
-| `hex_decimal("1A")`  | `26`    |
-| `hex_decimal("ABC")` | `2748`  |
+| Call                | Returns |
+|---------------------|---------|
+| `hex_decimal("1A")` | `26`    |
+| `hex_decimal("ff")` | `255`   |
 
 ## Note
 - Don't use the built-in `int(hex_str, 16)`
