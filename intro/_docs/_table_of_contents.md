@@ -1,5 +1,38 @@
 # Table of Contents
 
+```mermaid
+mindmap
+    root((Introduction))
+        Workflow
+            VS Code
+            uv init
+            uv run
+            pytest
+        Variables
+            str
+            int
+            float
+            type conversion
+            comments
+        Input & Output
+            input
+            print
+        Math Operators
+            arithmetic + - * /
+            // and %
+            ** power
+            order of operations
+        Math Functions
+            abs, round, min, max
+            math module
+            sqrt and pi
+        f-strings
+            .2f precision
+            expressions
+            width and alignment
+            thousands separator
+```
+
 ## Recommended Reading Order
 
 1. [`first_project.md`](first_project.md)
