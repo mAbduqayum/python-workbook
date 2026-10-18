@@ -3,7 +3,7 @@
 Approximate the value of π using an infinite series.
 
 ## Task
-- Display 15 approximations of π
+- Display 15 approximations of π, one per line
 - Each approximation includes one more term from the series
 - Use the following infinite series:
 
@@ -11,9 +11,9 @@ Approximate the value of π using an infinite series.
 
 ## Example Output
 ```
-Approximation 1: 3.0
-Approximation 2: 3.166666666666667
-Approximation 3: 3.1333333333333337
-Approximation 4: 3.1452380952380955
+3.0
+3.166666666666667
+3.1333333333333337
+3.1452380952380955
 ...
 ```

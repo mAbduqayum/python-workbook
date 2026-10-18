@@ -18,15 +18,3 @@ Write a program that computes the average of a collection of values entered by t
 ```
 20.0
 ```
-
-**Example 2:**
-```
-5
-15
-25
-35
-0
-```
-```
-20.0
-```

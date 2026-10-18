@@ -13,25 +13,14 @@ Find and display the prime factorization of an integer.
 72
 ```
 ```
-The prime factors of 72 are:
 2
 2
 2
-3
 3
 3
 ```
 
 **Example 2:**
-```
-17
-```
-```
-The prime factors of 17 are:
-17
-```
-
-**Example 3:**
 ```
 1
 ```

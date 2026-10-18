@@ -10,30 +10,10 @@ Print the numbers from 1 up to a given number.
 ## Examples
 **Example 1:**
 ```
-1
-```
-```
-1
-```
-
-**Example 2:**
-```
 3
 ```
 ```
 1
 2
 3
-```
-
-**Example 3:**
-```
-5
-```
-```
-1
-2
-3
-4
-5
 ```

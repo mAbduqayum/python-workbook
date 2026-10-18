@@ -19,13 +19,3 @@ Create a pyramid pattern using numbers instead of asterisks.
  1234321
 123454321
 ```
-
-**Example 2:**
-```
-3
-```
-```
-  1
- 121
-12321
-```

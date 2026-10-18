@@ -14,23 +14,14 @@ message, you shift the other way.
 ## Examples
 **Example 1:**
 ```
-HELLO
+Hello, World!
 3
 ```
 ```
-KHOOR
+Khoor, Zruog!
 ```
 
 **Example 2:**
-```
-KHOOR
--3
-```
-```
-HELLO
-```
-
-**Example 3:**
 ```
 xyz
 3
@@ -39,11 +30,11 @@ xyz
 abc
 ```
 
-**Example 4:**
+**Example 3:**
 ```
-Hello, World!
-3
+KHOOR
+-3
 ```
 ```
-Khoor, Zruog!
+HELLO
 ```

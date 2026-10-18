@@ -12,24 +12,8 @@ Compute the sum of the first `n` positive integers.
 ## Examples
 **Example 1:**
 ```
-1
-```
-```
-1
-```
-
-**Example 2:**
-```
 5
 ```
 ```
 15
-```
-
-**Example 3:**
-```
-100
-```
-```
-5050
 ```

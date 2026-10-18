@@ -30,11 +30,3 @@ Print the even numbers up to a given number.
 4
 6
 ```
-
-**Example 3:**
-```
-2
-```
-```
-2
-```

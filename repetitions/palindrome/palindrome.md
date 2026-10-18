@@ -5,7 +5,7 @@ Determine whether a string is a palindrome (identical forward and backward).
 ## Task
 - Read a string from the user
 - Use a loop to check if it's a palindrome
-- Display whether it is or isn't a palindrome
+- Display `Palindrome` or `Not a palindrome`
 
 ## Examples of Palindromes
 - "anna"
@@ -20,7 +20,7 @@ Determine whether a string is a palindrome (identical forward and backward).
 anna
 ```
 ```
-`anna` is a palindrome
+Palindrome
 ```
 
 **Example 2:**
@@ -28,13 +28,5 @@ anna
 hello
 ```
 ```
-`hello` is not a palindrome
-```
-
-**Example 3:**
-```
-racecar
-```
-```
-`racecar` is a palindrome
+Not a palindrome
 ```

@@ -25,17 +25,3 @@ Generate and display an arithmetic sequence.
 17
 20
 ```
-
-**Example 2:**
-```
-10
--2
-5
-```
-```
-10
-8
-6
-4
-2
-```

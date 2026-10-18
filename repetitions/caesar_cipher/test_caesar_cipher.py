@@ -10,6 +10,8 @@ import pytest
         ("XYZ", "3", "ABC"),
         ("Hello World", "5", "Mjqqt Btwqi"),
         ("abc", "-3", "xyz"),
+        ("KHOOR", "-3", "HELLO"),
+        ("Hello, World!", "3", "Khoor, Zruog!"),
     ],
 )
 def test_caesar_cipher(solution, message, shift, expected_output):
