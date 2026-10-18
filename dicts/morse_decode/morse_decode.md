@@ -34,8 +34,4 @@ def morse_decode(morse: str) -> str:
 if __name__ == "__main__":
     print(morse_decode("... --- ..."))  # "SOS"
     print(morse_decode(".... .. / - .... . .-. ."))  # "HI THERE"
-    print(morse_decode(".---- ..--- ...--"))  # "123"
-    print(morse_decode(""))  # ""
-    print(morse_decode(".-"))  # "A"
-    print(morse_decode(".... . .-.. .-.. ---"))  # "HELLO"
 ```

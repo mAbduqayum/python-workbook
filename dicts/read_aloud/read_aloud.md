@@ -39,7 +39,6 @@ if __name__ == "__main__":
     print(read_aloud("90"))  # "NINETY"
     print(read_aloud("100"))  # "ONE HUNDRED"
     print(read_aloud("105"))  # "ONE HUNDRED FIVE"
-    print(read_aloud("333"))  # "THREE HUNDRED THIRTY THREE"
     print(read_aloud("0"))  # "ZERO"
     print(read_aloud(""))  # ""
 ```

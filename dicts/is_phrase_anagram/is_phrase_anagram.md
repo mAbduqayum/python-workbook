@@ -16,10 +16,7 @@ def is_phrase_anagram(phrase1: str, phrase2: str) -> bool:
 
 
 if __name__ == "__main__":
-    print(is_phrase_anagram("listen", "silent"))  # True
     print(is_phrase_anagram("conversation", "voices rant on"))  # True
     print(is_phrase_anagram("The Eyes", "They See"))  # True
     print(is_phrase_anagram("hello world", "world peace"))  # False
-    print(is_phrase_anagram("abc", "a b c"))  # True
-    print(is_phrase_anagram("", ""))  # True
 ```

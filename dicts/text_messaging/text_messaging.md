@@ -43,9 +43,5 @@ def text_messaging(message: str) -> str:
 
 if __name__ == "__main__":
     print(text_messaging("HI"))  # "44444"
-    print(text_messaging("HELLO"))  # "4433555555666"
     print(text_messaging("HI THERE"))  # "4444408443377733"
-    print(text_messaging("HI!"))  # "444441111"
-    print(text_messaging("A"))  # "2"
-    print(text_messaging(""))  # ""
 ```
