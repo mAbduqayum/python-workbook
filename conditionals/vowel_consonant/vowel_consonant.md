@@ -12,21 +12,13 @@ Create a program that reads a letter of the alphabet from the user and determine
 ## Examples
 **Example 1:**
 ```
-a
-```
-```
-vowel
-```
-
-**Example 2:**
-```
 b
 ```
 ```
 consonant
 ```
 
-**Example 3:**
+**Example 2:**
 ```
 y
 ```
@@ -34,7 +26,7 @@ y
 sometimes vowel, sometimes consonant
 ```
 
-**Example 4:**
+**Example 3:**
 ```
 A
 ```

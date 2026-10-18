@@ -25,38 +25,8 @@ Acute Triangle
 **Example 2:**
 ```
 90
-45
-45
-```
-```
-Right Triangle
-```
-
-**Example 3:**
-```
-120
-30
-30
-```
-```
-Obtuse Triangle
-```
-
-**Example 4:**
-```
 90
 90
-90
-```
-```
-Invalid Triangle
-```
-
-**Example 5:**
-```
-50
-60
-80
 ```
 ```
 Invalid Triangle

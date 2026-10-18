@@ -32,27 +32,3 @@ d5
 ```
 white
 ```
-
-**Example 3:**
-```
-h8
-```
-```
-black
-```
-
-**Example 4:**
-```
-e4
-```
-```
-white
-```
-
-**Example 5:**
-```
-c3
-```
-```
-black
-```

@@ -41,11 +41,3 @@ Leap year
 ```
 Not leap year
 ```
-
-**Example 5:**
-```
-2024
-```
-```
-Leap year
-```

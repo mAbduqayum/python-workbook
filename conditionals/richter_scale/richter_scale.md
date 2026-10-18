@@ -24,45 +24,5 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 Micro
 ```
 
-**Example 2:**
-```
-2.5
-```
-```
-Very Minor
-```
-
-**Example 3:**
-```
-5.5
-```
-```
-Moderate
-```
-
-**Example 4:**
-```
-7.2
-```
-```
-Major
-```
-
-**Example 5:**
-```
-8.9
-```
-```
-Great
-```
-
-**Example 6:**
-```
-10.5
-```
-```
-Meteoric
-```
-
 ## About the Richter Scale
 The Richter scale is a **logarithmic scale**, not linear. Each whole number increase represents a 10-fold increase in amplitude and approximately 31.6 times more energy release. For example, a magnitude 5.0 earthquake is 10 times stronger than a magnitude 4.0 earthquake.

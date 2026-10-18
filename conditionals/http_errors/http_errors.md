@@ -22,14 +22,6 @@ Success
 
 **Example 2:**
 ```
-404
-```
-```
-Client Error
-```
-
-**Example 3:**
-```
 999
 ```
 ```

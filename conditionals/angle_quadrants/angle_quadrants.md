@@ -20,21 +20,13 @@ Quadrant I
 
 **Example 2:**
 ```
-120
-```
-```
-Quadrant II
-```
-
-**Example 3:**
-```
 90
 ```
 ```
 On axis
 ```
 
-**Example 4:**
+**Example 3:**
 ```
 405
 ```
@@ -42,7 +34,7 @@ On axis
 Quadrant I
 ```
 
-**Example 5:**
+**Example 4:**
 ```
 -30
 ```

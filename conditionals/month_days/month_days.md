@@ -21,37 +21,13 @@ The length of a month varies from `28` to `31` days. Create a program that reads
 ## Examples
 **Example 1:**
 ```
-January
-```
-```
-31
-```
-
-**Example 2:**
-```
-february
-```
-```
-28 or 29
-```
-
-**Example 3:**
-```
-April
-```
-```
-30
-```
-
-**Example 4:**
-```
 DECEMBER
 ```
 ```
 31
 ```
 
-**Example 5:**
+**Example 2:**
 ```
 xyz
 ```

@@ -18,11 +18,3 @@ can vote
 ```
 cannot vote
 ```
-
-**Example 3:**
-```
-25
-```
-```
-can vote
-```

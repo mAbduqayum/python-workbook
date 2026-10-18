@@ -29,32 +29,16 @@ Between Quiet Room and Alarm Clock
 
 **Example 3:**
 ```
-120
-```
-```
-Between Gas Lawnmower and Jackhammer
-```
-
-**Example 4:**
-```
 25
 ```
 ```
 Quieter than Quiet Room
 ```
 
-**Example 5:**
+**Example 4:**
 ```
 140
 ```
 ```
 Louder than Jackhammer
-```
-
-**Example 6:**
-```
-106
-```
-```
-Gas Lawnmower
 ```

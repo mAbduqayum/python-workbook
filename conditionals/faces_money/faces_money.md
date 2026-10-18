@@ -27,15 +27,6 @@ Abuali ibni Sino
 
 **Example 2:**
 ```
-100
-```
-```
-Ismoili Somoni
-```
-
-**Example 3:**
-
-```
 1000
 ```
 ```

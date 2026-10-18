@@ -16,6 +16,8 @@ import pytest
         (1, 1, 178, "Obtuse Triangle"),
         (30, 30, 120, "Obtuse Triangle"),
         (45, 60, 75, "Acute Triangle"),
+        (90, 90, 90, "Invalid Triangle"),
+        (50, 60, 80, "Invalid Triangle"),
     ],
 )
 def test_triangle_angle_type(solution, angle1, angle2, angle3, expected_output):

@@ -23,47 +23,7 @@ Violet
 
 **Example 2:**
 ```
-480
-```
-```
-Blue
-```
-
-**Example 3:**
-```
-550
-```
-```
-Green
-```
-
-**Example 4:**
-```
-600
-```
-```
-Orange
-```
-
-**Example 5:**
-```
-700
-```
-```
-Red
-```
-
-**Example 6:**
-```
 300
-```
-```
-Outside visible spectrum
-```
-
-**Example 7:**
-```
-800
 ```
 ```
 Outside visible spectrum
