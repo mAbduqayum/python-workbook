@@ -16,12 +16,10 @@ if __name__ == "__main__":
 
     # Create a text file to check
     with open("text.txt", "w") as f:
-        f.write("Hello world! This is pyton code.\n")
-        f.write("Some wrng words here.\n")
+        f.write("Helo world, pyton code! Helo!\n")
 
     # Test your function
-    misspelled = spell_checker("text.txt", "dictionary.txt")
-    print(f"Misspelled words: {misspelled}")
+    print(spell_checker("text.txt", "dictionary.txt"))  # ['helo', 'pyton']
 ```
 
 ## Note

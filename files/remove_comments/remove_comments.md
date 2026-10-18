@@ -18,12 +18,14 @@ if __name__ == "__main__":
         f.write("y = 2  # inline comment stays\n")
 
     # Test your function
-    removed = remove_comments("code.py", "clean_code.py")
-    print(f"Removed {removed} comment lines")
+    print(remove_comments("code.py", "clean_code.py"))  # 2
 
     # Verify output
     with open("clean_code.py", "r") as f:
         print(f.read())
+    # Output:
+    # x = 1
+    # y = 2  # inline comment stays
 ```
 
 ## Note

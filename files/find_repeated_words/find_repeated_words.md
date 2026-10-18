@@ -17,9 +17,8 @@ if __name__ == "__main__":
         f.write("the lazy dog.\n")
 
     # Test your function
-    repeats = find_repeated_words("sample.txt")
-    for line_num, word in repeats:
-        print(f"Line {line_num}: '{word}' is repeated")
+    print(find_repeated_words("sample.txt"))
+    # [[1, 'the'], [2, 'over'], [3, 'the']]
 ```
 
 ## Note
