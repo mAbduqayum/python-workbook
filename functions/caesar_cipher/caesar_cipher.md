@@ -10,10 +10,9 @@ Write a function that encrypts text using the Caesar cipher.
 
 ## Examples
 
-| Call                        | Returns   |
-|-----------------------------|-----------|
-| `caesar_cipher("abc", 1)`   | `"bcd"`   |
-| `caesar_cipher("xyz", 3)`   | `"abc"`   |
-| `caesar_cipher("Hello", 5)` | `"Mjqqt"` |
-| `caesar_cipher("ABC", -1)`  | `"ZAB"`   |
+| Call                                 | Returns           |
+|--------------------------------------|-------------------|
+| `caesar_cipher("xyz", 3)`            | `"abc"`           |
+| `caesar_cipher("Hello, World!", 13)` | `"Uryyb, Jbeyq!"` |
+| `caesar_cipher("ABC", -1)`           | `"ZAB"`           |
 

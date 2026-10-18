@@ -10,11 +10,8 @@ Write a function that converts a binary string to decimal.
 
 ## Examples
 
-| Call                         | Returns |
-|------------------------------|---------|
-| `binary_to_decimal("1010")`  | `10`    |
-| `binary_to_decimal("1111")`  | `15`    |
-| `binary_to_decimal("0")`     | `0`     |
-| `binary_to_decimal("1")`     | `1`     |
-| `binary_to_decimal("10000")` | `16`    |
+| Call                        | Returns |
+|-----------------------------|---------|
+| `binary_to_decimal("1010")` | `10`    |
+| `binary_to_decimal("0")`    | `0`     |
 

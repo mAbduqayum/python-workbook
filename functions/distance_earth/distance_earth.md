@@ -9,10 +9,9 @@ Write a function that calculates the great-circle distance between two points on
 
 ## Examples
 
-| Call                                                    | Returns  |
-|---------------------------------------------------------|----------|
-| `distance_earth(0, 0, 0, 0)`                            | `0.0`    |
-| `distance_earth(40.7128, -74.0060, 34.0522, -118.2437)` | ~3936 km |
+| Call                                                    | Returns             |
+|---------------------------------------------------------|---------------------|
+| `distance_earth(40.7128, -74.0060, 34.0522, -118.2437)` | `3935.746254609723` |
 
 ## Formula (Haversine)
 - Convert degrees to radians
