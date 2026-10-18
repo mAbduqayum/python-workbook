@@ -79,8 +79,7 @@ print(fruits[-4])  # "apple"  (fourth from end, same as fruits[0])
 > **Note: Why does indexing start at 0?**
 >
 > Zero-based indexing comes from how computers store lists in memory. The index represents the **offset** (distance)
-> from
-> the start of the list:
+> from the start of the list:
 >
 > - Index `0` means "0 steps from the start" → first element
 > - Index `1` means "1 step from the start" → second element
@@ -88,8 +87,7 @@ print(fruits[-4])  # "apple"  (fourth from end, same as fruits[0])
 >
 > This makes array address calculations simpler and more efficient at the hardware level. Many programming languages (C,
 > Java, JavaScript, Python) use zero-based indexing for this reason. While it may seem confusing at first, you'll
-> quickly
-> get used to thinking: "the first element is at index 0."
+> quickly get used to thinking: "the first element is at index 0."
 
 ### Slicing
 

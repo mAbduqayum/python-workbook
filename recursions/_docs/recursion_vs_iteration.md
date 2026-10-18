@@ -63,12 +63,12 @@ def fibonacci(n):
 
 ## Comparison
 
-| Aspect | Recursion | Iteration |
-|--------|-----------|-----------|
-| Code | Often shorter | Often longer |
-| Memory | Uses call stack | Constant |
-| Speed | Function call overhead | Usually faster |
-| Risk | Stack overflow | None |
+| Aspect | Recursion              | Iteration      |
+|--------|------------------------|----------------|
+| Code   | Often shorter          | Often longer   |
+| Memory | Uses call stack        | Constant       |
+| Speed  | Function call overhead | Usually faster |
+| Risk   | Stack overflow         | None           |
 
 ## When to Use Recursion
 

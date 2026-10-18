@@ -43,35 +43,9 @@ numbers = [num for num in numbers if num % 2 != 0]
 >
 > **Solution**: Either iterate over a copy (`for item in list[:]`), or use list comprehension to create a filtered list.
 
-### 3. Creating 2D Lists Incorrectly
-
-```python
-# WRONG - creates references to same list
-matrix = [[0] * 3] * 3
-matrix[0][0] = 1
-print(matrix)  # [[1, 0, 0], [1, 0, 0], [1, 0, 0]] - all rows modified!
-
-# CORRECT
-matrix = [[0] * 3 for _ in range(3)]
-matrix[0][0] = 1
-print(matrix)  # [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
-```
-
-> **Note: Why does `[[0] * 3] * 3` create references?**
->
-> When you use `[[0] * 3] * 3`, Python creates one inner list `[0, 0, 0]` and then creates three references to that
-> **same** list. It's like making 3 variables all point to the same list!
->
-> Think of it this way:
-> - `[0] * 3` creates `[0, 0, 0]` (one list)
-> - `[[0, 0, 0]] * 3` creates three references to that one list
->
-> **Solution**: Use a list comprehension `[[0] * 3 for _ in range(3)]` which creates a new independent list in each
-> iteration. The `for _ in range(3)` ensures you create 3 separate lists, not 3 references to the same list.
-
 ## Best Practices
 
-| Practice                      | ✅ Good                               | ❌ Avoid                                 |
+| Practice                      | ✅ Good                              | ❌ Avoid                                |
 |-------------------------------|--------------------------------------|-----------------------------------------|
 | **Transformations**           | `[x*2 for x in nums]`                | Manual loop with append                 |
 | **Membership testing**        | `if item in my_list:`                | `for x in my_list: if x == item:`       |

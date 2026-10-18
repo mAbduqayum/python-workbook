@@ -66,7 +66,7 @@ mindmap
 1. [`is_int`](../is_int/is_int.md)
 1. [`is_prime`](../is_prime/is_prime.md)
 1. [`normalize_fraction`](../normalize_fraction/normalize_fraction.md)
-1. [`random password`](../password/password.md)
+1. [`password`](../password/password.md)
 1. [`hex_decimal`](../hex_decimal/hex_decimal.md)
 1. [`decimal_hex`](../decimal_hex/decimal_hex.md)
 1. [`to_base`](../to_base/to_base.md)

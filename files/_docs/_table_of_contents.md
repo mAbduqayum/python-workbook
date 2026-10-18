@@ -28,10 +28,10 @@ mindmap
             str vs bytes
 ```
 
-## Foundation Documentation
+## Recommended Reading Order
 
-1. [`File Basics`](file_basics.md) - Opening, reading, writing, and context managers
-1. [`UTF 8 encoding`](utf8_encoding.md)
+1. [`file_basics.md`](file_basics.md) - Opening, reading, writing, and context managers
+2. [`utf8_encoding.md`](utf8_encoding.md)
 
 ## Practice Questions
 

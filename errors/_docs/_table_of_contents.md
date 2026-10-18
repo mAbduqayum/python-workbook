@@ -20,6 +20,6 @@ mindmap
             Clean up resources
 ```
 
-## Foundation Documentation
+## Recommended Reading Order
 
-1. [Error Basics](error_basics.md) - try/except, common exceptions, basic patterns
+1. [`error_basics.md`](error_basics.md) - try/except, common exceptions, basic patterns

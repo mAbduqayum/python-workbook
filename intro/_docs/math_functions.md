@@ -1,6 +1,6 @@
 # Python Math Functions Reference
 
-Complete guide to Python's mathematical functions and constants available in the `math` module and built-in functions.
+Python's most useful mathematical functions and constants: built-in functions and the `math` module.
 
 ## Importing the Math Module
 
@@ -19,9 +19,7 @@ These functions are available without importing any module:
 | `round(x, n)`    | Round to n decimal places | `round(3.14159, 2)` | `3.14`   |
 | `min(x, y, ...)` | Find minimum value        | `min(5, 2, 8, 1)`   | `1`      |
 | `max(x, y, ...)` | Find maximum value        | `max(5, 2, 8, 1)`   | `8`      |
-| `sum(iterable)`  | Sum of all elements       | `sum([1, 2, 3, 4])` | `10`     |
 | `pow(x, y)`      | Power (same as x**y)      | `pow(2, 3)`         | `8`      |
-| `pow(x, y, z)`   | Power with modulo         | `pow(2, 3, 5)`      | `3`      |
 | `divmod(x, y)`   | Division and remainder    | `divmod(17, 5)`     | `(3, 2)` |
 
 > **Note:** `round()` uses banker's rounding (half to even) — `round(2.5)` is
@@ -71,21 +69,12 @@ All angles are in **radians**. Use `math.radians()` to convert from degrees.
 
 ## Special Functions
 
-| Function              | Description                         | Example             | Result |
-|-----------------------|-------------------------------------|---------------------|--------|
-| `math.factorial(x)`   | Factorial (x!)                      | `math.factorial(5)` | `120`  |
-| `math.gcd(x, y)`      | Greatest common divisor             | `math.gcd(12, 8)`   | `4`    |
-| `math.lcm(x, y, ...)` | Least common multiple (Python 3.9+) | `math.lcm(12, 8)`   | `24`   |
-| `math.isqrt(x)`       | Integer square root (Python 3.8+)   | `math.isqrt(15)`    | `3`    |
-
-## Classification Functions
-
-| Function             | Description             | Example                      | Result |
-|----------------------|-------------------------|------------------------------|--------|
-| `math.isfinite(x)`   | Check if finite         | `math.isfinite(1.0)`         | `True` |
-| `math.isinf(x)`      | Check if infinite       | `math.isinf(float('inf'))`   | `True` |
-| `math.isnan(x)`      | Check if NaN            | `math.isnan(float('nan'))`   | `True` |
-| `math.isclose(a, b)` | Check if close in value | `math.isclose(0.1+0.2, 0.3)` | `True` |
+| Function              | Description             | Example             | Result |
+|-----------------------|-------------------------|---------------------|--------|
+| `math.factorial(x)`   | Factorial (x!)          | `math.factorial(5)` | `120`  |
+| `math.gcd(x, y)`      | Greatest common divisor | `math.gcd(12, 8)`   | `4`    |
+| `math.lcm(x, y, ...)` | Least common multiple   | `math.lcm(12, 8)`   | `24`   |
+| `math.isqrt(x)`       | Integer square root     | `math.isqrt(15)`    | `3`    |
 
 ## Mathematical Constants
 
@@ -95,4 +84,3 @@ All angles are in **radians**. Use `math.radians()` to convert from degrees.
 | `math.e`   | 2.71828182... | Euler's number (e) |
 | `math.tau` | 6.28318530... | Tau (2π)           |
 | `math.inf` | inf           | Positive infinity  |
-| `math.nan` | nan           | Not a Number       |

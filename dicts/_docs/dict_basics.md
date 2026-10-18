@@ -31,13 +31,13 @@ config = dict(host="localhost", port=8080, debug=True)
 
 ## Key Characteristics
 
-| Feature        | Description                                                          |
-|----------------|----------------------------------------------------------------------|
-| Ordered        | Maintains insertion order (Python 3.7+)                              |
-| Mutable        | Can add, update, or remove key-value pairs                           |
-| Unique keys    | Each key can appear only once; new values overwrite existing ones    |
-| Hashable keys  | Keys must be immutable types (str, int, tuple, etc., not lists)      |
-| Fast lookup    | O(1) average time complexity for access, insert, and delete          |
+| Feature       | Description                                                       |
+|---------------|-------------------------------------------------------------------|
+| Ordered       | Maintains insertion order                                         |
+| Mutable       | Can add, update, or remove key-value pairs                        |
+| Unique keys   | Each key can appear only once; new values overwrite existing ones |
+| Hashable keys | Keys must be immutable types (str, int, tuple, etc., not lists)   |
+| Fast lookup   | O(1) average time complexity for access, insert, and delete       |
 
 ## Basic Operations
 
@@ -54,6 +54,9 @@ print(d.get("name"))  # "Alice"
 print(d.get("email"))  # None
 print(d.get("email", "not@found.com"))  # "not@found.com"
 ```
+
+Use `d[key]` when the key must exist (a missing key is a bug you want to see), and `d.get(key, default)` when a
+missing key is normal.
 
 ### Adding and Updating
 
@@ -93,25 +96,14 @@ d = {"name": "Alice", "age": 30}
 
 ## When to Use Dictionaries
 
-| Use Case                     | Why Dictionaries?                               |
-|------------------------------|-------------------------------------------------|
-| Fast lookups by key          | O(1) average vs O(n) for list search            |
-| Counting/frequency tracking  | Perfect for tallying occurrences                |
-| Caching/memoization          | Store computed results for quick retrieval      |
-| Mapping relationships        | Associate related data (ID → user, word → def)  |
-| Grouping data                | Collect items by category or property           |
-| Configuration settings       | Store named parameters and options              |
-
-## Dictionary vs List: Performance Comparison
-
-```python
-# Checking if item exists:
-my_list = [1, 2, 3, ..., 1000000]
-my_dict = {1: "a", 2: "b", 3: "c", ..., 1000000: "z"}
-
-999999 in my_list  # O(n) - slow, checks each element sequentially
-999999 in my_dict  # O(1) - fast, uses hash lookup directly
-```
+| Use Case                    | Why Dictionaries?                              |
+|-----------------------------|------------------------------------------------|
+| Fast lookups by key         | O(1) average vs O(n) for list search           |
+| Counting/frequency tracking | Perfect for tallying occurrences               |
+| Caching/memoization         | Store computed results for quick retrieval     |
+| Mapping relationships       | Associate related data (ID → user, word → def) |
+| Grouping data               | Collect items by category or property          |
+| Configuration settings      | Store named parameters and options             |
 
 ## Important Notes on Keys
 

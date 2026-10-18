@@ -22,7 +22,7 @@ UTF-8 is smart about space:
 |-----------------------|------------|---------------|
 | Basic English letters | 1 byte     | A, B, z, 1, @ |
 | Accented letters      | 2 bytes    | é, ñ, ü       |
-| Asian characters      | 3 bytes    | 中, 日, 한       |
+| Asian characters      | 3 bytes    | 中, 日, 한    |
 | Emojis                | 4 bytes    | 😀, 🎉, 🐍    |
 
 This means English text stays small, while still supporting every language and

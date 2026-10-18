@@ -24,7 +24,7 @@ event), but it happens rarely enough that the average cost per `append`/`add` st
 # Preserves NO order
 unique = list(set(my_list))
 
-# Preserves order (Python 3.7+)
+# Preserves order
 unique = list(dict.fromkeys(my_list))
 ```
 

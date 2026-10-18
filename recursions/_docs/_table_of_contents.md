@@ -19,14 +19,14 @@ mindmap
             permutations
 ```
 
-## Foundation Documentation
+## Recommended Reading Order
 
-1. [`What is Recursion?`](what_is_recursion.md) - Math definition, first code
-2. [`Base Case`](base_case.md) - Stopping condition
-3. [`Examples`](examples.md) - Question → Solution format
-4. [`Recursion vs Iteration`](recursion_vs_iteration.md) - Comparison
-5. [`Memoization`](memoization.md) - Caching results
-6. [`Advanced`](advanced.md) - Binary search, flatten, permutations
+1. [`what_is_recursion.md`](what_is_recursion.md) - Math definition, first code
+2. [`base_case.md`](base_case.md) - Stopping condition
+3. [`examples.md`](examples.md) - Question → Solution format
+4. [`recursion_vs_iteration.md`](recursion_vs_iteration.md) - Comparison
+5. [`memoization.md`](memoization.md) - Caching results
+6. [`advanced.md`](advanced.md) - Binary search, flatten, permutations
 
 ## Practice Questions
 

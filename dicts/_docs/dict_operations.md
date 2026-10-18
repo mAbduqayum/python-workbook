@@ -20,25 +20,6 @@ items = d.items()  # dict_items([('name', 'Alice'), ('age', 30), ('city', 'NYC')
 list(items)  # [('name', 'Alice'), ('age', 30), ('city', 'NYC')]
 ```
 
-### Safe Access: `get()` vs Direct Lookup
-
-```python
-d = {"name": "Alice", "age": 30}
-
-# Direct lookup - raises KeyError if key doesn't exist
-value = d["name"]  # "Alice"
-# value = d["email"]  # KeyError!
-
-# get() - returns None or custom default if key doesn't exist
-value = d.get("name")  # "Alice"
-value = d.get("email")  # None
-value = d.get("email", "not@found.com")  # "not@found.com"
-
-# When to use which:
-# - Use d[key] when you're SURE the key exists (or want an error if it doesn't)
-# - Use d.get(key) when the key might not exist and you want a default
-```
-
 ### `setdefault()` - Add Key Only if Missing
 
 ```python
@@ -58,23 +39,6 @@ for word in words:
 # {'a': ['apple', 'apple'], 'b': ['banana'], 'c': ['cherry']}
 ```
 
-### `update()` - Merge Dictionaries
-
-```python
-d1 = {"a": 1, "b": 2}
-d2 = {"b": 3, "c": 4}
-
-d1.update(d2)  # d1 = {"a": 1, "b": 3, "c": 4} (d2's values overwrite d1's)
-
-# Can also update from iterable of pairs
-d1.update([("d", 5), ("e", 6)])
-# d1 = {"a": 1, "b": 3, "c": 4, "d": 5, "e": 6}
-
-# Or from keyword arguments
-d1.update(f=7, g=8)
-# d1 = {"a": 1, "b": 3, "c": 4, "d": 5, "e": 6, "f": 7, "g": 8}
-```
-
 ### `pop()` and `popitem()` - Remove and Return
 
 ```python
@@ -86,7 +50,7 @@ age = d.pop("age")  # Returns 30, d = {"name": "Alice", "city": "NYC"}
 # pop with default - no error if key doesn't exist
 email = d.pop("email", "no-email")  # Returns "no-email", d unchanged
 
-# popitem() - remove and return arbitrary (last in 3.7+) key-value pair
+# popitem() - remove and return the last inserted key-value pair
 item = d.popitem()  # Returns ("city", "NYC"), d = {"name": "Alice"}
 ```
 
@@ -154,32 +118,23 @@ combined = {k: v for k, v in zip(keys, values)}
 
 ## Merging Dictionaries
 
-### Method 1: Using `update()` (Mutates)
+### `update()` - Merge Into an Existing Dict
 
 ```python
 d1 = {"a": 1, "b": 2}
 d2 = {"b": 3, "c": 4}
-d1.update(d2)  # d1 is modified: {"a": 1, "b": 3, "c": 4}
+d1.update(d2)  # d1 is modified: {"a": 1, "b": 3, "c": 4} (d2's values win)
 ```
 
-### Method 2: Using `**` Unpacking (Python 3.5+)
-
-```python
-d1 = {"a": 1, "b": 2}
-d2 = {"b": 3, "c": 4}
-merged = {**d1, **d2}  # New dict: {"a": 1, "b": 3, "c": 4}
-# d1 and d2 are unchanged
-```
-
-### Method 3: Using `|` Operator (Python 3.9+)
+### `|` - Merge Into a New Dict
 
 ```python
 d1 = {"a": 1, "b": 2}
 d2 = {"b": 3, "c": 4}
 merged = d1 | d2  # New dict: {"a": 1, "b": 3, "c": 4}
+# d1 and d2 are unchanged
 
-# In-place merge with |=
-d1 |= d2  # d1 is modified: {"a": 1, "b": 3, "c": 4}
+d1 |= d2  # In-place, same as d1.update(d2)
 ```
 
 ## Collections Module: `defaultdict` and `Counter`
