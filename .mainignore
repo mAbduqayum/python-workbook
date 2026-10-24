@@ -3,6 +3,8 @@
 # main never carries it. Solution scripts (<topic>/<exercise>/<exercise>.py)
 # follow a naming rule a pathspec cannot express -- see is_solution_script
 # in .github/workflows/sync-main.yml.
+.github/workflows/book.yml
 .mainignore
+book
 ignore
 justfile

@@ -186,3 +186,6 @@ slides/**/*.pdf
 
 # QDUOJ
 .archive/
+
+# typst book build output (manifest + PDF)
+book/build/

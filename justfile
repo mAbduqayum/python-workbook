@@ -38,3 +38,18 @@ check: lint
 # Install/refresh dependencies (unrelated to the "Sync to Main" workflow)
 sync:
     uv sync
+
+# Build the book: book/build/python-workbook.pdf
+book: (_book "compile")
+
+# Rebuild the book on every content edit; rerun after adding or removing an exercise or doc
+book-watch: (_book "watch")
+
+# The same build the Book workflow runs, stamped with the current commit
+_book mode:
+    uv run book/manifest.py
+    SOURCE_DATE_EPOCH="$(git log -1 --format=%ct)" typst "{{ mode }}" --root . --ignore-system-fonts \
+        --input commit="$(git rev-parse --short HEAD)" \
+        --input date="$(git log -1 --format=%cs)" \
+        --input repo="$(git remote get-url origin | sed -E 's#^git@([^:]+):#https://\1/#; s#\.git$##')" \
+        book/main.typ book/build/python-workbook.pdf

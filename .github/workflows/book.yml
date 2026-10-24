@@ -1,0 +1,70 @@
+name: Book
+
+on:
+  push:
+    branches: [solutions]
+    paths:
+      - "**/*.md"
+      - "book/**"
+      - ".github/workflows/book.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: ${{ github.workflow }}
+  cancel-in-progress: false
+
+jobs:
+  book:
+    runs-on: ubuntu-latest
+    # A student's fork has no business publishing releases.
+    if: github.event.repository.fork == false
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+        with:
+          version: "0.11.7"
+          enable-cache: true
+
+      - name: Install Typst
+        uses: typst-community/setup-typst@v5
+        with:
+          typst-version: "0.15.1"
+          # The file holding the package imports, so they are cached.
+          cache-dependency-path: book/template.typ
+
+      - name: Write the book manifest
+        run: uv run book/manifest.py
+
+      # Same flags as `just book`. The commit's own timestamp makes the PDF
+      # reproducible: rebuilding a commit gives the same bytes.
+      - name: Build the PDF
+        run: |
+          SOURCE_DATE_EPOCH="$(git log -1 --format=%ct)" typst compile --root . --ignore-system-fonts \
+            --input commit="$(git rev-parse --short HEAD)" \
+            --input date="$(git log -1 --format=%cs)" \
+            --input repo="${{ github.server_url }}/${{ github.repository }}" \
+            book/main.typ book/build/python-workbook.pdf
+
+      # Updated in place rather than deleted and recreated, so watchers are
+      # not notified of a "new release" on every content commit. The tag is
+      # moved too, keeping the release's source archives in step with its PDF.
+      - name: Publish to the book-latest release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          notes="Built from $GITHUB_SHA."
+          if gh release view book-latest > /dev/null 2>&1; then
+            git tag -f book-latest
+            git push -f origin book-latest
+            gh release upload book-latest book/build/python-workbook.pdf --clobber
+            gh release edit book-latest --notes "$notes"
+          else
+            gh release create book-latest book/build/python-workbook.pdf \
+              --target "$GITHUB_SHA" --title "Python Workbook (latest)" --notes "$notes"
+          fi
