@@ -2,7 +2,7 @@ name: Sync to Main
 
 # Source of truth is the `solutions` branch. On every push to `solutions`, its
 # new commits are replayed onto `main` one at a time under their own title,
-# plus a `Source-commit: <sha>` trailer — the newest such trailer on `main` is
+# plus a `Source-commit: <sha>` trailer - the newest such trailer on `main` is
 # where the next run resumes.
 # A replayed commit holds the source tree except the solution scripts (see
 # `is_solution_script` below) and the paths listed in `.mainignore` --

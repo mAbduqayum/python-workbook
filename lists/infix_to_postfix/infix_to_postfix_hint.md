@@ -24,4 +24,4 @@ flowchart TD
 
 ## Note
 
-This is Dijkstra's Shunting Yard algorithm — the stack holds back operators until their operands have reached the output.
+This is Dijkstra's Shunting Yard algorithm - the stack holds back operators until their operands have reached the output.

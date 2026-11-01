@@ -6,13 +6,13 @@ Python gives you each of these operations as a built-in operator or method. Buil
 
 Write five functions:
 
-- `uniques(values)` — the elements of the list `values`, as a set
-- `union(set1, set2)` — the elements that appear in either set
-- `intersection(set1, set2)` — the elements that appear in both sets
-- `is_subset(subset, superset)` — `True` if every element of `subset` is in `superset`
-- `symmetric_diff(set1, set2)` — the elements that appear in exactly one of the two sets
+- `uniques(values)` - the elements of the list `values`, as a set
+- `union(set1, set2)` - the elements that appear in either set
+- `intersection(set1, set2)` - the elements that appear in both sets
+- `is_subset(subset, superset)` - `True` if every element of `subset` is in `superset`
+- `symmetric_diff(set1, set2)` - the elements that appear in exactly one of the two sets
 
-Rules — the tests read your functions' source code and fail if you break them:
+Rules - the tests read your functions' source code and fail if you break them:
 
 - Build result sets only with empty `set()` and `.add()`; no set literals, set comprehensions, or `set(iterable)` inside your functions
 - No set operators: `|`, `&`, `-`, `^`, `<=`, `<`, `>`, `>=`

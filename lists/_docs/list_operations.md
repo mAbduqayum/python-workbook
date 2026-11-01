@@ -58,7 +58,7 @@ Lists are **mutable** (can be changed after creation).
 
 > **Note: What does "mutable" mean?**
 >
-> Mutable means the list can be modified after creation—you can add, remove, or change elements without creating a new
+> Mutable means the list can be modified after creation-you can add, remove, or change elements without creating a new
 > list. This is different from immutable types like strings or tuples, which cannot be changed once created.
 >
 > **Important**: When you modify a list, all variables pointing to that list see the change. This is why understanding

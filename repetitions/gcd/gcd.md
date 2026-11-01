@@ -1,6 +1,6 @@
 # Greatest Common Divisor
 
-Find the greatest common divisor (GCD) of two positive integers — the largest
+Find the greatest common divisor (GCD) of two positive integers - the largest
 integer that divides both of them evenly.
 
 ## Examples
