@@ -1,6 +1,6 @@
 # Python Workbook
 
-A structured collection of Python programming exercises designed for learning and practice.
+Programming exercises from variables to recursions.
 
 ## Getting Started
 
