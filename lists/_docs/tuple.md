@@ -11,7 +11,7 @@ colors = ("red", "green", "blue")
 ```
 
 Use a tuple for a fixed group of values that belong together: the two coordinates of a point, the day, month and year
-of a date, the red, green and blue parts of a colour.
+of a date, the red, green and blue parts of a color.
 
 ## Creating Tuples
 

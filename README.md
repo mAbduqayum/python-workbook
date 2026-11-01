@@ -60,7 +60,7 @@ rebuilt whenever the content changes.
 
 ## Appendix
 
-- [`First Project`](appendix/first_project.md) - Start a Python project of your own, outside the workbook
+Starting a project of your own, and debugging your programs: [`Appendix`](appendix/_table_of_contents.md)
 
 ## References
 

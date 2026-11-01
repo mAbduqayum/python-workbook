@@ -11,7 +11,7 @@ name: Sync to Main
 # Everything else is mirrored as-is: tests,
 # `conftest.py`, Python fixture data such as `files/samples/calculator.py`, and
 # all non-Python content (docs, slides, configs). Tests already `pytest.skip`
-# when their solution file is absent, so deletion is the intended behaviour.
+# when their solution file is absent, so deletion is the intended behavior.
 
 on:
   push:

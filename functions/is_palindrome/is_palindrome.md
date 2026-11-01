@@ -4,7 +4,7 @@ Write a function that determines if a string is a palindrome.
 
 ## Task
 - Create a function `is_palindrome(s)` that takes a string
-- Return `True` if it reads the same forwards and backwards, `False` otherwise
+- Return `True` if it reads the same forward and backward, `False` otherwise
 
 ## Examples
 

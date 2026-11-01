@@ -36,7 +36,7 @@ csv_line = ",".join(data)  # "Alice,25,Engineer"
 > **Note: join() is a string method, not a list method**
 >
 > Notice that `join()` is called on the separator string, not on the list: `separator.join(list)`. This might seem
-> backwards at first, but it makes sense because:
+> backward at first, but it makes sense because:
 > - The separator is a string, and `join()` is a string method
 > - It returns a string (not a list)
 > - It pairs with `split()`: `"a,b,c".split(",")` creates a list, `",".join(["a","b","c"])` creates a string

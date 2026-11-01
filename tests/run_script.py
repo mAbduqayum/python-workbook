@@ -2,7 +2,7 @@
 
 ``input("Enter radius: ")`` writes the prompt to stdout, where it lands in
 front of whatever the script prints next. The grader compares printed output,
-so the prompt has to go somewhere -- and stripping it afterwards means
+so the prompt has to go somewhere -- and stripping it afterward means
 guessing its wording. Discarding it at the source instead lets students phrase
 prompts however they like, or omit them entirely.
 

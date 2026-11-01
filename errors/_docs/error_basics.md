@@ -1,19 +1,69 @@
-# Python Error Handling Guide
+# Handling Errors
 
-Python uses **exceptions** to handle errors gracefully. Instead of crashing, you can catch errors and respond appropriately.
+Some problems only appear while a program runs. The code is correct, and then a
+user types `abc` where you expected a number:
 
-## Basic Structure
+```python
+age = int(input("Age: "))
+print(age + 1)
+```
+
+```
+Traceback (most recent call last):
+  File "/home/farid/age.py", line 1, in <module>
+    age = int(input("Age: "))
+ValueError: invalid literal for int() with base 10: 'abc'
+```
+
+`int()` can't turn `abc` into a number, so it **raises an exception**: an object
+that says what went wrong. Here it is a `ValueError`. Nothing handled the
+exception, so Python stopped the program and printed this traceback. The appendix
+[Debugging Your Programs](../../appendix/debugging.md) shows how to read one.
+
+This chapter shows how to handle exceptions so that your program can carry on.
+
+## try and except
+
+Put the line that can fail in a `try` block, and say what to do about the failure
+in an `except` block:
 
 ```python
 try:
-    # Code that might raise an exception
-    result = 10 / 0
-except ZeroDivisionError:
-    # Handle the specific error
-    print("Cannot divide by zero!")
+    age = int(input("Age: "))
+    print(age + 1)
+except ValueError:
+    print("That isn't a whole number.")
 ```
 
-## Catching Multiple Exceptions
+Python runs the `try` block line by line:
+
+- If no line raises an exception, Python skips the `except` block.
+- If a line raises a `ValueError`, Python skips the rest of the `try` block and
+  runs the `except` block. The program then continues after it.
+- If a line raises any other exception, this `except` doesn't apply, and the
+  program still crashes.
+
+Type `20` and the program prints `21`. Type `abc` and it prints the message
+instead of a traceback.
+
+## Keep try Short
+
+Put only the lines that can fail inside `try`. A long block catches errors you
+didn't plan for, and hides real bugs:
+
+```python
+text = input("Age: ")
+try:
+    age = int(text)
+except ValueError:
+    age = 0
+print(age + 1)
+```
+
+## Several Exceptions
+
+A `try` can have one `except` for each kind of failure. Python runs the first one
+that matches:
 
 ```python
 try:
@@ -25,7 +75,11 @@ except ZeroDivisionError:
     print("Cannot divide by zero!")
 ```
 
-To handle several exceptions the same way, list them in a tuple:
+To handle several exceptions the same way, list them in a tuple.
+
+## The Exception's Message
+
+`as e` gives you the exception itself, and printing it prints its message:
 
 ```python
 try:
@@ -35,7 +89,11 @@ except (ValueError, ZeroDivisionError) as e:
     print(f"Invalid input: {e}")
 ```
 
-## The Full try/except/else/finally Pattern
+Type `0` and it prints `Invalid input: division by zero`.
+
+## else and finally
+
+Two more clauses are optional:
 
 ```python
 try:
@@ -43,140 +101,52 @@ try:
 except ValueError:
     print("That's not a valid number!")
 else:
-    # Runs only if NO exception occurred
     print(f"You entered {value}")
 finally:
-    # ALWAYS runs, regardless of exceptions
     print("Done")
 ```
 
-| Clause    | When It Runs                   |
-|-----------|--------------------------------|
-| `except`  | Only if an exception occurred  |
-| `else`    | Only if NO exception occurred  |
-| `finally` | ALWAYS runs (exception or not) |
+| Clause    | When It Runs                       |
+|-----------|------------------------------------|
+| `except`  | Only if a matching exception occurred |
+| `else`    | Only if no exception occurred      |
+| `finally` | Always, exception or not           |
 
-## Catching All Exceptions
+`else` keeps the `try` block short: the code that needs `value` stays out of it.
+`finally` is for work that must happen however the block ends.
+
+## Don't Silence Errors
+
+An empty `except` hides every problem, including the bugs you need to see:
 
 ```python
+# Bad: any mistake in the try block disappears
 try:
-    risky_operation()
-except Exception as e:  # Catches most exceptions
-    print(f"Something went wrong: {e}")
-```
-
-> [!WARNING]
-> Avoid bare `except:` — it catches everything including `KeyboardInterrupt` and `SystemExit`, making your program hard to stop.
-
-```python
-# Generally avoid this!
-try:
-    risky_operation()
-except:
-    print("Something went wrong")
-```
-
-## Raising Exceptions
-
-Use `raise` to throw an exception intentionally:
-
-```python
-def validate_age(age):
-    if age < 0:
-        raise ValueError("Age cannot be negative")
-    if age > 150:
-        raise ValueError("Age seems unrealistic")
-    return age
-```
-
-Re-raising a caught exception:
-
-```python
-try:
-    validate_age(-5)
-except ValueError:
-    print("Logging the error...")
-    raise  # Re-raises the caught exception
-```
-
-## Context Managers (Preferred for Resources)
-
-Context managers automatically handle cleanup, even when exceptions occur:
-
-```python
-# Automatically closes file, even with exceptions
-with open("data.txt", "r", encoding="utf-8") as file:
-    data = file.read()
-
-# Multiple resources
-with (
-    open("input.txt", encoding="utf-8") as infile,
-    open("output.txt", "w", encoding="utf-8") as outfile,
-):
-    outfile.write(infile.read())
-```
-
-## Common Built-in Exceptions
-
-| Exception           | When It Occurs                  |
-|---------------------|---------------------------------|
-| `ValueError`        | Wrong value type/content        |
-| `TypeError`         | Wrong type for operation        |
-| `KeyError`          | Dictionary key not found        |
-| `IndexError`        | List index out of range         |
-| `AttributeError`    | Attribute doesn't exist         |
-| `FileNotFoundError` | File doesn't exist              |
-| `OSError`           | File or system operation failed |
-| `ImportError`       | Module import failed            |
-| `ZeroDivisionError` | Division by zero                |
-| `RuntimeError`      | Generic runtime error           |
-
-## Best Practices
-
-| Do                                 | Don't                                      |
-|------------------------------------|--------------------------------------------|
-| Catch specific exceptions          | Catch generic `Exception` or bare `except` |
-| Use context managers for resources | Leave files/connections open               |
-| Validate early, fail fast          | Silently ignore errors                     |
-| Clean up in `finally`              | Use empty `except: pass` blocks            |
-
-```python
-# Bad: Silencing errors
-try:
-    do_something()
+    age = int(input("Age: "))
 except:
     pass
 
-# Good: Be specific and handle appropriately
+# Good: name the error you expect, and respond to it
 try:
-    value = int(user_input)
+    age = int(input("Age: "))
 except ValueError:
-    print("Please enter a valid number")
+    print("Please enter a whole number.")
 ```
 
-## Accessing Exception Details
+> **Warning:** A bare `except:` catches everything, even `KeyboardInterrupt`,
+> which is Ctrl+C, so your program becomes hard to stop. `except Exception` is
+> less extreme, but it hides your bugs the same way. Name the exception you expect.
 
-```python
-try:
-    result = 10 / 0
-except ZeroDivisionError as e:
-    print(f"Exception type: {type(e).__name__}")  # ZeroDivisionError
-    print(f"Exception message: {e}")              # division by zero
-```
+## Common Built-in Exceptions
 
-## Assertions (For Development Only)
-
-Assertions are simple checks that should always be true during development:
-
-```python
-def calculate_average(numbers):
-    assert len(numbers) > 0, "List cannot be empty"
-    return sum(numbers) / len(numbers)
-```
-
-> [!CAUTION]
-> Assertions can be disabled with `python -O`. Never use them for user input validation — use proper exception handling instead.
-
----
-
-**Key Principle**: Handle exceptions at the level where you can do something meaningful about them. Let others propagate up to where they can be properly handled.
+| Exception           | When It Occurs                 | Example               |
+|---------------------|--------------------------------|-----------------------|
+| `ValueError`        | The right type, but a bad value | `int("abc")`         |
+| `TypeError`         | The wrong type for an operation | `"a" + 1`            |
+| `IndexError`        | No item at that list index     | `[1, 2][5]`           |
+| `KeyError`          | No such key in a dictionary    | `{"a": 1}["b"]`       |
+| `ZeroDivisionError` | Division by zero               | `10 / 0`              |
+| `NameError`         | No variable by that name       | `print(totl)`         |
+| `AttributeError`    | No such attribute or method    | `"a".append("b")`     |
+| `ImportError`       | A module can't be imported     | `import nothing_here` |
+| `FileNotFoundError` | The file doesn't exist         | `open("missing.txt")` |

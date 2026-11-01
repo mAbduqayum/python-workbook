@@ -35,12 +35,12 @@ to the front reverses it:
 
 ```python
 shouted = ""
-backwards = ""
+backward = ""
 for char in "hello":
     shouted += char.upper()
-    backwards = char + backwards
+    backward = char + backward
 print(shouted)  # HELLO
-print(backwards)  # olleh
+print(backward)  # olleh
 ```
 
 ## Numbers in Strings

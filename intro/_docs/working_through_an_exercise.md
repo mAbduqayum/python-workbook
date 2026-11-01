@@ -12,6 +12,9 @@ should do and ends with an **Examples** section.
 For example, open `intro/circle_area/circle_area.md` before writing any
 code.
 
+Then work one example by hand, before you write any code. It shows you what
+your program has to do, and what a right answer looks like.
+
 ## Reading the Examples
 
 Problem statements show examples as pairs of plain code blocks. The first
@@ -91,6 +94,9 @@ Tests compare your output *exactly*. Spacing, capitalization, and
 punctuation all matter.
 
 ## Stuck?
+
+When your program crashes, or you can't see why its answer is wrong, read
+[`debugging.md`](../../appendix/debugging.md).
 
 If you get stuck, reference solutions live on the `solutions` branch:
 

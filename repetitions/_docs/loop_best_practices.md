@@ -50,7 +50,7 @@ for i in range(5):
 | For loop (count)            | `for i in range(10):`             | Loop 10 times (0 to 9)         |
 | For loop (start, stop)      | `for i in range(5, 10):`          | Loop from 5 to 9               |
 | For loop (with step)        | `for i in range(0, 10, 2):`       | Loop 0, 2, 4, 6, 8             |
-| For loop (backwards)        | `for i in range(10, 0, -1):`      | Loop 10, 9, 8, ..., 1          |
+| For loop (backward)         | `for i in range(10, 0, -1):`      | Loop 10, 9, 8, ..., 1          |
 | While loop                  | `while condition:`                | Loop while condition is True   |
 | Iterate string              | `for char in text:`               | Process each character         |
 | Loop with index             | `for i in range(len(text)):`      | Access by index                |

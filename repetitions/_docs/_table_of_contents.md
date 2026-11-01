@@ -10,9 +10,11 @@ mindmap
             condition-based
             sentinel value
         Patterns
-            accumulation
-            counting
-            min/max
+            counter
+            accumulator
+            best so far
+            sentinel
+            flag
             digit stripping
         Strings
             indexing
@@ -21,10 +23,12 @@ mindmap
             upper and lower case
         Nested loops
             rows and columns
-            patterns
+            inner depends on outer
+            reset for each row
         Control
             break
             continue
+            break in nested loops
         Pitfalls
             infinite loops
             off-by-one
