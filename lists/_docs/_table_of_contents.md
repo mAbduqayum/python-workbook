@@ -47,9 +47,11 @@ mindmap
 2. [`list_operations.md`](list_operations.md) - Operations and methods
 3. [`join_iterable.md`](join_iterable.md) - Joining iterables to strings
 4. [`list_iteration.md`](list_iteration.md) - Iteration patterns and common patterns
-5. [`list_copying.md`](list_copying.md) - Copying concepts and methods
-6. [`nested_list.md`](nested_list.md) - Nested lists (2D)
-7. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
+5. [`pointer.md`](pointer.md) - Names that point to objects, `is` vs `==`, mutable and immutable objects
+6. [`list_copying.md`](list_copying.md) - Copying concepts and methods
+7. [`tuple.md`](tuple.md) - Tuples: unchangeable sequences, packing and unpacking
+8. [`nested_list.md`](nested_list.md) - Nested lists (2D)
+9. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
 
 ## Practice Questions
 
