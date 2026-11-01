@@ -133,7 +133,7 @@ with (
 
 ## Best Practices
 
-| Do ✅                              | Don't ❌                                   |
+| Do                                 | Don't                                      |
 |------------------------------------|--------------------------------------------|
 | Catch specific exceptions          | Catch generic `Exception` or bare `except` |
 | Use context managers for resources | Leave files/connections open               |
@@ -141,13 +141,13 @@ with (
 | Clean up in `finally`              | Use empty `except: pass` blocks            |
 
 ```python
-# ❌ Bad: Silencing errors
+# Bad: Silencing errors
 try:
     do_something()
 except:
     pass
 
-# ✅ Good: Be specific and handle appropriately
+# Good: Be specific and handle appropriately
 try:
     value = int(user_input)
 except ValueError:

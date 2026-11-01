@@ -72,13 +72,13 @@ def fibonacci(n):
 
 ## When to Use Recursion
 
-✅ Good for:
+Good for:
 - Tree/graph traversal
 - Divide and conquer
 - Problems with natural recursive structure
 - When code clarity matters more than performance
 
-❌ Avoid when:
+Avoid when:
 - Deep recursion possible (> 1000 calls)
 - Performance is critical
 - Simple loop works fine
