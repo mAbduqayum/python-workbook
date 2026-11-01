@@ -9,7 +9,7 @@ Write a function `most_frequent_char(text)` that returns the character that appe
 - If several characters tie for the highest count, return any of them
 - Counting is case-sensitive
 - Count every character, including spaces and punctuation
-- Raise `ValueError` for an empty string
+- Return an empty string if `text` is empty
 
 ## Template
 

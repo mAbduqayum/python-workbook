@@ -14,12 +14,12 @@ Distance between two points: `√((x₂ - x₁)² + (y₂ - y₁)²)`
 
 ## Example
 ```
-Enter the first x-coordinate: 0
-Enter the first y-coordinate: 0
-Enter the next x-coordinate (blank to quit): 1
-Enter the next y-coordinate: 0
-Enter the next x-coordinate (blank to quit): 0
-Enter the next y-coordinate: 1
-Enter the next x-coordinate (blank to quit): 
+Enter first x: 0
+Enter first y: 0
+Enter next x (blank to quit): 1
+Enter next y: 0
+Enter next x (blank to quit): 0
+Enter next y: 1
+Enter next x (blank to quit): 
 The perimeter of that polygon is 3.414213562373095
 ```

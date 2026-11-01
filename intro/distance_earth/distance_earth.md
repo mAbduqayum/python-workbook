@@ -7,10 +7,10 @@ Write a program that calculates the distance (in kilometers) between two points 
 **Example 1: Dushanbe to Khujand (Tajikistan)**
 
 ```
-Enter latitude of first point: 38.5598
-Enter longitude of first point: 68.7870
-Enter latitude of second point: 40.2789
-Enter longitude of second point: 69.6210
+Enter first latitude: 38.5598
+Enter first longitude: 68.7870
+Enter second latitude: 40.2789
+Enter second longitude: 69.6210
 ```
 
 ```

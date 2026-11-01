@@ -36,6 +36,7 @@ if __name__ == "__main__":
 
 - The words file contains one sensitive word per line
 - Replace each occurrence of a sensitive word with asterisks of the same length
+- A word is a run of letters and digits, so `pass` doesn't match inside `password`
 - Matching is case-insensitive
 - Return the total count of redacted words
 - Preserve all punctuation and whitespace

@@ -39,3 +39,25 @@ print(f"Maximum: {max_value}")
 ```
 
 > **Note:** For minimum, use `float('inf')` instead.
+
+## Pattern 4: Digit Stripping
+
+`n % 10` is the last digit of a number, and `n // 10` is the number without that
+digit. Repeat both to visit every digit, from right to left:
+
+```python
+n = 4071
+while n > 0:
+    print(n % 10)
+    n = n // 10
+```
+
+| `n`    | Prints `n % 10` | `n // 10` |
+|--------|-----------------|-----------|
+| `4071` | `1`             | `407`     |
+| `407`  | `7`             | `40`      |
+| `40`   | `0`             | `4`       |
+| `4`    | `4`             | `0`       |
+
+> **Note:** The loop never runs when `n` is `0` or negative. Handle `0` on its
+> own if it matters, and strip the digits of `abs(n)` for a negative number.

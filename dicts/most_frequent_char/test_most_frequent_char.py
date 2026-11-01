@@ -42,9 +42,8 @@ def test_clear_winner():
     assert most_frequent_char("aaabbc") == "a"
 
 
-def test_empty_raises_error():
-    with pytest.raises(ValueError):
-        most_frequent_char("")
+def test_empty_returns_empty_string():
+    assert most_frequent_char("") == ""
 
 
 def test_numbers_and_letters():

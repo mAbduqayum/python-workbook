@@ -87,6 +87,18 @@ class TestRedactText:
             output_file.read_text(encoding="utf-8") == "Line 1 ******\nLine 2 ******\n"
         )
 
+    def test_word_at_end_of_text(self, tmp_path):
+        words_file = tmp_path / "words.txt"
+        input_file = tmp_path / "input.txt"
+        output_file = tmp_path / "output.txt"
+        words_file.write_text("secret\n", encoding="utf-8")
+        input_file.write_text("keep the secret", encoding="utf-8")
+
+        count = redact_text(str(input_file), str(words_file), str(output_file))
+
+        assert count == 1
+        assert output_file.read_text(encoding="utf-8") == "keep the ******"
+
     def test_empty_text(self, tmp_path):
         words_file = tmp_path / "words.txt"
         input_file = tmp_path / "input.txt"
