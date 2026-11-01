@@ -54,6 +54,10 @@ rebuilt whenever the content changes.
 9. [`File`](files/_docs/_table_of_contents.md)
 10. [`Recursion`](recursions/_docs/_table_of_contents.md)
 
+## Appendix
+
+- [`First Project`](appendix/first_project.md) - Start a Python project of your own, outside the workbook
+
 ## References
 
 Books and online resources this workbook draws on: [`REFERENCES.md`](REFERENCES.md)

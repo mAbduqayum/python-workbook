@@ -1,6 +1,8 @@
 # Creating Your First Python Project
 
-This guide will walk you through creating and running your first Python program.
+This guide walks you through creating a Python project of your own and running
+your first program in it. The workbook's exercises don't need one: the workbook
+you cloned is already a Python project.
 
 ## Create Your First Python Project
 
@@ -74,5 +76,5 @@ print("I'm learning Python!")
 - `uv run main.py` - Run a Python file
 - `uv run pytest path/to/exercise/` - Test an exercise solution
 
-Congratulations! You now have a proper Python development setup, and you're ready to start programming.
-Next, read [`working_through_an_exercise.md`](working_through_an_exercise.md) to learn how the workbook exercises work.
+Congratulations! You now have a Python project of your own, ready for any program you want to write.
+To learn how the workbook's exercises work, read [`working_through_an_exercise.md`](../intro/_docs/working_through_an_exercise.md).
