@@ -43,10 +43,6 @@ Install the following tools:
 
 ## Recommended Reading Order
 
-Also available as a single book:
-[`python-workbook.pdf`](https://github.com/mAbduqayum/python-workbook/releases/download/book-latest/python-workbook.pdf),
-rebuilt whenever the content changes.
-
 1. [`Introduction`](intro/_docs/_table_of_contents.md)
 2. [`Conditionals`](conditionals/_docs/_table_of_contents.md)
 3. [`Repetitions`](repetitions/_docs/_table_of_contents.md)
