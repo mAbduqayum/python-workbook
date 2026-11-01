@@ -7,18 +7,19 @@
 - Reaching exactly 0 counts as one way; going negative or running out of coins counts as zero
 
 Here is `coin_sum(2, [1, 2])`. Each box shows the remaining amount and the coins
-still allowed. The ends of the branches add up to 2 ways: `1 + 1` and `2`.
+still allowed. Each rounded box ends a branch, and together they add up to 2 ways:
+`1 + 1` and `2`.
 
 ```mermaid
 flowchart TD
-    A["2 left, coins 1 and 2"] -->|use 1| B["1 left, coins 1 and 2"]
-    A -->|skip 1| C["2 left, coin 2"]
-    B -->|use 1| D["0 left: 1 way"]
-    B -->|skip 1| E["1 left, coin 2"]
-    E -->|use 2| F["-1 left: 0 ways"]
-    E -->|skip 2| G["1 left, no coins: 0 ways"]
-    C -->|use 2| H["0 left: 1 way"]
-    C -->|skip 2| I["2 left, no coins: 0 ways"]
+    A["Amount 2<br/>Coins 1, 2"] -->|use 1| B["Amount 1<br/>Coins 1, 2"]
+    A -->|skip 1| C["Amount 2<br/>Coin 2"]
+    B -->|use 1| D(["Exact<br/>1 way"])
+    B -->|skip 1| E["Amount 1<br/>Coin 2"]
+    C -->|use 2| F(["Exact<br/>1 way"])
+    C -->|skip 2| G(["No coins<br/>0 ways"])
+    E -->|use 2| H(["Too much<br/>0 ways"])
+    E -->|skip 2| I(["No coins<br/>0 ways"])
 ```
 
 ## Note
