@@ -1,4 +1,14 @@
-import re
+def tokenize(text: str) -> list[str]:
+    # Keeps the characters between words too, so joining the tokens gives back text
+    tokens = []
+    start = 0
+    for i, char in enumerate(text):
+        if not char.isalnum():
+            tokens.append(text[start:i])
+            tokens.append(char)
+            start = i + 1
+    tokens.append(text[start:])
+    return tokens
 
 
 def redact_text(input_path: str, words_path: str, output_path: str) -> int:
@@ -13,14 +23,13 @@ def redact_text(input_path: str, words_path: str, output_path: str) -> int:
         text = f.read()
 
     count = 0
-    for word in sensitive_words:
-        # \b word boundaries: match "secret" but not "secretly"
-        pattern = re.compile(r"\b" + re.escape(word) + r"\b", re.IGNORECASE)
-        text, replacements = pattern.subn("*" * len(word), text)
-        count += replacements
-
     with open(output_path, "w", encoding="utf-8") as f:
-        f.write(text)
+        for token in tokenize(text):
+            if token.lower() in sensitive_words:
+                f.write("*" * len(token))
+                count += 1
+            else:
+                f.write(token)
 
     return count
 

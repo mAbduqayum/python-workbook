@@ -15,9 +15,3 @@ elif initial == "gas" and final == "liquid":
     print("condensation")
 elif initial == "gas" and final == "solid":
     print("deposition")
-elif initial == "gas" and final == "plasma":
-    print("ionization")
-elif initial == "plasma" and final == "gas":
-    print("recombination")
-else:
-    print("Cannot transition directly")

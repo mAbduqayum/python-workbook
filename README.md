@@ -1,6 +1,6 @@
 # Python Workbook
 
-A structured collection of Python programming exercises designed for learning and practice.
+Programming exercises from variables to recursions.
 
 ## Getting Started
 
@@ -10,7 +10,7 @@ Install the following tools:
 
 - **[Git](https://git-scm.com/downloads)** - Version control system
 - **[uv](https://docs.astral.sh/uv/getting-started/installation/)** - Python package manager
-- **[VS Code](https://code.visualstudio.com/download)** - Code editor
+- **[PyCharm](https://www.jetbrains.com/pycharm/download/)** - Code editor
 
 ### Setup Instructions
 
@@ -32,23 +32,31 @@ Install the following tools:
    cd python-workbook
    ```
 
-5. **Open in VS Code:**
+5. **Open in PyCharm:**
    ```bash
-   code .
+   pycharm .
    ```
+   If your terminal doesn't know the `pycharm` command, start PyCharm, click
+   **Open** on its welcome screen (or **File → Open**), and choose the
+   `python-workbook` folder. If PyCharm asks whether to trust the project,
+   choose **Trust Project**.
 
 ## Recommended Reading Order
 
 1. [`Introduction`](intro/_docs/_table_of_contents.md)
-2. [`Conditional`](conditionals/_docs/_table_of_contents.md)
-3. [`Repetition`](repetitions/_docs/_table_of_contents.md)
-4. [`Function`](functions/_docs/_table_of_contents.md)
-5. [`List`](lists/_docs/_table_of_contents.md)
-6. [`Set`](sets/_docs/_table_of_contents.md)
-7. [`Dict`](dicts/_docs/_table_of_contents.md)
-8. [`Error`](errors/_docs/_table_of_contents.md)
-9. [`File`](files/_docs/_table_of_contents.md)
+2. [`Conditionals`](conditionals/_docs/_table_of_contents.md)
+3. [`Repetitions`](repetitions/_docs/_table_of_contents.md)
+4. [`Functions`](functions/_docs/_table_of_contents.md)
+5. [`Lists`](lists/_docs/_table_of_contents.md)
+6. [`Sets`](sets/_docs/_table_of_contents.md)
+7. [`Dictionaries`](dicts/_docs/_table_of_contents.md)
+8. [`Error Handling`](errors/_docs/_table_of_contents.md)
+9. [`Files`](files/_docs/_table_of_contents.md)
 10. [`Recursion`](recursions/_docs/_table_of_contents.md)
+
+## Appendix
+
+Starting a project of your own, and debugging your programs: [`Appendix`](appendix/_table_of_contents.md)
 
 ## References
 

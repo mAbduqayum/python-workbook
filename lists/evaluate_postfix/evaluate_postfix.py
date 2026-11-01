@@ -3,7 +3,7 @@ UNARY_MINUS = "~"
 
 def evaluate_postfix(tokens: list[str]) -> float:
     stack = []
-    operators = {"+", "-", "*", "/", "^"}
+    operators = ["+", "-", "*", "/", "^"]
 
     for token in tokens:
         if token == UNARY_MINUS:

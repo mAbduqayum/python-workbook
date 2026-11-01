@@ -15,7 +15,7 @@ import pytest
         (3, 23, "Navruz (Persian New Year)"),
         (3, 24, "Navruz (Persian New Year)"),
         (3, 25, "Not a national holiday"),
-        (5, 1, "Labour Day"),
+        (5, 1, "Labor Day"),
         (5, 9, "Victory Day"),
         (6, 27, "National Unity Day"),
         (7, 4, "Not a national holiday"),

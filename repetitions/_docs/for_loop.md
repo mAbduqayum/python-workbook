@@ -61,7 +61,7 @@ for loops.
 | `range(stop)`              | From 0 to stop-1             | `range(5)`         | `0, 1, 2, 3, 4`    |
 | `range(start, stop)`       | From start to stop-1         | `range(2, 6)`      | `2, 3, 4, 5`       |
 | `range(start, stop, step)` | From start to stop-1 by step | `range(1, 10, 2)`  | `1, 3, 5, 7, 9`    |
-| Backwards                  | Using negative step          | `range(10, 0, -1)` | `10, 9, 8, ..., 1` |
+| Backward                   | Using negative step          | `range(10, 0, -1)` | `10, 9, 8, ..., 1` |
 
 ## Range Examples
 
@@ -78,7 +78,7 @@ for i in range(1, 11):
 for i in range(0, 101, 10):
     print(i)  # 0, 10, 20, ..., 100
 
-# Count backwards from 5 to 1
+# Count backward from 5 to 1
 for i in range(5, 0, -1):
     print(i)  # 5, 4, 3, 2, 1
 ```

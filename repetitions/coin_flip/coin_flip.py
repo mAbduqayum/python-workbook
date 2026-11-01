@@ -5,12 +5,12 @@ total_flips = 0
 for _ in range(10):
     consecutive = 1
 
-    previous = random.choice(["H", "T"])
+    previous = random.choice("HT")
     print(previous, end=" ")
     flips = 1
 
     while consecutive < 3:
-        current = random.choice(["H", "T"])
+        current = random.choice("HT")
         print(current, end=" ")
         flips += 1
 

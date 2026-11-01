@@ -9,4 +9,4 @@
 
 ## Note
 
-A list of characters is not hashable — join the sorted letters back into a string to use them as a key.
+A list of characters is not hashable - join the sorted letters back into a string to use them as a key.

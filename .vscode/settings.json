@@ -39,6 +39,7 @@
   "editor.detectIndentation": false, // Whether to auto-detect indentation settings
 
   // === GITHUB COPILOT ===
+  "chat.disableAIFeatures": true, // Hide chat and inline suggestions, and disable the Copilot extensions (VS Code 1.104+)
   "github.copilot.enable": {
     "*": false                     // Disable Copilot for all file types
   },

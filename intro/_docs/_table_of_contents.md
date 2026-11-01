@@ -4,8 +4,6 @@
 mindmap
     root((Introduction))
         Workflow
-            VS Code
-            uv init
             uv run
             pytest
         Variables
@@ -35,13 +33,12 @@ mindmap
 
 ## Recommended Reading Order
 
-1. [`first_project.md`](first_project.md)
-2. [`working_through_an_exercise.md`](working_through_an_exercise.md)
-3. [`vars_and_types.md`](vars_and_types.md)
-4. [`math_operators.md`](math_operators.md)
-5. [`math_functions.md`](math_functions.md)
-6. [`string_formatting.md`](string_formatting.md)
-7. [`string_formatting_advanced.md`](string_formatting_advanced.md)
+1. [`vars_and_types.md`](vars_and_types.md)
+2. [`math_operators.md`](math_operators.md)
+3. [`math_functions.md`](math_functions.md)
+4. [`string_formatting.md`](string_formatting.md)
+5. [`string_formatting_advanced.md`](string_formatting_advanced.md)
+6. [`working_through_an_exercise.md`](working_through_an_exercise.md)
 
 ## Practice Questions
 

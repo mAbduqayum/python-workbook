@@ -37,6 +37,28 @@ for i in range(1, 11):
 9
 ```
 
+## `break` in a Nested Loop
+
+`break` exits only the innermost loop it is in. The outer loop carries on with
+its next iteration:
+
+```python
+for row in range(1, 4):
+    for col in range(1, 4):
+        if col > row:
+            break
+        print(col, end=" ")
+    print()
+```
+
+**Output:**
+
+```
+1
+1 2
+1 2 3
+```
+
 ## `else` After Loops
 
 Python supports an `else` clause on loops that executes when the loop completes

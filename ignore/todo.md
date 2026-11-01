@@ -30,7 +30,7 @@
 
 - `List Revers`
   Write function reverse(values) that returns the elements of the original list in reverse
-  order—of course without calling the reverse() function of the list.
+  order-of course without calling the reverse() function of the list.
 - `List Revers (b)`: List Reverse Inplace
   What is different if you want to implement reversing the order inplace to be
   memory-optimal for a very large datasets? What should be given then?

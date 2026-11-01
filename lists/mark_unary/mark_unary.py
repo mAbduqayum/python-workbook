@@ -1,6 +1,6 @@
 def mark_unary(tokens: list[str]) -> list[str]:
     result = []
-    operators = {"+", "-", "*", "/", "^"}
+    operators = ["+", "-", "*", "/", "^"]
 
     for i, token in enumerate(tokens):
         if token == "-":

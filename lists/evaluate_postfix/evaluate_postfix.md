@@ -6,6 +6,7 @@ Evaluate a postfix expression and return the result.
 
 - Create a function `evaluate_postfix(tokens)` that takes a list of tokens in postfix notation
 - Return the numeric result of evaluating the expression
+- The token `'~'` is a unary minus: it negates the number before it
 
 ## Template:
 

@@ -10,14 +10,15 @@ pytestmark = pytest.mark.skipif(
 )
 
 
-@pytest.mark.parametrize("length", [8, 12, 16, 20])
+@pytest.mark.parametrize("length", [4, 8, 12, 16, 20])
 def test_password_length(length):
     pwd = password(length)
     assert len(pwd) == length
 
 
-def test_password_contains_all_types():
-    pwd = password(20)
+@pytest.mark.parametrize("length", [4, 20])
+def test_password_contains_all_types(length):
+    pwd = password(length)
 
     has_lower = any(c.islower() for c in pwd)
     has_upper = any(c.isupper() for c in pwd)

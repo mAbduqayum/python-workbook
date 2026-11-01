@@ -1,6 +1,8 @@
 # Creating Your First Python Project
 
-This guide will walk you through creating and running your first Python program.
+This guide walks you through creating a Python project of your own and running
+your first program in it. The workbook's exercises don't need one: the workbook
+you cloned is already a Python project.
 
 ## Create Your First Python Project
 
@@ -18,18 +20,17 @@ This guide will walk you through creating and running your first Python program.
    cd first-project
    ```
 
-## Open Your Project in VS Code
+## Open Your Project in PyCharm
 
 1. While in your project folder in the terminal, type:
    ```
-   code .
+   pycharm .
    ```
-   (This opens the current folder in VS Code)
+   (This opens the current folder in PyCharm)
 
-2. If VS Code doesn't open, you can:
-    - Open VS Code manually
-    - Go to File → Open Folder
-    - Select your `first-project` folder
+2. If your terminal doesn't know the `pycharm` command, start PyCharm, click
+   **Open** on its welcome screen (or **File → Open**), and choose your
+   `first-project` folder.
 
 ## Understanding Your Project
 
@@ -52,7 +53,7 @@ print("I'm learning Python!")
 
 ## Run Your Program
 
-1. In VS Code, open the terminal (Terminal → New Terminal)
+1. In PyCharm, open the terminal (View → Tool Windows → Terminal)
 2. Run your program with:
    ```
    uv run main.py
@@ -62,7 +63,7 @@ print("I'm learning Python!")
 ## What Just Happened?
 
 - **uv init** created a complete Python project structure for you
-- **VS Code** is where you write and edit your code
+- **PyCharm** is where you write and edit your code
 - **uv run** executes your Python programs in the project's managed environment
 - **Python** is the language that understands your code and makes it work
 
@@ -70,9 +71,9 @@ print("I'm learning Python!")
 
 - `cd` - **C**hange **D**irectory
 - `uv init project-name` - Create a new Python project
-- `code .` - Open the current folder in VS Code
+- `pycharm .` - Open the current folder in PyCharm
 - `uv run main.py` - Run a Python file
 - `uv run pytest path/to/exercise/` - Test an exercise solution
 
-Congratulations! You now have a proper Python development setup, and you're ready to start programming.
-Next, read [`working_through_an_exercise.md`](working_through_an_exercise.md) to learn how the workbook exercises work.
+Congratulations! You now have a Python project of your own, ready for any program you want to write.
+To learn how the workbook's exercises work, read [`working_through_an_exercise.md`](../intro/_docs/working_through_an_exercise.md).

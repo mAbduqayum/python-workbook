@@ -2,7 +2,7 @@
 
 How to simplify exercise docs/solutions in a chapter the same way the `intro`
 chapter was done. The goal: beginners write the *concept being taught*, not
-boilerplate, and docs say *what* to produce — never *how* to solve it.
+boilerplate, and docs say *what* to produce - never *how* to solve it.
 
 ## How the test harness works (read this first)
 
@@ -10,8 +10,8 @@ Every script-based test takes the `solution` fixture, which resolves the
 exercise script from the test filename (`test_bmi.py` → `bmi.py`) and skips
 when it is not written yet. There are only two ways to use it:
 
-- `solution.check_output(input_text=…, expected_output=…)` — exact match.
-- `solution.run(input_text=…)` — returns `RunResult(stdout, stderr,
+- `solution.check_output(input_text=…, expected_output=…)` - exact match.
+- `solution.run(input_text=…)` - returns `RunResult(stdout, stderr,
   returncode)` for tests that assert loosely. It fails the test if the script
   crashes or times out, so loose assertions cannot mask a broken script.
 
@@ -34,10 +34,10 @@ Import-based chapters (`lists`, `dicts`, `sets`, `functions`, `recursions`,
 several independent functions keep per-function decorators instead.
 
 Implication: adding, removing or rewording prompts in docs/solutions is safe. Tests
-assert program output, not doc text — **doc-only edits never need test
+assert program output, not doc text - **doc-only edits never need test
 changes**. Still run the suite to confirm nothing else regressed.
 
-## Step 1 — Drop `Enter …:` input prompt boilerplate
+## Step 1 - Drop `Enter …:` input prompt boilerplate
 
 In each exercise `.md`, every `**Example N:**` has an input fenced block then
 an output fenced block. Strip the `Enter <label>: ` prefix from each **input**
@@ -47,36 +47,36 @@ change in the solution `.py`: `input("Enter foo: ")` → `input()`.
 **DROP the prompt** for almost everything, including **fixed multi-input of
 different kinds** (start / diff / count, weight / height, the coefficients
 a / b / c). A `## Task` that names the inputs in the order they're read is
-enough to disambiguate the example's input block — the prompt is redundant
+enough to disambiguate the example's input block - the prompt is redundant
 with it. Drop it.
 
 **KEEP the `Enter …:` prompt only when** reads are **interleaved inside a loop**
 so there is no fixed order to name up front, and the prompt is the only thing
-telling the reader which value is being asked for at each step — e.g. reading
+telling the reader which value is being asked for at each step - e.g. reading
 alternating x / y coordinate pairs until the user enters a blank x
 (`polygon_perimeter`). Here a bare input block really is ambiguous.
 
 Also soften `## Task` wording: "Ask/prompt the user for X" → "Read X".
 
 The first one or two exercises in a chapter that *introduce* `input()` as the
-concept may keep an explicit prompt on purpose — prompting is taught once
+concept may keep an explicit prompt on purpose - prompting is taught once
 before being dropped.
 
 **Measurement inputs need a unit somewhere.** Once a prompt is dropped, the
-example input becomes a bare number — `5.2` in `circle_area` doesn't say
+example input becomes a bare number - `5.2` in `circle_area` doesn't say
 "meters". Put the unit in the **intro paragraph** ("calculates the area of a
 circle given its radius in meters"). This holds even when the program doesn't
 print the unit in its output.
 
-## Step 2 — Drop how-to-solve notes; keep output/spec notes
+## Step 2 - Drop how-to-solve notes; keep output/spec notes
 
 A `## Note` (or inline hint) is **redundant and should be removed** when it:
 - restates formatting already visible in the examples
-  (`Use .2f formatting`, leading zeros — the example output shows it), or
+  (`Use .2f formatting`, leading zeros - the example output shows it), or
 - prescribes *which function/builtin* to use
   (`Use math.sqrt()`, `Use min()/max()`, `Use // and %`,
-  `Convert with math.radians()`) — that is the puzzle, not the spec, or
-- **paraphrases another section of the same doc** — the Task, Algorithm,
+  `Convert with math.radians()`) - that is the puzzle, not the spec, or
+- **paraphrases another section of the same doc** - the Task, Algorithm,
   Logic, Formula, Diagram, or a thresholds Table. If the bullet just says
   in prose what an earlier section already says structurally, drop it.
 
@@ -90,20 +90,20 @@ cannot derive and that determines the expected output:**
   (e.g. `year(s)` / `second(s)` pluralization),
 - `math.pi` *only* when it's needed to reproduce the rounded output and the
   formula references π,
-- edge-case behaviour the Task and examples don't make explicit
+- edge-case behavior the Task and examples don't make explicit
   (case-insensitive input, boundary values, non-strict ordering).
 
 When a Note mixes both, delete only the how-to/redundant bullets and keep
 the spec ones. Preserve any non-Note structural section even if it sits
-right after (e.g. `## Operations Explained` defines the task — keep it).
+right after (e.g. `## Operations Explained` defines the task - keep it).
 
-### Step 2b — Prefer one section over two
+### Step 2b - Prefer one section over two
 
 The default shape of a simplified exercise is **Task → Examples**, nothing
 else. For trivial problems it goes one step further to just
 **intro paragraph → Examples** (drop `## Task` entirely). Use that minimal
 shape when the title + intro + examples already convey input, output
-strings, and the rule — that is, when every `## Task` bullet would just
+strings, and the rule - that is, when every `## Task` bullet would just
 restate "Read X / determine Y / display Z" without adding new spec.
 
 If a `## Note`, `## Logic`, or `## Algorithm` section survives Step 2,
@@ -111,27 +111,27 @@ ask one more question: *does this content belong in `## Task`?*
 
 - A bullet that is genuinely-necessary spec (e.g. "voting age is 18",
   "input is case-insensitive", "0°C displays `solid or liquid`") should
-  be **moved into `## Task` — or directly into the intro paragraph** if
+  be **moved into `## Task` - or directly into the intro paragraph** if
   it's a single short fact. Then drop the now-empty Note.
 - A `## Logic` / `## Algorithm` / `## Pattern` section that walks the student
   through the branches, the digit extraction, or a term-by-term derivation of
-  the answer *is* the solution — drop it wholesale.
+  the answer *is* the solution - drop it wholesale.
 - Keep a standalone reference section only when it is genuinely
-  declarative content the student looks up rather than derives — a
+  declarative content the student looks up rather than derives - a
   thresholds table (BMI ranges, day-mapping table), a labeled formula,
   or a diagram. Tables/formulas/diagrams stay; prose how-to goes.
 - **A named method the student cannot be expected to derive (Newton's method,
   a series for π) keeps its core formula, not just its tolerance.** Dropping
   the update rule (`guess = (guess + x/guess) / 2`) along with the walkthrough
-  leaves the exercise unsolvable — that's too far. Keep the one labeled formula
+  leaves the exercise unsolvable - that's too far. Keep the one labeled formula
   / series; drop the surrounding "do this, then this" steps. (Naming the method
   in the title isn't enough for a beginner.)
 
 One scoped exception: chapters introducing a new feature (e.g.
 `if_elif_else` teaching docs in `_docs/`) intentionally keep more
-explanation — leave those alone.
+explanation - leave those alone.
 
-### Step 2c — Drop label prefixes in one-line outputs
+### Step 2c - Drop label prefixes in one-line outputs
 
 When the program's output is a **single line** of the form
 `Label: <value>` (or `Label: <value> <unit>`), and the surrounding context
@@ -151,35 +151,35 @@ When the program's output is a **single line** of the form
   the intro doesn't pin it).
 
 Prefer **value + unit suffix** (`{feet:.2f} feet`) over **label prefix**
-(`Distance in feet: {feet:.2f}`) when a single-line output needs a unit —
+(`Distance in feet: {feet:.2f}`) when a single-line output needs a unit -
 the unit reads naturally with the number, and there's no leading boilerplate.
 
 Remember: this change touches **three files** (`.py`, `test_*.py`, `.md`).
 Sync them in one pass.
 
-### Step 2d — Don't suggest formulas for grade-school math
+### Step 2d - Don't suggest formulas for grade-school math
 
 `## Formula` is genuinely useful for physics, finance, or trigonometry the
 student can't be expected to derive. It is **not** useful for unit
-conversions that are elementary arithmetic — drop it for things like:
+conversions that are elementary arithmetic - drop it for things like:
 
 - seconds ↔ minutes/hours/days,
-- millimetres ↔ metres,
+- millimeters ↔ meters,
 - digit extraction with `//` and `%` on a two-digit number.
 
 If a beginner has to be told `total_seconds = days×86400 + hours×3600 +
 minutes×60 + seconds`, the exercise is teaching the wrong thing.
 
-### Step 2e — Delete `<details>` Hint/Note blocks; use a `*_hint.md` if truly needed
+### Step 2e - Delete `<details>` Hint/Note blocks; use a `*_hint.md` if truly needed
 
 `<details>` Hint and Note blocks inside an exercise doc paste a complete or
 near-complete solution, defeating the guide's goal (*what* to produce, never
 *how*). **Delete them all.** First fold any spec-critical fact they contain
 into `## Task` (Step 2b) so nothing non-derivable is lost.
 
-Only when a hint is **really necessary** — a named technique a beginner cannot
+Only when a hint is **really necessary** - a named technique a beginner cannot
 be expected to derive, and where the obvious brute-force bypasses the concept
-the exercise teaches (sliding window, complement search, sorted-key grouping) —
+the exercise teaches (sliding window, complement search, sorted-key grouping) -
 create a **standalone `<exercise>_hint.md`** next to the exercise, modeled on
 `intro/sort_integers/sort_integers_hint.md`:
 
@@ -187,21 +187,21 @@ create a **standalone `<exercise>_hint.md`** next to the exercise, modeled on
 - terse `## Algorithm` bullets describing the approach in words,
 - an optional one-line `## Note`,
 - **no full solution code**, and
-- **not linked** from the exercise doc — the student opens it deliberately.
+- **not linked** from the exercise doc - the student opens it deliberately.
 
 Keep the bar high: if the technique is taught in `_docs/`, or the needed
 mapping/tool is already handed to the student in the template, no hint file is
 warranted.
 
-## Step 3 — General beginner-friction cleanup
+## Step 3 - General beginner-friction cleanup
 
 Apply opportunistically while in a chapter:
 - Fix broken/placeholder commands and paths in `_docs/` (use real project
   paths, `uv run`, correct menu names).
 - Make constants explicit and idiomatic in solutions (`import math; math.pi`
   instead of a hardcoded `pi = 3.14159`) **only if** the rounded example
-  output is unchanged — verify before/after.
-- Grammar/formatting polish: `second(s)`/`year(s)`, leading zeros — update the
+  output is unchanged - verify before/after.
+- Grammar/formatting polish: `second(s)`/`year(s)`, leading zeros - update the
   solution, its test's expected strings, **and** all example outputs in the
   `.md` together so they stay in sync.
 
@@ -209,14 +209,14 @@ Apply opportunistically while in a chapter:
 
 Conventions for exercises where the student writes a function (lists,
 functions, … chapters), on top of the steps above. A change here touches
-**three files** — `.md` template/examples, solution `.py` `__main__` block,
-`test_*.py` cases — sync them in one pass.
+**three files** - `.md` template/examples, solution `.py` `__main__` block,
+`test_*.py` cases - sync them in one pass.
 
 - **Sample list values: primes, not `[1, 2, 3, 4, 5]`.** Use
   `[2, 3, 5, 7, 11]` (extend with 13, 17, …); same for string forms
   (`"1 2 3 4 5"` → `"2 3 5 7 11"`). With consecutive ints starting at 1,
   value and index+1 coincide, so an example can't show whether a result is
-  an index or a value. Recompute every expected output — sums, averages,
+  an index or a value. Recompute every expected output - sums, averages,
   found-indices, matrix rows all change with the data.
 - **Generic list parameter: `l`, not `lst`.** Keep semantic names
   (`items`, `numbers`, `results`) where they exist. (`E` rules are ignored
@@ -228,13 +228,13 @@ functions, … chapters), on top of the steps above. A change here touches
   even-length lists, return the second of the two middle items"), never the
   expression or tool that produces it (`len // 2`, "create the list from
   `range`", "slicing handles this naturally"). Assumptions ("list is not
-  empty") and *constraints* ("don't use `sum`") are spec — they stay.
+  empty") and *constraints* ("don't use `sum`") are spec - they stay.
   Delete any `<details>` Hint/Note blocks (Step 2e); promote a truly-needed
   hint to a standalone `*_hint.md`.
 
-## Step 4 — Verify
+## Step 4 - Verify
 
-1. `uv run pytest <chapter> -n auto -q` — expect 100%. (Sandbox note: the `uv`
+1. `uv run pytest <chapter> -n auto -q` - expect 100%. (Sandbox note: the `uv`
    cache lives outside the sandbox; run with sandbox disabled if you hit a
    read-only-filesystem lock error.)
 2. Spot-check 2–3 rewritten docs: bare input values, untouched output blocks,

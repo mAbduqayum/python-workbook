@@ -3,7 +3,7 @@ name: Lint
 # Style gate for the curriculum itself, not for the people learning from it: a
 # beginner's first loop failing ruff is discouraging noise, and `Grade
 # Calculator` is the feedback that actually means something to them. So this
-# runs on `solutions` only — never on `main`, which students work from, and
+# runs on `solutions` only - never on `main`, which students work from, and
 # never in their forks.
 # Locally the same checks run as lefthook pre-commit hooks; this catches
 # commits that bypassed them.

@@ -21,12 +21,23 @@ file.close()
 
 ## Context Managers
 
-Always use `with` statement to automatically close files:
+Always use the `with` statement to open a file. It closes the file when its block
+ends, even if an exception stops the block early:
 
 ```python
 with open("example.txt", "r", encoding="utf-8") as file:
     content = file.read()
 # file is automatically closed here
+```
+
+To work with several files at once, list them in parentheses:
+
+```python
+with (
+    open("input.txt", encoding="utf-8") as infile,
+    open("output.txt", "w", encoding="utf-8") as outfile,
+):
+    outfile.write(infile.read())
 ```
 
 ## Reading Files

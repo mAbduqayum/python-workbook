@@ -7,6 +7,7 @@ Convert an infix expression to postfix notation (Reverse Polish Notation).
 - Create a function `infix_to_postfix(tokens)` that takes a list of tokens in infix notation
 - Return a list of tokens in postfix notation
 - Use the Shunting Yard algorithm
+- Treat `'~'`, the unary minus from `mark_unary`, as an operator like the others
 
 Solve the [`precedence`](../precedence/precedence.md) exercise first. The
 algorithm needs it to decide which operator binds tighter, and you can import

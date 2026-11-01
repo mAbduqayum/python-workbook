@@ -2,7 +2,7 @@
 
 ```mermaid
 mindmap
-    root((Repetition))
+    root((Repetitions))
         for loop
             range
             iterate strings
@@ -10,15 +10,25 @@ mindmap
             condition-based
             sentinel value
         Patterns
-            accumulation
-            counting
-            min/max
+            counter
+            accumulator
+            best so far
+            sentinel
+            flag
+            digit stripping
+        Strings
+            indexing
+            building strings
+            numbers in strings
+            upper and lower case
         Nested loops
             rows and columns
-            patterns
+            inner depends on outer
+            reset for each row
         Control
             break
             continue
+            break in nested loops
         Pitfalls
             infinite loops
             off-by-one
@@ -30,10 +40,11 @@ mindmap
 1. [`for_loop.md`](for_loop.md)
 2. [`while_loop.md`](while_loop.md)
 3. [`loop_patterns.md`](loop_patterns.md)
-4. [`nested_loops.md`](nested_loops.md)
-5. [`loop_control.md`](loop_control.md)
-6. [`random_numbers.md`](random_numbers.md)
-7. [`loop_best_practices.md`](loop_best_practices.md)
+4. [`string_loops.md`](string_loops.md)
+5. [`nested_loops.md`](nested_loops.md)
+6. [`loop_control.md`](loop_control.md)
+7. [`random_numbers.md`](random_numbers.md)
+8. [`loop_best_practices.md`](loop_best_practices.md)
 
 ## Practice Questions
 

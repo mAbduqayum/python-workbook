@@ -22,7 +22,7 @@ These functions are available without importing any module:
 | `pow(x, y)`      | Power (same as x**y)      | `pow(2, 3)`         | `8`      |
 | `divmod(x, y)`   | Division and remainder    | `divmod(17, 5)`     | `(3, 2)` |
 
-> **Note:** `round()` uses banker's rounding (half to even) — `round(2.5)` is
+> **Note:** `round()` uses banker's rounding (half to even) - `round(2.5)` is
 > `2`, `round(3.5)` is `4`. When an exercise requires a fixed number of
 > decimal places in *output*, format with f-strings (`f"{x:.2f}"`) instead of `round()`.
 

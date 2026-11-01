@@ -2,7 +2,7 @@ name: Sync to Main
 
 # Source of truth is the `solutions` branch. On every push to `solutions`, its
 # new commits are replayed onto `main` one at a time under their own title,
-# plus a `Source-commit: <sha>` trailer — the newest such trailer on `main` is
+# plus a `Source-commit: <sha>` trailer - the newest such trailer on `main` is
 # where the next run resumes.
 # A replayed commit holds the source tree except the solution scripts (see
 # `is_solution_script` below) and the paths listed in `.mainignore` --
@@ -11,7 +11,7 @@ name: Sync to Main
 # Everything else is mirrored as-is: tests,
 # `conftest.py`, Python fixture data such as `files/samples/calculator.py`, and
 # all non-Python content (docs, slides, configs). Tests already `pytest.skip`
-# when their solution file is absent, so deletion is the intended behaviour.
+# when their solution file is absent, so deletion is the intended behavior.
 
 on:
   push:

@@ -58,7 +58,7 @@ Lists are **mutable** (can be changed after creation).
 
 > **Note: What does "mutable" mean?**
 >
-> Mutable means the list can be modified after creation—you can add, remove, or change elements without creating a new
+> Mutable means the list can be modified after creation-you can add, remove, or change elements without creating a new
 > list. This is different from immutable types like strings or tuples, which cannot be changed once created.
 >
 > **Important**: When you modify a list, all variables pointing to that list see the change. This is why understanding
@@ -89,3 +89,18 @@ Lists are **mutable** (can be changed after creation).
 > - `reversed(list)` returns an iterator (vs `list.reverse()` which reverses in-place)
 >
 > **Common mistake**: Writing `numbers = numbers.sort()` will set `numbers` to `None` because `sort()` returns `None`!
+
+## Random Items
+
+The `random` module works on lists too. `random.choice()` picks one item, and `random.shuffle()` puts the items in a
+random order in place, so like `sort()` it returns `None`:
+
+```python
+import random
+
+cards = ["A", "K", "Q", "J"]
+print(random.choice(cards))  # One of the four cards
+
+random.shuffle(cards)
+print(cards)  # The same four cards, in a random order
+```

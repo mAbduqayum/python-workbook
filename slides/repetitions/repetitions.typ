@@ -139,7 +139,7 @@ for i in range(0, 101, 10):
 #pause
 
 ```python
-# Count backwards from 5 to 1
+# Count backward from 5 to 1
 for i in range(5, 0, -1):
     print(i)  # 5, 4, 3, 2, 1
 ```

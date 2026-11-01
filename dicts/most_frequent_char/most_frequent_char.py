@@ -1,7 +1,4 @@
 def most_frequent_char(text: str) -> str:
-    if not text:
-        raise ValueError("Cannot find most frequent character in empty string")
-
     freq = {}
     for char in text:
         if char in freq:
@@ -21,7 +18,7 @@ def most_frequent_char(text: str) -> str:
 
 def most_frequent_char2(text: str) -> str:
     if not text:
-        raise ValueError("Cannot find most frequent character in empty string")
+        return ""
 
     freq = {}
     for char in text:

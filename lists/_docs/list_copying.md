@@ -22,7 +22,7 @@ print(list2)  # [1, 2, 3, 4]
 > **Note: Why is this so important?**
 >
 > This is one of the **most common sources of bugs** for beginners! When you write `list2 = list1`, you're not creating
-> a copy—you're creating another name (reference) for the same list in memory. Think of it like two people sharing the
+> a copy-you're creating another name (reference) for the same list in memory. Think of it like two people sharing the
 > same notebook: when one person writes in it, the other sees the changes.
 >
 > **Rule of thumb**: Use `list2 = list1.copy()` or `list2 = list1[:]` whenever you want an independent copy that can be

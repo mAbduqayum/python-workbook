@@ -4,7 +4,7 @@ from lists.precedence.precedence import precedence
 def infix_to_postfix(tokens: list[str]) -> list[str]:
     output = []
     stack = []
-    operators = {"+", "-", "*", "/", "^", "~"}
+    operators = ["+", "-", "*", "/", "^", "~"]
 
     for token in tokens:
         if token.isdigit():

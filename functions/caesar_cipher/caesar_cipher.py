@@ -3,7 +3,10 @@ def caesar_cipher(text: str, shift: int) -> str:
 
     for char in text:
         if char.isalpha():
-            base = ord("A") if char.isupper() else ord("a")
+            if char.isupper():
+                base = ord("A")
+            else:
+                base = ord("a")
             shifted = (ord(char) - base + shift) % 26
             result += chr(base + shifted)
         else:

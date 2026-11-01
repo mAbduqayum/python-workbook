@@ -8,7 +8,7 @@ elif month == 3 and day == 8:
 elif month == 3 and 21 <= day <= 24:
     print("Navruz (Persian New Year)")
 elif month == 5 and day == 1:
-    print("Labour Day")
+    print("Labor Day")
 elif month == 5 and day == 9:
     print("Victory Day")
 elif month == 6 and day == 27:

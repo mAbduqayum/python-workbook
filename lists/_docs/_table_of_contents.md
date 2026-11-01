@@ -47,9 +47,11 @@ mindmap
 2. [`list_operations.md`](list_operations.md) - Operations and methods
 3. [`join_iterable.md`](join_iterable.md) - Joining iterables to strings
 4. [`list_iteration.md`](list_iteration.md) - Iteration patterns and common patterns
-5. [`list_copying.md`](list_copying.md) - Copying concepts and methods
-6. [`nested_list.md`](nested_list.md) - Nested lists (2D)
-7. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
+5. [`pointer.md`](pointer.md) - Names that point to objects, `is` vs `==`, mutable and immutable objects
+6. [`list_copying.md`](list_copying.md) - Copying concepts and methods
+7. [`tuple.md`](tuple.md) - Tuples: unchangeable sequences, packing and unpacking
+8. [`nested_list.md`](nested_list.md) - Nested lists (2D)
+9. [`list_best_practices.md`](list_best_practices.md) - Common mistakes, best practices, and quick reference
 
 ## Practice Questions
 
@@ -74,12 +76,14 @@ mindmap
 19. [`is_perfect`](../is_perfect/is_perfect.md)
 20. [`deck_operations`](../deck_operations/deck_operations.md)
 21. [`deal_hands`](../deal_hands/deal_hands.md)
-22. [`is_sublist`](../is_sublist/is_sublist.md)
-23. [`sublists`](../sublists/sublists.md)
-24. [`sieve_of_eratosthenes`](../sieve_of_eratosthenes/sieve_of_eratosthenes.md)
-25. [`filter_function`](../filter_function/filter_function.md)
-26. [`tokenize_expression`](../tokenize_expression/tokenize_expression.md)
-27. [`mark_unary`](../mark_unary/mark_unary.md)
-28. [`precedence`](../precedence/precedence.md)
-29. [`infix_to_postfix`](../infix_to_postfix/infix_to_postfix.md)
-30. [`evaluate_postfix`](../evaluate_postfix/evaluate_postfix.md)
+22. [`password`](../password/password.md)
+23. [`is_sublist`](../is_sublist/is_sublist.md)
+24. [`sublists`](../sublists/sublists.md)
+25. [`sieve_of_eratosthenes`](../sieve_of_eratosthenes/sieve_of_eratosthenes.md)
+26. [`filter_function`](../filter_function/filter_function.md)
+27. [`tokenize_expression`](../tokenize_expression/tokenize_expression.md)
+28. [`mark_unary`](../mark_unary/mark_unary.md)
+29. [`precedence`](../precedence/precedence.md)
+30. [`infix_to_postfix`](../infix_to_postfix/infix_to_postfix.md)
+31. [`evaluate_postfix`](../evaluate_postfix/evaluate_postfix.md)
+32. [`evaluate_expression`](../evaluate_expression/evaluate_expression.md)

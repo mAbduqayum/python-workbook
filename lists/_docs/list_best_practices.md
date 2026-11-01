@@ -45,7 +45,7 @@ numbers = [num for num in numbers if num % 2 != 0]
 
 ## Best Practices
 
-| Practice                      | ✅ Good                              | ❌ Avoid                                |
+| Practice                      | Good                                 | Avoid                                   |
 |-------------------------------|--------------------------------------|-----------------------------------------|
 | **Transformations**           | `[x*2 for x in nums]`                | Manual loop with append                 |
 | **Membership testing**        | `if item in my_list:`                | `for x in my_list: if x == item:`       |
