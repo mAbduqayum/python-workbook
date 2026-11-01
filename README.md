@@ -10,7 +10,7 @@ Install the following tools:
 
 - **[Git](https://git-scm.com/downloads)** - Version control system
 - **[uv](https://docs.astral.sh/uv/getting-started/installation/)** - Python package manager
-- **[VS Code](https://code.visualstudio.com/download)** - Code editor
+- **[PyCharm](https://www.jetbrains.com/pycharm/download/)** - Code editor
 
 ### Setup Instructions
 
@@ -32,10 +32,14 @@ Install the following tools:
    cd python-workbook
    ```
 
-5. **Open in VS Code:**
+5. **Open in PyCharm:**
    ```bash
-   code .
+   pycharm .
    ```
+   If your terminal doesn't know the `pycharm` command, start PyCharm, click
+   **Open** on its welcome screen (or **File → Open**), and choose the
+   `python-workbook` folder. If PyCharm asks whether to trust the project,
+   choose **Trust Project**.
 
 ## Recommended Reading Order
 
