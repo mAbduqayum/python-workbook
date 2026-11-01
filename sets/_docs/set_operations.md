@@ -3,7 +3,7 @@
 Python sets support all standard mathematical set operations. These operations are powerful tools for comparing and
 combining collections.
 
-## Visual Overview
+## Overview
 
 ```
 A = {2, 3, 5}
@@ -18,6 +18,20 @@ Symmetric Diff (A ^ B): {2, 7}        - elements in either, but not both
 ## Union
 
 Elements that are in **either** set (or both).
+
+```mermaid
+venn-beta
+  set a
+    text "2"
+  set b
+    text "7"
+  union a,b
+    text "3"
+    text "5"
+  style a fill:#B9C8E8,fill-opacity:1,stroke:#4C5A75,stroke-width:1.5
+  style b fill:#B9C8E8,fill-opacity:1,stroke:#4C5A75,stroke-width:1.5
+  style a,b fill:#B9C8E8,fill-opacity:1
+```
 
 ```python
 a = {2, 3, 5}
@@ -38,6 +52,20 @@ a | b | {11, 13}     # {2, 3, 5, 7, 11, 13}
 
 Elements that are in **both** sets.
 
+```mermaid
+venn-beta
+  set a
+    text "2"
+  set b
+    text "7"
+  union a,b
+    text "3"
+    text "5"
+  style a fill-opacity:0,stroke:#4C5A75,stroke-width:1.5
+  style b fill-opacity:0,stroke:#4C5A75,stroke-width:1.5
+  style a,b fill:#B9C8E8,fill-opacity:1
+```
+
 ```python
 a = {2, 3, 5}
 b = {3, 5, 7}
@@ -54,7 +82,21 @@ a & b & {3, 11}      # {3}
 
 ## Difference
 
-Elements in the **first** set but **not** in the second.
+Elements in the **first** set but **not** in the second. The diagram shows `a - b`.
+
+```mermaid
+venn-beta
+  set a
+    text "2"
+  set b
+    text "7"
+  union a,b
+    text "3"
+    text "5"
+  style a fill:#B9C8E8,fill-opacity:1,stroke:#4C5A75,stroke-width:1.5
+  style b fill-opacity:0,stroke:#4C5A75,stroke-width:1.5
+  style a,b fill:#FFFFFF,fill-opacity:1
+```
 
 ```python
 a = {2, 3, 5}
@@ -71,6 +113,20 @@ a.difference(b)      # {2}
 ## Symmetric Difference
 
 Elements in **either** set, but **not in both** (XOR operation).
+
+```mermaid
+venn-beta
+  set a
+    text "2"
+  set b
+    text "7"
+  union a,b
+    text "3"
+    text "5"
+  style a fill:#B9C8E8,fill-opacity:1,stroke:#4C5A75,stroke-width:1.5
+  style b fill:#B9C8E8,fill-opacity:1,stroke:#4C5A75,stroke-width:1.5
+  style a,b fill:#FFFFFF,fill-opacity:1
+```
 
 ```python
 a = {2, 3, 5}

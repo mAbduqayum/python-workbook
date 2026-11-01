@@ -86,3 +86,4 @@ mindmap
 29. [`precedence`](../precedence/precedence.md)
 30. [`infix_to_postfix`](../infix_to_postfix/infix_to_postfix.md)
 31. [`evaluate_postfix`](../evaluate_postfix/evaluate_postfix.md)
+32. [`evaluate_expression`](../evaluate_expression/evaluate_expression.md)
