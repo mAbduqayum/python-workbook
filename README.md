@@ -44,14 +44,14 @@ Also available as a single book:
 rebuilt whenever the content changes.
 
 1. [`Introduction`](intro/_docs/_table_of_contents.md)
-2. [`Conditional`](conditionals/_docs/_table_of_contents.md)
-3. [`Repetition`](repetitions/_docs/_table_of_contents.md)
-4. [`Function`](functions/_docs/_table_of_contents.md)
-5. [`List`](lists/_docs/_table_of_contents.md)
-6. [`Set`](sets/_docs/_table_of_contents.md)
-7. [`Dict`](dicts/_docs/_table_of_contents.md)
-8. [`Error`](errors/_docs/_table_of_contents.md)
-9. [`File`](files/_docs/_table_of_contents.md)
+2. [`Conditionals`](conditionals/_docs/_table_of_contents.md)
+3. [`Repetitions`](repetitions/_docs/_table_of_contents.md)
+4. [`Functions`](functions/_docs/_table_of_contents.md)
+5. [`Lists`](lists/_docs/_table_of_contents.md)
+6. [`Sets`](sets/_docs/_table_of_contents.md)
+7. [`Dictionaries`](dicts/_docs/_table_of_contents.md)
+8. [`Error Handling`](errors/_docs/_table_of_contents.md)
+9. [`Files`](files/_docs/_table_of_contents.md)
 10. [`Recursion`](recursions/_docs/_table_of_contents.md)
 
 ## Appendix

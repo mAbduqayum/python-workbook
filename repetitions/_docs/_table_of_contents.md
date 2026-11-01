@@ -2,7 +2,7 @@
 
 ```mermaid
 mindmap
-    root((Repetition))
+    root((Repetitions))
         for loop
             range
             iterate strings
