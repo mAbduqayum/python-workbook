@@ -18,7 +18,7 @@ ValueError: invalid literal for int() with base 10: 'abc'
 `int()` can't turn `abc` into a number, so it **raises an exception**: an object
 that says what went wrong. Here it is a `ValueError`. Nothing handled the
 exception, so Python stopped the program and printed this traceback. The appendix
-[Debugging Your Programs](../../appendix/debugging.md) shows how to read one.
+[Debugging Your Programs](../../appendix/_docs/debugging.md) shows how to read one.
 
 This chapter shows how to handle exceptions so that your program can carry on.
 

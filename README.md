@@ -56,7 +56,7 @@ Install the following tools:
 
 ## Appendix
 
-Starting a project of your own, and debugging your programs: [`Appendix`](appendix/_table_of_contents.md)
+Starting a project of your own, and debugging your programs: [`Appendix`](appendix/_docs/_table_of_contents.md)
 
 ## References
 
