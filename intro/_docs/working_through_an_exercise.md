@@ -96,7 +96,7 @@ punctuation all matter.
 ## Stuck?
 
 When your program crashes, or you can't see why its answer is wrong, read
-[`debugging.md`](../../appendix/debugging.md).
+[`debugging.md`](../../appendix/_docs/debugging.md).
 
 If you get stuck, reference solutions live on the `solutions` branch:
 

@@ -76,4 +76,4 @@ print("I'm learning Python!")
 - `uv run pytest path/to/exercise/` - Test an exercise solution
 
 Congratulations! You now have a Python project of your own, ready for any program you want to write.
-To learn how the workbook's exercises work, read [`working_through_an_exercise.md`](../intro/_docs/working_through_an_exercise.md).
+To learn how the workbook's exercises work, read [`working_through_an_exercise.md`](../../intro/_docs/working_through_an_exercise.md).
