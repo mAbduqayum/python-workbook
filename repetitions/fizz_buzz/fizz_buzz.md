@@ -8,9 +8,9 @@ Display the answers for the Fizz-Buzz game for numbers 1 to 100.
 - Apply the Fizz-Buzz rules
 
 ## Rules
-- If number is divisible by 3: say "fizz"
-- If number is divisible by 5: say "buzz"
-- If divisible by both 3 and 5: say "fizzbuzz"
+- If number is divisible by 3: say "Fizz"
+- If number is divisible by 5: say "Buzz"
+- If divisible by both 3 and 5: say "FizzBuzz"
 - Otherwise: say the number
 
 ## Examples
@@ -18,18 +18,18 @@ Display the answers for the Fizz-Buzz game for numbers 1 to 100.
 ```
 1
 2
-fizz
+Fizz
 4
-buzz
-fizz
+Buzz
+Fizz
 7
 8
-fizz
-buzz
+Fizz
+Buzz
 11
-fizz
+Fizz
 13
 14
-fizzbuzz
+FizzBuzz
 ...
 ```
