@@ -1,4 +1,4 @@
-# Lists in Python - Basics
+# List Basics
 
 ## Introduction
 

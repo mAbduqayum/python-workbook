@@ -1,4 +1,4 @@
-# Functions in Python - Best Practices and Quick Reference
+# Function Best Practices
 
 ## Best Practices
 

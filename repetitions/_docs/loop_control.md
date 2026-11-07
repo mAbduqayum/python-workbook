@@ -1,4 +1,4 @@
-# Repetition in Python - break and continue
+# break and continue
 
 Loops can be controlled from within using the `break` and `continue` statements.
 

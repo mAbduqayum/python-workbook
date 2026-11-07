@@ -1,4 +1,4 @@
-# Functions in Python - Scope
+# Function Scope
 
 Variables created inside a function are **local** to that function.
 

@@ -1,4 +1,4 @@
-# Lists in Python - Best Practices and Quick Reference
+# List Best Practices
 
 ## Common Mistakes
 

@@ -1,4 +1,4 @@
-# Pointers in Python - Names and Objects
+# Names and Objects
 
 ## Names Point to Objects
 

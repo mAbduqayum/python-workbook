@@ -1,4 +1,4 @@
-# String Utilities for Conditionals
+# String Utilities
 
 ## String Operations for Conditional Logic
 

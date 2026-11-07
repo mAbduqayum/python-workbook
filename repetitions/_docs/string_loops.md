@@ -1,4 +1,4 @@
-# Repetition in Python - Strings in Loops
+# Strings in Loops
 
 A string is a sequence of characters, so a loop can visit them by position and
 build a new string one piece at a time.

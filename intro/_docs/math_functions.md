@@ -1,4 +1,4 @@
-# Python Math Functions Reference
+# Math Functions
 
 Python's most useful mathematical functions and constants: built-in functions and the `math` module.
 

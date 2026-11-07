@@ -1,4 +1,4 @@
-# Repetition in Python - Common Loop Patterns
+# Loop Patterns
 
 Most loops follow one of a few patterns, and each pattern gives one variable a
 job. Learn their names. When you read a new problem, you can then ask which

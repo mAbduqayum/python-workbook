@@ -1,4 +1,4 @@
-# Functions in Python - Common Patterns
+# Function Patterns
 
 The following are common kinds of functions you'll write repeatedly.
 

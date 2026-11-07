@@ -41,6 +41,14 @@ mindmap
             Matrices
 ```
 
+## Outcomes
+
+- Read an item from either end of a list, and slice out any part of it
+- Add, remove and sort items, knowing which methods return `None`
+- Loop over one list or two at once, and build a new list or string
+- Tell when two names share one list, and copy it when you need two
+- Use a tuple for a fixed record and a list of lists for rows and columns
+
 ## Recommended Reading Order
 
 1. [`list_basics.md`](list_basics.md) - Introduction, creating lists, and accessing elements

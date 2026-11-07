@@ -1,4 +1,4 @@
-# Functions in Python - Basics
+# Function Basics
 
 ## Introduction
 

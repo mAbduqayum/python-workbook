@@ -1,4 +1,4 @@
-# Repetition in Python - The while Loop
+# The while Loop
 
 The `while` loop repeats as long as a condition is true.
 
