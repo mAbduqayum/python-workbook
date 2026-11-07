@@ -157,6 +157,14 @@ Decisions, 2026-11-01:
     still the largest missing topic (7 of 8 curricula teach them), but they come
     last, after everything above.
 
+Decisions, 2026-11-07:
+
+- Item 8 partly done: 27 later versions link back to the earlier exercise by its
+  title, which the book prints with its page. That's the 20 exact repeats (14 in
+  Functions, 6 in Recursion) plus 3.5, 3.9, 3.10, 3.15, 4.17, 4.26 and 5.9, which
+  redo an earlier exercise at a larger scope or with new rules. The mixed
+  exercises at each chapter's end aren't written yet.
+
 ## Repo changes that keep this fixed
 
 - **Check listings in the build.** Run each printed listing and fail when a

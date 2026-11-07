@@ -4,6 +4,8 @@ Create a recursive function that calculates the factorial of a number.
 
 Factorial of n (written as n!) is the product of all positive integers up to n. For example: `5! = 5 × 4 × 3 × 2 × 1 = 120`
 
+You wrote this with a loop in [Factorial](../../repetitions/factorial/factorial.md); this time the function calls itself.
+
 ## Template
 
 ```python

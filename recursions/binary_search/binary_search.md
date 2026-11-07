@@ -2,6 +2,8 @@
 
 Create a recursive function that searches for a target in a sorted list and returns its index, or `-1` if the target is not in the list.
 
+You wrote this with a loop in [Binary Search](../../lists/binary_search/binary_search.md); this time the function calls itself.
+
 ## Template
 
 ```python

@@ -2,6 +2,8 @@
 
 Create a recursive function that calculates the sum of digits in a number.
 
+You wrote this with a loop in [Digit Sum](../../functions/digit_sum/digit_sum.md); this time the function calls itself.
+
 ## Template
 
 ```python

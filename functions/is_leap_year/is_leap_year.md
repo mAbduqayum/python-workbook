@@ -2,6 +2,8 @@
 
 Write a function that determines if a year is a leap year.
 
+You wrote this as a program in [Is It a Leap Year?](../../conditionals/leap_year/leap_year.md); now make it a function.
+
 ## Task
 - Create a function `is_leap_year(year)` that takes a year
 - Return `True` if it's a leap year, `False` otherwise

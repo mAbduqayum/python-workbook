@@ -4,6 +4,8 @@ Create a recursive function that calculates the sum from 1 to n.
 
 For example: `sum_to_n(5) = 5 + 4 + 3 + 2 + 1 = 15`
 
+You wrote this with a loop in [Sum to N](../../repetitions/sum_to_n/sum_to_n.md); this time the function calls itself.
+
 ## Template
 
 ```python

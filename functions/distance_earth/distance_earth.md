@@ -2,6 +2,8 @@
 
 Write a function that calculates the great-circle distance between two points on Earth.
 
+You wrote this as a program in [Distance Between Two Points on Earth](../../intro/distance_earth/distance_earth.md); now make it a function, with the haversine formula below.
+
 ## Task
 - Create a function `distance_earth(lat1, lon1, lat2, lon2)` 
 - Takes latitude and longitude of two points in degrees

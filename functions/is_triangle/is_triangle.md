@@ -2,6 +2,8 @@
 
 Write a function that determines if three sides can form a triangle.
 
+You wrote this as a program in [Valid Triangle](../../conditionals/valid_triangle/valid_triangle.md); now make it a function.
+
 ## Task
 - Create a function `is_triangle(a, b, c)` that takes three side lengths
 - Return `True` if they can form a triangle, `False` otherwise
