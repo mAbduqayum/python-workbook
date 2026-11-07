@@ -4,9 +4,9 @@ Write a program that determines if three numbers are sorted in ascending order, 
 
 ## Task
 - Read three numbers `a`, `b`, and `c` from the user
-- Display one of: `ascending`, `descending`, `equal`, or `random`
+- Display one of: "ascending", "descending", "equal", or "random"
 - Ordering is non-strict (equal adjacent values still count as ascending
-  or descending); if all three values are equal, display `equal`
+  or descending); if all three values are equal, display "equal"
 
 ## Examples
 **Example 1:**

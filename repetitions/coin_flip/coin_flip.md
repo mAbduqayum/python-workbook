@@ -5,12 +5,13 @@ Simulate coin flips until 3 consecutive identical outcomes occur.
 ## Task
 - Simulate flipping a fair coin repeatedly
 - Stop when 3 consecutive heads OR 3 consecutive tails occur
-- Display each flip as 'H' or 'T' on one line
+- Display each flip as "H" or "T" on one line
 - Display the number of flips needed
 - Perform 10 simulations
 - Report the average number of flips needed
 
-## Example Output
+## Examples
+**Example 1:**
 ```
 H T T T (4 flips)
 H H T T H T H T T H H T H T T H T T T (19 flips)

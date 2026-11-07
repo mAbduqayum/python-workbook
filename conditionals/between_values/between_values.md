@@ -5,7 +5,7 @@ Write a program that determines if a value `b` is between two other values `a` a
 ## Task
 - Read three numbers `a`, `b`, and `c` from the user
 - Determine if `b` lies between `a` and `c` (inclusive, regardless of whether `a < c` or `a > c`)
-- Display `between` or `not between`
+- Display "between" or "not between"
 
 ## Examples
 **Example 1:**

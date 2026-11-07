@@ -6,7 +6,7 @@ Determine if a phrase is a palindrome when spacing (and optionally punctuation) 
 - Read a string from the user
 - Check if it's a palindrome ignoring spaces
 - **Optional Challenge:** Also ignore punctuation and treat uppercase/lowercase as equivalent
-- Display `Palindrome` or `Not a palindrome`
+- Display "Palindrome" or "Not a palindrome"
 
 ## Examples of Multi-word Palindromes
 - "go dog"
