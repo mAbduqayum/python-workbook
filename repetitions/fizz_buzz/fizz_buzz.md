@@ -13,7 +13,8 @@ Display the answers for the Fizz-Buzz game for numbers 1 to 100.
 - If divisible by both 3 and 5: say "fizzbuzz"
 - Otherwise: say the number
 
-## Example Output
+## Examples
+**Example 1:**
 ```
 1
 2

@@ -1,6 +1,6 @@
 # Frequency to Note
 
-Write a program that reverses the process of the previous exercise. Read a frequency from the user (as a float) and display the 4th-octave note (C4-B4) whose frequency is within ±1 Hz of it, or `No match` if none qualifies.
+Write a program that reverses the process of the previous exercise. Read a frequency from the user (as a float) and display the 4th-octave note (C4-B4) whose frequency is within ±1 Hz of it, or "No match" if none qualifies.
 
 ## Reference Note Frequencies (4th Octave)
 | Note | Frequency (Hz) |

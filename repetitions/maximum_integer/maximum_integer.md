@@ -9,7 +9,8 @@ Simulate finding the maximum value in a collection of 100 random integers.
 - Display each integer, marking new maximums
 - Display final statistics
 
-## Example Output
+## Examples
+**Example 1:**
 ```
 30
 74 <== Update

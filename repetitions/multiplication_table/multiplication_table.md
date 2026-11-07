@@ -6,7 +6,8 @@ Display a multiplication table showing products from 1×1 to 9×9.
 - Create a multiplication table for 1 through 9
 - Display all products in a formatted grid
 
-## Expected Output
+## Examples
+**Example 1:**
 ```
  1  2  3  4  5  6  7  8  9
  2  4  6  8 10 12 14 16 18

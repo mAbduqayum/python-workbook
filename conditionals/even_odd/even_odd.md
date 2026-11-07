@@ -1,6 +1,6 @@
 # Even or Odd?
 
-Write a program that reads an integer from the user and determines whether the integer is `even` or `odd`.
+Write a program that reads an integer from the user and determines whether the integer is even or odd.
 
 ## Examples
 **Example 1:**
