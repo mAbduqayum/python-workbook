@@ -2,6 +2,8 @@
 
 Write a function that evaluates password strength.
 
+You rated passwords as a program in [Password Strength](../../repetitions/password_strength/password_strength.md); now make it a function that uses the criteria below.
+
 ## Task
 - Create a function `password_strength(pwd)` that evaluates a password
 - Return a strength rating: "weak", "medium", or "strong"

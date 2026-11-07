@@ -2,6 +2,8 @@
 
 Write a function that calculates the roots of a quadratic equation.
 
+You wrote this as a program in [Roots of a Quadratic Function](../../conditionals/quadratic_roots/quadratic_roots.md); now make it a function.
+
 ## Task
 - Create a function `quadratic_roots(a, b, c)` for equation ax² + bx + c = 0
 - Return a tuple `(root1, root2)` when there are two distinct real roots

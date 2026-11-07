@@ -2,6 +2,8 @@
 
 Write a function that encrypts text using the Caesar cipher.
 
+You wrote this as a program in [Caesar Cipher](../../repetitions/caesar_cipher/caesar_cipher.md); now make it a function.
+
 ## Task
 - Create a function `caesar_cipher(text, shift)` that takes text and shift amount
 - Return the encrypted text

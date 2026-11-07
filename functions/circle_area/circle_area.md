@@ -2,6 +2,8 @@
 
 Write a function that calculates the area of a circle.
 
+You wrote this as a program in [Circle Area](../../intro/circle_area/circle_area.md); now make it a function.
+
 ## Task
 - Create a function `circle_area(radius)` that takes a circle's radius
 - Return the area of the circle

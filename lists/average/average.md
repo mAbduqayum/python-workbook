@@ -2,6 +2,8 @@
 
 Create a function to calculate the average of integers in a non-empty list.
 
+You averaged numbers as the user typed them in [Average](../../repetitions/average/average.md); now average a list.
+
 ## Template:
 
 ```python

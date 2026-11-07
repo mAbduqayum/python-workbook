@@ -2,6 +2,8 @@
 
 Create a recursive function that counts the digits in a number.
 
+You wrote this with a loop in [Number of Digits](../../functions/number_of_digits/number_of_digits.md); this time the function calls itself.
+
 ## Template
 
 ```python

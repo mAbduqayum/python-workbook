@@ -2,6 +2,8 @@
 
 Display the answers for the Fizz-Buzz game for numbers 1 to 100.
 
+You applied the same rules to one number in [Fizz Buzz](../../conditionals/fizz_buzz/fizz_buzz.md); now loop over 1 to 100.
+
 ## Task
 - Display answers for numbers 1 through 100
 - Each answer on its own line
