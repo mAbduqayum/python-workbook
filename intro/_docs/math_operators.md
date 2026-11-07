@@ -1,4 +1,4 @@
-# Arithmetic Operators in Python
+# Arithmetic Operators
 
 Arithmetic operators allow you to perform mathematical operations on numbers. These operators are essential for calculations in programming.
 

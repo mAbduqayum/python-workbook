@@ -1,4 +1,4 @@
-# Repetition in Python - The for Loop
+# The for Loop and range
 
 ## Introduction
 

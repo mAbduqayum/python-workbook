@@ -1,4 +1,4 @@
-# Lists in Python - Operations and Methods
+# List Operations and Methods
 
 ## List Operations
 
@@ -81,7 +81,9 @@ Lists are **mutable** (can be changed after creation).
 > **Note: Methods that modify in-place vs return new values**
 >
 > Some methods modify the list directly (in-place) and return `None`:
-> - `append()`, `extend()`, `insert()`, `remove()`, `pop()`, `sort()`, `reverse()`, `clear()`
+> - `append()`, `extend()`, `insert()`, `remove()`, `sort()`, `reverse()`, `clear()`
+>
+> `pop()` also changes the list in place, but returns the item it removed.
 >
 > Others return a new value without modifying the original:
 > - `sorted(list)` returns a new sorted list (vs `list.sort()` which sorts in-place)

@@ -1,4 +1,4 @@
-# Repetition in Python - Random Numbers
+# Random Numbers
 
 Games and simulations need unpredictable values. Python's `random` module
 provides them. Import it at the top of your program:

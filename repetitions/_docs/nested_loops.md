@@ -1,4 +1,4 @@
-# Repetition in Python - Nested Loops
+# Nested Loops
 
 A loop inside another loop is called a **nested loop**. The inner loop runs
 completely for each iteration of the outer loop.

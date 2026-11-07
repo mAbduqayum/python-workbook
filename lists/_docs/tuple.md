@@ -1,4 +1,4 @@
-# Tuples in Python
+# Tuples
 
 ## Introduction
 

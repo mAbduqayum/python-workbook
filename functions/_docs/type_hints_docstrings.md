@@ -1,4 +1,4 @@
-# Functions in Python - Type Hints and Docstrings
+# Type Hints and Docstrings
 
 ## Type Hints
 

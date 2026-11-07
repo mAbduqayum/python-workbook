@@ -1,4 +1,4 @@
-# Lists in Python - Iteration and Common Patterns
+# Looping over Lists
 
 ## Iterating Over Lists
 

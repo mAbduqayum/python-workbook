@@ -1,4 +1,4 @@
-# Lists in Python - 2D Lists (Nested Lists)
+# Nested Lists
 
 ## 2D Lists (Nested Lists)
 

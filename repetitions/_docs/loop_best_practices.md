@@ -1,4 +1,4 @@
-# Repetition in Python - Best Practices and Quick Reference
+# Loop Best Practices
 
 ## Common Pitfalls
 

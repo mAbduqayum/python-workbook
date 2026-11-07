@@ -1,4 +1,4 @@
-# Importing Modules in Python
+# Importing Modules
 
 A **module** is a file of ready-made Python code: functions, variables, and
 constants you can use in your own programs. Python comes with many modules,

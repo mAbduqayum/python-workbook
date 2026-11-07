@@ -1,4 +1,4 @@
-# Lists in Python - Joining Iterables to Strings
+# Joining Lists into Strings
 
 ## Joining Iterables to Strings
 

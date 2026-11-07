@@ -1,4 +1,4 @@
-# Variables and Data Types - Essential Concepts
+# Variables and Data Types
 
 This guide covers all the fundamental concepts you need to solve exercises.
 

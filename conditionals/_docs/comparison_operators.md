@@ -1,4 +1,4 @@
-# Comparison Operators in Python
+# Comparison Operators
 
 Comparison operators allow you to compare values and return boolean results (`True` or `False`). These operators are essential for creating conditions in if statements and loops.
 
