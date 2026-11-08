@@ -31,8 +31,16 @@ fix:
     -uv run ruff check --fix .
     uv run ruff format .
 
+# Run the code examples in the docs and exercises, and check what they show
+examples:
+    uv run scripts/check_examples.py
+
+# Check index.toml's labels, and warn of code that uses a skill before the docs teach it
+order:
+    uv run scripts/check_order.py
+
 # What the Lint workflow runs
-check: lint
+check: lint order examples
     uv run ruff format --check .
 
 # Install/refresh dependencies (unrelated to the "Sync to Main" workflow)

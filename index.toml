@@ -1,0 +1,484 @@
+# The book's index, which pw-book's template/book-index.typ prints and sorts, so
+# the order of terms doesn't matter, except that a top-level term must stay above
+# the first [table]: below it, TOML makes the term a sub-entry. Each term maps to
+# one of:
+#   - a list of the sections that teach it, by the label the book gives a heading,
+#     printed as the page each section starts on;
+#   - a table of sub-entries, each mapping to such a list;
+#   - a string, another term, which prints as "see" that term.
+# A label is doc:<topic>:<doc>:<heading> for <topic>/_docs/<doc>.md, or
+# appendix:<doc>:<heading>, the heading as GitHub anchors it; getting-started and
+# the book's other pages of its own have labels of their own. Backticks set code
+# in the code font. scripts/check_order.py finds where each term is first taught
+# here, and fails on a label whose heading was renamed, as the book's build does.
+
+# Symbols
+"`+`" = [
+  "doc:intro:math_operators:the-arithmetic-operators",
+  "doc:intro:vars_and_types:basic-string-operations",
+  "doc:lists:list_operations:concatenation",
+]
+"`+=`" = ["doc:intro:math_operators:augmented-assignment", "doc:lists:pointer:reassigning-vs-changing-in-place"]
+"`-`" = ["doc:intro:math_operators:the-arithmetic-operators", "doc:sets:set_operations:difference"]
+"`*`" = ["doc:intro:math_operators:the-arithmetic-operators", "doc:lists:list_operations:repetition"]
+"`**`" = ["doc:intro:math_operators:the-arithmetic-operators"]
+"`/`" = ["doc:intro:math_operators:the-arithmetic-operators"]
+"`//`" = ["doc:intro:math_operators:the-arithmetic-operators", "doc:repetitions:loop_patterns:pattern-6-digit-stripping"]
+"`%`" = ["doc:intro:math_operators:the-arithmetic-operators", "doc:repetitions:loop_patterns:pattern-6-digit-stripping"]
+"`==`" = ["doc:conditionals:comparison_operators:the-comparison-operators", "doc:lists:pointer:is-and-"]
+"`!=`" = ["doc:conditionals:comparison_operators:the-comparison-operators"]
+"`<`" = ["doc:conditionals:comparison_operators:the-comparison-operators"]
+"`<=`" = ["doc:conditionals:comparison_operators:the-comparison-operators", "doc:sets:set_operations:subset-and-superset"]
+"`>`" = ["doc:conditionals:comparison_operators:the-comparison-operators"]
+"`>=`" = ["doc:conditionals:comparison_operators:the-comparison-operators", "doc:sets:set_operations:subset-and-superset"]
+"`|`" = [
+  "doc:conditionals:match:common-match-patterns",
+  "doc:sets:set_operations:union",
+  "doc:dicts:dict_operations:---merge-into-a-new-dict",
+]
+"`&`" = ["doc:sets:set_operations:intersection"]
+"`^`" = ["doc:sets:set_operations:symmetric-difference"]
+"`_`" = ["doc:conditionals:match:basic-match-syntax"]
+"`#`" = ["doc:intro:vars_and_types:comments"]
+"`->`" = ["doc:functions:type_hints_docstrings:basic-type-hints"]
+"`__name__`" = "`if __name__ == \"__main__\"`"
+
+# Keywords and values
+"`and`" = ["doc:conditionals:boolean_operators:and-operator", "doc:conditionals:boolean_operators:short-circuit-evaluation"]
+"`as`" = [
+  "doc:functions:import:using-aliases",
+  "doc:errors:error_basics:the-exceptions-message",
+  "doc:files:file_basics:context-managers",
+]
+"`assert`" = ["doc:errors:raising_errors:assertions"]
+"`break`" = ["doc:repetitions:loop_control:break---exit-the-loop-early", "doc:repetitions:loop_control:break-in-a-nested-loop"]
+"`case`" = ["doc:conditionals:match:basic-match-syntax"]
+"`continue`" = ["doc:repetitions:loop_control:continue---skip-to-next-iteration"]
+"`def`" = ["doc:functions:function_basics:defining-a-function"]
+"`del`" = ["doc:dicts:dict_basics:removing-elements"]
+"`elif`" = ["doc:conditionals:if_elif_else:syntax"]
+"`else`" = [
+  "doc:conditionals:if_elif_else:syntax",
+  "doc:repetitions:loop_control:else-after-loops",
+  "doc:errors:error_basics:else-and-finally",
+]
+"`except`" = ["doc:errors:error_basics:try-and-except", "doc:errors:error_basics:dont-silence-errors"]
+"`False`" = ["doc:conditionals:boolean_operators:boolean-type"]
+"`finally`" = ["doc:errors:error_basics:else-and-finally"]
+"`for`" = ["doc:repetitions:for_loop:the-for-loop", "doc:repetitions:while_loop:when-to-use-for-vs-while"]
+"`from`" = ["doc:functions:import:importing-specific-functions"]
+"`global`" = ["doc:functions:function_scope:global-variables"]
+"`if`" = ["doc:conditionals:if_elif_else:syntax", "doc:conditionals:if_elif_else:nested-if-statements"]
+"`if __name__ == \"__main__\"`" = [
+  "doc:functions:function_basics:how-function-exercises-are-checked",
+  "doc:functions:modules:the-if-__name__--__main__-guard",
+]
+"`import`" = ["doc:functions:import:importing-an-entire-module"]
+"`in`" = [
+  "doc:conditionals:string_utils:string-operations-for-conditional-logic",
+  "doc:lists:list_operations:membership-testing",
+  "doc:sets:set_basics:membership-testing",
+  "doc:dicts:dict_basics:membership-testing",
+]
+"`is`" = ["doc:lists:pointer:is-and-"]
+"`match`" = ["doc:conditionals:match:python-match-statement", "doc:conditionals:match:when-to-use-match-vs-if-elif"]
+"`None`" = ["doc:functions:function_basics:functions-without-return", "doc:lists:pointer:is-and-"]
+"`not`" = ["doc:conditionals:boolean_operators:not-operator"]
+"`or`" = ["doc:conditionals:boolean_operators:or-operator", "doc:conditionals:boolean_operators:short-circuit-evaluation"]
+"`raise`" = ["doc:errors:raising_errors:raise", "doc:errors:raising_errors:where-to-catch"]
+"`return`" = ["doc:functions:function_basics:return-values", "doc:functions:function_basics:return-vs-print"]
+"`True`" = ["doc:conditionals:boolean_operators:boolean-type"]
+"`try`" = ["doc:errors:error_basics:try-and-except", "doc:errors:error_basics:keep-try-short"]
+"`while`" = ["doc:repetitions:while_loop:basic-syntax", "doc:repetitions:while_loop:when-to-use-for-vs-while"]
+"`with`" = ["doc:files:file_basics:context-managers"]
+
+# Built-in functions
+"`abs()`" = ["doc:intro:math_functions:built-in-mathematical-functions"]
+"`chr()`" = ["doc:conditionals:string_utils:string-operations-for-conditional-logic"]
+"`dict()`" = ["doc:dicts:dict_basics:creating-dictionaries"]
+"`dir()`" = ["doc:functions:import:exploring-a-module"]
+"`divmod()`" = ["doc:intro:math_functions:built-in-mathematical-functions", "doc:lists:tuple:where-you-have-already-met-tuples"]
+"`enumerate()`" = ["doc:lists:list_iteration:iterating-over-lists", "doc:lists:tuple:where-you-have-already-met-tuples"]
+"`float()`" = ["doc:intro:vars_and_types:type-conversion", "doc:repetitions:loop_patterns:pattern-3-best-so-far"]
+"`frozenset()`" = ["doc:sets:set_basics:frozen-sets"]
+"`help()`" = ["doc:functions:type_hints_docstrings:accessing-docstrings", "doc:functions:import:exploring-a-module"]
+"`id()`" = ["doc:lists:pointer:is-and-"]
+"`input()`" = ["doc:intro:vars_and_types:getting-input-from-users", "doc:intro:working_through_an_exercise:prompts-are-optional"]
+"`int()`" = ["doc:intro:vars_and_types:type-conversion"]
+"`isinstance()`" = ["doc:recursions:advanced:flatten-nested-list"]
+"`len()`" = [
+  "doc:intro:vars_and_types:string-methods-useful-to-know",
+  "doc:conditionals:string_utils:string-operations-for-conditional-logic",
+  "doc:lists:list_operations:length",
+]
+"`list()`" = ["doc:lists:list_basics:creating-lists", "doc:lists:list_copying:copy-methods"]
+"`map()`" = ["doc:lists:join_iterable:joining-iterables-to-strings"]
+"`max()`" = ["doc:intro:math_functions:built-in-mathematical-functions", "doc:lists:list_iteration:common-patterns"]
+"`min()`" = ["doc:intro:math_functions:built-in-mathematical-functions", "doc:lists:list_iteration:common-patterns"]
+"`open()`" = ["doc:files:file_basics:opening-files", "doc:files:utf8_encoding:reading-and-writing-files"]
+"`ord()`" = ["doc:conditionals:string_utils:string-operations-for-conditional-logic"]
+"`pow()`" = ["doc:intro:math_functions:built-in-mathematical-functions"]
+"`print()`" = ["doc:intro:vars_and_types:displaying-output", "doc:repetitions:for_loop:useful-print-parameters"]
+"`range()`" = ["doc:repetitions:for_loop:the-range-function", "doc:repetitions:string_loops:looping-by-index"]
+"`reversed()`" = ["doc:lists:list_operations:common-list-methods", "doc:lists:list_iteration:iterating-over-lists"]
+"`round()`" = ["doc:intro:math_functions:built-in-mathematical-functions"]
+"`set()`" = ["doc:sets:set_basics:creating-sets"]
+"`sorted()`" = ["doc:lists:list_operations:common-list-methods"]
+"`str()`" = ["doc:repetitions:string_loops:numbers-in-strings"]
+"`sum()`" = ["doc:lists:list_iteration:common-patterns"]
+"`tuple()`" = ["doc:lists:tuple:creating-tuples"]
+"`zip()`" = [
+  "doc:lists:list_iteration:iterating-over-lists",
+  "doc:lists:tuple:where-you-have-already-met-tuples",
+]
+
+# String methods
+"`decode()`" = ["doc:files:utf8_encoding:decoding-bytes--text"]
+"`encode()`" = ["doc:files:utf8_encoding:encoding-text--bytes"]
+"`isalnum()`" = ["doc:conditionals:string_utils:string-methods"]
+"`isalpha()`" = ["doc:conditionals:string_utils:string-methods"]
+"`isdigit()`" = ["doc:conditionals:string_utils:string-methods", "doc:repetitions:loop_patterns:pattern-5-flag"]
+"`islower()`" = ["doc:repetitions:string_loops:upper-and-lower-case"]
+"`isspace()`" = ["doc:conditionals:string_utils:string-methods"]
+"`isupper()`" = ["doc:repetitions:string_loops:upper-and-lower-case"]
+"`join()`" = ["doc:lists:join_iterable:joining-iterables-to-strings", "doc:lists:join_iterable:why-join-instead-of--"]
+"`lower()`" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:conditionals:string_utils:string-methods"]
+"`replace()`" = ["doc:functions:function_patterns:boolean-returning-functions"]
+"`split()`" = ["doc:lists:list_basics:creating-lists", "doc:lists:join_iterable:joining-iterables-to-strings"]
+"`strip()`" = ["doc:files:file_basics:read-line-by-line"]
+"`title()`" = ["doc:conditionals:string_utils:string-methods"]
+"`upper()`" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:conditionals:string_utils:string-methods"]
+
+# List, set and dictionary methods
+"`add()`" = ["doc:sets:set_basics:adding-elements"]
+"`append()`" = ["doc:lists:list_operations:common-list-methods", "doc:lists:pointer:reassigning-vs-changing-in-place"]
+"`clear()`" = [
+  "doc:lists:list_operations:common-list-methods",
+  "doc:sets:set_basics:removing-elements",
+  "doc:dicts:dict_basics:removing-elements",
+]
+"`copy()`" = ["doc:lists:list_operations:common-list-methods", "doc:lists:list_copying:copy-methods"]
+"`count()`" = ["doc:lists:list_operations:common-list-methods", "doc:lists:tuple:reading-a-tuple"]
+"`difference()`" = ["doc:sets:set_operations:difference"]
+"`discard()`" = ["doc:sets:set_basics:removing-elements"]
+"`extend()`" = ["doc:lists:list_operations:common-list-methods"]
+"`fromkeys()`" = ["doc:sets:set_best_practices:pattern-1-remove-duplicates-from-a-list"]
+"`get()`" = ["doc:dicts:dict_basics:accessing-values", "doc:dicts:dict_best_practices:pattern-1-frequency-counting"]
+"`index()`" = ["doc:lists:list_operations:common-list-methods", "doc:lists:tuple:reading-a-tuple"]
+"`insert()`" = ["doc:lists:list_operations:common-list-methods"]
+"`intersection()`" = ["doc:sets:set_operations:intersection"]
+"`isdisjoint()`" = ["doc:sets:set_operations:disjoint-sets"]
+"`issubset()`" = ["doc:sets:set_operations:subset-and-superset"]
+"`issuperset()`" = ["doc:sets:set_operations:subset-and-superset"]
+"`items()`" = ["doc:dicts:dict_operations:viewing-dictionary-data", "doc:dicts:dict_operations:iterating-over-key-value-pairs-most-common"]
+"`keys()`" = ["doc:dicts:dict_operations:viewing-dictionary-data", "doc:dicts:dict_operations:iterating-over-keys-default"]
+"`most_common()`" = ["doc:dicts:dict_operations:counter---counting-made-easy"]
+"`pop()`" = [
+  "doc:lists:list_operations:common-list-methods",
+  "doc:sets:set_basics:removing-elements",
+  "doc:dicts:dict_operations:pop-and-popitem---remove-and-return",
+]
+"`popitem()`" = ["doc:dicts:dict_operations:pop-and-popitem---remove-and-return"]
+"`remove()`" = ["doc:lists:list_operations:common-list-methods", "doc:sets:set_basics:removing-elements"]
+"`reverse()`" = ["doc:lists:list_operations:common-list-methods"]
+"`setdefault()`" = ["doc:dicts:dict_basics:adding-and-updating", "doc:dicts:dict_operations:setdefault---add-key-only-if-missing"]
+"`sort()`" = ["doc:lists:list_operations:common-list-methods"]
+"`symmetric_difference()`" = ["doc:sets:set_operations:symmetric-difference"]
+"`union()`" = ["doc:sets:set_operations:union"]
+"`update()`" = ["doc:sets:set_operations:in-place-operations", "doc:dicts:dict_operations:update---merge-into-an-existing-dict"]
+"`values()`" = ["doc:dicts:dict_operations:viewing-dictionary-data", "doc:dicts:dict_operations:iterating-over-values"]
+
+# File methods
+"`close()`" = ["doc:files:file_basics:opening-files"]
+"`read()`" = ["doc:files:file_basics:read-entire-file"]
+"`readline()`" = ["doc:files:file_basics:read-single-line"]
+"`readlines()`" = ["doc:files:file_basics:read-all-lines-as-list"]
+"`write()`" = ["doc:files:file_basics:write-string-to-file"]
+"`writelines()`" = ["doc:files:file_basics:write-multiple-lines"]
+
+# Modules and what they hold
+"`collections` module" = ["doc:dicts:dict_operations:collections-module-defaultdict-and-counter"]
+"`copy` module" = ["doc:lists:list_copying:copy-methods"]
+"`Counter`" = ["doc:dicts:dict_operations:counter---counting-made-easy", "doc:dicts:dict_best_practices:pattern-1-frequency-counting"]
+"`defaultdict`" = ["doc:dicts:dict_operations:defaultdict---never-get-keyerror"]
+"`math.ceil()`" = ["doc:intro:math_functions:rounding-and-ceiling-functions"]
+"`math.factorial()`" = ["doc:intro:math_functions:special-functions"]
+"`math.floor()`" = ["doc:intro:math_functions:rounding-and-ceiling-functions"]
+"`math.gcd()`" = ["doc:intro:math_functions:special-functions"]
+"`math.pi`" = ["doc:intro:math_functions:mathematical-constants"]
+"`math.sqrt()`" = ["doc:intro:math_functions:basic-math-module-functions"]
+"`random.choice()`" = ["doc:repetitions:random_numbers:common-functions", "doc:lists:list_operations:random-items"]
+"`random.randint()`" = ["doc:repetitions:random_numbers:common-functions"]
+"`random.random()`" = ["doc:repetitions:random_numbers:common-functions"]
+"`random.shuffle()`" = ["doc:lists:list_operations:random-items"]
+"`random` module" = ["doc:repetitions:random_numbers:random-numbers", "doc:functions:import:built-in-modules-you-already-know"]
+"`sys.getrecursionlimit()`" = ["doc:recursions:recursion_vs_iteration:pythons-recursion-limit"]
+
+# Exceptions
+"`AssertionError`" = ["doc:errors:raising_errors:assertions"]
+"`AttributeError`" = ["doc:errors:error_basics:common-built-in-exceptions", "appendix:debugging:common-errors"]
+"`Exception`" = ["doc:errors:error_basics:dont-silence-errors"]
+"`FileNotFoundError`" = ["doc:errors:error_basics:common-built-in-exceptions", "appendix:debugging:common-errors"]
+"`ImportError`" = ["doc:functions:import:common-errors", "doc:errors:error_basics:common-built-in-exceptions"]
+"`IndentationError`" = ["appendix:debugging:common-errors"]
+"`IndexError`" = [
+  "doc:lists:list_basics:indexing",
+  "doc:errors:error_basics:common-built-in-exceptions",
+  "appendix:debugging:common-errors",
+]
+"`KeyboardInterrupt`" = ["doc:errors:error_basics:dont-silence-errors"]
+"`KeyError`" = [
+  "doc:dicts:dict_basics:accessing-values",
+  "doc:errors:error_basics:common-built-in-exceptions",
+  "appendix:debugging:common-errors",
+]
+"`ModuleNotFoundError`" = ["doc:functions:import:common-errors"]
+"`NameError`" = ["doc:errors:error_basics:common-built-in-exceptions", "appendix:debugging:common-errors"]
+"`RecursionError`" = ["doc:recursions:recursion_vs_iteration:pythons-recursion-limit", "appendix:debugging:common-errors"]
+"`SyntaxError`" = ["appendix:debugging:syntax-errors", "appendix:debugging:common-errors"]
+"`TypeError`" = ["doc:errors:error_basics:common-built-in-exceptions", "appendix:debugging:common-errors"]
+"`UnicodeDecodeError`" = ["doc:files:utf8_encoding:common-gotcha-the-unicodedecodeerror"]
+"`ValueError`" = [
+  "doc:errors:error_basics:handling-errors",
+  "doc:errors:error_basics:common-built-in-exceptions",
+  "appendix:debugging:common-errors",
+]
+"`ZeroDivisionError`" = [
+  "doc:conditionals:boolean_operators:short-circuit-evaluation",
+  "doc:errors:error_basics:common-built-in-exceptions",
+  "appendix:debugging:common-errors",
+]
+
+# Tools
+"PyCharm" = ["getting-started:prerequisites", "appendix:debugging:stepping-through-a-program-in-pycharm"]
+"`pyproject.toml`" = ["getting-started:create-your-project"]
+"uv" = ["getting-started:prerequisites"]
+"`uv init`" = ["getting-started:create-your-project"]
+"`uv run`" = ["getting-started:run-a-program"]
+
+# Concepts
+"accumulator" = ["doc:repetitions:loop_patterns:pattern-2-accumulator", "doc:functions:function_patterns:accumulation-pattern"]
+"alias" = ["doc:lists:pointer:assignment-never-copies", "doc:functions:import:using-aliases"]
+"argument" = ["doc:functions:function_basics:single-parameter"]
+"arithmetic operators" = ["doc:intro:math_operators:the-arithmetic-operators"]
+"ASCII" = ["doc:conditionals:string_utils:string-operations-for-conditional-logic", "doc:conditionals:ascii_table:complete-ascii-table-0-127"]
+"assertion" = ["doc:errors:raising_errors:assertions"]
+"assignment" = ["doc:intro:vars_and_types:variables", "doc:lists:pointer:assignment-never-copies"]
+"augmented assignment" = ["doc:intro:math_operators:augmented-assignment", "doc:lists:pointer:reassigning-vs-changing-in-place"]
+"base case" = ["doc:recursions:base_case:the-solution-base-case", "doc:recursions:base_case:rules"]
+"best so far pattern" = ["doc:repetitions:loop_patterns:pattern-3-best-so-far"]
+"binary search" = ["doc:recursions:advanced:binary-search"]
+"Boolean" = ["doc:conditionals:boolean_operators:boolean-type", "doc:functions:function_patterns:boolean-returning-functions"]
+"Boolean operators" = ["doc:conditionals:boolean_operators:boolean-operators", "doc:conditionals:boolean_operators:operator-precedence"]
+"breakpoint" = ["appendix:debugging:stepping-through-a-program-in-pycharm"]
+"bug" = ["appendix:debugging:debugging-your-programs"]
+"built-in" = ["doc:intro:math_functions:built-in-mathematical-functions", "doc:functions:import:built-in-modules-you-already-know"]
+"bytes" = ["doc:files:utf8_encoding:python-strings-are-unicode", "doc:files:utf8_encoding:encoding-text--bytes"]
+"call stack" = ["doc:recursions:recursion_vs_iteration:comparison"]
+"chained comparisons" = ["doc:conditionals:comparison_operators:chained-comparisons"]
+"comment" = ["doc:intro:vars_and_types:comments"]
+"comparison operator" = ["doc:conditionals:comparison_operators:the-comparison-operators"]
+"concatenation" = ["doc:intro:vars_and_types:basic-string-operations", "doc:lists:list_operations:concatenation"]
+"context manager" = ["doc:files:file_basics:context-managers"]
+"counter pattern" = ["doc:repetitions:loop_patterns:pattern-1-counter"]
+"data types" = ["doc:intro:vars_and_types:data-types"]
+"debugger" = ["appendix:debugging:stepping-through-a-program-in-pycharm"]
+"debugging" = ["doc:intro:string_formatting:debugging-format", "appendix:debugging:debugging-your-programs"]
+"decoding" = ["doc:files:utf8_encoding:decoding-bytes--text"]
+"deep copy" = ["doc:lists:list_copying:copy-methods"]
+"default parameter values" = ["doc:functions:function_basics:default-parameter-values"]
+"digit stripping" = ["doc:repetitions:loop_patterns:pattern-6-digit-stripping"]
+"disjoint sets" = ["doc:sets:set_operations:disjoint-sets"]
+"docstring" = ["doc:functions:type_hints_docstrings:docstrings"]
+"early return" = ["doc:functions:function_basics:early-return", "doc:functions:function_best_practices:6-return-early-for-validation"]
+"element" = ["doc:lists:list_basics:accessing-elements"]
+"encoding" = ["doc:files:file_basics:encoding", "doc:files:utf8_encoding:encoding-text--bytes"]
+"Euclidean algorithm" = ["doc:recursions:examples:example-7-gcd-euclidean-algorithm"]
+"exception" = [
+  "doc:errors:error_basics:handling-errors",
+  "doc:errors:error_basics:common-built-in-exceptions",
+  "doc:errors:raising_errors:raise",
+]
+"expression" = ["doc:intro:math_operators:order-of-operations-pemdas", "doc:intro:string_formatting:simple-expressions"]
+"factorial" = [
+  "doc:recursions:what_is_recursion:example-factorial",
+  "doc:recursions:examples:example-1-factorial",
+  "doc:recursions:recursion_vs_iteration:factorial",
+]
+"Fibonacci numbers" = [
+  "doc:recursions:what_is_recursion:example-fibonacci",
+  "doc:recursions:examples:example-6-fibonacci",
+  "doc:recursions:recursion_vs_iteration:fibonacci",
+  "doc:recursions:memoization:the-problem",
+]
+"flag" = ["doc:repetitions:loop_patterns:pattern-5-flag"]
+"float" = ["doc:intro:vars_and_types:data-types"]
+"floor division" = ["doc:intro:math_operators:the-arithmetic-operators"]
+"frozen set" = ["doc:sets:set_basics:frozen-sets"]
+"GCD" = ["doc:intro:math_functions:special-functions", "doc:recursions:examples:example-7-gcd-euclidean-algorithm"]
+"global variable" = ["doc:functions:function_scope:global-variables"]
+"hash table" = ["doc:sets:set_best_practices:performance-why-sets-are-fast"]
+"hashable" = ["doc:sets:set_basics:key-characteristics", "doc:dicts:dict_basics:keys-must-be-hashable-immutable"]
+"immutable" = ["doc:lists:pointer:mutable-and-immutable-objects", "doc:lists:tuple:introduction"]
+"index" = ["doc:repetitions:string_loops:indexing", "doc:lists:list_basics:indexing"]
+"infinite loop" = ["doc:repetitions:loop_best_practices:1-infinite-loops"]
+"integer" = ["doc:intro:vars_and_types:data-types"]
+"iterable" = ["doc:lists:list_operations:common-list-methods", "doc:lists:join_iterable:joining-iterables-to-strings"]
+"iteration" = ["doc:repetitions:loop_control:continue---skip-to-next-iteration", "doc:recursions:recursion_vs_iteration:recursion-vs-iteration"]
+"key" = ["doc:dicts:dict_basics:key-characteristics", "doc:dicts:dict_basics:keys-must-be-hashable-immutable"]
+"keyword" = ["doc:intro:vars_and_types:variables"]
+"local variable" = ["doc:functions:function_scope:local-variables", "doc:functions:function_scope:parameters-create-local-variables"]
+"membership testing" = "`in`"
+"memoization" = ["doc:recursions:memoization:the-solution-memoization", "doc:recursions:memoization:when-to-use-memoization"]
+"method" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:lists:list_operations:common-list-methods"]
+"modulo" = ["doc:intro:math_operators:the-arithmetic-operators"]
+"mutable" = ["doc:lists:list_operations:common-list-methods", "doc:lists:pointer:mutable-and-immutable-objects"]
+"negative index" = "index"
+"object" = ["doc:lists:pointer:names-point-to-objects"]
+"off-by-one errors" = ["doc:repetitions:loop_best_practices:2-off-by-one-errors"]
+"operator" = ["doc:intro:math_operators:the-arithmetic-operators", "doc:lists:pointer:is-and-"]
+"operator precedence" = ["doc:conditionals:boolean_operators:operator-precedence"]
+"order of operations" = ["doc:intro:math_operators:order-of-operations-pemdas"]
+"packing" = ["doc:lists:tuple:packing-and-unpacking"]
+"palindrome" = ["doc:functions:function_patterns:boolean-returning-functions"]
+"parameter" = ["doc:functions:function_basics:single-parameter"]
+"PEMDAS" = "order of operations"
+"permutations" = ["doc:recursions:advanced:permutations"]
+"pointer" = ["doc:lists:pointer:names-point-to-objects"]
+"prime numbers" = ["doc:functions:function_patterns:boolean-returning-functions"]
+"prompt" = ["doc:intro:vars_and_types:getting-input-from-users", "doc:intro:working_through_an_exercise:prompts-are-optional"]
+"recursive case" = ["doc:recursions:base_case:the-solution-base-case"]
+"reference" = ["doc:lists:list_copying:shallow-copy-vs-reference"]
+"return value" = ["doc:functions:function_basics:return-values"]
+"scope" = ["doc:functions:function_scope:function-scope"]
+"sentinel" = ["doc:repetitions:while_loop:example-2-reading-until-sentinel-value", "doc:repetitions:loop_patterns:pattern-4-sentinel"]
+"sequence" = ["doc:repetitions:for_loop:the-for-loop"]
+"shadowing" = ["doc:functions:function_scope:shadowing-global-variables"]
+"shallow copy" = ["doc:lists:list_copying:shallow-copy-vs-reference"]
+"short-circuit evaluation" = ["doc:conditionals:boolean_operators:short-circuit-evaluation"]
+"side effects" = ["doc:functions:function_best_practices:4-avoid-side-effects"]
+"slice" = ["doc:lists:list_basics:slicing", "doc:lists:tuple:reading-a-tuple"]
+"statement" = ["doc:conditionals:if_elif_else:introduction"]
+"subset" = ["doc:sets:set_operations:subset-and-superset"]
+"subsets, generating" = ["doc:recursions:advanced:subsets"]
+"superset" = ["doc:sets:set_operations:subset-and-superset"]
+"syntax error" = ["appendix:debugging:syntax-errors"]
+"time complexity" = ["doc:sets:set_best_practices:performance-why-sets-are-fast", "doc:dicts:dict_best_practices:time-complexity"]
+"traceback" = ["doc:errors:error_examples:example-2-read-this-traceback", "appendix:debugging:reading-a-traceback"]
+"type conversion" = ["doc:intro:vars_and_types:type-conversion"]
+"type hint" = ["doc:functions:type_hints_docstrings:type-hints"]
+"Unicode" = ["doc:files:utf8_encoding:python-strings-are-unicode"]
+"unpacking" = [
+  "doc:conditionals:string_utils:string-operations-for-conditional-logic",
+  "doc:functions:function_basics:multiple-return-values",
+  "doc:lists:tuple:packing-and-unpacking",
+]
+"UTF-8" = ["doc:files:file_basics:encoding", "doc:files:utf8_encoding:what-is-utf-8"]
+"variable" = ["doc:intro:vars_and_types:variables"]
+"view" = ["doc:dicts:dict_operations:dictionary-view-objects"]
+
+# Terms with sub-entries
+[comprehension]
+"dictionary" = ["doc:dicts:dict_operations:dictionary-comprehensions"]
+"list" = ["doc:lists:list_basics:creating-lists", "doc:lists:list_iteration:common-patterns"]
+"set" = ["doc:sets:set_best_practices:mistake-4-modifying-set-while-iterating"]
+
+[dictionary]
+"accessing values" = ["doc:dicts:dict_basics:accessing-values"]
+"adding and updating" = ["doc:dicts:dict_basics:adding-and-updating"]
+"common mistakes" = ["doc:dicts:dict_best_practices:common-mistakes-to-avoid"]
+"creating" = ["doc:dicts:dict_basics:creating-dictionaries"]
+"iterating" = ["doc:dicts:dict_operations:iteration-patterns"]
+"merging" = ["doc:dicts:dict_operations:merging-dictionaries"]
+"removing" = ["doc:dicts:dict_basics:removing-elements"]
+"when to use" = ["doc:dicts:dict_basics:when-to-use-dictionaries", "doc:dicts:dict_best_practices:when-not-to-use-dictionaries"]
+
+[file]
+"appending" = ["doc:files:file_basics:appending-to-files"]
+"modes" = ["doc:files:file_basics:file-modes"]
+"opening" = ["doc:files:file_basics:opening-files"]
+"reading" = ["doc:files:file_basics:reading-files"]
+"writing" = ["doc:files:file_basics:writing-files"]
+
+[f-string]
+"alignment" = ["doc:intro:string_formatting_advanced:width-and-alignment"]
+"basics" = ["doc:intro:vars_and_types:f-strings-recommended", "doc:intro:string_formatting:basic-f-string-syntax"]
+"debugging format" = ["doc:intro:string_formatting:debugging-format"]
+"decimal places" = ["doc:intro:string_formatting:number-formatting"]
+"fill characters" = ["doc:intro:string_formatting_advanced:custom-fill-characters"]
+"percentages" = ["doc:intro:string_formatting_advanced:percentage-formatting"]
+"tables" = ["doc:intro:string_formatting_advanced:table-formatting"]
+"thousands separators" = ["doc:intro:string_formatting_advanced:grouping-and-separators"]
+
+[function]
+"best practices" = ["doc:functions:function_best_practices:best-practices"]
+"calling" = ["doc:functions:function_basics:calling-a-function"]
+"changing a list passed in" = ["doc:lists:pointer:functions-receive-the-same-object"]
+"defining" = ["doc:functions:function_basics:defining-a-function"]
+"returning several values" = ["doc:functions:function_basics:multiple-return-values"]
+"when to create" = ["doc:functions:function_best_practices:when-to-create-a-function"]
+
+[list]
+"2D" = ["doc:lists:nested_list:2d-lists-nested-lists"]
+"common mistakes" = ["doc:lists:list_best_practices:common-mistakes"]
+"comparing" = ["doc:lists:list_operations:comparison"]
+"copying" = ["doc:lists:list_copying:list-copying"]
+"creating" = ["doc:lists:list_basics:creating-lists"]
+"iterating" = ["doc:lists:list_iteration:iterating-over-lists"]
+"methods" = ["doc:lists:list_operations:common-list-methods"]
+"or tuple" = ["doc:lists:tuple:tuples-or-lists"]
+"repeating" = ["doc:lists:list_operations:repetition"]
+
+["`math` module"]
+"angle conversion" = ["doc:intro:math_functions:angle-conversion"]
+"constants" = ["doc:intro:math_functions:mathematical-constants"]
+"importing" = ["doc:intro:math_functions:importing-the-math-module", "doc:functions:import:importing-an-entire-module"]
+"logarithms and square roots" = ["doc:intro:math_functions:basic-math-module-functions"]
+"rounding" = ["doc:intro:math_functions:rounding-and-ceiling-functions"]
+"trigonometry" = ["doc:intro:math_functions:trigonometric-functions"]
+
+[loop]
+"control" = ["doc:repetitions:loop_control:break-and-continue"]
+"nested" = ["doc:repetitions:nested_loops:how-they-run"]
+"patterns" = ["doc:repetitions:loop_patterns:loop-patterns"]
+"pitfalls" = ["doc:repetitions:loop_best_practices:common-pitfalls"]
+"types" = ["doc:repetitions:for_loop:the-two-types-of-loops"]
+
+[module]
+"creating" = ["doc:functions:modules:creating-a-module"]
+"importing" = ["doc:functions:import:importing-modules"]
+"naming" = ["doc:functions:modules:dont-name-files-after-built-in-modules"]
+
+[nested]
+"`if` statements" = ["doc:conditionals:if_elif_else:nested-if-statements"]
+"lists" = ["doc:lists:nested_list:2d-lists-nested-lists", "doc:recursions:advanced:flatten-nested-list"]
+"loops" = ["doc:repetitions:nested_loops:how-they-run"]
+
+[recursion]
+"common problems" = ["doc:recursions:examples:recursion-examples"]
+"explained" = ["doc:recursions:what_is_recursion:in-programming"]
+"limit" = ["doc:recursions:recursion_vs_iteration:pythons-recursion-limit"]
+"or a loop" = ["doc:recursions:recursion_vs_iteration:when-to-use-recursion"]
+
+[set]
+"common mistakes" = ["doc:sets:set_best_practices:common-mistakes"]
+"creating" = ["doc:sets:set_basics:creating-sets"]
+"difference" = ["doc:sets:set_operations:difference"]
+"intersection" = ["doc:sets:set_operations:intersection"]
+"removing duplicates with" = ["doc:sets:set_best_practices:pattern-1-remove-duplicates-from-a-list"]
+"symmetric difference" = ["doc:sets:set_operations:symmetric-difference"]
+"union" = ["doc:sets:set_operations:union"]
+"when to use" = ["doc:sets:set_basics:when-to-use-sets", "doc:sets:set_best_practices:when-not-to-use-sets"]
+
+[string]
+"building in a loop" = ["doc:repetitions:string_loops:building-a-string"]
+"formatting" = ["doc:intro:string_formatting:f-string-formatting-basics"]
+"indexing" = ["doc:repetitions:string_loops:indexing"]
+"iterating" = ["doc:repetitions:for_loop:iterating-over-strings"]
+"methods" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:conditionals:string_utils:string-methods"]
+
+[tuple]
+"creating" = ["doc:lists:tuple:creating-tuples"]
+"or list" = ["doc:lists:tuple:tuples-or-lists"]
+"reading" = ["doc:lists:tuple:reading-a-tuple"]
+"unpacking" = ["doc:lists:tuple:packing-and-unpacking"]

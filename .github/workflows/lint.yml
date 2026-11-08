@@ -1,12 +1,14 @@
 name: Lint
 
-# Style gate for the curriculum itself, not for the people learning from it: a
-# beginner's first loop failing ruff is discouraging noise, and `Grade
-# Calculator` is the feedback that actually means something to them. So this
-# runs on `solutions` only - never on `main`, which students work from, and
-# never in their forks.
-# Locally the same checks run as lefthook pre-commit hooks; this catches
-# commits that bypassed them.
+# Gates for the curriculum itself, not for the people learning from it: ruff's
+# style, index.toml's labels and the order its skills are used in, and the code
+# examples in the docs giving what they show. A beginner's first loop failing
+# ruff is discouraging noise, and `Grade Calculator` is the feedback that
+# actually means something to them. So this runs on `solutions` only - never on
+# `main`, which students work from, and never in their forks. The docs checks
+# read the solutions, which `main` lacks anyway.
+# Locally ruff runs as lefthook pre-commit hooks; this catches commits that
+# bypassed them.
 
 on:
   push:
@@ -51,3 +53,31 @@ jobs:
 
       - name: Check formatting
         run: uv run ruff format --check .
+
+  docs:
+    runs-on: ubuntu-latest
+    if: github.event.repository.fork == false
+    # The examples check stops a slow statement only between Python steps, not
+    # inside one long call such as sum(range(10**10)).
+    timeout-minutes: 10
+    permissions:
+      contents: read
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v10.3.3
+        with:
+          version: "0.11.7"
+          enable-cache: true
+
+      # Fails on a label whose heading is gone; only warns of a skill used early.
+      - name: Check the index and the order of the skills
+        run: uv run scripts/check_order.py
+
+      # Runs even when the index check fails, to report both at once.
+      - name: Run the code examples
+        if: ${{ !cancelled() }}
+        run: uv run scripts/check_examples.py

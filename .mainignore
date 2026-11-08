@@ -5,4 +5,6 @@
 # in .github/workflows/sync-main.yml.
 .mainignore
 ignore
+index.toml
 justfile
+scripts
