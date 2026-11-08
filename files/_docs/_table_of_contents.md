@@ -47,15 +47,16 @@ mindmap
 ### Intermediate (Text Processing)
 
 1. [`count_words`](../count_words/count_words.md) - Count total words in file
-2. [`find_longest_word`](../find_longest_word/find_longest_word.md) - Find longest word
-3. [`word_frequency`](../word_frequency/word_frequency.md) - Count word occurrences
-4. [`search_lines`](../search_lines/search_lines.md) - Find lines containing search term
-5. [`remove_blank_lines`](../remove_blank_lines/remove_blank_lines.md) - Copy file without blank lines
-6. [`merge_files`](../merge_files/merge_files.md) - Merge multiple files into one
-7. [`letter_frequency`](../letter_frequency/letter_frequency.md) - Count letter occurrences
-8. [`remove_comments`](../remove_comments/remove_comments.md) - Strip Python comment lines
-9. [`find_repeated_words`](../find_repeated_words/find_repeated_words.md) - Detect consecutive duplicates
-10. [`six_vowel_words`](../six_vowel_words/six_vowel_words.md) - Find words with AEIOUY in order
+2. [`vocabulary_size`](../vocabulary_size/vocabulary_size.md) - Count different words in file
+3. [`find_longest_word`](../find_longest_word/find_longest_word.md) - Find longest word
+4. [`word_frequency`](../word_frequency/word_frequency.md) - Count word occurrences
+5. [`search_lines`](../search_lines/search_lines.md) - Find lines containing search term
+6. [`remove_blank_lines`](../remove_blank_lines/remove_blank_lines.md) - Copy file without blank lines
+7. [`merge_files`](../merge_files/merge_files.md) - Merge multiple files into one
+8. [`letter_frequency`](../letter_frequency/letter_frequency.md) - Count letter occurrences
+9. [`remove_comments`](../remove_comments/remove_comments.md) - Strip Python comment lines
+10. [`find_repeated_words`](../find_repeated_words/find_repeated_words.md) - Detect consecutive duplicates
+11. [`six_vowel_words`](../six_vowel_words/six_vowel_words.md) - Find words with AEIOUY in order
 
 ### Advanced (Multi-file & Analysis)
 

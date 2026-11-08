@@ -39,18 +39,20 @@ mindmap
 
 ### Intermediate
 
-1. [`power`](../power/power.md) - Calculate base^exponent
-2. [`fibonacci`](../fibonacci/fibonacci.md) - Nth Fibonacci number
-3. [`gcd`](../gcd/gcd.md) - Greatest common divisor
+1. [`digital_root`](../digital_root/digital_root.md) - Add digits down to one digit
+2. [`power`](../power/power.md) - Calculate base^exponent
+3. [`fibonacci`](../fibonacci/fibonacci.md) - Nth Fibonacci number
+4. [`gcd`](../gcd/gcd.md) - Greatest common divisor
 
 ### Advanced
 
 1. [`binary_search`](../binary_search/binary_search.md) - Search in sorted list
 2. [`flatten_list`](../flatten_list/flatten_list.md) - Flatten nested lists
 3. [`nested_sum`](../nested_sum/nested_sum.md) - Sum of nested list
-4. [`edit_distance`](../edit_distance/edit_distance.md) - String edit distance (Levenshtein)
-5. [`coin_sum`](../coin_sum/coin_sum.md) - Count ways to make change
-6. [`element_spelling`](../element_spelling/element_spelling.md) - Spell words with element symbols
-7. [`element_sequences`](../element_sequences/element_sequences.md) - Longest element chain game
-8. [`run_length_encoding`](../run_length_encoding/run_length_encoding.md) - Compress strings
-9. [`run_length_decoding`](../run_length_decoding/run_length_decoding.md) - Decompress strings
+4. [`max_depth`](../max_depth/max_depth.md) - Deepest nesting level
+5. [`edit_distance`](../edit_distance/edit_distance.md) - String edit distance (Levenshtein)
+6. [`coin_sum`](../coin_sum/coin_sum.md) - Count ways to make change
+7. [`element_spelling`](../element_spelling/element_spelling.md) - Spell words with element symbols
+8. [`element_sequences`](../element_sequences/element_sequences.md) - Longest element chain game
+9. [`run_length_encoding`](../run_length_encoding/run_length_encoding.md) - Compress strings
+10. [`run_length_decoding`](../run_length_decoding/run_length_decoding.md) - Decompress strings
