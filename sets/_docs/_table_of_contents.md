@@ -39,6 +39,7 @@ mindmap
 ### Beginner
 
 1. [`set_operations`](../set_operations/set_operations.md)
+2. [`distinct_words`](../distinct_words/distinct_words.md)
 
 ### Intermediate
 
@@ -46,6 +47,7 @@ mindmap
 2. [`find_missing_numbers`](../find_missing_numbers/find_missing_numbers.md)
 3. [`pangram_checker`](../pangram_checker/pangram_checker.md)
 4. [`isogram`](../isogram/isogram.md)
+5. [`first_repeat`](../first_repeat/first_repeat.md)
 
 ### Advanced
 
