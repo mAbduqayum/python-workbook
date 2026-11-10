@@ -1,6 +1,6 @@
 # Exercise: Time Hours Converter
 
-Write a program that converts total hours into days, hours, and minutes. Round to the nearest whole minute, then print the days, hours, and minutes on one line, separated by spaces.
+Write a program that converts total hours into days, hours, and minutes. Round the total to the nearest whole minute, then split it into days, hours, and minutes, and print them on one line, separated by spaces.
 
 ## Examples
 
@@ -22,4 +22,14 @@ Write a program that converts total hours into days, hours, and minutes. Round t
 
 ```
 0 10 45
+```
+
+**Example 3:**
+
+```
+4.1
+```
+
+```
+0 4 6
 ```

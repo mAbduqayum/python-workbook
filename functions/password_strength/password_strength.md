@@ -15,11 +15,12 @@ You rated passwords as a program in [Password Strength](../../repetitions/passwo
 |-------------------------------------|------------|
 | `password_strength("abc")`          | `"weak"`   |
 | `password_strength("abcdefgh")`     | `"weak"`   |
+| `password_strength("abcdefg1")`     | `"medium"` |
 | `password_strength("P@ssw0rd!")`    | `"medium"` |
 | `password_strength("MyP@ssw0rd!2")` | `"strong"` |
 
 ## Criteria
-The character types are lowercase letters, uppercase letters, digits and special
+The character types are lowercase letters, uppercase letters, digits, and special
 characters. Check the ratings in this order, and return the first that fits:
 
 **Strong**:

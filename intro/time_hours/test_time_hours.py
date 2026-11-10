@@ -9,6 +9,8 @@ import pytest
         ("10.75\n", "0 10 45"),
         ("4.1\n", "0 4 6"),
         ("1.01\n", "0 1 1"),
+        ("1.999\n", "0 2 0"),
+        ("23.999\n", "1 0 0"),
     ],
 )
 def test_time_hours(solution, input_params, expected_output):
