@@ -13,7 +13,7 @@ you cloned is already a Python project.
    ```
 3. Create a new Python project with uv:
    ```
-   uv init first-project
+   uv init --python 3.15 first-project
    ```
 4. Move into your new project folder:
    ```
@@ -34,17 +34,19 @@ you cloned is already a Python project.
 
 ## Understanding Your Project
 
-When you used `uv init`, it created several files:
+When you used `uv init`, it created several files, including:
 
 - `pyproject.toml` - Contains project settings
-- `.python-version` - Contains the python version
+- `.python-version` - Contains the Python version
 - `README.md` - Information about your project
-- `main.py` - A sample Python file
+
+The others can stay as they are.
 
 ## Write Your First Program
 
-1. Open the `main.py` file (it should already exist)
-2. Replace its contents with:
+1. In PyCharm, right-click the `first-project` folder, choose
+   **New → Python File**, type `hello`, and press Enter
+2. Type into `hello.py`:
 
 ```python
 print("Hello, World!")
@@ -56,7 +58,7 @@ print("I'm learning Python!")
 1. In PyCharm, open the terminal (View → Tool Windows → Terminal)
 2. Run your program with:
    ```
-   uv run main.py
+   uv run hello.py
    ```
 3. You should see your messages printed in the terminal
 
@@ -70,9 +72,9 @@ print("I'm learning Python!")
 ## Common Commands You'll Use
 
 - `cd` - **C**hange **D**irectory
-- `uv init project-name` - Create a new Python project
+- `uv init --python 3.15 project-name` - Create a new Python project
 - `pycharm .` - Open the current folder in PyCharm
-- `uv run main.py` - Run a Python file
+- `uv run hello.py` - Run a Python file
 - `uv run pytest path/to/exercise/` - Test an exercise solution
 
 Congratulations! You now have a Python project of your own, ready for any program you want to write.

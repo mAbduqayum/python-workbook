@@ -108,7 +108,8 @@ with open("file.txt", "a", encoding="utf-8") as f:
 
 ## Encoding
 
-Always specify `encoding="utf-8"` for text files to ensure consistent behavior across platforms:
+Always specify `encoding="utf-8"` for text files, so your code reads them the same way on every computer and every
+Python version:
 
 ```python
 with open("file.txt", "r", encoding="utf-8") as f:
