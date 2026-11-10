@@ -90,7 +90,7 @@ match denomination:
 
 ### Example 3: Vowel or Consonant
 
-**Problem**: Determine if a letter is a vowel, consonant, or the special case of 'y'.
+**Problem**: Determine if a letter is a vowel, consonant, or the special case of `'y'`.
 
 ```python
 # Read a letter from the user

@@ -41,8 +41,8 @@ if __name__ == "__main__":
 
 - File format: each line contains `atomic_number symbol name` (space-separated)
 - `load_elements` returns a dict with three keys:
-  - "by_number": dict mapping atomic number (as string) to element name
-  - "by_symbol": dict mapping lowercase symbol to element name
-  - "by_name": dict mapping lowercase name to element name
+  - `"by_number"`: dict mapping atomic number (as string) to element name
+  - `"by_symbol"`: dict mapping lowercase symbol to element name
+  - `"by_name"`: dict mapping lowercase name to element name
 - `lookup_element` accepts an atomic number, symbol, or name; symbol and name matching is case-insensitive
 - Return `None` if the element is not found

@@ -7,7 +7,7 @@ Check if two words are anagrams of each other.
 Write a function `is_anagram(word1, word2)` that determines if two words are anagrams.
 
 - Two words are anagrams if they contain the same characters with the same frequencies
-- The comparison is case-sensitive ('A' and 'a' are different)
+- The comparison is case-sensitive (`'A'` and `'a'` are different)
 
 ## Template
 

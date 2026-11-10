@@ -7,7 +7,7 @@ Find the length of the longest substring without repeating characters.
 Write a function `longest_substring_without_repeating(s)` that returns the length of the longest substring that contains no repeating characters.
 
 - A substring is a contiguous sequence of characters
-- Case-sensitive: 'A' and 'a' are different characters
+- Case-sensitive: `'A'` and `'a'` are different characters
 - Every character counts: letters, digits, spaces, and punctuation
 
 ## Template
