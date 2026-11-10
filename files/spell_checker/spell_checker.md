@@ -26,6 +26,6 @@ if __name__ == "__main__":
 
 - The dictionary file contains one valid word per line
 - Comparison is case-insensitive
-- Strip punctuation from words before checking (.,!?;:'")
+- Strip punctuation from words before checking (`.,!?;:'"`)
 - Return a list of unique misspelled words (no duplicates), in lowercase
 - Tokens that are only punctuation are ignored
