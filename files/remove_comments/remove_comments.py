@@ -11,13 +11,13 @@ def remove_comments(input_path: str, output_path: str) -> int:
 
 
 if __name__ == "__main__":
-    with open("code.py", "w") as f:
+    with open("sample_code.py", "w") as f:
         f.write("# This is a comment\n")
         f.write("x = 1\n")
         f.write("  # Indented comment\n")
         f.write("y = 2  # inline comment stays\n")
 
-    print(remove_comments("code.py", "clean_code.py"))  # 2
+    print(remove_comments("sample_code.py", "clean_code.py"))  # 2
 
     with open("clean_code.py", "r") as f:
         print(f.read())
