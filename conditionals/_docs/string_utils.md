@@ -17,7 +17,7 @@
 |--------------|------------------------------------------------------------------------------------|-------------------------------------------------------|
 | `.lower()`   | `"Hello".lower()` # `"hello"`                                                      | Convert to lowercase for case-insensitive comparisons |
 | `.upper()`   | `"hello".upper()` # `"HELLO"`                                                      | Convert to uppercase                                  |
-| `.title()`   | `"hello".title()` # `"Hello"`                                                      | Convert to title case (first letter capitalized)      |
+| `.title()`   | `"hello world".title()` # `"Hello World"`                                          | Capitalize the first letter of each word              |
 | `.isdigit()` | `"5".isdigit()` # `True`<br>`"a".isdigit()` # `False`                              | Check if character is a digit (0-9)                   |
 | `.isalpha()` | `"a".isalpha()` # `True`<br>`"5".isalpha()` # `False`                              | Check if character is a letter (a-z, A-Z)             |
 | `.isalnum()` | `"a5".isalnum()` # `True`<br>`"a!".isalnum()` # `False`                            | Check if string contains only letters and digits      |

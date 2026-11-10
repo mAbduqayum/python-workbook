@@ -29,7 +29,7 @@ fib(5)
 
 `fib(3)` is calculated 2 times, `fib(2)` is calculated 3 times...
 
-For `fib(40)`, there are billions of repeated calculations!
+For `fib(40)`, that adds up to more than 300 million calls!
 
 ## The Solution: Memoization
 
@@ -66,11 +66,13 @@ memo = {}
 ├── fib(4) → calculate, store memo[4] = 3
 │   ├── fib(3) → calculate, store memo[3] = 2
 │   │   ├── fib(2) → calculate, store memo[2] = 1
-│   │   └── fib(1) → return 1
+│   │   │   ├── fib(1) → base case, store memo[1] = 1
+│   │   │   └── fib(0) → base case, store memo[0] = 0
+│   │   └── fib(1) → found in memo! return 1
 │   └── fib(2) → found in memo! return 1
 └── fib(3) → found in memo! return 2
 
-memo = {2: 1, 3: 2, 4: 3, 5: 5}
+memo = {1: 1, 0: 0, 2: 1, 3: 2, 4: 3, 5: 5}
 ```
 
 ## Another Example: Climbing Stairs

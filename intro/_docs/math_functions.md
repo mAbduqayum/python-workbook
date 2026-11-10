@@ -32,7 +32,7 @@ These functions are available without importing any module:
 |---------------------|-----------------------|--------------------|-----------|
 | `math.sqrt(x)`      | Square root           | `math.sqrt(16)`    | `4.0`     |
 | `math.pow(x, y)`    | Power (returns float) | `math.pow(2, 3)`   | `8.0`     |
-| `math.exp(x)`       | e^x                   | `math.exp(1)`      | `2.71828` |
+| `math.exp(x)`       | eˣ                    | `math.exp(1)`      | `2.71828` |
 | `math.log(x)`       | Natural logarithm     | `math.log(math.e)` | `1.0`     |
 | `math.log(x, base)` | Logarithm with base   | `math.log(8, 2)`   | `3.0`     |
 | `math.log10(x)`     | Base-10 logarithm     | `math.log10(100)`  | `2.0`     |
@@ -46,7 +46,7 @@ All angles are in **radians**. Use `math.radians()` to convert from degrees.
 |--------------------|------------------------------|-----------------------|----------|
 | `math.sin(x)`      | Sine                         | `math.sin(math.pi/2)` | `1.0`    |
 | `math.cos(x)`      | Cosine                       | `math.cos(0)`         | `1.0`    |
-| `math.tan(x)`      | Tangent                      | `math.tan(math.pi/4)` | `1.0`    |
+| `math.tan(x)`      | Tangent                      | `math.tan(0)`         | `0.0`    |
 | `math.asin(x)`     | Arcsine (returns radians)    | `math.asin(1)`        | `1.5708` |
 | `math.acos(x)`     | Arccosine (returns radians)  | `math.acos(0)`        | `1.5708` |
 | `math.atan(x)`     | Arctangent (returns radians) | `math.atan(1)`        | `0.7854` |

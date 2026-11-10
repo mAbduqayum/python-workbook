@@ -54,7 +54,8 @@ with open("file.txt", "r", encoding="utf-8") as f:
 ```python
 with open("file.txt", "r", encoding="utf-8") as f:
     for line in f:
-        print(line.strip())  # strip() removes trailing newline
+        # strip() removes spaces, tabs and the newline from both ends
+        print(line.strip())
 ```
 
 ### Read all lines as list

@@ -94,13 +94,13 @@ print(sum_digits(12345))  # 15
 
 ## Example 5: Power
 
-**Question:** What is 2^5?
+**Question:** What is 2⁵?
 
 **Thinking:**
-- 2^5 = 2 × 2^4
-- 2^4 = 2 × 2^3
+- 2⁵ = 2 × 2⁴
+- 2⁴ = 2 × 2³
 - ...
-- 2^0 = 1
+- 2⁰ = 1
 
 **Solution:**
 ```python

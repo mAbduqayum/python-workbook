@@ -64,19 +64,19 @@ Lists are **mutable** (can be changed after creation).
 > **Important**: When you modify a list, all variables pointing to that list see the change. This is why understanding
 > list copying (covered later) is crucial to avoid unexpected bugs.
 
-| Method         | Description                 | Example                 | Result                        |
-|----------------|-----------------------------|-------------------------|-------------------------------|
-| `append(x)`    | Add x to end                | `[1, 2].append(3)`      | `[1, 2, 3]`                   |
-| `insert(i, x)` | Insert x at index i         | `[1, 3].insert(1, 2)`   | `[1, 2, 3]`                   |
-| `extend(iter)` | Add all items from iterable | `[1, 2].extend([3, 4])` | `[1, 2, 3, 4]`                |
-| `remove(x)`    | Remove first x              | `[1, 2, 1].remove(1)`   | `[2, 1]`                      |
-| `pop(i)`       | Remove and return item at i | `[1, 2, 3].pop(1)`      | Returns `2`, list is `[1, 3]` |
-| `index(x)`     | Index of first x            | `[1, 2, 3].index(2)`    | `1`                           |
-| `count(x)`     | Count occurrences of x      | `[1, 2, 1].count(1)`    | `2`                           |
-| `sort()`       | Sort in place               | `[3, 1, 2].sort()`      | `[1, 2, 3]`                   |
-| `reverse()`    | Reverse in place            | `[1, 2, 3].reverse()`   | `[3, 2, 1]`                   |
-| `copy()`       | Shallow copy                | `[1, 2].copy()`         | `[1, 2]`                      |
-| `clear()`      | Remove all items            | `[1, 2].clear()`        | `[]`                          |
+| Method         | Description                 | Example                 | Result                                 |
+|----------------|-----------------------------|-------------------------|----------------------------------------|
+| `append(x)`    | Add x to end                | `[1, 2].append(3)`      | Returns `None`, list is `[1, 2, 3]`    |
+| `insert(i, x)` | Insert x at index i         | `[1, 3].insert(1, 2)`   | Returns `None`, list is `[1, 2, 3]`    |
+| `extend(iter)` | Add all items from iterable | `[1, 2].extend([3, 4])` | Returns `None`, list is `[1, 2, 3, 4]` |
+| `remove(x)`    | Remove first x              | `[1, 2, 1].remove(1)`   | Returns `None`, list is `[2, 1]`       |
+| `pop(i)`       | Remove and return item at i | `[1, 2, 3].pop(1)`      | Returns `2`, list is `[1, 3]`          |
+| `index(x)`     | Index of first x            | `[1, 2, 3].index(2)`    | `1`                                    |
+| `count(x)`     | Count occurrences of x      | `[1, 2, 1].count(1)`    | `2`                                    |
+| `sort()`       | Sort in place               | `[3, 1, 2].sort()`      | Returns `None`, list is `[1, 2, 3]`    |
+| `reverse()`    | Reverse in place            | `[1, 2, 3].reverse()`   | Returns `None`, list is `[3, 2, 1]`    |
+| `copy()`       | Shallow copy                | `[1, 2].copy()`         | `[1, 2]`                               |
+| `clear()`      | Remove all items            | `[1, 2].clear()`        | Returns `None`, list is `[]`           |
 
 > **Note: Methods that modify in-place vs return new values**
 >

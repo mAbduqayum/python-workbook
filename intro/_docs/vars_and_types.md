@@ -4,7 +4,7 @@ This guide covers all the fundamental concepts you need to solve exercises.
 
 ## Variables
 
-Variables are containers that store data values. In Python, you create a variable by assigning a value to it.
+A variable is a name that points to a value. You create one by assigning a value to it.
 
 ```python
 # Creating variables
