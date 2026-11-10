@@ -61,8 +61,8 @@ print(fibonacci(100))  # still instant!
 3. If no, calculate it and store for later
 
 ```
-First call: fib(5)
 memo = {}
+First call: fib(5) → calculate, store memo[5] = 5
 ├── fib(4) → calculate, store memo[4] = 3
 │   ├── fib(3) → calculate, store memo[3] = 2
 │   │   ├── fib(2) → calculate, store memo[2] = 1
@@ -74,6 +74,9 @@ memo = {}
 
 memo = {1: 1, 0: 0, 2: 1, 3: 2, 4: 3, 5: 5}
 ```
+
+Each value is stored only after the calls inside it return, so `fib(5)`, the first call, is
+the last one stored.
 
 ## Another Example: Climbing Stairs
 

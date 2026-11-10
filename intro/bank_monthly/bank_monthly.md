@@ -19,3 +19,5 @@ Enter number of years: 3
 ## Formula
 
 `balance = principal × (1 + rate/1200)^(12×years)`
+
+Here `^` means "to the power of", which Python writes as `**`.

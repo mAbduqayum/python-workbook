@@ -51,10 +51,11 @@ with open("file.txt", "r", encoding="utf-8") as f:
 
 ### Read line by line
 
+Each line ends with a newline. `strip()` removes it, along with any spaces or tabs at either end.
+
 ```python
 with open("file.txt", "r", encoding="utf-8") as f:
     for line in f:
-        # strip() removes spaces, tabs and the newline from both ends
         print(line.strip())
 ```
 

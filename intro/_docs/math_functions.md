@@ -46,7 +46,7 @@ All angles are in **radians**. Use `math.radians()` to convert from degrees.
 |--------------------|------------------------------|-----------------------|----------|
 | `math.sin(x)`      | Sine                         | `math.sin(math.pi/2)` | `1.0`    |
 | `math.cos(x)`      | Cosine                       | `math.cos(0)`         | `1.0`    |
-| `math.tan(x)`      | Tangent                      | `math.tan(0)`         | `0.0`    |
+| `math.tan(x)`      | Tangent                      | `math.tan(1)`         | `1.5574` |
 | `math.asin(x)`     | Arcsine (returns radians)    | `math.asin(1)`        | `1.5708` |
 | `math.acos(x)`     | Arccosine (returns radians)  | `math.acos(0)`        | `1.5708` |
 | `math.atan(x)`     | Arctangent (returns radians) | `math.atan(1)`        | `0.7854` |
