@@ -104,7 +104,8 @@ print(y)  # 4
 The number of names must match the number of values:
 
 ```python
-x, y = (1, 2, 3)  # ValueError: too many values to unpack (expected 2)
+x, y = (1, 2, 3)
+# ValueError: too many values to unpack (expected 2, got 3)
 ```
 
 Unpacking makes swapping two variables a single line:

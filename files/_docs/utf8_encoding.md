@@ -73,10 +73,11 @@ print(decoded)  # Hello, 世界!
 
 ### Reading and Writing Files
 
-Always specify encoding when working with files. Without it, `open()` uses
-your operating system's default encoding, which is not UTF-8 everywhere
-(Windows often uses a different one). The same code could then read a file
-correctly on one computer and fail on another.
+Always specify encoding when working with files. Since Python 3.15, `open()`
+uses UTF-8 when you leave it out, but older versions use your operating
+system's default encoding, which is not UTF-8 everywhere (Windows often uses
+a different one). Naming the encoding keeps your code reading a file the same
+way on every computer and every Python version.
 
 ```python
 # Writing
@@ -93,8 +94,8 @@ with open('myfile.txt', 'r', encoding='utf-8') as f:
 If you see this error, it usually means:
 
 1. The file isn't actually UTF-8 encoded
-2. You forgot to specify the encoding, and your system's default doesn't
-   match the file
+2. On a Python older than 3.15, you left out the encoding, and your system's
+   default doesn't match the file
 
 ```python
 # This fails if the file uses a different encoding

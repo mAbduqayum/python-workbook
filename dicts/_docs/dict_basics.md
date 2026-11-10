@@ -120,9 +120,12 @@ d = {
 }
 
 # Invalid keys (mutable types)
-# d = {[1, 2]: "value"}  # TypeError: unhashable type: 'list'
-# d = {{}: "value"}  # TypeError: unhashable type: 'dict'
-# d = {{1, 2}: "value"}  # TypeError: unhashable type: 'set'
+# d = {[1, 2]: "value"}
+# TypeError: cannot use 'list' as a dict key (unhashable type: 'list')
+# d = {{}: "value"}
+# TypeError: cannot use 'dict' as a dict key (unhashable type: 'dict')
+# d = {{1, 2}: "value"}
+# TypeError: cannot use 'set' as a dict key (unhashable type: 'set')
 ```
 
 ### Key Uniqueness
