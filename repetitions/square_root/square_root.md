@@ -3,7 +3,7 @@
 Implement Newton's method to compute the square root of a number.
 
 ## Task
-- Read a number x from the user
+- Read a positive number x from the user
 - Use Newton's method to compute the square root
 - Display the approximation
 
@@ -17,7 +17,7 @@ Each step lands closer to √x. Repeat until the guess is good enough.
 
 ## "Good Enough" Definition
 A guess is good enough when:
-- |guess² - x| ≤ 10⁻¹²
+- |guess² - x| ≤ 10⁻¹² × x
 
 ## Examples
 **Example 1:**
