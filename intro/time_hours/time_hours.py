@@ -1,5 +1,6 @@
 total_hours = float(input())
-days = int(total_hours // 24)
-remaining_hours = int(total_hours % 24)
-minutes = int((total_hours * 60) % 60)
+total_minutes = round(total_hours * 60)
+days = total_minutes // (24 * 60)
+remaining_hours = total_minutes // 60 % 24
+minutes = total_minutes % 60
 print(days, remaining_hours, minutes)

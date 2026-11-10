@@ -19,15 +19,17 @@ You rated passwords as a program in [Password Strength](../../repetitions/passwo
 | `password_strength("MyP@ssw0rd!2")` | `"strong"` |
 
 ## Criteria
-**Weak**: 
-- Length < 8, OR
-- Missing multiple character types
-
-**Medium**:
-- Length >= 8, AND
-- Has at least 2 character types (lower, upper, digit, special)
+The character types are lowercase letters, uppercase letters, digits and special
+characters. Check the ratings in this order, and return the first that fits:
 
 **Strong**:
 - Length >= 12, AND
 - Has at least 3 character types
+
+**Medium**:
+- Length >= 8, AND
+- Has at least 2 character types
+
+**Weak**:
+- Any other password
 
