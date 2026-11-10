@@ -67,6 +67,8 @@ CODE_SPAN = re.compile(r"\A`([^`]+)`\Z")
 # right, a result column.
 CODE_HEADERS = ("example", "call", "expression")
 RESULT_HEADERS = ("result", "output", "returns", "generated values")
+# A result column that shows the list a method changed, not what it returned.
+CHANGED_LIST_HEADERS = ("list after",)
 
 # How a comment says what a line gives, and how it goes on to explain it.
 HEADER = re.compile(
@@ -224,11 +226,13 @@ def assignment(
     return compile(module, filename, "exec")
 
 
-def evaluate(source: str, namespace: dict) -> tuple[object, BaseException | None]:
+def evaluate(
+    source: str, namespace: dict, shows_changed_list: bool = False
+) -> tuple[object, BaseException | None]:
     """The value of a table's example: an expression, or the name an assignment sets.
 
     A method called on a literal, `[1, 2].append(3)`, changes the literal and
-    returns None; its value is then the literal, as the table shows it.
+    returns None. Under a "List after" header, the value is the changed literal.
     """
     tree = ast.parse(source)
     if len(tree.body) != 1:
@@ -253,7 +257,7 @@ def evaluate(source: str, namespace: dict) -> tuple[object, BaseException | None
         error = run_statement(assignment(VALUE_NAME, expression), namespace, recorder)
         value = namespace.pop(VALUE_NAME, None)
         receiver = namespace.pop(RECEIVER_NAME, None)
-        if on_literal and value is None:
+        if on_literal and shows_changed_list:
             value = receiver
         return value, error
     if (
@@ -851,15 +855,21 @@ def code_span(cell: str) -> str | None:
     return code
 
 
-def example_columns(header_line: str) -> tuple[int, int] | None:
-    """The columns of a table of examples: the code, and a result to its right."""
+def example_columns(header_line: str) -> tuple[int, int, bool] | None:
+    """The columns of a table of examples: the code, and a result to its right.
+
+    The flag tells whether the result shows the changed list (a "List after"
+    column) rather than the value the code returns.
+    """
     code_column = None
     for column, cell in enumerate(table_cells(header_line)):
         name = cell.lower()
         if code_column is None and name in CODE_HEADERS:
             code_column = column
         elif code_column is not None and name in RESULT_HEADERS:
-            return code_column, column
+            return code_column, column, False
+        elif code_column is not None and name in CHANGED_LIST_HEADERS:
+            return code_column, column, True
     return None
 
 
@@ -879,7 +889,7 @@ def check_tables(page: Page, markdown: str, namespace_of_table) -> None:
         columns = example_columns(line)
         if columns is None:
             continue
-        code_column, result_column = columns
+        code_column, result_column, shows_changed_list = columns
         row = index + 2
         while row < len(lines) and lines[row].startswith("|"):
             cells = table_cells(lines[row])
@@ -890,12 +900,18 @@ def check_tables(page: Page, markdown: str, namespace_of_table) -> None:
                     cells[code_column],
                     cells[result_column],
                     namespace_of_table(),
+                    shows_changed_list,
                 )
             row += 1
 
 
 def check_row(
-    page: Page, line: int, examples: str, results: str, namespace: dict
+    page: Page,
+    line: int,
+    examples: str,
+    results: str,
+    namespace: dict,
+    shows_changed_list: bool,
 ) -> None:
     """One table row; a cell may hold several examples, a <br> apart."""
     example_cells = examples.split("<br>")
@@ -908,7 +924,7 @@ def check_row(
         if example is None or result is None:
             continue
         try:
-            value, error = evaluate(example, namespace)
+            value, error = evaluate(example, namespace, shows_changed_list)
         except SyntaxError:
             continue
         if isinstance(error, (NameError, Stopped)):
