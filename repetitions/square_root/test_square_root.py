@@ -12,6 +12,8 @@ import pytest
         ("25", 5.0),
         ("100", 10.0),
         ("144", 12.0),
+        ("4215", math.sqrt(4215)),
+        ("12345", math.sqrt(12345)),
     ],
 )
 def test_square_root(solution, input_value, expected_sqrt):
