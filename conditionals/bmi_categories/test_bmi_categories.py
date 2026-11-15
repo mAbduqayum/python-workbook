@@ -19,5 +19,5 @@ import pytest
 )
 def test_bmi_categories(solution, weight, height, expected_output):
     solution.check_output(
-        input_text=f"{weight}\n{height}\n", expected_output=expected_output
+        input_text=f"{height}\n{weight}\n", expected_output=expected_output
     )

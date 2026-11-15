@@ -4,8 +4,8 @@ Create a pyramid pattern using numbers instead of asterisks.
 
 ## Task
 - Read a positive integer `n` from the user (height of pyramid)
-- Display a centered pyramid where each row shows consecutive numbers
-- Row `i` should have numbers from 1 to i, centered
+- Display a centered pyramid of `n` rows
+- Row `i` counts up from 1 to `i`, then back down to 1, after `n - i` spaces
 
 ## Examples
 **Example 1:**

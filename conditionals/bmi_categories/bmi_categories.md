@@ -1,6 +1,6 @@
 # BMI Categories
 
-Write a program that calculates `BMI` and determines the weight category.
+Write a program that reads a person's height in meters, then their weight in kilograms, and displays the weight category of their `BMI`. It reads the two values in the same order as [Body Mass Index](../../intro/bmi/bmi.md).
 
 ## BMI Categories
 | BMI Range           | Category      |
@@ -13,8 +13,8 @@ Write a program that calculates `BMI` and determines the weight category.
 ## Examples
 **Example 1:**
 ```
-70
 1.75
+70
 ```
 ```
 Normal weight

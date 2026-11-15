@@ -1,6 +1,7 @@
 # Reverse List
 
-Create a function to reverse a list of integers.
+Create a function that takes a string of space-separated integers and returns
+them as a list of integers in reverse order.
 
 ## Template:
 
