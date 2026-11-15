@@ -11,7 +11,7 @@ def find_missing_comments(file_path: str) -> list[list[int | str]]:
 
 if __name__ == "__main__":
     # Create a test Python file
-    with open("code.py", "w") as f:
+    with open("sample_code.py", "w") as f:
         f.write("# This is documented\n")
         f.write("def good_function():\n")
         f.write("    pass\n")
@@ -20,7 +20,7 @@ if __name__ == "__main__":
         f.write("    pass\n")
 
     # Test your function
-    print(find_missing_comments("code.py"))  # [[5, 'bad_function']]
+    print(find_missing_comments("sample_code.py"))  # [[5, 'bad_function']]
 ```
 
 ## Note
