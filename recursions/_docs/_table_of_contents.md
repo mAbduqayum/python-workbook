@@ -40,7 +40,7 @@ mindmap
 ### Intermediate
 
 1. [`digital_root`](../digital_root/digital_root.md) - Add digits down to one digit
-2. [`power`](../power/power.md) - Calculate base^exponent
+2. [`power`](../power/power.md) - Raise base to the power of exponent
 3. [`fibonacci`](../fibonacci/fibonacci.md) - Nth Fibonacci number
 4. [`gcd`](../gcd/gcd.md) - Greatest common divisor
 

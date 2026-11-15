@@ -179,7 +179,7 @@ counts.most_common(2)  # [('apple', 3), ('banana', 2)]
 # Counter supports addition and subtraction
 c1 = Counter("hello")
 c2 = Counter("world")
-c1 + c2  # Counter({'l': 4, 'o': 2, 'h': 1, 'e': 1, 'w': 1, 'r': 1, 'd': 1})
+c1 + c2  # Counter({'l': 3, 'o': 2, 'h': 1, 'e': 1, 'w': 1, 'r': 1, 'd': 1})
 ```
 
 ## Dictionary View Objects
