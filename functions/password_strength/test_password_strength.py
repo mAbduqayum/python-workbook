@@ -18,6 +18,8 @@ pytestmark = pytest.mark.skipif(
         ("hello", "weak"),
         ("abcdefgh", "weak"),
         ("12345678", "weak"),
+        ("abcdefg1", "medium"),
+        ("abcdefghijk1", "medium"),
         ("Hello123", "medium"),
         ("Medium12", "medium"),
         ("Password1", "medium"),
