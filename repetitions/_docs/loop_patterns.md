@@ -53,7 +53,7 @@ entered by the user:
 
 ```python
 max_value = float('-inf')  # Start with very small value
-for i in range(5):
+for _ in range(5):
     num = int(input("Enter a number: "))
     if num > max_value:
         max_value = num

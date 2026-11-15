@@ -28,6 +28,9 @@ print(binary_search(nums, 4))   # -1
 
 ## Flatten Nested List
 
+`isinstance(item, list)` is `True` when `item` is a list, so the function can
+tell a sublist, which it flattens, from a single value, which it keeps:
+
 ```python
 def flatten(lst):
     result = []

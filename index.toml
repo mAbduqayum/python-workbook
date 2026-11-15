@@ -38,7 +38,7 @@
 ]
 "`&`" = ["doc:sets:set_operations:intersection"]
 "`^`" = ["doc:sets:set_operations:symmetric-difference"]
-"`_`" = ["doc:conditionals:match:basic-match-syntax"]
+"`_`" = ["doc:conditionals:match:basic-match-syntax", "doc:repetitions:for_loop:range-examples"]
 "`#`" = ["doc:intro:vars_and_types:comments"]
 "`->`" = ["doc:functions:type_hints_docstrings:basic-type-hints"]
 "`__name__`" = "`if __name__ == \"__main__\"`"
@@ -143,8 +143,11 @@
 "`isupper()`" = ["doc:repetitions:string_loops:upper-and-lower-case"]
 "`join()`" = ["doc:lists:join_iterable:joining-iterables-to-strings", "doc:lists:join_iterable:why-join-instead-of--"]
 "`lower()`" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:conditionals:string_utils:string-methods"]
+"`lstrip()`" = ["doc:files:file_basics:read-line-by-line"]
 "`replace()`" = ["doc:functions:function_patterns:boolean-returning-functions"]
+"`rstrip()`" = ["doc:files:file_basics:read-line-by-line"]
 "`split()`" = ["doc:lists:list_basics:creating-lists", "doc:lists:join_iterable:joining-iterables-to-strings"]
+"`startswith()`" = ["doc:files:file_basics:read-line-by-line"]
 "`strip()`" = ["doc:files:file_basics:read-line-by-line"]
 "`title()`" = ["doc:conditionals:string_utils:string-methods"]
 "`upper()`" = ["doc:intro:vars_and_types:string-methods-useful-to-know", "doc:conditionals:string_utils:string-methods"]
@@ -267,6 +270,7 @@
 "augmented assignment" = ["doc:intro:math_operators:augmented-assignment", "doc:lists:pointer:reassigning-vs-changing-in-place"]
 "base case" = ["doc:recursions:base_case:the-solution-base-case", "doc:recursions:base_case:rules"]
 "best so far pattern" = ["doc:repetitions:loop_patterns:pattern-3-best-so-far"]
+"Big O notation" = ["doc:lists:join_iterable:why-join-instead-of--"]
 "binary search" = ["doc:recursions:advanced:binary-search"]
 "Boolean" = ["doc:conditionals:boolean_operators:boolean-type", "doc:functions:function_patterns:boolean-returning-functions"]
 "Boolean operators" = ["doc:conditionals:boolean_operators:boolean-operators", "doc:conditionals:boolean_operators:operator-precedence"]
@@ -315,6 +319,7 @@
 "float" = ["doc:intro:vars_and_types:data-types"]
 "floor division" = ["doc:intro:math_operators:the-arithmetic-operators"]
 "frozen set" = ["doc:sets:set_basics:frozen-sets"]
+"generator expression" = ["doc:lists:join_iterable:joining-iterables-to-strings"]
 "GCD" = ["doc:intro:math_functions:special-functions", "doc:recursions:examples:example-7-gcd-euclidean-algorithm"]
 "global variable" = ["doc:functions:function_scope:global-variables"]
 "hash table" = ["doc:sets:set_best_practices:performance-why-sets-are-fast"]
@@ -366,7 +371,7 @@
 "time complexity" = ["doc:sets:set_best_practices:performance-why-sets-are-fast", "doc:dicts:dict_best_practices:time-complexity"]
 "traceback" = ["doc:errors:error_examples:example-2-read-this-traceback", "appendix:debugging:reading-a-traceback"]
 "type conversion" = ["doc:intro:vars_and_types:type-conversion"]
-"type hint" = ["doc:functions:type_hints_docstrings:type-hints"]
+"type hint" = ["doc:functions:type_hints_docstrings:type-hints", "doc:lists:list_basics:lists-in-type-hints"]
 "Unicode" = ["doc:files:utf8_encoding:python-strings-are-unicode"]
 "unpacking" = [
   "doc:conditionals:string_utils:string-operations-for-conditional-logic",
@@ -415,6 +420,7 @@
 "calling" = ["doc:functions:function_basics:calling-a-function"]
 "changing a list passed in" = ["doc:lists:pointer:functions-receive-the-same-object"]
 "defining" = ["doc:functions:function_basics:defining-a-function"]
+"passing as an argument" = ["doc:lists:join_iterable:joining-iterables-to-strings"]
 "returning several values" = ["doc:functions:function_basics:multiple-return-values"]
 "when to create" = ["doc:functions:function_best_practices:when-to-create-a-function"]
 

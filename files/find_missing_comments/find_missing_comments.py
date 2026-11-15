@@ -13,7 +13,7 @@ def find_missing_comments(file_path: str) -> list[list[int | str]]:
 
     for line_number, line in enumerate(lines, 1):
         if line.strip().startswith("def "):
-            func_name = line.strip().removeprefix("def ").split("(")[0]
+            func_name = line.split("(")[0].split()[1]
             if not has_preceding_comment(lines, line_number - 1):
                 missing.append([line_number, func_name])
 
