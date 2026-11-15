@@ -52,7 +52,8 @@ create_index_map(fruits)
 
 ```python
 # DON'T: Lists are mutable and unhashable
-# d = {[1, 2]: "value"}  # TypeError: unhashable type: 'list'
+# d = {[1, 2]: "value"}
+# TypeError: cannot use 'list' as a dict key (unhashable type: 'list')
 
 # DO: Use tuples instead
 d = {(1, 2): "value"}  # OK - tuples are immutable

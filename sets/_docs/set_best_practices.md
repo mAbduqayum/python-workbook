@@ -58,7 +58,8 @@ type(empty)  # <class 'set'>
 s = set()
 
 # WRONG - lists are mutable
-s.add([1, 2, 3])  # TypeError: unhashable type: 'list'
+s.add([1, 2, 3])
+# TypeError: cannot use 'list' as a set element (unhashable type: 'list')
 
 # CORRECT - use tuple instead
 s.add((1, 2, 3))  # Works!
