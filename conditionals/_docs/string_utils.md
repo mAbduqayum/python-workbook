@@ -13,12 +13,12 @@
 
 ## String Methods
 
-| Method       | Example                                                                            | Purpose                                               |
-|--------------|------------------------------------------------------------------------------------|-------------------------------------------------------|
-| `.lower()`   | `"Hello".lower()` # `"hello"`                                                      | Convert to lowercase for case-insensitive comparisons |
-| `.upper()`   | `"hello".upper()` # `"HELLO"`                                                      | Convert to uppercase                                  |
-| `.title()`   | `"hello world".title()` # `"Hello World"`                                          | Capitalize the first letter of each word              |
-| `.isdigit()` | `"5".isdigit()` # `True`<br>`"a".isdigit()` # `False`                              | Check if character is a digit (0-9)                   |
-| `.isalpha()` | `"a".isalpha()` # `True`<br>`"5".isalpha()` # `False`                              | Check if character is a letter (a-z, A-Z)             |
-| `.isalnum()` | `"a5".isalnum()` # `True`<br>`"a!".isalnum()` # `False`                            | Check if string contains only letters and digits      |
-| `.isspace()` | `" ".isspace()` # `True`<br>`"\t".isspace()` # `True`<br>`"a".isspace()` # `False` | Check if character is whitespace (space, tab, etc.)   |
+| Method       | Example                                                                            | Purpose                                                 |
+|--------------|------------------------------------------------------------------------------------|---------------------------------------------------------|
+| `.lower()`   | `"Hello".lower()` # `"hello"`                                                      | Convert to lowercase for case-insensitive comparisons   |
+| `.upper()`   | `"hello".upper()` # `"HELLO"`                                                      | Convert to uppercase                                    |
+| `.title()`   | `"hello WORLD".title()` # `"Hello World"`                                          | Capitalize each word's first letter, lowercase the rest |
+| `.isdigit()` | `"5".isdigit()` # `True`<br>`"a".isdigit()` # `False`                              | Check if character is a digit (0-9)                     |
+| `.isalpha()` | `"a".isalpha()` # `True`<br>`"5".isalpha()` # `False`                              | Check if character is a letter (a-z, A-Z)               |
+| `.isalnum()` | `"a5".isalnum()` # `True`<br>`"a!".isalnum()` # `False`                            | Check if string contains only letters and digits        |
+| `.isspace()` | `" ".isspace()` # `True`<br>`"\t".isspace()` # `True`<br>`"a".isspace()` # `False` | Check if character is whitespace (space, tab, etc.)     |

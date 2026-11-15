@@ -19,3 +19,5 @@ Enter number of years: 3
 ## Formula
 
 `balance = deposit × (1 + rate/100)^years`
+
+Here `^` means "to the power of", which Python writes as `**`.
