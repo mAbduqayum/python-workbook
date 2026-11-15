@@ -83,6 +83,14 @@ for i in range(5, 0, -1):
     print(i)  # 5, 4, 3, 2, 1
 ```
 
+When the loop never uses its number, name it `_`. Outside a `match` pattern,
+`_` is an ordinary name, and it tells the reader the value goes unused:
+
+```python
+for _ in range(3):
+    print("Hip hip hooray!")
+```
+
 ## Iterating Over Strings
 
 You can iterate over each character in a string:

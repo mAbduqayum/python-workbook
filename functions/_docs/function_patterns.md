@@ -47,6 +47,10 @@ print(is_prime(17))            # True
 print(is_palindrome("radar"))  # True
 ```
 
+`text.replace(old, new)` returns a copy of `text` with every `old` replaced by
+`new`. `replace(" ", "")` removes the spaces, so
+`is_palindrome("Never odd or even")` is `True` too.
+
 ## Conversion Functions
 
 ```python
@@ -75,7 +79,10 @@ def caesar_cipher(text: str, shift: int) -> str:
     result = ""
     for char in text:
         if char.isalpha():
-            start = ord('A') if char.isupper() else ord('a')
+            if char.isupper():
+                start = ord('A')
+            else:
+                start = ord('a')
             shifted = (ord(char) - start + shift) % 26
             result += chr(start + shifted)
         else:
@@ -85,7 +92,11 @@ def caesar_cipher(text: str, shift: int) -> str:
 def count_vowels(text: str) -> int:
     """Count vowels in text."""
     vowels = "aeiouAEIOU"
-    return sum(1 for char in text if char in vowels)
+    count = 0
+    for char in text:
+        if char in vowels:
+            count += 1
+    return count
 
 print(caesar_cipher("HELLO", 3))   # KHOOR
 print(count_vowels("Hello World"))  # 3

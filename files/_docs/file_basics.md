@@ -59,6 +59,12 @@ with open("file.txt", "r", encoding="utf-8") as f:
         print(line.strip())
 ```
 
+Give `strip()` the characters to remove, and it removes those instead:
+`"Hi!?".strip("!?")` gives `"Hi"`. `rstrip()` strips only the right end and
+`lstrip()` only the left, so `line.rstrip("\n")` removes the newline and keeps
+the spaces in front. `startswith()` checks how a string begins:
+`line.startswith("#")` is `True` for a line that starts with `#`.
+
 ### Read all lines as list
 
 ```python

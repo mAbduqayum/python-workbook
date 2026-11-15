@@ -54,7 +54,6 @@ for i in range(5):
 | While loop                  | `while condition:`                | Loop while condition is True   |
 | Iterate string              | `for char in text:`               | Process each character         |
 | Loop with index             | `for i in range(len(text)):`      | Access by index                |
-| Loop with index (better)    | `for i, char in enumerate(text):` | Access index and value         |
 | Break out of loop           | `break`                           | Exit loop immediately          |
 | Skip to next iteration      | `continue`                        | Skip rest of current iteration |
 | Infinite loop (be careful!) | `while True:`                     | Loop forever (use with break)  |

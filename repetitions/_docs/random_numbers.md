@@ -28,7 +28,7 @@ repeated events.
 ```python
 import random
 
-for i in range(5):
+for _ in range(5):
     print(random.randint(1, 6), end=" ")
 print()
 ```

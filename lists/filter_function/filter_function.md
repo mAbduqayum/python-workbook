@@ -26,3 +26,7 @@ if __name__ == "__main__":
 
     print(filter_list([11, 4, 7, 22, 9], is_even))  # [4, 22]
 ```
+
+## Note
+
+- `Callable`, from the `typing` module, is the type hint for a function

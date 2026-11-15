@@ -26,6 +26,5 @@
 | **Transform**           | `squares = [n ** 2 for n in numbers]`     | `squares = []` <br> `for n in numbers: squares.append(n**2)`         |
 | **Search (membership)** | `if value in numbers:`                    | `found = False` <br> `for n in numbers: if n == value: ...`          |
 | **Search (index)**      | `index = numbers.index(value)`            | `for i, n in enumerate(nums): if n == value: ...`                    |
-| **Build from input**    | `nums = [int(input()) for _ in range(n)]` | `nums = []` <br> `for i in range(n): nums.append(int(input()))`      |
+| **Build from input**    | `nums = [int(input()) for _ in range(n)]` | `nums = []` <br> `for _ in range(n): nums.append(int(input()))`      |
 | **Reverse**             | `reversed_list = numbers[::-1]`           | `reversed_list = []` <br> `for i in range(len(nums)-1, -1, -1): ...` |
-| **Remove duplicates**   | `unique = list(set(numbers))`             | Manual loop checking if item already in new list                     |

@@ -74,10 +74,16 @@ def has_minimum_length(password):
     return len(password) >= 8
 
 def has_uppercase(password):
-    return any(c.isupper() for c in password)
+    for char in password:
+        if char.isupper():
+            return True
+    return False
 
 def has_digit(password):
-    return any(c.isdigit() for c in password)
+    for char in password:
+        if char.isdigit():
+            return True
+    return False
 ```
 
 ### 4. Avoid Side Effects

@@ -101,3 +101,17 @@ Extract sublists using `[start:stop:step]`:
 | `list[:]`          | `[1,2,3][:]`       | `[1, 2, 3]` |
 | `list[::step]`     | `[1,2,3,4,5][::2]` | `[1, 3, 5]` |
 | `list[::-1]`       | `[1,2,3][::-1]`    | `[3, 2, 1]` |
+
+## Lists in Type Hints
+
+A type hint for a list names what the list holds in square brackets:
+
+```python
+def greet_all(names: list[str]) -> None:
+    for name in names:
+        print(f"Hello, {name}!")
+```
+
+`list[int]` is a list of ints, `list[str]` a list of strings, and
+`list[list[int]]` a list whose items are lists of ints. A bare `list` says only
+that it's a list.

@@ -33,6 +33,13 @@ data = ["Alice", "25", "Engineer"]
 csv_line = ",".join(data)  # "Alice,25,Engineer"
 ```
 
+`str(n) for n in numbers` is a generator expression. It works like a list
+comprehension, but makes its values one at a time instead of storing them in a
+list. As the only argument of a call, it needs no brackets of its own.
+`map(str, numbers)` gives the same values by calling `str()` on each number.
+`str` goes in without parentheses: `map()` takes the function itself, and calls
+it.
+
 > **Note: join() is a string method, not a list method**
 >
 > Notice that `join()` is called on the separator string, not on the list: `separator.join(list)`. This might seem
@@ -44,6 +51,11 @@ csv_line = ",".join(data)  # "Alice,25,Engineer"
 > **Common mistake**: `my_list.join(",")` will cause an AttributeError! Use `",".join(my_list)` instead.
 
 ## Why join() Instead of += ?
+
+Big O notation describes how the work grows with the size of the input, n.
+O(1) is the same work however big n gets, O(n) is work that grows in step with
+n, and O(n²) is work that grows with n times n, so doubling n makes four times
+as much.
 
 Strings are immutable, so each `result += piece` creates a brand-new string, copying everything built so far. In a loop
 over n pieces that's O(n²) total work. Appending to a list is O(1), and a single `join()` at the end copies each
