@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
 - Words are separated by whitespace
 - Words are case-insensitive ("Hello" and "hello" are the same)
-- Strip common punctuation (.,!?;:'") from words
+- Strip common punctuation (`.,!?;:'"`) from words
 - Return an empty dictionary for an empty file
 - Tokens that are only punctuation don't count as words
 
