@@ -7,7 +7,7 @@ Convert text to Morse code.
 Write a function `morse_encode(text)` that converts a string to Morse code.
 
 - Separate individual character codes with single spaces
-- Encoding is case-insensitive ('a' and 'A' are the same)
+- Encoding is case-insensitive (`'a'` and `'A'` are the same)
 - Skip characters that have no Morse code mapping
 
 ## Template

@@ -7,7 +7,7 @@ Convert a message to old cellphone key presses.
 Write a function `text_messaging(message)` that converts a text message to the sequence of key presses needed on an old
 cellphone keypad (T9 style).
 
-- Conversion is case-insensitive ('a' and 'A' are the same)
+- Conversion is case-insensitive (`'a'` and `'A'` are the same)
 - Skip characters that have no keypad mapping
 
 ### T9 Keypad Layout

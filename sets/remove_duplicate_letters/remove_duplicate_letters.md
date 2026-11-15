@@ -7,7 +7,7 @@ Remove duplicate characters from a string while preserving order.
 Write a function `remove_duplicate_letters(text)` that returns a new string with duplicate characters removed.
 
 - Preserve the order of first occurrence of each character
-- The comparison should be case-sensitive ('A' and 'a' are different)
+- The comparison should be case-sensitive (`'A'` and `'a'` are different)
 
 ## Template
 
