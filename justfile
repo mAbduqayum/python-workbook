@@ -46,3 +46,19 @@ check: lint order examples
 # Install/refresh dependencies (unrelated to the "Sync to Main" workflow)
 sync:
     uv sync
+
+# Force main to match pushed solutions, minus solution scripts and .mainignore paths
+mirror-main:
+    #!/usr/bin/env bash
+    set -eu
+    git fetch -q origin
+    # Build main's files in a scratch index, leaving the working tree alone
+    export GIT_INDEX_FILE=$(mktemp)
+    git read-tree origin/solutions
+    git ls-files | grep -E '^([^/]+)/([^/]+)/\2\.py$' | xargs git rm -qf --cached
+    git show origin/solutions:.mainignore | grep -v -e '^#' -e '^$' | xargs git rm -qrf --cached --ignore-unmatch
+    tree=$(git write-tree) && rm "$GIT_INDEX_FILE"
+    if [ "$tree" = "$(git rev-parse 'origin/main^{tree}')" ]; then echo "main already mirrors solutions"; exit; fi
+    # The Source-commit trailer is where the Sync to Main workflow resumes
+    git push origin "$(git commit-tree "$tree" -p origin/main -m 'ref: mirror main from solutions' -m "Source-commit: $(git rev-parse origin/solutions)"):refs/heads/main"
+
