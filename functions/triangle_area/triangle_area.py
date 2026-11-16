@@ -1,5 +1,5 @@
 def triangle_area(base: float, height: float) -> float:
-    return (base * height) / 2
+    return base * height / 2
 
 
 if __name__ == "__main__":
