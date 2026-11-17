@@ -150,38 +150,6 @@ area = pi * radius ** 2
 print(f"The area is: {area}")
 ```
 
-## Common Patterns for Exercises
-
-### Pattern 1: Simple calculation
-
-```python
-# Get two numbers and calculate their sum
-num1 = int(input("Enter first number: "))
-num2 = int(input("Enter second number: "))
-sum_result = num1 + num2
-print(f"The sum is: {sum_result}")
-```
-
-### Pattern 2: Formula application
-
-```python
-# Calculate rectangle area
-length = float(input("Enter length: "))
-width = float(input("Enter width: "))
-area = length * width
-print(f"The area is: {area}")
-```
-
-### Pattern 3: Unit conversion
-
-```python
-# Convert centimeters to meters and centimeters
-total_cm = int(input("Enter centimeters: "))
-meters = total_cm // 100
-cm = total_cm % 100
-print(meters, cm)
-```
-
 ## Tips for Success
 
 1. **Always convert input to the right type:**
