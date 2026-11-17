@@ -18,6 +18,7 @@ def average(a: float, b: float) -> float:
 ```
 
 Syntax:
+
 - `parameter: type` - parameter type hint
 - `-> type` - return type hint
 - `-> None` - function doesn't return a value

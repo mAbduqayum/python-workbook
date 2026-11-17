@@ -3,6 +3,7 @@
 Write a program that reads an earthquake magnitude and displays the appropriate descriptor according to the Richter scale.
 
 ## Richter Scale Classifications
+
 | Magnitude               | Descriptor |
 |-------------------------|------------|
 | magnitude < 2.0         | micro      |
@@ -16,13 +17,17 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 | magnitude >= 10.0       | meteoric   |
 
 ## Examples
+
 **Example 1:**
+
 ```
 1.5
 ```
+
 ```
 micro
 ```
 
 ## About the Richter Scale
+
 The Richter scale is a **logarithmic scale**, not linear. Each whole number increase represents a 10-fold increase in amplitude and approximately 31.6 times more energy release. For example, a magnitude 5.0 earthquake is 10 times stronger than a magnitude 4.0 earthquake.

@@ -88,6 +88,7 @@ These methods leave the list as it is and return a value:
 > **Note: Keeping the original list**
 >
 > These return a new value without changing the original:
+>
 > - `sorted(list)` returns a new sorted list (vs `list.sort()` which sorts in-place)
 > - `list[:]` creates a copy (vs assignment which creates a reference)
 > - `reversed(list)` returns an iterator (vs `list.reverse()` which reverses in-place)

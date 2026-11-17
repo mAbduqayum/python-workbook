@@ -3,6 +3,7 @@
 Write a program that reads a person's age and determines their life phase.
 
 ## Life Phase Classifications
+
 | Age Range | Life Phase  |
 |-----------|-------------|
 | 0-1       | infant      |
@@ -14,18 +15,23 @@ Write a program that reads a person's age and determines their life phase.
 | 65+       | senior      |
 
 ## Examples
+
 **Example 1:**
+
 ```
 1
 ```
+
 ```
 infant
 ```
 
 **Example 2:**
+
 ```
 -5
 ```
+
 ```
 invalid age
 ```

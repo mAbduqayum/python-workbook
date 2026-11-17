@@ -3,6 +3,7 @@
 Write a function that determines if a string represents a valid integer.
 
 ## Task
+
 - Create a function `is_int(s)` that takes a string
 - Return `True` if the string represents a valid integer, `False` otherwise
 
@@ -17,6 +18,7 @@ Write a function that determines if a string represents a valid integer.
 | `is_int("")`     | `False` |
 
 ## Note
+
 - A valid integer is an optional `+`/`-` sign followed by one or more digits
 - An empty string, a lone sign, or surrounding whitespace is invalid
 - Don't use built-in conversion functions like `int()`

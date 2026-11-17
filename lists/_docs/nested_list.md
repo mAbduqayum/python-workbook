@@ -73,6 +73,7 @@ print(matrix)  # [[1, 0, 0], [0, 0, 0], [0, 0, 0]]
 > **same** list. It's like making 3 variables all point to the same list!
 >
 > Think of it this way:
+>
 > - `[0] * 3` creates `[0, 0, 0]` (one list)
 > - `[[0, 0, 0]] * 3` creates three references to that one list
 >

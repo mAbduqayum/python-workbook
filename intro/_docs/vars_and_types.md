@@ -153,18 +153,21 @@ print(f"The area is: {area}")
 ## Tips for Success
 
 1. **Always convert input to the right type:**
+
    ```python
    # Wrong: age = input("Enter age: ")  # This is a string!
    # Right: age = int(input("Enter age: "))
    ```
 
 2. **Use descriptive variable names:**
+
    ```python
    # Wrong: x = 5, y = 3, z = x * y
    # Right: length = 5, width = 3, area = length * width
    ```
 
 3. **Pay attention to output formatting:**
+
    ```python
    # If exercise asks for "The result is: 42"
    print(f"The result is: {result}")  # Exact format matters

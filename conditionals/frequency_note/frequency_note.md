@@ -3,6 +3,7 @@
 Write a program that reads a frequency from the user (as a float) and displays the 4th-octave note (C4-B4) whose frequency is within ±1 Hz of it, or "no match" if none qualifies.
 
 ## Reference Note Frequencies (4th Octave)
+
 | Note | Frequency (Hz) |
 |------|----------------|
 | C4   | 261.63         |
@@ -14,18 +15,23 @@ Write a program that reads a frequency from the user (as a float) and displays t
 | B4   | 493.88         |
 
 ## Examples
+
 **Example 1:**
+
 ```
 262.5
 ```
+
 ```
 C4
 ```
 
 **Example 2:**
+
 ```
 500
 ```
+
 ```
 no match
 ```

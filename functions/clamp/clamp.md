@@ -3,6 +3,7 @@
 Write a function that keeps a number inside a range.
 
 ## Task
+
 - Create a function `clamp(value, low, high)`
 - Return `low` if `value` is below `low`, `high` if it is above `high`, and `value` itself otherwise
 

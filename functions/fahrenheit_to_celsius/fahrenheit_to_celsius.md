@@ -3,7 +3,8 @@
 Write a function that converts Fahrenheit to Celsius.
 
 ## Task
-- Create a function `fahrenheit_to_celsius(fahrenheit)` 
+
+- Create a function `fahrenheit_to_celsius(fahrenheit)`
 - Return the temperature in Celsius
 
 ## Examples
@@ -13,5 +14,5 @@ Write a function that converts Fahrenheit to Celsius.
 | `fahrenheit_to_celsius(212)` | `100.0` |
 
 ## Formula
-- Celsius = (Fahrenheit - 32) × 5/9
 
+- Celsius = (Fahrenheit - 32) × 5/9

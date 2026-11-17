@@ -71,6 +71,7 @@ print the unit in its output.
 ## Step 2 - Drop how-to-solve notes; keep output/spec notes
 
 A `## Note` (or inline hint) is **redundant and should be removed** when it:
+
 - restates formatting already visible in the examples
   (`Use .2f formatting`, leading zeros - the example output shows it), or
 - prescribes *which function/builtin* to use
@@ -82,6 +83,7 @@ A `## Note` (or inline hint) is **redundant and should be removed** when it:
 
 **KEEP a note (or the specific bullet) only when it states a fact the reader
 cannot derive and that determines the expected output:**
+
 - given physical constants not in the formula
   (water specific heat `4.186`, `1 kWh = 3,600,000 J`),
 - required unit conversions that are part of the spec
@@ -143,6 +145,7 @@ When the program's output is a **single line** of the form
 - `print(f"Total seconds: {n}")` → `print(f"{n}")`
 
 **Keep the label** when:
+
 - the output is **multi-line** and labels disambiguate which line is which
   (Fahrenheit / Kelvin, Energy / Cost, Tip / Total), or
 - the label carries **dynamic information** that wouldn't otherwise appear
@@ -196,6 +199,7 @@ warranted.
 ## Step 3 - General beginner-friction cleanup
 
 Apply opportunistically while in a chapter:
+
 - Fix broken/placeholder commands and paths in `_docs/` (use real project
   paths, `uv run`, correct menu names).
 - Make constants explicit and idiomatic in solutions (`import math; math.pi`

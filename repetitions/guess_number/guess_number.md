@@ -3,6 +3,7 @@
 A number guessing game where the computer picks a number and gives hints.
 
 ## Task
+
 - Computer picks a random number between 1 and 100
 - User tries to guess the number
 - After each guess, provide feedback:
@@ -11,6 +12,7 @@ A number guessing game where the computer picks a number and gives hints.
   - "correct!" when guessed correctly
 
 ## Example Session
+
 ```
 Guess a number between 1 and 100: 50
 too low

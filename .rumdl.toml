@@ -1,0 +1,11 @@
+# `rumdl fmt` settings, as in pw-book's .rumdl.toml. Left alone: a bare fence
+# is an example's input or output, which the book draws as such, so MD040 must
+# not label it; a heading may end in a colon (MD026); and the spaces inside a
+# code span can be what it shows (MD038).
+[global]
+disable = ["MD040", "MD026", "MD038"]
+
+# Tables aligned, their separator rows written |---| rather than | --- |.
+[MD060]
+enabled = true
+style = "aligned-no-space"

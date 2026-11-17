@@ -3,6 +3,7 @@
 The length of a month varies from `28` to `31` days. Create a program that reads the name of a month from the user as a string and displays the number of days in that month.
 
 ## Month Days
+
 | Month     | Days     |
 |-----------|----------|
 | January   | 31       |
@@ -19,18 +20,23 @@ The length of a month varies from `28` to `31` days. Create a program that reads
 | December  | 31       |
 
 ## Examples
+
 **Example 1:**
+
 ```
 DECEMBER
 ```
+
 ```
 31
 ```
 
 **Example 2:**
+
 ```
 xyz
 ```
+
 ```
 invalid month
 ```

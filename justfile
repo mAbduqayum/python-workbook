@@ -25,11 +25,13 @@ lint:
 
 fmt:
     uv run ruff format .
+    uv run rumdl fmt .
 
 # Lint then format, in the lefthook ruff hook's order; format runs even if unfixable lint errors remain
 fix:
     -uv run ruff check --fix .
     uv run ruff format .
+    uv run rumdl fmt .
 
 # Run the code examples in the docs and exercises, and check what they show
 examples:
@@ -42,6 +44,7 @@ order:
 # What the Lint workflow runs
 check: lint order examples
     uv run ruff format --check .
+    uv run rumdl fmt --check .
 
 # Install/refresh dependencies (unrelated to the "Sync to Main" workflow)
 sync:

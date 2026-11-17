@@ -3,6 +3,7 @@
 Write a program that reads a wavelength and reports the corresponding color of visible light.
 
 ## Visible Light Spectrum
+
 | Color  | Wavelength Range (nm)    |
 |--------|--------------------------|
 | violet | `380` to less than `450` |
@@ -13,18 +14,23 @@ Write a program that reads a wavelength and reports the corresponding color of v
 | red    | `620` to `750`           |
 
 ## Examples
+
 **Example 1:**
+
 ```
 420
 ```
+
 ```
 violet
 ```
 
 **Example 2:**
+
 ```
 300
 ```
+
 ```
 outside visible spectrum
 ```

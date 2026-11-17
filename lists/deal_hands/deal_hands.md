@@ -26,4 +26,3 @@ if __name__ == "__main__":
     # Player 2: ['5H', '6H', '7H']
     # Player 3: ['8H', '9H', '10H']
 ```
-

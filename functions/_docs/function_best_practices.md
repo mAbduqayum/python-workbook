@@ -23,6 +23,7 @@ def check(e):
 ```
 
 **Naming conventions:**
+
 - Use lowercase with underscores: `calculate_area`
 - Start boolean functions with `is_`, `has_`, `can_`: `is_even`, `has_permission`
 - Use verbs for actions: `calculate`, `convert`, `validate`

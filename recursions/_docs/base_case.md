@@ -15,6 +15,7 @@ countdown(3)  # 3, 2, 1, 0, -1, -2, ... crash!
 ## The Solution: Base Case
 
 Every recursive function needs:
+
 1. **Base case** - when to stop (return without calling itself)
 2. **Recursive case** - when to continue (call itself)
 

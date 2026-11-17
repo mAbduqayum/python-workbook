@@ -4,11 +4,13 @@ Write functions that check a card number with the Luhn rule, which catches most
 typing mistakes.
 
 ## Task
+
 - Create a function `digits_only(number)` that returns the number without its spaces
 - Create a function `luhn_sum(digits)` that returns the Luhn sum of a string of digits
 - Create a function `is_valid_card(number)` that returns `True` if the Luhn sum of the number's digits is divisible by 10, `False` otherwise
 
 ## Rule
+
 Starting from the rightmost digit, double every second digit: the 2nd, 4th,
 6th and so on, counting from the right. When doubling gives more than 9,
 subtract 9. The Luhn sum is the total of all the digits after doubling.

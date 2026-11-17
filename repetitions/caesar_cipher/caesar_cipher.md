@@ -6,35 +6,43 @@ becomes `D`, `B` becomes `E`, and `Z` wraps back around to `C`. To read the
 message, you shift the other way.
 
 ## Task
+
 - Read a message, then a shift amount
 - Shift each letter by that amount, wrapping around the alphabet
 - Keep each letter's case; leave non-letter characters unchanged
 - A negative shift decodes a message
 
 ## Examples
+
 **Example 1:**
+
 ```
 Hello, World!
 3
 ```
+
 ```
 Khoor, Zruog!
 ```
 
 **Example 2:**
+
 ```
 xyz
 3
 ```
+
 ```
 abc
 ```
 
 **Example 3:**
+
 ```
 KHOOR
 -3
 ```
+
 ```
 HELLO
 ```

@@ -16,12 +16,12 @@ independent research traditions say the first item in a topic should not be.
 Our order: intro → conditionals → repetitions → functions → lists → sets →
 dicts → errors → files → recursions.
 
-| Decision | Field | Us |
-|---|---|---|
-| Functions **after** loops | 5 of 8 (MIT ×2, MOOC.fi, Automate 3e, Python Tutorial); 3 before (CS50P, Think Python, Real Python) | after - majority side |
-| Functions **before** lists | **8 of 8. No exception.** | before ✓ |
-| Files **after** data structures | 7 of 8 (only py4e inverts, deliberately) | after ✓ |
-| Recursion **late or absent** | absent in py4e, Automate, Python Tutorial; "leftovers" week in CS50P; part 11/14 in MOOC.fi | last - and 16 exercises is generous by field standards |
+| Decision                        | Field                                                                                               | Us                                                     |
+|---------------------------------|-----------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| Functions **after** loops       | 5 of 8 (MIT ×2, MOOC.fi, Automate 3e, Python Tutorial); 3 before (CS50P, Think Python, Real Python) | after - majority side                                  |
+| Functions **before** lists      | **8 of 8. No exception.**                                                                           | before ✓                                               |
+| Files **after** data structures | 7 of 8 (only py4e inverts, deliberately)                                                            | after ✓                                                |
+| Recursion **late or absent**    | absent in py4e, Automate, Python Tutorial; "leftovers" week in CS50P; part 11/14 in MOOC.fi         | last - and 16 exercises is generous by field standards |
 
 No source in the study argues its functions placement explicitly; the split is
 real and unresolved, so ours is not a weak spot. Leave the sequence alone.
@@ -80,14 +80,14 @@ functions 27, files 20, recursions 16, dicts 14, sets 6.
 
 Field comparison:
 
-| Source | Per unit |
-|---|---|
-| CS50P | 3–6 per week (42 total) |
-| Think Python 3e | 5–7 per chapter |
-| Real Python | 1 exercise set per lesson, uniformly |
-| Exercism authoring guidance | **"Try and choose 3 – 8 Exercises that practice each Concept"** |
-| Exercism live Python track | most-practiced concept (`strings`) = 12 exercises, across a 143-exercise track built over a decade |
-| MOOC.fi | 12–38 per part (283 total) - the dense outlier |
+| Source                      | Per unit                                                                                           |
+|-----------------------------|----------------------------------------------------------------------------------------------------|
+| CS50P                       | 3–6 per week (42 total)                                                                            |
+| Think Python 3e             | 5–7 per chapter                                                                                    |
+| Real Python                 | 1 exercise set per lesson, uniformly                                                               |
+| Exercism authoring guidance | **"Try and choose 3 – 8 Exercises that practice each Concept"**                                    |
+| Exercism live Python track  | most-practiced concept (`strings`) = 12 exercises, across a 143-exercise track built over a decade |
+| MOOC.fi                     | 12–38 per part (283 total) - the dense outlier                                                     |
 
 MOOC.fi proves high volume can work, so 39 is not automatically wrong. But two
 things differ. Its counts *ramp* (31→22→34→38→27→19→18→16→15→12), thinning as
@@ -235,6 +235,7 @@ examples from the test cases. Both are recorded in §5 above if that changes.
 ## Sources
 
 **Curricula**
+
 - [CS50P - Syllabus, weekly topic pages, problem sets, honesty policy](https://cs50.harvard.edu/python/) - primary, 2026 edition
 - [Python Programming MOOC 2025 (Helsinki) - parts 1–14, grading](https://programming-25.mooc.fi/) - primary, 2025; exercise counts from [rage/programming-25](https://github.com/rage/programming-25)
 - [MIT 6.100L - syllabus and 26-lecture calendar](https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/pages/calendar/) - primary, Fall 2022 (OCW publishes 6.100L and 6.0001, not 6.100A)
@@ -246,6 +247,7 @@ examples from the test cases. Both are recorded in §5 above if that changes.
 - [Python for Everybody - lessons](https://www.py4e.com/lessons) - primary
 
 **Exercise design**
+
 - [Exercism docs - concept exercises](https://github.com/exercism/docs/blob/main/building/tracks/concept-exercises.md), [practice exercises](https://github.com/exercism/docs/blob/main/building/tracks/practice-exercises/README.md), [syllabus](https://exercism.org/docs/building/tracks/syllabus), [config.json](https://exercism.org/docs/building/tracks/config-json), [approaches](https://exercism.org/docs/building/tracks/approaches), [unlocking](https://github.com/exercism/docs/blob/main/building/product/unlocking-exercises.md) - primary
 - [exercism/python - live track config and `acronym/.approaches/`](https://github.com/exercism/python) - primary
 - [Rationale for v3](https://github.com/exercism/v3/blob/main/docs/rationale-for-v3.md) - primary, platform opinion
@@ -254,6 +256,7 @@ examples from the test cases. Both are recorded in §5 above if that changes.
 - [HackerRank - test cases in coding questions](https://support.hackerrank.com/articles/3245197419-test-cases-in-coding-questions) - primary
 
 **Research**
+
 - [Rohrer & Taylor (2006), *Applied Cognitive Psychology* 20:1209–1224](https://files.eric.ed.gov/fulltext/ED505642.pdf) - overlearning and distributed practice
 - [Rohrer & Taylor (2007), *Instructional Science* 35:481–498](http://uweb.cas.usf.edu/~drohrer/pdfs/Rohrer&Taylor2007IS.pdf) - interleaving beats blocking
 - [Sentance, Waite & Kallia (2019), *Computer Science Education* 29(2–3):136–176](https://suesentance.net/wp-content/uploads/2020/02/teaching_computer_programming_with_primm__a_sociocultural_perspective_author_copy.pdf) - PRIMM

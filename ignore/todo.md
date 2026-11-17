@@ -63,7 +63,7 @@
   Consider two strings, str1 and str2, where the first string is supposed to be longer than
   the second. Figure out if the first one contains the other one. In doing so, the characters
   within the first string may also be rotated. Characters can be moved from the beginning
-  or the end to the opposite position (even repeatedly). To do this, create a function contains_rotation   (str1, str2),
+  or the end to the opposite position (even repeatedly). To do this, create a function contains_rotation (str1, str2),
   which is case-insensitive during the check.
 
 ### sets
@@ -128,7 +128,6 @@
 #### Hard
 
 - [x] Longest Substring Without Repeating Characters
-
 
 ### Files
 

@@ -3,18 +3,23 @@
 Write a program that reads an integer from the user and determines whether the integer is even or odd.
 
 ## Examples
+
 **Example 1:**
+
 ```
 7
 ```
+
 ```
 odd
 ```
 
 **Example 2:**
+
 ```
 4
 ```
+
 ```
 even
 ```

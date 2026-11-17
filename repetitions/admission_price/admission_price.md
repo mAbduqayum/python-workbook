@@ -3,12 +3,14 @@
 A zoo determines admission price based on the age of guests.
 
 ## Task
+
 - Read ages of all guests in a group (one age per line)
 - User enters blank line when done
 - Calculate total admission cost
 - Display the cost with 2 decimal places
 
 ## Pricing
+
 | Age         | Price  |
 |-------------|--------|
 | 2 and under | $0.00  |
@@ -17,7 +19,9 @@ A zoo determines admission price based on the age of guests.
 | All others  | $23.00 |
 
 ## Examples
+
 **Example 1:**
+
 ```
 5
 10
@@ -25,6 +29,7 @@ A zoo determines admission price based on the age of guests.
 40
 
 ```
+
 ```
 $69.00
 ```

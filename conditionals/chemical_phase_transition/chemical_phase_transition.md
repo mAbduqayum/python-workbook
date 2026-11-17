@@ -31,6 +31,7 @@ graph TD
 liquid
 solid
 ```
+
 ```
 freezing
 ```

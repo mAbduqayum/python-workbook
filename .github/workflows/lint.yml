@@ -1,14 +1,14 @@
 name: Lint
 
 # Gates for the curriculum itself, not for the people learning from it: ruff's
-# style, index.toml's labels and the order its skills are used in, and the code
-# examples in the docs giving what they show. A beginner's first loop failing
+# style, the Markdown's formatting, index.toml's labels and the order its
+# skills are used in, and the code examples in the docs giving what they show. A beginner's first loop failing
 # ruff is discouraging noise, and `Grade Calculator` is the feedback that
 # actually means something to them. So this runs on `solutions` only - never on
 # `main`, which students work from, and never in their forks. The docs checks
 # read the solutions, which `main` lacks anyway.
-# Locally ruff runs as lefthook pre-commit hooks; this catches commits that
-# bypassed them.
+# Locally ruff and rumdl run as lefthook pre-commit hooks; this catches commits
+# that bypassed them.
 
 on:
   push:
@@ -42,9 +42,9 @@ jobs:
           version: "0.13.4"
           enable-cache: true
 
-      # Ruff's version is pinned in pyproject.toml, so CI, the lefthook hooks
-      # and a local `uv run` all lint with the same one, and a new ruff release
-      # cannot turn CI red on its own.
+      # Ruff's and rumdl's versions are pinned in pyproject.toml, so CI, the
+      # lefthook hooks and a local `uv run` all use the same ones, and a new
+      # release cannot turn CI red on its own.
       - name: Install dependencies
         run: uv sync
 
@@ -53,6 +53,9 @@ jobs:
 
       - name: Check formatting
         run: uv run ruff format --check .
+
+      - name: Check Markdown formatting
+        run: uv run rumdl fmt --check .
 
   docs:
     runs-on: ubuntu-latest

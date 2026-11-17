@@ -5,6 +5,7 @@
 **Question:** What is 5!?
 
 **Thinking:**
+
 - 5! = 5 × 4!
 - 4! = 4 × 3!
 - 3! = 3 × 2!
@@ -12,6 +13,7 @@
 - 1! = 1
 
 **Solution:**
+
 ```python
 def factorial(n):
     if n <= 1:
@@ -28,6 +30,7 @@ print(factorial(5))  # 120
 **Question:** What is 1 + 2 + 3 + 4 + 5?
 
 **Thinking:**
+
 - sum(5) = 5 + sum(4)
 - sum(4) = 4 + sum(3)
 - sum(3) = 3 + sum(2)
@@ -35,6 +38,7 @@ print(factorial(5))  # 120
 - sum(1) = 1
 
 **Solution:**
+
 ```python
 def sum_to_n(n):
     if n == 1:
@@ -51,12 +55,14 @@ print(sum_to_n(5))  # 15
 **Question:** How many digits in 12345?
 
 **Thinking:**
+
 - 12345 has same digits as 1234, plus one more
 - 1234 has same digits as 123, plus one more
 - ...
 - Single digit (0-9) has 1 digit
 
 **Solution:**
+
 ```python
 def count_digits(n):
     n = abs(n)
@@ -74,12 +80,14 @@ print(count_digits(12345))  # 5
 **Question:** What is 1+2+3+4+5 for number 12345?
 
 **Thinking:**
+
 - Sum of 12345 = 5 + sum of 1234
 - Sum of 1234 = 4 + sum of 123
 - ...
 - Sum of single digit = itself
 
 **Solution:**
+
 ```python
 def sum_digits(n):
     n = abs(n)
@@ -97,12 +105,14 @@ print(sum_digits(12345))  # 15
 **Question:** What is 2⁵?
 
 **Thinking:**
+
 - 2⁵ = 2 × 2⁴
 - 2⁴ = 2 × 2³
 - ...
 - 2⁰ = 1
 
 **Solution:**
+
 ```python
 def power(base, exp):
     if exp == 0:
@@ -119,6 +129,7 @@ print(power(2, 5))  # 32
 **Question:** What is the 6th Fibonacci number?
 
 **Thinking:**
+
 - fib(6) = fib(5) + fib(4)
 - fib(5) = fib(4) + fib(3)
 - ...
@@ -126,6 +137,7 @@ print(power(2, 5))  # 32
 - fib(0) = 0
 
 **Solution:**
+
 ```python
 def fibonacci(n):
     if n <= 1:
@@ -142,16 +154,19 @@ print(fibonacci(6))  # 8
 **Question:** What is GCD of 48 and 18?
 
 **Thinking:**
+
 - gcd(48, 18) = gcd(18, 48 % 18) = gcd(18, 12)
 - gcd(18, 12) = gcd(12, 18 % 12) = gcd(12, 6)
 - gcd(12, 6) = gcd(6, 12 % 6) = gcd(6, 0)
 - gcd(6, 0) = 6
 
 **What if b > a?** It still works!
+
 - gcd(18, 48) = gcd(48, 18 % 48) = gcd(48, 18)
 - Then continues as normal
 
 **Solution:**
+
 ```python
 def gcd(a, b):
     if b == 0:

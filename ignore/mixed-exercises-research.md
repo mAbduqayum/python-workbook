@@ -123,17 +123,17 @@ challenge broken into named steps.
 
 ## 2. What other books do
 
-| Source | Format | Placement | Labeled? |
-|---|---|---|---|
-| Saxon Math | 25-30 Mixed Practice problems after every lesson | every lesson | lesson number under each |
-| Rohrer & Hartwig | ≥ 2/3 spaced or interleaved | every assignment | no - choosing is the point |
-| AoPS / Stewart | Review problems, then a harder Challenge / Problems Plus tier | chapter end | no |
-| Stroustrup PPP3 | Drill (one program modified step by step), then Exercises | chapter end | no |
-| CS50P | Problem Set 5 reimplements earlier problems, adding raised errors and tests | week 5 | by origin |
-| MOOC.fi | Capstone as a part's last exercise; `_2` chains across parts | part end; spread | by name |
-| HtDP 2e | Graphical editor revisited at 5.10, 10.4, 32.4 | spread | cross-reference |
-| Python Crash Course | "Wrap your code from Exercise 10-6 in a while loop" | after sections | by number |
-| Exercism | Concept exercises unlock practice exercises | unlock graph | yes (`prerequisites`) |
+| Source              | Format                                                                      | Placement        | Labeled?                   |
+|---------------------|-----------------------------------------------------------------------------|------------------|----------------------------|
+| Saxon Math          | 25-30 Mixed Practice problems after every lesson                            | every lesson     | lesson number under each   |
+| Rohrer & Hartwig    | ≥ 2/3 spaced or interleaved                                                 | every assignment | no - choosing is the point |
+| AoPS / Stewart      | Review problems, then a harder Challenge / Problems Plus tier               | chapter end      | no                         |
+| Stroustrup PPP3     | Drill (one program modified step by step), then Exercises                   | chapter end      | no                         |
+| CS50P               | Problem Set 5 reimplements earlier problems, adding raised errors and tests | week 5           | by origin                  |
+| MOOC.fi             | Capstone as a part's last exercise; `_2` chains across parts                | part end; spread | by name                    |
+| HtDP 2e             | Graphical editor revisited at 5.10, 10.4, 32.4                              | spread           | cross-reference            |
+| Python Crash Course | "Wrap your code from Exercise 10-6 in a while loop"                         | after sections   | by number                  |
+| Exercism            | Concept exercises unlock practice exercises                                 | unlock graph     | yes (`prerequisites`)      |
 
 Sources: [Saxon scope](https://g.christianbook.com/ns/pdf/more/17001.pdf),
 [Stewart 9e](https://demo.webassign.net/features/textbooks/scalc9/details.html),
@@ -246,19 +246,19 @@ has nothing earlier to mix). Four core items and one optional challenge:
 
 Each older skill returns in at least two later sets:
 
-| Skill (first taught) | Returns at the end of |
-|---|---|
-| Format specs: width, `:,`, `%` (Intro) | Conditionals, Lists, Files |
-| `math.ceil`, `divmod` (Intro) | Conditionals, Functions |
-| `match` (Conditionals) | Repetitions, Functions, Dicts |
-| `ord`/`chr` (Conditionals) | Functions, Dicts |
-| Sentinel loop and `break` (Repetitions) | Functions, Errors |
-| `random` (Repetitions) | Sets, Dicts |
-| Digit stripping `% 10`, `// 10` (Repetitions) | Lists, Sets, Recursion |
-| Tuples (Lists) | Dicts, Files |
-| Sets (Sets) | Dicts, Files, Recursion |
-| Dicts (Dicts) | Errors, Files, Recursion (a memo dict) |
-| `try`/`raise` (Errors) | Files, Recursion |
+| Skill (first taught)                          | Returns at the end of                  |
+|-----------------------------------------------|----------------------------------------|
+| Format specs: width, `:,`, `%` (Intro)        | Conditionals, Lists, Files             |
+| `math.ceil`, `divmod` (Intro)                 | Conditionals, Functions                |
+| `match` (Conditionals)                        | Repetitions, Functions, Dicts          |
+| `ord`/`chr` (Conditionals)                    | Functions, Dicts                       |
+| Sentinel loop and `break` (Repetitions)       | Functions, Errors                      |
+| `random` (Repetitions)                        | Sets, Dicts                            |
+| Digit stripping `% 10`, `// 10` (Repetitions) | Lists, Sets, Recursion                 |
+| Tuples (Lists)                                | Dicts, Files                           |
+| Sets (Sets)                                   | Dicts, Files, Recursion                |
+| Dicts (Dicts)                                 | Errors, Files, Recursion (a memo dict) |
+| `try`/`raise` (Errors)                        | Files, Recursion                       |
 
 ### 4.4 Pilot: Lists
 
@@ -324,6 +324,7 @@ examples (`dicts/_docs/dict_operations.md:182`,
 ## Sources
 
 **Learning science**
+
 - [Brunmair & Richter, Similarity matters](https://www.psychologie.uni-wuerzburg.de/fileadmin/06020400/2019/Brunmair_Richter_in_press__2019_META-ANALYSIS_OF_INTERLEAVED_LEARNING.pdf) — independent meta-analysis, 2019
 - [Rohrer, Dedrick, Hartwig & Cheung, classroom RCT](https://gwern.net/doc/psychology/spaced-repetition/2019-rohrer.pdf) — primary, 2020
 - [Rohrer & Hartwig, Spaced and Interleaved Mathematics Practice](https://www.unh.edu/teaching-learning-resource-hub/sites/default/files/media/2023-06/itow-spaced-and-interleaved-mathematics-practice-rohrer-hartwig.pdf) — primary (same lab), 2023
@@ -335,6 +336,7 @@ examples (`dicts/_docs/dict_operations.md:182`,
 - [Firth, Rivers & Boyle](https://strathprints.strath.ac.uk/75711) — independent systematic review, 2021
 
 **Programming and CS education**
+
 - [YeckehZaare & Resnick](https://pmc.ncbi.nlm.nih.gov/articles/PMC12141441/) — primary, 2025
 - [Smith et al., testing frequency](https://zilles.cs.illinois.edu/papers/frequent_testing_sigcse23.pdf) — primary, 2023
 - [Lionelle et al., Spiral CS1](https://par.nsf.gov/biblio/10352318) — primary, 2022, abstract only
@@ -351,6 +353,7 @@ examples (`dicts/_docs/dict_operations.md:182`,
 - [Lovellette, Bouvier & Matta, problem description effect](https://doi.org/10.1145/3643864) — independent, 2024
 
 **Books and courses**
+
 - [Saxon Math scope and sequence](https://g.christianbook.com/ns/pdf/more/17001.pdf) — primary, 2006-07
 - [Stewart Calculus 9e contents](https://demo.webassign.net/features/textbooks/scalc9/details.html) — primary, current
 - [Stroustrup, PPP3 Ch 0](https://www.stroustrup.com/PPP3_Ch0.pdf) — primary, 2024

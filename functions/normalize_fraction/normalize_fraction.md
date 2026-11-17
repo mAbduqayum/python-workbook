@@ -3,7 +3,8 @@
 Write a function that normalizes (simplifies) a fraction to its lowest terms.
 
 ## Task
-- Create a function `normalize_fraction(numerator, denominator)` 
+
+- Create a function `normalize_fraction(numerator, denominator)`
 - Return a tuple (simplified_numerator, simplified_denominator)
 
 ## Examples

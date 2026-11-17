@@ -3,11 +3,13 @@
 Write a program that determines the day of the week for January 1st of a given year using a mathematical formula.
 
 ## Formula
+
 ```
 day_of_week = (year + floor((year - 1) / 4) - floor((year - 1) / 100) + floor((year - 1) / 400)) % 7
 ```
 
 ## Day Mapping
+
 | Result | Day of Week |
 |--------|-------------|
 | 0      | Sunday      |
@@ -19,10 +21,13 @@ day_of_week = (year + floor((year - 1) / 4) - floor((year - 1) / 100) + floor((y
 | 6      | Saturday    |
 
 ## Examples
+
 **Example 1:**
+
 ```
 2020
 ```
+
 ```
 Wednesday
 ```

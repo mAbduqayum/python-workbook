@@ -3,6 +3,7 @@
 Write a program that determines the season based on a given month and day.
 
 ## Season Ranges
+
 | Season | Range                      |
 |--------|----------------------------|
 | spring | March 20 – June 20         |
@@ -11,11 +12,14 @@ Write a program that determines the season based on a given month and day.
 | winter | December 21 – March 19     |
 
 ## Examples
+
 **Example 1:**
+
 ```
 june
 15
 ```
+
 ```
 spring
 ```

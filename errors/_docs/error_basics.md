@@ -106,11 +106,11 @@ finally:
     print("Done")
 ```
 
-| Clause    | When It Runs                       |
-|-----------|------------------------------------|
+| Clause    | When It Runs                          |
+|-----------|---------------------------------------|
 | `except`  | Only if a matching exception occurred |
-| `else`    | Only if no exception occurred      |
-| `finally` | Always, exception or not           |
+| `else`    | Only if no exception occurred         |
+| `finally` | Always, exception or not              |
 
 `else` keeps the `try` block short: the code that needs `value` stays out of it.
 `finally` is for work that must happen however the block ends.
@@ -139,14 +139,14 @@ except ValueError:
 
 ## Common Built-in Exceptions
 
-| Exception           | When It Occurs                 | Example               |
-|---------------------|--------------------------------|-----------------------|
-| `ValueError`        | The right type, but a bad value | `int("abc")`         |
-| `TypeError`         | The wrong type for an operation | `"a" + 1`            |
-| `IndexError`        | No item at that list index     | `[1, 2][5]`           |
-| `KeyError`          | No such key in a dictionary    | `{"a": 1}["b"]`       |
-| `ZeroDivisionError` | Division by zero               | `10 / 0`              |
-| `NameError`         | No variable by that name       | `print(totl)`         |
-| `AttributeError`    | No such attribute or method    | `"a".append("b")`     |
-| `ImportError`       | A module can't be imported     | `import nothing_here` |
-| `FileNotFoundError` | The file doesn't exist         | `open("missing.txt")` |
+| Exception           | When It Occurs                  | Example               |
+|---------------------|---------------------------------|-----------------------|
+| `ValueError`        | The right type, but a bad value | `int("abc")`          |
+| `TypeError`         | The wrong type for an operation | `"a" + 1`             |
+| `IndexError`        | No item at that list index      | `[1, 2][5]`           |
+| `KeyError`          | No such key in a dictionary     | `{"a": 1}["b"]`       |
+| `ZeroDivisionError` | Division by zero                | `10 / 0`              |
+| `NameError`         | No variable by that name        | `print(totl)`         |
+| `AttributeError`    | No such attribute or method     | `"a".append("b")`     |
+| `ImportError`       | A module can't be imported      | `import nothing_here` |
+| `FileNotFoundError` | The file doesn't exist          | `open("missing.txt")` |

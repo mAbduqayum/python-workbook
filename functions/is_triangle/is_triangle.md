@@ -5,6 +5,7 @@ Write a function that determines if three sides can form a triangle.
 You wrote this as a program in [Valid Triangle](../../conditionals/valid_triangle/valid_triangle.md); now make it a function.
 
 ## Task
+
 - Create a function `is_triangle(a, b, c)` that takes three side lengths
 - Return `True` if they can form a triangle, `False` otherwise
 
@@ -16,7 +17,9 @@ You wrote this as a program in [Valid Triangle](../../conditionals/valid_triangl
 | `is_triangle(1, 2, 3)` | `False` |
 
 ## Rule
+
 Triangle Inequality Theorem: the sum of any two sides must be greater than the third side.
+
 - a + b > c
 - a + c > b
 - b + c > a

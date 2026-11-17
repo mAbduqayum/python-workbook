@@ -3,6 +3,7 @@
 Write a program that reads a date (month and day) from the user and determines if it corresponds to a national holiday in Tajikistan.
 
 ## Tajikistan National Holidays Reference Table
+
 | Date        | Holiday Name              |
 |-------------|---------------------------|
 | January 1   | New Year's Day            |
@@ -15,6 +16,7 @@ Write a program that reads a date (month and day) from the user and determines i
 | November 6  | Constitution Day          |
 
 ## Variable Date Holidays (Islamic Calendar)
+
 | Holiday Name | Description                      |
 |--------------|----------------------------------|
 | Idi Ramazon  | End of Ramadan (Eid al-Fitr)     |
@@ -23,19 +25,23 @@ Write a program that reads a date (month and day) from the user and determines i
 ## Examples
 
 **Example 1:**
+
 ```
 9
 9
 ```
+
 ```
 Independence Day
 ```
 
 **Example 2:**
+
 ```
 12
 25
 ```
+
 ```
 not a national holiday
 ```

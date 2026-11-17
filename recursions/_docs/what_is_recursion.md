@@ -11,6 +11,7 @@ In mathematics, recursion defines something in terms of itself.
 ```
 
 But we can also write:
+
 ```
 5! = 5 × 4!
 4! = 4 × 3!

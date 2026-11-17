@@ -24,6 +24,7 @@ match expression:
 **Problem**: Display the number of days in a month based on the month name.
 
 **Using match statement:**
+
 ```python
 # Read the month name
 month = input().lower()
@@ -41,6 +42,7 @@ match month:
 ```
 
 **Using if-elif for comparison:**
+
 ```python
 # Read the month name
 month = input().lower()

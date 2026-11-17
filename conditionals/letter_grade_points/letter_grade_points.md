@@ -3,6 +3,7 @@
 Write a program that converts letter grades to their equivalent grade points.
 
 ## Grade Point Scale
+
 | Letter Grade | Grade Points |
 |--------------|--------------|
 | A+           | 4.0          |
@@ -19,18 +20,23 @@ Write a program that converts letter grades to their equivalent grade points.
 | F            | 0.0          |
 
 ## Examples
+
 **Example 1:**
+
 ```
 A
 ```
+
 ```
 4.0
 ```
 
 **Example 2:**
+
 ```
 Z
 ```
+
 ```
 invalid grade
 ```

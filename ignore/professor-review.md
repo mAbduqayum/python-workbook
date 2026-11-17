@@ -11,23 +11,23 @@ on skills the notes haven't taught yet.**
 
 ## What was measured
 
-| Check | Result |
-|---|---|
-| Tests against the reference solutions | 1,809 passed |
-| Python listings in the notes, preface and appendix | 251: 195 ran clean, 4 are deliberate syntax skeletons, 2 run very long on purpose, and the rest stop on `input()` or missing files, or are fragments, or fail on purpose |
-| `print(x)  # expected` comments | 131 compared; no wrong output. 11 differ only because the comment describes rather than states the output |
-| Exercises that ask a student to read, trace or fix code | 0 of 222 |
-| "traceback", "debugger" or "breakpoint" in the notes and book walkthrough | 0 |
-| Reference solutions that use `try` | 0 of 222 |
-| Files exercises that mention errors | 0 of 20 |
-| Difficulty signal in the printed book | None. Four tables of contents group exercises by level, and `book/manifest.py` drops the groups |
-| Later versions of a repeated exercise that mention the earlier one | 0 of 20 |
+| Check                                                                     | Result                                                                                                                                                                   |
+|---------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tests against the reference solutions                                     | 1,809 passed                                                                                                                                                             |
+| Python listings in the notes, preface and appendix                        | 251: 195 ran clean, 4 are deliberate syntax skeletons, 2 run very long on purpose, and the rest stop on `input()` or missing files, or are fragments, or fail on purpose |
+| `print(x)  # expected` comments                                           | 131 compared; no wrong output. 11 differ only because the comment describes rather than states the output                                                                |
+| Exercises that ask a student to read, trace or fix code                   | 0 of 222                                                                                                                                                                 |
+| "traceback", "debugger" or "breakpoint" in the notes and book walkthrough | 0                                                                                                                                                                        |
+| Reference solutions that use `try`                                        | 0 of 222                                                                                                                                                                 |
+| Files exercises that mention errors                                       | 0 of 20                                                                                                                                                                  |
+| Difficulty signal in the printed book                                     | None. Four tables of contents group exercises by level, and `book/manifest.py` drops the groups                                                                          |
+| Later versions of a repeated exercise that mention the earlier one        | 0 of 20                                                                                                                                                                  |
 
 Order against solution length (Spearman, without `*2` variants or the main guard):
 
-| Chapter | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|
-| rho | 0.56 | 0.35 | 0.68 | 0.78 | 0.75 | **-0.09** | **0.03** | 0.90 | 0.77 |
+| Chapter | 1    | 2    | 3    | 4    | 5    | 6         | 7        | 9    | 10   |
+|---------|------|------|------|------|------|-----------|----------|------|------|
+| rho     | 0.56 | 0.35 | 0.68 | 0.78 | 0.75 | **-0.09** | **0.03** | 0.90 | 0.77 |
 
 Length is a rough stand-in for difficulty: `month_from_int` is long but easy.
 
