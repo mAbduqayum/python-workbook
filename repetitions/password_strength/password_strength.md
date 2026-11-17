@@ -3,6 +3,7 @@
 Evaluate password strength based on character types, length, and special characters.
 
 ## Task
+
 - Read a password from the user
 - Check for five criteria:
   - Contains at least one uppercase letter
@@ -18,18 +19,23 @@ Evaluate password strength based on character types, length, and special charact
   - **very strong**: 5 criteria met (all criteria)
 
 ## Examples
+
 **Example 1:**
+
 ```
 Hello123!@#
 ```
+
 ```
 very strong
 ```
 
 **Example 2:**
+
 ```
 hello123
 ```
+
 ```
 medium
 ```

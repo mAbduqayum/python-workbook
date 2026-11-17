@@ -3,11 +3,13 @@
 Generate and display Collatz sequences for integers entered by the user.
 
 ## Task
+
 - Read an integer `n` from the user
 - Display the Collatz sequence starting with `n` and ending with 1
 - Continue reading new values until user enters `n` ≤ 0
 
 ## The Collatz Sequence Algorithm
+
 1. Start with any positive integer `n`
 2. While `n` is not equal to 1:
    - If `n` is even: divide by 2 (floor division)
@@ -15,11 +17,14 @@ Generate and display Collatz sequences for integers entered by the user.
 3. The sequence ends when `n` reaches 1
 
 ## Examples
+
 **Example 1:**
+
 ```
 5
 0
 ```
+
 ```
 5
 16

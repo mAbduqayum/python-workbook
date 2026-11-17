@@ -5,6 +5,7 @@ Write functions that spell out a number of seconds in words.
 In [Time Converter](../../intro/time_seconds/time_seconds.md) you split seconds into minutes and seconds; now write the result out in words.
 
 ## Task
+
 - Create a function `plural(count, word)` that returns the count and the word, adding an `s` unless the count is 1
 - Create a function `format_duration(seconds)` that returns the duration in hours, minutes and seconds; `seconds` is a natural number or 0
   - Leave out any unit that is 0

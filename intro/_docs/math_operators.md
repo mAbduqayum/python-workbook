@@ -66,6 +66,7 @@ balance *= 2    # 300
 ## Common Use Cases
 
 ### Basic calculations
+
 ```python
 a = 10
 b = 3
@@ -76,6 +77,7 @@ quotient = a / b          # 3.333...
 ```
 
 ### Time and unit conversions
+
 ```python
 total_seconds = 125
 minutes = total_seconds // 60    # 2
@@ -83,6 +85,7 @@ remaining_seconds = total_seconds % 60  # 5
 ```
 
 ### Area calculations
+
 ```python
 # Rectangle
 length = 5

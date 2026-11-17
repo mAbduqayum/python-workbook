@@ -22,6 +22,7 @@ def greet():
 ```
 
 Components:
+
 - `def` - keyword that starts a function definition
 - `greet` - function name (follows variable naming rules)
 - `()` - parentheses for parameters (empty here)
@@ -126,6 +127,7 @@ print(result2)                  # Prints: 8
 ```
 
 **Key difference**:
+
 - `print()` displays output to the user
 - `return` provides a value that can be used in your code
 

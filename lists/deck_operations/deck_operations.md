@@ -34,4 +34,3 @@ if __name__ == "__main__":
     shuffled = shuffle_deck(deck)
     print(f"Shuffled first 5: {shuffled[:5]}")
 ```
-

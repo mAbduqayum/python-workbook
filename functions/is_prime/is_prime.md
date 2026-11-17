@@ -3,6 +3,7 @@
 Write a function that determines if a number is prime.
 
 ## Task
+
 - Create a function `is_prime(n)` that takes an integer
 - Return `True` if the number is prime, `False` otherwise
 

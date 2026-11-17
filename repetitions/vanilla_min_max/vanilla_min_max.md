@@ -3,13 +3,16 @@
 Find the minimum and maximum values from user input without using lists.
 
 ## Task
+
 - Read integers from the user until a blank line is entered
 - Track the minimum and maximum values as you read them
 - Display both the minimum and maximum values
 - Do NOT use lists or built-in min/max functions
 
 ## Examples
+
 **Example 1:**
+
 ```
 5
 12
@@ -18,6 +21,7 @@ Find the minimum and maximum values from user input without using lists.
 15
 
 ```
+
 ```
 Minimum: 3
 Maximum: 15

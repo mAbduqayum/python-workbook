@@ -12,22 +12,27 @@ Write a program that determines the type of triangle based on its three angles.
 | invalid triangle | Sum of angles `≠ 180°` |
 
 ## Examples
+
 **Example 1:**
+
 ```
 60
 60
 60
 ```
+
 ```
 acute triangle
 ```
 
 **Example 2:**
+
 ```
 90
 90
 90
 ```
+
 ```
 invalid triangle
 ```

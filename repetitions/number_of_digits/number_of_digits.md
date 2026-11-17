@@ -3,6 +3,7 @@
 Count the number of digits in an integer using loops.
 
 ## Task
+
 - Read an integer from the user
 - Count the number of digits using a loop (not using len() or string conversion)
 - Display the count
@@ -10,26 +11,33 @@ Count the number of digits in an integer using loops.
 - Zero has one digit
 
 ## Examples
+
 **Example 1:**
+
 ```
 12345
 ```
+
 ```
 5
 ```
 
 **Example 2:**
+
 ```
 -987
 ```
+
 ```
 3
 ```
 
 **Example 3:**
+
 ```
 0
 ```
+
 ```
 1
 ```

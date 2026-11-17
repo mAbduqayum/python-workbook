@@ -3,18 +3,23 @@
 Write a program that determines if a `4-digit` integer is a palindrome.
 
 ## Examples
+
 **Example 1:**
+
 ```
 1221
 ```
+
 ```
 palindrome
 ```
 
 **Example 2:**
+
 ```
 1234
 ```
+
 ```
 not palindrome
 ```

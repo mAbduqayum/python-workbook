@@ -4,6 +4,7 @@ Write a function that keeps a number inside a range by wrapping around, the way
 a clock goes from 12 back to 1.
 
 ## Task
+
 - Create a function `wrap(value, low, high)`
 - A value inside the range comes back unchanged
 - A value outside the range keeps wrapping around: after `high` comes `low` again, and before `low` comes `high`

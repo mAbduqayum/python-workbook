@@ -5,18 +5,22 @@ Display the answers for the Fizz-Buzz game for numbers 1 to 100.
 You applied the same rules to one number in [Fizz Buzz](../../conditionals/fizz_buzz/fizz_buzz.md); now loop over 1 to 100.
 
 ## Task
+
 - Display answers for numbers 1 through 100
 - Each answer on its own line
 - Apply the Fizz-Buzz rules
 
 ## Rules
+
 - If number is divisible by 3: say "Fizz"
 - If number is divisible by 5: say "Buzz"
 - If divisible by both 3 and 5: say "FizzBuzz"
 - Otherwise: say the number
 
 ## Examples
+
 **Example 1:**
+
 ```
 1
 2

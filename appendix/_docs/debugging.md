@@ -82,19 +82,19 @@ If the line it names looks right, check the line above it.
 
 You'll meet these as the chapters introduce what causes them.
 
-| Error               | What it means             | Check first                               |
-|---------------------|---------------------------|-------------------------------------------|
-| `SyntaxError`       | Python can't read a line  | A missing `)`, `"` or `:`                 |
-| `IndentationError`  | The indentation is wrong  | The block after a `:` is indented         |
-| `NameError`         | No variable by that name  | The spelling, and that it's already set   |
-| `TypeError`         | A value of the wrong type | `input()` returns a string: convert it    |
-| `ValueError`        | A value that can't be used | What `int()` or `float()` was given      |
-| `IndexError`        | No item at that index     | The last index is `len(items) - 1`        |
-| `KeyError`          | No such key in the dict   | The spelling, and that the key was added  |
-| `ZeroDivisionError` | Division by zero          | Where the divisor came from: an empty list? |
-| `AttributeError`    | No such method            | The value's type: is it `None` or a dict? |
-| `FileNotFoundError` | No file at that path      | The name, and the folder you run from     |
-| `RecursionError`    | Too many nested calls     | That the base case can be reached         |
+| Error               | What it means              | Check first                                 |
+|---------------------|----------------------------|---------------------------------------------|
+| `SyntaxError`       | Python can't read a line   | A missing `)`, `"` or `:`                   |
+| `IndentationError`  | The indentation is wrong   | The block after a `:` is indented           |
+| `NameError`         | No variable by that name   | The spelling, and that it's already set     |
+| `TypeError`         | A value of the wrong type  | `input()` returns a string: convert it      |
+| `ValueError`        | A value that can't be used | What `int()` or `float()` was given         |
+| `IndexError`        | No item at that index      | The last index is `len(items) - 1`          |
+| `KeyError`          | No such key in the dict    | The spelling, and that the key was added    |
+| `ZeroDivisionError` | Division by zero           | Where the divisor came from: an empty list? |
+| `AttributeError`    | No such method             | The value's type: is it `None` or a dict?   |
+| `FileNotFoundError` | No file at that path       | The name, and the folder you run from       |
+| `RecursionError`    | Too many nested calls      | That the base case can be reached           |
 
 ## When the Output Is Wrong
 
@@ -161,14 +161,13 @@ read.
 4. **Step through the program.** Use these keys, or the buttons on the window's
    toolbar:
 
-   | Key        | Action    | What it does                                 |
-   |------------|-----------|----------------------------------------------|
-   | `F8`       | Step Over | Runs this line and stops at the next one     |
-   | `F7`       | Step Into | Goes inside the function this line calls     |
+   | Key        | Action    | What it does                                     |
+   |------------|-----------|--------------------------------------------------|
+   | `F8`       | Step Over | Runs this line and stops at the next one         |
+   | `F7`       | Step Into | Goes inside the function this line calls         |
    | `Shift+F8` | Step Out  | Finishes this function and returns to its caller |
 
    The **Resume Program** button runs on to the next breakpoint, or to the end.
-
 5. **Watch the variables.** PyCharm shows their values beside each line and in
    the **Threads & Variables** tab. Before you press `F8`, predict what will
    change. When the program surprises you, you have found the bug or are close

@@ -3,6 +3,7 @@
 Write functions that check whether a year, month and day make a real date.
 
 ## Task
+
 - Create a function `days_in_month(year, month)` that returns how many days that month has, for a month from 1 to 12
 - Create a function `is_valid_date(year, month, day)` that returns `True` if the date exists, `False` otherwise
 - February has 29 days in a leap year; copy your `is_leap_year` from [Is Leap Year](../is_leap_year/is_leap_year.md)

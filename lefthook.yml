@@ -3,7 +3,7 @@ pre-commit:
   commands:
     uv-sort:
       glob: "pyproject.toml"
-      run: uvx uv-sort
+      run: uv run uv-sort
       stage_fixed: true
     # One command, not two: `check --fix` and `format` both rewrite the whole
     # file, so as separate parallel commands they race and the loser's fixes
@@ -13,7 +13,12 @@ pre-commit:
       glob: "*.py"
       run: uv run ruff check --fix {staged_files} && uv run ruff format {staged_files}
       stage_fixed: true
-  exclude_tags:
+    # Settings in .rumdl.toml.
+    rumdl:
+      glob: "*.md"
+      run: uv run rumdl fmt {staged_files}
+      stage_fixed: true
+  skip:
     - merge
     - rebase
 

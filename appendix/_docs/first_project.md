@@ -8,14 +8,19 @@ you cloned is already a Python project.
 
 1. Open Terminal
 2. Navigate to where you want to create your project (ex. `~/repos`):
+
    ```
    cd ~/repos
    ```
+
 3. Create a new Python project with uv:
+
    ```
    uv init --python 3.15 first-project
    ```
+
 4. Move into your new project folder:
+
    ```
    cd first-project
    ```
@@ -23,9 +28,11 @@ you cloned is already a Python project.
 ## Open Your Project in PyCharm
 
 1. While in your project folder in the terminal, type:
+
    ```
    pycharm .
    ```
+
    (This opens the current folder in PyCharm)
 
 2. If your terminal doesn't know the `pycharm` command, start PyCharm, click
@@ -57,9 +64,11 @@ print("I'm learning Python!")
 
 1. In PyCharm, open the terminal (View → Tool Windows → Terminal)
 2. Run your program with:
+
    ```
    uv run hello.py
    ```
+
 3. You should see your messages printed in the terminal
 
 ## What Just Happened?

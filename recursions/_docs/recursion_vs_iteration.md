@@ -5,6 +5,7 @@ Every recursion can be written as a loop, and vice versa.
 ## Factorial
 
 **Recursive:**
+
 ```python
 def factorial(n):
     if n <= 1:
@@ -13,6 +14,7 @@ def factorial(n):
 ```
 
 **Iterative:**
+
 ```python
 def factorial(n):
     result = 1
@@ -24,6 +26,7 @@ def factorial(n):
 ## Sum 1 to n
 
 **Recursive:**
+
 ```python
 def sum_to_n(n):
     if n == 1:
@@ -32,6 +35,7 @@ def sum_to_n(n):
 ```
 
 **Iterative:**
+
 ```python
 def sum_to_n(n):
     total = 0
@@ -43,6 +47,7 @@ def sum_to_n(n):
 ## Fibonacci
 
 **Recursive:**
+
 ```python
 def fibonacci(n):
     if n <= 1:
@@ -51,6 +56,7 @@ def fibonacci(n):
 ```
 
 **Iterative:**
+
 ```python
 def fibonacci(n):
     if n <= 1:
@@ -73,12 +79,14 @@ def fibonacci(n):
 ## When to Use Recursion
 
 Good for:
+
 - Tree/graph traversal
 - Divide and conquer
 - Problems with natural recursive structure
 - When code clarity matters more than performance
 
 Avoid when:
+
 - Deep recursion possible (> 1000 calls)
 - Performance is critical
 - Simple loop works fine

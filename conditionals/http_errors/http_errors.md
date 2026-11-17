@@ -3,6 +3,7 @@
 Write a program that reads an HTTP status code from the user and displays the corresponding category.
 
 ## HTTP Status Code Categories
+
 | Range   | Category      |
 |---------|---------------|
 | 100-199 | informational |
@@ -12,18 +13,23 @@ Write a program that reads an HTTP status code from the user and displays the co
 | 500-599 | server error  |
 
 ## Examples
+
 **Example 1:**
+
 ```
 200
 ```
+
 ```
 success
 ```
 
 **Example 2:**
+
 ```
 999
 ```
+
 ```
 unknown status code
 ```

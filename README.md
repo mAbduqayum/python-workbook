@@ -17,25 +17,30 @@ Install the following tools:
 1. **Open your terminal**
 
 2. **Create a directory for your repositories:**
+
    ```bash
    mkdir ~/repos
    cd ~/repos
    ```
 
 3. **Clone the repository:**
+
    ```bash
    git clone https://github.com/mAbduqayum/python-workbook.git
    ```
 
 4. **Navigate to the project:**
+
    ```bash
    cd python-workbook
    ```
 
 5. **Open in PyCharm:**
+
    ```bash
    pycharm .
    ```
+
    If your terminal doesn't know the `pycharm` command, start PyCharm, click
    **Open** on its welcome screen (or **File → Open**), and choose the
    `python-workbook` folder. If PyCharm asks whether to trust the project,

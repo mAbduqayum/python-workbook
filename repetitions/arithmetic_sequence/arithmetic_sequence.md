@@ -3,6 +3,7 @@
 Generate and display an arithmetic sequence.
 
 ## Task
+
 - Read three integers from the user:
   - `start`: first term of the sequence
   - `diff`: common difference between consecutive terms
@@ -11,12 +12,15 @@ Generate and display an arithmetic sequence.
 - Each term on its own line
 
 ## Examples
+
 **Example 1:**
+
 ```
 5
 3
 6
 ```
+
 ```
 5
 8

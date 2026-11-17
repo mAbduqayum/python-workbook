@@ -3,6 +3,7 @@
 Calculate the perimeter of a polygon by reading coordinate points from the user.
 
 ## Task
+
 - Read x and y coordinates for the first point
 - Continue reading coordinate pairs until user enters blank for x
 - Calculate distance between consecutive points
@@ -10,9 +11,11 @@ Calculate the perimeter of a polygon by reading coordinate points from the user.
 - Display the total perimeter
 
 ## Formula
+
 Distance between two points: `√((x₂ - x₁)² + (y₂ - y₁)²)`
 
 ## Example Session
+
 ```
 Enter first x: 0
 Enter first y: 0

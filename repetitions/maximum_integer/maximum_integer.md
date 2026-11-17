@@ -3,6 +3,7 @@
 Simulate finding the maximum value in a collection of 100 random integers.
 
 ## Task
+
 - Generate 100 random integers between 1 and 100
 - Track the maximum value encountered
 - Count how many times the maximum was updated
@@ -10,7 +11,9 @@ Simulate finding the maximum value in a collection of 100 random integers.
 - Display final statistics
 
 ## Examples
+
 **Example 1:**
+
 ```
 30
 74 <== Update

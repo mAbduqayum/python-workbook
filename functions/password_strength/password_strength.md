@@ -5,6 +5,7 @@ Write a function that evaluates password strength.
 You rated passwords as a program in [Password Strength](../../repetitions/password_strength/password_strength.md); now make it a function that uses the criteria below.
 
 ## Task
+
 - Create a function `password_strength(pwd)` that evaluates a password
 - Return a strength rating: "weak", "medium", or "strong"
 - Special characters: `!@#$%^&*()_+-=[]{}|;:,.<>?`
@@ -20,17 +21,20 @@ You rated passwords as a program in [Password Strength](../../repetitions/passwo
 | `password_strength("MyP@ssw0rd!2")` | `"strong"` |
 
 ## Criteria
+
 The character types are lowercase letters, uppercase letters, digits, and special
 characters. Check the ratings in this order, and return the first that fits:
 
 **Strong**:
+
 - Length >= 12, AND
 - Has at least 3 character types
 
 **Medium**:
+
 - Length >= 8, AND
 - Has at least 2 character types
 
 **Weak**:
-- Any other password
 
+- Any other password

@@ -5,7 +5,8 @@ Write a function that calculates the great-circle distance between two points on
 You wrote this as a program in [Distance Between Two Points on Earth](../../intro/distance_earth/distance_earth.md); now make it a function, with the haversine formula below.
 
 ## Task
-- Create a function `distance_earth(lat1, lon1, lat2, lon2)` 
+
+- Create a function `distance_earth(lat1, lon1, lat2, lon2)`
 - Takes latitude and longitude of two points in degrees
 - Return the distance in kilometers
 
@@ -16,6 +17,7 @@ You wrote this as a program in [Distance Between Two Points on Earth](../../intr
 | `distance_earth(40.7128, -74.0060, 34.0522, -118.2437)` | `3935.746254609723` |
 
 ## Formula (Haversine)
+
 - Convert degrees to radians
 - a = sin²(Δlat/2) + cos(lat1) × cos(lat2) × sin²(Δlon/2)
 - c = 2 × atan2(√a, √(1-a))

@@ -3,6 +3,7 @@
 Write a function that converts a decimal number to hexadecimal string.
 
 ## Task
+
 - Create a function `decimal_hex(n)` that takes a decimal integer
 - Return the hexadecimal representation as a string
 - Don't use the built-in `hex()`
@@ -13,4 +14,3 @@ Write a function that converts a decimal number to hexadecimal string.
 |-------------------|---------|
 | `decimal_hex(26)` | `"1A"`  |
 | `decimal_hex(0)`  | `"0"`   |
-

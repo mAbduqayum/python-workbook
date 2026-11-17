@@ -3,11 +3,13 @@
 Implement Newton's method to compute the square root of a number.
 
 ## Task
+
 - Read a positive number x from the user
 - Use Newton's method to compute the square root
 - Display the approximation
 
 ## Newton's Method
+
 Start with a guess of `x / 2`, then repeatedly improve it by averaging the
 guess with `x / guess`:
 
@@ -16,14 +18,19 @@ guess with `x / guess`:
 Each step lands closer to √x. Repeat until the guess is good enough.
 
 ## "Good Enough" Definition
+
 A guess is good enough when:
+
 - |guess² - x| ≤ 10⁻¹² × x
 
 ## Examples
+
 **Example 1:**
+
 ```
 2
 ```
+
 ```
 1.414213562373095
 ```

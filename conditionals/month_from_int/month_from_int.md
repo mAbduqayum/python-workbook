@@ -3,6 +3,7 @@
 Write a program that reads an integer from the user and displays the corresponding month name.
 
 ## Month Reference Table
+
 | Number | Month     |
 |--------|-----------|
 | 1      | January   |
@@ -19,18 +20,23 @@ Write a program that reads an integer from the user and displays the correspondi
 | 12     | December  |
 
 ## Examples
+
 **Example 1:**
+
 ```
 1
 ```
+
 ```
 January
 ```
 
 **Example 2:**
+
 ```
 13
 ```
+
 ```
 invalid month number
 ```

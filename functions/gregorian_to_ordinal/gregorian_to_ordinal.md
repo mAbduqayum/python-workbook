@@ -3,7 +3,8 @@
 Write a function that converts a Gregorian date to ordinal date (day of year).
 
 ## Task
-- Create a function `gregorian_to_ordinal(year, month, day)` 
+
+- Create a function `gregorian_to_ordinal(year, month, day)`
 - Return the day of the year (1-366)
 
 ## Examples

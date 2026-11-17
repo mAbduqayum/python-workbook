@@ -5,6 +5,7 @@ Write a function that determines if a year is a leap year.
 You wrote this as a program in [Is It a Leap Year?](../../conditionals/leap_year/leap_year.md); now make it a function.
 
 ## Task
+
 - Create a function `is_leap_year(year)` that takes a year
 - Return `True` if it's a leap year, `False` otherwise
 
@@ -18,6 +19,8 @@ You wrote this as a program in [Is It a Leap Year?](../../conditionals/leap_year
 | `is_leap_year(2000)` | `True`  |
 
 ## Rule
+
 A year is a leap year if:
+
 - It's divisible by 4, AND
 - If it's divisible by 100, it must also be divisible by 400

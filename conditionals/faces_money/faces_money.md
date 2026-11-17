@@ -4,6 +4,7 @@ It is common for images of a country's previous leaders, or other individuals of
 Write a program that identifies which individual appears on Tajikistan banknotes.
 
 ## Tajikistan Banknote Reference Table
+
 | Amount | Individual            |
 |--------|-----------------------|
 | 1      | Mirzo Tursunzoda      |
@@ -17,18 +18,23 @@ Write a program that identifies which individual appears on Tajikistan banknotes
 | 500    | Abuabdullo Rudaki     |
 
 ## Examples
+
 **Example 1:**
+
 ```
 20
 ```
+
 ```
 Abuali ibni Sino
 ```
 
 **Example 2:**
+
 ```
 1000
 ```
+
 ```
 invalid denomination
 ```

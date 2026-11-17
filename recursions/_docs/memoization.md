@@ -83,6 +83,7 @@ the last one stored.
 **Question:** How many ways to climb n stairs (1 or 2 steps at a time)?
 
 Without memoization (slow):
+
 ```python
 def climb_stairs(n):
     if n <= 2:
@@ -91,6 +92,7 @@ def climb_stairs(n):
 ```
 
 With memoization (fast):
+
 ```python
 memo = {}
 
@@ -112,6 +114,7 @@ print(climb_stairs(50))  # instant!
 ## When to Use Memoization
 
 Use when:
+
 - Same inputs are calculated multiple times
 - Function always returns same result for same input
 - You see patterns like `f(n-1) + f(n-2)`
