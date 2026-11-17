@@ -10,7 +10,8 @@ The exercises and explanations in this workbook draw on the following books.
    ISBN 978-1-4842-7397-5
 3. [**Python Crash Course**](https://nostarch.com/python-crash-course-3rd-edition) - Eric Matthes (No Starch Press, 3rd
    ed., 2023) · ISBN 978-1-7185-0270-3
-4. **Programming Taskbook** - M. E. Abramyan
+4. [**Programming Taskbook**](https://ptaskbook.com/en/) - M. E. Abramyan (electronic problem
+   book, ver. 4.26, 1998–2026)
 
 ## Online
 
