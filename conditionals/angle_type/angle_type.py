@@ -1,16 +1,16 @@
 angle = int(input())
 
 if angle <= 0 or angle > 360:
-    print("Invalid Angle")
+    print("invalid angle")
 elif angle < 90:
-    print("Acute Angle")
+    print("acute angle")
 elif angle == 90:
-    print("Right Angle")
+    print("right angle")
 elif angle < 180:
-    print("Obtuse Angle")
+    print("obtuse angle")
 elif angle == 180:
-    print("Straight Angle")
+    print("straight angle")
 elif angle < 360:
-    print("Reflex Angle")
+    print("reflex angle")
 else:  # angle == 360
-    print("Full Rotation")
+    print("full rotation")

@@ -1,20 +1,20 @@
 decibel = int(input())
 
 if decibel < 40:
-    print("Quieter than Quiet Room")
+    print("quieter than quiet room")
 elif decibel == 40:
-    print("Quiet Room")
+    print("quiet room")
 elif decibel < 70:
-    print("Between Quiet Room and Alarm Clock")
+    print("between quiet room and alarm clock")
 elif decibel == 70:
-    print("Alarm Clock")
+    print("alarm clock")
 elif decibel < 106:
-    print("Between Alarm Clock and Gas Lawnmower")
+    print("between alarm clock and gas lawnmower")
 elif decibel == 106:
-    print("Gas Lawnmower")
+    print("gas lawnmower")
 elif decibel < 130:
-    print("Between Gas Lawnmower and Jackhammer")
+    print("between gas lawnmower and jackhammer")
 elif decibel == 130:
-    print("Jackhammer")
+    print("jackhammer")
 else:
-    print("Louder than Jackhammer")
+    print("louder than jackhammer")

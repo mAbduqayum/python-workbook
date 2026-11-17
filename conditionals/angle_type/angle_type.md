@@ -6,13 +6,13 @@ Write a program that classifies a given angle based on its measurement in degree
 
 | Type           | Range                          |
 |----------------|--------------------------------|
-| Acute Angle    | `0° < angle < 90°`             |
-| Right Angle    | `angle = 90°`                  |
-| Obtuse Angle   | `90° < angle < 180°`           |
-| Straight Angle | `angle = 180°`                 |
-| Reflex Angle   | `180° < angle < 360°`          |
-| Full Rotation  | `angle = 360°`                 |
-| Invalid Angle  | `angle ≤ 0°` or `angle > 360°` |
+| acute angle    | `0° < angle < 90°`             |
+| right angle    | `angle = 90°`                  |
+| obtuse angle   | `90° < angle < 180°`           |
+| straight angle | `angle = 180°`                 |
+| reflex angle   | `180° < angle < 360°`          |
+| full rotation  | `angle = 360°`                 |
+| invalid angle  | `angle ≤ 0°` or `angle > 360°` |
 
 ## Examples
 **Example 1:**
@@ -20,5 +20,5 @@ Write a program that classifies a given angle based on its measurement in degree
 45
 ```
 ```
-Acute Angle
+acute angle
 ```

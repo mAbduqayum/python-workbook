@@ -4,12 +4,12 @@ angle = int(input())
 angle = angle % 360
 
 if angle == 0 or angle == 90 or angle == 180 or angle == 270:
-    print("On axis")
+    print("on axis")
 elif 0 < angle < 90:
-    print("Quadrant I")
+    print("quadrant I")
 elif 90 < angle < 180:
-    print("Quadrant II")
+    print("quadrant II")
 elif 180 < angle < 270:
-    print("Quadrant III")
+    print("quadrant III")
 else:  # 270 < angle < 360
-    print("Quadrant IV")
+    print("quadrant IV")

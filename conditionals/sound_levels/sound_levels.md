@@ -5,10 +5,10 @@ Write a program that reads a sound level in decibels from the user and reports i
 ## Sound Level Reference Table
 | Noise         | Decibel Level |
 |---------------|---------------|
-| Quiet Room    | 40 dB         |
-| Alarm Clock   | 70 dB         |
-| Gas Lawnmower | 106 dB        |
-| Jackhammer    | 130 dB        |
+| quiet room    | 40 dB         |
+| alarm clock   | 70 dB         |
+| gas lawnmower | 106 dB        |
+| jackhammer    | 130 dB        |
 
 ## Examples
 **Example 1:**
@@ -16,7 +16,7 @@ Write a program that reads a sound level in decibels from the user and reports i
 70
 ```
 ```
-Alarm Clock
+alarm clock
 ```
 
 **Example 2:**
@@ -24,7 +24,7 @@ Alarm Clock
 55
 ```
 ```
-Between Quiet Room and Alarm Clock
+between quiet room and alarm clock
 ```
 
 **Example 3:**
@@ -32,7 +32,7 @@ Between Quiet Room and Alarm Clock
 25
 ```
 ```
-Quieter than Quiet Room
+quieter than quiet room
 ```
 
 **Example 4:**
@@ -40,5 +40,5 @@ Quieter than Quiet Room
 140
 ```
 ```
-Louder than Jackhammer
+louder than jackhammer
 ```

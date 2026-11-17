@@ -11,8 +11,8 @@ import pytest
         ("G4", "392.00"),
         ("A4", "440.00"),
         ("B4", "493.88"),
-        ("X4", "Invalid note"),
-        ("Z4", "Invalid note"),
+        ("X4", "invalid note"),
+        ("Z4", "invalid note"),
         ("c4", "261.63"),  # lowercase input
         ("a4", "440.00"),  # lowercase input
         # Octaves other than 4

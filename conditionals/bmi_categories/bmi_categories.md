@@ -5,10 +5,10 @@ Write a program that reads a person's height in meters, then their weight in kil
 ## BMI Categories
 | BMI Range           | Category      |
 |---------------------|---------------|
-| `BMI < 18.5`        | Underweight   |
-| `18.5 ≤ BMI < 25.0` | Normal weight |
-| `25.0 ≤ BMI < 30.0` | Overweight    |
-| `BMI ≥ 30.0`        | Obese         |
+| `BMI < 18.5`        | underweight   |
+| `18.5 ≤ BMI < 25.0` | normal weight |
+| `25.0 ≤ BMI < 30.0` | overweight    |
+| `BMI ≥ 30.0`        | obese         |
 
 ## Examples
 **Example 1:**
@@ -17,7 +17,7 @@ Write a program that reads a person's height in meters, then their weight in kil
 70
 ```
 ```
-Normal weight
+normal weight
 ```
 
 ## Formula

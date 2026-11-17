@@ -15,4 +15,4 @@ elif abs(frequency - 440.00) <= 1.0:
 elif abs(frequency - 493.88) <= 1.0:
     print("B4")
 else:
-    print("No match")
+    print("no match")

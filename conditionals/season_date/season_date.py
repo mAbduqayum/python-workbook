@@ -2,30 +2,30 @@ month = input().lower()
 day = int(input())
 
 if month == "january" or month == "february":
-    print("Winter")
+    print("winter")
 elif month == "march":
     if day < 20:
-        print("Winter")
+        print("winter")
     else:
-        print("Spring")
+        print("spring")
 elif month == "april" or month == "may":
-    print("Spring")
+    print("spring")
 elif month == "june":
     if day < 21:
-        print("Spring")
+        print("spring")
     else:
-        print("Summer")
+        print("summer")
 elif month == "july" or month == "august":
-    print("Summer")
+    print("summer")
 elif month == "september":
     if day < 22:
-        print("Summer")
+        print("summer")
     else:
-        print("Fall")
+        print("fall")
 elif month == "october" or month == "november":
-    print("Fall")
+    print("fall")
 elif month == "december":
     if day < 21:
-        print("Fall")
+        print("fall")
     else:
-        print("Winter")
+        print("winter")

@@ -7,7 +7,7 @@ c = float(input())
 discriminant = b**2 - 4 * a * c
 
 if discriminant < 0:
-    print("No real roots")
+    print("no real roots")
 elif discriminant == 0:
     root = -b / (2 * a)
     # -b / (2a) can be -0.0, which would print as "-0.00"

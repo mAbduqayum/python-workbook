@@ -25,4 +25,4 @@ elif month_number == 11:
 elif month_number == 12:
     print("December")
 else:
-    print("Invalid month number")
+    print("invalid month number")

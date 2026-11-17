@@ -37,5 +37,5 @@ Independence Day
 25
 ```
 ```
-Not a national holiday
+not a national holiday
 ```

@@ -18,4 +18,4 @@ elif month == 9 and day == 9:
 elif month == 11 and day == 6:
     print("Constitution Day")
 else:
-    print("Not a national holiday")
+    print("not a national holiday")

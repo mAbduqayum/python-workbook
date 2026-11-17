@@ -4,14 +4,14 @@ import pytest
 @pytest.mark.parametrize(
     "input_text, expected",
     [
-        ("Hello123!@#\n", "Very Strong"),
-        ("Hello123\n", "Strong"),
-        ("hello123\n", "Medium"),
-        ("HELLO123\n", "Medium"),
-        ("HelloWorld\n", "Medium"),
-        ("Hel!23\n", "Strong"),
-        ("hello\n", "Very Weak"),
-        ("12345\n", "Very Weak"),
+        ("Hello123!@#\n", "very strong"),
+        ("Hello123\n", "strong"),
+        ("hello123\n", "medium"),
+        ("HELLO123\n", "medium"),
+        ("HelloWorld\n", "medium"),
+        ("Hel!23\n", "strong"),
+        ("hello\n", "very weak"),
+        ("12345\n", "very weak"),
     ],
 )
 def test_password_strength(solution, input_text, expected):

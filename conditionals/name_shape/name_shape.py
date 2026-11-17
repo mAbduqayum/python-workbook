@@ -1,20 +1,20 @@
 sides = int(input())
 
 if sides == 3:
-    print("Triangle")
+    print("triangle")
 elif sides == 4:
-    print("Quadrilateral")
+    print("quadrilateral")
 elif sides == 5:
-    print("Pentagon")
+    print("pentagon")
 elif sides == 6:
-    print("Hexagon")
+    print("hexagon")
 elif sides == 7:
-    print("Heptagon")
+    print("heptagon")
 elif sides == 8:
-    print("Octagon")
+    print("octagon")
 elif sides == 9:
-    print("Nonagon")
+    print("nonagon")
 elif sides == 10:
-    print("Decagon")
+    print("decagon")
 else:
-    print("Invalid number of sides")
+    print("invalid number of sides")

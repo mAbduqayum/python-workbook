@@ -6,18 +6,18 @@ A number guessing game where the computer picks a number and gives hints.
 - Computer picks a random number between 1 and 100
 - User tries to guess the number
 - After each guess, provide feedback:
-  - "Too low" if guess is less than the number
-  - "Too high" if guess is greater than the number
-  - "Correct!" when guessed correctly
+  - "too low" if guess is less than the number
+  - "too high" if guess is greater than the number
+  - "correct!" when guessed correctly
 
 ## Example Session
 ```
 Guess a number between 1 and 100: 50
-Too low
+too low
 Guess a number between 1 and 100: 75
-Too high
+too high
 Guess a number between 1 and 100: 62
-Too low
+too low
 Guess a number between 1 and 100: 68
-Correct!
+correct!
 ```

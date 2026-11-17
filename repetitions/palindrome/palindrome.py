@@ -7,6 +7,6 @@ for i in range(len(string) // 2):
         break
 
 if is_palindrome:
-    print("Palindrome")
+    print("palindrome")
 else:
-    print("Not a palindrome")
+    print("not a palindrome")

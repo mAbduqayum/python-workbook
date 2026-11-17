@@ -4,13 +4,13 @@ import pytest
 @pytest.mark.parametrize(
     "year, expected_output",
     [
-        (-1, "Invalid year"),
-        (0, "Invalid year"),
-        (1, "Freshman"),
-        (2, "Sophomore"),
-        (3, "Junior"),
-        (4, "Senior"),
-        (5, "Invalid year"),
+        (-1, "invalid year"),
+        (0, "invalid year"),
+        (1, "freshman"),
+        (2, "sophomore"),
+        (3, "junior"),
+        (4, "senior"),
+        (5, "invalid year"),
     ],
 )
 def test_student_year_level(solution, year, expected_output):

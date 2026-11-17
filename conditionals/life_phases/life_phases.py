@@ -1,18 +1,18 @@
 age = int(input())
 
 if age < 0:
-    print("Invalid age")
+    print("invalid age")
 elif age < 2:
-    print("Infant")
+    print("infant")
 elif age < 5:
-    print("Toddler")
+    print("toddler")
 elif age < 11:
-    print("Child")
+    print("child")
 elif age < 18:
-    print("Adolescent")
+    print("adolescent")
 elif age < 40:
-    print("Young Adult")
+    print("young adult")
 elif age < 65:
-    print("Middle-aged")
+    print("middle-aged")
 else:
-    print("Senior")
+    print("senior")

@@ -1,16 +1,16 @@
 frequency = int(input())
 
 if frequency < 3e9:
-    print("Radio Waves")
+    print("radio waves")
 elif frequency < 3e12:
-    print("Microwaves")
+    print("microwaves")
 elif frequency < 4.3e14:
-    print("Infrared Light")
+    print("infrared light")
 elif frequency < 7.5e14:
-    print("Visible Light")
+    print("visible light")
 elif frequency < 3e17:
-    print("Ultraviolet Light")
+    print("ultraviolet light")
 elif frequency < 3e19:
-    print("X-Rays")
+    print("X-rays")
 else:
-    print("Gamma Rays")
+    print("gamma rays")

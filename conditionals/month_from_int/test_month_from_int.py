@@ -16,10 +16,10 @@ import pytest
         (10, "October"),
         (11, "November"),
         (12, "December"),
-        (13, "Invalid month number"),
-        (0, "Invalid month number"),
-        (-1, "Invalid month number"),
-        (15, "Invalid month number"),
+        (13, "invalid month number"),
+        (0, "invalid month number"),
+        (-1, "invalid month number"),
+        (15, "invalid month number"),
     ],
 )
 def test_month_from_int(solution, month_num, expected_output):

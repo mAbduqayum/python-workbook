@@ -1,12 +1,12 @@
 year = int(input())
 
 if year == 1:
-    print("Freshman")
+    print("freshman")
 elif year == 2:
-    print("Sophomore")
+    print("sophomore")
 elif year == 3:
-    print("Junior")
+    print("junior")
 elif year == 4:
-    print("Senior")
+    print("senior")
 else:
-    print("Invalid year")
+    print("invalid year")

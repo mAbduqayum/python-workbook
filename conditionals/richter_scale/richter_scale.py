@@ -1,20 +1,20 @@
 magnitude = float(input())
 
 if magnitude < 2.0:
-    print("Micro")
+    print("micro")
 elif magnitude < 3.0:
-    print("Very Minor")
+    print("very minor")
 elif magnitude < 4.0:
-    print("Minor")
+    print("minor")
 elif magnitude < 5.0:
-    print("Light")
+    print("light")
 elif magnitude < 6.0:
-    print("Moderate")
+    print("moderate")
 elif magnitude < 7.0:
-    print("Strong")
+    print("strong")
 elif magnitude < 8.0:
-    print("Major")
+    print("major")
 elif magnitude < 10.0:
-    print("Great")
+    print("great")
 else:
-    print("Meteoric")
+    print("meteoric")

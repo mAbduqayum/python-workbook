@@ -2,7 +2,7 @@ initial = input().lower()
 final = input().lower()
 
 if initial == final:
-    print("No transition")
+    print("no transition")
 elif initial == "solid" and final == "liquid":
     print("melting")
 elif initial == "solid" and final == "gas":

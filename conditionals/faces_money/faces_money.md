@@ -30,5 +30,5 @@ Abuali ibni Sino
 1000
 ```
 ```
-Invalid denomination
+invalid denomination
 ```

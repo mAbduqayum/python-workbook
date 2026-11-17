@@ -25,4 +25,4 @@ elif grade == "D":
 elif grade == "F":
     print("0.0")
 else:
-    print("Invalid grade")
+    print("invalid grade")

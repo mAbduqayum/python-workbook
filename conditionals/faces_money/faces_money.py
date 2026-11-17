@@ -19,4 +19,4 @@ elif denomination == 200:
 elif denomination == 500:
     print("Abuabdullo Rudaki")
 else:
-    print("Invalid denomination")
+    print("invalid denomination")

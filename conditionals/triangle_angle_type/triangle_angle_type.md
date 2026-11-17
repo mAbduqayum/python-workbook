@@ -6,10 +6,10 @@ Write a program that determines the type of triangle based on its three angles.
 
 | Type             | Condition              |
 |------------------|------------------------|
-| Acute Triangle   | All angles `< 90°`     |
-| Right Triangle   | One angle `= 90°`      |
-| Obtuse Triangle  | One angle `> 90°`      |
-| Invalid Triangle | Sum of angles `≠ 180°` |
+| acute triangle   | All angles `< 90°`     |
+| right triangle   | One angle `= 90°`      |
+| obtuse triangle  | One angle `> 90°`      |
+| invalid triangle | Sum of angles `≠ 180°` |
 
 ## Examples
 **Example 1:**
@@ -19,7 +19,7 @@ Write a program that determines the type of triangle based on its three angles.
 60
 ```
 ```
-Acute Triangle
+acute triangle
 ```
 
 **Example 2:**
@@ -29,5 +29,5 @@ Acute Triangle
 90
 ```
 ```
-Invalid Triangle
+invalid triangle
 ```

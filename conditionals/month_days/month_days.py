@@ -8,4 +8,4 @@ match month:
     case "april" | "june" | "september" | "november":
         print("30")
     case _:
-        print("Invalid month")
+        print("invalid month")

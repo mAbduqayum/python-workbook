@@ -19,7 +19,7 @@ if len(note) == 2 and note[1] in "012345678":
     elif note_name == "B":
         base_freq = 493.88
     else:
-        print("Invalid note")
+        print("invalid note")
         base_freq = None
 
     if base_freq is not None:
@@ -28,4 +28,4 @@ if len(note) == 2 and note[1] in "012345678":
         frequency = base_freq * 2 ** (octave - 4)
         print(f"{frequency:.2f}")
 else:
-    print("Invalid note")
+    print("invalid note")

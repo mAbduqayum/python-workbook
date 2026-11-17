@@ -32,12 +32,12 @@ if has_length:
     criteria_met += 1
 
 if criteria_met <= 1:
-    print("Very Weak")
+    print("very weak")
 elif criteria_met == 2:
-    print("Weak")
+    print("weak")
 elif criteria_met == 3:
-    print("Medium")
+    print("medium")
 elif criteria_met == 4:
-    print("Strong")
+    print("strong")
 else:
-    print("Very Strong")
+    print("very strong")

@@ -35,5 +35,5 @@ C3
 X4
 ```
 ```
-Invalid note
+invalid note
 ```

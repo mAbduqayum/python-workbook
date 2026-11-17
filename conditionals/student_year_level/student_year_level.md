@@ -5,10 +5,10 @@ Write a program that takes a year number (1-4) and returns the corresponding aca
 ## Year Levels
 | Year | Level     |
 |------|-----------|
-| 1    | Freshman  |
-| 2    | Sophomore |
-| 3    | Junior    |
-| 4    | Senior    |
+| 1    | freshman  |
+| 2    | sophomore |
+| 3    | junior    |
+| 4    | senior    |
 
 ## Examples
 **Example 1:**
@@ -16,7 +16,7 @@ Write a program that takes a year number (1-4) and returns the corresponding aca
 1
 ```
 ```
-Freshman
+freshman
 ```
 
 **Example 2:**
@@ -24,5 +24,5 @@ Freshman
 5
 ```
 ```
-Invalid year
+invalid year
 ```
