@@ -32,5 +32,5 @@ January
 13
 ```
 ```
-Invalid month number
+invalid month number
 ```

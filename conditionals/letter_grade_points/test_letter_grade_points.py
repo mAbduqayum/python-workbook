@@ -16,9 +16,9 @@ import pytest
         ("D+", "1.3"),
         ("D", "1.0"),
         ("F", "0.0"),
-        ("Z", "Invalid grade"),
-        ("X", "Invalid grade"),
-        ("", "Invalid grade"),
+        ("Z", "invalid grade"),
+        ("X", "invalid grade"),
+        ("", "invalid grade"),
     ],
 )
 def test_letter_grade_points(solution, grade, expected_output):

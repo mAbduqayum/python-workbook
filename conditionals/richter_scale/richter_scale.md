@@ -5,15 +5,15 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 ## Richter Scale Classifications
 | Magnitude               | Descriptor |
 |-------------------------|------------|
-| magnitude < 2.0         | Micro      |
-| 2.0 <= magnitude < 3.0  | Very Minor |
-| 3.0 <= magnitude < 4.0  | Minor      |
-| 4.0 <= magnitude < 5.0  | Light      |
-| 5.0 <= magnitude < 6.0  | Moderate   |
-| 6.0 <= magnitude < 7.0  | Strong     |
-| 7.0 <= magnitude < 8.0  | Major      |
-| 8.0 <= magnitude < 10.0 | Great      |
-| magnitude >= 10.0       | Meteoric   |
+| magnitude < 2.0         | micro      |
+| 2.0 <= magnitude < 3.0  | very minor |
+| 3.0 <= magnitude < 4.0  | minor      |
+| 4.0 <= magnitude < 5.0  | light      |
+| 5.0 <= magnitude < 6.0  | moderate   |
+| 6.0 <= magnitude < 7.0  | strong     |
+| 7.0 <= magnitude < 8.0  | major      |
+| 8.0 <= magnitude < 10.0 | great      |
+| magnitude >= 10.0       | meteoric   |
 
 ## Examples
 **Example 1:**
@@ -21,7 +21,7 @@ Write a program that reads an earthquake magnitude and displays the appropriate 
 1.5
 ```
 ```
-Micro
+micro
 ```
 
 ## About the Richter Scale

@@ -32,5 +32,5 @@ A
 Z
 ```
 ```
-Invalid grade
+invalid grade
 ```

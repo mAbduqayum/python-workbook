@@ -5,4 +5,4 @@ def test_guess_number(solution):
 
     result = solution.run(input_text=every_guess)
 
-    assert "Correct" in result.stdout
+    assert "correct" in result.stdout

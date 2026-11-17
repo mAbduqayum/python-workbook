@@ -13,10 +13,10 @@ import pytest
         (100, "Ismoili Somoni"),
         (200, "Nusratullo Makhsum"),
         (500, "Abuabdullo Rudaki"),
-        (1000, "Invalid denomination"),
-        (0, "Invalid denomination"),
-        (25, "Invalid denomination"),
-        (250, "Invalid denomination"),
+        (1000, "invalid denomination"),
+        (0, "invalid denomination"),
+        (25, "invalid denomination"),
+        (250, "invalid denomination"),
     ],
 )
 def test_faces_money(solution, denomination, expected_output):

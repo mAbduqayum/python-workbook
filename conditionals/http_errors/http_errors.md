@@ -5,11 +5,11 @@ Write a program that reads an HTTP status code from the user and displays the co
 ## HTTP Status Code Categories
 | Range   | Category      |
 |---------|---------------|
-| 100-199 | Informational |
-| 200-299 | Success       |
-| 300-399 | Redirection   |
-| 400-499 | Client Error  |
-| 500-599 | Server Error  |
+| 100-199 | informational |
+| 200-299 | success       |
+| 300-399 | redirection   |
+| 400-499 | client error  |
+| 500-599 | server error  |
 
 ## Examples
 **Example 1:**
@@ -17,7 +17,7 @@ Write a program that reads an HTTP status code from the user and displays the co
 200
 ```
 ```
-Success
+success
 ```
 
 **Example 2:**
@@ -25,5 +25,5 @@ Success
 999
 ```
 ```
-Unknown status code
+unknown status code
 ```

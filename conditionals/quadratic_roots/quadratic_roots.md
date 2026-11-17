@@ -40,5 +40,5 @@ For equation `ax² + bx + c = 0`:
 5
 ```
 ```
-No real roots
+no real roots
 ```

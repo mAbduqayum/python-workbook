@@ -32,5 +32,5 @@ DECEMBER
 xyz
 ```
 ```
-Invalid month
+invalid month
 ```

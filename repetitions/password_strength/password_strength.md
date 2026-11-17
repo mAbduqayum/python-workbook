@@ -11,11 +11,11 @@ Evaluate password strength based on character types, length, and special charact
   - Contains at least one special character `!@#$%^&*()_+-=[]{}|;:,.<>?`
   - Password length is at least 8 characters
 - Display the strength level based on criteria met:
-  - **Very Weak**: 1 criteria met
-  - **Weak**: 2 criteria met
-  - **Medium**: 3 criteria met
-  - **Strong**: 4 criteria met
-  - **Very Strong**: 5 criteria met (all criteria)
+  - **very weak**: 1 criteria met
+  - **weak**: 2 criteria met
+  - **medium**: 3 criteria met
+  - **strong**: 4 criteria met
+  - **very strong**: 5 criteria met (all criteria)
 
 ## Examples
 **Example 1:**
@@ -23,7 +23,7 @@ Evaluate password strength based on character types, length, and special charact
 Hello123!@#
 ```
 ```
-Very Strong
+very strong
 ```
 
 **Example 2:**
@@ -31,5 +31,5 @@ Very Strong
 hello123
 ```
 ```
-Medium
+medium
 ```

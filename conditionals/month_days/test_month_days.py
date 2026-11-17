@@ -16,9 +16,9 @@ import pytest
         ("October", "31"),
         ("November", "30"),
         ("DECEMBER", "31"),
-        ("xyz", "Invalid month"),
-        ("", "Invalid month"),
-        ("jan", "Invalid month"),
+        ("xyz", "invalid month"),
+        ("", "invalid month"),
+        ("jan", "invalid month"),
     ],
 )
 def test_month_days(solution, month, expected_output):

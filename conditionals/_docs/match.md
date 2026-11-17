@@ -37,7 +37,7 @@ match month:
     case "april" | "june" | "september" | "november":
         print("30")
     case _:
-        print("Invalid month")
+        print("invalid month")
 ```
 
 **Using if-elif for comparison:**
@@ -53,7 +53,7 @@ elif month == "january" or month == "march" or month == "may" or month == "july"
 elif month == "april" or month == "june" or month == "september" or month == "november":
     print("30")
 else:
-    print("Invalid month")
+    print("invalid month")
 ```
 
 ### Example 2: Faces on Money
@@ -85,7 +85,7 @@ match denomination:
     case 500:
         print("Abuabdullo Rudaki")
     case _:
-        print("Invalid denomination")
+        print("invalid denomination")
 ```
 
 ### Example 3: Vowel or Consonant
